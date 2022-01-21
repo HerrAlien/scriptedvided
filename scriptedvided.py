@@ -7,32 +7,41 @@ def ffmpegParams():
 def defaultOutput (input, suffix):
     root, ext = os.path.splitext (input)
     return root + suffix + ext
+    
+def dictValue(dict, key, default=-1):
+    try:
+        return dict[key]
+    except:
+        return default
+    
+def dictToInputParams (inputStreamDict):
+    params = [];
 
-# input - the input media to be truncated
-# start - the input media to be truncated
-def truncate(input, output=None, start=0, length=0, recompress=False):
-    params = ffmpegParams();
-
+    length = dictValue(inputStreamDict,"length")
     if (length > 0):
         params.append("-t")
         params.append(str(length))
     
+    start = dictValue(inputStreamDict,"start")
     if (start >= 0):
         params.append("-ss")
         params.append(str(start))
     else:
         params.append("-sseof")
         params.append(str(start - length))
-    
+        
     params.append("-i")
-    params.append(input)
-    
-    if (length > 0):
-        params.append("-t")
-        params.append(str(length))
+    params.append(dictValue(inputStreamDict,"file"))
+    return params
+
+
+# input - the input media to be truncated
+# start - the input media to be truncated
+def truncate(input, start=-1, length=-1, output=None, recompress=False):
+    params = ffmpegParams() + dictToInputParams( {"file" : input, "start" : start, "length" : length} );
 
     if (output == None):
-        output = defaultOutput (input, "_truncate_" + str(start) + "_" + str(length))
+        output = defaultOutput (input, "_truncate_" )
 
     if (not recompress):
         params.append("-c")
@@ -47,6 +56,7 @@ def truncate(input, output=None, start=0, length=0, recompress=False):
 def substituteAudio (inputVid, inputAudio, output=None, recompress=False):
     params = ffmpegParams();
 
+    params.append ("-vn")
     params.append ("-i")
     params.append (inputAudio)
     
@@ -134,10 +144,10 @@ def append (firstStream, secondStream, output=None, recompressVideo=True):
     return output
     
 if __name__ == "__main__":
-   truncatedvid = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", None, -10, 30)
-   truncatedaudio = truncate ("C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg", None, -10, 30)
+   truncatedvid = truncate ( "C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", -10, 30, "vid.mp4" )
+   truncatedaudio = truncate ( "C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg", -10, 30, "audio.ogg" )
 #   truncatedaudio2 = truncate ("C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg", None, -2, 30)
    overlayAudio (truncatedvid, truncatedaudio , "merged_audio.mp4", 0.15)
-   truncatedvid1 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", None, -40, 10)
-   truncatedvid2 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", None, -10, 10)
-   append(truncatedvid1, truncatedvid2)
+#   truncatedvid1 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", None, -40, 10)
+#   truncatedvid2 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", None, -10, 10)
+#   append(truncatedvid1, truncatedvid2)
