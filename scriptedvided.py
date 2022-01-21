@@ -14,31 +14,36 @@ def dictValue(dict, key, default=-1):
     except:
         return default
     
-def dictToInputParams (inputStreamDict):
+def toInputParams (inputStream):
     params = [];
 
-    length = dictValue(inputStreamDict,"length")
-    if (length > 0):
-        params.append("-t")
-        params.append(str(length))
-    
-    start = dictValue(inputStreamDict,"start")
-    if (start >= 0):
-        params.append("-ss")
-        params.append(str(start))
-    else:
-        params.append("-sseof")
-        params.append(str(start - length))
+    if (type(inputStream) is type({})):        
+        length = dictValue(inputStream,"length")
+        if (length > 0):
+            params.append("-t")
+            params.append(str(length))
         
-    params.append("-i")
-    params.append(dictValue(inputStreamDict,"file"))
+        start = dictValue(inputStream,"start")
+        if (start >= 0):
+            params.append("-ss")
+            params.append(str(start))
+        else:
+            params.append("-sseof")
+            params.append(str(start - length))
+        
+        params.append("-i")
+        params.append(dictValue(inputStream,"file"))
+    else:
+        params.append("-i")
+        params.append(inputStream)
+
     return params
 
 
 # input - the input media to be truncated
 # start - the input media to be truncated
 def truncate(input, start=-1, length=-1, output=None, recompress=False):
-    params = ffmpegParams() + dictToInputParams( {"file" : input, "start" : start, "length" : length} );
+    params = ffmpegParams() + toInputParams( {"file" : input, "start" : start, "length" : length} );
 
     if (output == None):
         output = defaultOutput (input, "_truncate_" )
@@ -57,12 +62,10 @@ def substituteAudio (inputVid, inputAudio, output=None, recompress=False):
     params = ffmpegParams();
 
     params.append ("-vn")
-    params.append ("-i")
-    params.append (inputAudio)
+    params = params + toInputParams (inputAudio)
     
     params.append("-an")
-    params.append ("-i")
-    params.append(inputVid)
+    params = params + toInputParams (inputVid)
     
     if (output == None):
         audioRoot,ext = os.path.splitext (inputAudio)
@@ -80,13 +83,9 @@ def substituteAudio (inputVid, inputAudio, output=None, recompress=False):
 def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1, recompressVideo=True):
     params = ffmpegParams();
 
-    params.append ("-i")
-    params.append(inputVid)    
+    params = params + toInputParams(inputVid)    
+    params = params + toInputParams(inputAudio)
 
-    params.append ("-i")
-    params.append (inputAudio)
-
-    
     params.append ("-map")
     params.append ("0:a")
     
@@ -148,6 +147,6 @@ if __name__ == "__main__":
    truncatedaudio = truncate ( "C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg", -10, 30, "audio.ogg" )
 #   truncatedaudio2 = truncate ("C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg", None, -2, 30)
    overlayAudio (truncatedvid, truncatedaudio , "merged_audio.mp4", 0.15)
-#   truncatedvid1 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", None, -40, 10)
-#   truncatedvid2 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", None, -10, 10)
-#   append(truncatedvid1, truncatedvid2)
+   truncatedvid1 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "t1.mp4", -40, 10)
+   truncatedvid2 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "t2.mp4", -10, 10)
+   append(truncatedvid1, truncatedvid2, "appended.mp4")
