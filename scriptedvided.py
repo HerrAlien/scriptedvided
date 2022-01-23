@@ -139,6 +139,25 @@ def append (firstStream, secondStream, output, recompressVideo=True):
     subprocess.run(params)
     
     return output
+    
+def padStream (stream, output, ammountBegin = 0, amountEnd = 0):
+    params = ffmpegParams();
+
+    params = params + toInputParams(stream)    
+    params.append ("-map")
+    params.append ("0:a")
+
+    params.append("-filter_complex")
+    params.append("[0:a]adelay=" + str(ammountBegin * 1000) + "[intermediate];[intermediate]apad=pad_dur=" + str(amountEnd))
+    
+    if (output == None):
+        secondRoot,ext = os.path.splitext (stream)
+        output = defaultOutput ("", "_append_"  + os.path.basename(secondRoot))
+
+    params.append(output)
+    subprocess.run(params)
+    
+    return output
 
 def getLengthOfStream (filepath):
     finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -149,9 +168,28 @@ def getLengthOfStream (filepath):
     out = out[0:commaIndex]
     spaceIndex  = out.index(" ")
     out = out[spaceIndex+1:]
-    print(out)
+    durations = out.split(":")
+    timeInSec = float(durations[-1]) + int(durations[-2]) * 60 + int(durations[-3]) * 3600
+    return timeInSec
     
-
+def makeEpisodeFromFiles (video, audio):
+    videoLen = getLengthOfStream(video)
+    audioLen = getLengthOfStream(audio)
+    padding = 1
+    
+    videoStart = (videoLen - (audioLen + padding + padding)) * 0.5
+    
+# if video length is not longer then audio, loop it,
+# and make sure you start the video at the begining.
+    if videoLen <= audioLen:
+        videoStart = 0
+        # now do the looping
+        baseName,ext = os.path.splitext (video)
+        video = append (video, video, baseName + "_doubled" + ext)
+        
+    
+        
+    return 0
     
 if __name__ == "__main__":
 #   truncatedvid = truncate ( "C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", -10, 30, "vid.mp4" )
@@ -163,4 +201,5 @@ if __name__ == "__main__":
 #   truncatedvid2 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "t2.mp4", -10, 10)
 #   append({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 10}, \
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
-    getLengthOfStream ("audio.ogg")
+#    print(getLengthOfStream ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4"))
+    padStream ("audio.ogg", "padded.ogg", 3, 3)
