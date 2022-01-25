@@ -171,8 +171,28 @@ def getLengthOfStream (filepath):
     durations = out.split(":")
     timeInSec = float(durations[-1]) + int(durations[-2]) * 60 + int(durations[-3]) * 3600
     return timeInSec
+
+def drawText (stream, text, output=None):
+    params = ffmpegParams();
+
+    params = params + toInputParams(stream)    
     
-def makeEpisodeFromFiles (video, audio):
+    params.append("-filter_complex")
+    params.append("drawtext=fix_bounds=1:y=H:box=1:boxborderw=16:boxcolor=#008000:fontsize=24:fontcolor=White" + ":text="+text)
+    
+    if (output == None):
+        secondRoot,ext = os.path.splitext (stream)
+        output = defaultOutput ("", "_withText_"  + ext)
+
+    params.append(output)
+    subprocess.run(params)
+    
+    return output
+
+    
+def makeEpisodeFromFiles (video, audio, \
+textLinesArray=[], \
+options={"padAudio": 1, "padInserText" : 2, "videoSoundVolume" : 0.1}):
     videoLen = getLengthOfStream(video)
     audioLen = getLengthOfStream(audio)
     padding = 1
@@ -202,4 +222,4 @@ if __name__ == "__main__":
 #   append({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 10}, \
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
 #    print(getLengthOfStream ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4"))
-    padStream ("audio.ogg", "padded.ogg", 3, 3)
+    drawText ("merged_audio.mp4", "'Rainbow 6 Siege (720p, low settings, render scale - 100)\nAverage - 73fps, 1 per cent lows - 32fps'")
