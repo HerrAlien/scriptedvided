@@ -76,6 +76,9 @@ def getDrawTextCommand (text):
 
     return paramText
 
+def getScaleCommand(resolutionPair):
+    return "scale="+str(resolutionPair[0])+ "x" +str(resolutionPair[1]) + ":flags=lanczos"
+    
 # input - the input media to be truncated
 # start - the input media to be truncated
 def truncate(input, start=-1, length=-1, output=None, recompress=False):
@@ -152,7 +155,7 @@ def overlayAudio (inputVid, inputAudio, output, firstStreamAudioWeight=0.1, reco
     
     return output
 
-def append (firstStream, secondStream, output, recompressVideo=True):
+def append (firstStream, secondStream, output=None, recompressVideo=True):
     params = ffmpegParams();
 
     params = params + toInputParams(firstStream)    
@@ -207,6 +210,30 @@ def getLengthOfStream (filepath):
     durations = out.split(":")
     timeInSec = float(durations[-1]) + int(durations[-2]) * 60 + int(durations[-3]) * 3600
     return timeInSec
+    
+def getResolution (filepath):
+    finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out = str(finishedProc.stderr) + str(finishedProc.stdout)
+    durationIndex = out.find("Video:")
+    if durationIndex < 0:
+        return (0, 0)
+
+    out = out[durationIndex:];
+    endIndex = out.index("fps")
+    out = out[0:endIndex]
+
+    outArr = out.split(",")
+    for entry in outArr:
+        resolutionAttemptArr = entry.split("x")
+        try:
+            if (len (resolutionAttemptArr) > 1):
+                pieceW = resolutionAttemptArr[0].replace(" ","")
+                pieceH = resolutionAttemptArr[1].split(" ")[0].replace(" ","")
+                return (int(pieceW), int(pieceH))
+        except:
+            continue
+            
+    return (0, 0)
 
 def drawText (stream, text, output=None):
     params = ffmpegParams();
@@ -225,7 +252,67 @@ def drawText (stream, text, output=None):
     
     return output
 
+def scaleVideo(video, resolutionPair, output=None):
+    params = ffmpegParams();
+
+    params = params + toInputParams(video)    
+    params.append("-filter_complex")
+
+    params.append(getScaleCommand(resolutionPair))
     
+    if (output == None):
+        root,ext = os.path.splitext (video)
+        output = defaultOutput ("", "_scaled_" + str(resolutionPair[0]) + "x" + + str(resolutionPair[1])  + ext)
+
+    params.append(output)
+    subprocess.run(params)
+    
+    return output
+    
+def getSuitableVideos (folder, names):
+    videos = []
+    potentialVideos = []
+    for file in os.listdir(folder):
+        for name in names:
+# the filename should contain one of the names
+            if file.upper().find(name.upper()) >= 0:
+                fullVideoPath = os.path.join(folder, file) 
+# we want videos of more than 30 seconds length
+                if (getLengthOfStream(fullVideoPath) > 30):
+                    resolution = getResolution (fullVideoPath)
+# we favor 1080p videos - they will not require any scaling.
+                    if (resolution[1] == 1080):
+                        videos.append (fullVideoPath)
+                        return videos
+                    else:
+                        potentialVideos.append(fullVideoPath)
+                else:
+                    potentialVideos.append(fullVideoPath)
+            if (len(potentialVideos) > 0):
+                return potentialVideos
+                    
+    return potentialVideos
+
+def makeEpisodeFromVideo (video, episodeName):
+# then get the audio segment
+#   - this means locating a file with how much each episode lasts
+#   - search the episode in that file. Then do a trim of the audio
+    return 0
+
+def makeEpisodeFromDescriptionAndFolder (mediaFolder, episodeName):
+# search a video for that name, and ideally for the 1080p resolution
+    nonScaledVideo = getSuitableVideos(mediaFolder, episodeName)[0]    
+# should have a pretty good length
+    if (getLengthOfStream(nonScaledVideo) < 30):
+        nonScaledVideo = append (nonScaledVideo, nonScaledVideo)
+# scale it to 1080p if needed
+    scaledVideo = nonScaledVideo
+    if not (getResolution (nonScaledVideo)[1] == 1080):
+        scaledVideo = scaleVideo(nonScaledVideo, (1920,1080))
+
+    return makeEpisodeFromVideo (scaledVideo, episodeName)
+
+
 def makeEpisodeFromFiles (video, audio, \
 textLinesArray=[], \
 options={"padAudio": 1, "padInsertText" : 2, "videoSoundVolume" : 0.1}):
@@ -248,14 +335,13 @@ options={"padAudio": 1, "padInsertText" : 2, "videoSoundVolume" : 0.1}):
         videoStart = 0
         # now do the looping
         baseName,ext = os.path.splitext (video)
-        video = append (video, video, baseName + "_doubled" + ext)
-        
-    
-        
+        video = append (video, video, baseName + "_doubled" + ext)    
     return 0
+
     
 if __name__ == "__main__":
 #   truncatedvid = truncate ( "C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", -10, 30, "vid.mp4" )
+    truncatedvid = scaleVideo ( "C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", (1920,1080), "zz.mp4" )
 #   truncatedaudio = truncate ( "C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg", -10, 30, "audio.ogg" )
 #   truncatedaudio2 = truncate ("C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg", None, -2, 30)
 #   overlayAudio ({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 30}, \
@@ -265,4 +351,6 @@ if __name__ == "__main__":
 #   append({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 10}, \
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
 #    print(getLengthOfStream ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4"))
-    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", "'Average\: 73fps, 1\\\% lows\: 32fps'"])
+#    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", "'Average\: 73fps, 1\\\% lows\: 32fps'"])
+#     print(getResolution ("audio.ogg"))
+#    print(getSuitableVideos ("C:\\Users\\Admin\\Videos\\hd7770", ["fortnite"]))
