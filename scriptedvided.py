@@ -13,7 +13,24 @@ def dictValue(dict, key, default=-1):
         return dict[key]
     except:
         return default
-    
+
+def getFpsStatsText(average, onePercent=None, pointOnePercent=None, max=None, min=None):
+    text = "'"
+    text = text + "Average\: "+ str(average) +"fps"
+
+    if max is not None:
+        text = text + ", Max\: "+ str(max) +"fps"
+    if min is not None:
+        text = text + ", Min\: "+ str(min) +"fps"
+    if onePercent is not None:
+        text = text + ", 1\\\% lows\: "+ str(onePercent) +"fps"
+    if pointOnePercent is not None:
+        text = text + ", 0.1\\\% lows\: "+ str(pointOnePercent) +"fps"
+        
+    text = text + "'"
+    return text
+
+        
 def toInputParams (inputStream):
     params = [];
 
@@ -179,7 +196,7 @@ def append (firstStream, secondStream, output=None, recompressVideo=True):
     
     return output
     
-def padStream (stream, output, ammountBegin = 0, amountEnd = 0):
+def padAudioStream (stream, output, ammountBegin = 0, amountEnd = 0):
     params = ffmpegParams();
 
     params = params + toInputParams(stream)    
@@ -341,7 +358,7 @@ options={"padAudio": 1, "padInsertText" : 2, "videoSoundVolume" : 0.1}):
     
 if __name__ == "__main__":
 #   truncatedvid = truncate ( "C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", -10, 30, "vid.mp4" )
-    truncatedvid = scaleVideo ( "C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", (1920,1080), "zz.mp4" )
+#   truncatedvid = scaleVideo ( "C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", (1920,1080), "zz.mp4" )
 #   truncatedaudio = truncate ( "C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg", -10, 30, "audio.ogg" )
 #   truncatedaudio2 = truncate ("C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg", None, -2, 30)
 #   overlayAudio ({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 30}, \
@@ -351,6 +368,7 @@ if __name__ == "__main__":
 #   append({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 10}, \
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
 #    print(getLengthOfStream ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4"))
-#    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", "'Average\: 73fps, 1\\\% lows\: 32fps'"])
+    print(getFpsStatsText(73, 32, 27, 80, 27))
+#    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27, 80, 27)])
 #     print(getResolution ("audio.ogg"))
 #    print(getSuitableVideos ("C:\\Users\\Admin\\Videos\\hd7770", ["fortnite"]))
