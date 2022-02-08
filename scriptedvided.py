@@ -30,7 +30,12 @@ def getFpsStatsText(average, onePercent=None, pointOnePercent=None, max=None, mi
     text = text + "'"
     return text
 
-        
+def getFileFromInput (inputStream)
+    if (type(inputStream) is type({})):        
+        return dictValue(inputStream,"file")
+    else:
+        return inputStream)
+
 def toInputParams (inputStream):
     params = [];
 
@@ -114,7 +119,7 @@ def truncate(input, start=-1, length=-1, output=None, recompress=False):
     
     return output
     
-def substituteAudio (inputVid, inputAudio, output, recompress=False):
+def substituteAudio (inputVid, inputAudio, output=None, recompress=False):
     params = ffmpegParams();
 
     params.append ("-vn")
@@ -124,8 +129,8 @@ def substituteAudio (inputVid, inputAudio, output, recompress=False):
     params = params + toInputParams (inputVid)
     
     if (output == None):
-        audioRoot,ext = os.path.splitext (inputAudio)
-        output = defaultOutput (inputVid, "_substituteAudio_"  + os.path.basename(audioRoot) )
+        audioRoot,ext = os.path.splitext (getFileFromInput(inputAudio))
+        output = defaultOutput (getFileFromInput(inputVid), "_substituteAudio_"  + os.path.basename(audioRoot) )
 
     if (not recompress):
         params.append("-c")
@@ -136,7 +141,7 @@ def substituteAudio (inputVid, inputAudio, output, recompress=False):
     
     return output
     
-def overlayAudio (inputVid, inputAudio, output, firstStreamAudioWeight=0.1, recompressVideo=True):
+def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1, recompressVideo=True):
     params = ffmpegParams();
 
     params = params + toInputParams(inputVid)    
@@ -149,8 +154,8 @@ def overlayAudio (inputVid, inputAudio, output, firstStreamAudioWeight=0.1, reco
     params.append ("1:a")
     
     if (output == None):
-        audioRoot,ext = os.path.splitext (inputAudio)
-        output = defaultOutput (inputVid, "_overlay_"  + os.path.basename(audioRoot) )
+        audioRoot,ext = os.path.splitext (getFileFromInput(inputAudio))
+        output = defaultOutput (getFileFromInput(inputVid), "_overlay_"  + os.path.basename(audioRoot) )
 
     weightsStr = str(firstStreamAudioWeight) + " " + str(1 - firstStreamAudioWeight)
         
@@ -188,15 +193,15 @@ def append (firstStream, secondStream, output=None, recompressVideo=True):
         params.append ("copy")
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (secondStream)
-        output = defaultOutput ("", "_append_"  + os.path.basename(secondRoot))
+        secondRoot,ext = os.path.splitext (getFileFromInput(secondStream))
+        output = defaultOutput (getFileFromInput(firstStream), "_append_"  + os.path.basename(secondRoot))
 
     params.append(output)
     subprocess.run(params)
     
     return output
     
-def padAudioStream (stream, output, ammountBegin = 0, amountEnd = 0):
+def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
     params = ffmpegParams();
 
     params = params + toInputParams(stream)    
@@ -207,8 +212,8 @@ def padAudioStream (stream, output, ammountBegin = 0, amountEnd = 0):
     params.append("[0:a]adelay=" + str(ammountBegin * 1000) + "[intermediate];[intermediate]apad=pad_dur=" + str(amountEnd))
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (stream)
-        output = defaultOutput ("", "_append_"  + os.path.basename(secondRoot))
+        secondRoot,ext = os.path.splitext (getFileFromInput(stream))
+        output = defaultOutput (getFileFromInput(stream), "_padded_"  + str(ammountBegin) + "_" + str(amountEnd))
 
     params.append(output)
     subprocess.run(params)
@@ -261,7 +266,7 @@ def drawText (stream, text, output=None):
     params.append(getDrawTextCommand(text))
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (stream)
+        secondRoot,ext = os.path.splitext (getFileFromInput(stream))
         output = defaultOutput ("", "_withText_"  + ext)
 
     params.append(output)
@@ -278,61 +283,71 @@ def scaleVideo(video, resolutionPair, output=None):
     params.append(getScaleCommand(resolutionPair))
     
     if (output == None):
-        root,ext = os.path.splitext (video)
-        output = defaultOutput ("", "_scaled_" + str(resolutionPair[0]) + "x" + + str(resolutionPair[1])  + ext)
+        root,ext = os.path.splitext (getFileFromInput(video))
+        output = defaultOutput (getFileFromInput(video), "_scaled_" + str(resolutionPair[0]) + "x" + + str(resolutionPair[1])  + ext)
 
     params.append(output)
     subprocess.run(params)
     
     return output
     
-def getSuitableVideos (folder, names):
-    videos = []
+def selectSuitableVideo (paths, desiredLength=30, desiredYRes=1080):
     potentialVideos = []
-    for file in os.listdir(folder):
-        for name in names:
-# the filename should contain one of the names
-            if file.upper().find(name.upper()) >= 0:
-                fullVideoPath = os.path.join(folder, file) 
-# we want videos of more than 30 seconds length
-                if (getLengthOfStream(fullVideoPath) > 30):
-                    resolution = getResolution (fullVideoPath)
+    for fullVideoPath in paths:
+        if (getLengthOfStream(fullVideoPath) > desiredLength):
+            resolution = getResolution (fullVideoPath)
 # we favor 1080p videos - they will not require any scaling.
-                    if (resolution[1] == 1080):
-                        videos.append (fullVideoPath)
-                        return videos
-                    else:
-                        potentialVideos.append(fullVideoPath)
-                else:
-                    potentialVideos.append(fullVideoPath)
-            if (len(potentialVideos) > 0):
-                return potentialVideos
-                    
-    return potentialVideos
+            if (resolution[1] == desiredYRes):
+                return fullVideoPath
+            else:
+                potentialVideos.append(fullVideoPath)
+        else:
+            potentialVideos.append(fullVideoPath)
+    return potentialVideos[0]
+    
+def getMediaArrayFromFoldersAndNames (folders, names):
+    paths = []
+    for folder in folders:
+        for file in os.listdir(folder):
+            if file.upper().find(name.upper()) >= 0:
+                paths.append(os.path.join(folder, file))
+    return paths
 
-def makeEpisodeFromVideo (video, episodeName):
-# then get the audio segment
-#   - this means locating a file with how much each episode lasts
-#   - search the episode in that file. Then do a trim of the audio
-    return 0
+def getSuitableVideoFromFolders (folders, names):
+    media = getMediaArrayFromFoldersAndNames (folders, names)
+    return selectSuitableVideo(media)
 
-def makeEpisodeFromDescriptionAndFolder (mediaFolder, episodeName):
+def getSuitableVideo (folder, names):
+    return getSuitableVideoFromFolders([folder], names)
+    
+def makeVideoForEpisode (mediaFolders, episodeName, minLength=30, targetRes=(1920,1080) ):
 # search a video for that name, and ideally for the 1080p resolution
-    nonScaledVideo = getSuitableVideos(mediaFolder, episodeName)[0]    
+    names = getNamesFromEpisodeName (episodeName)
+    nonScaledVideo = getSuitableVideoFromFolders(mediaFolders, names)    
 # should have a pretty good length
-    if (getLengthOfStream(nonScaledVideo) < 30):
+    if (getLengthOfStream(nonScaledVideo) < minLength):
+        videoToCleanup = nonScaledVideo
         nonScaledVideo = append (nonScaledVideo, nonScaledVideo)
+        # cleanup videoToCleanup?
 # scale it to 1080p if needed
     scaledVideo = nonScaledVideo
-    if not (getResolution (nonScaledVideo)[1] == 1080):
-        scaledVideo = scaleVideo(nonScaledVideo, (1920,1080))
+    if not (getResolution (nonScaledVideo)[1] == targetRes[1]):
+        scaledVideo = scaleVideo(nonScaledVideo, targetRes)
+        #cleanup nonScaledVideo?
+        
+    return scaledVideo
 
-    return makeEpisodeFromVideo (scaledVideo, episodeName)
+def makeAudioForEposiode (audioFile, episodeName, config)
+# from the config, get the start and end in the audio
+# build the output file name from the episode
+# then just return a trim.
+    return 0
 
-
-def makeEpisodeFromFiles (video, audio, \
+# needs a video - see makeVideoForEpisode
+# needs an audio - see makeAudioForEposiode
+def makeEpisodeWithAllInputs (video, audio, \
 textLinesArray=[], \
-options={"padAudio": 1, "padInsertText" : 2, "videoSoundVolume" : 0.1}):
+options={"padAudio": 1, "videoSoundVolume" : 0.1}):
 # pad the audio with 1 second of silence
 
 # video length must be larger than the audio. Loop it if needed.
@@ -342,18 +357,35 @@ options={"padAudio": 1, "padInsertText" : 2, "videoSoundVolume" : 0.1}):
 # then print the text
     videoLen = getLengthOfStream(video)
     audioLen = getLengthOfStream(audio)
-    padding = 1
+    padding = dictValue (options, "padAudio", 1)
     
+    audioToVideoLengthRatio = (audioLen + padding + padding) / videoLen
+    fixedVideo = getFileFromInput (video)
+    nextIterationVideo = fixedVideo
+    for i in range(0, audioToVideoLengthRatio):
+        nextIterationVideo = append(fixedVideo, video)
+        #cleanup fixedVideo?
+        fixedVideo = nextIterationVideo
+    
+    videoLen = getLengthOfStream(fixedVideo)
     videoStart = (videoLen - (audioLen + padding + padding)) * 0.5
     
-# if video length is not longer then audio, loop it,
-# and make sure you start the video at the begining.
-    if videoLen <= audioLen:
-        videoStart = 0
-        # now do the looping
-        baseName,ext = os.path.splitext (video)
-        video = append (video, video, baseName + "_doubled" + ext)    
-    return 0
+    videoInput = { "file" : fixedVideo, "start" : videoStart, "length" : videoLen}
+    paddedAudio = padAudioStream (audio, "padded.ogg", padding, padding)
+    
+    videoAudioWeight = dictValue (options, "videoSoundVolume", 0.1)
+    
+    videoWithOverlayedAudio = overlayAudio (videoInput, paddedAudio, firstStreamAudioWeight=videoAudioWeight)
+    
+    returnedVideo = videoWithOverlayedAudio
+    
+    if len(textLinesArray) > 0:
+        returnedVideo = drawText (videoWithOverlayedAudio, textLinesArray)
+        # cleanup videoWithOverlayedAudio?
+    
+    # cleanup paddedAudio?
+    # cleanup fixedVideo, if audioToVideoLengthRatio > 1 ?
+    return returnedVideo
 
     
 if __name__ == "__main__":
@@ -368,7 +400,7 @@ if __name__ == "__main__":
 #   append({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 10}, \
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
 #    print(getLengthOfStream ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4"))
-    print(getFpsStatsText(73, 32, 27, 80, 27))
-#    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27, 80, 27)])
+#    print(getFpsStatsText(73, 32, 27, 80, 27))
+    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
 #     print(getResolution ("audio.ogg"))
 #    print(getSuitableVideos ("C:\\Users\\Admin\\Videos\\hd7770", ["fortnite"]))
