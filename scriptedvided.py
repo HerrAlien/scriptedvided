@@ -99,14 +99,14 @@ def getDrawTextCommandFromArray (text):
     return paramText
 
     
-def getDrawTextForEpisode (episode):
+def getTextArrayForEpisode (episode):
     overlay = dictValue (episode, "overlay", None)
     if (overlay is None):
         return None
     
     textArray = dictValue (overlay, "text", None)
     if (textArray is not None):
-        return getDrawTextCommandFromArray(textArray)
+        return (textArray)
 
     benchmark = dictValue (overlay, "benchmark", None)
     if (benchmark is None):
@@ -123,7 +123,7 @@ def getDrawTextForEpisode (episode):
 
     fpsAsText = getFpsStatsText (fpsArr[0], fpsArr[1], fpsArr[2])
     
-    return getDrawTextCommandFromArray([episodeName + " " + settings, fpsAsText])
+    return ([episodeName + " " + settings, fpsAsText])
         
 def getScaleCommand(resolutionPair):
     return "scale="+str(resolutionPair[0])+ "x" +str(resolutionPair[1]) + ":flags=lanczos"
@@ -440,5 +440,5 @@ if __name__ == "__main__":
         "settings" : "1080p, low settings", \
     }\
 } }
-print (getDrawTextForEpisode(episode))
+print (getTextArrayForEpisode(episode))
 
