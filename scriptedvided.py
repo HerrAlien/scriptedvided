@@ -30,11 +30,11 @@ def getFpsStatsText(average, onePercent=None, pointOnePercent=None, max=None, mi
     text = text + "'"
     return text
 
-def getFileFromInput (inputStream)
+def getFileFromInput (inputStream):
     if (type(inputStream) is type({})):        
         return dictValue(inputStream,"file")
     else:
-        return inputStream)
+        return inputStream
 
 def toInputParams (inputStream):
     params = [];
@@ -62,7 +62,7 @@ def toInputParams (inputStream):
     return params
 
     
-def getDrawTextCommand (text):
+def getDrawTextCommandFromArray (text):
     textSize = 24
     paramText = ""
     borderWidth = 0.5 * textSize
@@ -98,6 +98,33 @@ def getDrawTextCommand (text):
 
     return paramText
 
+    
+def getDrawTextForEpisode (episode):
+    overlay = dictValue (episode, "overlay", None)
+    if (overlay is None):
+        return None
+    
+    textArray = dictValue (overlay, "text", None)
+    if (textArray is not None):
+        return getDrawTextCommandFromArray(textArray)
+
+    benchmark = dictValue (overlay, "benchmark", None)
+    if (benchmark is None):
+        return None
+    
+    fpsArr = dictValue (benchmark, "FPS values", None)
+    if (fpsArr is None):
+        return None
+    
+    episodeName = dictValue (episode, "title", None)
+    settings = dictValue (benchmark, "settings", None)
+    if (settings is None):
+        return None
+
+    fpsAsText = getFpsStatsText (fpsArr[0], fpsArr[1], fpsArr[2])
+    
+    return getDrawTextCommandFromArray([episodeName + " " + settings, fpsAsText])
+        
 def getScaleCommand(resolutionPair):
     return "scale="+str(resolutionPair[0])+ "x" +str(resolutionPair[1]) + ":flags=lanczos"
     
@@ -263,7 +290,7 @@ def drawText (stream, text, output=None):
     params = params + toInputParams(stream)    
     params.append("-filter_complex")
 
-    params.append(getDrawTextCommand(text))
+    params.append(getDrawTextCommandFromArray(text))
     
     if (output == None):
         secondRoot,ext = os.path.splitext (getFileFromInput(stream))
@@ -337,7 +364,7 @@ def makeVideoForEpisode (mediaFolders, episodeName, minLength=30, targetRes=(192
         
     return scaledVideo
 
-def makeAudioForEposiode (audioFile, episodeName, config)
+def makeAudioForEposiode (audioFile, episodeName, config):
 # from the config, get the start and end in the audio
 # build the output file name from the episode
 # then just return a trim.
@@ -401,6 +428,17 @@ if __name__ == "__main__":
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
 #    print(getLengthOfStream ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4"))
 #    print(getFpsStatsText(73, 32, 27, 80, 27))
-    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
+#    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
 #     print(getResolution ("audio.ogg"))
 #    print(getSuitableVideos ("C:\\Users\\Admin\\Videos\\hd7770", ["fortnite"]))
+    episode = { "title": "Apex Legends",\
+"audio" : {"timestamps" : ("02:02", "02:14" ) },\
+"video" : "stock_ApexLegends_1080p.mp4", \
+"overlay" : { \
+    "benchmark" : { \
+        "FPS values" : [0, 0, 0], \
+        "settings" : "1080p, low settings", \
+    }\
+} }
+print (getDrawTextForEpisode(episode))
+
