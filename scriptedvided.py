@@ -440,5 +440,4 @@ if __name__ == "__main__":
         "settings" : "1080p, low settings", \
     }\
 } }
-print (getTextArrayForEpisode(episode))
-
+    print (getTextArrayForEpisode(episode))
