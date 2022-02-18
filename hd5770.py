@@ -120,7 +120,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [65, 29, 18], \
-        "settings" : "1080p, low settings, 100\\\% render scale", \
+        "settings" : "1080p, performance mode, view distance FAR, 100\\\% render scale", \
     }\
 }, \
 })
@@ -245,4 +245,5 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("08:32", "09:07") },\
 })
 
-print (scriptedvided.getTextArrayForEpisode(configs["episodes"][8]))
+for episode in configs["episodes"]:
+    print (str(scriptedvided.getTextArrayForEpisode(episode)) + "\n")

@@ -123,7 +123,7 @@ def getTextArrayForEpisode (episode):
 
     fpsAsText = getFpsStatsText (fpsArr[0], fpsArr[1], fpsArr[2])
     
-    return ([episodeName + " " + settings, fpsAsText])
+    return ([episodeName + " (" + settings + ")", fpsAsText])
         
 def getScaleCommand(resolutionPair):
     return "scale="+str(resolutionPair[0])+ "x" +str(resolutionPair[1]) + ":flags=lanczos"
@@ -285,6 +285,10 @@ def getResolution (filepath):
     return (0, 0)
 
 def drawText (stream, text, output=None):
+    if (text is None):
+        print ("WARNING: no text provided, returning the unmodified input " + "'" + getFileFromInput(stream) + "'")
+        return getFileFromInput(stream)
+        
     params = ffmpegParams();
 
     params = params + toInputParams(stream)    
