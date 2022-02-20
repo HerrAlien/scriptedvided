@@ -14,6 +14,17 @@ def dictValue(dict, key, default=-1):
     except:
         return default
 
+def getSeconds (timeAsString):
+    times = timeAsString.split(":")
+    factor = 1.0
+    value = 0.0
+    arrayLen = len(times)
+    
+    for index in range(0, arrayLen):
+        value = value + float(times[arrayLen - 1 - index]) * factor
+        factor = factor * 60
+    return value
+        
 def getFpsStatsText(average, onePercent=None, pointOnePercent=None, max=None, min=None):
     text = "'"
     text = text + "Average\: "+ str(average) +"fps"
@@ -123,7 +134,7 @@ def getTextArrayForEpisode (episode):
 
     fpsAsText = getFpsStatsText (fpsArr[0], fpsArr[1], fpsArr[2])
     
-    return ([episodeName + " (" + settings + ")", fpsAsText])
+    return (["'" + episodeName + " (" + settings + ")'", fpsAsText ])
         
 def getScaleCommand(resolutionPair):
     return "scale="+str(resolutionPair[0])+ "x" +str(resolutionPair[1]) + ":flags=lanczos"
@@ -247,7 +258,8 @@ def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
     
     return output
 
-def getLengthOfStream (filepath):
+def getLengthOfStream (stream):
+    filepath = getFileFromInput (stream)
     finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out = str(finishedProc.stderr) + str(finishedProc.stdout)
     durationIndex = out.index("Duration")
@@ -256,8 +268,8 @@ def getLengthOfStream (filepath):
     out = out[0:commaIndex]
     spaceIndex  = out.index(" ")
     out = out[spaceIndex+1:]
-    durations = out.split(":")
-    timeInSec = float(durations[-1]) + int(durations[-2]) * 60 + int(durations[-3]) * 3600
+
+    timeInSec = getSeconds(out)
     return timeInSec
     
 def getResolution (filepath):
@@ -338,97 +350,108 @@ def selectSuitableVideo (paths, desiredLength=30, desiredYRes=1080):
         return potentialVideos[0]
     return None
     
-def getMediaArrayFromFoldersAndNames (folders, names):
+def getMediaArrayFromFoldersAndNames (folders, names, extensions):
     paths = []
     for folder in folders:
         if (folder is not None):
             for file in os.listdir(folder):
-                for name in names:
-                    fullPath = os.path.join(folder, file)
-                    nameUpper = name.upper()
-                    if file.upper().find(nameUpper) >= 0:
-                        paths.append(fullPath)
-                    elif fullPath.upper() == nameUpper:
-                        paths.append(fullPath)
+                ext = os.path.splitext(file)[1].upper()
+                hasExtension = False
+                for arrExt in extensions:
+                    if arrExt.upper() == ext:
+                        hasExtension = True
+                        break
+                
+                if hasExtension:
+                    for name in names:
+                        fullPath = os.path.join(folder, file)
+                        nameUpper = name.upper()
+                        if file.upper().find(nameUpper) >= 0:
+                            paths.append(fullPath)
+                        elif fullPath.upper() == nameUpper:
+                            paths.append(fullPath)
     return paths
 
-def getSuitableVideoFromFolders (folders, names):
-    media = getMediaArrayFromFoldersAndNames (folders, names)
+def getSuitableVideoFromFolders (folders, names, extensions=[".mp4", ".mov", ".avi"]):
+    media = getMediaArrayFromFoldersAndNames (folders, names, extensions)
     return selectSuitableVideo(media)
 
-def getSuitableVideoStream (episode, configs):
+
+    
+    
+def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, extensions):
     names = []
 
-    videoDict =  dictValue (episode, "video", None)
+    mediaDict =  dictValue (episode, keyInEpisode, None)
     # see if we can simply return it as is
-    if type(videoDict) is type({}):
-        print ("is dictionary")
+    if type(mediaDict) is type({}):
         # check that we have a full path for "file"
-        dictFile = dictValue (videoDict, "file", None)
+        dictFile = dictValue (mediaDict, "file", None)
         if dictFile is not None:
             if os.path.exists(dictFile):
-                return videoDict # path exists, so just use that
+                return mediaDict # path exists, so just use that
             else:
                 names.append(dictFile) # not a full path, we'll search for it.
-    elif type (videoDict) is type (""): # we passed a string
-        print ("is string")
-        names.append(videoDict) # so add it to the search names
-        videoDict = {}
+    elif type (mediaDict) is type (""): # we passed a string
+        names.append(mediaDict) # so add it to the search names
+        mediaDict = {}
     else: # we passed nothing
-        print ("is none")
-        videoDict = {}
+        mediaDict = {}
             
     episodeTitle = dictValue (episode, "title", None)
     if episodeTitle is not None:
         names.append(episodeTitle)
         # TODO: append the aliases as well
         names = names + aliases (episodeTitle)
-
+        
     mediaFolder = dictValue(configs, "mediaFolder", None)
     stockFolder = dictValue(configs, "stockFolder", None)
      
-    videoDict["file"] = getSuitableVideoFromFolders ([mediaFolder, stockFolder], names)
-    return videoDict
+    mediaDict["file"] = getSuitableVideoFromFolders ([mediaFolder, stockFolder], names, extensions)
+    if mediaDict["file"] is None:
+        defaultMedia = dictValue (configs, defaultMediaKey, None)
+        if defaultMedia is None:
+            return {}
+            
+        mediaDict["file"] = getSuitableVideoFromFolders ([mediaFolder, stockFolder], [defaultMedia], extensions)
+        # check if we have a timestamps entry; convert that to start and length.
+        timestamps = dictValue (mediaDict, "timestamps", None)
+        if timestamps is not None:
+            startSecond = getSeconds(timestamps[0])
+            endSecond = getSeconds(timestamps[1])
+            mediaDict["start"] = startSecond
+            mediaDict["length"] = endSecond - startSecond
     
+    return mediaDict
+    
+    
+    
+def getSuitableVideoStream (episode, configs):
+    return getSuitableMediaStream (episode, configs, "video", "defaultVideoFile", [".mp4", ".mov", ".avi"])
+
+def getSuitableAudioStream (episode, configs):
+    return getSuitableMediaStream (episode, configs, "audio", "defaultAudioFile", [".mp3", ".ogg", ".flac"])
+
     
 def getSuitableVideo (folder, names):
     return getSuitableVideoFromFolders([folder], names)
-    
-def makeVideoForEpisode (mediaFolders, episodeName, minLength=30, targetRes=(1920,1080) ):
-# search a video for that name, and ideally for the 1080p resolution
-    names = getNamesFromEpisodeName (episodeName)
-    nonScaledVideo = getSuitableVideoFromFolders(mediaFolders, names)    
-# should have a pretty good length
-    if (getLengthOfStream(nonScaledVideo) < minLength):
-        videoToCleanup = nonScaledVideo
-        nonScaledVideo = append (nonScaledVideo, nonScaledVideo)
-        # cleanup videoToCleanup?
-# scale it to 1080p if needed
-    scaledVideo = nonScaledVideo
-    if not (getResolution (nonScaledVideo)[1] == targetRes[1]):
-        scaledVideo = scaleVideo(nonScaledVideo, targetRes)
-        #cleanup nonScaledVideo?
-        
-    return scaledVideo
 
-def makeAudioForEposiode (audioFile, episodeName, config):
-# from the config, get the start and end in the audio
-# build the output file name from the episode
-# then just return a trim.
-    return 0
 
-# needs a video - see makeVideoForEpisode
+def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
+    videoDict = getSuitableVideoStream(episode, configs)
+    audioDict = getSuitableAudioStream(episode, configs)
+    textArray = getTextArrayForEpisode(episode)
+
+    # TODO pass all options. Do a resize
+    return makeEpisodeWithAllInputs (videoDict, audioDict, textArray)
+
 # needs an audio - see makeAudioForEposiode
-def makeEpisodeWithAllInputs (video, audio, \
-textLinesArray=[], \
+def makeEpisodeWithAllInputs (video, audio, textLinesArray, \
 options={"padAudio": 1, "videoSoundVolume" : 0.1}):
 # pad the audio with 1 second of silence
 
 # video length must be larger than the audio. Loop it if needed.
 
-# then  overlay the audio
-
-# then print the text
     videoLen = getLengthOfStream(video)
     audioLen = getLengthOfStream(audio)
     padding = dictValue (options, "padAudio", 1)
@@ -436,7 +459,7 @@ options={"padAudio": 1, "videoSoundVolume" : 0.1}):
     audioToVideoLengthRatio = (audioLen + padding + padding) / videoLen
     fixedVideo = getFileFromInput (video)
     nextIterationVideo = fixedVideo
-    for i in range(0, audioToVideoLengthRatio):
+    for i in range(0, int(audioToVideoLengthRatio)):
         nextIterationVideo = append(fixedVideo, video)
         #cleanup fixedVideo?
         fixedVideo = nextIterationVideo
@@ -449,10 +472,13 @@ options={"padAudio": 1, "videoSoundVolume" : 0.1}):
     
     videoAudioWeight = dictValue (options, "videoSoundVolume", 0.1)
     
+# then  overlay the audio
+
     videoWithOverlayedAudio = overlayAudio (videoInput, paddedAudio, firstStreamAudioWeight=videoAudioWeight)
     
     returnedVideo = videoWithOverlayedAudio
     
+# then print the text
     if len(textLinesArray) > 0:
         returnedVideo = drawText (videoWithOverlayedAudio, textLinesArray)
         # cleanup videoWithOverlayedAudio?

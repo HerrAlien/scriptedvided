@@ -245,5 +245,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("08:32", "09:07") },\
 })
 
-for episode in configs["episodes"]:
-    print (str(scriptedvided.getTextArrayForEpisode(episode)) + "\n")
+#for episode in configs["episodes"]:
+print (str(scriptedvided.makeVideoForEpisode(configs["episodes"][6], configs)) + "\n")
+#print (str(scriptedvided.getTextArrayForEpisode(configs["episodes"][6])) + "\n")
+
