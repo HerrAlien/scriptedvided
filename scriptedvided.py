@@ -334,20 +334,63 @@ def selectSuitableVideo (paths, desiredLength=30, desiredYRes=1080):
                 potentialVideos.append(fullVideoPath)
         else:
             potentialVideos.append(fullVideoPath)
-    return potentialVideos[0]
+    if len (potentialVideos) > 0:
+        return potentialVideos[0]
+    return None
     
 def getMediaArrayFromFoldersAndNames (folders, names):
     paths = []
     for folder in folders:
-        for file in os.listdir(folder):
-            if file.upper().find(name.upper()) >= 0:
-                paths.append(os.path.join(folder, file))
+        if (folder is not None):
+            for file in os.listdir(folder):
+                for name in names:
+                    fullPath = os.path.join(folder, file)
+                    nameUpper = name.upper()
+                    if file.upper().find(nameUpper) >= 0:
+                        paths.append(fullPath)
+                    elif fullPath.upper() == nameUpper:
+                        paths.append(fullPath)
     return paths
 
 def getSuitableVideoFromFolders (folders, names):
     media = getMediaArrayFromFoldersAndNames (folders, names)
     return selectSuitableVideo(media)
 
+def getSuitableVideoStream (episode, configs):
+    names = []
+
+    videoDict =  dictValue (episode, "video", None)
+    # see if we can simply return it as is
+    if type(videoDict) is type({}):
+        print ("is dictionary")
+        # check that we have a full path for "file"
+        dictFile = dictValue (videoDict, "file", None)
+        if dictFile is not None:
+            if os.path.exists(dictFile):
+                return videoDict # path exists, so just use that
+            else:
+                names.append(dictFile) # not a full path, we'll search for it.
+    elif type (videoDict) is type (""): # we passed a string
+        print ("is string")
+        names.append(videoDict) # so add it to the search names
+        videoDict = {}
+    else: # we passed nothing
+        print ("is none")
+        videoDict = {}
+            
+    episodeTitle = dictValue (episode, "title", None)
+    if episodeTitle is not None:
+        names.append(episodeTitle)
+        # TODO: append the aliases as well
+        names = names + aliases (episodeTitle)
+
+    mediaFolder = dictValue(configs, "mediaFolder", None)
+    stockFolder = dictValue(configs, "stockFolder", None)
+     
+    videoDict["file"] = getSuitableVideoFromFolders ([mediaFolder, stockFolder], names)
+    return videoDict
+    
+    
 def getSuitableVideo (folder, names):
     return getSuitableVideoFromFolders([folder], names)
     
@@ -418,6 +461,41 @@ options={"padAudio": 1, "videoSoundVolume" : 0.1}):
     # cleanup fixedVideo, if audioToVideoLengthRatio > 1 ?
     return returnedVideo
 
+
+def aliases(inputName):
+    gameAliases = [\
+        ["Apex", "Apex Legends", "ApexLegends", "Apex_Legends"],\
+        ["Alien Isolation", "Alien: Isolation", "Alien:Isolation", "AlienIsolation", "Alien_Isolation"],\
+        ["Call of Duty: Warzone","Call_of_Duty_Warzone", "CallOfDutyWarzone", "COD Warzone", "COD_Warzone", "Warzone"],\
+    ]
+    '''
+    TODO:
+    Hyperscape
+    Battlefield V
+    Control
+    Rainbow Six Siege
+    Conunter-Strike: Global Offensive
+    DOTA2
+    Fortnite
+    Rocket League
+    Splitgate
+    Valorant
+    Genshin Impact, Paladins, Realm Royale, Rogue Company, World of Tanks Blitz, Warframe'''  
+  
+    for namesArr in gameAliases:
+        for potentialName in namesArr:
+            if potentialName.upper() == inputName.upper():
+                return namesArr
+
+    for namesArr in gameAliases:
+        for potentialName in namesArr:
+            potentialNameUpper = potentialName.upper()
+            inputNameUpper = inputName.upper()
+            if potentialNameUpper.find(inputNameUpper) >= 0 or inputNameUpper.find(potentialNameUpper) >= 0:
+                return namesArr
+                
+    print ("WARNING: '" + inputName + "' has no known aliases.")
+    return [] # no lnown
     
 if __name__ == "__main__":
 #   truncatedvid = truncate ( "C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", -10, 30, "vid.mp4" )
