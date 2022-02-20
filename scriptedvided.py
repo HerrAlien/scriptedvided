@@ -259,7 +259,13 @@ def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
     return output
 
 def getLengthOfStream (stream):
+    if type(stream) is type ({}):
+        length = dictValue(stream, "length", None)
+        if length is not None:
+            return length
+    
     filepath = getFileFromInput (stream)
+    
     finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out = str(finishedProc.stderr) + str(finishedProc.stdout)
     durationIndex = out.index("Duration")
@@ -452,29 +458,36 @@ options={"padAudio": 1, "videoSoundVolume" : 0.1}):
 
 # video length must be larger than the audio. Loop it if needed.
 
+#truncate them ....
+
     videoLen = getLengthOfStream(video)
     audioLen = getLengthOfStream(audio)
     padding = dictValue (options, "padAudio", 1)
     
-    audioToVideoLengthRatio = (audioLen + padding + padding) / videoLen
+    audioToVideoLengthRatio = int((audioLen + padding + padding) / videoLen)
     fixedVideo = getFileFromInput (video)
     nextIterationVideo = fixedVideo
-    for i in range(0, int(audioToVideoLengthRatio)):
-        nextIterationVideo = append(fixedVideo, video)
-        #cleanup fixedVideo?
-        fixedVideo = nextIterationVideo
+    if (audioToVideoLengthRatio > 1):
+        for i in range(0, audioToVideoLengthRatio):
+            nextIterationVideo = append(fixedVideo, video)
+            #cleanup fixedVideo?
+            fixedVideo = nextIterationVideo
     
     videoLen = getLengthOfStream(fixedVideo)
     videoStart = (videoLen - (audioLen + padding + padding)) * 0.5
     
-    videoInput = { "file" : fixedVideo, "start" : videoStart, "length" : videoLen}
+    trimmedVideo = truncate (fixedVideo, videoStart, audioLen + padding + padding)
+
+    
     paddedAudio = padAudioStream (audio, "padded.ogg", padding, padding)
     
     videoAudioWeight = dictValue (options, "videoSoundVolume", 0.1)
     
+# TODO    trim everything to fit.
+    
 # then  overlay the audio
 
-    videoWithOverlayedAudio = overlayAudio (videoInput, paddedAudio, firstStreamAudioWeight=videoAudioWeight)
+    videoWithOverlayedAudio = overlayAudio (trimmedVideo, paddedAudio, firstStreamAudioWeight=videoAudioWeight)
     
     returnedVideo = videoWithOverlayedAudio
     
