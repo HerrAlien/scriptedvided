@@ -527,7 +527,7 @@ def aliases(inputName):
         ["Battlefield V","Battlefield 5", "Battlefield_V", "Battlefield_5", "bfv", "bf5"],\
         ["Rainbow Six Siege","Rainbow 6 Siege", "Rainbow Six: Siege","Rainbow 6: Siege", "Rainbow_Six_Siege","Rainbow_6_Siege", \
         "r6s", "RainbowSixSiege","Rainbow6Siege"],\
-        ["Conunter-Strike: Global Offensive","Conunter Strike: Global Offensive", "ConunterStrike: Global Offensive",\
+        ["Counter-Strike: Global Offensive","Counter Strike: Global Offensive", "ConunterStrike: Global Offensive",\
         "ConunterStrike", "cs:go","csgo", "cs-go"],\
         ["Rocket League","Rocket_League", "RocketLeague"],\
         ["Genshin Impact", "GenshinImpact", "Genshin_Impact"], \
