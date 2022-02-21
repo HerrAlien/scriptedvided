@@ -74,10 +74,10 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Rainbow Six - Siege",\
+{ "title": "Rainbow Six: Siege",\
 "audio" : {"timestamps" : ("02:54", "03:19") },\
 "overlay" : { \
-    "text" : ["'Rainbow Six - Siege'",\
+    "text" : ["'Rainbow Six\: Siege'",\
               "'1080p, low setings, 50\\\% render scale - Average\: 46fps, 1\\\% lows\: 25fps'",\
               "'720p, low setings, 50\\\% render scale - Average\: 71fps, 1\\\% lows\: 32fps'"]\
 }, \
@@ -98,10 +98,9 @@ configs["episodes"].append(\
 { "title": "Counter Strike: Global Offensive",\
 "audio" : {"timestamps" : ("03:38", "03:47.5") },\
 "overlay" : { \
-    "benchmark" : { \
-        "FPS values" : [68, 29, 26], \
-        "settings" : "1080p, low settings. Capturing with MSI Afterburner decreases the FPS in CSGO.", \
-    }\
+    "text" : ["'Counter Strike\: Global Offensive'",\
+              "'Capturing with MSI Afterburner decreases the FPS in CSGO.'", \
+              "'1080p, low settings - Average\: 68fps, 1\\\% lows\: 29fps, 0.1\\\% lows\: 26fps'"]\
 }, \
 })
 
@@ -111,7 +110,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [77, 38, 24], \
-        "settings" : "1080p, low settings, 100\\\% render scale", \
+        "settings" : "1080p, low settings, 100% render scale", \
     }\
 }, \
 })
@@ -122,7 +121,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [65, 29, 18], \
-        "settings" : "1080p, performance mode, view distance FAR, 100\\\% render scale", \
+        "settings" : "1080p, performance mode, view distance FAR, 100% render scale", \
     }\
 }, \
 })
@@ -135,7 +134,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [63, 24, 22], \
-        "settings" : "1080p, low settings, 100\\\% render scale", \
+        "settings" : "1080p, low settings, 100% render scale", \
     }\
 }, \
 })
@@ -222,6 +221,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Warframe",\
+"video" : "hd5770_Warframe_armsDealer_1080pLow.mp4",\
 "audio" : {"timestamps" : ("06:36", "06:57") },\
 "overlay" : { \
     "benchmark" : { \
@@ -247,10 +247,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("08:32", "09:07") },\
 })
 
-#for episode in configs["episodes"]:
-#    try:
-#        scriptedvided.makeVideoForEpisode(episode, configs)
-#    except:
-#        print ("One error ...")
-print (str(scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs)) + "\n")
+for episode in configs["episodes"]:
+    try:
+        scriptedvided.makeVideoForEpisode(episode, configs)
+    except:
+        print ("One error ...")
+#print (str(scriptedvided.makeVideoForEpisode(configs["episodes"][10], configs)) + "\n")
 

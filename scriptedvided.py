@@ -4,6 +4,12 @@ import shutil
 
 def ffmpegParams():
     return ["ffmpeg", "-y"]
+    
+def ffmpegSafeString (someText):
+    return someText.replace(":", "\:").replace("%", "\\\%")
+
+def filePathSafeString(someText):
+    return someText.replace(":", " -")
 
 def defaultOutput (input, suffix):
     root, ext = os.path.splitext (input)
@@ -75,7 +81,7 @@ def toInputParams (inputStream):
 
     
 def getDrawTextCommandFromArray (text):
-    textSize = 36
+    textSize = 48
     paramText = ""
     borderWidth = 0.5 * textSize
     boxcolor="#00800080"
@@ -135,7 +141,7 @@ def getTextArrayForEpisode (episode):
 
     fpsAsText = getFpsStatsText (fpsArr[0], fpsArr[1], fpsArr[2])
     
-    return (["'" + episodeName + " (" + settings + ")'", fpsAsText ])
+    return (["'" + ffmpegSafeString(episodeName + " (" + settings) + ")'", fpsAsText ])
         
 def getScaleCommand(resolutionPair):
     return "scale="+str(resolutionPair[0])+ "x" +str(resolutionPair[1]) + ":flags=lanczos"
@@ -464,7 +470,7 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     # get extension and dir
     dir = dictValue(configs, "outputFolder", ".")
     ext = os.path.splitext(builtVideo)[1]
-    episodeVideo = os.path.join(dir, episode["title"].replace(":", " -") + ext)
+    episodeVideo = os.path.join(dir, filePathSafeString(episode["title"]) + ext)
     shutil.move (builtVideo, episodeVideo)
     return episodeVideo
     
