@@ -202,7 +202,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [66, 24, 13], \
-        "settings" : "1080p, high settings", \
+        "settings" : "1080p, low settings", \
     }\
 }, \
 })
@@ -252,5 +252,5 @@ for episode in configs["episodes"]:
         scriptedvided.makeVideoForEpisode(episode, configs)
     except:
         print ("One error ...")
-#print (str(scriptedvided.makeVideoForEpisode(configs["episodes"][10], configs)) + "\n")
+#print (str(scriptedvided.makeVideoForEpisode(configs["episodes"][6], configs)) + "\n")
 
