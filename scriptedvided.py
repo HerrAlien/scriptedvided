@@ -97,6 +97,7 @@ def getDrawTextCommandFromArray (text):
         stepSize = (textSize + 2 * borderWidth + lineSpacing)
         offsetFromBottom = len(text) * stepSize
         step = 0
+        initialOffset = offsetFromBottom
         for line in text:
             iterationStartNode = ";[intermediate"+ str(step) +"]"
             iterationEndNode = "[intermediate"+ str(step + 1) +"]"
@@ -107,7 +108,7 @@ def getDrawTextCommandFromArray (text):
             if (step == (len(text) - 1)):
                 iterationEndNode = ""
 
-            paramText = paramText  + iterationStartNode + "drawtext=y=H-"+ str(offsetFromBottom) +":box=1:boxborderw="+ str(borderWidth) + ":boxcolor="+boxcolor+":font=Arial:fontsize="+ str (textSize) +":fontcolor=White" + ":text="+line 
+            paramText = paramText  + iterationStartNode + "drawtext=y=(H+"+str(initialOffset)+")/2-"+ str(offsetFromBottom) +":box=1:boxborderw="+ str(borderWidth) + ":boxcolor="+boxcolor+":font=Arial:fontsize="+ str (textSize) +":fontcolor=White" + ":text="+line 
             paramText = paramText + transition
             paramText = paramText + iterationEndNode
 
