@@ -340,7 +340,7 @@ def scaleVideo(video, resolutionPair, output=None):
     
     if (output == None):
         root,ext = os.path.splitext (getFileFromInput(video))
-        output = defaultOutput (getFileFromInput(video), "_scaled_" + str(resolutionPair[0]) + "x" + + str(resolutionPair[1])  + ext)
+        output = defaultOutput (getFileFromInput(video), "_scaled_" + str(resolutionPair[0]) + "x" + str(resolutionPair[1])  + ext)
 
     params.append(output)
     subprocess.run(params)
@@ -466,7 +466,10 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     textArray = getTextArrayForEpisode(episode)
 
     # TODO pass all options. Do a resize
-    builtVideo = makeEpisodeWithAllInputs (videoDict, audioDict, textArray)
+    
+    opts = {"padAudio": 1, "videoSoundVolume" : 0.15, "targetRes": targetRes }
+    
+    builtVideo = makeEpisodeWithAllInputs (videoDict, audioDict, textArray, opts)
     # get extension and dir
     dir = dictValue(configs, "outputFolder", ".")
     ext = os.path.splitext(builtVideo)[1]
@@ -476,8 +479,7 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     
 
 # needs an audio - see makeAudioForEposiode
-def makeEpisodeWithAllInputs (video, audio, textLinesArray, \
-options={"padAudio": 1, "videoSoundVolume" : 0.15}):
+def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
 # pad the audio with 1 second of silence
 
 # video length must be larger than the audio. Loop it if needed.
@@ -505,13 +507,20 @@ options={"padAudio": 1, "videoSoundVolume" : 0.15}):
     
     trimmedVideo = truncate (fixedVideo, videoStart, audioLen + padding + padding)
     
+    scaledVideo = trimmedVideo
+    targetRes = dictValue(options, "targetRes", (1920,1080))
+    resolution = getResolution(trimmedVideo)
+    if (resolution[1] != targetRes[1]):
+        scaledVideo = scaleVideo(trimmedVideo, targetRes)
+        os.remove(trimmedVideo)
+    
     paddedAudio = padAudioStream (audio, "padded.ogg", padding, padding)
     
     videoAudioWeight = dictValue (options, "videoSoundVolume", 0.1)
     
 # then  overlay the audio
 
-    videoWithOverlayedAudio = overlayAudio (trimmedVideo, paddedAudio, firstStreamAudioWeight=videoAudioWeight)
+    videoWithOverlayedAudio = overlayAudio (scaledVideo, paddedAudio, firstStreamAudioWeight=videoAudioWeight)
     returnedVideo = videoWithOverlayedAudio
     
 # then print the text
@@ -519,9 +528,6 @@ options={"padAudio": 1, "videoSoundVolume" : 0.15}):
         returnedVideo = drawText (videoWithOverlayedAudio, textLinesArray)
         os.remove(videoWithOverlayedAudio)
     
-    # cleanup paddedAudio?
-    # cleanup fixedVideo, if audioToVideoLengthRatio > 1 ?
-    os.remove(trimmedVideo)
     return returnedVideo
 
 
