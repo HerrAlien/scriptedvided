@@ -95,7 +95,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Counter Strike: Global Ofensive",\
+{ "title": "Counter Strike: Global Offensive",\
 "audio" : {"timestamps" : ("03:38", "03:47.5") },\
 "overlay" : { \
     "benchmark" : { \
@@ -247,7 +247,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("08:32", "09:07") },\
 })
 
-#for episode in configs["episodes"]:
-scriptedvided.makeVideoForEpisode(configs["episodes"][6], configs)
+for episode in configs["episodes"]:
+    try:
+        scriptedvided.makeVideoForEpisode(episode, configs)
+    except:
+        print ("One error ...")
 #print (str(scriptedvided.getTextArrayForEpisode(configs["episodes"][6])) + "\n")
 

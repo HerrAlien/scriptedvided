@@ -464,7 +464,7 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     # get extension and dir
     dir = dictValue(configs, "outputFolder", ".")
     ext = os.path.splitext(builtVideo)[1]
-    episodeVideo = os.path.join(dir, episode["title"] + ext)
+    episodeVideo = os.path.join(dir, episode["title"].replace(":", " -") + ext)
     shutil.move (builtVideo, episodeVideo)
     return episodeVideo
     
@@ -524,17 +524,24 @@ def aliases(inputName):
         ["Apex", "Apex Legends", "ApexLegends", "Apex_Legends"],\
         ["Alien Isolation", "Alien: Isolation", "Alien:Isolation", "AlienIsolation", "Alien_Isolation"],\
         ["Call of Duty: Warzone","Call_of_Duty_Warzone", "CallOfDutyWarzone", "COD Warzone", "COD_Warzone", "Warzone"],\
+        ["Battlefield V","Battlefield 5", "Battlefield_V", "Battlefield_5", "bfv", "bf5"],\
+        ["Rainbow Six Siege","Rainbow 6 Siege", "Rainbow Six: Siege","Rainbow 6: Siege", "Rainbow_Six_Siege","Rainbow_6_Siege", \
+        "r6s", "RainbowSixSiege","Rainbow6Siege"],\
+        ["Conunter-Strike: Global Offensive","Conunter Strike: Global Offensive", "ConunterStrike: Global Offensive",\
+        "ConunterStrike", "cs:go","csgo", "cs-go"],\
+        ["Rocket League","Rocket_League", "RocketLeague"],\
+        ["Genshin Impact", "GenshinImpact", "Genshin_Impact"], \
+        ["Realm Royale", "Realm_Royale", "RealmRoyale"], \
+        ["Rogue Company", "Rogue_Company", "RogueCompany"], \
+        ["World of Tanks Blitz", "World_of_Tanks_Blitz", "World of Tanks: Blitz", "WorldOfTanksBlitz", "WoT Blitz", "WoT: Blitz",\
+        "WoT_Blitz", "wotblitz"], \
     ]
     '''
     TODO:
     Hyperscape
-    Battlefield V
     Control
-    Rainbow Six Siege
-    Conunter-Strike: Global Offensive
     DOTA2
     Fortnite
-    Rocket League
     Splitgate
     Valorant
     Genshin Impact, Paladins, Realm Royale, Rogue Company, World of Tanks Blitz, Warframe'''  
