@@ -1,8 +1,10 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "hd5770_3.ogg",\
+configs = { "defaultAudioFile" : "hd5770_4.ogg",\
 "mediaFolder" : "C:\\Users\\Admin\\Videos\\hd5770", \
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
+"outputFolder" : "C:\\Users\\Admin\\Videos\\hd5770\\output", \
+"outputFile" : "hd5770.mp4", \
 "episodes" : []}
 
 configs["episodes"].append(\
@@ -246,6 +248,6 @@ configs["episodes"].append(\
 })
 
 #for episode in configs["episodes"]:
-print (str(scriptedvided.makeVideoForEpisode(configs["episodes"][6], configs)) + "\n")
+scriptedvided.makeVideoForEpisode(configs["episodes"][6], configs)
 #print (str(scriptedvided.getTextArrayForEpisode(configs["episodes"][6])) + "\n")
 

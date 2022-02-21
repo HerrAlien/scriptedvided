@@ -1,5 +1,6 @@
 import subprocess
 import os
+import shutil
 
 def ffmpegParams():
     return ["ffmpeg", "-y"]
@@ -74,7 +75,7 @@ def toInputParams (inputStream):
 
     
 def getDrawTextCommandFromArray (text):
-    textSize = 24
+    textSize = 36
     paramText = ""
     borderWidth = 0.5 * textSize
     boxcolor="#00800080"
@@ -420,14 +421,24 @@ def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, ext
             return {}
             
         mediaDict["file"] = getSuitableVideoFromFolders ([mediaFolder, stockFolder], [defaultMedia], extensions)
-        # check if we have a timestamps entry; convert that to start and length.
-        timestamps = dictValue (mediaDict, "timestamps", None)
-        if timestamps is not None:
-            startSecond = getSeconds(timestamps[0])
-            endSecond = getSeconds(timestamps[1])
-            mediaDict["start"] = startSecond
-            mediaDict["length"] = endSecond - startSecond
-    
+        
+        
+    # check if we have a timestamps entry; convert that to start and length.
+    timestamps = dictValue (mediaDict, "timestamps", None)
+    if timestamps is not None:
+        startSecond = getSeconds(timestamps[0])
+        endSecond = getSeconds(timestamps[1])
+        mediaDict["start"] = startSecond
+        mediaDict["length"] = endSecond - startSecond
+    else:
+        altVal = dictValue (mediaDict, "start", None)
+        if altVal is not None:
+            mediaDict["start"] = getSeconds(altVal)
+
+        altVal = dictValue (mediaDict, "length", None)
+        if altVal is not None:
+            mediaDict["length"] = getSeconds(altVal)
+        
     return mediaDict
     
     
@@ -449,11 +460,18 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     textArray = getTextArrayForEpisode(episode)
 
     # TODO pass all options. Do a resize
-    return makeEpisodeWithAllInputs (videoDict, audioDict, textArray)
+    builtVideo = makeEpisodeWithAllInputs (videoDict, audioDict, textArray)
+    # get extension and dir
+    dir = dictValue(configs, "outputFolder", ".")
+    ext = os.path.splitext(builtVideo)[1]
+    episodeVideo = os.path.join(dir, episode["title"] + ext)
+    shutil.move (builtVideo, episodeVideo)
+    return episodeVideo
+    
 
 # needs an audio - see makeAudioForEposiode
 def makeEpisodeWithAllInputs (video, audio, textLinesArray, \
-options={"padAudio": 1, "videoSoundVolume" : 0.1}):
+options={"padAudio": 1, "videoSoundVolume" : 0.15}):
 # pad the audio with 1 second of silence
 
 # video length must be larger than the audio. Loop it if needed.
@@ -474,30 +492,30 @@ options={"padAudio": 1, "videoSoundVolume" : 0.1}):
             fixedVideo = nextIterationVideo
     
     videoLen = getLengthOfStream(fixedVideo)
-    videoStart = (videoLen - (audioLen + padding + padding)) * 0.5
+    videoStart = dictValue (video, "start", None)
+    print (str(videoStart) + " of type " + str(type(videoStart)))
+    if videoStart is None:
+        videoStart = (videoLen - (audioLen + padding + padding)) * 0.5    
     
     trimmedVideo = truncate (fixedVideo, videoStart, audioLen + padding + padding)
-
     
     paddedAudio = padAudioStream (audio, "padded.ogg", padding, padding)
     
     videoAudioWeight = dictValue (options, "videoSoundVolume", 0.1)
     
-# TODO    trim everything to fit.
-    
 # then  overlay the audio
 
     videoWithOverlayedAudio = overlayAudio (trimmedVideo, paddedAudio, firstStreamAudioWeight=videoAudioWeight)
-    
     returnedVideo = videoWithOverlayedAudio
     
 # then print the text
     if len(textLinesArray) > 0:
         returnedVideo = drawText (videoWithOverlayedAudio, textLinesArray)
-        # cleanup videoWithOverlayedAudio?
+        os.remove(videoWithOverlayedAudio)
     
     # cleanup paddedAudio?
     # cleanup fixedVideo, if audioToVideoLengthRatio > 1 ?
+    os.remove(trimmedVideo)
     return returnedVideo
 
 
