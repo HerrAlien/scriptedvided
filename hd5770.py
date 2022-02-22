@@ -247,10 +247,5 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("08:32", "09:07") },\
 })
 
-for episode in configs["episodes"]:
-    try:
-        scriptedvided.makeVideoForEpisode(episode, configs)
-    except:
-        print ("One error ...")
-#print (str(scriptedvided.makeVideoForEpisode(configs["episodes"][6], configs)) + "\n")
+scriptedvided.makeVideo(configs)
 

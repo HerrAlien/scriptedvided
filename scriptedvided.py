@@ -145,7 +145,7 @@ def getTextArrayForEpisode (episode):
     return (["'" + ffmpegSafeString(episodeName + " (" + settings) + ")'", fpsAsText ])
         
 def getScaleCommand(resolutionPair):
-    return "scale="+str(resolutionPair[0])+ "x" +str(resolutionPair[1]) + ":flags=lanczos"
+    return "scale="+str(resolutionPair[0])+ "x" +str(resolutionPair[1]) + ":flags=lanczos[v];[v]setsar=1"
     
 # input - the input media to be truncated
 # start - the input media to be truncated
@@ -161,28 +161,6 @@ def truncate(input, start=-1, length=-1, output=None, recompress=False):
 
     params.append(output)
     
-    subprocess.run(params)
-    
-    return output
-    
-def substituteAudio (inputVid, inputAudio, output=None, recompress=False):
-    params = ffmpegParams();
-
-    params.append ("-vn")
-    params = params + toInputParams (inputAudio)
-    
-    params.append("-an")
-    params = params + toInputParams (inputVid)
-    
-    if (output == None):
-        audioRoot,ext = os.path.splitext (getFileFromInput(inputAudio))
-        output = defaultOutput (getFileFromInput(inputVid), "_substituteAudio_"  + os.path.basename(audioRoot) )
-
-    if (not recompress):
-        params.append("-c")
-        params.append("copy")
-
-    params.append(output)
     subprocess.run(params)
     
     return output
@@ -223,40 +201,9 @@ def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1,
     
     return output
 
-def append (firstStream, secondStream, output=None, recompressVideo=True):
-    params = ffmpegParams();
-
-    params = params + toInputParams(firstStream)    
-
-    params = params + toInputParams(secondStream)    
-
-        
-    params.append("-filter_complex")
-    params.append("concat=v=1:a=1")
+def substituteAudio (inputVid, inputAudio, output=None, recompress=False):
+    return overlayAudio(inputVid, inputAudio, output, 0.01, recompress)
     
-    if (not recompressVideo):
-        params.append ("-c:v")
-        params.append ("copy")
-    
-    if (output == None):
-        secondRoot,ext = os.path.splitext (getFileFromInput(secondStream))
-        output = defaultOutput (getFileFromInput(firstStream), "_append_"  + os.path.basename(secondRoot))
-
-    params.append(output)
-    subprocess.run(params)
-    
-    return output
-
-#def appendMultiple (streams, output=None, recompressVideo=True):
-#    result = streams[0]
-#    for i in range (1, len(streams)-1):
-#        result = append(result, streams[i], "temp" + str(i) + ".mp4", recompressVideo)
-#        try:
-#            os.remove("temp" + str(i-1) + ".mp4")
-#        except:
-#            print ("ERR deleting temp" + str(i-1) + ".mp4")
-#    return append(result, streams[len(streams)-1], output, recompressVideo)
-
 def appendMultiple (streams, output=None, recompressVideo=True):
 
     params = ffmpegParams();
@@ -285,7 +232,8 @@ def appendMultiple (streams, output=None, recompressVideo=True):
     
     return output
 
-
+def append (firstStream, secondStream, output=None, recompressVideo=True):
+    return appendMultiple([firstStream, secondStream], output, recompressVideo)
 
     
 def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
@@ -373,19 +321,30 @@ def drawText (stream, text, output=None):
     return output
 
 def scaleVideo(video, resolutionPair, output=None):
+# get the audio
     params = ffmpegParams();
-
+    params.append ("-vn")
+    params = params + toInputParams (video)
+    tempOutAudio = "sound.ogg"
+    params.append(tempOutAudio)   
+    subprocess.run(params)
+    
+#scale the video, set SAR to 1
+    params = ffmpegParams();
     params = params + toInputParams(video)    
     params.append("-filter_complex")
 
     params.append(getScaleCommand(resolutionPair))
     
+    tempOut = "nosound.mp4"
+    params.append(tempOut)   
+    subprocess.run(params)
+
     if (output == None):
         root,ext = os.path.splitext (getFileFromInput(video))
         output = defaultOutput (getFileFromInput(video), "_scaled_" + str(resolutionPair[0]) + "x" + str(resolutionPair[1])  + ext)
-
-    params.append(output)
-    subprocess.run(params)
+    
+    overlayAudio(tempOut, tempOutAudio, output, 0.01)
     
     return output
     
@@ -649,23 +608,23 @@ if __name__ == "__main__":
 #    }\
 #} }
 #    print (getTextArrayForEpisode(episode))
-    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra_truncate_.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
-    vids = []
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Counter Strike - Global Offensive.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\DOTA2.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Fortnite.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Genshin Impact.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Paladins.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rainbow Six - Siege.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Realm Royale.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rocket League.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rogue Company.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Splitgate.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
-    print(appendMultiple(vids), None, False)
+    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
+#    vids = []
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Counter Strike - Global Offensive.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\DOTA2.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Fortnite.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Genshin Impact.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Paladins.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rainbow Six - Siege.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Realm Royale.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rocket League.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rogue Company.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Splitgate.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
+#    print(appendMultiple(vids), None, False)
