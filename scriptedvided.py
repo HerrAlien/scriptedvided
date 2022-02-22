@@ -3,13 +3,13 @@ import os
 import shutil
 
 def ffmpegParams():
-    return ["ffmpeg", "-y"]
+    return ["ffmpeg", "-y", "-hide_banner"]
     
 def ffmpegSafeString (someText):
     return someText.replace(":", "\:").replace("%", "\\\%")
 
 def filePathSafeString(someText):
-    return someText.replace(":", " -")
+    return someText.replace(":", " ")
 
 def defaultOutput (input, suffix):
     root, ext = os.path.splitext (input)
@@ -232,7 +232,7 @@ def append (firstStream, secondStream, output=None, recompressVideo=True):
 
         
     params.append("-filter_complex")
-    params.append("concat")
+    params.append("concat=v=1:a=1")
     
     if (not recompressVideo):
         params.append ("-c:v")
@@ -246,6 +246,47 @@ def append (firstStream, secondStream, output=None, recompressVideo=True):
     subprocess.run(params)
     
     return output
+
+#def appendMultiple (streams, output=None, recompressVideo=True):
+#    result = streams[0]
+#    for i in range (1, len(streams)-1):
+#        result = append(result, streams[i], "temp" + str(i) + ".mp4", recompressVideo)
+#        try:
+#            os.remove("temp" + str(i-1) + ".mp4")
+#        except:
+#            print ("ERR deleting temp" + str(i-1) + ".mp4")
+#    return append(result, streams[len(streams)-1], output, recompressVideo)
+
+def appendMultiple (streams, output=None, recompressVideo=True):
+
+    params = ffmpegParams();
+    for stream in streams:
+        params = params + toInputParams(stream)    
+
+    params.append("-filter_complex")
+    
+    streamsIds = ""
+    for i in range (0, len(streams)):
+        iStr = str(i)
+        streamsIds = streamsIds + "["+iStr+":v]" + "["+iStr+":a]"
+    
+    params.append(streamsIds + "concat=n=" + str(len(streams)) + ":v=1:a=1")
+    
+    if (not recompressVideo):
+        params.append ("-c:v")
+        params.append ("copy")
+    
+    if (output == None):
+        secondRoot,ext = os.path.splitext (getFileFromInput(stream[0]))
+        output = "_append_.mp4"
+
+    params.append(output)
+    subprocess.run(params)
+    
+    return output
+
+
+
     
 def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
     params = ffmpegParams();
@@ -466,9 +507,7 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     audioDict = getSuitableAudioStream(episode, configs)
     textArray = getTextArrayForEpisode(episode)
 
-    # TODO pass all options. Do a resize
-    
-    opts = {"padAudio": 1, "videoSoundVolume" : 0.15, "targetRes": targetRes }
+    opts = {"padAudio": 1, "videoSoundVolume" : 0.1, "targetRes": targetRes }
     
     builtVideo = makeEpisodeWithAllInputs (videoDict, audioDict, textArray, opts)
     # get extension and dir
@@ -477,7 +516,17 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     episodeVideo = os.path.join(dir, filePathSafeString(episode["title"]) + ext)
     shutil.move (builtVideo, episodeVideo)
     return episodeVideo
-    
+
+def makeVideo (configs):
+    episodeVideos = []
+    for episode in configs["episodes"]:
+        try:
+            episodeVideo = makeVideoForEpisode(episode, configs)
+            episodeVideos.append(episodeVideo)
+        except:
+            print ("One error ...")
+
+    return appendMultiple(episodeVideos, os.path.join(configs["outputFolder"], configs["outputFile"]))
 
 # needs an audio - see makeAudioForEposiode
 def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
@@ -590,13 +639,33 @@ if __name__ == "__main__":
 #    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
 #     print(getResolution ("audio.ogg"))
 #    print(getSuitableVideos ("C:\\Users\\Admin\\Videos\\hd7770", ["fortnite"]))
-    episode = { "title": "Apex Legends",\
-"audio" : {"timestamps" : ("02:02", "02:14" ) },\
-"video" : "stock_ApexLegends_1080p.mp4", \
-"overlay" : { \
-    "benchmark" : { \
-        "FPS values" : [0, 0, 0], \
-        "settings" : "1080p, low settings", \
-    }\
-} }
-    print (getTextArrayForEpisode(episode))
+#    episode = { "title": "Apex Legends",\
+#"audio" : {"timestamps" : ("02:02", "02:14" ) },\
+#"video" : "stock_ApexLegends_1080p.mp4", \
+#"overlay" : { \
+#    "benchmark" : { \
+#        "FPS values" : [0, 0, 0], \
+#        "settings" : "1080p, low settings", \
+#    }\
+#} }
+#    print (getTextArrayForEpisode(episode))
+    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra_truncate_.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
+    vids = []
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Counter Strike - Global Offensive.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\DOTA2.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Fortnite.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Genshin Impact.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Paladins.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rainbow Six - Siege.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Realm Royale.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rocket League.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rogue Company.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Splitgate.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
+    print(appendMultiple(vids), None, False)
