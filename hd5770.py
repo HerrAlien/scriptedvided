@@ -10,6 +10,7 @@ configs = { "defaultAudioFile" : "hd5770_4.ogg",\
 configs["episodes"].append(\
 { "title": "Context of the launch",\
 "audio" : {"timestamps" : ("00:00", "00:24" ), "volume" : 0.999 },\
+"video" : "amd_2010.mp4"\
 })
 
 configs["episodes"].append(\
@@ -109,7 +110,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : ("03:47.5", "04:02") },\
+"audio" : {"timestamps" : ("03:47.5", "04:02"), "volume" : 0.95 },\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [77, 38, 24], \
@@ -237,18 +238,21 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Usefullness of used GPUs",\
-"audio" : {"timestamps" : ("06:57", "08:13") },\
+"audio" : {"timestamps" : ("06:57", "08:13"), "volume" : 0.999 },\
+"video" : "hd5770_pmd1g.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Usefullness of the HD 5770",\
 "audio" : {"timestamps" : ("08:13", "08:32") },\
+"video" : "hd5770_fortnite_BReel.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "HD 5770 for geeks",\
-"audio" : {"timestamps" : ("08:32", "09:07") },\
+"audio" : {"timestamps" : ("08:32", "09:07"), "volume" : 0.999},\
+"video" : "hd5770_pmd1g.mp4"\
 })
 
-print(scriptedvided.makeVideoForEpisode(configs["episodes"][3], configs))
-
+#print(scriptedvided.makeVideoForEpisode(configs["episodes"][1], configs))
+scriptedvided.makeVideo(configs)
