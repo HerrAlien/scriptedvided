@@ -145,7 +145,7 @@ def getTextArrayForEpisode (episode):
     return (["'" + ffmpegSafeString(episodeName + " (" + settings) + ")'", fpsAsText ])
         
 def getScaleCommand(resolutionPair):
-    return "scale="+str(resolutionPair[0])+ "x" +str(resolutionPair[1]) + ":flags=lanczos[v];[v]setsar=1"
+    return "scale="+str(resolutionPair[0])+ "x" +str(resolutionPair[1]) + ":flags=lanczos"
     
 # input - the input media to be truncated
 # start - the input media to be truncated
@@ -208,6 +208,8 @@ def appendMultiple (streams, output=None, recompressVideo=True):
 
     params = ffmpegParams();
     for stream in streams:
+        if getSar(stream) != (1,1):
+            stream = setSarToOne(stream)
         params = params + toInputParams(stream)    
 
     params.append("-filter_complex")
@@ -224,7 +226,7 @@ def appendMultiple (streams, output=None, recompressVideo=True):
         params.append ("copy")
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (getFileFromInput(stream[0]))
+        secondRoot,ext = os.path.splitext (getFileFromInput(streams[0]))
         output = "_append_.mp4"
 
     params.append(output)
@@ -299,6 +301,20 @@ def getResolution (filepath):
             
     return (0, 0)
 
+def getSar(filepath):
+    finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out = str(finishedProc.stderr) + str(finishedProc.stdout)
+    sarIndex = out.find("[SAR ")
+    if sarIndex < 0:
+        return (0, 0)
+
+    out = out[sarIndex + 5:];
+    darIndex = out.index(" DAR ")
+    out = out[0:darIndex]
+
+    outArr = out.split(":")
+    return (int(outArr[0]), int(outArr[1]))
+    
 def drawText (stream, text, output=None):
     if (text is None):
         print ("WARNING: no text provided, returning the unmodified input " + "'" + getFileFromInput(stream) + "'")
@@ -321,30 +337,34 @@ def drawText (stream, text, output=None):
     return output
 
 def scaleVideo(video, resolutionPair, output=None):
-# get the audio
-    params = ffmpegParams();
-    params.append ("-vn")
-    params = params + toInputParams (video)
-    tempOutAudio = "sound.ogg"
-    params.append(tempOutAudio)   
-    subprocess.run(params)
-    
-#scale the video, set SAR to 1
     params = ffmpegParams();
     params = params + toInputParams(video)    
     params.append("-filter_complex")
 
     params.append(getScaleCommand(resolutionPair))
     
-    tempOut = "nosound.mp4"
-    params.append(tempOut)   
-    subprocess.run(params)
-
     if (output == None):
         root,ext = os.path.splitext (getFileFromInput(video))
         output = defaultOutput (getFileFromInput(video), "_scaled_" + str(resolutionPair[0]) + "x" + str(resolutionPair[1])  + ext)
+
+    params.append(output)   
+    subprocess.run(params)
     
-    overlayAudio(tempOut, tempOutAudio, output, 0.01)
+    return output
+
+def setSarToOne(video, output=None):
+    params = ffmpegParams();
+    params = params + toInputParams(video)    
+    params.append("-filter_complex")
+
+    params.append("setsar=1")
+    
+    if (output == None):
+        root,ext = os.path.splitext (getFileFromInput(video))
+        output = defaultOutput (root, "_setSar1_" + ext)
+    
+    params.append(output)   
+    subprocess.run(params)
     
     return output
     
@@ -389,9 +409,6 @@ def getMediaArrayFromFoldersAndNames (folders, names, extensions):
 def getSuitableVideoFromFolders (folders, names, extensions=[".mp4", ".mov", ".avi"]):
     media = getMediaArrayFromFoldersAndNames (folders, names, extensions)
     return selectSuitableVideo(media)
-
-
-    
     
 def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, extensions):
     names = []
@@ -468,6 +485,10 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
 
     opts = {"padAudio": 1, "videoSoundVolume" : 0.1, "targetRes": targetRes }
     
+    audioVolume = dictValue(audioDict, "volume", None)
+    if audioVolume is not None:
+        opts["videoSoundVolume"] = 1 - float(audioVolume)
+    
     builtVideo = makeEpisodeWithAllInputs (videoDict, audioDict, textArray, opts)
     # get extension and dir
     dir = dictValue(configs, "outputFolder", ".")
@@ -504,7 +525,7 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
     nextIterationVideo = fixedVideo
     if (audioToVideoLengthRatio > 1):
         for i in range(0, audioToVideoLengthRatio):
-            nextIterationVideo = append(fixedVideo, video)
+            nextIterationVideo = append(fixedVideo, video, "___appended___.mp4")
             #cleanup fixedVideo?
             fixedVideo = nextIterationVideo
     
@@ -531,9 +552,11 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
 
     videoWithOverlayedAudio = overlayAudio (scaledVideo, paddedAudio, firstStreamAudioWeight=videoAudioWeight)
     returnedVideo = videoWithOverlayedAudio
+    os.remove(scaledVideo)
+    os.remove(paddedAudio)
     
 # then print the text
-    if len(textLinesArray) > 0:
+    if type(textLinesArray) is type ([]) and len(textLinesArray) > 0:
         returnedVideo = drawText (videoWithOverlayedAudio, textLinesArray)
         os.remove(videoWithOverlayedAudio)
     
@@ -608,10 +631,10 @@ if __name__ == "__main__":
 #    }\
 #} }
 #    print (getTextArrayForEpisode(episode))
-    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
-#    vids = []
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
+#    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
+    vids = []
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Counter Strike - Global Offensive.mp4")
@@ -627,4 +650,4 @@ if __name__ == "__main__":
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
-#    print(appendMultiple(vids), None, False)
+    print(appendMultiple(vids), None, False)

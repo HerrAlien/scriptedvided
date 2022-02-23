@@ -9,22 +9,25 @@ configs = { "defaultAudioFile" : "hd5770_4.ogg",\
 
 configs["episodes"].append(\
 { "title": "Context of the launch",\
-"audio" : {"timestamps" : ("00:00", "00:24" ) },\
+"audio" : {"timestamps" : ("00:00", "00:24" ), "volume" : 0.999 },\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
-"audio" : {"timestamps" : ("00:24", "00:55" ) },\
+"audio" : {"timestamps" : ("00:24", "00:55" ), "volume" : 0.999 },\
+"video" : "hd5770_techpowerup.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "The video card",\
-"audio" : {"timestamps" : ("00:55", "01:34" ) },\
+"audio" : {"timestamps" : ("00:55", "01:34" ), "volume" : 0.999 },\
+"video" : "hd57770_B-Reel_Heaven.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Better thermal solutions",\
-"audio" : {"timestamps" : ("01:34", "02:02" ) },\
+"audio" : {"timestamps" : ("01:34", "02:02" ), "volume" : 0.999 },\
+"video" : "hd5770_Hawk.mp4"\
 })
 
 configs["episodes"].append(\
@@ -247,5 +250,5 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("08:32", "09:07") },\
 })
 
-scriptedvided.makeVideo(configs)
+print(scriptedvided.makeVideoForEpisode(configs["episodes"][3], configs))
 
