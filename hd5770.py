@@ -239,7 +239,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Usefullness of used GPUs",\
 "audio" : {"timestamps" : ("06:57", "08:13"), "volume" : 0.999 },\
-"video" : "hd5770_pmd1g.mp4"\
+"video" : "Intel_igp_11thGen.mp4"\
 })
 
 configs["episodes"].append(\

@@ -245,24 +245,6 @@ def xfadedMultiple (streams, output=None, fadeDuration=1, recompressVideo=True):
         durations.append(getLengthOfStream(stream))
 
     params.append("-filter_complex")
-    '''
-    ffmpeg \
-    -i v0.mp4 \
-    -i v1.mp4 \
-    -i v2.mp4 \
-    -i v3.mp4 \
-    -i v4.mp4 \
-    -filter_complex \
-    "[0][1]xfade=transition=fade:duration=0.5:offset=3.5[V01]; \
-     [V01][2]xfade=transition=fade:duration=0.5:offset=32.75[V02]; \
-     [V02][3]xfade=transition=fade:duration=0.5:offset=67.75[V03]; \
-     [V03][4]xfade=transition=fade:duration=0.5:offset=98.75[video]; \
-     [0:a][1:a]acrossfade=d=1[A01]; \
-     [A01][2:a]acrossfade=d=1[A02]; \
-     [A02][3:a]acrossfade=d=1[A03]; \
-     [A03][4:a]acrossfade=d=1[audio]" \
-    -vsync 0 -map "[video]" -map "[audio]" out.mp4
-    '''
     
     currentOffset = 0;
     videograph = ""
@@ -568,6 +550,18 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     shutil.move (builtVideo, episodeVideo)
     return episodeVideo
 
+def recursivelyXfadeToOne (videos):
+    videosCount = len(videos)
+    if videosCount <= 5:
+        return [xfadedMultiple(videos)];
+    
+    videosToConcat = []
+    videosToConcat.append(xfadedMultiple(videos[0:5]))
+    shutil.move(videosToConcat[0], "_moved_.mp4")
+    videosToConcat[0] = "_moved_.mp4"
+    videosToConcat = videosToConcat + videos[5:]
+    return recursivelyXfadeToOne(videosToConcat)
+    
 def makeVideo (configs):
     episodeVideos = []
     for episode in configs["episodes"]:
@@ -651,16 +645,7 @@ def aliases(inputName):
         ["World of Tanks Blitz", "World_of_Tanks_Blitz", "World of Tanks: Blitz", "WorldOfTanksBlitz", "WoT Blitz", "WoT: Blitz",\
         "WoT_Blitz", "wotblitz"], \
     ]
-    '''
-    TODO:
-    Hyperscape
-    Control
-    DOTA2
-    Fortnite
-    Splitgate
-    Valorant
-    Genshin Impact, Paladins, Realm Royale, Rogue Company, World of Tanks Blitz, Warframe'''  
-  
+
     for namesArr in gameAliases:
         for potentialName in namesArr:
             if potentialName.upper() == inputName.upper():
@@ -710,15 +695,15 @@ if __name__ == "__main__":
     vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
     vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Counter Strike - Global Offensive.mp4")
     vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\DOTA2.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Fortnite.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Genshin Impact.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Paladins.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rainbow Six - Siege.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Realm Royale.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rocket League.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rogue Company.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Splitgate.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
-    print(xfadedMultiple(vids, None, 1, True))
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Fortnite.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Genshin Impact.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Paladins.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rainbow Six - Siege.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Realm Royale.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rocket League.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rogue Company.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Splitgate.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
+    print(recursivelyXfadeToOne(vids))
