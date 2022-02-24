@@ -234,6 +234,77 @@ def appendMultiple (streams, output=None, recompressVideo=True):
     
     return output
 
+def xfadedMultiple (streams, output=None, fadeDuration=1, recompressVideo=True):
+
+    durations = []
+    params = ffmpegParams();
+    for stream in streams:
+        if getSar(stream) != (1,1):
+            stream = setSarToOne(stream)
+        params = params + toInputParams(stream)
+        durations.append(getLengthOfStream(stream))
+
+    params.append("-filter_complex")
+    '''
+    ffmpeg \
+    -i v0.mp4 \
+    -i v1.mp4 \
+    -i v2.mp4 \
+    -i v3.mp4 \
+    -i v4.mp4 \
+    -filter_complex \
+    "[0][1]xfade=transition=fade:duration=0.5:offset=3.5[V01]; \
+     [V01][2]xfade=transition=fade:duration=0.5:offset=32.75[V02]; \
+     [V02][3]xfade=transition=fade:duration=0.5:offset=67.75[V03]; \
+     [V03][4]xfade=transition=fade:duration=0.5:offset=98.75[video]; \
+     [0:a][1:a]acrossfade=d=1[A01]; \
+     [A01][2:a]acrossfade=d=1[A02]; \
+     [A02][3:a]acrossfade=d=1[A03]; \
+     [A03][4:a]acrossfade=d=1[audio]" \
+    -vsync 0 -map "[video]" -map "[audio]" out.mp4
+    '''
+    
+    currentOffset = 0;
+    videograph = ""
+    audiograph = ""
+    fadeDurationStr = str(fadeDuration)
+    for i in range (0, len(streams) - 1):
+        currentOffset = durations[i] + currentOffset - fadeDuration
+        iStr = str(i)
+        nextIStr = str(i+1)
+        if i == 0:
+            nextIStr = str(i+1)
+            videograph = "["+iStr+":v]" + "["+nextIStr+":v]xfade=duration="+ fadeDurationStr +":offset="+ str(currentOffset) +"[intermediateV" + iStr + "];"
+            audiograph = "["+iStr+":a]" + "["+nextIStr+":a]acrossfade=d="+ fadeDurationStr +"[intermediateA" + iStr + "];"
+        else:
+            prevIStr = str(i-1)
+            videograph = videograph + "[intermediateV" + prevIStr + "]" + "["+nextIStr+":v]xfade=duration="+ fadeDurationStr +":offset="+ str(currentOffset) +"[intermediateV" + iStr + "];"
+            audiograph = audiograph + "[intermediateA" + prevIStr + "]" + "["+nextIStr+":a]acrossfade=d="+ fadeDurationStr +"[intermediateA" + iStr + "];"
+            
+    filtergraph = videograph + audiograph
+    filtergraph = filtergraph[:-1]
+    
+    params.append(filtergraph)
+    params.append("-map")
+    params.append("[intermediateV"+ str(len(streams) - 2)+"]")
+
+    params.append("-map")
+    params.append("[intermediateA"+ str(len(streams) - 2)+"]")
+    
+    if (not recompressVideo):
+        params.append ("-c:v")
+        params.append ("copy")
+    
+    if (output == None):
+        secondRoot,ext = os.path.splitext (getFileFromInput(streams[0]))
+        output = "_append_.mp4"
+
+    params.append(output)
+    subprocess.run(params)
+    
+    return output
+    
+    
 def append (firstStream, secondStream, output=None, recompressVideo=True):
     return appendMultiple([firstStream, secondStream], output, recompressVideo)
 
@@ -633,12 +704,12 @@ if __name__ == "__main__":
 #    print (getTextArrayForEpisode(episode))
 #    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
     vids = []
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
     vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Counter Strike - Global Offensive.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\DOTA2.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Counter Strike - Global Offensive.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\DOTA2.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Fortnite.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Genshin Impact.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Paladins.mp4")
@@ -650,4 +721,4 @@ if __name__ == "__main__":
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
-    print(appendMultiple(vids), None, False)
+    print(xfadedMultiple(vids, None, 1, True))
