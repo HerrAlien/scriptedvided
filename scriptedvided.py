@@ -1,6 +1,7 @@
 import subprocess
 import os
 import shutil
+import math
 
 def ffmpegParams():
     return ["ffmpeg", "-y", "-hide_banner"]
@@ -550,18 +551,6 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     shutil.move (builtVideo, episodeVideo)
     return episodeVideo
 
-def recursivelyXfadeToOne (videos):
-    videosCount = len(videos)
-    if videosCount <= 5:
-        return [xfadedMultiple(videos)];
-    
-    videosToConcat = []
-    videosToConcat.append(xfadedMultiple(videos[0:5]))
-    shutil.move(videosToConcat[0], "_moved_.mp4")
-    videosToConcat[0] = "_moved_.mp4"
-    videosToConcat = videosToConcat + videos[5:]
-    return recursivelyXfadeToOne(videosToConcat)
-    
 def makeVideo (configs):
     episodeVideos = []
     for episode in configs["episodes"]:
@@ -690,20 +679,20 @@ if __name__ == "__main__":
 #    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
     vids = []
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Counter Strike - Global Offensive.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\DOTA2.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Fortnite.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Genshin Impact.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Paladins.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rainbow Six - Siege.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Realm Royale.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rocket League.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rogue Company.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Splitgate.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
-    print(recursivelyXfadeToOne(vids))
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Counter Strike - Global Offensive.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\DOTA2.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Fortnite.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Genshin Impact.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Paladins.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rainbow Six - Siege.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Realm Royale.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rocket League.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rogue Company.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Splitgate.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
+#    print(recursivelyXfadeToOne(vids))
