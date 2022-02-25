@@ -105,7 +105,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Counter Strike: Global Offensive",\
-"audio" : {"timestamps" : ("03:38", "03:47.5") },\
+"audio" : {"timestamps" : ("03:38", "03:48") },\
 "overlay" : { \
     "text" : ["'Counter Strike\: Global Offensive'",\
               "'Capturing with MSI Afterburner decreases the FPS in CSGO.'", \
@@ -115,7 +115,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : ("03:47.5", "04:02"), "volume" : 0.95 },\
+"audio" : {"timestamps" : ("03:48", "04:01.5"), "volume" : 0.95 },\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [77, 38, 24], \
@@ -126,7 +126,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : ("04:02", "04:19") },\
+"audio" : {"timestamps" : ("04:01.5", "04:19") },\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [65, 29, 18], \
@@ -218,7 +218,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "World of Tanks Blitz",\
-"audio" : {"timestamps" : ("06:12", "06:36") },\
+"audio" : {"timestamps" : ("06:12", "06:37") },\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [60, 52, 42], \
@@ -231,7 +231,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Warframe",\
 "video" : "hd5770_Warframe_armsDealer_1080pLow.mp4",\
-"audio" : {"timestamps" : ("06:36", "06:57") },\
+"audio" : {"timestamps" : ("06:37", "06:58") },\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [121, 51, 3], \
@@ -243,19 +243,19 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Usefullness of used GPUs",\
-"audio" : {"timestamps" : ("06:57", "08:13"), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("06:58", "08:14"), "volume" : 0.999 },\
 "video" : "Intel_igp_11thGen.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Usefullness of the HD 5770",\
-"audio" : {"timestamps" : ("08:13", "08:32") },\
+"audio" : {"timestamps" : ("08:14", "08:33") },\
 "video" : "hd5770_fortnite_BReel.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "HD 5770 for geeks",\
-"audio" : {"timestamps" : ("08:32", "09:07"), "volume" : 0.999},\
+"audio" : {"timestamps" : ("08:33", "09:08"), "volume" : 0.999},\
 "video" : "hd5770_pmd1g.mp4"\
 })
 
