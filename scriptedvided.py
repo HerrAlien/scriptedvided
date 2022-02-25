@@ -4,7 +4,7 @@ import shutil
 import math
 
 def ffmpegParams():
-    return ["ffmpeg", "-y", "-hide_banner"]
+    return ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"]
     
 def ffmpegSafeString (someText):
     return someText.replace(":", "\:").replace("%", "\\\%")
@@ -64,7 +64,7 @@ def toInputParams (inputStream):
             params.append("-t")
             params.append(str(length))
         
-        start = dictValue(inputStream,"start")
+        start = dictValue(inputStream,"start", 0)
         if (start >= 0):
             params.append("-ss")
             params.append(str(start))
@@ -73,25 +73,27 @@ def toInputParams (inputStream):
             params.append(str(start - length))
         
         params.append("-i")
-        params.append(dictValue(inputStream,"file"))
+        file = dictValue(inputStream,"file")
+        params.append(file)
     else:
         params.append("-i")
-        params.append(inputStream)
+        file = inputStream
+        params.append(file)
 
     return params
 
     
-def getDrawTextCommandFromArray (text):
-    textSize = 48
+def getDrawTextCommandFromArray (text, opts):
+    textSize = float(dictValue(opts,"fontsize", 48))
     paramText = ""
     borderWidth = 0.5 * textSize
-    boxcolor="#00800080"
-#    transition=":enable=gt(t\,2)"
-#    transition=":x=if(gt(t\,3)\,0\,\(t-3\)*tw/3)"
+    boxcolor=dictValue(opts,"boxcolor", "#80000080")
+    fontcolor=dictValue(opts,"fontcolor", "White")
+
     transition=":x=if(gt(t\,4)\, "+ str(borderWidth) + "\,\(t-4\)*\(tw + " + str(borderWidth) + "\)/2)"
     
     if (type(text) is type("")):
-        paramText = "drawtext=y=H:box=1:boxborderw=" + str(borderWidth) +":boxcolor="+boxcolor+":font=Arial:fontsize=" + str (textSize) + ":fontcolor=White" + ":text="+text
+        paramText = "drawtext=y=H:box=1:boxborderw=" + str(borderWidth) +":boxcolor="+boxcolor+":font=Arial:fontsize=" + str (textSize) + ":fontcolor=" + fontcolor + ":text="+text
         paramText = paramText + transition
     else:
         lineSpacing = 0.5 * textSize
@@ -109,7 +111,7 @@ def getDrawTextCommandFromArray (text):
             if (step == (len(text) - 1)):
                 iterationEndNode = ""
 
-            paramText = paramText  + iterationStartNode + "drawtext=y=(H+"+str(initialOffset)+")/2-"+ str(offsetFromBottom) +":box=1:boxborderw="+ str(borderWidth) + ":boxcolor="+boxcolor+":font=Arial:fontsize="+ str (textSize) +":fontcolor=White" + ":text="+line 
+            paramText = paramText  + iterationStartNode + "drawtext=y=(H+"+str(initialOffset)+")/2-"+ str(offsetFromBottom) +":box=1:boxborderw="+ str(borderWidth) + ":boxcolor="+boxcolor+":font=Arial:fontsize="+ str (textSize) +":fontcolor=" + fontcolor + ":text="+line 
             paramText = paramText + transition
             paramText = paramText + iterationEndNode
 
@@ -205,11 +207,12 @@ def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1,
 def substituteAudio (inputVid, inputAudio, output=None, recompress=False):
     return overlayAudio(inputVid, inputAudio, output, 0.01, recompress)
     
-def appendMultiple (streams, output=None, recompressVideo=True):
+def appendMultiple (streams, output=None, recompressVideo=True, video=True, audio=True):
 
     params = ffmpegParams();
     for stream in streams:
-        if getSar(stream) != (1,1):
+        sar = getSar(stream)
+        if sar != (1,1) and sar != (0,0):
             stream = setSarToOne(stream)
         params = params + toInputParams(stream)    
 
@@ -218,9 +221,22 @@ def appendMultiple (streams, output=None, recompressVideo=True):
     streamsIds = ""
     for i in range (0, len(streams)):
         iStr = str(i)
-        streamsIds = streamsIds + "["+iStr+":v]" + "["+iStr+":a]"
+        if video:
+            streamsIds = streamsIds + "["+iStr+":v]"
+        if audio:
+            streamsIds = streamsIds + "["+iStr+":a]"
     
-    params.append(streamsIds + "concat=n=" + str(len(streams)) + ":v=1:a=1")
+    filter = streamsIds + "concat=n=" + str(len(streams)) 
+    if video:
+        filter = filter + ":v=1"
+    else:
+        filter = filter + ":v=0"
+    if audio:
+        filter = filter + ":a=1"
+    else:
+        filter = filter + ":a=0"
+    
+    params.append(filter)
     
     if (not recompressVideo):
         params.append ("-c:v")
@@ -228,7 +244,7 @@ def appendMultiple (streams, output=None, recompressVideo=True):
     
     if (output == None):
         secondRoot,ext = os.path.splitext (getFileFromInput(streams[0]))
-        output = "_append_.mp4"
+        output = secondRoot + "_append_" + ext
 
     params.append(output)
     subprocess.run(params)
@@ -300,7 +316,7 @@ def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
     params.append ("0:a")
 
     params.append("-filter_complex")
-    params.append("[0:a]adelay=" + str(ammountBegin * 1000) + "[intermediate];[intermediate]apad=pad_dur=" + str(amountEnd))
+    params.append("[0:a]adelay=" + str(ammountBegin * 1000) + ":all=1[intermediate];[intermediate]apad=pad_dur=" + str(amountEnd))
     
     if (output == None):
         secondRoot,ext = os.path.splitext (getFileFromInput(stream))
@@ -369,7 +385,7 @@ def getSar(filepath):
     outArr = out.split(":")
     return (int(outArr[0]), int(outArr[1]))
     
-def drawText (stream, text, output=None):
+def drawText (stream, text, output=None, opts={"fontcolor" : "White", "boxcolor" : "#80000080", "fontsize" : 48}):
     if (text is None):
         print ("WARNING: no text provided, returning the unmodified input " + "'" + getFileFromInput(stream) + "'")
         return getFileFromInput(stream)
@@ -379,7 +395,7 @@ def drawText (stream, text, output=None):
     params = params + toInputParams(stream)    
     params.append("-filter_complex")
 
-    params.append(getDrawTextCommandFromArray(text))
+    params.append(getDrawTextCommandFromArray(text, opts))
     
     if (output == None):
         secondRoot,ext = os.path.splitext (getFileFromInput(stream))
@@ -536,6 +552,9 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     videoDict = getSuitableVideoStream(episode, configs)
     audioDict = getSuitableAudioStream(episode, configs)
     textArray = getTextArrayForEpisode(episode)
+    
+    if dictValue(configs, "TOC", None) is None:
+        configs["TOC"] = []
 
     opts = {"padAudio": 1, "videoSoundVolume" : 0.1, "targetRes": targetRes }
     
@@ -548,9 +567,65 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     dir = dictValue(configs, "outputFolder", ".")
     ext = os.path.splitext(builtVideo)[1]
     episodeVideo = os.path.join(dir, filePathSafeString(episode["title"]) + ext)
+    configs["TOC"].append({"title" : episode["title"], "length" : getLengthOfStream(builtVideo)})
     shutil.move (builtVideo, episodeVideo)
     return episodeVideo
 
+def buildBackgroundTrack (configs):
+    backgroundTrack = dictValue(configs, "backgroundTrack", None)
+    if backgroundTrack is None:
+        return None
+    #build the background track
+    segmentNamePrefix = "backgroundSegment"
+    segmentExt = ".ogg"
+    segmentIndex = 0
+    audioToConcat = []
+    previousTrackEndedAt = 0
+    for track in backgroundTrack["audioTracks"]:
+        segmentName = segmentNamePrefix + str(segmentIndex) + segmentExt
+
+        # handle padding at the begining.        
+        trackIsInsertedAt = dictValue(track, "destinationTimestamp", None)
+        if trackIsInsertedAt is None:
+            trackIsInsertedAt = 0
+        elif type (trackIsInsertedAt) is type(""):
+            trackIsInsertedAt = getSeconds (trackIsInsertedAt)
+        else:            
+            insertedAt = 0
+            for episodeTocDict in configs["TOC"]:
+                if episodeTocDict["title"] == trackIsInsertedAt["title"]:
+                    break
+                insertedAt = insertedAt + float(episodeTocDict["length"])
+            trackIsInsertedAt = insertedAt
+            
+        trackLength = 0
+        trackStartsAt = 0
+        timestamps = dictValue (track, "timestamps", None)
+        if timestamps is not None:
+            trackStartsAt = getSeconds(timestamps[0])
+            endSecond = getSeconds(timestamps[1])
+            trackLength = endSecond - trackStartsAt
+        else:
+            trackLength = getLengthOfStream(track["file"])
+            
+        padAtBeginning = trackIsInsertedAtAt - previousTrackEndedAt
+        if padAtBeginning > 0:
+            padAudioStream( {"file" : dictValue(track,"file") , "start" : trackStartsAt, "length" :trackLength }, segmentName, padAtBeginning, 0.1 )
+            audioToConcat.append(segmentName)
+        else:
+            audioToConcat.append({"file" : dictValue(track,"file") , "start" : trackStartsAt, "length" :trackLength })
+                
+        previousTrackEndedAt = trackIsInsertedAtAt + trackLength
+        
+        segmentIndex = segmentIndex + 1
+    
+    backgroundAufioFile = appendMultiple (audioToConcat, "background_track.ogg" , video=False)
+    for audioToDelete in audioToConcat:
+        if type(audioToDelete) is type(""):
+            os.remove(audioToDelete)
+    
+    return backgroundAufioFile
+    
 def makeVideo (configs):
     episodeVideos = []
     for episode in configs["episodes"]:
@@ -558,9 +633,23 @@ def makeVideo (configs):
             episodeVideo = makeVideoForEpisode(episode, configs)
             episodeVideos.append(episodeVideo)
         except:
-            print ("One error ...")
+            print ("ERR: " + episode["title"])
 
-    return appendMultiple(episodeVideos, os.path.join(configs["outputFolder"], configs["outputFile"]))
+    videoPath = os.path.join(configs["outputFolder"], configs["outputFile"])
+    appendMultiple(episodeVideos, videoPath)
+    backgroundTrack = dictValue(configs, "backgroundTrack", None)
+    if backgroundTrack is None:
+        return videoPath
+    
+    noBackgroundVideo = os.path.join(configs["outputFolder"], "_nobackground.mp4")
+    shutil.move(videoPath, noBackgroundVideo)
+    
+    backgroundAudioFile = buildBackgroundTrack (configs)
+    
+    videoAudioWeight = 1 - dictValue(backgroundTrack, "volume", 0.1)
+    
+    return overlayAudio (noBackgroundVideo, backgroundAudioFile, videoPath, firstStreamAudioWeight=videoAudioWeight)
+    
 
 # needs an audio - see makeAudioForEposiode
 def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
@@ -585,7 +674,6 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
     
     videoLen = getLengthOfStream(fixedVideo)
     videoStart = dictValue (video, "start", None)
-    print (str(videoStart) + " of type " + str(type(videoStart)))
     if videoStart is None:
         videoStart = (videoLen - (audioLen + padding + padding)) * 0.5    
     
@@ -611,7 +699,7 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
     
 # then print the text
     if type(textLinesArray) is type ([]) and len(textLinesArray) > 0:
-        returnedVideo = drawText (videoWithOverlayedAudio, textLinesArray)
+        returnedVideo = drawText (videoWithOverlayedAudio, textLinesArray, opts={"boxcolor" : "#80000080"})
         os.remove(videoWithOverlayedAudio)
     
     return returnedVideo
@@ -663,7 +751,7 @@ if __name__ == "__main__":
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
 #    print(getLengthOfStream ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4"))
 #    print(getFpsStatsText(73, 32, 27, 80, 27))
-#    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
+    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
 #     print(getResolution ("audio.ogg"))
 #    print(getSuitableVideos ("C:\\Users\\Admin\\Videos\\hd7770", ["fortnite"]))
 #    episode = { "title": "Apex Legends",\
@@ -675,7 +763,7 @@ if __name__ == "__main__":
 #        "settings" : "1080p, low settings", \
 #    }\
 #} }
-#    print (getTextArrayForEpisode(episode))
+#    print (getDrawTextCommandFromArray(getTextArrayForEpisode(episode) , {}) )
 #    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
     vids = []
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
@@ -696,3 +784,5 @@ if __name__ == "__main__":
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
 #    print(recursivelyXfadeToOne(vids))
+    #overlayAudio ({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 30}, \
+#{"file":"C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg"} , "merged_audio.mp4", 0.15)

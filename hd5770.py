@@ -5,6 +5,11 @@ configs = { "defaultAudioFile" : "hd5770_4.ogg",\
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
 "outputFolder" : "C:\\Users\\Admin\\Videos\\hd5770\\output", \
 "outputFile" : "hd5770.mp4", \
+"backgroundTrack" : { "audioTracks" : [ \
+{"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
+"timestamps" : ("00:30", "02:40" ), "destinationTimestamp" : "00:00"}, \
+{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", "02:19" ), "destinationTimestamp" : { "title": "Usefullness of used GPUs"}}, \
+], "volume" : 0.05 },\
 "episodes" : []}
 
 configs["episodes"].append(\
@@ -254,5 +259,6 @@ configs["episodes"].append(\
 "video" : "hd5770_pmd1g.mp4"\
 })
 
-#print(scriptedvided.makeVideoForEpisode(configs["episodes"][1], configs))
+#print(scriptedvided.makeVideoForEpisode(configs["episodes"][6], configs))
 scriptedvided.makeVideo(configs)
+print(configs["TOC"])
