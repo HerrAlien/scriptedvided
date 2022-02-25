@@ -549,13 +549,23 @@ def getSuitableVideo (folder, names):
 
 
 def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
+    if dictValue(configs, "TOC", None) is None:
+        configs["TOC"] = []
+
+    dir = dictValue(configs, "outputFolder", ".")
+    expectedEpisodeVideo = os.path.join(dir, filePathSafeString(episode["title"]))
+    for existingFile in os.listdir(dir):
+        existingAbsPath = os.path.join(dir, existingFile)
+        existingAbsPathNoExt = os.path.splitext(existingAbsPath)[0]
+        if expectedEpisodeVideo == existingAbsPathNoExt:
+            print ('"' + episode["title"] +'" already has a video: "' + existingAbsPath + '"; will do nothing.')
+            configs["TOC"].append({"title" : episode["title"], "length" : getLengthOfStream(existingAbsPath)})
+            return existingAbsPath
+
     videoDict = getSuitableVideoStream(episode, configs)
     audioDict = getSuitableAudioStream(episode, configs)
     textArray = getTextArrayForEpisode(episode)
     
-    if dictValue(configs, "TOC", None) is None:
-        configs["TOC"] = []
-
     opts = {"padAudio": 1, "videoSoundVolume" : 0.1, "targetRes": targetRes }
     
     audioVolume = dictValue(audioDict, "volume", None)
@@ -608,14 +618,14 @@ def buildBackgroundTrack (configs):
         else:
             trackLength = getLengthOfStream(track["file"])
             
-        padAtBeginning = trackIsInsertedAtAt - previousTrackEndedAt
+        padAtBeginning = trackIsInsertedAt - previousTrackEndedAt
         if padAtBeginning > 0:
             padAudioStream( {"file" : dictValue(track,"file") , "start" : trackStartsAt, "length" :trackLength }, segmentName, padAtBeginning, 0.1 )
             audioToConcat.append(segmentName)
         else:
             audioToConcat.append({"file" : dictValue(track,"file") , "start" : trackStartsAt, "length" :trackLength })
                 
-        previousTrackEndedAt = trackIsInsertedAtAt + trackLength
+        previousTrackEndedAt = trackIsInsertedAt + trackLength
         
         segmentIndex = segmentIndex + 1
     
