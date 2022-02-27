@@ -282,6 +282,4 @@ configs["episodes"].append(\
 #print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
 #scriptedvided.enhanceYoutubeData(configs)
 #print (configs["youtube"])
-scriptedvided.makeVideo(configs)
-print(configs["TOC"])
-print(configs["youtube"])
+print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))

@@ -651,8 +651,47 @@ def buildBackgroundTrack (backgroundTrack, configs):
     return backgroundAufioFile
 
     
+def getValueForTags (haystack, tags):
+    for tag in tags:
+        positionOfTag = haystack.find(tag)
+        if (positionOfTag < 0):
+            continue
+        potentialValue = haystack[positionOfTag + len(tag) : ]
+        positionOfEnd = potentialValue.find("\n")
+        if positionOfEnd > 0:
+            potentialValue = potentialValue[0:positionOfEnd]
+            if len(potentialValue) > 1:
+                return potentialValue
+    return None
+    
+def getAuthorAndSongName (file):
+    finishedProc = subprocess.run (["ffprobe", "-show_format" , file], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out = str(finishedProc.stderr) + str(finishedProc.stdout)
+
+    authorName = getValueForTags(out, ["TAG:artist=", "TAG:album_artist=", "TAG:composer="])
+    songName = getValueForTags(out, ["TAG:title=", "TAG:album="])
+    
+    if authorName is None or songName is None:
+        splitAfterDash = os.path.basename(file).split("-")
+        authorName = splitAfterDash[0]
+        songName = splitAfterDash[1].split(".")[0]
+    
+    return (authorName, songName)
+    
+def getMusicFileCredits(file):
+    # get the author and song name, from either the tags or from file name
+    author, song = getAuthorAndSongName (file)
+    requiredLicenseText = "Music provided by Audio Library Plus"
+    if file.lower().find("bensound") > 0:
+        requiredLicenseText = "www.bensound.com"
+    
+    return author + " - " + song + " (" + requiredLicenseText + ")"
+    
 def getMusicCreditsString(backgroundTrack):
-    return ""
+    fullTracksCredits = "Music tracks:\n"
+    for track in backgroundTrack["audioTracks"]:
+        fullTracksCredits = fullTracksCredits + getMusicFileCredits (track["file"]) + "\n"
+    return fullTracksCredits
     
 def isGameEpisode (episode):
     return (dictValue(episode, "overlay", None) is not None)
