@@ -32,7 +32,23 @@ def getSeconds (timeAsString):
         value = value + float(times[arrayLen - 1 - index]) * factor
         factor = factor * 60
     return value
-        
+
+def twoDigitString(number):
+    if (number < 10):
+        return "0" + str(number)
+    return str(number)
+    
+def secondsToTime(seconds):
+    hours = int(seconds/3600)
+    minutes = int((seconds - 3600 * hours) / 60)
+    seconds = int((seconds - 3600 * hours - 60 * minutes) + 0.5)
+
+    hoursStr = twoDigitString(hours)
+    minutesStr = twoDigitString(minutes)
+    secondsStr = twoDigitString(seconds)
+
+    return hoursStr + ":" + minutesStr + ":" + secondsStr
+    
 def getFpsStatsText(average, onePercent=None, pointOnePercent=None, max=None, min=None):
     text = "'"
     text = text + "Average\: "+ str(average) +"fps"
@@ -498,12 +514,13 @@ def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, ext
         mediaDict = {}
     else: # we passed nothing
         mediaDict = {}
-            
-    episodeTitle = dictValue (episode, "title", None)
-    if episodeTitle is not None:
-        names.append(episodeTitle)
-        # TODO: append the aliases as well
-        names = names + aliases (episodeTitle)
+          
+    if len(names) == 0:
+        episodeTitle = dictValue (episode, "title", None)
+        if episodeTitle is not None:
+            names.append(episodeTitle)
+            # TODO: append the aliases as well
+            names = names + aliases (episodeTitle)
         
     mediaFolder = dictValue(configs, "mediaFolder", None)
     stockFolder = dictValue(configs, "stockFolder", None)
@@ -581,10 +598,7 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     shutil.move (builtVideo, episodeVideo)
     return episodeVideo
 
-def buildBackgroundTrack (configs):
-    backgroundTrack = dictValue(configs, "backgroundTrack", None)
-    if backgroundTrack is None:
-        return None
+def buildBackgroundTrack (backgroundTrack, configs):
     #build the background track
     segmentNamePrefix = "backgroundSegment"
     segmentExt = ".ogg"
@@ -635,6 +649,41 @@ def buildBackgroundTrack (configs):
             os.remove(audioToDelete)
     
     return backgroundAufioFile
+
+    
+def getMusicCreditsString(backgroundTrack):
+    return ""
+    
+def isGameEpisode (episode):
+    return (dictValue(episode, "overlay", None) is not None)
+    
+def enhanceYoutubeData (configs):
+    youtube = "youtube"
+    if dictValue(configs, youtube, None) is None:
+        configs[youtube] = {}
+
+    episodes = configs["episodes"]
+        
+    for episode in episodes:
+        if isGameEpisode(episode):
+            configs[youtube]["tags"] = configs[youtube]["tags"] + "," + episode["title"]
+
+    for episode in episodes:
+        if (dictValue(episode, "overlay", None) is not None):
+            configs[youtube]["tags"] = configs[youtube]["tags"] + "," + episode["title"]
+    
+    chapters = ""
+    time = 0
+    for tocEntry in configs["TOC"]:
+        chapters = chapters + secondsToTime(time) + " " + tocEntry["title"] + "\n"
+        time = time + float(tocEntry["length"])
+    
+    configs[youtube]["description"] = configs[youtube]["description"] + "\n" + chapters
+
+    backgroundTrack = dictValue(configs, "backgroundTrack", None)
+    if backgroundTrack is not None:
+        configs[youtube]["description"] + "\n" + getMusicCreditsString (backgroundTrack)
+    
     
 def makeVideo (configs):
     episodeVideos = []
@@ -647,27 +696,22 @@ def makeVideo (configs):
 
     videoPath = os.path.join(configs["outputFolder"], configs["outputFile"])
     appendMultiple(episodeVideos, videoPath)
+    
     backgroundTrack = dictValue(configs, "backgroundTrack", None)
-    if backgroundTrack is None:
-        return videoPath
+    if backgroundTrack is not None:    
+        noBackgroundVideo = os.path.join(configs["outputFolder"], "_nobackground.mp4")
+        shutil.move(videoPath, noBackgroundVideo)        
+        backgroundAudioFile = buildBackgroundTrack (backgroundTrack, configs)        
+        videoAudioWeight = 1 - dictValue(backgroundTrack, "volume", 0.1)        
+        overlayAudio (noBackgroundVideo, backgroundAudioFile, videoPath, firstStreamAudioWeight=videoAudioWeight)
     
-    noBackgroundVideo = os.path.join(configs["outputFolder"], "_nobackground.mp4")
-    shutil.move(videoPath, noBackgroundVideo)
+    enhanceYoutubeData(configs)
     
-    backgroundAudioFile = buildBackgroundTrack (configs)
-    
-    videoAudioWeight = 1 - dictValue(backgroundTrack, "volume", 0.1)
-    
-    return overlayAudio (noBackgroundVideo, backgroundAudioFile, videoPath, firstStreamAudioWeight=videoAudioWeight)
+    return videoPath
     
 
 # needs an audio - see makeAudioForEposiode
 def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
-# pad the audio with 1 second of silence
-
-# video length must be larger than the audio. Loop it if needed.
-
-#truncate them ....
 
     videoLen = getLengthOfStream(video)
     audioLen = getLengthOfStream(audio)
@@ -676,11 +720,12 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
     audioToVideoLengthRatio = int((audioLen + padding + padding) / videoLen)
     fixedVideo = getFileFromInput (video)
     nextIterationVideo = fixedVideo
+    appendToFitToLength = []
     if (audioToVideoLengthRatio > 1):
         for i in range(0, audioToVideoLengthRatio):
-            nextIterationVideo = append(fixedVideo, video, "___appended___.mp4")
-            #cleanup fixedVideo?
-            fixedVideo = nextIterationVideo
+            appendToFitToLength.append(video)
+        
+        fixedVideo = appendMultiple(appendToFitToLength) # this needs rework
     
     videoLen = getLengthOfStream(fixedVideo)
     videoStart = dictValue (video, "start", None)

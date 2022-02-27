@@ -10,7 +10,22 @@ configs = { "defaultAudioFile" : "hd5770_4.ogg",\
 "timestamps" : ("00:30", "02:40" ), "destinationTimestamp" : "00:00"}, \
 {"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", "02:19" ), "destinationTimestamp" : { "title": "Usefullness of used GPUs"}}, \
 ], "volume" : 0.05 },\
-"episodes" : []}
+"episodes" : [],\
+"youtube" : {"title" : "The AMD Radeon HD 5770 in 2022", \
+"description" : "Testing the old Radeon HD 5770 in modern titles. To no surprise, this used GPU it manages to outperform new cards priced as high as 4 times - looking at you, GT 710 ...",\
+"tags" : "AMD, Radeon, HD 5770",\
+"language" : "EN", \
+"Caption certification" : "None",\
+"recording date" : None,\
+"video location" : None, \
+"category" : "Science & Technology", \
+"subtitles" : None, \
+"endscreen" : None, \
+"cards" : None, \
+}\
+}
+
+### the description must contain the copyright for the background audio
 
 configs["episodes"].append(\
 { "title": "Context of the launch",\
@@ -95,6 +110,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Alien: Isolation",\
 "audio" : {"timestamps" : ("03:19","03:38") },\
+"video" : "hd5770_AlienIsolation_1200pUltra.mp4",\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [39, 26, 16], \
@@ -259,6 +275,13 @@ configs["episodes"].append(\
 "video" : "hd5770_pmd1g.mp4"\
 })
 
-#print(scriptedvided.makeVideoForEpisode(configs["episodes"][6], configs))
+#scriptedvided.makeVideoForEpisode(configs["episodes"][6], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][7], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][8], configs)
+#print(scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs))
+#print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
+#scriptedvided.enhanceYoutubeData(configs)
+#print (configs["youtube"])
 scriptedvided.makeVideo(configs)
 print(configs["TOC"])
+print(configs["youtube"])
