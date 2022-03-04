@@ -159,7 +159,19 @@ def getTextArrayForEpisode (episode):
     if (settings is None):
         return None
 
-    fpsAsText = getFpsStatsText (fpsArr[0], fpsArr[1], fpsArr[2])
+    average = None
+    onePercent = None
+    pointOnePercent = None
+    
+    lenTextArr = len(fpsArr)
+    if lenTextArr >= 1:
+        average = fpsArr[0]
+    if lenTextArr >= 2:
+        onePercent = fpsArr[1]
+    if lenTextArr >= 3:
+        pointOnePercent = fpsArr[2]
+        
+    fpsAsText = getFpsStatsText (average, onePercent, pointOnePercent)
     
     return (["'" + ffmpegSafeString(episodeName + " (" + settings) + ")'", fpsAsText ])
         
@@ -583,7 +595,7 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     audioDict = getSuitableAudioStream(episode, configs)
     textArray = getTextArrayForEpisode(episode)
     
-    opts = {"padAudio": 1, "videoSoundVolume" : 0.1, "targetRes": targetRes }
+    opts = {"padAudio": 1, "videoSoundVolume" : 0.07, "targetRes": targetRes }
     
     audioVolume = dictValue(audioDict, "volume", None)
     if audioVolume is not None:
@@ -717,11 +729,13 @@ def enhanceYoutubeData (configs):
         chapters = chapters + secondsToTime(time) + " " + tocEntry["title"] + "\n"
         time = time + float(tocEntry["length"])
     
-    configs[youtube]["description"] = configs[youtube]["description"] + "\n" + chapters
+    configs[youtube]["description"] = configs[youtube]["description"] + "\n\n" + chapters
 
     backgroundTrack = dictValue(configs, "backgroundTrack", None)
     if backgroundTrack is not None:
-        configs[youtube]["description"] + "\n" + getMusicCreditsString (backgroundTrack)
+        configs[youtube]["description"] = configs[youtube]["description"] + "\n\n" + getMusicCreditsString (backgroundTrack)
+        
+    configs[youtube]["description"] = configs[youtube]["description"] + "\n\n" + configs[youtube]["links"] 
     
     
 def makeVideo (configs):
@@ -745,7 +759,7 @@ def makeVideo (configs):
         overlayAudio (noBackgroundVideo, backgroundAudioFile, videoPath, firstStreamAudioWeight=videoAudioWeight)
     
     enhanceYoutubeData(configs)
-    
+    print("\n\n --- youtube -- \n" + str(configs["youtube"]))
     return videoPath
     
 
@@ -782,7 +796,7 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
     
     paddedAudio = padAudioStream (audio, "padded.ogg", padding, padding)
     
-    videoAudioWeight = dictValue (options, "videoSoundVolume", 0.1)
+    videoAudioWeight = dictValue (options, "videoSoundVolume", 0.07)
     
 # then  overlay the audio
 

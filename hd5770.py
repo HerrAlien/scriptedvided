@@ -8,12 +8,27 @@ configs = { "defaultAudioFile" : "hd5770_4.ogg",\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", "02:40" ), "destinationTimestamp" : "00:00"}, \
-{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", "02:19" ), "destinationTimestamp" : { "title": "Usefullness of used GPUs"}}, \
+{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", "02:19" ), "destinationTimestamp" : { "title": "Usefulness of used GPUs"}}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "The AMD Radeon HD 5770 in 2022", \
 "description" : "Testing the old Radeon HD 5770 in modern titles. To no surprise, this used GPU it manages to outperform new cards priced as high as 4 times - looking at you, GT 710 ...",\
-"tags" : "AMD, Radeon, HD 5770",\
+"links" : '''
+More games tested with the HD 5770:
+https://www.youtube.com/watch?v=rqsyj9TxxZo
+https://www.youtube.com/watch?v=DWND-ayvNpQ
+
+TechPowerup entry: https://www.techpowerup.com/gpu-specs/radeon-hd-5770.c250
+
+Datasheets for the MSI HD 5770 cards:
+PMD1G: https://storage-asset.msi.com/datasheet/vga/global/R5770PMD1G.pdf
+Hawk: https://storage-asset.msi.com/datasheet/vga/global/R5770_Hawk.pdf
+
+Intel 11th gen processors:
+The core i5 11400 (has an IGPU): https://ark.intel.com/content/www/us/en/ark/products/212270/intel-core-i511400-processor-12m-cache-up-to-4-40-ghz.html
+The core i5 11400F (no IGPU): https://ark.intel.com/content/www/us/en/ark/products/212271/intel-core-i511400f-processor-12m-cache-up-to-4-40-ghz.html
+''', \
+"tags" : "AMD,Radeon,HD 5770",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -53,7 +68,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Apex Legends",\
-"audio" : {"timestamps" : ("02:02", "02:14" ) },\
+"audio" : {"timestamps" : ("02:02", "02:14" ), "volume" : 0.97  },\
 "video" : "stock_ApexLegends_1080p.mp4", \
 "overlay" : { \
     "benchmark" : { \
@@ -65,7 +80,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "CoD Warzone, Hyperscape",\
-"audio" : {"timestamps" : ("02:14", "02:25" ) },\
+"audio" : {"timestamps" : ("02:14", "02:25" ) , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [0, 0, 0], \
@@ -131,7 +146,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : ("03:48", "04:01.5"), "volume" : 0.95 },\
+"audio" : {"timestamps" : ("03:48", "04:01.5"), "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [77, 38, 24], \
@@ -201,7 +216,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Paladins",\
-"audio" : {"timestamps" : ("05:17", "05:33") },\
+"audio" : {"timestamps" : ("05:17", "05:33") , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [82, 31, 11], \
@@ -258,13 +273,13 @@ configs["episodes"].append(\
 
 
 configs["episodes"].append(\
-{ "title": "Usefullness of used GPUs",\
+{ "title": "Usefulness of used GPUs",\
 "audio" : {"timestamps" : ("06:58", "08:14"), "volume" : 0.999 },\
 "video" : "Intel_igp_11thGen.mp4"\
 })
 
 configs["episodes"].append(\
-{ "title": "Usefullness of the HD 5770",\
+{ "title": "Usefulness of the HD 5770",\
 "audio" : {"timestamps" : ("08:14", "08:33") },\
 "video" : "hd5770_fortnite_BReel.mp4"\
 })
@@ -282,4 +297,5 @@ configs["episodes"].append(\
 #print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
 #scriptedvided.enhanceYoutubeData(configs)
 #print (configs["youtube"])
-print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
+#print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
+scriptedvided.makeVideo(configs)
