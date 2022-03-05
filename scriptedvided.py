@@ -202,11 +202,23 @@ def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1,
     params = params + toInputParams(inputVid)    
     params = params + toInputParams(inputAudio)
 
+    inputVideoHasAudio = hasAudio(inputVid)
+    # detect if input video DOES have audio
+    if not inputVideoHasAudio:
+        params.append("-f")
+        params.append("lavfi")
+        params.append("-i")
+        params.append("anullsrc")
+    
     params.append ("-map")
-    params.append ("0:a")
+    params.append ("0:a?")
     
     params.append ("-map")
     params.append ("1:a")
+    
+    if not inputVideoHasAudio:
+        params.append ("-map")
+        params.append ("2:a")
     
     if (output == None):
         audioRoot,ext = os.path.splitext (getFileFromInput(inputAudio))
@@ -215,14 +227,14 @@ def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1,
     weightsStr = str(firstStreamAudioWeight) + " " + str(1 - firstStreamAudioWeight)
         
     params.append ("-filter_complex")
-    params.append ("[0:a][1:a] amix=weights='" + weightsStr + "'")
-
+    if inputVideoHasAudio:
+        params.append ("[0:a][1:a] amix=weights='" + weightsStr + "'")
+    else:
+        params.append ("[2:a][1:a] amix=weights='" + weightsStr + "'")
+        
     params.append ("-map")
-    params.append ("0:v?")
+    params.append ("0:v")
 
-    params.append ("-map")
-    params.append ("1:v?")
-    
     if (not recompressVideo):
         params.append ("-c:v")
         params.append ("copy")
@@ -374,11 +386,19 @@ def getLengthOfStream (stream):
 
     timeInSec = getSeconds(out)
     return timeInSec
+
+def hasAudio(stream):
+    filepath = getFileFromInput (stream)
+    
+    finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out = str(finishedProc.stderr) + str(finishedProc.stdout)
+    return out.find(": Audio:") > 0
+
     
 def getResolution (filepath):
     finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out = str(finishedProc.stderr) + str(finishedProc.stdout)
-    durationIndex = out.find("Video:")
+    durationIndex = out.find(": Video:")
     if durationIndex < 0:
         return (0, 0)
 
