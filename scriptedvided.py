@@ -4,7 +4,8 @@ import shutil
 import math
 
 def ffmpegParams():
-    return ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"]
+#    return ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"]
+    return ["ffmpeg", "-y"]
     
 def ffmpegSafeString (someText):
     return someText.replace(":", "\:").replace("%", "\\\%")
@@ -230,7 +231,7 @@ def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1,
     if inputVideoHasAudio:
         params.append ("[0:a][1:a] amix=weights='" + weightsStr + "'")
     else:
-        params.append ("[2:a][1:a] amix=weights='" + weightsStr + "'")
+        params.append ("[2:a][1:a] amix=weights='" + weightsStr + "':duration=shortest")
         
     params.append ("-map")
     params.append ("0:v")
