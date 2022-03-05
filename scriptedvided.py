@@ -4,8 +4,8 @@ import shutil
 import math
 
 def ffmpegParams():
-#    return ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"]
-    return ["ffmpeg", "-y"]
+    return ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"]
+#    return ["ffmpeg", "-y"]
     
 def ffmpegSafeString (someText):
     return someText.replace(":", "\:").replace("%", "\\\%")
