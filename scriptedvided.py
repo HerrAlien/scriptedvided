@@ -17,7 +17,7 @@ def defaultOutput (input, suffix):
     root, ext = os.path.splitext (input)
     return root + suffix + ext
     
-def dictValue(dict, key, default=-1):
+def dictValue(dict, key, default=None):
     try:
         return dict[key]
     except:
@@ -107,6 +107,23 @@ def getDrawTextCommandFromArray (text, opts):
     boxcolor=dictValue(opts,"boxcolor", "#80000080")
     fontcolor=dictValue(opts,"fontcolor", "White")
 
+    '''
+        if (t > 4)
+            x = borderWidth;
+        else
+        {
+            velocity = (width + borderWidth) / 2
+            x = (t-4) * velocity
+        }
+        
+        (Tshow - completeTransition) * velocity = -width.
+        (Tshow - (Tshow + transitionAlone)) * velocity = -width.
+        
+        -transitionAlone * velocity = -width => velocity = width/transitionAlone
+        
+        
+    '''
+    
     transition=":x=if(gt(t\,4)\, "+ str(borderWidth) + "\,\(t-4\)*\(tw + " + str(borderWidth) + "\)/2)"
     
     if (type(text) is type("")):
@@ -375,7 +392,6 @@ def getLengthOfStream (stream):
             return length
     
     filepath = getFileFromInput (stream)
-    
     finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out = str(finishedProc.stderr) + str(finishedProc.stdout)
     durationIndex = out.index("Duration")
@@ -841,7 +857,7 @@ def aliases(inputName):
         ["Call of Duty: Warzone","Call_of_Duty_Warzone", "CallOfDutyWarzone", "COD Warzone", "COD_Warzone", "Warzone"],\
         ["Battlefield V","Battlefield 5", "Battlefield_V", "Battlefield_5", "bfv", "bf5"],\
         ["Rainbow Six Siege","Rainbow 6 Siege", "Rainbow Six: Siege","Rainbow 6: Siege", "Rainbow_Six_Siege","Rainbow_6_Siege", \
-        "r6s", "RainbowSixSiege","Rainbow6Siege"],\
+        "r6s", "RainbowSixSiege","Rainbow6Siege", "RainbowSix", "RainbowSixSiege"],\
         ["Counter-Strike: Global Offensive","Counter Strike: Global Offensive", "ConunterStrike: Global Offensive",\
         "ConunterStrike", "cs:go","csgo", "cs-go"],\
         ["Rocket League","Rocket_League", "RocketLeague"],\
