@@ -160,6 +160,8 @@ def getTextArrayForEpisode (episode):
     if (overlay is None):
         return None
     
+    # maybe we should call ffmpegSafeString for this one, and allow usage
+    # of regular text in the config file ...
     textArray = dictValue (overlay, "text", None)
     if (textArray is not None):
         return (textArray)
@@ -852,20 +854,27 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
 
 def aliases(inputName):
     gameAliases = [\
-        ["Apex", "Apex Legends", "ApexLegends", "Apex_Legends"],\
-        ["Alien Isolation", "Alien: Isolation", "Alien:Isolation", "AlienIsolation", "Alien_Isolation"],\
-        ["Call of Duty: Warzone","Call_of_Duty_Warzone", "CallOfDutyWarzone", "COD Warzone", "COD_Warzone", "Warzone"],\
-        ["Battlefield V","Battlefield 5", "Battlefield_V", "Battlefield_5", "bfv", "bf5"],\
+        ["Apex", "Apex Legends", "ApexLegends", "Apex_Legends", "r5apex.exe"],\
+        ["Alien Isolation", "Alien: Isolation", "Alien:Isolation", "AlienIsolation", "Alien_Isolation", "AI.exe"],\
+        ["Call of Duty: Warzone","Call_of_Duty_Warzone", "CallOfDutyWarzone", "COD Warzone", "COD_Warzone", "Warzone", "ModernWarfare.exe"],\
+        ["Battlefield V","Battlefield 5", "Battlefield_V", "Battlefield_5", "bfv", "bf5", "bfv.exe"],\
         ["Rainbow Six Siege","Rainbow 6 Siege", "Rainbow Six: Siege","Rainbow 6: Siege", "Rainbow_Six_Siege","Rainbow_6_Siege", \
-        "r6s", "RainbowSixSiege","Rainbow6Siege", "RainbowSix", "RainbowSixSiege"],\
+        "r6s", "RainbowSixSiege","Rainbow6Siege", "RainbowSix", "RainbowSixSiege", "RainbowSix.exe"],\
         ["Counter-Strike: Global Offensive","Counter Strike: Global Offensive", "ConunterStrike: Global Offensive",\
-        "ConunterStrike", "cs:go","csgo", "cs-go"],\
-        ["Rocket League","Rocket_League", "RocketLeague"],\
-        ["Genshin Impact", "GenshinImpact", "Genshin_Impact"], \
-        ["Realm Royale", "Realm_Royale", "RealmRoyale"], \
-        ["Rogue Company", "Rogue_Company", "RogueCompany"], \
+        "ConunterStrike", "cs:go","csgo", "cs-go", "csgo.exe"],\
+        ["Rocket League","Rocket_League", "RocketLeague", "RocketLeague.exe"],\
+        ["Genshin Impact", "GenshinImpact", "Genshin_Impact", "GenshinImpact.exe"], \
+        ["Realm Royale", "Realm_Royale", "RealmRoyale", "Realm.exe"], \
+        ["Rogue Company", "Rogue_Company", "RogueCompany", "RogueCompany.exe"], \
         ["World of Tanks Blitz", "World_of_Tanks_Blitz", "World of Tanks: Blitz", "WorldOfTanksBlitz", "WoT Blitz", "WoT: Blitz",\
-        "WoT_Blitz", "wotblitz"], \
+        "WoT_Blitz", "wotblitz", "wotblitz.exe"], \
+        ["Hyperscape", "Hyperscape.exe"],\
+        ["Warframe", "Warframe.x64.exe"],\
+        ["Control", "Control_DX11.exe"],\
+        ["DOTA2", "dota2.exe"],\
+        ["Splitgate", "PortalWars-Win64-Shipping.exe"],\
+        ["Fortnite", "FortniteClient-Win64-Shipping.exe"],\
+        ["Valorant", "VALORANT-Win64-Shipping.exe"],\
     ]
 
     for namesArr in gameAliases:
