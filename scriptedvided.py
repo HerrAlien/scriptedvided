@@ -296,11 +296,16 @@ def appendMultiple (streams, output=None, recompressVideo=True, video=True, audi
     else:
         filter = filter + ":a=0"
     
+    filter = filter + ":unsafe=1"
+    
     params.append(filter)
     
     if (not recompressVideo):
         params.append ("-c:v")
         params.append ("copy")
+
+    params.append ("-fpsmax")
+    params.append ("30")
     
     if (output == None):
         secondRoot,ext = os.path.splitext (getFileFromInput(streams[0]))

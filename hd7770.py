@@ -7,7 +7,7 @@ configs = { "defaultAudioFile" : "hd7770.ogg",\
 "outputFile" : "hd7770.mp4", \
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", "02:40" ), "destinationTimestamp" : "00:00"}, \
+"timestamps" : ("00:30", "03:09" ), "destinationTimestamp" : "00:00"}, \
 {"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", "02:19" ), "destinationTimestamp" : { "title": "Usefulness of used GPUs"}}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
@@ -58,13 +58,13 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "The GPU",\
-"audio" : {"timestamps" : ("01:25", "01:59" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("01:25", "01:58.5" ), "volume" : 0.999 },\
 "video" : "tech_powerup_video_card.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "The video card and thermal results",\
-"audio" : {"timestamps" : ("01:59", "02:29" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("01:58.5", "02:29" ), "volume" : 0.999 },\
 "video" : "MG_0027.MOV"\
 })
 
