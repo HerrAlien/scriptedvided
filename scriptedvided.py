@@ -158,8 +158,54 @@ def getDrawTextCommandFromArray (text, opts):
 
     return paramText
 
+def getFpsValueFromLine(line):
+    valueOfInterest = line.split(":")[1]
+    valueOfInterest = valueOfInterest.replace(" ", "")
+    valueOfInterest = valueOfInterest.replace("FPS\n", "")
+    return int(float(valueOfInterest) + 0.5)
     
-def getTextArrayForEpisode (episode):
+def parseBenchmarkFile (benchmarkFile):
+    returnedDict = {}
+    currentKey = ""
+    currentValue = [0,0,0]
+    benchmarkCompletedMark = " benchmark completed,"
+    
+    fileHandler = open(benchmarkFile, "r")
+    fileLines = fileHandler.readlines()
+    for line in fileLines:
+        if benchmarkCompletedMark in line:
+            currentKey = line[21:]
+            posOfEnd = currentKey.index(benchmarkCompletedMark)
+            currentKey = currentKey[0:posOfEnd]
+            lineIndexFollowingKey = 0
+            currentValue = [0,0,0]
+        else:
+            if lineIndexFollowingKey == 0: # average
+                currentValue[0] = getFpsValueFromLine(line)
+            elif lineIndexFollowingKey == 3: # 1%
+                currentValue[1] = getFpsValueFromLine(line)
+            elif lineIndexFollowingKey == 4: # 0.1%
+                currentValue[2] = getFpsValueFromLine(line)
+                returnedDict[currentKey] = currentValue
+                
+            lineIndexFollowingKey = lineIndexFollowingKey + 1
+    return returnedDict
+    
+def getFpsArrayFromBenchmarkFile (episodeName, benchmarkFile):
+    #get all names for episode name
+    episodeAliases = aliases(episodeName)    
+    benchmarkFileDict = parseBenchmarkFile(benchmarkFile)
+    if benchmarkFileDict is None:
+        return []
+    
+    keyList = list(benchmarkFileDict)
+    for episodeAlias in episodeAliases:
+        if episodeAlias in keyList:
+            return benchmarkFileDict[episodeAlias]
+    
+    return []
+    
+def getTextArrayForEpisode (episode, benchmarkFile=None):
     overlay = dictValue (episode, "overlay", None)
     if (overlay is None):
         return None
@@ -174,11 +220,12 @@ def getTextArrayForEpisode (episode):
     if (benchmark is None):
         return None
     
+    episodeName = dictValue (episode, "title", None)
+
     fpsArr = dictValue (benchmark, "FPS values", None)
     if (fpsArr is None):
-        return None
+        return getFpsArrayFromBenchmarkFile (episodeName, benchmarkFile)
     
-    episodeName = dictValue (episode, "title", None)
     settings = dictValue (benchmark, "settings", None)
     if (settings is None):
         return None
@@ -641,7 +688,7 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
 
     videoDict = getSuitableVideoStream(episode, configs)
     audioDict = getSuitableAudioStream(episode, configs)
-    textArray = getTextArrayForEpisode(episode)
+    textArray = getTextArrayForEpisode(episode, dictValue(configs, "benchmarkFile", None))
     
     opts = {"padAudio": 1, "videoSoundVolume" : 0.07, "targetRes": targetRes }
     
@@ -919,7 +966,7 @@ if __name__ == "__main__":
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
 #    print(getLengthOfStream ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4"))
 #    print(getFpsStatsText(73, 32, 27, 80, 27))
-    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
+#    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
 #     print(getResolution ("audio.ogg"))
 #    print(getSuitableVideos ("C:\\Users\\Admin\\Videos\\hd7770", ["fortnite"]))
 #    episode = { "title": "Apex Legends",\
@@ -933,7 +980,7 @@ if __name__ == "__main__":
 #} }
 #    print (getDrawTextCommandFromArray(getTextArrayForEpisode(episode) , {}) )
 #    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
-    vids = []
+#    vids = []
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
@@ -954,3 +1001,4 @@ if __name__ == "__main__":
 #    print(recursivelyXfadeToOne(vids))
     #overlayAudio ({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 30}, \
 #{"file":"C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg"} , "merged_audio.mp4", 0.15)
+    print(parseBenchmarkFile("C:\\Program Files (x86)\\MSI Afterburner\\Benchmark_r7_260.txt"))
