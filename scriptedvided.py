@@ -632,7 +632,7 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
         existingAbsPathNoExt = os.path.splitext(existingAbsPath)[0]
         if expectedEpisodeVideo == existingAbsPathNoExt:
             print ('"' + episode["title"] +'" already has a video: "' + existingAbsPath + '"; will do nothing.')
-            configs["TOC"].append({"title" : episode["title"], "length" : getLengthOfStream(existingAbsPath)})
+            configs["TOC"].append({"title" : episode["title"], "length" : getLengthOfStream(existingAbsPath), "isChapter" : dictValue(episode, "isChapter", True) })
             return existingAbsPath
 
     videoDict = getSuitableVideoStream(episode, configs)
@@ -650,7 +650,7 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     dir = dictValue(configs, "outputFolder", ".")
     ext = os.path.splitext(builtVideo)[1]
     episodeVideo = os.path.join(dir, filePathSafeString(episode["title"]) + ext)
-    configs["TOC"].append({"title" : episode["title"], "length" : getLengthOfStream(builtVideo)})
+    configs["TOC"].append({"title" : episode["title"], "length" : getLengthOfStream(builtVideo), "isChapter" : dictValue(episode, "isChapter", True)})
     shutil.move (builtVideo, episodeVideo)
     return episodeVideo
 
@@ -769,8 +769,10 @@ def enhanceYoutubeData (configs):
     
     chapters = ""
     time = 0
+    previousChapterIndex = 0
     for tocEntry in configs["TOC"]:
-        chapters = chapters + secondsToTime(time) + " " + tocEntry["title"] + "\n"
+        if tocEntry["isChapter"]:
+            chapters = chapters + secondsToTime(time) + " " + tocEntry["title"] + "\n"
         time = time + float(tocEntry["length"])
     
     configs[youtube]["description"] = configs[youtube]["description"] + "\n\n" + chapters
