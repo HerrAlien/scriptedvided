@@ -44,6 +44,10 @@ def secondsToTime(seconds):
     minutes = int((seconds - 3600 * hours) / 60)
     seconds = int((seconds - 3600 * hours - 60 * minutes) + 0.5)
 
+    if seconds == 60:
+        seconds = 0
+        minutes = minutes + 1
+    
     hoursStr = twoDigitString(hours)
     minutesStr = twoDigitString(minutes)
     secondsStr = twoDigitString(seconds)
@@ -805,7 +809,10 @@ def makeVideo (configs):
         overlayAudio (noBackgroundVideo, backgroundAudioFile, videoPath, firstStreamAudioWeight=videoAudioWeight)
     
     enhanceYoutubeData(configs)
-    print("\n\n --- youtube -- \n" + str(configs["youtube"]))
+    print("\n\n --- youtube -- \n\n")
+    for key in configs["youtube"]:
+        print(key + "\n---------\n" + str (configs["youtube"][key]) + "\n\n")
+    
     return videoPath
     
 

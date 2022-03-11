@@ -8,7 +8,7 @@ configs = { "defaultAudioFile" : "hd7770.ogg",\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", "03:09" ), "destinationTimestamp" : "00:00"}, \
-{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", "02:19" ), "destinationTimestamp" : { "title": "Usefulness of used GPUs"}}, \
+{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", "02:40" ), "destinationTimestamp" : { "title": "Usefulness of used GPUs"}}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "The AMD Radeon HD 7770 in 2022", \
@@ -25,6 +25,11 @@ https://www.techpowerup.com/gpu-specs/asus-hd-7770.b609
 Intel 11th gen processors:
 The core i5 11400 (has an IGPU): https://ark.intel.com/content/www/us/en/ark/products/212270/intel-core-i511400-processor-12m-cache-up-to-4-40-ghz.html
 The core i5 11400F (no IGPU): https://ark.intel.com/content/www/us/en/ark/products/212271/intel-core-i511400f-processor-12m-cache-up-to-4-40-ghz.html
+
+Other resources used:
+RX 6500xt review: https://www.youtube.com/watch?v=M5_oM3Ow_CI
+AMD Video Compression Engine presentation: https://www.youtube.com/watch?v=piUZJjdxqHA
+AMD GCN architecture: https://www.youtube.com/watch?v=lLCCGS5vUx4
 ''', \
 "tags" : "AMD,Radeon,HD 7770,HD7770,GCN",\
 "language" : "EN", \
@@ -40,14 +45,29 @@ The core i5 11400F (no IGPU): https://ark.intel.com/content/www/us/en/ark/produc
 
 configs["episodes"].append(\
 { "title": "Context of the launch",\
-"audio" : {"timestamps" : ("00:00", "00:51" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("00:00", "00:30" ), "volume" : 0.999 },\
 "video" : "amd_gcn.mp4"\
 })
 
 configs["episodes"].append(\
+{ "title": "GCN in XBox One",\
+"audio" : {"timestamps" : ("00:30", "00:37.5" ), "volume" : 0.999 },\
+"video" : "xbox_one_gpu.mp4",\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
+{ "title": "Media encoding engine",\
+"audio" : {"timestamps" : ("00:37.5", "00:51" ), "volume" : 0.999 },\
+"video" : "gcn_vce.mp4",\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
 { "title": "RX 6500xt Rant",\
-"audio" : {"timestamps" : ("00:51", "00:57" ), "volume" : 0.999 },\
-"video" : "xbox_one_gpu.mp4"\
+"audio" : {"timestamps" : ("00:51", "00:57" ), "volume" : 0.9 },\
+"video" : "6500xt_no_video_encoding.avi",\
+"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -64,8 +84,15 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "The video card and thermal results",\
-"audio" : {"timestamps" : ("01:58.5", "02:29" ), "volume" : 0.999 },\
-"video" : "MG_0027.MOV"\
+"audio" : {"timestamps" : ("01:58.5", "02:16" ), "volume" : 0.999 },\
+"video" : "IMG_0024.MOV"\
+})
+
+configs["episodes"].append(\
+{ "title": "Thermal results - values",\
+"audio" : {"timestamps" : ("02:16", "02:29" ), "volume" : 0.999 },\
+"video" : "stock_heaven_720p_tesselationModerate.mp4",\
+"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -290,7 +317,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Usefulness of the HD 7770",\
 "audio" : {"timestamps" : ("10:47", "11:24") },\
-"video" : "IMG_0027.MOV"\
+"video" : "stock_Control_720p.mp4"\
 })
 
 configs["episodes"].append(\
@@ -304,8 +331,7 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode(configs["episodes"][8], configs)
 #print(scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs))
 #print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
-#scriptedvided.enhanceYoutubeData(configs)
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
 scriptedvided.makeVideo(configs)
-print (configs["youtube"])
+
