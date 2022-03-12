@@ -224,10 +224,12 @@ def getTextArrayForEpisode (episode, benchmarkFile=None):
 
     fpsArr = dictValue (benchmark, "FPS values", None)
     if (fpsArr is None):
-        return getFpsArrayFromBenchmarkFile (episodeName, benchmarkFile)
+        if benchmarkFile is None:
+            return None
+        fpsArr = getFpsArrayFromBenchmarkFile (episodeName, benchmarkFile)
     
     settings = dictValue (benchmark, "settings", None)
-    if (settings is None):
+    if ( (settings is None) or (0 == len(fpsArr)) ):
         return None
 
     average = None
@@ -316,7 +318,7 @@ def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1,
     return output
 
 def substituteAudio (inputVid, inputAudio, output=None, recompress=False):
-    return overlayAudio(inputVid, inputAudio, output, 0.01, recompress)
+    return overlayAudio(inputVid, inputAudio, output, 0.001, recompress)
     
 def appendMultiple (streams, output=None, recompressVideo=True, video=True, audio=True):
 
@@ -577,7 +579,7 @@ def selectSuitableVideo (paths, desiredLength=30, desiredYRes=1080):
         return potentialVideos[0]
     return None
     
-def getMediaArrayFromFoldersAndNames (folders, names, extensions):
+def getFilesArrayFromFoldersAndNames (folders, names, extensions):
     paths = []
     for folder in folders:
         if (folder is not None):
@@ -600,7 +602,7 @@ def getMediaArrayFromFoldersAndNames (folders, names, extensions):
     return paths
 
 def getSuitableVideoFromFolders (folders, names, extensions=[".mp4", ".mov", ".avi"]):
-    media = getMediaArrayFromFoldersAndNames (folders, names, extensions)
+    media = getFilesArrayFromFoldersAndNames (folders, names, extensions)
     return selectSuitableVideo(media)
     
 def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, extensions):
@@ -1001,4 +1003,4 @@ if __name__ == "__main__":
 #    print(recursivelyXfadeToOne(vids))
     #overlayAudio ({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 30}, \
 #{"file":"C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg"} , "merged_audio.mp4", 0.15)
-    print(parseBenchmarkFile("C:\\Program Files (x86)\\MSI Afterburner\\Benchmark_r7_260.txt"))
+    print(parseBenchmarkFile("C:\\Program Files (x86)\\MSI Afterburner\\Benchmark.txt"))
