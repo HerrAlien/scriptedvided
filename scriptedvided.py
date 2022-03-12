@@ -1,59 +1,9 @@
 import subprocess
 import os
 import shutil
-import math
+import sv_utils
+import sv_ffutils
 
-def ffmpegParams():
-    return ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"]
-#    return ["ffmpeg", "-y"]
-    
-def ffmpegSafeString (someText):
-    return someText.replace(":", "\:").replace("%", "\\\%")
-
-def filePathSafeString(someText):
-    return someText.replace(":", " ")
-
-def defaultOutput (input, suffix):
-    root, ext = os.path.splitext (input)
-    return root + suffix + ext
-    
-def dictValue(dict, key, default=None):
-    try:
-        return dict[key]
-    except:
-        return default
-
-def getSeconds (timeAsString):
-    times = timeAsString.split(":")
-    factor = 1.0
-    value = 0.0
-    arrayLen = len(times)
-    
-    for index in range(0, arrayLen):
-        value = value + float(times[arrayLen - 1 - index]) * factor
-        factor = factor * 60
-    return value
-
-def twoDigitString(number):
-    if (number < 10):
-        return "0" + str(number)
-    return str(number)
-    
-def secondsToTime(seconds):
-    hours = int(seconds/3600)
-    minutes = int((seconds - 3600 * hours) / 60)
-    seconds = int((seconds - 3600 * hours - 60 * minutes) + 0.5)
-
-    if seconds == 60:
-        seconds = 0
-        minutes = minutes + 1
-    
-    hoursStr = twoDigitString(hours)
-    minutesStr = twoDigitString(minutes)
-    secondsStr = twoDigitString(seconds)
-
-    return hoursStr + ":" + minutesStr + ":" + secondsStr
-    
 def getFpsStatsText(average, onePercent=None, pointOnePercent=None, max=None, min=None):
     text = "'"
     text = text + "Average\: "+ str(average) +"fps"
@@ -70,22 +20,16 @@ def getFpsStatsText(average, onePercent=None, pointOnePercent=None, max=None, mi
     text = text + "'"
     return text
 
-def getFileFromInput (inputStream):
-    if (type(inputStream) is type({})):        
-        return dictValue(inputStream,"file")
-    else:
-        return inputStream
-
 def toInputParams (inputStream):
     params = [];
 
     if (type(inputStream) is type({})):        
-        length = dictValue(inputStream,"length")
+        length = sv_utils.dictValue(inputStream,"length")
         if (length > 0):
             params.append("-t")
             params.append(str(length))
         
-        start = dictValue(inputStream,"start", 0)
+        start = sv_utils.dictValue(inputStream,"start", 0)
         if (start >= 0):
             params.append("-ss")
             params.append(str(start))
@@ -94,7 +38,7 @@ def toInputParams (inputStream):
             params.append(str(start - length))
         
         params.append("-i")
-        file = dictValue(inputStream,"file")
+        file = sv_utils.dictValue(inputStream,"file")
         params.append(file)
     else:
         params.append("-i")
@@ -105,11 +49,11 @@ def toInputParams (inputStream):
 
     
 def getDrawTextCommandFromArray (text, opts):
-    textSize = float(dictValue(opts,"fontsize", 48))
+    textSize = float(sv_utils.dictValue(opts,"fontsize", 48))
     paramText = ""
     borderWidth = 0.5 * textSize
-    boxcolor=dictValue(opts,"boxcolor", "#80000080")
-    fontcolor=dictValue(opts,"fontcolor", "White")
+    boxcolor=sv_utils.dictValue(opts,"boxcolor", "#80000080")
+    fontcolor=sv_utils.dictValue(opts,"fontcolor", "White")
 
     '''
         if (t > 4)
@@ -206,29 +150,29 @@ def getFpsArrayFromBenchmarkFile (episodeName, benchmarkFile):
     return []
     
 def getTextArrayForEpisode (episode, benchmarkFile=None):
-    overlay = dictValue (episode, "overlay", None)
+    overlay = sv_utils.dictValue (episode, "overlay", None)
     if (overlay is None):
         return None
     
-    # maybe we should call ffmpegSafeString for this one, and allow usage
+    # maybe we should call sv_ffutils.ffmpegSafeString for this one, and allow usage
     # of regular text in the config file ...
-    textArray = dictValue (overlay, "text", None)
+    textArray = sv_utils.dictValue (overlay, "text", None)
     if (textArray is not None):
         return (textArray)
 
-    benchmark = dictValue (overlay, "benchmark", None)
+    benchmark = sv_utils.dictValue (overlay, "benchmark", None)
     if (benchmark is None):
         return None
     
-    episodeName = dictValue (episode, "title", None)
+    episodeName = sv_utils.dictValue (episode, "title", None)
 
-    fpsArr = dictValue (benchmark, "FPS values", None)
+    fpsArr = sv_utils.dictValue (benchmark, "FPS values", None)
     if (fpsArr is None):
         if benchmarkFile is None:
             return None
         fpsArr = getFpsArrayFromBenchmarkFile (episodeName, benchmarkFile)
     
-    settings = dictValue (benchmark, "settings", None)
+    settings = sv_utils.dictValue (benchmark, "settings", None)
     if ( (settings is None) or (0 == len(fpsArr)) ):
         return None
 
@@ -246,18 +190,18 @@ def getTextArrayForEpisode (episode, benchmarkFile=None):
         
     fpsAsText = getFpsStatsText (average, onePercent, pointOnePercent)
     
-    return (["'" + ffmpegSafeString(episodeName + " (" + settings) + ")'", fpsAsText ])
+    return (["'" + sv_ffutils.ffmpegSafeString(episodeName + " (" + settings) + ")'", fpsAsText ])
         
 def getScaleCommand(resolutionPair):
     return "scale="+str(resolutionPair[0])+ "x" +str(resolutionPair[1]) + ":flags=lanczos"
     
 # input - the input media to be truncated
 # start - the input media to be truncated
-def truncate(input, start=-1, length=-1, output=None, recompress=False):
-    params = ffmpegParams() + toInputParams( {"file" : input, "start" : start, "length" : length} );
+def truncate(input, start=-1, length=-1, output=None, recompress=True):
+    params = sv_ffutils.ffmpegParams() + toInputParams( {"file" : input, "start" : start, "length" : length} );
 
     if (output == None):
-        output = defaultOutput (input, "_truncate_" )
+        output = sv_ffutils.defaultOutput (input, "_truncate_" )
 
     if (not recompress):
         params.append("-c")
@@ -270,14 +214,14 @@ def truncate(input, start=-1, length=-1, output=None, recompress=False):
     return output
     
 def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1, recompressVideo=True):
-    params = ffmpegParams();
+    params = sv_ffutils.ffmpegParams();
 
     params = params + toInputParams(inputVid)    
     params = params + toInputParams(inputAudio)
 
-    inputVideoHasAudio = hasAudio(inputVid)
+    inputVideohasAudio = sv_ffutils.hasAudio(inputVid)
     # detect if input video DOES have audio
-    if not inputVideoHasAudio:
+    if not inputVideohasAudio:
         params.append("-f")
         params.append("lavfi")
         params.append("-i")
@@ -289,18 +233,18 @@ def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1,
     params.append ("-map")
     params.append ("1:a")
     
-    if not inputVideoHasAudio:
+    if not inputVideohasAudio:
         params.append ("-map")
         params.append ("2:a")
     
     if (output == None):
-        audioRoot,ext = os.path.splitext (getFileFromInput(inputAudio))
-        output = defaultOutput (getFileFromInput(inputVid), "_overlay_"  + os.path.basename(audioRoot) )
+        audioRoot,ext = os.path.splitext (sv_utils.getFileFromInput(inputAudio))
+        output = sv_ffutils.defaultOutput (sv_utils.getFileFromInput(inputVid), "_overlay_"  + os.path.basename(audioRoot) )
 
     weightsStr = str(firstStreamAudioWeight) + " " + str(1 - firstStreamAudioWeight)
         
     params.append ("-filter_complex")
-    if inputVideoHasAudio:
+    if inputVideohasAudio:
         params.append ("[0:a][1:a] amix=weights='" + weightsStr + "'")
     else:
         params.append ("[2:a][1:a] amix=weights='" + weightsStr + "':duration=shortest")
@@ -317,14 +261,14 @@ def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1,
     
     return output
 
-def substituteAudio (inputVid, inputAudio, output=None, recompress=False):
+def substituteAudio (inputVid, inputAudio, output=None, recompress=True):
     return overlayAudio(inputVid, inputAudio, output, 0.001, recompress)
     
 def appendMultiple (streams, output=None, recompressVideo=True, video=True, audio=True):
 
-    params = ffmpegParams();
+    params = sv_ffutils.ffmpegParams();
     for stream in streams:
-        sar = getSar(stream)
+        sar = sv_ffutils.getSar(stream)
         if sar != (1,1) and sar != (0,0):
             stream = setSarToOne(stream)
         params = params + toInputParams(stream)    
@@ -361,7 +305,7 @@ def appendMultiple (streams, output=None, recompressVideo=True, video=True, audi
     params.append ("30")
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (getFileFromInput(streams[0]))
+        secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(streams[0]))
         output = secondRoot + "_append_" + ext
 
     params.append(output)
@@ -370,14 +314,13 @@ def appendMultiple (streams, output=None, recompressVideo=True, video=True, audi
     return output
 
 def xfadedMultiple (streams, output=None, fadeDuration=1, recompressVideo=True):
-
     durations = []
-    params = ffmpegParams();
+    params = sv_ffutils.ffmpegParams();
     for stream in streams:
-        if getSar(stream) != (1,1):
+        if sv_ffutils.getSar(stream) != (1,1):
             stream = setSarToOne(stream)
         params = params + toInputParams(stream)
-        durations.append(getLengthOfStream(stream))
+        durations.append(sv_ffutils.getLengthOfStream(stream))
 
     params.append("-filter_complex")
     
@@ -413,12 +356,40 @@ def xfadedMultiple (streams, output=None, fadeDuration=1, recompressVideo=True):
         params.append ("copy")
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (getFileFromInput(streams[0]))
+        secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(streams[0]))
         output = "_append_.mp4"
 
     params.append(output)
     subprocess.run(params)
     
+    return output
+
+def concatNoRecompress(streams, output=None):
+    if (output == None):
+        secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(streams[0]))
+        output = secondRoot + "_append_" + ext
+
+    params = sv_ffutils.ffmpegParams();
+    params.append("-safe")
+    params.append("0")
+
+    params.append("-f")
+    params.append("concat")
+    
+    f = open ("concat.txt", "w")
+    for stream in streams:
+        sar = sv_ffutils.getSar(stream)
+        if sar != (1,1) and sar != (0,0):
+            stream = setSarToOne(stream)
+        f.write("file '" + sv_utils.getFileFromInput(stream) + "'\n")
+    f.close()
+
+    params.append("-i")
+    params.append("concat.txt")
+    params.append("-c")
+    params.append("copy")
+    params.append(output)
+    subprocess.run(params)
     return output
     
     
@@ -427,7 +398,7 @@ def append (firstStream, secondStream, output=None, recompressVideo=True):
 
     
 def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
-    params = ffmpegParams();
+    params = sv_ffutils.ffmpegParams();
 
     params = params + toInputParams(stream)    
     params.append ("-map")
@@ -437,85 +408,20 @@ def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
     params.append("[0:a]adelay=" + str(ammountBegin * 1000) + ":all=1[intermediate];[intermediate]apad=pad_dur=" + str(amountEnd))
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (getFileFromInput(stream))
-        output = defaultOutput (getFileFromInput(stream), "_padded_"  + str(ammountBegin) + "_" + str(amountEnd))
+        secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(stream))
+        output = sv_ffutils.defaultOutput (sv_utils.getFileFromInput(stream), "_padded_"  + str(ammountBegin) + "_" + str(amountEnd))
 
     params.append(output)
     subprocess.run(params)
     
     return output
 
-def getLengthOfStream (stream):
-    if type(stream) is type ({}):
-        length = dictValue(stream, "length", None)
-        if length is not None:
-            return length
-    
-    filepath = getFileFromInput (stream)
-    finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    out = str(finishedProc.stderr) + str(finishedProc.stdout)
-    durationIndex = out.index("Duration")
-    out = out[durationIndex:];
-    commaIndex = out.index(",")
-    out = out[0:commaIndex]
-    spaceIndex  = out.index(" ")
-    out = out[spaceIndex+1:]
-
-    timeInSec = getSeconds(out)
-    return timeInSec
-
-def hasAudio(stream):
-    filepath = getFileFromInput (stream)
-    
-    finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    out = str(finishedProc.stderr) + str(finishedProc.stdout)
-    return out.find(": Audio:") > 0
-
-    
-def getResolution (filepath):
-    finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    out = str(finishedProc.stderr) + str(finishedProc.stdout)
-    durationIndex = out.find(": Video:")
-    if durationIndex < 0:
-        return (0, 0)
-
-    out = out[durationIndex:];
-    endIndex = out.index("fps")
-    out = out[0:endIndex]
-
-    outArr = out.split(",")
-    for entry in outArr:
-        resolutionAttemptArr = entry.split("x")
-        try:
-            if (len (resolutionAttemptArr) > 1):
-                pieceW = resolutionAttemptArr[0].replace(" ","")
-                pieceH = resolutionAttemptArr[1].split(" ")[0].replace(" ","")
-                return (int(pieceW), int(pieceH))
-        except:
-            continue
-            
-    return (0, 0)
-
-def getSar(filepath):
-    finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    out = str(finishedProc.stderr) + str(finishedProc.stdout)
-    sarIndex = out.find("[SAR ")
-    if sarIndex < 0:
-        return (0, 0)
-
-    out = out[sarIndex + 5:];
-    darIndex = out.index(" DAR ")
-    out = out[0:darIndex]
-
-    outArr = out.split(":")
-    return (int(outArr[0]), int(outArr[1]))
-    
 def drawText (stream, text, output=None, opts={"fontcolor" : "White", "boxcolor" : "#80000080", "fontsize" : 48}):
     if (text is None):
-        print ("WARNING: no text provided, returning the unmodified input " + "'" + getFileFromInput(stream) + "'")
-        return getFileFromInput(stream)
+        print ("WARNING: no text provided, returning the unmodified input " + "'" + sv_utils.getFileFromInput(stream) + "'")
+        return sv_utils.getFileFromInput(stream)
         
-    params = ffmpegParams();
+    params = sv_ffutils.ffmpegParams();
 
     params = params + toInputParams(stream)    
     params.append("-filter_complex")
@@ -523,8 +429,8 @@ def drawText (stream, text, output=None, opts={"fontcolor" : "White", "boxcolor"
     params.append(getDrawTextCommandFromArray(text, opts))
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (getFileFromInput(stream))
-        output = defaultOutput ("", "_withText_"  + ext)
+        secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(stream))
+        output = sv_ffutils.defaultOutput ("", "_withText_"  + ext)
 
     params.append(output)
     subprocess.run(params)
@@ -532,15 +438,15 @@ def drawText (stream, text, output=None, opts={"fontcolor" : "White", "boxcolor"
     return output
 
 def scaleVideo(video, resolutionPair, output=None):
-    params = ffmpegParams();
+    params = sv_ffutils.ffmpegParams();
     params = params + toInputParams(video)    
     params.append("-filter_complex")
 
     params.append(getScaleCommand(resolutionPair))
     
     if (output == None):
-        root,ext = os.path.splitext (getFileFromInput(video))
-        output = defaultOutput (getFileFromInput(video), "_scaled_" + str(resolutionPair[0]) + "x" + str(resolutionPair[1])  + ext)
+        root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
+        output = sv_ffutils.defaultOutput (sv_utils.getFileFromInput(video), "_scaled_" + str(resolutionPair[0]) + "x" + str(resolutionPair[1])  + ext)
 
     params.append(output)   
     subprocess.run(params)
@@ -548,15 +454,15 @@ def scaleVideo(video, resolutionPair, output=None):
     return output
 
 def setSarToOne(video, output=None):
-    params = ffmpegParams();
+    params = sv_ffutils.ffmpegParams();
     params = params + toInputParams(video)    
     params.append("-filter_complex")
 
     params.append("setsar=1")
     
     if (output == None):
-        root,ext = os.path.splitext (getFileFromInput(video))
-        output = defaultOutput (root, "_setSar1_" + ext)
+        root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
+        output = sv_ffutils.defaultOutput (root, "_setSar1_" + ext)
     
     params.append(output)   
     subprocess.run(params)
@@ -566,8 +472,8 @@ def setSarToOne(video, output=None):
 def selectSuitableVideo (paths, desiredLength=30, desiredYRes=1080):
     potentialVideos = []
     for fullVideoPath in paths:
-        if (getLengthOfStream(fullVideoPath) > desiredLength):
-            resolution = getResolution (fullVideoPath)
+        if (sv_ffutils.getLengthOfStream(fullVideoPath) > desiredLength):
+            resolution = sv_ffutils.getResolution (fullVideoPath)
 # we favor 1080p videos - they will not require any scaling.
             if (resolution[1] == desiredYRes):
                 return fullVideoPath
@@ -608,11 +514,11 @@ def getSuitableVideoFromFolders (folders, names, extensions=[".mp4", ".mov", ".a
 def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, extensions):
     names = []
 
-    mediaDict =  dictValue (episode, keyInEpisode, None)
+    mediaDict =  sv_utils.dictValue (episode, keyInEpisode, None)
     # see if we can simply return it as is
     if type(mediaDict) is type({}):
         # check that we have a full path for "file"
-        dictFile = dictValue (mediaDict, "file", None)
+        dictFile = sv_utils.dictValue (mediaDict, "file", None)
         if dictFile is not None:
             if os.path.exists(dictFile):
                 return mediaDict # path exists, so just use that
@@ -625,18 +531,18 @@ def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, ext
         mediaDict = {}
           
     if len(names) == 0:
-        episodeTitle = dictValue (episode, "title", None)
+        episodeTitle = sv_utils.dictValue (episode, "title", None)
         if episodeTitle is not None:
             names.append(episodeTitle)
             # TODO: append the aliases as well
             names = names + aliases (episodeTitle)
         
-    mediaFolder = dictValue(configs, "mediaFolder", None)
-    stockFolder = dictValue(configs, "stockFolder", None)
+    mediaFolder = sv_utils.dictValue(configs, "mediaFolder", None)
+    stockFolder = sv_utils.dictValue(configs, "stockFolder", None)
      
     mediaDict["file"] = getSuitableVideoFromFolders ([mediaFolder, stockFolder], names, extensions)
     if mediaDict["file"] is None:
-        defaultMedia = dictValue (configs, defaultMediaKey, None)
+        defaultMedia = sv_utils.dictValue (configs, defaultMediaKey, None)
         if defaultMedia is None:
             return {}
             
@@ -644,20 +550,20 @@ def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, ext
         
         
     # check if we have a timestamps entry; convert that to start and length.
-    timestamps = dictValue (mediaDict, "timestamps", None)
+    timestamps = sv_utils.dictValue (mediaDict, "timestamps", None)
     if timestamps is not None:
-        startSecond = getSeconds(timestamps[0])
-        endSecond = getSeconds(timestamps[1])
+        startSecond = sv_utils.getSeconds(timestamps[0])
+        endSecond = sv_utils.getSeconds(timestamps[1])
         mediaDict["start"] = startSecond
         mediaDict["length"] = endSecond - startSecond
     else:
-        altVal = dictValue (mediaDict, "start", None)
+        altVal = sv_utils.dictValue (mediaDict, "start", None)
         if altVal is not None:
-            mediaDict["start"] = getSeconds(altVal)
+            mediaDict["start"] = sv_utils.getSeconds(altVal)
 
-        altVal = dictValue (mediaDict, "length", None)
+        altVal = sv_utils.dictValue (mediaDict, "length", None)
         if altVal is not None:
-            mediaDict["length"] = getSeconds(altVal)
+            mediaDict["length"] = sv_utils.getSeconds(altVal)
         
     return mediaDict
     
@@ -675,35 +581,35 @@ def getSuitableVideo (folder, names):
 
 
 def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
-    if dictValue(configs, "TOC", None) is None:
+    if sv_utils.dictValue(configs, "TOC", None) is None:
         configs["TOC"] = []
 
-    dir = dictValue(configs, "outputFolder", ".")
-    expectedEpisodeVideo = os.path.join(dir, filePathSafeString(episode["title"]))
+    dir = sv_utils.dictValue(configs, "outputFolder", ".")
+    expectedEpisodeVideo = os.path.join(dir, sv_utils.filePathSafeString(episode["title"]))
     for existingFile in os.listdir(dir):
         existingAbsPath = os.path.join(dir, existingFile)
         existingAbsPathNoExt = os.path.splitext(existingAbsPath)[0]
         if expectedEpisodeVideo == existingAbsPathNoExt:
             print ('"' + episode["title"] +'" already has a video: "' + existingAbsPath + '"; will do nothing.')
-            configs["TOC"].append({"title" : episode["title"], "length" : getLengthOfStream(existingAbsPath), "isChapter" : dictValue(episode, "isChapter", True) })
+            configs["TOC"].append({"title" : episode["title"], "length" : sv_ffutils.getLengthOfStream(existingAbsPath), "isChapter" : sv_utils.dictValue(episode, "isChapter", True) })
             return existingAbsPath
 
     videoDict = getSuitableVideoStream(episode, configs)
     audioDict = getSuitableAudioStream(episode, configs)
-    textArray = getTextArrayForEpisode(episode, dictValue(configs, "benchmarkFile", None))
+    textArray = getTextArrayForEpisode(episode, sv_utils.dictValue(configs, "benchmarkFile", None))
     
     opts = {"padAudio": 1, "videoSoundVolume" : 0.07, "targetRes": targetRes }
     
-    audioVolume = dictValue(audioDict, "volume", None)
+    audioVolume = sv_utils.dictValue(audioDict, "volume", None)
     if audioVolume is not None:
         opts["videoSoundVolume"] = 1 - float(audioVolume)
     
     builtVideo = makeEpisodeWithAllInputs (videoDict, audioDict, textArray, opts)
     # get extension and dir
-    dir = dictValue(configs, "outputFolder", ".")
+    dir = sv_utils.dictValue(configs, "outputFolder", ".")
     ext = os.path.splitext(builtVideo)[1]
-    episodeVideo = os.path.join(dir, filePathSafeString(episode["title"]) + ext)
-    configs["TOC"].append({"title" : episode["title"], "length" : getLengthOfStream(builtVideo), "isChapter" : dictValue(episode, "isChapter", True)})
+    episodeVideo = os.path.join(dir, sv_utils.filePathSafeString(episode["title"]) + ext)
+    configs["TOC"].append({"title" : episode["title"], "length" : sv_ffutils.getLengthOfStream(builtVideo), "isChapter" : sv_utils.dictValue(episode, "isChapter", True)})
     shutil.move (builtVideo, episodeVideo)
     return episodeVideo
 
@@ -718,11 +624,11 @@ def buildBackgroundTrack (backgroundTrack, configs):
         segmentName = segmentNamePrefix + str(segmentIndex) + segmentExt
 
         # handle padding at the begining.        
-        trackIsInsertedAt = dictValue(track, "destinationTimestamp", None)
+        trackIsInsertedAt = sv_utils.dictValue(track, "destinationTimestamp", None)
         if trackIsInsertedAt is None:
             trackIsInsertedAt = 0
         elif type (trackIsInsertedAt) is type(""):
-            trackIsInsertedAt = getSeconds (trackIsInsertedAt)
+            trackIsInsertedAt = sv_utils.getSeconds (trackIsInsertedAt)
         else:            
             insertedAt = 0
             for episodeTocDict in configs["TOC"]:
@@ -733,20 +639,20 @@ def buildBackgroundTrack (backgroundTrack, configs):
             
         trackLength = 0
         trackStartsAt = 0
-        timestamps = dictValue (track, "timestamps", None)
+        timestamps = sv_utils.dictValue (track, "timestamps", None)
         if timestamps is not None:
-            trackStartsAt = getSeconds(timestamps[0])
-            endSecond = getSeconds(timestamps[1])
+            trackStartsAt = sv_utils.getSeconds(timestamps[0])
+            endSecond = sv_utils.getSeconds(timestamps[1])
             trackLength = endSecond - trackStartsAt
         else:
-            trackLength = getLengthOfStream(track["file"])
+            trackLength = sv_ffutils.getLengthOfStream(track["file"])
             
         padAtBeginning = trackIsInsertedAt - previousTrackEndedAt
         if padAtBeginning > 0:
-            padAudioStream( {"file" : dictValue(track,"file") , "start" : trackStartsAt, "length" :trackLength }, segmentName, padAtBeginning, 0.1 )
+            padAudioStream( {"file" : sv_utils.dictValue(track,"file") , "start" : trackStartsAt, "length" :trackLength }, segmentName, padAtBeginning, 0.1 )
             audioToConcat.append(segmentName)
         else:
-            audioToConcat.append({"file" : dictValue(track,"file") , "start" : trackStartsAt, "length" :trackLength })
+            audioToConcat.append({"file" : sv_utils.dictValue(track,"file") , "start" : trackStartsAt, "length" :trackLength })
                 
         previousTrackEndedAt = trackIsInsertedAt + trackLength
         
@@ -803,11 +709,11 @@ def getMusicCreditsString(backgroundTrack):
     return fullTracksCredits
     
 def isGameEpisode (episode):
-    return (dictValue(episode, "overlay", None) is not None)
+    return (sv_utils.dictValue(episode, "overlay", None) is not None)
     
 def enhanceYoutubeData (configs):
     youtube = "youtube"
-    if dictValue(configs, youtube, None) is None:
+    if sv_utils.dictValue(configs, youtube, None) is None:
         configs[youtube] = {}
 
     episodes = configs["episodes"]
@@ -817,7 +723,7 @@ def enhanceYoutubeData (configs):
             configs[youtube]["tags"] = configs[youtube]["tags"] + "," + episode["title"]
 
     for episode in episodes:
-        if (dictValue(episode, "overlay", None) is not None):
+        if (sv_utils.dictValue(episode, "overlay", None) is not None):
             configs[youtube]["tags"] = configs[youtube]["tags"] + "," + episode["title"]
     
     chapters = ""
@@ -825,12 +731,12 @@ def enhanceYoutubeData (configs):
     previousChapterIndex = 0
     for tocEntry in configs["TOC"]:
         if tocEntry["isChapter"]:
-            chapters = chapters + secondsToTime(time) + " " + tocEntry["title"] + "\n"
+            chapters = chapters + sv_utils.secondsToTime(time) + " " + tocEntry["title"] + "\n"
         time = time + float(tocEntry["length"])
     
     configs[youtube]["description"] = configs[youtube]["description"] + "\n\n" + chapters
 
-    backgroundTrack = dictValue(configs, "backgroundTrack", None)
+    backgroundTrack = sv_utils.dictValue(configs, "backgroundTrack", None)
     if backgroundTrack is not None:
         configs[youtube]["description"] = configs[youtube]["description"] + "\n\n" + getMusicCreditsString (backgroundTrack)
         
@@ -849,12 +755,12 @@ def makeVideo (configs):
     videoPath = os.path.join(configs["outputFolder"], configs["outputFile"])
     appendMultiple(episodeVideos, videoPath)
     
-    backgroundTrack = dictValue(configs, "backgroundTrack", None)
+    backgroundTrack = sv_utils.dictValue(configs, "backgroundTrack", None)
     if backgroundTrack is not None:    
         noBackgroundVideo = os.path.join(configs["outputFolder"], "_nobackground.mp4")
         shutil.move(videoPath, noBackgroundVideo)        
         backgroundAudioFile = buildBackgroundTrack (backgroundTrack, configs)        
-        videoAudioWeight = 1 - dictValue(backgroundTrack, "volume", 0.1)        
+        videoAudioWeight = 1 - sv_utils.dictValue(backgroundTrack, "volume", 0.1)        
         overlayAudio (noBackgroundVideo, backgroundAudioFile, videoPath, firstStreamAudioWeight=videoAudioWeight)
     
     enhanceYoutubeData(configs)
@@ -868,12 +774,12 @@ def makeVideo (configs):
 # needs an audio - see makeAudioForEposiode
 def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
 
-    videoLen = getLengthOfStream(video)
-    audioLen = getLengthOfStream(audio)
-    padding = dictValue (options, "padAudio", 1)
+    videoLen = sv_ffutils.getLengthOfStream(video)
+    audioLen = sv_ffutils.getLengthOfStream(audio)
+    padding = sv_utils.dictValue (options, "padAudio", 1)
     
     audioToVideoLengthRatio = int((audioLen + padding + padding) / videoLen)
-    fixedVideo = getFileFromInput (video)
+    fixedVideo = sv_utils.getFileFromInput (video)
     nextIterationVideo = fixedVideo
     appendToFitToLength = []
     if (audioToVideoLengthRatio > 1):
@@ -882,23 +788,23 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
         
         fixedVideo = appendMultiple(appendToFitToLength) # this needs rework
     
-    videoLen = getLengthOfStream(fixedVideo)
-    videoStart = dictValue (video, "start", None)
+    videoLen = sv_ffutils.getLengthOfStream(fixedVideo)
+    videoStart = sv_utils.dictValue (video, "start", None)
     if videoStart is None:
         videoStart = (videoLen - (audioLen + padding + padding)) * 0.5    
     
     trimmedVideo = truncate (fixedVideo, videoStart, audioLen + padding + padding)
     
     scaledVideo = trimmedVideo
-    targetRes = dictValue(options, "targetRes", (1920,1080))
-    resolution = getResolution(trimmedVideo)
+    targetRes = sv_utils.dictValue(options, "targetRes", (1920,1080))
+    resolution = sv_ffutils.getResolution(trimmedVideo)
     if (resolution[1] != targetRes[1]):
         scaledVideo = scaleVideo(trimmedVideo, targetRes)
         os.remove(trimmedVideo)
     
     paddedAudio = padAudioStream (audio, "padded.ogg", padding, padding)
     
-    videoAudioWeight = dictValue (options, "videoSoundVolume", 0.07)
+    videoAudioWeight = sv_utils.dictValue (options, "videoSoundVolume", 0.07)
     
 # then  overlay the audio
 
@@ -966,10 +872,10 @@ if __name__ == "__main__":
 #   truncatedvid2 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "t2.mp4", -10, 10)
 #   append({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 10}, \
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
-#    print(getLengthOfStream ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4"))
+#    print(sv_ffutils.getLengthOfStream ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4"))
 #    print(getFpsStatsText(73, 32, 27, 80, 27))
 #    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
-#     print(getResolution ("audio.ogg"))
+#     print(sv_ffutils.getResolution ("audio.ogg"))
 #    print(getSuitableVideos ("C:\\Users\\Admin\\Videos\\hd7770", ["fortnite"]))
 #    episode = { "title": "Apex Legends",\
 #"audio" : {"timestamps" : ("02:02", "02:14" ) },\
@@ -982,8 +888,7 @@ if __name__ == "__main__":
 #} }
 #    print (getDrawTextCommandFromArray(getTextArrayForEpisode(episode) , {}) )
 #    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
-#    vids = []
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
+    vids = []
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
@@ -1003,4 +908,5 @@ if __name__ == "__main__":
 #    print(recursivelyXfadeToOne(vids))
     #overlayAudio ({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 30}, \
 #{"file":"C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg"} , "merged_audio.mp4", 0.15)
-    print(parseBenchmarkFile("C:\\Program Files (x86)\\MSI Afterburner\\Benchmark.txt"))
+#    print(parseBenchmarkFile("C:\\Program Files (x86)\\MSI Afterburner\\Benchmark.txt"))
+    concatNoRecompress(vids)
