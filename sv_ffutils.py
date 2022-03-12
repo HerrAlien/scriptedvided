@@ -19,7 +19,7 @@ def getLengthOfStream (stream):
         if length is not None:
             return length
     
-    filepath = getFileFromInput (stream)
+    filepath = sv_utils.getFileFromInput (stream)
     finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out = str(finishedProc.stderr) + str(finishedProc.stdout)
     durationIndex = out.index("Duration")
@@ -33,7 +33,7 @@ def getLengthOfStream (stream):
     return timeInSec
 
 def hasAudio(stream):
-    filepath = getFileFromInput (stream)
+    filepath = sv_utils.getFileFromInput (stream)
     
     finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out = str(finishedProc.stderr) + str(finishedProc.stdout)

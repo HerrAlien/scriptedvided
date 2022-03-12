@@ -20,12 +20,6 @@ def getFpsStatsText(average, onePercent=None, pointOnePercent=None, max=None, mi
     text = text + "'"
     return text
 
-def getFileFromInput (inputStream):
-    if (type(inputStream) is type({})):        
-        return sv_utils.dictValue(inputStream,"file")
-    else:
-        return inputStream
-
 def toInputParams (inputStream):
     params = [];
 
@@ -219,15 +213,15 @@ def truncate(input, start=-1, length=-1, output=None, recompress=False):
     
     return output
     
-def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1, recompressVideo=True):
+def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1, recompressVideo=False):
     params = sv_ffutils.ffmpegParams();
 
     params = params + toInputParams(inputVid)    
     params = params + toInputParams(inputAudio)
 
-    inputVideosv_ffutils.hasAudio = sv_ffutils.hasAudio(inputVid)
+    inputVideohasAudio = sv_ffutils.hasAudio(inputVid)
     # detect if input video DOES have audio
-    if not inputVideosv_ffutils.hasAudio:
+    if not inputVideohasAudio:
         params.append("-f")
         params.append("lavfi")
         params.append("-i")
@@ -239,18 +233,18 @@ def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1,
     params.append ("-map")
     params.append ("1:a")
     
-    if not inputVideosv_ffutils.hasAudio:
+    if not inputVideohasAudio:
         params.append ("-map")
         params.append ("2:a")
     
     if (output == None):
-        audioRoot,ext = os.path.splitext (getFileFromInput(inputAudio))
-        output = sv_ffutils.defaultOutput (getFileFromInput(inputVid), "_overlay_"  + os.path.basename(audioRoot) )
+        audioRoot,ext = os.path.splitext (sv_utils.getFileFromInput(inputAudio))
+        output = sv_ffutils.defaultOutput (sv_utils.getFileFromInput(inputVid), "_overlay_"  + os.path.basename(audioRoot) )
 
     weightsStr = str(firstStreamAudioWeight) + " " + str(1 - firstStreamAudioWeight)
         
     params.append ("-filter_complex")
-    if inputVideosv_ffutils.hasAudio:
+    if inputVideohasAudio:
         params.append ("[0:a][1:a] amix=weights='" + weightsStr + "'")
     else:
         params.append ("[2:a][1:a] amix=weights='" + weightsStr + "':duration=shortest")
@@ -311,7 +305,7 @@ def appendMultiple (streams, output=None, recompressVideo=True, video=True, audi
     params.append ("30")
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (getFileFromInput(streams[0]))
+        secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(streams[0]))
         output = secondRoot + "_append_" + ext
 
     params.append(output)
@@ -362,7 +356,7 @@ def xfadedMultiple (streams, output=None, fadeDuration=1, recompressVideo=True):
         params.append ("copy")
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (getFileFromInput(streams[0]))
+        secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(streams[0]))
         output = "_append_.mp4"
 
     params.append(output)
@@ -386,8 +380,8 @@ def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
     params.append("[0:a]adelay=" + str(ammountBegin * 1000) + ":all=1[intermediate];[intermediate]apad=pad_dur=" + str(amountEnd))
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (getFileFromInput(stream))
-        output = sv_ffutils.defaultOutput (getFileFromInput(stream), "_padded_"  + str(ammountBegin) + "_" + str(amountEnd))
+        secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(stream))
+        output = sv_ffutils.defaultOutput (sv_utils.getFileFromInput(stream), "_padded_"  + str(ammountBegin) + "_" + str(amountEnd))
 
     params.append(output)
     subprocess.run(params)
@@ -396,8 +390,8 @@ def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
 
 def drawText (stream, text, output=None, opts={"fontcolor" : "White", "boxcolor" : "#80000080", "fontsize" : 48}):
     if (text is None):
-        print ("WARNING: no text provided, returning the unmodified input " + "'" + getFileFromInput(stream) + "'")
-        return getFileFromInput(stream)
+        print ("WARNING: no text provided, returning the unmodified input " + "'" + sv_utils.getFileFromInput(stream) + "'")
+        return sv_utils.getFileFromInput(stream)
         
     params = sv_ffutils.ffmpegParams();
 
@@ -407,7 +401,7 @@ def drawText (stream, text, output=None, opts={"fontcolor" : "White", "boxcolor"
     params.append(getDrawTextCommandFromArray(text, opts))
     
     if (output == None):
-        secondRoot,ext = os.path.splitext (getFileFromInput(stream))
+        secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(stream))
         output = sv_ffutils.defaultOutput ("", "_withText_"  + ext)
 
     params.append(output)
@@ -423,8 +417,8 @@ def scaleVideo(video, resolutionPair, output=None):
     params.append(getScaleCommand(resolutionPair))
     
     if (output == None):
-        root,ext = os.path.splitext (getFileFromInput(video))
-        output = sv_ffutils.defaultOutput (getFileFromInput(video), "_scaled_" + str(resolutionPair[0]) + "x" + str(resolutionPair[1])  + ext)
+        root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
+        output = sv_ffutils.defaultOutput (sv_utils.getFileFromInput(video), "_scaled_" + str(resolutionPair[0]) + "x" + str(resolutionPair[1])  + ext)
 
     params.append(output)   
     subprocess.run(params)
@@ -439,7 +433,7 @@ def setSarToOne(video, output=None):
     params.append("setsar=1")
     
     if (output == None):
-        root,ext = os.path.splitext (getFileFromInput(video))
+        root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
         output = sv_ffutils.defaultOutput (root, "_setSar1_" + ext)
     
     params.append(output)   
@@ -757,7 +751,7 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
     padding = sv_utils.dictValue (options, "padAudio", 1)
     
     audioToVideoLengthRatio = int((audioLen + padding + padding) / videoLen)
-    fixedVideo = getFileFromInput (video)
+    fixedVideo = sv_utils.getFileFromInput (video)
     nextIterationVideo = fixedVideo
     appendToFitToLength = []
     if (audioToVideoLengthRatio > 1):

@@ -37,3 +37,10 @@ def secondsToTime(seconds):
     secondsStr = twoDigitString(seconds)
 
     return hoursStr + ":" + minutesStr + ":" + secondsStr
+
+def getFileFromInput (inputStream):
+    if (type(inputStream) is type({})):        
+        return dictValue(inputStream,"file")
+    else:
+        return inputStream
+
