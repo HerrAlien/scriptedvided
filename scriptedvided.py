@@ -213,7 +213,7 @@ def truncate(input, start=-1, length=-1, output=None, recompress=False):
     
     return output
     
-def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1, recompressVideo=False):
+def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1, recompressVideo=True):
     params = sv_ffutils.ffmpegParams();
 
     params = params + toInputParams(inputVid)    
@@ -362,6 +362,34 @@ def xfadedMultiple (streams, output=None, fadeDuration=1, recompressVideo=True):
     params.append(output)
     subprocess.run(params)
     
+    return output
+
+def concatNoRecompress(streams, output=None):
+    if (output == None):
+        secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(streams[0]))
+        output = secondRoot + "_append_" + ext
+
+    params = sv_ffutils.ffmpegParams();
+    params.append("-safe")
+    params.append("0")
+
+    params.append("-f")
+    params.append("concat")
+    
+    f = open ("concat.txt", "w")
+    for stream in streams:
+        sar = sv_ffutils.getSar(stream)
+        if sar != (1,1) and sar != (0,0):
+            stream = setSarToOne(stream)
+        f.write("file '" + sv_utils.getFileFromInput(stream) + "'\n")
+    f.close()
+
+    params.append("-i")
+    params.append("concat.txt")
+    params.append("-c")
+    params.append("copy")
+    params.append(output)
+    subprocess.run(params)
     return output
     
     
@@ -725,7 +753,7 @@ def makeVideo (configs):
             print ("ERR: " + episode["title"])
 
     videoPath = os.path.join(configs["outputFolder"], configs["outputFile"])
-    appendMultiple(episodeVideos, videoPath)
+    concatNoRecompress(episodeVideos, videoPath)
     
     backgroundTrack = sv_utils.dictValue(configs, "backgroundTrack", None)
     if backgroundTrack is not None:    
@@ -860,8 +888,7 @@ if __name__ == "__main__":
 #} }
 #    print (getDrawTextCommandFromArray(getTextArrayForEpisode(episode) , {}) )
 #    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
-#    vids = []
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")
+    vids = []
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
@@ -875,10 +902,11 @@ if __name__ == "__main__":
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rocket League.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rogue Company.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Splitgate.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
-#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
+    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
 #    print(recursivelyXfadeToOne(vids))
     #overlayAudio ({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 30}, \
 #{"file":"C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg"} , "merged_audio.mp4", 0.15)
-    print(parseBenchmarkFile("C:\\Program Files (x86)\\MSI Afterburner\\Benchmark.txt"))
+#    print(parseBenchmarkFile("C:\\Program Files (x86)\\MSI Afterburner\\Benchmark.txt"))
+    concatNoRecompress(vids)
