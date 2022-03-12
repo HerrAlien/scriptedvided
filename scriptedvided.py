@@ -197,7 +197,7 @@ def getScaleCommand(resolutionPair):
     
 # input - the input media to be truncated
 # start - the input media to be truncated
-def truncate(input, start=-1, length=-1, output=None, recompress=False):
+def truncate(input, start=-1, length=-1, output=None, recompress=True):
     params = sv_ffutils.ffmpegParams() + toInputParams( {"file" : input, "start" : start, "length" : length} );
 
     if (output == None):
@@ -261,7 +261,7 @@ def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1,
     
     return output
 
-def substituteAudio (inputVid, inputAudio, output=None, recompress=False):
+def substituteAudio (inputVid, inputAudio, output=None, recompress=True):
     return overlayAudio(inputVid, inputAudio, output, 0.001, recompress)
     
 def appendMultiple (streams, output=None, recompressVideo=True, video=True, audio=True):
@@ -370,8 +370,8 @@ def concatNoRecompress(streams, output=None):
         output = secondRoot + "_append_" + ext
 
     params = sv_ffutils.ffmpegParams();
-#    params.append("-safe")
-#    params.append("0")
+    params.append("-safe")
+    params.append("0")
 
     params.append("-f")
     params.append("concat")
