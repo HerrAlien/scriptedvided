@@ -290,7 +290,7 @@ configs["episodes"].append(\
 "video" : "hd5770_pmd1g.mp4"\
 })
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][6], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][-1], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][7], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][8], configs)
 #print(scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs))

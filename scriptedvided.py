@@ -370,8 +370,8 @@ def concatNoRecompress(streams, output=None):
         output = secondRoot + "_append_" + ext
 
     params = sv_ffutils.ffmpegParams();
-    params.append("-safe")
-    params.append("0")
+#    params.append("-safe")
+#    params.append("0")
 
     params.append("-f")
     params.append("concat")
@@ -753,7 +753,7 @@ def makeVideo (configs):
             print ("ERR: " + episode["title"])
 
     videoPath = os.path.join(configs["outputFolder"], configs["outputFile"])
-    concatNoRecompress(episodeVideos, videoPath)
+    appendMultiple(episodeVideos, videoPath)
     
     backgroundTrack = sv_utils.dictValue(configs, "backgroundTrack", None)
     if backgroundTrack is not None:    
@@ -902,9 +902,9 @@ if __name__ == "__main__":
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rocket League.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Rogue Company.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Splitgate.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
-    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Valorant.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Warframe.mp4")
+#    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\World of Tanks Blitz.mp4")
 #    print(recursivelyXfadeToOne(vids))
     #overlayAudio ({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 30}, \
 #{"file":"C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg"} , "merged_audio.mp4", 0.15)
