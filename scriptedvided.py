@@ -844,8 +844,14 @@ def aliases(inputName):
         ["Splitgate", "PortalWars-Win64-Shipping.exe", "PortalWars"],\
         ["Fortnite", "FortniteClient-Win64-Shipping.exe"],\
         ["Valorant", "VALORANT-Win64-Shipping.exe"],\
+        ["Paladins", "Paladins.exe"],\
     ]
 
+    if inputName is None:
+        for namesArr in gameAliases:
+            print(namesArr[0])
+        return []
+    
     for namesArr in gameAliases:
         for potentialName in namesArr:
             if potentialName.upper() == inputName.upper():
@@ -888,7 +894,7 @@ if __name__ == "__main__":
 #} }
 #    print (getDrawTextCommandFromArray(getTextArrayForEpisode(episode) , {}) )
 #    scaleVideo ("C:\\Users\\Admin\\Videos\\hd5770\\hd5770_AlienIsolation_1200pUltra.mp4", (1920, 1080), "C:\\Users\\Admin\\Videos\\hd5770\\output\\Alien - Isolation.mp4")    
-    vids = []
+#    vids = []
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Apex Legends.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Battlefield V.mp4")
 #    vids.append("C:\\Users\\Admin\\Videos\\hd5770\\output\\Control.mp4")
@@ -909,4 +915,5 @@ if __name__ == "__main__":
     #overlayAudio ({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 30}, \
 #{"file":"C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg"} , "merged_audio.mp4", 0.15)
 #    print(parseBenchmarkFile("C:\\Program Files (x86)\\MSI Afterburner\\Benchmark.txt"))
-    concatNoRecompress(vids)
+#    concatNoRecompress(vids)
+    aliases(None)
