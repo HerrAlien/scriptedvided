@@ -823,17 +823,17 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
 
 def aliases(inputName):
     gameAliases = [\
-        ["Apex", "Apex Legends", "ApexLegends", "Apex_Legends", "r5apex.exe"],\
-        ["Alien Isolation", "Alien: Isolation", "Alien:Isolation", "AlienIsolation", "Alien_Isolation", "AI.exe"],\
-        ["Call of Duty: Warzone","Call_of_Duty_Warzone", "CallOfDutyWarzone", "COD Warzone", "COD_Warzone", "Warzone", "ModernWarfare.exe"],\
+        ["Apex", "Apex Legends", "ApexLegends", "Apex_Legends", "r5apex.exe", "R5Apex"],\
+        ["Alien Isolation", "Alien: Isolation", "Alien:Isolation", "AlienIsolation", "Alien_Isolation", "AI.exe", "AI"],\
+        ["Call of Duty: Warzone","Call_of_Duty_Warzone", "CallOfDutyWarzone", "COD Warzone", "COD_Warzone", "Warzone", "ModernWarfare.exe", "ModernWarfare"],\
         ["Battlefield V","Battlefield 5", "Battlefield_V", "Battlefield_5", "bfv", "bf5", "bfv.exe"],\
         ["Rainbow Six Siege","Rainbow 6 Siege", "Rainbow Six: Siege","Rainbow 6: Siege", "Rainbow_Six_Siege","Rainbow_6_Siege", \
-        "r6s", "RainbowSixSiege","Rainbow6Siege", "RainbowSix", "RainbowSixSiege", "RainbowSix.exe"],\
+        "r6s", "RainbowSixSiege","Rainbow6Siege", "RainbowSix", "RainbowSixSiege", "RainbowSix.exe", "RainbowSix"],\
         ["Counter-Strike: Global Offensive","Counter Strike: Global Offensive", "ConunterStrike: Global Offensive",\
         "ConunterStrike", "cs:go","csgo", "cs-go", "csgo.exe"],\
         ["Rocket League","Rocket_League", "RocketLeague", "RocketLeague.exe"],\
         ["Genshin Impact", "GenshinImpact", "Genshin_Impact", "GenshinImpact.exe"], \
-        ["Realm Royale", "Realm_Royale", "RealmRoyale", "Realm.exe"], \
+        ["Realm Royale", "Realm_Royale", "RealmRoyale", "Realm.exe", "Realm"], \
         ["Rogue Company", "Rogue_Company", "RogueCompany", "RogueCompany.exe"], \
         ["World of Tanks Blitz", "World_of_Tanks_Blitz", "World of Tanks: Blitz", "WorldOfTanksBlitz", "WoT Blitz", "WoT: Blitz",\
         "WoT_Blitz", "wotblitz", "wotblitz.exe"], \
@@ -841,7 +841,7 @@ def aliases(inputName):
         ["Warframe", "Warframe.x64.exe"],\
         ["Control", "Control_DX11.exe"],\
         ["DOTA2", "dota2.exe"],\
-        ["Splitgate", "PortalWars-Win64-Shipping.exe"],\
+        ["Splitgate", "PortalWars-Win64-Shipping.exe", "PortalWars"],\
         ["Fortnite", "FortniteClient-Win64-Shipping.exe"],\
         ["Valorant", "VALORANT-Win64-Shipping.exe"],\
     ]
