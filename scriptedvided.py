@@ -24,7 +24,7 @@ def toInputParams (inputStream):
     params = [];
 
     if (type(inputStream) is type({})):        
-        length = sv_utils.dictValue(inputStream,"length")
+        length = sv_utils.dictValue(inputStream,"length", 0)
         if (length > 0):
             params.append("-t")
             params.append(str(length))
@@ -102,12 +102,14 @@ def getDrawTextCommandFromArray (text, opts):
 
     return paramText
 
+# move to UTILS
 def getFpsValueFromLine(line):
     valueOfInterest = line.split(":")[1]
     valueOfInterest = valueOfInterest.replace(" ", "")
     valueOfInterest = valueOfInterest.replace("FPS\n", "")
     return int(float(valueOfInterest) + 0.5)
     
+# move to UTILS
 def parseBenchmarkFile (benchmarkFile):
     returnedDict = {}
     currentKey = ""
@@ -135,6 +137,7 @@ def parseBenchmarkFile (benchmarkFile):
             lineIndexFollowingKey = lineIndexFollowingKey + 1
     return returnedDict
     
+# move to UTILS
 def getFpsArrayFromBenchmarkFile (episodeName, benchmarkFile):
     #get all names for episode name
     episodeAliases = aliases(episodeName)    
@@ -485,6 +488,7 @@ def selectSuitableVideo (paths, desiredLength=30, desiredYRes=1080):
         return potentialVideos[0]
     return None
     
+# move to UTILS
 def getFilesArrayFromFoldersAndNames (folders, names, extensions):
     paths = []
     for folder in folders:
@@ -666,6 +670,7 @@ def buildBackgroundTrack (backgroundTrack, configs):
     return backgroundAufioFile
 
     
+# move to FFUTILS
 def getValueForTags (haystack, tags):
     for tag in tags:
         positionOfTag = haystack.find(tag)
@@ -679,6 +684,7 @@ def getValueForTags (haystack, tags):
                 return potentialValue
     return None
     
+# move to FFUTILS
 def getAuthorAndSongName (file):
     finishedProc = subprocess.run (["ffprobe", "-show_format" , file], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out = str(finishedProc.stderr) + str(finishedProc.stdout)
@@ -820,7 +826,7 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
     
     return returnedVideo
 
-
+# move to UTILS
 def aliases(inputName):
     gameAliases = [\
         ["Apex", "Apex Legends", "ApexLegends", "Apex_Legends", "r5apex.exe", "R5Apex"],\
