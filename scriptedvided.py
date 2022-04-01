@@ -770,6 +770,12 @@ def enhanceYoutubeData (configs):
     
     
 def makeVideo (configs):
+    
+    try:
+        os.mkdir(configs["outputFolder"])
+    except:
+        a = 0
+
     episodeVideos = []
     for episode in configs["episodes"]:
         try:
@@ -777,8 +783,6 @@ def makeVideo (configs):
             episodeVideos.append(episodeVideo)
         except:
             print ("ERR: " + episode["title"])
-
-    os.mkdir(configs["outputFolder"])
     
     videoPath = os.path.join(configs["outputFolder"], configs["outputFile"])
     noBackgroundVideo = os.path.join(configs["outputFolder"], "_nobackground.mp4")
