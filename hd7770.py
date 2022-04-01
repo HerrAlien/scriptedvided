@@ -326,12 +326,12 @@ configs["episodes"].append(\
 "video" : "IMG_0027.MOV"\
 })
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][13], configs)
+scriptedvided.makeVideoForEpisode(configs["episodes"][27], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][8], configs)
 #print(scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs))
 #print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
-scriptedvided.makeVideo(configs)
+#scriptedvided.makeVideo(configs)
 

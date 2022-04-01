@@ -29,17 +29,19 @@ def toInputParams (inputStream):
             params.append("-t")
             params.append(str(length))
         
-        start = sv_utils.dictValue(inputStream,"start", 0)
-        if (start >= 0):
-            params.append("-ss")
-            params.append(str(start))
-        else:
-            params.append("-sseof")
-            params.append(str(start - length))
+        start = sv_utils.dictValue(inputStream,"start", None)
+        if start is not None:
+            if (start > 0):
+                params.append("-ss")
+                params.append(str(start))
+            else:
+                params.append("-sseof")
+                params.append(str(start - length))
         
         params.append("-i")
         file = sv_utils.dictValue(inputStream,"file")
         params.append(file)
+        
     else:
         params.append("-i")
         file = inputStream
@@ -200,8 +202,23 @@ def getScaleCommand(resolutionPair):
     
 # input - the input media to be truncated
 # start - the input media to be truncated
-def truncate(input, start=-1, length=-1, output=None, recompress=True):
-    params = sv_ffutils.ffmpegParams() + toInputParams( {"file" : input, "start" : start, "length" : length} );
+def truncate(input, start=None, length=None, output=None, recompress=True):
+    params = sv_ffutils.ffmpegParams()
+    
+    params.append("-i")
+    params.append(input)        
+    
+    if start is not None:
+        if (start > 0):
+            params.append("-ss")
+            params.append(str(start))
+        else:
+            params.append("-sseof")
+            params.append(str(start - length))
+    
+    if length is not None and length > 0:
+            params.append("-t")
+            params.append(str(length))
 
     if (output == None):
         output = sv_ffutils.defaultOutput (input, "_truncate_" )
@@ -486,6 +503,9 @@ def selectSuitableVideo (paths, desiredLength=30, desiredYRes=1080):
             potentialVideos.append(fullVideoPath)
     if len (potentialVideos) > 0:
         return potentialVideos[0]
+    elif len (paths) > 0:
+        return paths[0]
+    
     return None
     
 # move to UTILS
@@ -511,7 +531,7 @@ def getFilesArrayFromFoldersAndNames (folders, names, extensions):
                             paths.append(fullPath)
     return paths
 
-def getSuitableVideoFromFolders (folders, names, extensions=[".mp4", ".mov", ".avi"]):
+def getSuitableVideoFromFolders (folders, names, extensions):
     media = getFilesArrayFromFoldersAndNames (folders, names, extensions)
     return selectSuitableVideo(media)
     
@@ -574,14 +594,14 @@ def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, ext
     
     
 def getSuitableVideoStream (episode, configs):
-    return getSuitableMediaStream (episode, configs, "video", "defaultVideoFile", [".mp4", ".mov", ".avi"])
+    return getSuitableMediaStream (episode, configs, "video", "defaultVideoFile", [".mp4", ".mov", ".avi", ".mkv"])
 
 def getSuitableAudioStream (episode, configs):
     return getSuitableMediaStream (episode, configs, "audio", "defaultAudioFile", [".mp3", ".ogg", ".flac"])
 
     
 def getSuitableVideo (folder, names):
-    return getSuitableVideoFromFolders([folder], names)
+    return getSuitableVideoFromFolders([folder], names, [".mp4", ".mov", ".avi", ".mkv"])
 
 
 def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
@@ -758,16 +778,22 @@ def makeVideo (configs):
         except:
             print ("ERR: " + episode["title"])
 
+    os.mkdir(configs["outputFolder"])
+    
     videoPath = os.path.join(configs["outputFolder"], configs["outputFile"])
-    appendMultiple(episodeVideos, videoPath)
+    noBackgroundVideo = os.path.join(configs["outputFolder"], "_nobackground.mp4")
+    if not os.path.exists(noBackgroundVideo):
+        appendMultiple(episodeVideos, noBackgroundVideo)
+    else:
+        print ('WARNING: "' + noBackgroundVideo + '" already exists; will do nothing and use the existing file')
     
     backgroundTrack = sv_utils.dictValue(configs, "backgroundTrack", None)
     if backgroundTrack is not None:    
-        noBackgroundVideo = os.path.join(configs["outputFolder"], "_nobackground.mp4")
-        shutil.move(videoPath, noBackgroundVideo)        
         backgroundAudioFile = buildBackgroundTrack (backgroundTrack, configs)        
         videoAudioWeight = 1 - sv_utils.dictValue(backgroundTrack, "volume", 0.1)        
         overlayAudio (noBackgroundVideo, backgroundAudioFile, videoPath, firstStreamAudioWeight=videoAudioWeight)
+    else:
+        shutil.copyfile(noBackgroundVideo, videoPath)        
     
     enhanceYoutubeData(configs)
     print("\n\n --- youtube -- \n\n")
@@ -884,7 +910,7 @@ if __name__ == "__main__":
 #   truncatedvid2 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "t2.mp4", -10, 10)
 #   append({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 10}, \
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
-#    print(sv_ffutils.getLengthOfStream ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4"))
+    print(sv_ffutils.getLengthOfStream ("C:\\Users\\Admin\\Videos\\stock\\jensen_oven.mkv"))
 #    print(getFpsStatsText(73, 32, 27, 80, 27))
 #    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
 #     print(sv_ffutils.getResolution ("audio.ogg"))

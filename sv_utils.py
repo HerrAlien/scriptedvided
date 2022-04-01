@@ -8,11 +8,17 @@ def dictValue(dict, key, default=None):
         return default
 
 def getSeconds (timeAsString):
+    if type(timeAsString) is not type (""):
+        return float(timeAsString)
+
     times = timeAsString.split(":")
-    factor = 1.0
-    value = 0.0
     arrayLen = len(times)
     
+    if arrayLen == 2 and times[1] is None:
+        return float(timeAsString)
+    
+    factor = 1.0
+    value = 0.0
     for index in range(0, arrayLen):
         value = value + float(times[arrayLen - 1 - index]) * factor
         factor = factor * 60

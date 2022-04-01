@@ -8,20 +8,18 @@ configs = { "defaultAudioFile" : "r7_260.ogg",\
 "benchmarkFile" : "C:\\Users\\Admin\\Videos\\r7 260\\Benchmark_r7_260.txt",\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", "03:09" ), "destinationTimestamp" : "00:00"}, \
-{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", "02:40" ), "destinationTimestamp" : { "title": "Usefulness of used GPUs"}}, \
+"timestamps" : ("00:30", "03:02" ), "destinationTimestamp" : "00:00"}, \
+{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", "02:46" ), "destinationTimestamp" : { "title": "Usefulness of used GPUs"}}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
-"youtube" : {"title" : "The AMD Radeon HD 7770 in 2022", \
+"youtube" : {"title" : "The AMD Radeon R7 260 in 2022", \
 "description" : '''The Radeon R7 260 was another GCN mid-range card, released after the HD7000 series got renamed to the R7/R9 200 series.''',\
 "links" : '''
 More games tested with the R7 260/r7 360:
-https://www.youtube.com/watch?v=D28UKXSlyZw
-https://www.youtube.com/watch?v=_QQrmprYyI8
+https://www.youtube.com/watch?v=tVQyUkfJnbU
 
-TechPowerup entries:
-https://www.techpowerup.com/gpu-specs/radeon-hd-7770-ghz-edition.c308
-https://www.techpowerup.com/gpu-specs/asus-hd-7770.b609
+TechPowerup entry:
+https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b2732
 
 Intel 11th gen processors:
 The core i5 11400 (has an IGPU): https://ark.intel.com/content/www/us/en/ark/products/212270/intel-core-i511400-processor-12m-cache-up-to-4-40-ghz.html
@@ -29,8 +27,7 @@ The core i5 11400F (no IGPU): https://ark.intel.com/content/www/us/en/ark/produc
 
 Other resources used:
 RX 6500xt review: https://www.youtube.com/watch?v=M5_oM3Ow_CI
-AMD Video Compression Engine presentation: https://www.youtube.com/watch?v=piUZJjdxqHA
-AMD GCN architecture: https://www.youtube.com/watch?v=lLCCGS5vUx4
+AMD Press Conference, Sydney 2013: https://www.youtube.com/watch?v=gbDO9Zz-MQ8
 ''', \
 "tags" : "AMD,Radeon,R7 260, R7 360,GCN",\
 "language" : "EN", \
@@ -117,9 +114,9 @@ configs["episodes"].append(\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
               "'1080p, low setings, 100\\\% render scale - Average\: 61fps, 1\\\% lows\: 49fps'",\
-              "'720p, low setings, 100\\\% render scale - Average\: 120fps, 1\\\% lows\: 86'",\
-              "'1080p, low setings, 50\\\% render scale - Average\: 156fps, 1\\\% lows\: 103fps'",\
-              "'720p, low setings, 50\\\% render scale - Average\: 125fps, 1\\\% lows\: 76fps'"]\
+              "'720p, low setings, 100\\\% render scale - Average\: 120fps, 1\\\% lows\: 86fps'",\
+              "'1080p, low setings, 50\\\% render scale - Average\: 88fps, 1\\\% lows\: 67fps'",\
+              "'720p, low setings, 50\\\% render scale - Average\: 156fps, 1\\\% lows\: 103fps'"]\
 }, \
 })
 
