@@ -209,12 +209,12 @@ def truncate(input, start=None, length=None, output=None, recompress=True):
     params.append(input)        
     
     if start is not None:
-        if (start > 0):
+        if (start >= 0):
             params.append("-ss")
             params.append(str(start))
-        else:
-            params.append("-sseof")
-            params.append(str(start - length))
+#        else:
+#            params.append("-sseof")
+#            params.append(str(start - length))
     
     if length is not None and length > 0:
             params.append("-t")
@@ -648,15 +648,16 @@ def buildBackgroundTrack (backgroundTrack, configs):
         segmentName = segmentNamePrefix + str(segmentIndex) + segmentExt
 
         # handle padding at the begining.        
-        trackIsInsertedAt = sv_utils.dictValue(track, "destinationTimestamp", None)
-        if trackIsInsertedAt is None:
+        trackIsInsertedAt = None        
+        trackIsInsertedAtCfg = sv_utils.dictValue(track, "destinationTimestamp", None)        
+        if trackIsInsertedAtCfg is None:
             trackIsInsertedAt = 0
-        elif type (trackIsInsertedAt) is type(""):
-            trackIsInsertedAt = sv_utils.getSeconds (trackIsInsertedAt)
+        elif type (trackIsInsertedAtCfg) is type(""):
+            trackIsInsertedAt = sv_utils.getSeconds (trackIsInsertedAtCfg)
         else:            
             insertedAt = 0
             for episodeTocDict in configs["TOC"]:
-                if episodeTocDict["title"] == trackIsInsertedAt["title"]:
+                if episodeTocDict["title"] == trackIsInsertedAtCfg["title"]:
                     break
                 insertedAt = insertedAt + float(episodeTocDict["length"])
             trackIsInsertedAt = insertedAt
@@ -664,11 +665,25 @@ def buildBackgroundTrack (backgroundTrack, configs):
         trackLength = 0
         trackStartsAt = 0
         timestamps = sv_utils.dictValue (track, "timestamps", None)
+
         if timestamps is not None:
             trackStartsAt = sv_utils.getSeconds(timestamps[0])
-            endSecond = sv_utils.getSeconds(timestamps[1])
-            trackLength = endSecond - trackStartsAt
-        else:
+            if timestamps[1] is not None:
+                endSecond = sv_utils.getSeconds(timestamps[1])
+                trackLength = endSecond - trackStartsAt
+
+        if trackLength == 0 or trackLength is None:            
+            endsAtEpisode = sv_utils.dictValue (trackIsInsertedAtCfg, "until", None)
+            if endsAtEpisode is not None:
+                endsAt = 0
+                for episodeTocDict in configs["TOC"]:
+                    if episodeTocDict["title"] == endsAtEpisode:
+                        break
+                    endsAt = endsAt + float(episodeTocDict["length"])
+                if endsAt > 0:
+                    trackLength = endsAt - trackIsInsertedAt
+        
+        if trackLength == 0 or trackLength is None:            
             trackLength = sv_ffutils.getLengthOfStream(track["file"])
             
         padAtBeginning = trackIsInsertedAt - previousTrackEndedAt
