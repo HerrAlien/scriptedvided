@@ -50,7 +50,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "VCE rant",\
 "audio" : { "file": "has_video_encoding.ogg", "volume" : 0.999 },\
-"video" : "6500xt_full_rant.mp4",\
+"video" : "6500xt_rant.mkv",\
 "isChapter" : False,\
 })
 
@@ -262,7 +262,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Usefulness of the R7 260",\
 "audio" : {"timestamps" : ("09:52", "10:46") },\
-"video" : "stock_Control_720p.mp4"\
+"video" : "r7_260_Control.mp4"\
 })
 
 configs["episodes"].append(\

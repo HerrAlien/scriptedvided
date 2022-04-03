@@ -14,7 +14,7 @@ configs = { "defaultAudioFile" : "6850_retirement.ogg",\
 "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "VBios tool, download vbioses", "until" : "Black screen - vbios fail"}}, \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Recovering from the first mistake", "until" : "Mistake #2"}}, \
-{"file" : "H:\\Muzica\\royalty free\\Bitters At The Saloon - Bird Creek (No Copyright Music).ogg", \
+{"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "brooll, prepare for baking", "until" : "jensen pulling out cards"}}, \
 {"file" : "H:\\Muzica\\royalty free\\Bitters At The Saloon - Bird Creek (No Copyright Music).ogg", \
 "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "jensen pulling out cards", "until":"New caps 470 micro too large"}}, \
@@ -47,7 +47,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Mistake_1",\
+{ "title": "Mistake #1",\
 "video" : {"file" : "slides.mkv", "start" : "00:06", "length" : "00:13"},\
 "audio" : {"file" : "silence_30min.ogg", "start" : "00:00", "length" : "00:07"},\
 })

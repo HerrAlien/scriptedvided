@@ -31,7 +31,7 @@ def toInputParams (inputStream):
         
         start = sv_utils.dictValue(inputStream,"start", None)
         if start is not None:
-            if (start > 0):
+            if (start >= 0):
                 params.append("-ss")
                 params.append(str(start))
             else:
@@ -639,7 +639,7 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
 
 def buildBackgroundTrack (backgroundTrack, configs):
     #build the background track
-    segmentNamePrefix = "backgroundSegment"
+    segmentNamePrefix = "backgroundSegment_" + configs["outputFile"].split(".")[0] + "_"
     segmentExt = ".ogg"
     segmentIndex = 0
     audioToConcat = []
