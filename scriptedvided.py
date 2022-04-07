@@ -578,8 +578,10 @@ def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, ext
     if timestamps is not None:
         startSecond = sv_utils.getSeconds(timestamps[0])
         endSecond = sv_utils.getSeconds(timestamps[1])
-        mediaDict["start"] = startSecond
-        mediaDict["length"] = endSecond - startSecond
+        if startSecond is not None:
+            mediaDict["start"] = startSecond
+        if endSecond is not None:
+            mediaDict["length"] = endSecond - startSecond
     else:
         altVal = sv_utils.dictValue (mediaDict, "start", None)
         if altVal is not None:
