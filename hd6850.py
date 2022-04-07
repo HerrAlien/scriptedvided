@@ -3,12 +3,13 @@ import scriptedvided
 configs = { "defaultAudioFile" : "hd6850.ogg",\
 "mediaFolder" : "C:\\Users\\Admin\\Videos\\hd6850", \
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
+"benchmarkFile" : "C:\\Users\\Admin\\Videos\\hd6850\\Benchmark_hd6850.txt",\
 "outputFolder" : "C:\\Users\\Admin\\Videos\\hd6850\\output", \
 "outputFile" : "hd6850.mp4", \
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", "03:09" ), "destinationTimestamp" : "00:00"}, \
-{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", "02:40" ), "destinationTimestamp" : { "title": "Usefulness of used GPUs"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Context of the launch", "until" : "Apex Legends"}}, \
+{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of used GPUs", "until" : "end of the video" }}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "The AMD Radeon HD 6850 in 2022", \
@@ -53,7 +54,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Power consumption and cooling",\
 "audio" : {"timestamps" : ("01:28", "01:46" ), "volume" : 0.999 },\
-"video" : "hd6850_heaven_1080pHigh_tesselationNormal.mp4",\
+"video" : "hd6850.mov",\
 })
 
 configs["episodes"].append(\
@@ -164,6 +165,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : ("06:51", "07:11") },\
+"video" : "hd6850_Fortnite_1080p.mp4",
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, performance mode, view distance FAR, 100% render scale", \
@@ -265,11 +267,12 @@ configs["episodes"].append(\
 }, \
 })
 
-
+## this can be copy-pasted, it uses a stock video with the audio already
+## overlayed. Pass in a fake audio stream, at -60dB
 configs["episodes"].append(\
 { "title": "Usefulness of used GPUs",\
-"audio" : {"timestamps" : ("10:32", "10:47"), "volume" : 0.999 },\
-"video" : "Intel_igp_11thGen.mp4"\
+"audio" : {"timestamps" : ("00:00", "01:17"), "volume" : 0.001 },\
+"video" : "Usefulness of used GPUs.mp4"\
 })
 
 configs["episodes"].append(\
