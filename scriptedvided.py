@@ -473,6 +473,26 @@ def scaleVideo(video, resolutionPair, output=None):
     
     return output
 
+    
+def rotateVideo(video, angle, output=None):
+    params = sv_ffutils.ffmpegParams();
+    params = params + toInputParams(video)    
+    params.append("-filter_complex")
+
+    angleRadStr = str(angle)  + "*PI/180"
+    
+    params.append("rotate='" +angleRadStr+":ow=max(iw*abs(cos("+angleRadStr+")),ih*abs(sin("+angleRadStr+"))):oh=max(iw*abs(sin("+angleRadStr+")),ih*abs(cos("+angleRadStr+")))'")
+    
+    if (output == None):
+        root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
+        output = sv_ffutils.defaultOutput (root, "_rotated_" + str(angle) + "_degrees" + ext)
+
+    params.append(output)   
+    subprocess.run(params)
+    
+    return output
+
+    
 def setSarToOne(video, output=None):
     params = sv_ffutils.ffmpegParams();
     params = params + toInputParams(video)    
@@ -931,7 +951,7 @@ if __name__ == "__main__":
 #   truncatedvid2 = truncate ("C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "t2.mp4", -10, 10)
 #   append({"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -10, "length" : 10}, \
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
-    print(sv_ffutils.getLengthOfStream ("C:\\Users\\Admin\\Videos\\stock\\jensen_oven.mkv"))
+    #print(sv_ffutils.getLengthOfStream ("C:\\Users\\Admin\\Videos\\stock\\jensen_oven.mkv"))
 #    print(getFpsStatsText(73, 32, 27, 80, 27))
 #    drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
 #     print(sv_ffutils.getResolution ("audio.ogg"))
@@ -969,4 +989,6 @@ if __name__ == "__main__":
 #{"file":"C:\\Users\\Admin\\Videos\\Generic old GPU advice.ogg"} , "merged_audio.mp4", 0.15)
 #    print(parseBenchmarkFile("C:\\Program Files (x86)\\MSI Afterburner\\Benchmark.txt"))
 #    concatNoRecompress(vids)
-    aliases(None)
+#    aliases(None)
+#    rotateVideo("C:\\Users\\Admin\\Videos\\msi_hd7770\\IMG_0059.MOV", 90)
+#    rotateVideo("C:\\Users\\Admin\\Videos\\msi_hd7770\\fan controller, glued in.mp4", -90)
