@@ -212,7 +212,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Splitgate",\
-"audio" : {"timestamps" : ("07:32", "08:07") },\
+"audio" : {"timestamps" : ("07:46", "08:10") },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
               "'1080p, low setings - Average\: 77fps, 1\\\% lows\: 59fps'",\
@@ -222,7 +222,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Valorant",\
-"audio" : {"timestamps" : ("08:07", "08:34") },\
+"audio" : {"timestamps" : ("08:10", "08:34") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings", \
@@ -233,7 +233,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Genshin Impact",\
-"audio" : {"timestamps" : ("08:34", "08:55") },\
+"audio" : {"timestamps" : ("08:34", "08:53") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings, 1.0 render scale", \
@@ -244,7 +244,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Paladins",\
-"audio" : {"timestamps" : ("08:55", "09:21") , "volume" : 0.97 },\
+"audio" : {"timestamps" : ("08:53", "09:17") , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, high settings", \
@@ -254,7 +254,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Realm Royale",\
-"audio" : {"timestamps" : ("09:21", "09:50") },\
+"audio" : {"timestamps" : ("09:17", "09:42") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, high settings", \
@@ -264,7 +264,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rogue Company",\
-"audio" : {"timestamps" : ("09:50", "10:17") },\
+"audio" : {"timestamps" : ("09:42", "10:14") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings", \
@@ -274,7 +274,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "World of Tanks Blitz",\
-"audio" : {"timestamps" : ("10:17", "10:37") },\
+"audio" : {"timestamps" : ("10:14", "10:32") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, high settings", \
@@ -285,7 +285,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : ("10:37", "10:56") },\
+"audio" : {"timestamps" : ("10:32", "10:53") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, high settings", \
@@ -303,13 +303,13 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Usefulness of the R7 265",\
-"audio" : {"timestamps" : ("10:56", "11:53") },\
-"video" : "R7 265 Genshin Impact 1080p.mp4"\
+"audio" : {"timestamps" : ("10:53", "11:37") },\
+"video" : "control something"\
 })
 
 configs["episodes"].append(\
 { "title": "Personal notes for the R7 265",\
-"audio" : {"timestamps" : ("11:53", "12:32"), "volume" : 0.999},\
+"audio" : {"timestamps" : ("11:37", "12:04"), "volume" : 0.999},\
 "video" : "r7_265.MOV"\
 })
 
