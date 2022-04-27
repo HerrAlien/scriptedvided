@@ -43,20 +43,55 @@ Electronic Arts at AMD Radeon Graphics Tech Day: https://www.youtube.com/watch?v
 
 configs["episodes"].append(\
 { "title": "Context of the launch",\
-"audio" : {"timestamps" : ("00:00", "00:45" ), "volume" : 0.999 },\
-"video" : "hd_6800_EA.mp4"\
+"audio" : {"timestamps" : ("00:00", "00:41" ), "volume" : 0.999 },\
+"video" : ""\
+})
+
+configs["episodes"].append(\
+{ "title": "hd7770 becomes R7 250X and so on",\
+"audio" : {"timestamps" : ("00:41", "01:15" ), "volume" : 0.999 },\
+"isChapter" : False,\
+"video" : ""\
+})
+
+configs["episodes"].append(\
+{ "title": "r7 250 - Cape Verde versus Oland XT",\
+"audio" : {"timestamps" : ("01:15", "01:32" ), "volume" : 0.999 },\
+"isChapter" : False,\
+"video" : ""\
+})
+
+configs["episodes"].append(\
+{ "title": "GCN1 mixed with GCN2",\
+"audio" : {"timestamps" : ("01:32", "01:51" ), "volume" : 0.999 },\
+"isChapter" : False,\
+"video" : ""\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
-"audio" : {"timestamps" : ("00:45", "01:28" ), "volume" : 0.999 },\
-"video" : "6850_techpowerup.mp4",\
+"audio" : {"timestamps" : ("01:51", "02:18" ), "volume" : 0.999 },\
+"video" : "maybe drivers download page?",\
 })
 
 configs["episodes"].append(\
-{ "title": "Power consumption and cooling",\
-"audio" : {"timestamps" : ("01:28", "01:46" ), "volume" : 0.999 },\
-"video" : "hd6850.mov",\
+{ "title": "Video encoding rant",\
+"audio" : "",\
+"video" : "",\
+"isChapter" : False,\
+})
+
+
+configs["episodes"].append(\
+{ "title": "The GPU configuration",\
+"audio" : {"timestamps" : ("02:18", "03:01" ), "volume" : 0.999 },\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
+{ "title": "Cooling solution",\
+"audio" : {"timestamps" : ( "03:01", "03:22" ), "volume" : 0.999 },\
+"video" : "Sapphire R7 265 Dual-X.mp4",\
 })
 
 ##configs["episodes"].append(\
@@ -73,7 +108,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Apex Legends",\
-"audio" : {"timestamps" : ("03:18", "04:01" ), "volume" : 0.97  },\
+"audio" : {"timestamps" : ("03:22", "03:53" ), "volume" : 0.97  },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
               "'1080p, low setings - Average\: 60fps, 1\\\% lows\: 33fps'",\
@@ -83,8 +118,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "CoD Warzone",\
-"audio" : {"timestamps" : ("04:01", "04:15" ) , "volume" : 0.97 },\
-"video" : {"file":"TerraScale2_W_a_r_z_o_n_e.mp4", "start" : "00:30"}, \
+"audio" : {"timestamps" : ("03:53", "04:18" ) , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -94,7 +128,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Battlefield V",\
-"audio" : {"timestamps" : ("04:15", "04:48" ) , "volume" : 0.97 },\
+"audio" : {"timestamps" : ("04:18", "04:45" ) , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -104,7 +138,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : ("04:48", "05:16") },\
+"audio" : {"timestamps" : ("04:45", "05:12") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -114,7 +148,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : ("05:16", "05:44") },\
+"audio" : {"timestamps" : ("05:12", "05:40") },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
               "'1080p, low setings, 100\\\% render scale - Average\: 77fps, 1\\\% lows\: 59ps'",\
@@ -126,7 +160,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Alien: Isolation",\
-"audio" : {"timestamps" : ("05:44","06:08") },\
+"audio" : {"timestamps" : ("05:40","06:03") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, ultra settings", \
@@ -136,7 +170,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Counter Strike: Global Offensive",\
-"audio" : {"timestamps" : ("06:08", "06:30") },\
+"audio" : {"timestamps" : ("06:03", "06:30") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings", \
@@ -146,7 +180,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : ("06:30", "06:51"), "volume" : 0.97 },\
+"audio" : {"timestamps" : ("06:30", "06:53"), "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings, 100% render scale", \
@@ -156,7 +190,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : ("06:51", "07:11") },\
+"audio" : {"timestamps" : ("06:53", "07:19") },\
 "video" : "R7 265 Fortnite C3S2 1080p.mp4",
 "overlay" : { \
     "benchmark" : { \
@@ -167,7 +201,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rocket League",\
-"audio" : {"timestamps" : ("07:11", "07:32") },\
+"audio" : {"timestamps" : ("07:19", "07:46") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings, 100% render scale", \
@@ -181,8 +215,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("07:32", "08:07") },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
-              "'1080p, low setings - Average\: 73fps, 1\\\% lows\: 33fps'",\
-              "'720p, low setings - Average\: 119fps, 1\\\% lows\: 42fps'"]\
+              "'1080p, low setings - Average\: 77fps, 1\\\% lows\: 59fps'",\
+              "'720p, low setings - Average\: 128fps, 1\\\% lows\: 87fps'"]\
 }, \
 })
 
@@ -270,13 +304,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Usefulness of the R7 265",\
 "audio" : {"timestamps" : ("10:56", "11:53") },\
-"video" : "6850_fortnite_win.mp4"\
+"video" : "R7 265 Genshin Impact 1080p.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Personal notes for the R7 265",\
 "audio" : {"timestamps" : ("11:53", "12:32"), "volume" : 0.999},\
-"video" : "6850_fortnite_win_with_card.mp4"\
+"video" : "r7_265.MOV"\
 })
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][27], configs)
