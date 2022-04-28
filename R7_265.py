@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "R7 265.ogg",\
+configs = { "defaultAudioFile" : "R7_265.ogg",\
 "mediaFolder" : "C:\\Users\\Admin\\Videos\\R7 265", \
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
 "benchmarkFile" : "C:\\Users\\Admin\\Videos\\R7 265\\Benchmark_r7_265.txt",\
@@ -27,7 +27,8 @@ The core i5 11400 (has an IGPU): https://ark.intel.com/content/www/us/en/ark/pro
 The core i5 11400F (no IGPU): https://ark.intel.com/content/www/us/en/ark/products/212271/intel-core-i511400f-processor-12m-cache-up-to-4-40-ghz.html
 
 Other resources used:
-Electronic Arts at AMD Radeon Graphics Tech Day: https://www.youtube.com/watch?v=pVFp1aamKyM
+https://www.youtube.com/watch?v=45YGDChR4Zc
+
 ''', \
 "tags" : "AMD,Radeon,R7 265,HD 7850, HD7850,GCN,GCN 1.0",\
 "language" : "EN", \
@@ -44,34 +45,35 @@ Electronic Arts at AMD Radeon Graphics Tech Day: https://www.youtube.com/watch?v
 configs["episodes"].append(\
 { "title": "Context of the launch",\
 "audio" : {"timestamps" : ("00:00", "00:41" ), "volume" : 0.999 },\
-"video" : ""\
+"video" : "R7 R9 series.mp4"\
 })
 
+# maybe prepare a slide?
 configs["episodes"].append(\
 { "title": "hd7770 becomes R7 250X and so on",\
 "audio" : {"timestamps" : ("00:41", "01:15" ), "volume" : 0.999 },\
 "isChapter" : False,\
-"video" : ""\
+"video" : "Pitcairn GPU.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "r7 250 - Cape Verde versus Oland XT",\
 "audio" : {"timestamps" : ("01:15", "01:32" ), "volume" : 0.999 },\
 "isChapter" : False,\
-"video" : ""\
+"video" : "which R7 250.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "GCN1 mixed with GCN2",\
 "audio" : {"timestamps" : ("01:32", "01:51" ), "volume" : 0.999 },\
 "isChapter" : False,\
-"video" : ""\
+"video" : "maybe breel with both 265 and the 260?"\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : ("01:51", "02:18" ), "volume" : 0.999 },\
-"video" : "maybe drivers download page?",\
+"video" : "r7_265.MOV",\
 })
 
 configs["episodes"].append(\
@@ -85,6 +87,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GPU configuration",\
 "audio" : {"timestamps" : ("02:18", "03:01" ), "volume" : 0.999 },\
+"video" : "Pitcairn GPU.mp4"
 "isChapter" : False,\
 })
 
@@ -304,7 +307,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Usefulness of the R7 265",\
 "audio" : {"timestamps" : ("10:53", "11:37") },\
-"video" : "control something"\
+"video" : {"file" : "R7 265 Control 720p.mp4", "start":"02:30"}\
 })
 
 configs["episodes"].append(\
