@@ -67,7 +67,7 @@ configs["episodes"].append(\
 { "title": "GCN1 mixed with GCN2",\
 "audio" : {"timestamps" : ("01:32", "01:51" ), "volume" : 0.999 },\
 "isChapter" : False,\
-"video" : "maybe breel with both 265 and the 260?"\
+"video" : {"file":"r7_260_r7_265.MOV", "rotation" : 180}\
 })
 
 configs["episodes"].append(\
@@ -87,7 +87,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GPU configuration",\
 "audio" : {"timestamps" : ("02:18", "03:01" ), "volume" : 0.999 },\
-"video" : "Pitcairn GPU.mp4"
+"video" : "Pitcairn GPU.mp4",
 "isChapter" : False,\
 })
 
@@ -324,5 +324,6 @@ configs["episodes"].append(\
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Context of the launch"][0], configs)
 scriptedvided.makeVideo(configs)
 

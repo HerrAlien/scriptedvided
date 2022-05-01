@@ -498,7 +498,13 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
     if (resolution[1] != targetRes[1]):
         scaledVideo = sv_ops.scaleVideo(trimmedVideo, targetRes)
         os.remove(trimmedVideo)
-    
+
+    rotation = sv_utils.dictValue(video, "rotation", None)
+    if rotation is not None:
+        rotatedVideo = sv_ops.rotateVideo(scaledVideo, rotation)
+        os.remove(scaledVideo)
+        scaledVideo = rotatedVideo
+        
     paddedAudio = sv_ops.padAudioStream (audio, "padded.ogg", padding, padding)
     
     videoAudioWeight = sv_utils.dictValue (options, "videoSoundVolume", 0.07)
