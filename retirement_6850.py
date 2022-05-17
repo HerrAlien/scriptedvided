@@ -7,7 +7,7 @@ configs = { "defaultAudioFile" : "6850_retirement.ogg",\
 "outputFile" : "hd6850_adventures.mp4", \
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title":"Bought a known non working card", "until" : "Mistake_1"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title":"Bought a known non working card", "until" : "Mistake #1"}}, \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title":"Symptoms - crash at installing the driver", "until" : "Ominous black screen"}}, \
 {"file" : "H:\\Muzica\\royalty free\\Bitters At The Saloon - Bird Creek (No Copyright Music).ogg", \
@@ -28,7 +28,7 @@ configs = { "defaultAudioFile" : "6850_retirement.ogg",\
 "links" : '''
 Jensen promo for new cards: https://www.youtube.com/watch?v=So7TNRhIYJ8
 ''', \
-"tags" : "AMD,Radeon,HD 6850,HD6850,Terascale 2",\
+"tags" : "AMD,Radeon,HD 6850,HD6850,Terascale 2,Sapphire,cooking cards,baking card in oven,oven baking method,cooking,PCB,card,oven",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\

@@ -10,7 +10,7 @@ configs = { "defaultAudioFile" : "hd6850.ogg",\
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Context of the launch", "until" : "Apex Legends"}}, \
 {"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of used GPUs", "until" : "end of the video" }}, \
-], "volume" : 0.05 },\
+], "volume" : 0.03 },\
 "episodes" : [],\
 "youtube" : {"title" : "The AMD Radeon HD 6850 in 2022", \
 "description" : '''The Radeon HD 6850 was a higher end mid-range card released in October 2010. While labelled a new generation card, it used the same TeraScale 2 architect as the HD 5000 series. And while this did hint a bit at what the card could do, it did provide its own surprises.''',\
@@ -61,6 +61,10 @@ configs["episodes"].append(\
 { "title": "Cooling solution - axial",\
 "audio" : {"timestamps" : ("01:46", "02:07" ), "volume" : 0.9 },\
 "video" : "r7_260_1.mov",\
+"overlay" : { \
+    "text" : ["'Example of a cooler using axial fans'",\
+              "'(ASUS Radeon R7 260)'"]\
+}, \
 "isChapter" : False,\
 })
 
@@ -68,6 +72,10 @@ configs["episodes"].append(\
 { "title": "Cooling solution - radial (blower style)",\
 "audio" : {"timestamps" : ("02:07", "02:23" ), "volume" : 0.999 },\
 "video" : {"file":"r7_r9_gcn_launch.mp4", "start":"01:23"},\
+"overlay" : { \
+    "text" : ["'Boards using radial (blower style) coolers'",\
+              "'(AMD Radeon R9 270X)'"]\
+}, \
 "isChapter" : False,\
 })
 
@@ -91,7 +99,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "CoD Warzone",\
 "audio" : {"timestamps" : ("04:01", "04:15" ) , "volume" : 0.97 },\
-"video" : {"file":"TerraScale2_W_a_r_z_o_n_e.mp4", "start" : "00:45"}, \
+"video" : {"file":"TerraScale2_W_a_r_z_o_n_e.mp4", "start" : "00:30"}, \
 "overlay" : { \
     "benchmark" : { \
         "FPS values" : [0, 0], \
@@ -277,13 +285,13 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Usefulness of the HD 6850",\
-"audio" : {"timestamps" : ("10:56", "11:49") },\
+"audio" : {"timestamps" : ("10:56", "11:53") },\
 "video" : "6850_fortnite_win.mp4"\
 })
 
 configs["episodes"].append(\
-{ "title": "Personal notes for the HD 7770",\
-"audio" : {"timestamps" : ("11:49", None), "volume" : 0.999},\
+{ "title": "Personal notes for the HD 6850",\
+"audio" : {"timestamps" : ("11:53", "12:32"), "volume" : 0.999},\
 "video" : "6850_fortnite_win_with_card.mp4"\
 })
 
@@ -294,5 +302,6 @@ configs["episodes"].append(\
 #print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
 scriptedvided.makeVideo(configs)
 
