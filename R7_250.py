@@ -15,19 +15,19 @@ configs = { "defaultAudioFile" : "R7_250.ogg",\
 "youtube" : {"title" : "The AMD Radeon R7 250 in 2022", \
 "description" : '''The Radeon R7 250, a rename of the HD 7850, was a higher end mid-range card released in February 2014. Like all GCN based cards, it had game ready drivers released for it up until 2021, and in this video, we'll see how it handles games in 2022.''',\
 "links" : '''
-More games tested with the R7 250 / HD 7850:
-https://www.youtube.com/playlist?list=PLH6sLgdc_uJ7skjWpnm3zAzz0_vLY8De2
+More games tested with the R7 250:
+https://www.youtube.com/watch?v=35OfNvxkxe4
 
-TechPowerup entries (both R7 250 and HD 7850):
-https://www.techpowerup.com/gpu-specs/sapphire-dual-x-r7-265.b2749
-https://www.techpowerup.com/gpu-specs/radeon-hd-7850.c1055
+TechPowerup entries:
+https://www.techpowerup.com/gpu-specs/asus-r7-250.b2488
+https://www.techpowerup.com/gpu-specs/radeon-r7-250.c2459
 
 Intel 11th gen processors:
 The core i5 11400 (has an IGPU): https://ark.intel.com/content/www/us/en/ark/products/212270/intel-core-i511400-processor-12m-cache-up-to-4-40-ghz.html
 The core i5 11400F (no IGPU): https://ark.intel.com/content/www/us/en/ark/products/212271/intel-core-i511400f-processor-12m-cache-up-to-4-40-ghz.html
 
-Other resources used:
-https://www.youtube.com/watch?v=45YGDChR4Zc
+Phillip's HD 7000 series video:
+https://www.youtube.com/watch?v=wsuP_9afO9c
 
 ''', \
 "tags" : "AMD,Radeon,R7 250,HD 7850, HD7850,GCN,GCN 1.0",\
