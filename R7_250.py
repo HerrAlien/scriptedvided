@@ -317,7 +317,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Usefulness of the R7 250",\
 "audio" : {"timestamps" : ("12:11.06", "12:53.27") },\
-"video" : {"file" : "", "start":""}\
+"video" : "r7_250_breel_game.MOV"\
 })
 
 #configs["episodes"].append(\
@@ -336,7 +336,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Personal notes for the R7 250",\
 "audio" : {"timestamps" : ("13:20.81", "14:07"), "volume" : 0.999},\
-"video" : ""\
+"video" : "stock_Alien_Isolation_1080p.mp4"\
 })
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][27], configs)
