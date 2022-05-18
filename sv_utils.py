@@ -20,7 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 '''
 
 def filePathSafeString(someText):
-    return someText.replace(":", " ")
+    return someText.replace(":", " ").replace("?", " ")
 
 def dictValue(dict, key, default=None):
     try:

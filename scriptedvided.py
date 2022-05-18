@@ -437,6 +437,8 @@ def makeVideo (configs):
     except:
         a = 0
 
+    # consider testing all paths from the config, then raise errors
+        
     episodeVideos = []
     for episode in configs["episodes"]:
         try:

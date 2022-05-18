@@ -1,11 +1,11 @@
 import scriptedvided
 
 configs = { "defaultAudioFile" : "R7_250.ogg",\
-"mediaFolder" : "C:\\Users\\Admin\\Videos\\R7 250", \
+"mediaFolder" : "C:\\Users\\Admin\\Videos\\R7_250", \
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
-"benchmarkFile" : "C:\\Users\\Admin\\Videos\\R7 250\\Benchmark_r7_250.txt",\
-"outputFolder" : "C:\\Users\\Admin\\Videos\\R7 250\\output", \
-"outputFile" : "R7 250.mp4", \
+"benchmarkFile" : "C:\\Users\\Admin\\Videos\\R7_250\\Benchmark_r7_250.txt",\
+"outputFolder" : "C:\\Users\\Admin\\Videos\\R7_250\\output", \
+"outputFile" : "R7_250.mp4", \
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Context of the launch", "until" : "Apex Legends"}}, \
@@ -29,13 +29,16 @@ The core i5 11400F (no IGPU): https://ark.intel.com/content/www/us/en/ark/produc
 Phillip's HD 7000 series video:
 https://www.youtube.com/watch?v=wsuP_9afO9c
 
+Other resources used:
+https://www.youtube.com/watch?v=45YGDChR4Zc
+
 ''', \
 "tags" : "AMD,Radeon,R7 250,HD 7850, HD7850,GCN,GCN 1.0",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
 "video location" : None, \
-"category" : "Science & Technology", \
+"category" : "Gaming", \
 "subtitles" : None, \
 "endscreen" : None, \
 "cards" : None, \
@@ -91,7 +94,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Cooling and thermals",\
+{ "title": "Cooling and thermals - thermals only",\
 "audio" : {"timestamps" : ( "03:36.73", "04:23.19" ), "volume" : 0.999 },\
 "video" : "r7_250_Heaven.mkv",\
 "isChapter" : False,\
@@ -103,8 +106,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Video capturing will impact performance",\
 "audio" : {"timestamps" : ( "04:23.19", "04:45.11" ), "volume" : 0.999 },\
-"video" : "thermals only",\
-"isChapter" : "r7_250_choppy_recording.mkv",\
+"video" : "r7_250_choppy_recording.mkv",\
+"isChapter" : "true",\
 })
 
 
@@ -329,7 +332,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "2kliksPhillip GCN analysis",\
 "audio" : {"timestamps" : ("12:53.27", "13:20.81") },\
-"video" : "",\
+"video" : "Phillip_HD7000.mkv",\
 "isChapter" : False,\
 })
 
