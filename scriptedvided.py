@@ -492,20 +492,20 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
     if videoStart is None:
         videoStart = (videoLen - (audioLen + padding + padding)) * 0.5    
     
-    trimmedVideo = sv_ops.truncate (fixedVideo, videoStart, audioLen + padding + padding)
+    fixedVideo = sv_ops.truncate (fixedVideo, videoStart, audioLen + padding + padding)
     
-    scaledVideo = trimmedVideo
-    targetRes = sv_utils.dictValue(options, "targetRes", (1920,1080))
-    resolution = sv_ffutils.getResolution(trimmedVideo)
-    if (resolution[1] != targetRes[1]):
-        scaledVideo = sv_ops.scaleVideo(trimmedVideo, targetRes)
-        os.remove(trimmedVideo)
-
     rotation = sv_utils.dictValue(video, "rotation", None)
     if rotation is not None:
-        rotatedVideo = sv_ops.rotateVideo(scaledVideo, rotation)
-        os.remove(scaledVideo)
-        scaledVideo = rotatedVideo
+        rotatedVideo = sv_ops.rotateVideo(fixedVideo, rotation)
+        os.remove(fixedVideo)
+        fixedVideo = rotatedVideo
+
+    targetRes = sv_utils.dictValue(options, "targetRes", (1920,1080))
+    resolution = sv_ffutils.getResolution(fixedVideo)
+    if (resolution[1] != targetRes[1]):
+        scaledVideo = sv_ops.scaleVideo(fixedVideo, targetRes)
+        os.remove(fixedVideo)
+        fixedVideo = scaledVideo
         
     paddedAudio = sv_ops.padAudioStream (audio, "padded.ogg", padding, padding)
     
@@ -513,17 +513,19 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
     
 # then  overlay the audio
 
-    videoWithOverlayedAudio = sv_ops.overlayAudio (scaledVideo, paddedAudio, firstStreamAudioWeight=videoAudioWeight)
-    returnedVideo = videoWithOverlayedAudio
-    os.remove(scaledVideo)
+    videoWithOverlayedAudio = sv_ops.overlayAudio (fixedVideo, paddedAudio, firstStreamAudioWeight=videoAudioWeight)
+    os.remove(fixedVideo)
     os.remove(paddedAudio)
     
+    fixedVideo = videoWithOverlayedAudio
+
 # then print the text
     if type(textLinesArray) is type ([]) and len(textLinesArray) > 0:
-        returnedVideo = sv_ops.drawText (videoWithOverlayedAudio, textLinesArray, opts={"boxcolor" : "#80000080"})
-        os.remove(videoWithOverlayedAudio)
+        videoWithText = sv_ops.drawText (fixedVideo, textLinesArray, opts={"boxcolor" : "#80000080"})
+        os.remove(fixedVideo)
+        fixedVideo = videoWithText
     
-    return returnedVideo
+    return fixedVideo
 
 # move to UTILS
 def aliases(inputName):

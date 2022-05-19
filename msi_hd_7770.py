@@ -22,7 +22,7 @@ configs = { "defaultAudioFile" : "r7770-pmd1gd5.ogg",\
 {"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Not the fix I was hoping for", "until" : "end of the video" }}, \
 ], "volume" : 0.03 },\
 "episodes" : [],\
-"youtube" : {"title" : "The dead MSI HD 7770 was not so dead after all", \
+"youtube" : {"title" : "The story of the not so dead MSI Radeon HD 7770", \
 "description" : '''This MSI HD 7770 had a few issues; while the diagnostics was performed properly, the fix ended up being rudimentary.''',\
 "links" : '''
 Our review of the HD 7770: https://www.youtube.com/watch?v=4rEcNy2YC0I
@@ -167,7 +167,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "SPICE",\
 "audio" : {"timestamps" : ("05:47", "06:16" ), "volume" : 0.999  },\
-"video" : "pwm_controller_spice.mkv",\
+"video" : "pwm_circuit_spice.mkv",\
 "isChapter" : False, \
 })
 
@@ -175,7 +175,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fan controller, glued in",\
 "audio" : {"timestamps" : ("06:16", "06:54" ), "volume" : 0.999  },\
-"video" : "msi hd 7770 - fan controller, intended placement.mp4",\
+"video" : {"file" : "fan controller, glued in.mp4", "rotation" : 90},\
 "isChapter" : False, \
 })
 
@@ -207,7 +207,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "msi hd 7770 CS",\
 "audio" : {"timestamps" : ("07:59.32", "08:14" ), "volume" : 0.999  },\
-"video" : "cs.mkv",\
+"video" : {"file" : "msi hd 7770 #CS.mp4", "rotation" : -90},\
 "isChapter" : False, \
 })
 
@@ -233,14 +233,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Prepare the card for baking",\
 "audio" : {"timestamps" : ("10:12.4", "10:29" ), "volume" : 0.999  },\
-"video" : "tinfoiled.mkv",\
+"video" : {"file": "prepared_for_baking.MOV", "rotation" : 90},\
 "isChapter" : False, \
 })
 
 configs["episodes"].append(\
 { "title": "Not the fix I was hoping for",\
 "audio" : {"timestamps" : ("10:29", "10:40.07" ), "volume" : 0.999  },\
-"video" : {"file": "r7770-pmd1gd5-fanspin.MOV", "rotation" : 180},\
+"video" : {"file": "IMG_0058.MOV", "rotation" : 90},\
 })
 
 configs["episodes"].append(\
@@ -265,7 +265,7 @@ configs["episodes"].append(\
 #print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Fan controller, glued in"][0], configs)
 scriptedvided.makeVideo(configs)
 
 
