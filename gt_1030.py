@@ -1,39 +1,36 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "R7_250.ogg",\
-"mediaFolder" : "C:\\Users\\Admin\\Videos\\R7_250", \
+configs = { "defaultAudioFile" : "gt_1030.ogg",\
+"mediaFolder" : "C:\\Users\\Admin\\Videos\\gt_1030", \
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
-"benchmarkFile" : "C:\\Users\\Admin\\Videos\\R7_250\\Benchmark_r7_250.txt",\
-"outputFolder" : "C:\\Users\\Admin\\Videos\\R7_250\\output", \
-"outputFile" : "R7_250.mp4", \
+"benchmarkFile" : "C:\\Users\\Admin\\Videos\\gt_1030\\Benchmark_gt1030.txt",\
+"outputFolder" : "C:\\Users\\Admin\\Videos\\gt_1030\\output", \
+"outputFile" : "gt_1030.mp4", \
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Context of the launch", "until" : "Apex Legends"}}, \
 {"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of used GPUs", "until" : "end of the video" }}, \
 ], "volume" : 0.03 },\
 "episodes" : [],\
-"youtube" : {"title" : "The AMD Radeon R7 250 in 2022", \
-"description" : '''The Radeon R7 250, a rename of the HD 7850, was a higher end mid-range card released in February 2014. Like all GCN based cards, it had game ready drivers released for it up until 2021, and in this video, we'll see how it handles games in 2022.''',\
+"youtube" : {"title" : "The NVidia GT 1030 in 2022", \
+"description" : '''The GT 1030 was a budget card from the Pascal series that was launched twice, first time with GDDR5, and the second time around with DDR4. Let's see how the GDDR5 KFA2 card behaves in 2022.''',\
 "links" : '''
-More games tested with the R7 250:
-https://www.youtube.com/watch?v=35OfNvxkxe4
+More games tested with the GT 1030:
+https://www.youtube.com/watch?v=6GplcZaKbW8
+https://www.youtube.com/watch?v=LZMuVTUvT7I
 
 TechPowerup entries:
-https://www.techpowerup.com/gpu-specs/asus-r7-250.b2488
-https://www.techpowerup.com/gpu-specs/radeon-r7-250.c2459
+https://www.techpowerup.com/gpu-specs/kfa2-gt-1030.b4633
+https://www.techpowerup.com/gpu-specs/geforce-gt-1030.c2954
 
 Intel 11th gen processors:
 The core i5 11400 (has an IGPU): https://ark.intel.com/content/www/us/en/ark/products/212270/intel-core-i511400-processor-12m-cache-up-to-4-40-ghz.html
 The core i5 11400F (no IGPU): https://ark.intel.com/content/www/us/en/ark/products/212271/intel-core-i511400f-processor-12m-cache-up-to-4-40-ghz.html
 
-Phillip's HD 7000 series video:
-https://www.youtube.com/watch?v=wsuP_9afO9c
-
-Other resources used:
-https://www.youtube.com/watch?v=45YGDChR4Zc
-
+NVidia Special Event (Pascal): https://www.youtube.com/watch?v=0xnzwjPyx8A
+Office PC and GT 1030: https://www.youtube.com/watch?v=yP4z2Vdmf1o
 ''', \
-"tags" : "AMD,Radeon,R7 250,HD 7850, HD7850,GCN,GCN 1.0",\
+"tags" : "NVidia,GeForce,Pascal,GT1030,GT 1030,CUDA,KFA2",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -47,56 +44,49 @@ https://www.youtube.com/watch?v=45YGDChR4Zc
 
 configs["episodes"].append(\
 { "title": "Context of the launch",\
-"audio" : {"timestamps" : ("00:00", "00:26.7" ), "volume" : 0.999 },\
-"video" : "R7 R9 series.mp4"\
+"audio" : {"timestamps" : ("00:00", "00:22" ), "volume" : 0.999 },\
+"video" : "nvidia_Pascal.mkv"\
 })
 
 configs["episodes"].append(\
-{ "title": "r7 250 - Cape Verde versus Oland XT",\
-"audio" : {"timestamps" : ("00:26.7", "01:27.74" ), "volume" : 0.999 },\
+{ "title": "GDDR5 vs DDR4",\
+"audio" : {"timestamps" : ("00:22", "00:31" ), "volume" : 0.999 },\
 "isChapter" : False,\
-"video" : "which R7 250.mp4"\
+"video" : "gddr5_ddr4_gt_1030.mkv"\
 })
 
 
 configs["episodes"].append(\
 { "title": "The GPU",\
-"audio" : {"timestamps" : ("01:27.74", "01:49.71" ), "volume" : 0.999 },\
-"video" : "R7_250_gpu_capabilities.mkv",\
+"audio" : {"timestamps" : ("00:31", "01:04" ), "volume" : 0.999 },\
+"video" : "gt_1030_pcie_x4.mkv",\
 })
 
 configs["episodes"].append(\
-{ "title": "The GPU - restrictions on Oland",\
-"audio" : {"timestamps" : ( "01:49.71", "02:18.55" ), "volume" : 0.999 },\
+{ "title": "Similar restrictions as R7 250",\
+"audio" : {"timestamps" : ( "01:04", "01:25" ), "volume" : 0.999 },\
 "isChapter" : False,\
-"video" : "R7_250_pciex8.mkv",\
+"video" : "r7_250_pcie_bandwidth_limitations.mkv",\
 })
 
 configs["episodes"].append(\
-{ "title": "Meme on 6500xt",\
-"audio" : {"timestamps" : ( "02:18.55", "02:29.23" ), "volume" : 0.999 },\
+{ "title": "KFA2 GT 1030",\
+"audio" : {"timestamps" : ( "01:25", "02:08" ), "volume" : 0.999 },\
 "isChapter" : False,\
-"video" : "poor_pcie_no_encoding.mkv",\
+"video" : "GT1030_techpowerup.mkv",\
 })
 
-
-configs["episodes"].append(\
-{ "title": "The GPU configuration",\
-"audio" : {"timestamps" : ("02:29.23", "03:09.36" ), "volume" : 0.999 },\
-"video" : "Asus_r7_250_techpowerup.mkv",
-"isChapter" : False,\
-})
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
-"audio" : {"timestamps" : ( "03:09.36", "03:36.73" ), "volume" : 0.999 },\
-"video" : "r7_250.MOV",\
+"audio" : {"timestamps" : ( "02:08", "02:24" ), "volume" : 0.999 },\
+"video" : {"file" : "GT1030_cooling.MOV", "rotation" : -90},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals - thermals only",\
-"audio" : {"timestamps" : ( "03:36.73", "04:23.19" ), "volume" : 0.999 },\
-"video" : "r7_250_Heaven.mkv",\
+"audio" : {"timestamps" : ( "02:24", "02:53" ), "volume" : 0.999 },\
+"video" : "fixed_GT1030_heaven.MOV",\
 "isChapter" : False,\
 })
 
@@ -105,9 +95,8 @@ configs["episodes"].append(\
 ## overlayed. Pass in a fake audio stream, at -60dB
 configs["episodes"].append(\
 { "title": "Video capturing will impact performance",\
-"audio" : {"timestamps" : ( "04:23.19", "04:45.11" ), "volume" : 0.999 },\
-"video" : "r7_250_choppy_recording.mkv",\
-"isChapter" : "true",\
+"audio" : {"timestamps" : ( "00:00", "00:24" ), "volume" : 0.001 },\
+"video" : "Video capturing will impact performance.mkv",\
 })
 
 
@@ -125,17 +114,17 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Apex Legends",\
-"audio" : {"timestamps" : ("04:45.11", "05:23.94" ), "volume" : 0.97  },\
+"audio" : {"timestamps" : ("02:53", "03:21.3" ), "volume" : 0.97  },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
-              "'1080p, low setings - Average\: 44fps, 1\\\% lows\: 33fps'",\
-              "'720p, low setings - Average\: 62fps, 1\\\% lows\: 47fps'"]\
+              "'1080p, low setings - Average\: 60fps, 1\\\% lows\: 44fps'",\
+              "'720p, low setings - Average\: 70fps, 1\\\% lows\: 54fps'"]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "CoD Warzone",\
-"audio" : {"timestamps" : ("05:23.94", "05:52.44" ) , "volume" : 0.97 },\
+"audio" : {"timestamps" : ("03:21.3", "03:49" ) , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -145,7 +134,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Battlefield V",\
-"audio" : {"timestamps" : ("05:52.44", "06:08.81" ) , "volume" : 0.97 },\
+"audio" : {"timestamps" : ("03:49", "04:20.6" ) , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -155,7 +144,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : ("06:08.81", "06:35.73") },\
+"audio" : {"timestamps" : ("04:20.6", "04:44.13") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -165,19 +154,19 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : ("06:35.73", "07:00.36") },\
+"audio" : {"timestamps" : ("04:44.13", "05:18.5") },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              "'1080p, low setings, 100\\\% render scale - Average\: 36fps, 1\\\% lows\: 28ps'",\
-              "'720p, low setings, 100\\\% render scale - Average\: 70fps, 1\\\% lows\: 47fps'",\
-              "'1080p, low setings, 50\\\% render scale - Average\: 51fps, 1\\\% lows\: 39fps'",\
-              "'720p, low setings, 50\\\% render scale - Average\: 91fps, 1\\\% lows\: 57fps'"]\
+              "'1080p, low setings, 100\\\% render scale - Average\: 54fps, 1\\\% lows\: 45ps'",\
+              "'720p, low setings, 100\\\% render scale - Average\: 103fps, 1\\\% lows\: 81fps'",\
+              "'1080p, low setings, 50\\\% render scale - Average\: 77fps, 1\\\% lows\: 63fps'",\
+              "'720p, low setings, 50\\\% render scale - Average\: 137fps, 1\\\% lows\: 101fps'"]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Alien: Isolation",\
-"audio" : {"timestamps" : ("07:00.36","07:31.4") },\
+"audio" : {"timestamps" : ("05:18.5","05:36.1") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, ultra settings", \
@@ -187,7 +176,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Counter Strike: Global Offensive",\
-"audio" : {"timestamps" : ("07:31.4", "07:55.36") },\
+"audio" : {"timestamps" : ("05:36.1", "06:28.3") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings", \
@@ -197,7 +186,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : ("07:55.36", "08:14.15"), "volume" : 0.97 },\
+"audio" : {"timestamps" : ("06:28.3", "06:50.4"), "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings, 100% render scale", \
@@ -207,7 +196,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : ("08:14.15", "08:42.44") },\
+"audio" : {"timestamps" : ("06:50.4", "07:29.5") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, performance mode, view distance FAR, 100% render scale", \
@@ -217,7 +206,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rocket League",\
-"audio" : {"timestamps" : ("08:42.44", "09:04.73") },\
+"audio" : {"timestamps" : ("07:29.5", "07:53.4") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings, 100% render scale", \
@@ -228,17 +217,17 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Splitgate",\
-"audio" : {"timestamps" : ("09:04.73", "09:29.81") },\
+"audio" : {"timestamps" : ("07:53.4", "08:16") },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
-              "'1080p, low setings - Average\: 38fps, 1\\\% lows\: 17fps'",\
-              "'720p, low setings - Average\: 74fps, 1\\\% lows\: 54fps'"]\
+              "'1080p, low setings - Average\: 64fps, 1\\\% lows\: 31fps'",\
+              "'720p, low setings - Average\: 107fps, 1\\\% lows\: 52fps'"]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Valorant",\
-"audio" : {"timestamps" : ("09:29.81", "09:50.11") },\
+"audio" : {"timestamps" : ("08:16", "08:53") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings", \
@@ -249,7 +238,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Genshin Impact",\
-"audio" : {"timestamps" : ("09:50.11", "10:07.94") },\
+"audio" : {"timestamps" : ("08:53", "09:16") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings, 1.0 render scale", \
@@ -260,7 +249,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Paladins",\
-"audio" : {"timestamps" : ("10:07.94", "10:32.56") , "volume" : 0.97 },\
+"audio" : {"timestamps" : ("09:16", "09:35.5") , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, high settings", \
@@ -270,7 +259,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Realm Royale",\
-"audio" : {"timestamps" : ("10:32.56", "11:03.48") },\
+"audio" : {"timestamps" : ("09:35.5", "09:55") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, high settings", \
@@ -280,7 +269,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rogue Company",\
-"audio" : {"timestamps" : ("11:03.48", "11:29.52") },\
+"audio" : {"timestamps" : ("09:55", "10:19.4") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings", \
@@ -290,7 +279,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "World of Tanks Blitz",\
-"audio" : {"timestamps" : ("11:29.52", "11:47.52") },\
+"audio" : {"timestamps" : ("10:19.4", "10:35") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, high settings", \
@@ -301,7 +290,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : ("11:47.52", "12:11.06") },\
+"audio" : {"timestamps" : ("10:35", "10:58.7") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, high settings", \
@@ -318,9 +307,9 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Usefulness of the R7 250",\
-"audio" : {"timestamps" : ("12:11.06", "12:53.27") },\
-"video" : "r7_250_breel_game.MOV"\
+{ "title": "Usefulness of the GT 1030",\
+"audio" : {"timestamps" : ("10:58.7", "11:30.45"), "volume" : 0.999 },\
+"video" : "office_pc_gt_1030.mkv"\
 })
 
 #configs["episodes"].append(\
@@ -330,16 +319,30 @@ configs["episodes"].append(\
 #})
 
 configs["episodes"].append(\
-{ "title": "2kliksPhillip GCN analysis",\
-"audio" : {"timestamps" : ("12:53.27", "13:20.81") },\
-"video" : "Phillip_HD7000.mkv",\
+{ "title": "Inconsistent performance, maybe an issue with this sample",\
+"audio" : {"timestamps" : ("11:30.45", "11:46") },\
+"video" : "stock_bfv_tobruk_720pLow.mp4",\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
-{ "title": "Personal notes for the R7 250",\
-"audio" : {"timestamps" : ("13:20.81", "14:07"), "volume" : 0.999},\
-"video" : "stock_Alien_Isolation_1080p.mp4"\
+{ "title": "pricing new",\
+"audio" : {"timestamps" : ("11:46", "12:00") },\
+"video" : "gt_1030_emag.mkv",
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
+{ "title": "pricing OLX",\
+"audio" : {"timestamps" : ( "12:00", "12:08.2") },\
+"video" : "gt_1030_olx.mkv",
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
+{ "title": "Personal notes for the KFA2 GT 1030",\
+"audio" : {"timestamps" : ("12:08.2", "12:29"), "volume" : 0.999},\
+"video" : "stock_GenshinImpact_1080pLow.mp4"\
 })
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][27], configs)
@@ -350,6 +353,6 @@ configs["episodes"].append(\
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
-scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Video capturing will impact performance"][0], configs)
-#scriptedvided.makeVideo(configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Context of the launch"][0], configs)
+scriptedvided.makeVideo(configs)
 
