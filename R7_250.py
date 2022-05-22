@@ -178,6 +178,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Alien: Isolation",\
 "audio" : {"timestamps" : ("07:00.36","07:31.4") },\
+"video" : "stock_Alien_Isolation_1080p.mp4",\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, ultra settings", \
@@ -304,7 +305,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("11:47.52", "12:11.06") },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1080p, high settings", \
+        "settings" : "1080p, low settings", \
     }\
 }, \
 })
@@ -350,6 +351,6 @@ configs["episodes"].append(\
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
-scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Video capturing will impact performance"][0], configs)
-#scriptedvided.makeVideo(configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Video capturing will impact performance"][0], configs)
+scriptedvided.makeVideo(configs)
 

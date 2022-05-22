@@ -29,6 +29,7 @@ The core i5 11400F (no IGPU): https://ark.intel.com/content/www/us/en/ark/produc
 
 NVidia Special Event (Pascal): https://www.youtube.com/watch?v=0xnzwjPyx8A
 Office PC and GT 1030: https://www.youtube.com/watch?v=yP4z2Vdmf1o
+R7 250 review: https://youtu.be/L4oFUVoxIzs
 ''', \
 "tags" : "NVidia,GeForce,Pascal,GT1030,GT 1030,CUDA,KFA2",\
 "language" : "EN", \
@@ -167,6 +168,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Alien: Isolation",\
 "audio" : {"timestamps" : ("05:18.5","05:36.1") },\
+"video" : "stock_Alien_Isolation_1080p.mp4",\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, ultra settings", \
