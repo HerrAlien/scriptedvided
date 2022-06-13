@@ -273,6 +273,16 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     audioVolume = sv_utils.dictValue(audioDict, "volume", None)
     if audioVolume is not None:
         opts["videoSoundVolume"] = 1 - float(audioVolume)
+        
+    textOpts = {"fontcolor" : "White", "boxcolor" : "#80000080", "fontsize" : 48}
+    textOptsFromCfg = sv_utils.dictValue(configs, "textOpts", None)
+    if textOptsFromCfg is not None:
+        for textOpt in list(textOptsFromCfg):
+            textOpts[textOpt] = textOptsFromCfg[textOpt]
+            
+    opts["textOpts"] = textOpts
+    
+    opts["padAudio"] = sv_utils.dictValue(audioDict, "padAudio", opts["padAudio"])
     
     builtVideo = makeEpisodeWithAllInputs (videoDict, audioDict, textArray, opts)
     # get extension and dir
@@ -332,12 +342,17 @@ def buildBackgroundTrack (backgroundTrack, configs):
         if trackLength == 0 or trackLength is None:            
             trackLength = sv_ffutils.getLengthOfStream(track["file"])
             
+        audioForSegment = sv_utils.dictValue(track,"file")
+        if not os.path.exists (audioForSegment):
+            baseFileName = os.path.basename(audioForSegment)
+            audioForSegment = os.path.join(configs["stockFolder"], baseFileName)
+            
         padAtBeginning = trackIsInsertedAt - previousTrackEndedAt
         if padAtBeginning > 0:
-            sv_ops.padAudioStream( {"file" : sv_utils.dictValue(track,"file") , "start" : trackStartsAt, "length" :trackLength }, segmentName, padAtBeginning, 0.1 )
+            sv_ops.padAudioStream( {"file" :  audioForSegment, "start" : trackStartsAt, "length" :trackLength }, segmentName, padAtBeginning, 0.1 )
             audioToConcat.append(segmentName)
         else:
-            audioToConcat.append({"file" : sv_utils.dictValue(track,"file") , "start" : trackStartsAt, "length" :trackLength })
+            audioToConcat.append({"file" : audioForSegment , "start" : trackStartsAt, "length" :trackLength })
                 
         previousTrackEndedAt = trackIsInsertedAt + trackLength
         
@@ -521,7 +536,7 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
 
 # then print the text
     if type(textLinesArray) is type ([]) and len(textLinesArray) > 0:
-        videoWithText = sv_ops.drawText (fixedVideo, textLinesArray, opts={"boxcolor" : "#80000080"})
+        videoWithText = sv_ops.drawText (fixedVideo, textLinesArray, opts=options["textOpts"])
         os.remove(fixedVideo)
         fixedVideo = videoWithText
     

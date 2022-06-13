@@ -9,8 +9,8 @@ configs = { "defaultAudioFile" : "gtx_960.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Context of the launch", "until" : "Apex Legends"}}, \
-{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of used GPUs", "until" : "end-of-video" }}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Shorter video this time around", "until" : "CoD Warzone"}}, \
+{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of the GTX 960", "until" : "end-of-video" }}, \
 ], "volume" : 0.03 },\
 "episodes" : [],\
 "youtube" : {"title" : "The half review for the fully dead GTX 960", \
@@ -46,33 +46,33 @@ R7 250 review: https://youtu.be/L4oFUVoxIzs
 
 configs["episodes"].append(\
 { "title": "Shorter video this time around",\
-"audio" : {"timestamps" : ("00:00", "00:22" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("00:00", "00:16" ), "volume" : 0.999 },\
 "video" : "gtx_960_rotating.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
-"audio" : {"timestamps" : ("00:31", "01:04" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("00:16", "00:36" ), "volume" : 0.999 },\
 "video" : "gtx_960_techpowerup.mkv",\
 })
 
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
-"audio" : {"timestamps" : ( "02:08", "02:24" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ( "00:36", "00:47" ), "volume" : 0.999 },\
 "video" : {"file" : "gtx_960_cooling.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals - thermals only",\
-"audio" : {"timestamps" : ( "02:24", "02:53" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ( "00:47", "01:08" ), "volume" : 0.999 },\
 "video" : "gtx_960_heaven.mp4",\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "This is a full size card",\
-"audio" : {"timestamps" : ( "01:25", "02:08" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ( "01:08", "01:17" ), "volume" : 0.999 },\
 "isChapter" : False,\
 "video" : "gtx_960_techpowerup.mkv",\
 })
@@ -92,7 +92,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "CoD Warzone",\
-"audio" : {"timestamps" : ("03:21.3", "03:49" ) , "volume" : 0.97 },\
+"audio" : {"timestamps" : ("01:17", "01:37.5" ) , "padAudio" : 3 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -102,7 +102,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Battlefield V",\
-"audio" : {"timestamps" : ("03:49", "04:20.6" ) , "volume" : 0.97 },\
+"audio" : {"timestamps" : ("01:37.5", "02:00" ) , "padAudio" : 3 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -112,7 +112,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : ("04:20.6", "04:44.13") },\
+"audio" : {"timestamps" : ("02:00", "02:23"), "padAudio" : 3  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -122,7 +122,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : ("04:44.13", "05:18.5") },\
+"audio" : {"timestamps" : ("02:23", "02:44"), "padAudio" : 3},\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
               "'1080p, low setings, 100\\\% render scale - Average\: 101fps, 1\\\% lows\: 78ps'",\
@@ -135,7 +135,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rocket League",\
-"audio" : {"timestamps" : ("07:29.5", "07:53.4") },\
+"audio" : {"timestamps" : ("02:44", "03:13"), "padAudio" : 3 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings, 100% render scale", \
@@ -146,7 +146,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Genshin Impact",\
-"audio" : {"timestamps" : ("08:53", "09:16") },\
+"audio" : {"timestamps" : ("03:13", "03:36"), "padAudio" : 3 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings, 1.0 render scale", \
@@ -157,7 +157,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rogue Company",\
-"audio" : {"timestamps" : ("09:55", "10:19.4") },\
+"audio" : {"timestamps" : ("03:36", "03:58.5"), "padAudio" : 3 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings", \
@@ -167,7 +167,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : ("10:35", "10:58.7") },\
+"audio" : {"timestamps" : ("03:58.5", "04:23"), "padAudio" : 3 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings", \
@@ -178,7 +178,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Alien: Isolation",\
-"audio" : {"timestamps" : ("05:18.5","05:36.1") },\
+"audio" : {"timestamps" : ("04:23","05:00"), "padAudio" : 3 },\
 "video" : "stock_Alien_Isolation_1080p.mp4",\
 "overlay" : { \
     "text" : ["'Alien\: Isolation'",\
@@ -188,7 +188,14 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Usefulness of the GTX 960",\
-"audio" : {"timestamps" : ("10:58.7", "11:30.45"), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("05:00", "05:28.5"), "volume" : 0.999 },\
+"video" : "gtx_960_rotating.mp4"\
+})
+
+configs["episodes"].append(\
+{ "title": "Usefulness of the GTX 960 - as card",\
+"isChapter" : False,\
+"audio" : {"timestamps" : ("05:00", "05:28.5"), "volume" : 0.999 },\
 "video" : "gtx_960_control.mp4"\
 })
 
