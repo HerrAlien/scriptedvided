@@ -115,7 +115,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("02:23", "02:44"), "padAudio" : 5},\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              "'1080p, low setings, 100\\\% render scale - Average\: 101fps, 1\\\% lows\: 78ps'",\
+              "'1080p, low setings, 100\\\% render scale - Average\: 101fps, 1\\\% lows\: 78fps'",\
               "'720p, low setings, 100\\\% render scale - Average\: 179fps, 1\\\% lows\: 114fps'",\
               "'1080p, low setings, 50\\\% render scale - Average\: 143fps, 1\\\% lows\: 103fps'",\
               "'720p, low setings, 50\\\% render scale - Average\: 207fps, 1\\\% lows\: 139fps'"]\
