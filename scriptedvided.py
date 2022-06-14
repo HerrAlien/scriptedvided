@@ -236,9 +236,7 @@ def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, ext
             mediaDict["length"] = sv_utils.getSeconds(altVal)
         
     return mediaDict
-    
-    
-    
+        
 def getSuitableVideoStream (episode, configs):
     return getSuitableMediaStream (episode, configs, "video", "defaultVideoFile", [".mp4", ".mov", ".avi", ".mkv"])
 
@@ -584,6 +582,10 @@ def aliases(inputName):
                 
     print ("WARNING: '" + inputName + "' has no known aliases.")
     return [] # no lnown
+    
+def r6sText (settings, average, _1percent):
+    text = settings + " - Average: " + str(average) + "fps, 1% lows: " + str(_1percent) + "fps"
+    return "'" + sv_ffutils.ffmpegSafeString(text) + "'"
     
 if __name__ == "__main__":
 #   truncatedvid = sv_ops.truncate ( "C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", -10, 30, "vid.mp4" )
