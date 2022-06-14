@@ -13,7 +13,7 @@ configs = { "defaultAudioFile" : "R7_250.ogg",\
 ], "volume" : 0.03 },\
 "episodes" : [],\
 "youtube" : {"title" : "The AMD Radeon R7 250 in 2022", \
-"description" : '''The Radeon R7 250, a rename of the HD 7850, was a higher end mid-range card released in February 2014. Like all GCN based cards, it had game ready drivers released for it up until 2021, and in this video, we'll see how it handles games in 2022.''',\
+"description" : '''The Radeon R7 250 was AMD's entry level card in the R7/R9 lineup of cards. In this video, we'll see how the 9 years old card performs in 2022.''',\
 "links" : '''
 More games tested with the R7 250:
 https://www.youtube.com/watch?v=35OfNvxkxe4
@@ -33,7 +33,7 @@ Other resources used:
 https://www.youtube.com/watch?v=45YGDChR4Zc
 
 ''', \
-"tags" : "AMD,Radeon,R7 250,HD 7850, HD7850,GCN,GCN 1.0",\
+"tags" : "AMD,Radeon,R7 250,HD 7730,HD7730,GCN,GCN 1.0",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -354,3 +354,5 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Video capturing will impact performance"][0], configs)
 scriptedvided.makeVideo(configs)
 
+#for x in configs["episodes"]:
+#    scriptedvided.makeVideoForEpisode(x, configs)

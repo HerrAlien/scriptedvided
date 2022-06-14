@@ -6,10 +6,11 @@ configs = { "defaultAudioFile" : "gt_1030.ogg",\
 "benchmarkFile" : "C:\\Users\\Admin\\Videos\\gt_1030\\Benchmark_gt1030.txt",\
 "outputFolder" : "C:\\Users\\Admin\\Videos\\gt_1030\\output", \
 "outputFile" : "gt_1030.mp4", \
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Context of the launch", "until" : "Apex Legends"}}, \
-{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of used GPUs", "until" : "end of the video" }}, \
+{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of used GPUs", "until" : "Blooper" }}, \
 ], "volume" : 0.03 },\
 "episodes" : [],\
 "youtube" : {"title" : "The NVidia GT 1030 in 2022", \
@@ -295,7 +296,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("10:35", "10:58.7") },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1080p, high settings", \
+        "settings" : "1080p, low settings", \
     }\
 }, \
 })
@@ -343,8 +344,15 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Personal notes for the KFA2 GT 1030",\
-"audio" : {"timestamps" : ("12:08.2", "12:29"), "volume" : 0.999},\
+"audio" : {"timestamps" : ("12:08.2", "12:30"), "volume" : 0.999},\
 "video" : "stock_GenshinImpact_1080pLow.mp4"\
+})
+
+configs["episodes"].append(\
+{ "title": "Blooper",\
+"audio" : {"timestamps" : ("00:00", "00:15"), "volume" : 0.001},\
+"video" : "gt1030_blooper.MOV",
+"isChapter" : False,\
 })
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][27], configs)
@@ -355,6 +363,6 @@ configs["episodes"].append(\
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Context of the launch"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Warframe"][0], configs)
 scriptedvided.makeVideo(configs)
 

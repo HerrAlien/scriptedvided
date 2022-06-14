@@ -16,21 +16,11 @@ configs = { "defaultAudioFile" : "gtx_960.ogg",\
 "youtube" : {"title" : "The half review for the fully dead GTX 960", \
 "description" : '''This GTX 960 was sold as defective; and while it could be resurrected for a short while, this was not to last.''',\
 "links" : '''
-More games tested with the GT 1030:
-https://www.youtube.com/watch?v=6GplcZaKbW8
-https://www.youtube.com/watch?v=LZMuVTUvT7I
+More games tested with the GTX 960:
+https://www.youtube.com/playlist?list=PLH6sLgdc_uJ7qPlbc7k0i92-U2YYdzgEi
 
-TechPowerup entries:
-https://www.techpowerup.com/gpu-specs/kfa2-gt-1030.b4633
-https://www.techpowerup.com/gpu-specs/geforce-gt-1030.c2954
-
-Intel 11th gen processors:
-The core i5 11400 (has an IGPU): https://ark.intel.com/content/www/us/en/ark/products/212270/intel-core-i511400-processor-12m-cache-up-to-4-40-ghz.html
-The core i5 11400F (no IGPU): https://ark.intel.com/content/www/us/en/ark/products/212271/intel-core-i511400f-processor-12m-cache-up-to-4-40-ghz.html
-
-NVidia Special Event (Pascal): https://www.youtube.com/watch?v=0xnzwjPyx8A
-Office PC and GT 1030: https://www.youtube.com/watch?v=yP4z2Vdmf1o
-R7 250 review: https://youtu.be/L4oFUVoxIzs
+TechPowerup entry:
+https://www.techpowerup.com/gpu-specs/geforce-gtx-960.c2637
 ''', \
 "tags" : "NVidia,GeForce,Maxwell,GTX960,GTX 960",\
 "language" : "EN", \
@@ -92,7 +82,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "CoD Warzone",\
-"audio" : {"timestamps" : ("01:17", "01:37.5" ) , "padAudio" : 3 },\
+"audio" : {"timestamps" : ("01:17", "01:37.5" ) , "padAudio" : 5 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -102,7 +92,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Battlefield V",\
-"audio" : {"timestamps" : ("01:37.5", "02:00" ) , "padAudio" : 3 },\
+"audio" : {"timestamps" : ("01:37.5", "02:00" ) , "padAudio" : 5 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -112,7 +102,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : ("02:00", "02:23"), "padAudio" : 3  },\
+"audio" : {"timestamps" : ("02:00", "02:23"), "padAudio" : 5  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -122,7 +112,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : ("02:23", "02:44"), "padAudio" : 3},\
+"audio" : {"timestamps" : ("02:23", "02:44"), "padAudio" : 5},\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
               "'1080p, low setings, 100\\\% render scale - Average\: 101fps, 1\\\% lows\: 78ps'",\
@@ -135,7 +125,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rocket League",\
-"audio" : {"timestamps" : ("02:44", "03:13"), "padAudio" : 3 },\
+"audio" : {"timestamps" : ("02:44", "03:13"), "padAudio" : 5 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings, 100% render scale", \
@@ -146,7 +136,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Genshin Impact",\
-"audio" : {"timestamps" : ("03:13", "03:36"), "padAudio" : 3 },\
+"audio" : {"timestamps" : ("03:13", "03:36"), "padAudio" : 5 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings, 1.0 render scale", \
@@ -157,7 +147,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rogue Company",\
-"audio" : {"timestamps" : ("03:36", "03:58.5"), "padAudio" : 3 },\
+"audio" : {"timestamps" : ("03:36", "03:58.5"), "padAudio" : 5 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings", \
@@ -167,7 +157,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : ("03:58.5", "04:23"), "padAudio" : 3 },\
+"audio" : {"timestamps" : ("03:58.5", "04:23"), "padAudio" : 5 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, low settings", \
@@ -178,7 +168,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Alien: Isolation",\
-"audio" : {"timestamps" : ("04:23","05:00"), "padAudio" : 3 },\
+"audio" : {"timestamps" : ("04:23","05:00"), "padAudio" : 5 },\
 "video" : "stock_Alien_Isolation_1080p.mp4",\
 "overlay" : { \
     "text" : ["'Alien\: Isolation'",\
@@ -195,7 +185,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Usefulness of the GTX 960 - as card",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("05:00", "05:28.5"), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("05:28.5", "05:46"), "volume" : 0.999 },\
 "video" : "gtx_960_control.mp4"\
 })
 

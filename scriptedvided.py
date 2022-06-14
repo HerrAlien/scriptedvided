@@ -424,10 +424,6 @@ def enhanceYoutubeData (configs):
         if isGameEpisode(episode):
             configs[youtube]["tags"] = configs[youtube]["tags"] + "," + episode["title"]
 
-    for episode in episodes:
-        if (sv_utils.dictValue(episode, "overlay", None) is not None):
-            configs[youtube]["tags"] = configs[youtube]["tags"] + "," + episode["title"]
-    
     chapters = ""
     time = 0
     previousChapterIndex = 0
