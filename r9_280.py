@@ -73,21 +73,21 @@ configs["episodes"].append(\
 { "title": "API",\
 "audio" : {"timestamps" : ( "01:50", "02:08" ), "volume" : 0.999 },\
 "isChapter" : False,\
-"video" : "",\
+"video" : {"file" : "R9_280_GPU.mkv", "start" : "01:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "Dual BIOS",\
 "audio" : {"timestamps" : ( "02:08", "02:27" ), "volume" : 0.999 },\
 "isChapter" : False,\
-"video" : "",\
+"video" : "r9_280_dual_bios.mp4",\
 })
 
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : ( "02:27", "03:06" ), "volume" : 0.999 },\
-"video" : {"file" : "", "rotation" : 0},\
+"video" : {"file" : "r9_280_cooling.mp4", "rotation" : 0},\
 })
 
 configs["episodes"].append(\
@@ -317,28 +317,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Usefulness of the R9 280",\
 "audio" : {"timestamps" : ("11:29", "11:57"), "volume" : 0.999 },\
-"video" : ""\
+"video" : "r9_280_f_o_r_t_n_i_t_e_1.mp4"\
 })
 
 
 configs["episodes"].append(\
 { "title": "Personal notes for the Sapphire R9 280 Dual-X OC with boost",\
 "audio" : {"timestamps" : ("11:57", "12:24.5"), "volume" : 0.999},\
-"video" : "stock_GenshinImpact_1080pLow.mp4"\
+"video" : "R9_280_r7r9_background.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Hint to repair video",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "12:24.5", "12:49"), "volume" : 0.999},\
-"video" : "stock_GenshinImpact_1080pLow.mp4"\
+"video" : {"file":"r9_280_voltage_measurements.mp4", "start":"00:05"}\
 })
 
 configs["episodes"].append(\
 { "title": "Blooper",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "12:49", "12:55"), "volume" : 0.999},\
-"video" : "stock_GenshinImpact_1080pLow.mp4"\
+"video" : "r9_280_f_o_r_t_n_i_t_e_2.mp4"\
 })
 
 
