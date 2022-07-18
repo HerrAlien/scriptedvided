@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "r9_280.ogg",\
+configs = { "defaultAudioFile" : "r9_280_2.ogg",\
 "mediaFolder" : "C:\\Users\\Admin\\Videos\\r9_280", \
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
 "benchmarkFile" : "C:\\Users\\Admin\\Videos\\r9_280\\Benchmark_R9_280.txt",\
@@ -10,7 +10,7 @@ configs = { "defaultAudioFile" : "r9_280.ogg",\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Context of the launch", "until" : "Video capturing leads to CPU bottleneck"}}, \
-{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of the GTX 960", "until" : "end-of-video" }}, \
+{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of used GPUs", "until" : "end-of-video" }}, \
 ], "volume" : 0.03 },\
 "episodes" : [],\
 "youtube" : {"title" : "Reviewing the R9 280 in 2022", \
@@ -102,7 +102,7 @@ configs["episodes"].append(\
 ## overlayed. Pass in a fake audio stream, at -60dB
 configs["episodes"].append(\
 { "title": "Video capturing leads to CPU bottleneck",\
-"audio" : {"timestamps" : ( "03:39", "04:18" ), "volume" : 0.001 },\
+"audio" : {"timestamps" : ( "03:39", "04:18" ), "volume" : 0.97 },\
 "video" : "r9_280_F_o_rtnite.mp4",\
 })
 
