@@ -10,7 +10,7 @@ configs = { "defaultAudioFile" : "r9_280_2.ogg",\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Context of the launch", "until" : "Video capturing leads to CPU bottleneck"}}, \
-{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of used GPUs", "until" : "end-of-video" }}, \
+{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of used GPUs", "until" : "Blooper" }}, \
 ], "volume" : 0.03 },\
 "episodes" : [],\
 "youtube" : {"title" : "Reviewing the R9 280 in 2022", \
@@ -21,6 +21,9 @@ https://www.youtube.com/playlist?list=PLH6sLgdc_uJ6cLPtH9eylU5IXbHJ3QpQc
 
 TechPowerup entry:
 https://www.techpowerup.com/gpu-specs/sapphire-dual-x-r9-280-oc-with-boost.b2845
+
+Phillip's HD 7000 series video:
+https://www.youtube.com/watch?v=wsuP_9afO9c
 ''', \
 "tags" : "AMD,ATI,Radeon,GCN,R9 280,HD7950,HD 7950",\
 "language" : "EN", \
@@ -228,8 +231,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("08:24.5", "08:55") },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
-              "'1080p, low setings - Average\: 64fps, 1\\\% lows\: 31fps'",\
-              "'720p, low setings - Average\: 107fps, 1\\\% lows\: 52fps'"]\
+              "'1080p, low setings - Average\: 156fps, 1\\\% lows\: 15fps'",\
+              "'720p, low setings - Average\: 234fps, 1\\\% lows\: 101fps'"]\
 }, \
 })
 
