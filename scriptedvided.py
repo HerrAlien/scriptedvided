@@ -61,6 +61,7 @@ def parseBenchmarkFile (benchmarkFile):
             currentKey = line[21:]
             posOfEnd = currentKey.index(benchmarkCompletedMark)
             currentKey = currentKey[0:posOfEnd]
+            currentKey = currentKey.upper()
             lineIndexFollowingKey = 0
             currentValue = [0,0,0]
         else:
@@ -104,7 +105,7 @@ def getTextArrayForEpisode (episode, benchmarkFile=None):
     benchmark = sv_utils.dictValue (overlay, "benchmark", None)
     if (benchmark is None):
         return None
-    
+        
     episodeName = sv_utils.dictValue (episode, "title", None)
 
     fpsArr = sv_utils.dictValue (benchmark, "FPS values", None)
@@ -263,8 +264,14 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
             return existingAbsPath
 
     videoDict = getSuitableVideoStream(episode, configs)
+    if videoDict is None or videoDict == {}:
+        print ("WARNING: no video for " + episode["title"])
     audioDict = getSuitableAudioStream(episode, configs)
+    if audioDict is None or audioDict == {}:
+        print ("WARNING: no video for " + episode["title"])
     textArray = getTextArrayForEpisode(episode, sv_utils.dictValue(configs, "benchmarkFile", None))
+    if textArray is None:
+        print ("WARNING: no overlay text for " + episode["title"])
     
     opts = {"padAudio": 1, "videoSoundVolume" : 0.07, "targetRes": targetRes }
     
@@ -568,20 +575,30 @@ def aliases(inputName):
             print(namesArr[0])
         return []
     
+    arrToReturn = []
+    
     for namesArr in gameAliases:
         for potentialName in namesArr:
             if potentialName.upper() == inputName.upper():
-                return namesArr
+                arrToReturn = namesArr
 
     for namesArr in gameAliases:
         for potentialName in namesArr:
             potentialNameUpper = potentialName.upper()
             inputNameUpper = inputName.upper()
             if potentialNameUpper.find(inputNameUpper) >= 0 or inputNameUpper.find(potentialNameUpper) >= 0:
-                return namesArr
-                
-    print ("WARNING: '" + inputName + "' has no known aliases.")
-    return [] # no lnown
+                arrToReturn = namesArr
+
+    if len(arrToReturn) == 0:
+        print ("WARNING: '" + inputName + "' has no known aliases.")
+    else:
+        uppedArr = []
+        for name in arrToReturn:
+            uppedArr.append(name.upper())
+        
+        arrToReturn = uppedArr
+        
+    return arrToReturn # no lnown
     
 def r6sText (settings, average, _1percent):
     text = settings + " - Average: " + str(average) + "fps, 1% lows: " + str(_1percent) + "fps"
