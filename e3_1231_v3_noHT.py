@@ -5,11 +5,11 @@ configs = { "defaultAudioFile" : "Xeon_E3-1231_V3_noHT.ogg",\
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
 "benchmarkFile" : "C:\\Users\\Admin\\Videos\\E3_1231_v3_noHT\\Benchmark_E3_1231_v3_noHT.txt",\
 "outputFolder" : "C:\\Users\\Admin\\Videos\\E3_1231_v3_noHT\\output", \
-"outputFile" : "r9_280.mp4", \
+"outputFile" : "Haswell_4c_4t.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00408080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Context of the launch", "until" : " Apex Legends "}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "TLDW", "until" : " Apex Legends "}}, \
 {"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Conclusion", "until" : "Blooper" }}, \
 ], "volume" : 0.03 },\
 "episodes" : [],\
@@ -17,6 +17,9 @@ configs = { "defaultAudioFile" : "Xeon_E3-1231_V3_noHT.ogg",\
 "description" : '''In this video, we'll take a closer look at Intel's 4th gen i5. Sort of. ''',\
 "links" : '''
 More games tested with Haswell based i5s:
+https://www.youtube.com/watch?v=cOhRD8TbGgA
+https://www.youtube.com/watch?v=5nyxhhjKTkk
+
 
 Specs for the Xeon E3 1231 v3 CPU:
 https://www.intel.com/content/www/us/en/products/sku/80910/intel-xeon-processor-e31231-v3-8m-cache-3-40-ghz/specifications.html
@@ -58,18 +61,18 @@ configs["episodes"].append(\
 })
 
 
-# consider inside of the case ...
+# consider inside of the case though, or capture done with HT off
 configs["episodes"].append(\
 { "title": "The setup used for these tests",\
 "audio" : {"timestamps" : ("00:55.6", "01:14.5" ), "volume" : 0.999 },\
-"video" : {"file": "z230_cpuz_taskManager.mkv", "start":"00:00"},\
+"video" : {"file": "z230_cpuz_intel_ark.mkv", "start":"00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "Ram config",\
 "audio" : {"timestamps" : ("01:14.5", "01:22.5" ), "volume" : 0.999 },\
 "isChapter" : False,\
-"video" : {"file": "z230_cpuz_taskManager.mkv", "start":"00:30"},\
+"video" : {"file": "z230_cpuz_intel_ark.mkv", "start":"01:00"},\
 })
 
 configs["episodes"].append(\
@@ -217,6 +220,35 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("06:37", "07:51.5"), "volume" : 0.999 },\
 "video" : "stock_GenshinImpact_1080pLow.mp4"\
 })
+
+configs["episodes"].append(\
+{ "title": "Conclusion - i5 recommended",\
+"isChapter" : False,\
+"audio" : {"timestamps" : ("06:37", "06:48.5"), "volume" : 0.999 },\
+"video" : "hub_i5.mkv"\
+})
+
+configs["episodes"].append(\
+{ "title": "Conclusion - i5 evolution",\
+"isChapter" : False,\
+"audio" : {"timestamps" : ("06:48.5", "07:20"), "volume" : 0.999 },\
+"video" : "Haswell_i5.mkv"\
+})
+
+configs["episodes"].append(\
+{ "title": "Conclusion - setup limitation",\
+"isChapter" : False,\
+"audio" : {"timestamps" : ("07:20", "07:33.6"), "volume" : 0.999 },\
+"video" : {"file" : "Z230_closed.mp4", "start" : "01:00"} \
+})
+
+configs["episodes"].append(\
+{ "title": "Conclusion - still good",\
+"isChapter" : False,\
+"audio" : {"timestamps" : ("07:33.6" , "07:51.5"), "volume" : 0.999 },\
+"video" : "stock_Splitgate_1080pLow.mp4"\
+})
+
 
 ################################ more chapters needed
 
