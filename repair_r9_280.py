@@ -17,6 +17,8 @@ configs = { "defaultAudioFile" : "repair_r9_280.ogg",\
 "links" : '''
 Our review of the R9 280: https://www.youtube.com/watch?v=9e9vjrRv5ho
 
+Repairing the MSI HD 7770: https://www.youtube.com/watch?v=eqpQWX8f4Nw
+
 Repair channels:
 https://www.youtube.com/c/LearnElectronicsRepair
 https://www.youtube.com/channel/UCKU5nwSWYXa3xfXGBlKyvdw
@@ -45,7 +47,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Short history of the card",\
 "audio" : {"timestamps" : ( "00:10.6", "00:29" ), "volume" : 0.999 },\
-"video" : {"file" : "r9_280.MOV", "rotation" : 180},\
+"video" : {"file" : "r9_280_solo.MOV", "rotation" : 180},\
 })
 
 configs["episodes"].append(\
@@ -70,7 +72,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Step 2 - Measure voltages",\
 "audio" : {"timestamps" : ( "01:29", "01:51" ), "volume" : 0.999 },\
-"video" : "r9_280_voltage_measurements.mp4",\
+"video" : {"file" : "r9_280_voltage_measurements.mp4", "start" : "00:10"},\
 })
 
 configs["episodes"].append(\

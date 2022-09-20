@@ -1,10 +1,10 @@
 import scriptedvided
 
 configs = { "defaultAudioFile" : "Xeon_E3-1231_V3.ogg",\
-"mediaFolder" : "C:\Users\Admin\Videos\E3_1231_v3", \
+"mediaFolder" : "C:\\Users\\Admin\\Videos\\E3_1231_v3", \
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
-"benchmarkFile" : "C:\Users\Admin\Videos\E3_1231_v3\\Benchmark_E3_1231_v3.txt",\
-"outputFolder" : "C:\Users\Admin\Videos\E3_1231_v3\\output", \
+"benchmarkFile" : "C:\\Users\\Admin\\Videos\\E3_1231_v3\\Benchmark_E3_1231_v3.txt",\
+"outputFolder" : "C:\\Users\\Admin\\Videos\\E3_1231_v3\\output", \
 "outputFile" : "Haswell_4c_8t.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00408080"},\
 "backgroundTrack" : { "audioTracks" : [ \
@@ -28,7 +28,7 @@ https://www.intel.com/content/www/us/en/products/sku/75122/intel-core-i74770-pro
 
 Other videos used:
 Hyper Threading video: https://www.youtube.com/watch?v=VcoVYfDVEww
-LGA1150 CPU installation: https://www.youtube.com/watch?v=q_EMqmJRFW4
+HUB review of the 12600k: https://www.youtube.com/watch?v=LzhwVLUVork
 
 ''', \
 "tags" : "Intel,4th Gen,Haswell,core i7,i7,Xeon,4770,i7 4770",\
@@ -137,7 +137,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("04:55", "05:50") },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "720p, 35% 3D scale, low settings", \
+        "settings" : "1024 x 768, 35% 3D scale, low settings", \
     }\
 }, \
 })
@@ -145,7 +145,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Counter Strike: Global Offensive",\
-"audio" : {"timestamps" : ("05:50", "06:42") },\
+"audio" : {"timestamps" : ("05:50", "06:42.1") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "852 x 480, low settings", \
@@ -168,8 +168,8 @@ configs["episodes"].append(\
 ###"audio" : {"timestamps" : ("08:24.5", "08:55") },\
 ###"overlay" : { \
 ###    "text" : ["'Splitgate'",\
-###              "'1080p, low setings - Average\: 156fps, 1\\\% lows\: 15fps'",\
-###              "'720p, low setings - Average\: 234fps, 1\\\% lows\: 101fps'"]\
+###              "'1080p, low settings - Average\: 156fps, 1\\\% lows\: 15fps'",\
+###              "'720p, low settings - Average\: 234fps, 1\\\% lows\: 101fps'"]\
 ###}, \
 ###})
 
@@ -228,6 +228,6 @@ configs["episodes"].append(\
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Apex Legends"][0], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Warframe"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Counter Strike: Global Offensive"][0], configs)
 scriptedvided.makeVideo(configs)
 

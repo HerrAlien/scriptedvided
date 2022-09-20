@@ -91,8 +91,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("03:18", "04:01" ), "volume" : 0.97  },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
-              "'1080p, low setings - Average\: 37fps, 1\\\% lows\: 22fps'",\
-              "'720p, low setings - Average\: 53fps, 1\\\% lows\: 36fps'"]\
+              "'1080p, low settings - Average\: 37fps, 1\\\% lows\: 22fps'",\
+              "'720p, low settings - Average\: 53fps, 1\\\% lows\: 36fps'"]\
 }, \
 })
 
@@ -133,10 +133,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("05:16", "05:44") },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              "'1080p, low setings, 100\\\% render scale - Average\: 31fps, 1\\\% lows\: 23fps'",\
-              "'720p, low setings, 100\\\% render scale - Average\: 56fps, 1\\\% lows\: 37fps'",\
-              "'1080p, low setings, 50\\\% render scale - Average\: 45fps, 1\\\% lows\: 71fps'",\
-              "'720p, low setings, 50\\\% render scale - Average\: 73fps, 1\\\% lows\: 44fps'"]\
+              "'1080p, low settings, 100\\\% render scale - Average\: 31fps, 1\\\% lows\: 23fps'",\
+              "'720p, low settings, 100\\\% render scale - Average\: 56fps, 1\\\% lows\: 37fps'",\
+              "'1080p, low settings, 50\\\% render scale - Average\: 45fps, 1\\\% lows\: 71fps'",\
+              "'720p, low settings, 50\\\% render scale - Average\: 73fps, 1\\\% lows\: 44fps'"]\
 }, \
 })
 
@@ -197,8 +197,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("07:32", "08:07") },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
-              "'1080p, low setings - Average\: 58fps, 1\\\% lows\: 26fps, 0.1\\\% lows\: 16fps'",\
-              "'720p, low setings - Average\: 101fps, 1\\\% lows\: 52fps, 0.1\\\% lows\: 30fps'"]\
+              "'1080p, low settings - Average\: 58fps, 1\\\% lows\: 26fps, 0.1\\\% lows\: 16fps'",\
+              "'720p, low settings - Average\: 101fps, 1\\\% lows\: 52fps, 0.1\\\% lows\: 30fps'"]\
 }, \
 })
 

@@ -210,6 +210,7 @@ def getSuitableMediaStream (episode, configs, keyInEpisode, defaultMediaKey, ext
     stockFolder = sv_utils.dictValue(configs, "stockFolder", None)
      
     mediaDict["file"] = getSuitableVideoFromFolders ([mediaFolder, stockFolder], names, extensions)
+        
     if mediaDict["file"] is None:
         defaultMedia = sv_utils.dictValue (configs, defaultMediaKey, None)
         if defaultMedia is None:

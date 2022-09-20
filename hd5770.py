@@ -117,8 +117,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("02:54", "03:19") },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              "'1080p, low setings, 50\\\% render scale - Average\: 46fps, 1\\\% lows\: 25fps'",\
-              "'720p, low setings, 50\\\% render scale - Average\: 71fps, 1\\\% lows\: 32fps'"]\
+              "'1080p, low settings, 50\\\% render scale - Average\: 46fps, 1\\\% lows\: 25fps'",\
+              "'720p, low settings, 50\\\% render scale - Average\: 71fps, 1\\\% lows\: 32fps'"]\
 }, \
 })
 
@@ -185,8 +185,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("04:27", "04:37") },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
-              "'1080p, low setings - Average\: 41fps, 1\\\% lows\: 25fps, 0.1\\\% lows\: 16fps'",\
-              "'720p, low setings - Average\: 68fps, 1\\\% lows\: 25fps, 0.1\\\% lows\: 16fps'"]\
+              "'1080p, low settings - Average\: 41fps, 1\\\% lows\: 25fps, 0.1\\\% lows\: 16fps'",\
+              "'720p, low settings - Average\: 68fps, 1\\\% lows\: 25fps, 0.1\\\% lows\: 16fps'"]\
 }, \
 })
 

@@ -9,7 +9,7 @@ configs = { "defaultAudioFile" : "R9_290X.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Context of the launch", "until" : "Video capturing leads to CPU bottleneck"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Context of the launch", "until" : "Apex Legends"}}, \
 {"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of used GPUs", "until" : "Blooper" }}, \
 ], "volume" : 0.03 },\
 "episodes" : [],\
@@ -98,14 +98,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cooling and thermals - blower fan",\
 "audio" : {"timestamps" : ( "02:15.2", "02:37" ), "volume" : 0.999 },\
-"video" : {"file":"R9_290X_cooling-converted.mp4", "rotation" : 180},\
+"video" : "R9_290X_cooling-converted.mp4",\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals - massive cooler",\
 "audio" : {"timestamps" : ( "02:37", "02:45.9" ), "volume" : 0.999 },\
-"video" : {"file":"R9_290X_coolerWeight-converted.mp4", "rotation" : 180},\
+"video" : {"file" : "R9_290X_coolerWeight-converted.mp4", "rotation" : 90}, \
 "isChapter" : False,\
 })
 
@@ -156,8 +156,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("04:04.2", "04:42.6" )  },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
-              "'1080p, low setings - Average\: 128fps, 1\\\% lows\: 87fps'",\
-              "'720p, low setings - Average\: 144fps, 1\\\% lows\: 107fps'"]\
+              "'1080p, low settings - Average\: 128fps, 1\\\% lows\: 87fps'",\
+              "'720p, low settings - Average\: 144fps, 1\\\% lows\: 107fps'"]\
 }, \
 })
 
@@ -196,10 +196,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("06:06", "06:46") },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              "'1080p, low setings, 100\\\% render scale - Average\: 161fps, 1\\\% lows\: 118ps'",\
-              "'720p, low setings, 100\\\% render scale - Average\: 202fps, 1\\\% lows\: 133fps'",\
-              "'1080p, low setings, 50\\\% render scale - Average\: 198fps, 1\\\% lows\: 135fps'",\
-              "'720p, low setings, 50\\\% render scale - Average\: 220fps, 1\\\% lows\: 141fps'"]\
+              "'1080p, low settings, 100\\\% render scale - Average\: 161fps, 1\\\% lows\: 118ps'",\
+              "'720p, low settings, 100\\\% render scale - Average\: 202fps, 1\\\% lows\: 133fps'",\
+              "'1080p, low settings, 50\\\% render scale - Average\: 198fps, 1\\\% lows\: 135fps'",\
+              "'720p, low settings, 50\\\% render scale - Average\: 220fps, 1\\\% lows\: 141fps'"]\
 }, \
 })
 
@@ -237,6 +237,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : ("08:14", "08:45") },\
+"video" : {"file":"R9_290X_Fortnite.mp4", "start":"01:30"},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1080p, performance mode, view distance FAR, 100% render scale", \
@@ -259,8 +260,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("09:09.7", "09:39.7") },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
-              "'1080p, low setings - Average\: 207fps, 1\\\% lows\: 127fps'",\
-              "'720p, low setings - Average\: 220fps, 1\\\% lows\: 117fps'"]\
+              "'1080p, low settings - Average\: 207fps, 1\\\% lows\: 127fps'",\
+              "'720p, low settings - Average\: 220fps, 1\\\% lows\: 117fps'"]\
 }, \
 })
 
@@ -345,21 +346,21 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Usefulness of the R9 290X",\
 "audio" : {"timestamps" : ("13:01", "13:36.4"), "volume" : 0.999 },\
-"video" : {"file" :"R9_290X_bb_B_FV.mp4", "rotation" : 180}\
+"video" : "R9_290X_bb_B_FV.mp4", \
 })
 
 configs["episodes"].append(\
 { "title": "Good performance",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("13:36.4", "13:48.4"), "volume" : 0.999 },\
-"video" : {"file" :"R9_290X_card.mp4", "rotation" : 180}\
+"video" : "R9_290X_card.mp4",\
 })
 
 configs["episodes"].append(\
 { "title": "iffy pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "13:48.4", "14:19"), "volume" : 0.999 },\
-"video" : {"file" :"R9_290X_bb_A_pex.mp4", "rotation" : 180}\
+"video" : "R9_290X_bb_A_pex.mp4", \
 })
 
 
@@ -367,7 +368,7 @@ configs["episodes"].append(\
 { "title": "Blooper",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "15:51.1", "16:02.1"), "volume" : 0.999},\
-"video" : {"file" :"R9_290X_bb_G_enshinImpact.mp4", "rotation" : 180}\
+"video" : "R9_290X_bb_G_enshinImpact.mp4",\
 })
 
 
@@ -379,6 +380,6 @@ configs["episodes"].append(\
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Warframe"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Battlefield V"][0], configs)
 scriptedvided.makeVideo(configs)
 

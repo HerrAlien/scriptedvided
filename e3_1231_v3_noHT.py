@@ -20,12 +20,15 @@ More games tested with Haswell based i5s:
 https://www.youtube.com/watch?v=cOhRD8TbGgA
 https://www.youtube.com/watch?v=5nyxhhjKTkk
 
-
 Specs for the Xeon E3 1231 v3 CPU:
 https://www.intel.com/content/www/us/en/products/sku/80910/intel-xeon-processor-e31231-v3-8m-cache-3-40-ghz/specifications.html
 
 Specs for the Core i5 4670 CPU:
 https://www.intel.com/content/www/us/en/products/sku/75047/intel-core-i54670-processor-6m-cache-up-to-3-80-ghz/specifications.html
+
+Other videos used:
+HUB review of the 12600k: https://www.youtube.com/watch?v=LzhwVLUVork
+LGA1150 CPU installation: https://www.youtube.com/watch?v=q_EMqmJRFW4
 
 ''', \
 "tags" : "Intel,4th Gen,Haswell,core i5,i5,Xeon",\
@@ -145,7 +148,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("04:17.8", "04:37") },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "720p, 35% 3D scale, low settings", \
+        "settings" : "1024 x 768, 35% 3D scale, low settings", \
     }\
 }, \
 })
@@ -190,8 +193,8 @@ configs["episodes"].append(\
 ###"audio" : {"timestamps" : ("08:24.5", "08:55") },\
 ###"overlay" : { \
 ###    "text" : ["'Splitgate'",\
-###              "'1080p, low setings - Average\: 156fps, 1\\\% lows\: 15fps'",\
-###              "'720p, low setings - Average\: 234fps, 1\\\% lows\: 101fps'"]\
+###              "'1080p, low settings - Average\: 156fps, 1\\\% lows\: 15fps'",\
+###              "'720p, low settings - Average\: 234fps, 1\\\% lows\: 101fps'"]\
 ###}, \
 ###})
 
@@ -215,15 +218,9 @@ configs["episodes"].append(\
 
 ## this can be copy-pasted, it uses a stock video with the audio already
 ## overlayed. Pass in a fake audio stream, at -60dB
-configs["episodes"].append(\
-{ "title": "Conclusion",\
-"audio" : {"timestamps" : ("06:37", "07:51.5"), "volume" : 0.999 },\
-"video" : "stock_GenshinImpact_1080pLow.mp4"\
-})
 
 configs["episodes"].append(\
-{ "title": "Conclusion - i5 recommended",\
-"isChapter" : False,\
+{ "title": "Conclusion",\
 "audio" : {"timestamps" : ("06:37", "06:48.5"), "volume" : 0.999 },\
 "video" : "hub_i5.mkv"\
 })
@@ -257,7 +254,7 @@ configs["episodes"].append(\
 { "title": "Blooper",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "07:51.5", "08:02"), "volume" : 0.999},\
-"video" : "r9_280_f_o_r_t_n_i_t_e_2.mp4"\
+"video" : "Haswell_i5.mkv"\
 })
 
 

@@ -115,10 +115,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("02:23", "02:44"), "padAudio" : 5},\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1080p, low setings, 100% render scale', 101, 78), \
-              scriptedvided.r6sText('720p, low setings, 100% render scale', 179, 114),\
-              scriptedvided.r6sText('1080p, low setings, 50% render scale', 143, 103),\
-              scriptedvided.r6sText('720p, low setings, 50% render scale', 207, 139)]\
+              scriptedvided.r6sText('1080p, low settings, 100% render scale', 101, 78), \
+              scriptedvided.r6sText('720p, low settings, 100% render scale', 179, 114),\
+              scriptedvided.r6sText('1080p, low settings, 50% render scale', 143, 103),\
+              scriptedvided.r6sText('720p, low settings, 50% render scale', 207, 139)]\
 }, \
 })
 

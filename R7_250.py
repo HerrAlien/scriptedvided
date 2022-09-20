@@ -106,7 +106,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Video capturing will impact performance",\
 "audio" : {"timestamps" : ( "04:23.19", "04:45.11" ), "volume" : 0.999 },\
-"video" : "r7_250_choppy_recording.mkv",\
+"video" : {"file" : "r7_250_choppy_recording.mp4", "rotation" : 180},\
 "isChapter" : "true",\
 })
 
@@ -128,8 +128,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("04:45.11", "05:23.94" ), "volume" : 0.97  },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
-              "'1080p, low setings - Average\: 44fps, 1\\\% lows\: 33fps'",\
-              "'720p, low setings - Average\: 62fps, 1\\\% lows\: 47fps'"]\
+              "'1080p, low settings - Average\: 44fps, 1\\\% lows\: 33fps'",\
+              "'720p, low settings - Average\: 62fps, 1\\\% lows\: 47fps'"]\
 }, \
 })
 
@@ -168,10 +168,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("06:35.73", "07:00.36") },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              "'1080p, low setings, 100\\\% render scale - Average\: 36fps, 1\\\% lows\: 28ps'",\
-              "'720p, low setings, 100\\\% render scale - Average\: 70fps, 1\\\% lows\: 47fps'",\
-              "'1080p, low setings, 50\\\% render scale - Average\: 51fps, 1\\\% lows\: 39fps'",\
-              "'720p, low setings, 50\\\% render scale - Average\: 91fps, 1\\\% lows\: 57fps'"]\
+              "'1080p, low settings, 100\\\% render scale - Average\: 36fps, 1\\\% lows\: 28ps'",\
+              "'720p, low settings, 100\\\% render scale - Average\: 70fps, 1\\\% lows\: 47fps'",\
+              "'1080p, low settings, 50\\\% render scale - Average\: 51fps, 1\\\% lows\: 39fps'",\
+              "'720p, low settings, 50\\\% render scale - Average\: 91fps, 1\\\% lows\: 57fps'"]\
 }, \
 })
 
@@ -232,8 +232,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("09:04.73", "09:29.81") },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
-              "'1080p, low setings - Average\: 38fps, 1\\\% lows\: 17fps'",\
-              "'720p, low setings - Average\: 74fps, 1\\\% lows\: 54fps'"]\
+              "'1080p, low settings - Average\: 38fps, 1\\\% lows\: 17fps'",\
+              "'720p, low settings - Average\: 74fps, 1\\\% lows\: 54fps'"]\
 }, \
 })
 
