@@ -3,7 +3,7 @@ import scriptedvided
 configs = { "defaultAudioFile" : "FermiGT730_notch97.ogg",\
 "mediaFolder" : "C:\\Users\\Admin\\Videos\\FermiGT730", \
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
-"benchmarkFile" : "C:\\Users\\Admin\\Videos\\FermiGT730\\Benchmark_R9_290X.txt",\
+"benchmarkFile" : "C:\\Users\\Admin\\Videos\\FermiGT730\\Benchmark_FermiGT730.txt",\
 "outputFolder" : "C:\\Users\\Admin\\Videos\\FermiGT730\\output", \
 "outputFile" : "FermiGT730.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
@@ -372,7 +372,6 @@ configs["episodes"].append(\
 "video" : "730_family_2.mp4",\
 })
 
-'''
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][27], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs)
@@ -382,6 +381,6 @@ configs["episodes"].append(\
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Battlefield V"][0], configs)
-scriptedvided.makeVideo(configs)
+scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Fortnite"][0], configs)
+#scriptedvided.makeVideo(configs)
 
