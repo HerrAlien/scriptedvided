@@ -170,7 +170,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Apex Legends",\
-"audio" : {"timestamps" : ("04:04.2", "04:42.6" )  },\
+"audio" : {"timestamps" : ("06:42.7", "07:10.4" )  },\
 "overlay" : { \
     "text" : ["'Apex Legends (720p, low settings)'",\
               "'Average\: 16fps, 1\\\% lows\: 11fps'"]\
@@ -179,7 +179,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "CoD Warzone",\
-"audio" : {"timestamps" : ("04:42.6", "05:13" )  },\
+"audio" : {"timestamps" : ("07:10.4", "07:28.7" )  },\
 "overlay" : { \
     "text" : ["'CoD Warzone (720p, low settings)'",\
               "'Average\: 0fps, 1\\\% lows\: 0fps'"]\
@@ -188,7 +188,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Battlefield V",\
-"audio" : {"timestamps" : ("05:13", "05:40.4" ) },\
+"audio" : {"timestamps" : ("07:28.7", "07:54.7" ) },\
 "overlay" : { \
     "text" : ["'Battlefield V (720p, low settings)'",\
               "'Average\: 0fps, 1\\\% lows\: 0fps'"]\
@@ -197,7 +197,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : ("05:40.4", "06:06") },\
+"audio" : {"timestamps" : ("07:54.7", "08:14.6") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings", \
@@ -207,7 +207,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : ("06:06", "06:46") },\
+"audio" : {"timestamps" : ("08:14.6", "08:39") },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege (720p, low settings)'",\
               "'Average\: 0fps, 1\\\% lows\: 0fps'"]\
@@ -216,29 +216,29 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Alien: Isolation",\
-"audio" : {"timestamps" : ("06:46","07:19") },\
+"audio" : {"timestamps" : ("08:39","09:17") },\
 "overlay" : { \
     "text" : ["'Alien\: Isolation (720p, ultra settings)'",\
-              "'Stock 700MHz GPU, 800MHz RAM\: Average\: 29fps, 1\\\% lows\: 21fps'",\
-              "'OC 850MHz GPU, 950MHz RAM\: Average\: 37fps, 1\\\% lows\: 26fps'",\
+              "'Stock 700MHz GPU, 800MHz RAM - Average\: 29fps, 1\\\% lows\: 21fps'",\
+              "'OC 850MHz GPU, 950MHz RAM - Average\: 37fps, 1\\\% lows\: 26fps'",\
               ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Counter Strike: Global Offensive",\
-"audio" : {"timestamps" : ("07:19", "07:46.3") },\
+"audio" : {"timestamps" : ("09:17", "09:53") },\
 "overlay" : { \
     "text" : ["'Counter Strike\: Global Offensive (720p, low settings)'",\
-              "'Stock 700MHz GPU, 800MHz RAM\: Average\: 49fps, 1\\\% lows\: 19fps'",\
-              "'OC 850MHz GPU, 950MHz RAM\: Average\: 74fps, 1\\\% lows\: 27fps'",\
+              "'Stock 700MHz GPU, 800MHz RAM - Average\: 49fps, 1\\\% lows\: 19fps'",\
+              "'OC 850MHz GPU, 950MHz RAM - Average\: 74fps, 1\\\% lows\: 27fps'",\
               ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : ("07:46.3", "08:14"), "volume" : 0.97 },\
+"audio" : {"timestamps" : ("09:53", "10:15"), "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "720p, low settings, 100% render scale", \
@@ -248,18 +248,18 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : ("08:14", "08:45") },\
+"audio" : {"timestamps" : ("10:15", "10:57") },\
 "overlay" : { \
     "text" : ["Fortnite (720p, performance mode, FAR draw distance)'",\
-              "'Stock 700MHz GPU, 800MHz RAM\: Average\: 55fps, 1\\\% lows\: 28fps'",\
-              "'OC 850MHz GPU, 950MHz RAM\: Average\: 69fps, 1\\\% lows\: 39fps'",\
+              "'Stock 700MHz GPU, 800MHz RAM - Average\: 55fps, 1\\\% lows\: 28fps'",\
+              "'OC 850MHz GPU, 950MHz RAM - Average\: 69fps, 1\\\% lows\: 39fps'",\
               ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Rocket League",\
-"audio" : {"timestamps" : ("08:45", "09:09.7") },\
+"audio" : {"timestamps" : ("10:57", "12:00") },\
 "overlay" : { \
     "text" : ["'Rocket League'",\
               "'Stock 700MHz GPU, 800MHz RAM (1080p, low settings)\: Average\: 47fps, 1\\\% lows\: 17fps'",\
@@ -271,81 +271,86 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Splitgate",\
-"audio" : {"timestamps" : ("09:09.7", "09:39.7") },\
+"audio" : {"timestamps" : ("12:00", "12:35") },\
 "overlay" : { \
-    "text" : ["'Splitgate'",\
-              "'1080p, low settings - Average\: 207fps, 1\\\% lows\: 127fps'",\
-              "'720p, low settings - Average\: 220fps, 1\\\% lows\: 117fps'"]\
+    "text" : ["'Splitgate (720p, low settings)'",\
+              "'Stock 700MHz GPU, 800MHz RAM - Average\: 43fps, 1\\\% lows\: 17fps'",\
+              "'OC 850MHz GPU, 950MHz RAM - Average\: 52fps, 1\\\% lows\: 20fps'"]
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Valorant",\
-"audio" : {"timestamps" : ("09:39.7", "10:26.2") },\
+"audio" : {"timestamps" : ("12:35", "13:13") },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1080p, low settings", \
-    }\
+    "text" : ["'Valorant'",\
+              "'1080p, low settings\: Average\: 95fps, 1\\\% lows\: 63fps'",\
+              "'720p, low settings\: Average\: 145fps, 1\\\% lows\: 101fps'",\
+              ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Genshin Impact",\
-"audio" : {"timestamps" : ("10:26.2", "10:47") },\
+"audio" : {"timestamps" : ("13:13", "13:48") },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1080p, low settings, 1.0 render scale", \
-    }\
+    "text" : ["'Genshin Impact (720p, low settings)'",\
+              "'Stock 700MHz GPU, 800MHz RAM - Average\: 27ps, 1\\\% lows\: 23fps'",\
+              "'OC 850MHz GPU, 950MHz RAM - Average\: 29fps, 1\\\% lows\: 23fps'",\
+              ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Paladins",\
-"audio" : {"timestamps" : ("10:47", "11:11.7") , "volume" : 0.97 },\
+"audio" : {"timestamps" : ("13:48", "14:10") , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1080p, high settings", \
+        "settings" : "720p, high settings", \
     }\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Realm Royale",\
-"audio" : {"timestamps" : ("11:11.7", "11:44") },\
+"audio" : {"timestamps" : ("14:10", "14:42") },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1080p, high settings", \
-    }\
+    "text" : ["'Realm Royale (720p, low settings)'",\
+              "'Stock 700MHz GPU, 800MHz RAM - Average\: 42s, 1\\\% lows\: 23fps'",\
+              "'OC 850MHz GPU, 950MHz RAM - Average\: 61fps, 1\\\% lows\: 27fps'",\
+              ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Rogue Company",\
-"audio" : {"timestamps" : ("11:44", "12:18") },\
+"audio" : {"timestamps" : ("14:42", "15:24") },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1080p, low settings", \
-    }\
+    "text" : ["'Rogue Company (720p, low settings)'",\
+              "'Stock 700MHz GPU, 800MHz RAM - Average\: 45s, 1\\\% lows\: 24fps'",\
+              "'OC 850MHz GPU, 950MHz RAM - Average\: 54fps, 1\\\% lows\: 26fps'",\
+              ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "World of Tanks Blitz",\
-"audio" : {"timestamps" : ("12:18", "12:38") },\
+"audio" : {"timestamps" : ("15:24", "15:44") },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1080p, high settings", \
+        "settings" : "720p, high settings", \
     }\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : ("12:38", "13:01") },\
+"audio" : {"timestamps" : ("15:44", "16:52") },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1080p, low settings", \
-    }\
+    "text" : ["'Warframe (720p, low settings)'",\
+              "'Stock 700MHz GPU, 800MHz RAM - Average\: 39s, 1\\\% lows\: 10fps'",\
+              "'OC 850MHz GPU, 950MHz RAM - Average\: 65fps, 1\\\% lows\: 45fps'",\
+              ]\
 }, \
 })
 
@@ -354,16 +359,17 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Usefulness of the Fermi GT730",\
-"audio" : {"timestamps" : ("13:01", "13:36.4"), "volume" : 0.999 },\
-"video" : "R9_290X_bb_B_FV.mp4", \
+"audio" : {"timestamps" : ("16:52", "17:14.5"), "volume" : 0.999 },\
+"video" : "FermiGT730_breel_card.mp4", \
 })
 
+###### moar on conclusion ####
 
 configs["episodes"].append(\
 { "title": "Blooper",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ( "15:51.1", "16:02.1"), "volume" : 0.999},\
-"video" : "R9_290X_bb_G_enshinImpact.mp4",\
+"audio" : {"timestamps" : ( "18:23", "18:29"), "volume" : 0.999},\
+"video" : "730_family_2.mp4",\
 })
 
 '''
