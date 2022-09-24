@@ -6,7 +6,7 @@ configs = { "defaultAudioFile" : "FermiGT730_notch97.ogg",\
 "benchmarkFile" : "C:\\Users\\Admin\\Videos\\FermiGT730\\Benchmark_FermiGT730.txt",\
 "outputFolder" : "C:\\Users\\Admin\\Videos\\FermiGT730\\output", \
 "outputFile" : "FermiGT730.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "TLDW", "until" : "Cooling and thermals"}}, \
@@ -15,7 +15,7 @@ configs = { "defaultAudioFile" : "FermiGT730_notch97.ogg",\
 {"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Fermi GT 730 - what is it good for", "until" : "Blooper" }}, \
 ], "volume" : 0.03 },\
 "episodes" : [],\
-"youtube" : {"title" : "Reviewing the R9 290X in 2022", \
+"youtube" : {"title" : "Ranting about the Fermi GT 730 in 2022", \
 "description" : '''Slapping a new label on an old card is apparently OK, judging by this Fermi GT 730.
 But what can one do when using this card?
 
@@ -217,6 +217,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Alien: Isolation",\
 "audio" : {"timestamps" : ("08:39","09:17") },\
+"video" : "FermiGT730_OC_AlienIsolation.mp4",\
 "overlay" : { \
     "text" : ["'Alien\: Isolation (720p, ultra settings)'",\
               "'Stock 700MHz GPU, 800MHz RAM - Average\: 29fps, 1\\\% lows\: 21fps'",\
@@ -249,8 +250,9 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : ("10:15", "10:57") },\
+"video" : "FermiGT730_Fortnite_720p.mp4", \
 "overlay" : { \
-    "text" : ["Fortnite (720p, performance mode, FAR draw distance)'",\
+    "text" : ["'Fortnite (720p, performance mode, FAR draw distance)'",\
               "'Stock 700MHz GPU, 800MHz RAM - Average\: 55fps, 1\\\% lows\: 28fps'",\
               "'OC 850MHz GPU, 950MHz RAM - Average\: 69fps, 1\\\% lows\: 39fps'",\
               ]\
@@ -293,6 +295,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Genshin Impact",\
 "audio" : {"timestamps" : ("13:13", "13:48") },\
+"video" : "FermiGT730_OC_GenshinImpact.mp4", \
 "overlay" : { \
     "text" : ["'Genshin Impact (720p, low settings)'",\
               "'Stock 700MHz GPU, 800MHz RAM - Average\: 27ps, 1\\\% lows\: 23fps'",\
@@ -314,6 +317,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Realm Royale",\
 "audio" : {"timestamps" : ("14:10", "14:42") },\
+"video" : "FermiGT730_OC_RealmRoyale.mp4", \
 "overlay" : { \
     "text" : ["'Realm Royale (720p, low settings)'",\
               "'Stock 700MHz GPU, 800MHz RAM - Average\: 42s, 1\\\% lows\: 23fps'",\
@@ -346,6 +350,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Warframe",\
 "audio" : {"timestamps" : ("15:44", "16:52") },\
+"video" : "FermiGT730_OC_Warframe.mp4", \
 "overlay" : { \
     "text" : ["'Warframe (720p, low settings)'",\
               "'Stock 700MHz GPU, 800MHz RAM - Average\: 39s, 1\\\% lows\: 10fps'",\
@@ -358,9 +363,30 @@ configs["episodes"].append(\
 ## overlayed. Pass in a fake audio stream, at -60dB
 
 configs["episodes"].append(\
-{ "title": "Usefulness of the Fermi GT730",\
+{ "title": "Fermi GT 730 - what is it good for",\
 "audio" : {"timestamps" : ("16:52", "17:14.5"), "volume" : 0.999 },\
 "video" : "FermiGT730_breel_card.mp4", \
+})
+
+configs["episodes"].append(\
+{ "title": "olx ad",\
+"audio" : {"timestamps" : ("17:14.5", "17:28.8"), "volume" : 0.999 },\
+"isChapter" : False,\
+"video" : "gt730_ad.mkv", \
+})
+
+configs["episodes"].append(\
+{ "title": "fermi gpu",\
+"audio" : {"timestamps" : ("17:28.8", "17:46"), "volume" : 0.999 },\
+"isChapter" : False,\
+"video" : "gt730_fermi_gpu.mp4", \
+})
+
+configs["episodes"].append(\
+{ "title": "final breel",\
+"audio" : {"timestamps" : ("17:46", "18:23"), "volume" : 0.999 },\
+"isChapter" : False,\
+"video" : "FermiGT730_breel_wGame.mp4", \
 })
 
 ###### moar on conclusion ####
@@ -369,7 +395,7 @@ configs["episodes"].append(\
 { "title": "Blooper",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "18:23", "18:29"), "volume" : 0.999},\
-"video" : "730_family_2.mp4",\
+"video" : "730_family_2.mkv",\
 })
 
 
@@ -381,6 +407,6 @@ configs["episodes"].append(\
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
-scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Fortnite"][0], configs)
-#scriptedvided.makeVideo(configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Fortnite"][0], configs)
+scriptedvided.makeVideo(configs)
 
