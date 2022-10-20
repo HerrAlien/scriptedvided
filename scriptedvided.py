@@ -89,7 +89,7 @@ def getFpsArrayFromBenchmarkFile (episodeName, benchmarkFile):
         if episodeAlias in keyList:
             return benchmarkFileDict[episodeAlias]
     
-    return []
+    return [0,0,0]
     
 def getTextArrayForEpisode (episode, benchmarkFile=None):
     overlay = sv_utils.dictValue (episode, "overlay", None)
