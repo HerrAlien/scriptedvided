@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "gtx_770.ogg",\
+configs = { "defaultAudioFile" : "gtx770.ogg",\
 "mediaFolder" : "C:\\Users\\Admin\\Videos\\gtx770", \
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
 "benchmarkFile" : "C:\\Users\\Admin\\Videos\\gtx770\\Benchmark_gtx770.txt",\
@@ -23,6 +23,9 @@ https://www.youtube.com/watch?v=fPO6AM2BLGs
 
 TechPowerup entry:
 https://www.techpowerup.com/gpu-specs/inno3d-gtx-770-herculez-2000.b2029
+
+Phillip's HD 7000 series video:
+https://www.youtube.com/watch?v=wsuP_9afO9c
 ''', \
 "tags" : "NVidia,GeForce,Kepler,GTX770,GTX 770",\
 "language" : "EN", \
@@ -38,38 +41,45 @@ https://www.techpowerup.com/gpu-specs/inno3d-gtx-770-herculez-2000.b2029
 
 configs["episodes"].append(\
 { "title": "TLDW",\
-"audio" : {"timestamps" : ("00:00", "00:16" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("00:00", "00:27" ), "volume" : 0.999 },\
 "video" : {"file" : "gtx770_bb_O_verwatch2.mp4", "start" : "00:40" }\
 })
 
 configs["episodes"].append(\
 { "title": "Context of the launch",\
-"audio" : {"timestamps" : ("00:16", "00:36" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("00:27", "00:53" ), "volume" : 0.999 },\
 "video" : "nvidia_kepler_launch.mp4",\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
-"audio" : {"timestamps" : ("00:16", "00:36" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("00:53", "01:48" ), "volume" : 0.999 },\
 "video" : "gtx770_gpuz.mp4",\
 })
 
 configs["episodes"].append(\
+{ "title": "The GPU - nvenc",\
+"audio" : {"timestamps" : ( "02:56", "03:14" ), "volume" : 0.999 },\
+"video" : "nvenc.mkv",\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
 { "title": "Cooling and thermals",\
-"audio" : {"timestamps" : ( "00:36", "00:47" ), "volume" : 0.999 },\
-"video" : {"file" : "gtx770_cooling.mp4"},\
+"audio" : {"timestamps" : ( "01:48", "02:19" ), "volume" : 0.999 },\
+"video" : {"file" : "gtx770_cooling.mp4", "start" : "01:40"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals - thermals only - Heaven",\
-"audio" : {"timestamps" : ( "00:47", "01:08" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ( "02:19", "02:41" ), "volume" : 0.999 },\
 "video" : "gtx_770_finishedHeaven.mp4",\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals - thermals only - Warframe",\
-"audio" : {"timestamps" : ( "00:47", "01:08" ), "volume" : 0.999 },\
+"audio" : {"timestamps" : ( "02:41", "02:56" ), "volume" : 0.999 },\
 "video" : {"file" : "gtc770_Warframe_temps.mp4" , "start" : "04:10"},\
 "isChapter" : False,\
 })
@@ -89,7 +99,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Apex Legends",\
-"audio" : {"timestamps" : ("02:53", "03:21.3" ), "volume" : 0.97  },\
+"audio" : {"timestamps" : ("03:14", "03:44" ), "volume" : 0.97  },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
               scriptedvided.r6sText('1920x1080, low settings',85, 57),\
@@ -100,7 +110,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "CoD Warzone",\
-"audio" : {"timestamps" : ("03:21.3", "03:49" ) , "volume" : 0.97 },\
+"audio" : {"timestamps" : ("03:44", "04:08" ) , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, low settings", \
@@ -110,7 +120,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Battlefield V",\
-"audio" : {"timestamps" : ("03:49", "04:20.6" ) , "volume" : 0.97 },\
+"audio" : {"timestamps" : ("04:08", "04:31" ) , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, low settings", \
@@ -120,7 +130,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : ("04:20.6", "04:44.13") },\
+"audio" : {"timestamps" : ("04:31", "05:03.5") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, low settings", \
@@ -130,7 +140,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : ("02:23", "02:44"), "padAudio" : 5},\
+"audio" : {"timestamps" : ("05:03.5", "05:45"), "padAudio" : 5},\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
               scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 121, 88), \
@@ -142,7 +152,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Alien: Isolation",\
-"audio" : {"timestamps" : ("05:18.5","05:36.1") },\
+"audio" : {"timestamps" : ("05:45","06:09") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, ultra settings", \
@@ -152,7 +162,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Counter Strike: Global Offensive",\
-"audio" : {"timestamps" : ("05:36.1", "06:28.3") },\
+"audio" : {"timestamps" : ("06:09", "06:32") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -162,7 +172,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : ("06:28.3", "06:50.4"), "volume" : 0.97 },\
+"audio" : {"timestamps" : ("06:32", "06:54.5"), "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings, 100% render scale", \
@@ -172,7 +182,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : ("06:50.4", "07:29.5") },\
+"audio" : {"timestamps" : ("06:54.5", "07:20") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, performance mode, view distance FAR, 100% render scale", \
@@ -182,7 +192,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rocket League",\
-"audio" : {"timestamps" : ("07:29.5", "07:53.4") },\
+"audio" : {"timestamps" : ("07:20", "07:42") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings, 100% render scale", \
@@ -193,7 +203,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Splitgate",\
-"audio" : {"timestamps" : ("07:53.4", "08:16") },\
+"audio" : {"timestamps" : ("07:42", "08:14") },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
               scriptedvided.r6sText('1920x1080, low settings',180, 71),\
@@ -204,7 +214,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Valorant",\
-"audio" : {"timestamps" : ("08:16", "08:53") },\
+"audio" : {"timestamps" : ("08:14", "08:44") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -215,7 +225,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Genshin Impact",\
-"audio" : {"timestamps" : ("08:53", "09:16") },\
+"audio" : {"timestamps" : ("08:44", "09:07") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings, 1.0 render scale", \
@@ -225,7 +235,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Overwatch 2",\
-"audio" : {"timestamps" : ("08:53", "09:16") },\
+"audio" : {"timestamps" : ("09:07", "09:35.5") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings, 100% render scale", \
@@ -234,10 +244,9 @@ configs["episodes"].append(\
 })
 
 
-
 configs["episodes"].append(\
 { "title": "Paladins",\
-"audio" : {"timestamps" : ("09:16", "09:35.5") , "volume" : 0.97 },\
+"audio" : {"timestamps" : ("09:35.5", "09:59") , "volume" : 0.97 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, high settings", \
@@ -247,7 +256,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Realm Royale",\
-"audio" : {"timestamps" : ("09:35.5", "09:55") },\
+"audio" : {"timestamps" : ("09:59", "10:30" ) },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, high settings", \
@@ -257,7 +266,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rogue Company",\
-"audio" : {"timestamps" : ("09:55", "10:19.4") },\
+"audio" : {"timestamps" : ("10:30", "10:53") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -267,7 +276,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "World of Tanks Blitz",\
-"audio" : {"timestamps" : ("10:19.4", "10:35") },\
+"audio" : {"timestamps" : ("10:53", "11:11") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, high settings", \
@@ -278,7 +287,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : ("10:35", "10:58.7") },\
+"audio" : {"timestamps" : ("11:11", "11:45") },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -293,41 +302,53 @@ configs["episodes"].append(\
 "video" : "Usefulness of used GPUs.mp4"\
 })
 
+
 configs["episodes"].append(\
 { "title": "Usefulness of the GTX 770",\
+"audio" : {"timestamps" : ("11:45", "11:59.5"), "volume" : 0.999 },\
+"video" : "nvidia_kepler_launch.mp4"\
+})
+
+
+configs["episodes"].append(\
+{ "title": "Usefulness of the GTX 770 - card itself",\
+"audio" : {"timestamps" : ("11:59.5", "12:09"), "volume" : 0.999 },\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("10:58.7", "11:30.45"), "volume" : 0.999 },\
-"video" : "gtx770_bb_F_ortnite.mp4"\
+"video" : {"file" : "gtx770_bb_G_enshinImpact.mp4", "start" : "00:22"}\
 })
 
 configs["episodes"].append(\
 { "title": "GTX 770 or R9 280",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("12:08.2", "12:30"), "volume" : 0.999},\
-"video" : "gtx770_r9_280_bb_F_ortnite.mp4"\
+"audio" : {"timestamps" : ("12:09", "12:22"), "volume" : 0.999},\
+"video" : {"file": "gtx770_r9_280_bb_F_ortnite.mp4", "start" : "00:27" }\
 })
+
+
+configs["episodes"].append(\
+{ "title": "HerculeZ repair",\
+"isChapter" : False,\
+"audio" : {"timestamps" : ( "12:22", "12:38" ), "volume" : 0.999},\
+"video" : "gtx770_unbalancedLoads.mp4"\
+})
+
 
 configs["episodes"].append(\
 { "title": "GTX 770 personal notes",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("12:08.2", "12:30"), "volume" : 0.999},\
-"video" : "gtx770_bb_F_ortnite.mp4"\
+"audio" : {"timestamps" : ("12:38", "13:00"), "volume" : 0.999},\
+"video" : {"file" : "gtx770_bb_F_ortnite.mp4", "start" : "01:06"}\
 })
+
 
 configs["episodes"].append(\
 { "title": "Blooper",\
-"audio" : {"timestamps" : ("00:00", "00:15"), "volume" : 0.001},\
+"audio" : {"timestamps" : ("13:00", "13:04.7"), "volume" : 0.999},\
 "video" : "gtx770_artefacts_windows.mp4",
 "isChapter" : False,\
 })
 
 
-
-#configs["episodes"].append(\
-#{ "title": "Usefulness of the R7 250",\
-#"audio" : {"timestamps" : ("12:11.06", "12:53.27") },\
-#"video" : {"file" : "", "start":""}\
-#})
 
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][27], configs)
