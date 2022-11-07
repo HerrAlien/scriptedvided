@@ -245,6 +245,28 @@ def getSuitableVideoStream (episode, configs):
 def getSuitableAudioStream (episode, configs):
     return getSuitableMediaStream (episode, configs, "audio", "defaultAudioFile", [".mp3", ".ogg", ".flac"])
 
+# todo: implement this one!
+def getSuitableImage (episode, configs):
+    names = []
+    overlayDict = overlay = sv_utils.dictValue (episode, "overlay", None)
+    if overlayDict is None:
+        return None
+
+    imageDictInEpisode = sv_utils.dictValue (overlayDict, "image", None)
+    if imageDictInEpisode is None:
+        return None
+        
+    imageFileNameInOverlay = sv_utils.dictValue (imageDictInEpisode, "file", None)
+    if imageFileNameInOverlay is None:
+        return None
+    
+    mediaFolder = sv_utils.dictValue(configs, "mediaFolder", None)
+    stockFolder = sv_utils.dictValue(configs, "stockFolder", None)
+     
+    mediaDict = {"file" : getSuitableVideoFromFolders ([mediaFolder, stockFolder], [imageFileNameInOverlay], [".png", ".jpg", ".jpeg"])}
+    
+    return mediaDict
+
     
 def getSuitableVideo (folder, names):
     return getSuitableVideoFromFolders([folder], names, [".mp4", ".mov", ".avi", ".mkv"])
@@ -273,7 +295,10 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     textArray = getTextArrayForEpisode(episode, sv_utils.dictValue(configs, "benchmarkFile", None))
     if textArray is None:
         print ("WARNING: no overlay text for " + episode["title"])
-    
+    overlayImageDict = getSuitableImage(episode, configs)
+    if overlayImageDict is None or overlayImageDict == {}:
+        print ("WARNING: no overlay image for " + episode["title"])
+        
     opts = {"padAudio": 1, "videoSoundVolume" : 0.07, "targetRes": targetRes }
     
     audioVolume = sv_utils.dictValue(audioDict, "volume", None)
@@ -290,7 +315,7 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     
     opts["padAudio"] = sv_utils.dictValue(audioDict, "padAudio", opts["padAudio"])
     
-    builtVideo = makeEpisodeWithAllInputs (videoDict, audioDict, textArray, opts)
+    builtVideo = makeEpisodeWithAllInputs (videoDict, audioDict, textArray, overlayImageDict, opts)
     # get extension and dir
     dir = sv_utils.dictValue(configs, "outputFolder", ".")
     ext = os.path.splitext(builtVideo)[1]
@@ -488,7 +513,7 @@ def makeVideo (configs):
     
 
 # needs an audio - see makeAudioForEposiode
-def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
+def makeEpisodeWithAllInputs (video, audio, textLinesArray, overlayImageDict, options):
 
     videoLen = sv_ffutils.getLengthOfStream(video)
     audioLen = sv_ffutils.getLengthOfStream(audio)
@@ -535,6 +560,10 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, options):
     os.remove(paddedAudio)
     
     fixedVideo = videoWithOverlayedAudio
+    
+# overlay the image
+
+# ------------------    
 
 # then print the text
     if type(textLinesArray) is type ([]) and len(textLinesArray) > 0:

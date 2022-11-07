@@ -43,9 +43,14 @@ def getSeconds (timeAsString):
     
     factor = 1.0
     value = 0.0
-    for index in range(0, arrayLen):
-        value = value + float(times[arrayLen - 1 - index]) * factor
-        factor = factor * 60
+    
+    try:
+        for index in range(0, arrayLen):
+            value = value + float(times[arrayLen - 1 - index]) * factor
+            factor = factor * 60
+    except:
+        print("ERR: Could not convert input string to seconds: " + timeAsString)
+        
     return value
 
 def twoDigitString(number):
