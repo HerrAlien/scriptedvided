@@ -561,11 +561,14 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, overlayImageDict, op
     
     fixedVideo = videoWithOverlayedAudio
     
-# overlay the image
-
+# overlay the image - optional step
+    if overlayImageDict is not None and overlayImageDict != {}:
+        videoWithImage = sv_ops.overlayImage (fixedVideo, overlayImageDict)
+        os.remove(fixedVideo)
+        fixedVideo = videoWithImage
 # ------------------    
 
-# then print the text
+# then print the text - also optional
     if type(textLinesArray) is type ([]) and len(textLinesArray) > 0:
         videoWithText = sv_ops.drawText (fixedVideo, textLinesArray, opts=options["textOpts"])
         os.remove(fixedVideo)

@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "r9_280_2.ogg",\
+configs = { "defaultAudioFile" : "GCN_vs_Overwatch2.ogg",\
 "mediaFolder" : "C:\\Users\\Admin\\Videos\\overwatch_gcn", \
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
 "outputFolder" : "C:\\Users\\Admin\\Videos\\overwatch_gcn\\output", \
@@ -60,7 +60,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "1920x1080",\
 "audio" : {"timestamps" : ("00:59", "01:50" ), "volume" : 0.999 },\
-"video" : "R9_280_GPU.mkv",\
+"video" : "stock_Overwatch2_training.mp4",\
 "overlay" : { \
     "image" : {"file" : "1080, low settings, tutorial level.png"}\
 }, \
@@ -103,8 +103,8 @@ configs["episodes"].append(\
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Warframe"][0], configs)
-print (scriptedvided.getSuitableImage([x for x in configs["episodes"] if x["title"] == "1920x1080"][0], configs))
+scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "1920x1080"][0], configs)
+#print (scriptedvided.getSuitableImage([x for x in configs["episodes"] if x["title"] == "1920x1080"][0], configs))
 
 #scriptedvided.makeVideo(configs)
 

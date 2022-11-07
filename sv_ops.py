@@ -420,3 +420,21 @@ def setSarToOne(video, output=None):
     subprocess.run(params)
     
     return output
+
+def overlayImage (video, image, output=None):
+    params = sv_ffutils.ffmpegParams();
+    params = params + toInputParams(image)    
+    params = params + toInputParams(video)    
+    params.append("-filter_complex")
+
+    params.append("blend='c0_opacity=0.9'")
+    
+    if (output == None):
+        root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
+        output = sv_ffutils.defaultOutput (root, "_overlayImage_" + ext)
+    
+    params.append(output)   
+    subprocess.run(params)
+    
+    return output
+
