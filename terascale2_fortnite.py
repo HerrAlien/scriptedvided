@@ -84,7 +84,6 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Test results",\
-"isChapter" : False,\
 "audio" : {"timestamps" : ("02:42", "02:53"), "volume" : 0.95 , "padAudio" : 0.25 },\
 "video" : {"file" : "benchmark_FortJoneses_1080_fullScale.mp4" , "start" : "00:10"}\
 })
@@ -112,6 +111,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "1920x1080, render scale 50 percent",\
+"isChapter" : False,\
 "audio" : {"timestamps" : ("03:45", "03:54.6"), "volume" : 0.95 , "padAudio" : 0.25 },\
 "video" : {"file" : "like.mp4", "start":"00:02"}\
 })
