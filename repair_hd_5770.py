@@ -5,11 +5,13 @@ configs = { "defaultAudioFile" : "repair_hd5770_reference.ogg",\
 "stockFolder" : "C:\\Users\\Admin\\Videos\stock",\
 "benchmarkFile" : None,\
 "outputFolder" : "C:\\Users\\Admin\\Videos\\repair HD 5770\\output", \
-"outputFile" : "repair_gt_1030_ddr4.mp4", \
+"outputFile" : "repair_hd_5770.mp4", \
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "The TLDW", "until" : "-----------------------"}}, \
-{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "------------", "until" : "Blooper" }}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "The TLDW", "until" : "Power-up sequence needs work"}}, \
+{"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Power-up sequence needs work", "until" : "Does it work now?"}}, \
+{"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Does it work now?", "until" : "Blooper" }}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "Reviving and old DX11 video card (AMD Radeon HD 5770)", \
@@ -92,77 +94,135 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("01:51", "02:06.8"), "volume" : 0.999 },\
 "video" : {"file" : "comparison_pex_resets.mp4"}\
 })
----------------
 
 configs["episodes"].append(\
-{ "title": "GDDR5 and DDR4",\
+{ "title": "pads for the alternative circuit",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("01:34.5", "01:55"), "volume" : 0.999 },\
-"video" : {"file" : "gt_1030_side_by_side.mp4"}\
+"audio" : {"timestamps" : ("02:06.8", "02:30.5"), "volume" : 0.999 },\
+"video" : {"file" : "r104_nicepads.mkv"}\
 })
 
 configs["episodes"].append(\
-{ "title": "Two types of PEX_RESET wiring",\
-"audio" : {"timestamps" : ( "01:55", "02:32.65"), "volume" : 0.999 },\
-"video" : {"file" : "pex_reset.mkv"}\
-})
-
-
-## keep this one
-configs["episodes"].append(\
-{ "title": "960 reset",\
+{ "title": "the donor boards",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("02:32.65", "02:42.65"), "volume" : 0.999 },\
-"video" : {"file" : "gtx_960_pex_reset.mkv", }\
+"audio" : {"timestamps" : ("02:30.5", "02:39"), "volume" : 0.999 },\
+"video" : {"file" : "960_volunteer_compressed.mp4"}\
 })
 
 configs["episodes"].append(\
-{ "title": "Donor board 0 ohm",\
+{ "title": "searched for a 0 ohm resistor",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("02:42.65", "03:08"), "volume" : 0.999 },\
-"video" : {"file" : "gtx960_donor_0OhmResistor.mp4", }\
+"audio" : {"timestamps" : ("02:39", "02:50"), "volume" : 0.999 },\
+"video" : {"file" : "0Ohm_donor.mkv"}\
 })
 
 configs["episodes"].append(\
-{ "title": "Soldering done, does it work",\
-"audio" : {"timestamps" : ("03:08", "03:18"), "volume" : 0.999 },\
-"video" : {"file" : "gt_1030_ddr4_fixes_notCleaned_zoom.mp4", }\
-})
-
-configs["episodes"].append(\
-{ "title": "reassembled",\
+{ "title": "the 0 ohm resistor in place",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("03:18", "03:29"), "volume" : 0.999 },\
-"video" : {"file" : "gt_1030_ddr4_bb_card_only.mp4", }\
-})
-
-
-configs["episodes"].append(\
-{ "title": "Will it work - powerup",\
-"isChapter" : False, \
-"audio" : {"timestamps" : ("03:29", "03:42"), "volume" : 0.999 },\
-"video" : {"file" : "gt_1030_ddr4_powerup.mp4", "start" : "00:00"}\
+"audio" : {"timestamps" : ("02:50", "03:09.5"), "volume" : 0.999 },\
+"video" : {"file" : "hd5770_reset_now_goes_to_gpu.mp4", "start" : "00:00"}\
 })
 
 configs["episodes"].append(\
-{ "title": "Will it work - proba",\
+{ "title": "check the voltage drop",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("03:42", "03:48.4"), "volume" : 0.999 },\
-"video" : {"file" : "GT_1030_proba_2.mp4", }\
+"audio" : {"timestamps" : ("03:09.5", "03:20"), "volume" : 0.999 },\
+"video" : {"file" : "hd5770_reset_now_goes_to_gpu.mp4", "start" : "00:10"}\
 })
 
 configs["episodes"].append(\
-{ "title": "Will it work - driver",\
-"isChapter" : False, \
-"audio" : {"timestamps" : ("03:48.4", "03:52"), "volume" : 0.999 },\
-"video" : {"file" : "gtx770_driverInstall.mp4", "start" : "01:19"}\
+{ "title": "PEX_RESET fixed, but does it work?",\
+"audio" : {"timestamps" : ( "03:20", "03:49.5"), "volume" : 0.999 },\
+"video" : {"file" : "hd5770_powerupAfterResetFix-nogo.mp4", "start" : "00:30"}\
 })
 
 configs["episodes"].append(\
-{ "title": "Will it work - gaming",\
+{ "title": "Power-up sequence needs work",\
+"audio" : {"timestamps" : ( "03:49.5", "04:08.8"), "volume" : 0.999 },\
+"video" : {"file" : "power_gating.mkv"}\
+})
+
+configs["episodes"].append(\
+{ "title": "the phase controller",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("03:52", "04:04.5"), "volume" : 0.999 },\
-"video" : {"file" : "gt_1030_ddr4_bb_O_verwatch2.mp4", }\
+"audio" : {"timestamps" : ("04:08.8", "04:26"), "volume" : 0.999 },\
+"video" : {"file" : "powerup_schematics_and_pcb.mkv"}\
+})
+
+configs["episodes"].append(\
+{ "title": "the power up circuitry",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("04:26", "05:00.2"), "volume" : 0.999 },\
+"video" : {"file" : "vddc_en_suspects.mkv"}\
+})
+
+configs["episodes"].append(\
+{ "title": "powered up the card again measuring",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("05:00.2", "06:15.5"), "volume" : 0.999 },\
+"video" : {"file" : "3v3_does_npot_open_q1017.mkv"}\
+})
+
+configs["episodes"].append(\
+{ "title": "resistance between the base of Q1017 and the 3V3 input",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("06:15.5", "06:35.3"), "volume" : 0.999 },\
+"video" : {"file" : "3v3_pu_measures_6k.mkv"}\
+})
+
+configs["episodes"].append(\
+{ "title": "a pair of empty pads",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("06:35.3", "07:03"), "volume" : 0.999 },\
+"video" : {"file" : "hd5770_missingPUResistor-zoomed.mp4"}\
+})
+
+configs["episodes"].append(\
+{ "title": "any value between 1k and 2k7",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ( "07:03", "07:20"), "volume" : 0.999 },\
+"video" : {"file" : "vddc_en_suspects.mkv"}\
+})
+
+configs["episodes"].append(\
+{ "title": "2k2 resistors in the DVI output circuitry",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ( "07:20", "07:36"), "volume" : 0.999 },\
+"video" : {"file" : "2k2_resistor.mkv"}\
+})
+
+configs["episodes"].append(\
+{ "title": "placed the 2k2 resistor",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ( "07:36", "07:48"), "volume" : 0.999 },\
+"video" : {"file" : "2k2_resistor_soldered.mp4", "rotate":"180"}\
+})
+
+configs["episodes"].append(\
+{ "title": "Does it work now?",\
+"audio" : {"timestamps" : ("07:48", "08:01"), "volume" : 0.999 },\
+"video" : {"file" : "hd5770_refDesign_itWorks.mp4", "start":"00:13"}\
+})
+
+configs["episodes"].append(\
+{ "title": "Heaven",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ( "08:01", "08:15"), "volume" : 0.999 },\
+"video" : {"file" : "hd5770_refDesign_gpuz_specs_heaven.mp4","start":"01:00"}\
+})
+
+configs["episodes"].append(\
+{ "title": "Happy ending",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ( "08:15", "08:37"), "volume" : 0.999 },\
+"video" : {"file" : "hd5770_refDesign_breel.mp4"}\
+})
+
+configs["episodes"].append(\
+{ "title": "Blooper",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("08:37", "08:47.2"), "volume" : 0.999 },\
+"video" : {"file" : "hd5770_missingPUResistor-zoomed.mp4"}\
 })
 
 
