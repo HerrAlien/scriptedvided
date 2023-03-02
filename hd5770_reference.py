@@ -374,7 +374,7 @@ configs["episodes"].append(\
 { "title": "google-gtaV-config-files",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("13:02", "13:08.5") },\
-"video" : {"file" : "google-gtaV-config-files.mkv"}
+"video" : {"file" : "google-g_taV-config-files.mkv"}
 })
 
 configs["episodes"].append(\
