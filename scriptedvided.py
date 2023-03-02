@@ -598,7 +598,7 @@ def aliases(inputName):
         ["Warframe", "Warframe.x64.exe"],\
         ["Control", "Control_DX11.exe"],\
         ["DOTA2", "dota2.exe"],\
-        ["Grand Theft Auto V", "gtav", "gta5", "GTA5.exe"],\
+        ["Grand Theft Auto V", "gtav", "gta5", "GTA5.exe", "GTA V", "GTA_V", "gta_5"],\
         ["Splitgate", "PortalWars-Win64-Shipping.exe", "PortalWars"],\
         ["Fortnite", "FortniteClient-Win64-Shipping.exe"],\
         ["Valorant", "VALORANT-Win64-Shipping.exe"],\

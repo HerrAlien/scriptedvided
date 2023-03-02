@@ -155,7 +155,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "GTA V",\
+{ "title": "Grand Theft Auto V",\
 "audio" : {"timestamps" : ("04:28.8",  "05:09") },\
 "overlay" : { \
     "benchmark" : { \
