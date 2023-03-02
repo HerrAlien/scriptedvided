@@ -159,7 +159,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("04:28.8",  "05:09") },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1920x1080, low settings", \
     }\
 }, \
 })
