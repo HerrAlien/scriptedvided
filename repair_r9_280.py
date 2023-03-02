@@ -116,13 +116,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "A case of deja vu",\
 "audio" : {"timestamps" : ( "03:23.8", "03:40" ), "volume" : 0.999 },\
-"video" : "external_pwm_controller_fix_fans.mkv",\
+"video" : "external_pwm_circuit_fix_fans.mkv",\
 })
 
 configs["episodes"].append(\
 { "title": "msi afterburner",\
 "audio" : {"timestamps" : ( "03:40", "03:55.2" ), "volume" : 0.999 },\
-"video" : "MSI Afterburner manual fan control.mkv",\
+"video" : "MSI Afterburner manual fan c_ontrol.mkv",\
 "isChapter" : False,\
 })
 
@@ -136,7 +136,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Reusing one of my tricks",\
 "audio" : {"timestamps" : ("04:07.3", "04:31.5" ), "volume" : 0.999 },\
-"video" : "PWM_controller.mp4",\
+"video" : "external_PWM_circuit.mkv",\
 })
 
 configs["episodes"].append(\

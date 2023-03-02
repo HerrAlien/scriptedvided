@@ -50,7 +50,7 @@ HUB review of the 12600k: https://www.youtube.com/watch?v=LzhwVLUVork
 configs["episodes"].append(\
 { "title": "TLDW",\
 "audio" : {"timestamps" : ("00:00", "00:17.6" ), "volume" : 0.999 },\
-"video" : "warzone-apex-side-by-side.mp4"\
+"video" : "w_arzone-a_pex-side-by-side.mp4"\
 })
 
 configs["episodes"].append(\

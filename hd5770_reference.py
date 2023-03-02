@@ -17,14 +17,17 @@ configs = { "defaultAudioFile" : "hd5770-2023.ogg",\
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
 "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rocket League", "until" : "Usefulness of an old (D)GPU"}}, \
 {"file" : "bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of an old (D)GPU", "until" : "Blooper" }}, \
-], "volume" : 0.03 },\
+], "volume" : 0.04 },\
 "episodes" : [],\
 "youtube" : {"title" : "Can an old Radeon still play games in 2023 (HD 5770)?", \
-"description" : '''We tested the old AMD Radeon HD 5770 back in 2022; with various game and windows updates, how well does the HD 5770 run today, in 2023?''',\
+"description" : '''We decied to re-test the old AMD Radeon HD 5770 in 2023; with various game and windows updates, how well does the HD 5770 run today, compared to a year ago?''',\
 "links" : '''
-Our review from a year ago (2022): https://www.youtube.com/watch?v=-1eIjIxfx0k
+Our review of the HD 5770 from a year ago (2022): https://www.youtube.com/watch?v=-1eIjIxfx0k
+Our review of the HD 5870: https://youtu.be/RGXJdRJkStE
 
-TechPowerup entry: https://www.techpowerup.com/gpu-specs/geforce-gt-1030-ddr4.c3187
+Iceberg Tech's review of UHD 730: https://www.youtube.com/watch?v=5xvRPxVMQ1k
+
+TechPowerup entry: https://www.techpowerup.com/gpu-specs/radeon-hd-5770.c250
 
 Intel 11th gen processors, to illustrate the costs of an IGPU:
 The core i5 11400 (has an IGPU): https://ark.intel.com/content/www/us/en/ark/products/212270/intel-core-i511400-processor-12m-cache-up-to-4-40-ghz.html
@@ -52,7 +55,7 @@ configs["episodes"].append(\
 { "title": "5870_r6s_bad__AI_bad_CTD",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "00:09.6", "00:25.1" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : "5870_r6s_bad__AI_bad_CTD.mkv"\
+"video" : "5870_r__6__s_bad__Alien__Isolation_bad_CTD.mkv"\
 })
 
 configs["episodes"].append(\
@@ -65,7 +68,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Specs for the test system",\
 "audio" : {"timestamps" : ( "00:39", "00:53.5" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : "Z230_closed.mp4"\
+"video" : {"file":"Z230_closed.mp4", "rotation":180}\
 })
 
 configs["episodes"].append(\
@@ -97,6 +100,7 @@ configs["episodes"].append(\
         "settings" : "1920x1080, ultra settings", \
     }\
 }, \
+"video" : "hd5870_A_lienIsolation.mkv"
 })
 
 
@@ -145,7 +149,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("03:52.2", "04:28.8") },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1280x720, low settings, 50% render scale", \
     }\
 }, \
 })
@@ -194,9 +198,10 @@ configs["episodes"].append(\
 { "title": "Overwatch 2",\
 "audio" : {"timestamps" : ( "06:29.5", "07:16.7") },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1920x1080, low settings, 100% render scale", \
-    }\
+    "text" : ["'Overwatch 2'",\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale',55, 42),\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale',104, 76),\
+    ]\
 }, \
 "video" : "stock_Overwatch2_gameplay_5770" \
 })
@@ -246,7 +251,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "HiRez Studios trio (Paladins, Realm Royale, Rogue Company)",\
 "audio" : {"timestamps" : ("09:21", "09:36.4" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file":"HiRezTrio-Paladins_RealmRoyale_RogueCompany.mp4"}\
+"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 })
 
 
@@ -268,7 +273,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("09:42.3", "09:48.2") },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1920x1080, low settings", \
+        "settings" : "1920x1080, high settings", \
     }\
 }, \
 })

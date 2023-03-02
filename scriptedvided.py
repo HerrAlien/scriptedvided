@@ -298,8 +298,9 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     overlayImageDict = getSuitableImage(episode, configs)
     if overlayImageDict is None or overlayImageDict == {}:
         print ("WARNING: no overlay image for " + episode["title"])
-        
-    opts = {"padAudio": 1, "videoSoundVolume" : 0.07, "targetRes": targetRes }
+    
+    audioPadding = sv_utils.dictValue(audioDict, "padding", 0.25)
+    opts = {"padAudio": audioPadding, "videoSoundVolume" : 0.07, "targetRes": targetRes }
     
     audioVolume = sv_utils.dictValue(audioDict, "volume", None)
     if audioVolume is not None:
@@ -597,6 +598,7 @@ def aliases(inputName):
         ["Warframe", "Warframe.x64.exe"],\
         ["Control", "Control_DX11.exe"],\
         ["DOTA2", "dota2.exe"],\
+        ["Grand Theft Auto V", "gtav", "gta5", "GTA5.exe"],\
         ["Splitgate", "PortalWars-Win64-Shipping.exe", "PortalWars"],\
         ["Fortnite", "FortniteClient-Win64-Shipping.exe"],\
         ["Valorant", "VALORANT-Win64-Shipping.exe"],\

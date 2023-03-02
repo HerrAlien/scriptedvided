@@ -8,15 +8,9 @@ configs = { "defaultAudioFile" : "GCN_vs_Overwatch2.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "The TLDW", "until" : "1920x1080"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "The TLDW", "until" : "1600x900 - training"}}, \
 {"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "1920x1080 - training", "until" : "1920x1080 - in game"}}, \
-{"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "1920x1080 - bot match", "until" : "1600x900"}}, \
-{"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "1600x900 - training", "until" : "1280x720"}}, \
-{"file" : "H:\\Muzica\\royalty free\\Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "1280x720 - training", "until" : "Conclusion"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "1600x900 - training", "until" : "Conclusion"}}, \
 {"file" : "H:\\Muzica\\royalty free\\bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Conclusion", "until" : "Blooper" }}, \
 ], "volume" : 0.03 },\
 "episodes" : [],\
@@ -132,8 +126,8 @@ configs["episodes"].append(\
 { "title": "1600x900 - training",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "03:19.5", "04:11" ), "volume" : 0.999 },\
-"video" : {"file" : "stock_Overwatch2_training.mp4", "start" : "01:50"}
-"overlay" : { \
+"video" : {"file" : "stock_Overwatch2_training.mp4", "start" : "01:50"},\
+"overlay" : {\
     "image" : {"file" : "900, low settings, tutorial level.png"}\
 }, \
 })
@@ -149,8 +143,8 @@ configs["episodes"].append(\
 { "title": "1280x720 - training",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("04:11", "05:40" ), "volume" : 0.999 },\
-"video" : {"file" : "stock_Overwatch2_training.mp4", "start" : "04:30"}
-"overlay" : { \
+"video" : {"file" : "stock_Overwatch2_training.mp4", "start" : "04:30"},\
+"overlay" : {\
     "image" : {"file" : "720, low settings, tutorial level.png"}\
 }, \
 })

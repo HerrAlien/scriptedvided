@@ -86,6 +86,10 @@ configs["episodes"].append(\
 { "title": "PEX_RESET woes",\
 "audio" : {"timestamps" : ("01:37.2", "01:51" ), "volume" : 0.999 },\
 "video" : {"file" : "gt_1030_ddr4_missing_components.mkv", "start":"00:14"},\
+"overlay" : { \
+    "text" : ["'PEX_RESET components for the DDR4 GT 1030'",\
+    ]\
+}, \
 })
 
 configs["episodes"].append(\
@@ -133,7 +137,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "PEX_RESET fixed, but does it work?",\
 "audio" : {"timestamps" : ( "03:20", "03:49.5"), "volume" : 0.999 },\
-"video" : {"file" : "hd5770_powerupAfterResetFix-nogo.mp4", "start" : "00:30"}\
+"video" : {"file" : "hd5770_powerupAfterResetFix-nogo.mp4"}\
 })
 
 configs["episodes"].append(\

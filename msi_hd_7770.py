@@ -139,7 +139,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Diagnosis 3 - MSI Afterburner manual fan control",\
 "audio" : {"timestamps" : ("03:46.2", "04:05.95" ), "volume" : 0.999  },\
-"video" : "MSI Afterburner manual fan control.mkv",\
+"video" : "MSI Afterburner manual fan c_ontrol.mkv",\
 "isChapter" : False, \
 })
 
