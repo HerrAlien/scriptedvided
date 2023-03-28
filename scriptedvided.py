@@ -273,11 +273,15 @@ def getSuitableVideo (folder, names):
 
 
 def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
+
+    indexInEpisodes = configs["episodes"].index(episode)
+
     if sv_utils.dictValue(configs, "TOC", None) is None:
         configs["TOC"] = []
 
     dir = sv_utils.dictValue(configs, "outputFolder", ".")
-    expectedEpisodeVideo = os.path.join(dir, sv_utils.filePathSafeString(episode["title"]))
+    expectedEpisodeVideo = os.path.join(dir, sv_utils.filePathSafeString(sv_utils.twoDigitString(indexInEpisodes) + " " + episode["title"]))
+#    expectedEpisodeVideo = os.path.join(dir, sv_utils.filePathSafeString(episode["title"]))
     for existingFile in os.listdir(dir):
         existingAbsPath = os.path.join(dir, existingFile)
         existingAbsPathNoExt = os.path.splitext(existingAbsPath)[0]
@@ -320,7 +324,8 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     # get extension and dir
     dir = sv_utils.dictValue(configs, "outputFolder", ".")
     ext = os.path.splitext(builtVideo)[1]
-    episodeVideo = os.path.join(dir, sv_utils.filePathSafeString(episode["title"]) + ext)
+    episodeVideo = os.path.join(dir, sv_utils.filePathSafeString(sv_utils.twoDigitString(indexInEpisodes) + " " + episode["title"]) + ext)
+#    episodeVideo = os.path.join(dir, sv_utils.filePathSafeString(episode["title"]) + ext)
     configs["TOC"].append({"title" : episode["title"], "length" : sv_ffutils.getLengthOfStream(builtVideo), "isChapter" : sv_utils.dictValue(episode, "isChapter", True)})
     shutil.move (builtVideo, episodeVideo)
     return episodeVideo
@@ -391,6 +396,10 @@ def buildBackgroundTrack (backgroundTrack, configs):
         segmentIndex = segmentIndex + 1
     
     backgroundAufioFile = sv_ops.appendMultiple (audioToConcat, "background_track.ogg" , video=False)
+    
+    print("Audio tracks: ")
+    print (audioToConcat)
+    
     for audioToDelete in audioToConcat:
         if type(audioToDelete) is type(""):
             os.remove(audioToDelete)

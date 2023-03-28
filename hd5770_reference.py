@@ -11,13 +11,13 @@ configs = { "defaultAudioFile" : "hd5770-2023.ogg",\
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Why retesting the HD 5770", "until" : "Alien: Isolation"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Battlefield V"}}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Control"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Battlefield V", "until" : "Rocket League"}}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Control", "until" : "Rocket League"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
 "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rocket League", "until" : "Usefulness of an old (D)GPU"}}, \
 {"file" : "bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of an old (D)GPU", "until" : "Blooper" }}, \
-], "volume" : 0.04 },\
+], "volume" : 0.035 },\
 "episodes" : [],\
 "youtube" : {"title" : "Can an old Radeon still play games in 2023 (HD 5770)?", \
 "description" : '''We decied to re-test the old AMD Radeon HD 5770 in 2023; with various game and windows updates, how well does the HD 5770 run today, compared to a year ago?''',\
@@ -311,99 +311,99 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Usefulness of an old (D)GPU",\
-"audio" : {"timestamps" : ("10:44.3", "11:07.8") },\
+"audio" : {"timestamps" : ("10:44.3", "11:07.8"), "volume" : 0.999 },\
 "video" : "icebergtech_uhd730.mkv"
 })
 
 configs["episodes"].append(\
 { "title": "R5_apu_igpu_price",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("11:07.8", "11:21.5") },\
+"audio" : {"timestamps" : ("11:07.8", "11:21.5") , "volume" : 0.999 },\
 "video" : "R5_apu_igpu_price.mp4"
 })
 
 configs["episodes"].append(\
 { "title": "10400-vs-10400f",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("11:21.5", "11:40.8") },\
+"audio" : {"timestamps" : ("11:21.5", "11:40.8") , "volume" : 0.999 },\
 "video" : "10400-vs-10400f.mkv"
 })
 
 configs["episodes"].append(\
 { "title": "pricing_hd5770",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ( "11:40.8", "11:56") },\
+"audio" : {"timestamps" : ( "11:40.8", "11:56"), "volume" : 0.999 },\
 "video" : {"file" : "pricing_hd5770.mkv", "start" : "00:00"}
 })
 
 configs["episodes"].append(\
 { "title": "Usefulness of the HD 5770",\
-"audio" : {"timestamps" : ( "11:56", "12:16.7") },\
+"audio" : {"timestamps" : ( "11:56", "12:16.7"), "volume" : 0.999 },\
 "video" : {"file" : "pricing_hd5770.mkv", "start" : "00:20"}
 })
 
 configs["episodes"].append(\
 { "title": "olx-hd5770-gt730",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ( "12:16.7", "12:33.4") },\
+"audio" : {"timestamps" : ( "12:16.7", "12:33.4"), "volume" : 0.999 },\
 "video" : {"file" : "olx-hd5770-gt730.mkv"}
 })
 
 configs["episodes"].append(\
 { "title": "TeraScale2-games-needing-windowed",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ( "12:33.4", "12:43") },\
+"audio" : {"timestamps" : ( "12:33.4", "12:43"), "volume" : 0.999 },\
 "video" : {"file" : "TeraScale2-games-needing-windowed.mkv"}
 })
 
 configs["episodes"].append(\
 { "title": "hd5870_AlienIsolation",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("12:43", "12:56") },\
-"video" : {"file" : "hd5870_AlienIsolation.mkv"}
+"audio" : {"timestamps" : ("12:43", "12:56"), "volume" : 0.999 },\
+"video" : {"file" : "hd5870_A_lienIsolation.mkv"}
 })
 
 configs["episodes"].append(\
 { "title": "F_ortnite_lobby_f11",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ( "12:56", "13:02") },\
+"audio" : {"timestamps" : ( "12:56", "13:02"), "volume" : 0.999 },\
 "video" : {"file" : "F_ortnite_lobby_f11.mp4"}
 })
 
 configs["episodes"].append(\
 { "title": "google-gtaV-config-files",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("13:02", "13:08.5") },\
+"audio" : {"timestamps" : ("13:02", "13:08.5") , "volume" : 0.999 },\
 "video" : {"file" : "google-g_taV-config-files.mkv"}
 })
 
 configs["episodes"].append(\
 { "title": "game_config_files",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("13:08.5", "13:25") },\
+"audio" : {"timestamps" : ("13:08.5", "13:25") , "volume" : 0.999 },\
 "video" : {"file" : "game_config_files.mkv"}
 })
 
 configs["episodes"].append(\
 { "title": "hd5770-breels-sidebyside",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("13:25", "13:34.5") },\
+"audio" : {"timestamps" : ("13:25", "13:34.5"), "volume" : 0.999 },\
 "video" : {"file" : "hd5770-breels-sidebyside.mkv", "start" : "00:10"}
 })
 
 configs["episodes"].append(\
 { "title": "hd5770_refDesign_breel-thisIsIt",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("13:34.5", "13:40.5") },\
+"audio" : {"timestamps" : ("13:34.5", "13:42"), "volume" : 0.999 },\
 "video" : {"file" : "hd5770_refDesign_breel.mp4"}
 })
 
-configs["episodes"].append(\
-{ "title": "Blooper",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ( "13:40.5", "14:04.2") },\
-"video" : {"file" : "HiRezTrio-Paladins_RealmRoyale_RogueCompany.mp4"}
-})
+##configs["episodes"].append(\
+##{ "title": "Blooper",\
+##"isChapter" : False,\
+##"audio" : {"timestamps" : ( "13:40.5", "14:04.2") },\
+##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
+##})
 
 scriptedvided.makeVideo(configs)
 

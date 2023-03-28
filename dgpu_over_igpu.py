@@ -3,7 +3,6 @@ import scriptedvided
 configs = { "defaultAudioFile" : "hd5770-2023.ogg",\
 "mediaFolder" : "F:\\Videos\\hd5770_reference", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\hd5770_reference\\Benchmark_hd5770_ref.txt",\
 "outputFolder" : "F:\\Videos\\stock\\no longer relevant", \
 "outputFile" : "dgpu_over_igpu.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
@@ -36,31 +35,30 @@ The core i5 11400F (no IGPU): https://ark.intel.com/content/www/us/en/ark/produc
 
 configs["episodes"].append(\
 { "title": "Usefulness of an old (D)GPU",\
-"audio" : {"timestamps" : ("10:44.3", "11:07.8") },\
+"audio" : {"timestamps" : ("10:44.3", "11:07.8") , "volume" : 0.999 },\
 "video" : "icebergtech_uhd730.mkv"
 })
 
 configs["episodes"].append(\
 { "title": "R5_apu_igpu_price",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("11:07.8", "11:21.5") },\
+"audio" : {"timestamps" : ("11:07.8", "11:21.5") , "volume" : 0.999 },\
 "video" : "R5_apu_igpu_price.mp4"
 })
 
 configs["episodes"].append(\
 { "title": "10400-vs-10400f",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("11:21.5", "11:40.8") },\
+"audio" : {"timestamps" : ("11:21.5", "11:40.8") , "volume" : 0.999 },\
 "video" : "10400-vs-10400f.mkv"
 })
 
 configs["episodes"].append(\
 { "title": "pricing_hd5770",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ( "11:40.8", "11:56") },\
+"audio" : {"timestamps" : ( "11:40.8", "11:56") , "volume" : 0.999 },\
 "video" : {"file" : "pricing_hd5770.mkv", "start" : "00:00"}
 })
-
 
 scriptedvided.makeVideo(configs)
 
