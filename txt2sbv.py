@@ -22,7 +22,25 @@ def parseTime (inputText, i):
         j = j + 1
     
     return (getSeconds(chunk), j + 1)
-    
+
+def trimText (txt):
+    while len(txt) > 0 and (txt[0] == '\n' or txt[0] == ' ' or txt[0] == '\r' or txt[0] == '\t'):
+        txt = txt[1:]
+
+    while  len(txt) > 0 and (txt[-1] == '\n' or txt[-1] == ' ' or txt[-1] == '\r' or txt[-1] == '\t'):
+        txt = txt[0:-1]
+        
+    return txt
+
+def compactSpaces (txt):
+    while txt.find("\n\n") > 0:
+        txt = txt.replace ("\n\n", "\n")
+
+    while txt.find("  ") > 0:
+        txt = txt.replace ("  ", " ")
+
+    return txt
+
 def refineTimeData (timeDataDict):
     text = timeDataDict['text']
     startT = timeDataDict["timestamps"][0]
@@ -43,8 +61,8 @@ def refineTimeData (timeDataDict):
         chunk = chunk + currentChar
         
         if (((currentT - currentStartT) > 7) and (currentChar == '.' or currentChar == ',' or currentChar == ';' or currentChar == ' ' or currentChar == '\n')):
-            chunk = chunk.replace("\n\n", "\n")
-            refinedData.append({"timestamps" : [currentStartT, currentT] , "text" : chunk })
+            chunk = compactSpaces(chunk)
+            refinedData.append({"timestamps" : [currentStartT, currentT] , "text" : trimText(chunk) })
             currentStartT = currentT
             chunk = ""
             allTextCovered = True
@@ -55,7 +73,7 @@ def refineTimeData (timeDataDict):
         i = i + 1
     
     if not allTextCovered:
-        refinedData.append({"timestamps" : [currentStartT, currentT] , "text" : chunk })
+        refinedData.append({"timestamps" : [currentStartT, currentT] , "text" : trimText(chunk) })
     
     
     return refinedData
@@ -88,7 +106,7 @@ if __name__ == "__main__":
             
             oldTime = time
             chunk = ""
-    
+        
         currentChar = inputText[i]
         chunk = chunk + currentChar
         i = i + 1
