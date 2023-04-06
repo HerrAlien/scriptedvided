@@ -613,6 +613,7 @@ def aliases(inputName):
         ["Valorant", "VALORANT-Win64-Shipping.exe"],\
         ["Paladins", "Paladins.exe"],\
         ["Overwatch 2", "Overwatch", "Overwatch.exe", "Overwatch2", "Overwatch_2"],\
+        ["Dying Light", "DyingLightGame", "DyingLightGame.exe", "DyingLight"],\
     ]
 
     if inputName is None:
