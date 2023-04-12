@@ -135,23 +135,9 @@ def getTextArrayForEpisode (episode, benchmarkFile=None):
     return (["'" + sv_ffutils.ffmpegSafeString(episodeName + " (" + settings) + ")'", fpsAsText ])
   
 def selectSuitableVideo (paths, desiredLength=30, desiredYRes=1080):
-    potentialVideos = []
-    for fullVideoPath in paths:
-        if (sv_ffutils.getLengthOfStream(fullVideoPath) > desiredLength):
-            resolution = sv_ffutils.getResolution (fullVideoPath)
-# we favor 1080p videos - they will not require any scaling.
-            if (resolution[1] == desiredYRes):
-                return fullVideoPath
-            else:
-                potentialVideos.append(fullVideoPath)
-        else:
-            potentialVideos.append(fullVideoPath)
-    if len (potentialVideos) > 0:
-        return potentialVideos[0]
-    elif len (paths) > 0:
+    if (len(paths) == 1):
         return paths[0]
-    
-    return None
+    return paths[random.randrange(0, len(paths)-1)]
     
 # move to UTILS
 def getFilesArrayFromFoldersAndNames (folders, names, extensions):
