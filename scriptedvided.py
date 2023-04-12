@@ -542,7 +542,9 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, overlayImageDict, op
     videoLen = sv_ffutils.getLengthOfStream(fixedVideo)
     videoStart = sv_utils.dictValue (video, "start", None)
     if videoStart is None:
-        videoStart = (videoLen - (audioLen + padding + padding)) * 0.5    
+        totalSlack = videoLen - (audioLen + padding + padding)
+        ##videoStart = totalSlack * 0.5    
+        videoStart = random.randrange(0, totalSlack)
     
     fixedVideo = sv_ops.truncate (fixedVideo, videoStart, audioLen + padding + padding)
     
