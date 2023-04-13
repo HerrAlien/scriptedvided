@@ -23,6 +23,7 @@ import shutil
 import sv_utils
 import sv_ffutils
 import sv_ops
+import random
 
 def getFpsStatsText(average, onePercent=None, pointOnePercent=None, max=None, min=None):
     text = "'"
@@ -137,7 +138,10 @@ def getTextArrayForEpisode (episode, benchmarkFile=None):
 def selectSuitableVideo (paths, desiredLength=30, desiredYRes=1080):
     if (len(paths) == 1):
         return paths[0]
-    return paths[random.randrange(0, len(paths)-1)]
+    elif (len(paths) > 1):
+        return paths[random.randrange(0, len(paths)-1)]
+    else:
+        return None
     
 # move to UTILS
 def getFilesArrayFromFoldersAndNames (folders, names, extensions):
@@ -528,7 +532,7 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, overlayImageDict, op
     videoLen = sv_ffutils.getLengthOfStream(fixedVideo)
     videoStart = sv_utils.dictValue (video, "start", None)
     if videoStart is None:
-        totalSlack = videoLen - (audioLen + padding + padding)
+        totalSlack = int (videoLen - (audioLen + padding + padding) + 0.5)
         ##videoStart = totalSlack * 0.5    
         videoStart = random.randrange(0, totalSlack)
     
