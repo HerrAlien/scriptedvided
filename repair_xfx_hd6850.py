@@ -38,7 +38,7 @@ https://www.youtube.com/c/TheCod3r
 configs["episodes"].append(\
 { "title": "The TLDW",\
 "audio" : {"timestamps" : ("00:00", "00:10.6" ), "volume" : 0.999 },\
-"video" : "xfx_hd6850_bb_card.mp4"\
+"video" : {"file" : "xfx_hd6850_bb_card.mp4", "rotation" : 180}\
 })
 
 configs["episodes"].append(\
@@ -104,27 +104,27 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "the base of Q210 being high",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("03:21", "03:29"), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("03:21", "03:31.4"), "volume" : 0.999 },\
 "video" : "6850_powerSensingOK.mkv"\
 })
 
 configs["episodes"].append(\
 { "title": "shorting the pads labeled R241",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("03:29","03:42.5"), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("03:31.4","03:42.5"), "volume" : 0.999 },\
 "video" : "short_r241.mkv"\
 })
 
 configs["episodes"].append(\
 { "title": "Yet, we had no picture",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("03:29","04:09.5"), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("03:42.5","04:09.5"), "volume" : 0.999 },\
 "video" : "initial_powerup_nope.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "The CTF circuitry",\
-"audio" : {"timestamps" : ("03:29","04:26.5"), "volume" : 0.999 },\
+"audio" : {"timestamps" : ("04:09.5","04:26.5"), "volume" : 0.999 },\
 "video" : "prioritized_ctf.mkv"\
 })
 
@@ -193,7 +193,7 @@ configs["episodes"].append(\
 { "title": "desoldered the bad 2 amps Anpec",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("07:28.1","07:33"), "volume" : 0.999, "padding" : 0.25 },\
-"video" : "LDO_old_removed.mp4"\
+"video" : {"file" : "LDO_old_removed.mp4", "rotation" : -90}\
 })
 
 configs["episodes"].append(\
@@ -207,7 +207,7 @@ configs["episodes"].append(\
 { "title": "soldered in place the 3 amps LDO",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("07:38.6","07:51.3"), "volume" : 0.999, "padding" : 0.25 },\
-"video" : "LDO_placed.mp4"\
+"video" : {"file" : "LDO_placed.mp4", "rotation" : -90}\
 })
 
 configs["episodes"].append(\
@@ -219,7 +219,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Heaven ran fine",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("07:59.5","08:12.5"), "volume" : 0.999, "padding" : 0.25 },\
+"audio" : {"timestamps" : ("07:59.5","08:12.5"), "volume" : 0.999, "padding" : 1 },\
 "video" : "xfx_hd6850_heaven-gpuz-repair.mp4"\
 })
 
@@ -232,7 +232,7 @@ configs["episodes"].append(\
 #})
 
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][27], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][0], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][8], configs)
 #print(scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs))
