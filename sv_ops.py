@@ -436,7 +436,7 @@ def overlayImage (canvas, overlay, colorForChroma="0x00FF00", colorTolerance=0.3
     params.append("[out]")
     
     if (output == None):
-        root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
+        root,ext = os.path.splitext (sv_utils.getFileFromInput(canvas))
         output = sv_ffutils.defaultOutput (root, "_overlayImage_" + ext)
     
     params.append(output)   

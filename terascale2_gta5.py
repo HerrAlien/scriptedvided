@@ -108,7 +108,10 @@ configs["episodes"].append(\
 { "title": "actual 1080 results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("01:23.5", "02:31"), "volume" : 0.95 , "padAudio" : 0.25 },\
-"video" : {"file" : "1080_firefight.mp4"}\
+"video" : {"file" : "stock_gtaV_tutorial2.mp4" , "start" : "00:20"},\
+"overlay" : { \
+    "image" : {"file" : "1080_3.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 
 
@@ -123,7 +126,10 @@ configs["episodes"].append(\
 { "title": "actual 900 results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("02:31", "03:46"), "volume" : 0.95 , "padAudio" : 0.25 },\
-"video" : {"file" : "900_driving.mp4"}\
+"overlay" : { \
+    "image" : {"file" : "900_3.png", "chromaColor" : "0x00FF00"}\
+}, \
+"video" : {"file" : "stock_gtaV_tutorial2.mp4" , "start" : "02:25"},\
 })
 
 
@@ -139,7 +145,10 @@ configs["episodes"].append(\
 { "title": "actual 720 results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("03:46", "04:29.5"), "volume" : 0.95 , "padAudio" : 0.25 },\
-"video" : {"file" : "720_standoff.mp4"}\
+"overlay" : { \
+    "image" : {"file" : "720_3.png", "chromaColor" : "0x00FF00"}\
+}, \
+"video" : {"file" : "stock_gtaV_tutorial2.mp4" , "start" : "04:20"},\
 })
 
 
@@ -182,7 +191,9 @@ configs["episodes"].append(\
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "1280x720"][0], configs)
-#print (scriptedvided.getSuitableImage([x for x in configs["episodes"] if x["title"] == "1920x1080"][0], configs))
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 1080 results"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 900 results"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 720 results"][0], configs)
+#print (scriptedvided.getSuitableImage([x for x in configs["episodes"] if x["title"] == "actual 1080 results"][0], configs))
 
 scriptedvided.makeVideo(configs)

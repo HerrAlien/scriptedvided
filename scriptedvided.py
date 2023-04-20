@@ -249,11 +249,13 @@ def getSuitableImage (episode, configs):
     imageFileNameInOverlay = sv_utils.dictValue (imageDictInEpisode, "file", None)
     if imageFileNameInOverlay is None:
         return None
-    
+
+    chromaColor = sv_utils.dictValue (imageDictInEpisode, "chromaColor", "0x00FF00")
+        
     mediaFolder = sv_utils.dictValue(configs, "mediaFolder", None)
     stockFolder = sv_utils.dictValue(configs, "stockFolder", None)
      
-    mediaDict = {"file" : getSuitableVideoFromFolders ([mediaFolder, stockFolder], [imageFileNameInOverlay], [".png", ".jpg", ".jpeg"])}
+    mediaDict = {"file" : getSuitableVideoFromFolders ([mediaFolder, stockFolder], [imageFileNameInOverlay], [".png", ".jpg", ".jpeg"]), "chromaColor" : chromaColor}
     
     return mediaDict
 
@@ -571,7 +573,7 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, overlayImageDict, op
     
 # overlay the image - optional step
     if overlayImageDict is not None and overlayImageDict != {}:
-        videoWithImage = sv_ops.overlayImage (fixedVideo, overlayImageDict)
+        videoWithImage = sv_ops.overlayImage (fixedVideo, overlayImageDict, overlayImageDict["chromaColor"])
         os.remove(fixedVideo)
         fixedVideo = videoWithImage
 # ------------------    
@@ -699,4 +701,5 @@ if __name__ == "__main__":
 #    sv_ops.concatNoRecompress(vids)
 #    aliases(None)
 #    sv_ops.rotateVideo("C:\\Users\\Admin\\Videos\\msi_hd7770\\IMG_0059.MOV", 90)
-    sv_ops.rotateVideo("C:\\Users\\Admin\\Videos\\msi_hd7770\\fan controller, glued in.mp4", 90)
+#    sv_ops.rotateVideo("C:\\Users\\Admin\\Videos\\msi_hd7770\\fan controller, glued in.mp4", 90)
+    sv_ops.overlayImage("F:\\Videos\\stock\\6500xt_short_rant.mp4", "F:\\Videos\\gta5_vs_ts2\\720_2.png", output="F:\\Videos\\1.mp4")
