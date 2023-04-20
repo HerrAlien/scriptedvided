@@ -421,7 +421,10 @@ def setSarToOne(video, output=None):
     
     return output
 
-def overlayImage (video, image, output=None):
+def overlayImage (video, image, colorForChroma, output=None):
+# ffmpeg -i F:\Videos\gta5_vs_ts2\720_2.png -i F:\Videos\stock\6500xt_short_rant.mp4 -filter_complex "[0:v]colorkey=0xFFFFFF:0.3:0.2[ckout];[1:v][ckout]overlay[out];acopy" -map "[out]" f:\videos\1.mp4
+# center the image
+#ffmpeg -i F:\Videos\gta5_vs_ts2\720_2.png -i F:\Videos\stock\6500xt_short_rant.mp4 -filter_complex "[0:v]colorkey=0xFFFFFF:0.3:0.2[ckout];[1:v][ckout]overlay=x=0.5*(W-w):y=0.5*(H-h)[out];acopy" -map "[out]" f:\videos\1.mp4
     params = sv_ffutils.ffmpegParams();
     params = params + toInputParams(image)    
     params = params + toInputParams(video)    
