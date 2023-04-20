@@ -533,8 +533,14 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, overlayImageDict, op
     videoStart = sv_utils.dictValue (video, "start", None)
     if videoStart is None:
         totalSlack = int (videoLen - (audioLen + padding + padding) + 0.5)
+        if totalSlack < 0:
+            print ("ERR: video length is smaller than audio length + padding. Slack is " + str(totalSlack))
+            a = 1/0 
         ##videoStart = totalSlack * 0.5    
-        videoStart = random.randrange(0, totalSlack)
+        if totalSlack == 0:
+            videoStart = 0
+        else:
+            videoStart = random.randrange(0, totalSlack)
     
     fixedVideo = sv_ops.truncate (fixedVideo, videoStart, audioLen + padding + padding)
     

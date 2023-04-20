@@ -9,7 +9,7 @@ configs = { "defaultAudioFile" : "hd6850_2023_2.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Why retesting the HD 5770", "until" : "Alien: Isolation"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Why retesting the HD 6850", "until" : "Alien: Isolation"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
 "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Control"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
@@ -24,7 +24,7 @@ configs = { "defaultAudioFile" : "hd6850_2023_2.ogg",\
 This time around, the 6850 variant that we’re looking at is from XFX
 ''',\
 "links" : '''
-Our review of the HD 6850 from a year ago (2022): https://www.youtube.com/watch?v=-1eIjIxfx0k
+Our review of the HD 6850 from a year ago (2022): https://youtu.be/N_KyY1HSPNk
 
 Iceberg Tech's review of UHD 730: https://www.youtube.com/watch?v=5xvRPxVMQ1k
 
@@ -354,6 +354,6 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Splitgate"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of an old (D)GPU"][0], configs)
 scriptedvided.makeVideo(configs)
 
