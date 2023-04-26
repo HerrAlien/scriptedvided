@@ -3,7 +3,7 @@ import scriptedvided
 configs = { "defaultAudioFile" : "hd6670.ogg",\
 "mediaFolder" : "F:\\Videos\\hd6670", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\hd6670\\Benchmark_hd5870_2023.txt",\
+"benchmarkFile" : "F:\\Videos\\hd6670\\Benchmark_hd6670_ref.txt",\
 "outputFolder" : "F:\\Videos\\hd6670\\output", \
 "outputFile" : "hd6670.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
@@ -46,39 +46,39 @@ TechPowerup entry: https://www.techpowerup.com/gpu-specs/radeon-hd-6670.c406
 configs["episodes"].append(\
 { "title": "The 720p budget card",\
 "audio" : {"timestamps" : ("00:00", "00:18" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : ""\
+"video" : "hd6670_usable_standing_2.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : ("00:18", "00:58" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file" : ""}\
+"video" : {"file" : "hd6670_techpowerup.mkv"}\
 })
 
 configs["episodes"].append(\
 { "title": "Test system",\
 "audio" : {"timestamps" : ("00:58" , "01:28"), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file" : "", "rotation" : 180}\
+"video" : {"file" : "Z230_closed.mp4", "rotation" : 180}\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : ("01:28" , "01:47.6"), "volume" : 0.999, "padding" : 0.25 },\
-"video" : ""\
+"video" : "hd6670_usable_cooling.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Heatsinks",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("01:47.6", "02:03"), "volume" : 0.999, "padding" : 0.25 },\
-"video" : ""\
+"video" : "heatsinks.mkv"\
 })
 
 configs["episodes"].append(\
 { "title": "Thermals",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("02:03", "02:22"), "volume" : 0.999, "padding" : 0.25 },\
-"video" : ""\
+"video" : "hd6670_Heaven.mp4"\
 })
 
 ####################### end of intro ###############################
@@ -335,77 +335,77 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Is the HD 6670 worth it?",\
 "audio" : {"timestamps" : ( "11:48", "12:12.5"), "volume" : 0.999 },\
-"video" : {"file" : ""}\
+"video" : {"file" : "hd6670_olx_ad.mkv"}\
 })
 
 configs["episodes"].append(\
 { "title": "GT 730 drivers",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "12:12.5", "12:38"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : ""} \
+"video" : {"file" : "GF108_install_kepler_driver.mkv", "start" : "00:40"} \
 })
 
 configs["episodes"].append(\
 { "title": "Pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "12:38", "13:06.5"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : ""} \
+"video" : {"file" : "6670 prices.mkv"} \
 })
 
 configs["episodes"].append(\
 { "title": "Performance",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("13:06.5", "13:22.5"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : ""} \
+"video" : {"file" : "relative_performance_730_6670.mkv"} \
 })
 
 configs["episodes"].append(\
 { "title": "GT730 close to 6670",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("13:22.5", "13:34.8"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : ""} \
+"video" : {"file" : "gt730_hd6670.mp4"} \
 })
 
 configs["episodes"].append(\
 { "title": "It just works",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("13:34.8", "13:40"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : ""} \
+"audio" : {"timestamps" : ("00:00", "00:05"), "volume" : 0.001, "padding" : 0.5  },\
+"video" : {"file" : "just works.mp4", "start" : "00:23"} \
 })
 
 configs["episodes"].append(\
 { "title": "list of games 730",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("13:40", "13:53.5"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : ""} \
+"video" : {"file" : "730_games.mkv"} \
 })
 
 configs["episodes"].append(\
 { "title": "6670 better",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("13:53.5", "14:06"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : ""} \
+"video" : {"file" : "broll_hd6670_horizontal.mp4", "rotation" : 180} \
 })
 
 configs["episodes"].append(\
 { "title": "R7 250",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("14:06", "14:14"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : ""} \
+"video" : {"file" : "r7_250.mp4"} \
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "14:14", "14:21"), "volume" : 0.999, "padding" : 1  },\
-"video" : {"file" : ""} \
+"video" : {"file" : "broll_hd6670_horizontal.mp4", "rotation" : 180} \
 })
 
 configs["episodes"].append(\
 { "title": "Blooper",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("14:21", "14:32.6"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : ""} \
+"video" : {"file" : "V_alorant_720p.mp4"} \
 })
 
 
@@ -416,6 +416,6 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Alien: Isolation"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Apex Legends"][0], configs)
 scriptedvided.makeVideo(configs)
 
