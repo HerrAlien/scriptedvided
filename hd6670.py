@@ -92,8 +92,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("02:22","03:03") },\
 "overlay" : { \
     "text" : ["'Alien\: Isolation'",\
-              scriptedvided.r6sText('1920x1080, ultra settings', ,  ),\
-              scriptedvided.r6sText('1280x720, ultra settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, ultra settings', 26, 18 ),\
+              scriptedvided.r6sText('1280x720, ultra settings', 45, 32 ),\
     ]\
 }, \
 "video" : "stock_Alien_Isolation_1080p.mp4"\
@@ -147,10 +147,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("04:35", "04:56.5") },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', , ), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale', , ),\
-              scriptedvided.r6sText('1920x1080, low settings, 50% render scale', , ),\
-              scriptedvided.r6sText('1280x720, low settings, 50% render scale', , )]\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 15, 11), \
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 28, 18),\
+              scriptedvided.r6sText('1920x1080, low settings, 50% render scale', 21, 14),\
+              scriptedvided.r6sText('1280x720, low settings, 50% render scale', 32, 17)]\
 }, \
 })
 
@@ -159,8 +159,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("04:56.5",  "05:18") },\
 "overlay" : { \
     "text" : ["'Grand Theft Auto V'",\
-              scriptedvided.r6sText('1920x1080, low settings', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 34,  22),\
+              scriptedvided.r6sText('1280x720, low settings', 49,  28),\
     ]\
 }, \
 })
@@ -170,8 +170,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ( "05:18" , "05:44" ) },\
 "overlay" : { \
     "text" : ["'Counter Strike\: Global Offensive'",\
-              scriptedvided.r6sText('1920x1080, low settings', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 67,  31),\
+              scriptedvided.r6sText('1280x720, low settings', 84, 54),\
     ]\
 }, \
 })
@@ -181,8 +181,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("05:44", "06:19") },\
 "overlay" : { \
     "text" : ["'DOTA 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 48, 35 ),\
+              scriptedvided.r6sText('1280x720, low settings', 78, 52),\
     ]\
 }, \
 })
@@ -192,8 +192,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("06:19", "06:54") },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1920x1080, low settings', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 41, 26 ),\
+              scriptedvided.r6sText('1280x720, low settings', 66,  47),\
     ]\
 }, \
 })
@@ -203,8 +203,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ( "06:54", "07:21") },\
 "overlay" : { \
     "text" : ["'Overwatch 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 37,  29),\
+              scriptedvided.r6sText('1280x720, low settings', 71,  57),\
     ]\
 }, \
 })
@@ -214,8 +214,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("07:21", "07:51") },\
 "overlay" : { \
     "text" : ["'Rocket League'",\
-              scriptedvided.r6sText('1920x1080, low settings', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 53,  22),\
+              scriptedvided.r6sText('1280x720, low settings', 65, 28 ),\
     ]\
 }, \
 "video" : "stock_RocketLeague_1080pLower.mp4",\
@@ -226,8 +226,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("07:51", "08:24") },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 30,  15),\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 55,  28),\
     ]\
 }, \
 "video" : "stock_Splitgate_1080pLow.mp4",\
@@ -238,8 +238,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("08:24", "09:04") },\
 "overlay" : { \
     "text" : ["'Valorant'",\
-              scriptedvided.r6sText('1920x1080, low settings', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 80,  0),\
+              scriptedvided.r6sText('1280x720, low settings', 140,  0),\
     ]\
 }, \
 })
@@ -249,8 +249,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("09:04", "09:28") },\
 "overlay" : { \
     "text" : ["'Censhin Impact'",\
-              scriptedvided.r6sText('1920x1080, low settings, 1.0 render scale', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings, 1.0 render scale', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings, 1.0 render scale', 18,  16),\
+              scriptedvided.r6sText('1280x720, low settings, 1.0 render scale', 24,  19),\
     ]\
 }, \
 })
@@ -270,8 +270,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("09:45", "10:04") },\
 "overlay" : { \
     "text" : ["'Paladins'",\
-              scriptedvided.r6sText('1920x1080, high settings', ,  ),\
-              scriptedvided.r6sText('1280x720, high settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, high settings', 70,  25),\
+              scriptedvided.r6sText('1280x720, high settings', 93,  52),\
     ]\
 }, \
 })
@@ -282,8 +282,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("10:04", "10:21") },\
 "overlay" : { \
     "text" : ["'Realm Royale'",\
-              scriptedvided.r6sText('1920x1080, high settings', ,  ),\
-              scriptedvided.r6sText('1280x720, high settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, high settings', 46,  29),\
+              scriptedvided.r6sText('1280x720, high settings', 61,  39),\
     ]\
 }, \
 })
@@ -294,8 +294,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("10:21", "10:45") },\
 "overlay" : { \
     "text" : ["'Rogue Company'",\
-              scriptedvided.r6sText('1920x1080, low settings', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 41,  20),\
+              scriptedvided.r6sText('1280x720, low settings', 69, 43 ),\
     ]\
 }, \
 })
@@ -315,8 +315,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("11:04", "11:48") },\
 "overlay" : { \
     "text" : ["'Warframe'",\
-              scriptedvided.r6sText('1920x1080, low settings', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 80,  43),\
+              scriptedvided.r6sText('1280x720, low settings', 150,  69),\
     ]\
 }, \
 })
