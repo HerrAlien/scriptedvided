@@ -377,7 +377,7 @@ configs["episodes"].append(\
 { "title": "list of games 730",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("13:40", "13:53.5"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : "730_games.mkv"} \
+"video" : {"file" : "730_games.mkv", "start" :"00:00"} \
 })
 
 configs["episodes"].append(\
