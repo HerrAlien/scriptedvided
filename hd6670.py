@@ -9,14 +9,15 @@ configs = { "defaultAudioFile" : "hd6670.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "The 720p budget card", "until" : "Alien: Isolation"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "The 720p budget card", "until" : "Apex Legends"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Control"}}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Apex Legends", "until" : "Fortnite"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Control", "until" : "Rocket League"}}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite", "until" : "Genshin Impact"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rocket League", "until" : "Usefulness of an old (D)GPU"}}, \
-{"file" : "bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of an old (D)GPU", "until" : "Blooper" }}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Genshin Impact", "until" : "Usefulness of an old (D)GPU"}}, \
+{"file" : "bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of an old (D)GPU", "until" : "Pricing" }}, \
+{"file" : "bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Pricing", "until" : "Blooper" }}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "How does  a budget video card from 2009 play games in 2023?", \
@@ -163,6 +164,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1280x720, low settings', 49,  28),\
     ]\
 }, \
+"video" : "stock_gta5_1080p.mp4" \
 })
 
 configs["episodes"].append(\
@@ -370,21 +372,21 @@ configs["episodes"].append(\
 { "title": "It just works",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("00:00", "00:05"), "volume" : 0.001, "padding" : 0.5  },\
-"video" : {"file" : "just works.mp4", "start" : "00:23"} \
+"video" : {"file" : "just works.mp4", "start" : "00:25"} \
 })
 
 configs["episodes"].append(\
 { "title": "list of games 730",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("13:40", "13:53.5"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : "730_games.mkv", "start" :"00:00"} \
+"video" : {"file" : "730_games.mkv", "start" :"00:10"} \
 })
 
 configs["episodes"].append(\
 { "title": "6670 better",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("13:53.5", "14:06"), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : "broll_hd6670_horizontal.mp4", "rotation" : 180} \
+"video" : {"file" : "broll_hd6670_horizontal.mp4"} \
 })
 
 configs["episodes"].append(\
@@ -416,6 +418,7 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
+#scriptedvided.makeVideoForEpisode(configs["episodes"][29], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Apex Legends"][0], configs)
 scriptedvided.makeVideo(configs)
 
