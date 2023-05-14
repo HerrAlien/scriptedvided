@@ -9,20 +9,33 @@ configs = { "defaultAudioFile" : "hd6670.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "The 720p budget card", "until" : "Apex Legends"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "The 720p budget card", "until" : "Alien: Isolation"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Apex Legends", "until" : "Fortnite"}}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "DOTA2"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite", "until" : "Genshin Impact"}}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "DOTA2", "until" : "Genshin Impact"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
 "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Genshin Impact", "until" : "Usefulness of an old (D)GPU"}}, \
-{"file" : "bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Usefulness of an old (D)GPU", "until" : "Pricing" }}, \
-{"file" : "bensound-summer.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : { "title": "Pricing", "until" : "Blooper" }}, \
+{"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : { "title": "Usefulness of an old (D)GPU", "until" : "Blooper" }}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "How does  a budget video card from 2009 play games in 2023?", \
 "description" : '''In this video we're reviewing a TeraScale 2 budget card - the HD 6670.''',\
 "links" : '''
+Track: Bliss Of Heaven — SOMM [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=JQ6mKeQLZak&t=0s
+Free Download / Stream: https://alplus.io/blisss-heaven
+
+Track: Far Far Away — Ferco [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=SrkQ3K1umlc&t=0s 
+Free Download / Stream: https://alplus.io/far-far-away
+
+Track: Guide You Home — Ferco & Andie [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=16eNerPDIsU&t=0s
+Free Download / Stream: https://alplus.io/guide-you-home
 
 Iceberg Tech's review of UHD 730: https://www.youtube.com/watch?v=5xvRPxVMQ1k
 
@@ -250,7 +263,7 @@ configs["episodes"].append(\
 { "title": "Genshin Impact",\
 "audio" : {"timestamps" : ("09:04", "09:28") },\
 "overlay" : { \
-    "text" : ["'Censhin Impact'",\
+    "text" : ["'Genshin Impact'",\
               scriptedvided.r6sText('1920x1080, low settings, 1.0 render scale', 18,  16),\
               scriptedvided.r6sText('1280x720, low settings, 1.0 render scale', 24,  19),\
     ]\
@@ -418,7 +431,7 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][29], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][16], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Apex Legends"][0], configs)
 scriptedvided.makeVideo(configs)
 

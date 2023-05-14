@@ -15,14 +15,28 @@ configs = { "defaultAudioFile" : "TS2_Overwatch2.ogg",\
 "timestamps" : ("01:33", None ), "destinationTimestamp" : {"title" : "actual 900 results", "until" : "1280x720 results"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
 "timestamps" : ("02:33", None ), "destinationTimestamp" : {"title" : "actual 720 results", "until" : "Conclusion"}}, \
-{"file" : "bensound-summer.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Conclusion", "until" : "ending"}}, \
+{"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : { "title": "Conclusion", "until" : "Blooper" }}, \
 ], "volume" : 0.06 },\
 "episodes" : [],\
 "youtube" : {"title" : "Playing Overwatch 2 on unsupported old Radeons", \
 "description" : '''In this video, we'll take a closer look on how the old TeraScale 2 video cards (Radeon HD 6670, HD 5770, HD 6850, HD 5870) run Overwatch 2.
 As usual, we're pairing the cards with the i7 4770 equivalent Xeon (E3-1241 v3), and 32 GB DDR3 @1600MHz, in dual channel.''',\
 "links" : '''
+Track: Bliss Of Heaven — SOMM [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=JQ6mKeQLZak&t=0s
+Free Download / Stream: https://alplus.io/blisss-heaven
+
+Track: Far Far Away — Ferco [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=SrkQ3K1umlc&t=0s 
+Free Download / Stream: https://alplus.io/far-far-away
+
+Track: Guide You Home — Ferco & Andie [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=16eNerPDIsU&t=0s
+Free Download / Stream: https://alplus.io/guide-you-home
+
 More games tested with the TeraScale 2 cards:
 https://www.youtube.com/watch?v=9ZrKAwA6MbQ&list=PLgBGV4K3p2_YhzgbzcQ6kdgfGpzdq6cRD
 ''', \
@@ -49,7 +63,7 @@ configs["episodes"].append(\
 { "title": "Minimum specs",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("00:20", "00:41" ), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : "overwatch2_requirements.mkv"\
+"video" : "o_verwatch2_requirements.mkv"\
 })
 
 # this will be split up
