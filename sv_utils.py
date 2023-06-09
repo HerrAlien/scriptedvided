@@ -79,3 +79,38 @@ def getFileFromInput (inputStream):
     else:
         return inputStream
 
+# move to UTILS
+def getFpsValueFromLine(line):
+    valueOfInterest = line.split(":")[1]
+    valueOfInterest = valueOfInterest.replace(" ", "")
+    valueOfInterest = valueOfInterest.replace("FPS\n", "")
+    return int(float(valueOfInterest) + 0.5)
+    
+# move to UTILS
+def parseBenchmarkFile (benchmarkFile):
+    returnedDict = {}
+    currentKey = ""
+    currentValue = [0,0,0]
+    benchmarkCompletedMark = " benchmark completed,"
+    
+    fileHandler = open(benchmarkFile, "r")
+    fileLines = fileHandler.readlines()
+    for line in fileLines:
+        if benchmarkCompletedMark in line:
+            currentKey = line[21:]
+            posOfEnd = currentKey.index(benchmarkCompletedMark)
+            currentKey = currentKey[0:posOfEnd]
+            currentKey = currentKey.upper()
+            lineIndexFollowingKey = 0
+            currentValue = [0,0,0]
+        else:
+            if lineIndexFollowingKey == 0: # average
+                currentValue[0] = getFpsValueFromLine(line)
+            elif lineIndexFollowingKey == 3: # 1%
+                currentValue[1] = getFpsValueFromLine(line)
+            elif lineIndexFollowingKey == 4: # 0.1%
+                currentValue[2] = getFpsValueFromLine(line)
+                returnedDict[currentKey] = currentValue
+                
+            lineIndexFollowingKey = lineIndexFollowingKey + 1
+    return returnedDict
