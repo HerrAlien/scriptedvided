@@ -11,12 +11,8 @@ configs = { "defaultAudioFile" : "hd7750.ogg",\
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
 "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "One more reason for retesting", "until" : "Alien: Isolation"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "DOTA2"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "DOTA2", "until" : "Genshin Impact"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Genshin Impact", "until" : "Usefulness of an old (D)GPU"}}, \
-{"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : { "title": "Usefulness of an old (D)GPU", "until" : "Blooper" }}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Conclusions"}}, \
+{"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : { "title": "Conclusions", "until" : "Blooper" }}, \
 ], "volume" : 0.04 },\
 "episodes" : [],\
 "youtube" : {"title" : "10 years old budget Radeon playing games in 2023", \
@@ -62,7 +58,7 @@ TechPowerup entry: https://www.techpowerup.com/gpu-specs/asus-hd-7750.b614
 configs["episodes"].append(\
 { "title": "Between the R7 250 and HD7770?",\
 "audio" : {"timestamps" : ("00:00", "00:13" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file": "gcn_entry_level_cards_asus.mp4"}\
+"video" : {"file": "gcn_entry_level_cards_asus.mp4", "start" : "00:30"}\
 })
 
 configs["episodes"].append(\
@@ -211,7 +207,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Mid-break results",\
 "audio" : {"timestamps" : ("07:42" , "07:56" ) , "padding" : 0.25  },\
-"video" : { "file" : "---" }\
+"video" : { "file" : "hd7750_RopVsShader_games_lists.mkv" , "start" : "00:07"}\
 })
 
 configs["episodes"].append(\
@@ -239,6 +235,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Splitgate",\
 "audio" : {"timestamps" : ("09:18", "09:56" ) , "padding" : 0.25  },\
+"video" : "stock_Splitgate_2023_06_17.mp4",\
 "overlay" : { \
     "text" : ["'Splitgate'",\
               scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 59,  45),\
@@ -323,7 +320,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "DGPU or IGPU",\
 "audio" : {"timestamps" : ("12:56", "13:20" ) ,  "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"},\
+"video" : {"file":"10400-vs-10400f.mkv"},\
 "isChapter" : False,\
 })
 
@@ -345,7 +342,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : ("13:56", "14:11" ), "volume" : 0.999 , "padding" : 0.25  },\
-"video" : {"file" : "complete list of games"}\
+"video" : {"file" : "hd7750_RopVsShader_games_lists.mkv" , "start" : "00:55"}\
 })
 
 configs["episodes"].append(\
@@ -360,14 +357,14 @@ configs["episodes"].append(\
 { "title": "HD 7750 pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("14:36", "14:52.7" ), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : "---- olx seraches -----"}\
+"video" : {"file" : "hd7750_hd7770_r7_250_olx.mkv"}\
 })
 
 configs["episodes"].append(\
 { "title": "HD 7750 and MSI 7770",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("14:52.7" , "15:12" ), "volume" : 0.999, "padding" : 0.25  },\
-"video" : {"file" : " ---- 7750 and 7770 ----"}\
+"video" : {"file" : "msi_hd7770_breel_grass.mp4"}\
 })
 
 
@@ -394,6 +391,6 @@ configs["episodes"].append(\
 ##})
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][3], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Apex Legends"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Splitgate"][0], configs)
 scriptedvided.makeVideo(configs)
 
