@@ -9,9 +9,15 @@ configs = { "defaultAudioFile" : "hd7750.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "One more reason for retesting", "until" : "Alien: Isolation"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Between the R7 250 and HD7770?", "until" : "Alien: Isolation"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Conclusions"}}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Grand Theft Auto V"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Grand Theft Auto V", "until" : "Rocket League"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rocket League", "until" : "World of Tanks Blitz"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "World of Tanks Blitz", "until" : "Conclusions"}}, \
 {"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : { "title": "Conclusions", "until" : "Blooper" }}, \
 ], "volume" : 0.04 },\
 "episodes" : [],\
