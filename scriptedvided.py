@@ -501,6 +501,7 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, overlayImageDict, op
         totalSlack = int (videoLen - (audioLen + padding + padding) + 0.5)
         if totalSlack < 0:
             print ("ERR: video length is smaller than audio length + padding. Slack is " + str(totalSlack))
+            print ("Video is " + sv_utils.dictValue (video, "file", "N/A"))
             a = 1/0 
         ##videoStart = totalSlack * 0.5    
         if totalSlack == 0:
@@ -518,13 +519,13 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, overlayImageDict, op
 
     targetRes = sv_utils.dictValue(options, "targetRes", (1920,1080))
     resolution = sv_ffutils.getResolution(fixedVideo)
+    
     if (resolution[1] != targetRes[1]):
         scaledVideo = sv_ops.scaleVideo(fixedVideo, targetRes)
         os.remove(fixedVideo)
         fixedVideo = scaledVideo
         
     paddedAudio = sv_ops.padAudioStream (audio, "padded.ogg", padding, padding)
-    
     videoAudioWeight = sv_utils.dictValue (options, "videoSoundVolume", 0.07)
     
 # then  overlay the audio
