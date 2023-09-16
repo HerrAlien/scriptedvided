@@ -579,6 +579,7 @@ def aliases(inputName):
         ["Paladins", "Paladins.exe"],\
         ["Overwatch 2", "Overwatch", "Overwatch.exe", "Overwatch2", "Overwatch_2"],\
         ["Dying Light", "DyingLightGame", "DyingLightGame.exe", "DyingLight"],\
+        ["Resident Evil 4 (Remake)", "re4demo.exe", "re4demo"],\
     ]
 
     if inputName is None:

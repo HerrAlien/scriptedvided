@@ -146,6 +146,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Control",\
 "audio" : {"timestamps" : ("03:48.5", "04:24.5" ), "padding" : 0.25 },\
+"video" : {"file" : "stock_Control_720p.mp4", "start" : "01:00"},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, low settings", \
@@ -335,7 +336,7 @@ configs["episodes"].append(\
 { "title": "rx460 - like it though",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("11:56.5", "12:19.6" ), "volume" : 0.999 , "padding" : 0.25  },\
-"video" : {"file" : "breel_rx460_outside.mp4"}\
+"video" : {"file" : "ozzy_rx460.mp4"}\
 })
 
 
@@ -350,13 +351,13 @@ configs["episodes"].append(\
 { "title": "R7 265 next",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("12:36.4", "12:46" ), "volume" : 0.999 , "padding" : 0.25  },\
-"video" : {"file" : "breel_r7_265_outside.mp4"}\
+"video" : {"file" : "breels_r7_265_r9_270.mp4"}\
 })
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("12:46", "12.55" ), "volume" : 0.999 , "padding" : 0.25  },\
+"audio" : {"timestamps" : ("12:46", "12:55" ), "volume" : 0.999 , "padding" : 0.25  },\
 "video" : {"file" : "breel_rx460_outside.mp4"}\
 })
 
@@ -368,11 +369,12 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][28], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][31], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][29], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][30], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][31], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][32], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Splitgate"][0], configs)
+#scriptedvided.makeVideo(configs)
 scriptedvided.makeVideo(configs)
 
