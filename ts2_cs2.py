@@ -141,7 +141,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "text" : ["'Counter Strike 2 on a GT 1030'",\
               scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 88, 48), \
-}, \
+]}, \
 })
 
 configs["episodes"].append(\
