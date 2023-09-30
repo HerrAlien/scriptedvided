@@ -335,7 +335,7 @@ configs["episodes"].append(\
         "settings" : "1920x1080, low settings", \
     }\
 }, \
-"video" : "Warframe.x64_2023_09_10_22_20_57_125.mp4",\
+"video" : "stock_Warframe_Mariana.mp4",\
 })
 
 configs["episodes"].append(\
@@ -350,11 +350,12 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Resident Evil 4 (Remake)",\
+{ "title": "Resident Evil 4 - data",\
+"isChapter" : False,\
 "audio" : {"timestamps" : ("12:46", "13:12" ), "padding" : 0.25  },\
 "video" : {"file": "stock_re4demo_phoneCall.mp4"},\
 "overlay" : { \
-    "image" : {"file" : "todo_re4_260x_265.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "re4_260x_265.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 ####################### end of gaming section ###############################
@@ -405,7 +406,7 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][28], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][27], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][29], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][30], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][31], configs)
