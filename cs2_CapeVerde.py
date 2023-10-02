@@ -59,14 +59,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Meet the GPUs and test system (again)",\
 "audio" : {"timestamps" : ("00:14", "00:25.7" ), "volume" : 0.999, "padAudio" : 0.25 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:00", "rotation" : 180}\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:00", "rotation" : 90}\
 })
 
 configs["episodes"].append(\
 { "title": "R7 250",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("00:25.7", "00:34" ), "volume" : 0.999, "padAudio" : 0.25 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "02:24", "rotation" : 180}\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "02:24", "rotation" : 90}\
 })
 
 # 7770 - 51, 7750 - 01:40 
@@ -75,14 +75,14 @@ configs["episodes"].append(\
 { "title": "HD 7750",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("00:34", "00:49" ), "volume" : 0.999, "padAudio" : 0.25 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "01:40", "rotation" : 180}\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "01:40", "rotation" : 90}\
 })
 
 configs["episodes"].append(\
 { "title": "HD 7770",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("00:49", "00:57" ), "volume" : 0.999, "padAudio" : 0.25 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:51", "rotation" : 180}\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:51", "rotation" : 90}\
 })
 
 configs["episodes"].append(\
@@ -113,14 +113,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusion",\
 "audio" : {"timestamps" : ("03:08", "03:26.33"), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:43", "rotation" : 180}\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:43", "rotation" : 90}\
 })
 
 configs["episodes"].append(\
 { "title": "7770",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("03:26.33", "03:43"), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:56", "rotation" : 180}\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:56", "rotation" : 90}\
 })
 
 configs["episodes"].append(\
@@ -134,14 +134,14 @@ configs["episodes"].append(\
 { "title": "GCN family - mid level",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("04:03", "04:13.5"), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "00:00" , "rotation" : 180}\
+"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "00:00" , "rotation" : 0}\
 })
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("04:13.5", "04:21"), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:00", "rotation" : 180}\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:00", "rotation" : 90}\
 })
 
 
