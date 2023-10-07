@@ -51,22 +51,22 @@ https://www.youtube.com/watch?v=9ZrKAwA6MbQ&list=PLgBGV4K3p2_YhzgbzcQ6kdgfGpzdq6
 
 configs["episodes"].append(\
 { "title": "60 FPS at 1080?",\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "TS2_CS2.mp4", "start" : "01:10"},\
+"audio" : {"timestamps" : ("00:00", "00:08.5"), "volume" : 0.999 , "padAudio" : 0.25 },\
+"video" : {"file" : "CapeVerde_CS2.mp4", "start" : "02:30"},\
 })
 
 # this will be split up
 configs["episodes"].append(\
 { "title": "The GPUs and test system",\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "00:00", "rotation" : 180}\
+"audio" : {"timestamps" : ("00:08.5", "00:15"), "volume" : 0.999 , "padAudio" : 0.25 },\
+"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "00:00"}\
 })
 
 configs["episodes"].append(\
 { "title": "R7 260",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "00:40", "rotation" : 180}\
+"audio" : {"timestamps" : ("00:15", "00:20.5"), "volume" : 0.999 , "padAudio" : 0.25 },\
+"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "00:40"}\
 })
 
 # 7770 - 51, 7750 - 01:40 
@@ -74,27 +74,27 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "R7 260X",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "01:05", "rotation" : 180}\
+"audio" : {"timestamps" : ("00:20.5", "00:28.2"), "volume" : 0.999 , "padAudio" : 0.25 },\
+"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "01:05"}\
 })
 
 configs["episodes"].append(\
 { "title": "R7 265",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "01:38", "rotation" : 180}\
+"audio" : {"timestamps" : ("00:28.2", "00:40.5"), "volume" : 0.999 , "padAudio" : 0.25 },\
+"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "01:38"}\
 })
 
 configs["episodes"].append(\
 { "title": "Z230",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999 , "padAudio" : 0.25 },\
+"audio" : {"timestamps" : ("00:40.5", "00:54.5"), "volume" : 0.999 , "padAudio" : 0.25 },\
 "video" : {"file" : "Z230_closed.mp4" , "rotation" : 180}\
 })
 
 configs["episodes"].append(\
 { "title": "1920x1080 results",\
-"audio" : {"timestamps" : ("", "") , "padAudio" : 0.25 },\
+"audio" : {"timestamps" : ("00:54.5", "02:01.3") , "padAudio" : 0.25 },\
 "video" : {"file": "stock_CS2_CT_R7_260.mp4"},\
 "overlay" : { \
     "image" : {"file" : "1080, low settings.png", "chromaColor" : "0x00FF00"}\
@@ -103,7 +103,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "1280x720 results",\
-"audio" : {"timestamps" : ("", ""), "padAudio" : 0.25 },\
+"audio" : {"timestamps" : ("02:01.3", "02:49.5"), "padAudio" : 0.25 },\
 "video" : {"file": "stock_CS2_T_R7_265.mp4"},\
 "overlay" : { \
     "image" : {"file" : "720, low settings.png", "chromaColor" : "0x00FF00"}\
@@ -112,36 +112,36 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Conclusion",\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "00:00", "rotation" : 180}\
+"audio" : {"timestamps" : ("02:49.5", "03:03.25"), "volume" : 0.999 , "padAudio" : 0.25 },\
+"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "00:00"}\
 })
 
 configs["episodes"].append(\
 { "title": "win",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999 , "padAudio" : 0.25 },\
+"audio" : {"timestamps" : ("03:03.25", "03:15.7"), "volume" : 0.999 , "padAudio" : 0.25 },\
 "video" : {"file" : "stock_CS2_CT_R7_260.mp4", "start" : "07:13"}\
 })
 
 configs["episodes"].append(\
 { "title": "High end GCN",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "breel_r9_290x_outside_dog.mp4", "rotation" : 180, "start" : "00:20"},\
+"audio" : {"timestamps" : ("03:15.7", "03:28"), "volume" : 0.999 , "padAudio" : 0.25 },\
+"video" : {"file" : "breel_r9_290x_outside_dog.mp4", "start" : "00:20"},\
 })
 
 configs["episodes"].append(\
 { "title": "End of the series",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "stock_CS2_CT_R7_260.mp4", "start" : "00:00" , "rotation" : 0}\
+"audio" : {"timestamps" : ("03:28", "03:41.25"), "volume" : 0.999 , "padAudio" : 0.25 },\
+"video" : {"file" : "stock_CS2_CT_R7_260.mp4"}\
 })
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999 , "padAudio" : 0.25 },\
-"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "00:00", "rotation" : 180}\
+"audio" : {"timestamps" : ("03:41.25", "03:50"), "volume" : 0.999 , "padAudio" : 0.25 },\
+"video" : {"file" : "stock_midGCNs_family.mp4", "start" : "00:00"}\
 })
 
 
