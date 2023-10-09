@@ -63,20 +63,20 @@ TechPowerup entry: https://www.techpowerup.com/gpu-specs/radeon-r9-270.c2458
 configs["episodes"].append(\
 { "title": "R9 270 joins the match",\
 "audio" : {"timestamps" : ("00:00", "00:14" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file": "breel_r9_270_outside.mp4", "rotation" : 180}\
+"video" : {"file": "breel_r9_270_outside.mp4"}\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : ("00:14", "00:31.5" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file": "broll_R9_270_HPPN.mp4", "start" : "00:00", "rotation" : 180},\
+"video" : {"file": "broll_R9_270_HPPN.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "GPUZ",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("00:31.5", "00:59" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file": "r9_270_heaven_950MHz.mp4", "start" : "00:00", "rotation" : 180}\
+"video" : {"file": "r9_270_heaven_950MHz.mp4", "start" : "00:00"}\
 })
 
 configs["episodes"].append(\
@@ -96,12 +96,24 @@ configs["episodes"].append(\
 { "title": "Thermals",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("01:28.5", "01:46" ), "volume" : 0.999, "padding" : 0.25 },\
+"overlay" : { \
+    "text" : ["'Thermals'",\
+              "'Heaven\: 73C (49C delta over ambient)'",\
+              "'Warframe\: 74C (50C delta over ambient)'",\
+    ]\
+}, \
 "video" : {"file": "stock_heaven720p_noTessellation.mp4", "start" : "00:00"}\
 })
 
 configs["episodes"].append(\
 { "title": "The test system",\
 "audio" : {"timestamps" : ("01:46", "02:08.5" ), "volume" : 0.999, "padding" : 0.25 },\
+"overlay" : { \
+    "text" : ["'Z230 workstation from HP'",\
+              "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
+              "'RAM\: 32GB DDR3 at 1600 MHz, dual channel'",\
+    ]\
+}, \
 "video" : {"file" : "Z230_closed.mp4", "rotation" : 180}\
 })
 
@@ -155,9 +167,11 @@ configs["episodes"].append(\
 { "title": "Battlefield V",\
 "audio" : {"timestamps" : ("04:00", "04:33.5" ), "padding" : 0.25  },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, low settings", \
-    }\
+    "text" : ["'Battlefield V'",\
+              scriptedvided.r6sText('1920x1080, low settings', 53, 43),\
+              scriptedvided.r6sText('1600x900, low settings', 66,  53),\
+              scriptedvided.r6sText('1280x720, low settings', 81, 60 ),\
+    ]\
 }, \
 })
 
@@ -365,7 +379,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : ("12:09", "12:35" ), "volume" : 0.999 , "padding" : 0.25  },\
-"video" : {"file" : "broll_R9_270_HPPN.mp4", "start" : "00:35", "rotation" : 180}\
+"video" : {"file" : "broll_R9_270_HPPN.mp4", "start" : "00:35"}\
 })
 
 configs["episodes"].append(\
@@ -379,21 +393,21 @@ configs["episodes"].append(\
 { "title": "R9 280",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("12:52", "13:03" ), "volume" : 0.999 , "padding" : 0.25  },\
-"video" : {"file" : "breel_r9_280_outside.mp4", "rotation" : 180}\
+"video" : {"file" : "breel_r9_280_outside.mp4"}\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("13:03", "13:09" ), "volume" : 0.999 , "padding" : 0.25  },\
-"video" : {"file": "broll_R9_270_HPPN.mp4", "start" : "00:00", "rotation" : 180},\
+"video" : {"file": "broll_R9_270_HPPN.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "Blooper",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("13:09", "13:18" ), "volume" : 0.999 , "padding" : 0.25  },\
-"video" : {"file": "breel_r9_270_outside.mp4", "start" : "00:00", "rotation" : 180},\
+"video" : {"file": "breel_r9_270_outside.mp4", "start" : "00:00"},\
 })
 
 ##configs["episodes"].append(\
@@ -403,8 +417,8 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][27], configs)
-#scriptedvided.makeVideoForEpisode(configs["episodes"][29], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][8], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][10], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][30], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][31], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][32], configs)
