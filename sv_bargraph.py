@@ -27,7 +27,7 @@ import random
 
 
 def getDefaultGraphInputArgs():
-    return ["ffmpeg", "-f", "lavfi", "-i", "color=c=#00ff00:size=1280x720"]
+    return sv_ffutils.ffmpegParams () + ["-f", "lavfi", "-i", "color=c=#00ff00:size=1280x720"]
 
 def getDrawRectangleFilterCommand(x,y,w,h,color):
     return "drawbox=x="+str(x)+":y="+str(y)+":w="+str(w)+":h="+str(h)+":t=fill:c="+color
