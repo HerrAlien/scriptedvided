@@ -59,6 +59,9 @@ def normalize(values):
 
     return normalizedValues
 
+def getlabelFontSize(barWidth):
+    return int(0.6*barWidth)
+
 def getDrawSingleSeriesBars (seriesMetaData, values):
     drawBoxes = []
     x = seriesMetaData["bottomX"]
@@ -70,7 +73,8 @@ def getDrawSingleSeriesBars (seriesMetaData, values):
     labelColor = sv_utils.dictValue(seriesMetaData, "labelColor", "#ffffff")
     name = seriesMetaData["name"]
     scale = seriesMetaData["scale"]
-    
+    fontSize = getlabelFontSize (w)
+
     normalizedValues = normalize (values)
     labelIndex = 0
     drawLabels = []
@@ -81,7 +85,7 @@ def getDrawSingleSeriesBars (seriesMetaData, values):
         height = int (maxHeight * value * scale + 0.5)
         label = str (values[labelIndex])
         drawBoxes.append (getDrawRectangleFilterCommand (x, y - height, w, height, color))
-        drawLabels.append (getDrawTextCommand (int(x + 0.5*w), y - height + 10, int(0.6*w), labelColor, label))
+        drawLabels.append (getDrawTextCommand (int(x + 0.5*w), y - height + 10, fontSize, labelColor, label))
         labelIndex = labelIndex + 1
         x = x + w + spacing
 
@@ -130,6 +134,25 @@ def getDrawMultiSeriesBarsFilterString (arrayOfMetAndDataTouples, defaultCommonO
     
     return filterString
 
+def updateGeometryParameters (arrayOfMetAndDataTouples, resolutionTouple):
+    # the arrays are supposed to have the same length - the length of the series
+    # the count of series gives us how much space is alloted per group of data.
+    groupCount = len(arrayOfMetAndDataTouples)
+    seriesLength = len(arrayOfMetAndDataTouples[0][1])
+    
+    groupWidth = float(resolutionTouple[0]) / seriesLength
+    # this then represents groupCount * (width + in between spacing)
+    # the spacing parameter would be width + in between spacing    
+    inBetweenSpacing = 10
+    width = 60
+    variableDependingOnEntries = 42
+    
+    spacing = width + inBetweenSpacing + variableDependingOnEntries
+
+    bottomY = resolutionTouple[1] - getlabelFontSize (width) * 5 # spacing of 1 line: space, card label, space, legend, space
+
+    return { "bottomY" : bottomY, "width" : width, "spacing" : spacing }
+
 
 
 if __name__ == "__main__":
@@ -139,8 +162,15 @@ if __name__ == "__main__":
     params = getDefaultGraphInputArgs()
     params.append ("-filter_complex")
 
+    dataAndMetaArr = [( meta , [37,43,58]) , ( meta2 , [13,20,42])]
+    initialDefaults = updateGeometryParameters (dataAndMetaArr, (1280,720))
+    
+    meta2["bottomX"] = meta["bottomX"] + initialDefaults["width"] + 10 # the in between spacing should be accessible from here
+    
+    initialDefaults["maxHeight"] = 500
+    initialDefaults["labelColor"] = "#ffffff"
 
-    params.append(getDrawMultiSeriesBarsFilterString ([( meta , [37,43,58]) , ( meta2 , [13,20,42])], {"bottomY" : 640, "width" : 50, "spacing" : 80, "maxHeight" : 500, "labelColor" : "#ffffff",} ))
+    params.append(getDrawMultiSeriesBarsFilterString (dataAndMetaArr, initialDefaults))
 
     params = params + ["-frames:v", "1"]
 
