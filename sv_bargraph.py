@@ -113,9 +113,6 @@ def getDrawMultiSeriesBars (arrayOfMetAndDataTouples, defaultCommonOptions = {})
     for dataAndMeta in arrayOfMetAndDataTouples:
         dataAndMeta[0]["scale"] = max(dataAndMeta[1]) / maxOfMaxes;
 
-    params = getDefaultGraphInputArgs()
-    params.append ("-filter_complex")
-
     filterOutputLabel = "getDrawMultiSeriesBars"
     countOfSeries = len(arrayOfMetAndDataTouples)
     filterString = ""
@@ -125,10 +122,7 @@ def getDrawMultiSeriesBars (arrayOfMetAndDataTouples, defaultCommonOptions = {})
         if i < (countOfSeries - 1) :
             filterString = filterString + "[" + filterOutputLabel + "];[" + filterOutputLabel + "]"
     
-    params.append(filterString)
-    params = params + ["-frames:v", "1"]
-
-    return params
+    return filterString
 
 
 
@@ -136,7 +130,14 @@ if __name__ == "__main__":
     meta = {"bottomX" : 30, "bottomY" : 640, "width" : 50, "spacing" : 80, "maxHeight" : 500, "color" : "#ff0000", "labelColor" : "#ffffff", "name" : "Average" }
     meta2 = {"bottomX" : 90, "bottomY" : 640, "width" : 50, "spacing" : 80, "maxHeight" : 500, "color" : "#0000ff", "labelColor" : "#ffffff", "name" : "One percent" }
     
-    params = getDrawMultiSeriesBars ([( meta , [37,43,58]) , ( meta2 , [13,20,42])])
+    params = getDefaultGraphInputArgs()
+    params.append ("-filter_complex")
+
+
+    params.append(getDrawMultiSeriesBars ([( meta , [37,43,58]) , ( meta2 , [13,20,42])]))
+
+    params = params + ["-frames:v", "1"]
+
     params.append ("out.png")
     
     subprocess.run(params)
