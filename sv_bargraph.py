@@ -46,15 +46,13 @@ Single series meta data is a dictionary that must have the following structure:
   maxHeight : [int] height in pixels for the normalized value of 1.0
   color : [string] "#rrggbb" color of the bar 
   name  : [string] unique name for this series
+  labelColor : [string] "#rrggbb" color for the numerical value for the bar
+  scale : [float] numerical value to scale the pixel height of the bar; useful when plotting two series on the same image
 }
 '''
-
-def getNormalizedValues(values):
+def normalize(values):
     normalizedValues = []
-    maxValue = -999999
-    for value in values:
-        if value > maxValue:
-            maxValue = value
+    maxValue = max(values)
 
     for value in values:
         normalizedValues.append( float(value) / maxValue)
@@ -73,7 +71,7 @@ def getDrawSingleSeriesBars (seriesMetaData, values):
     name = seriesMetaData["name"]
     scale = seriesMetaData["scale"]
     
-    normalizedValues = getNormalizedValues (values)
+    normalizedValues = normalize (values)
     labelIndex = 0
     drawLabels = []
 
@@ -107,13 +105,39 @@ def getDrawSingleSeriesBars (seriesMetaData, values):
             
     return cmd
 
-if __name__ == "__main__":
-    meta = {"bottomX" : 30, "bottomY" : 640, "width" : 50, "spacing" : 80, "maxHeight" : 500, "color" : "#ff0000", "labelColor" : "#ffffff", "name" : "Average" , "scale" : 1 }
-    meta2 = {"bottomX" : 90, "bottomY" : 640, "width" : 50, "spacing" : 80, "maxHeight" : 500, "color" : "#0000ff", "labelColor" : "#ffffff", "name" : "Average" , "scale" : 42.0/58  }
+def getDrawMultiSeriesBars (arrayOfMetAndDataTouples, defaultCommonOptions = {}):
+    maxes = []
+    for dataAndMeta in arrayOfMetAndDataTouples:
+        maxes.append(max(dataAndMeta[1]))
+    maxOfMaxes = float(max(maxes))
+    for dataAndMeta in arrayOfMetAndDataTouples:
+        dataAndMeta[0]["scale"] = max(dataAndMeta[1]) / maxOfMaxes;
+
     params = getDefaultGraphInputArgs()
     params.append ("-filter_complex")
-    params.append (getDrawSingleSeriesBars ( meta , [37,43,58]) + "[AVG];[AVG]" + getDrawSingleSeriesBars ( meta2 , [13,20,42]))
+
+    filterOutputLabel = "getDrawMultiSeriesBars"
+    countOfSeries = len(arrayOfMetAndDataTouples)
+    filterString = ""
+    for i in range(countOfSeries):
+        filterOutputLabel = filterOutputLabel + str (i)
+        filterString = filterString + getDrawSingleSeriesBars (arrayOfMetAndDataTouples[i][0], arrayOfMetAndDataTouples[i][1])
+        if i < (countOfSeries - 1) :
+            filterString = filterString + "[" + filterOutputLabel + "];[" + filterOutputLabel + "]"
+    
+    params.append(filterString)
     params = params + ["-frames:v", "1"]
+
+    return params
+
+
+
+if __name__ == "__main__":
+    meta = {"bottomX" : 30, "bottomY" : 640, "width" : 50, "spacing" : 80, "maxHeight" : 500, "color" : "#ff0000", "labelColor" : "#ffffff", "name" : "Average" }
+    meta2 = {"bottomX" : 90, "bottomY" : 640, "width" : 50, "spacing" : 80, "maxHeight" : 500, "color" : "#0000ff", "labelColor" : "#ffffff", "name" : "One percent" }
+    
+    params = getDrawMultiSeriesBars ([( meta , [37,43,58]) , ( meta2 , [13,20,42])])
     params.append ("out.png")
+    
     subprocess.run(params)
     print (params)
