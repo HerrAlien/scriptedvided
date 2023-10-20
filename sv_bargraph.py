@@ -67,7 +67,7 @@ def getDrawSingleSeriesBars (seriesMetaData, values):
     spacing = seriesMetaData["spacing"]
     maxHeight = seriesMetaData["maxHeight"]
     color = seriesMetaData["color"]
-    labelColor = seriesMetaData["labelColor"]
+    labelColor = sv_utils.dictValue(seriesMetaData, "labelColor", "#ffffff")
     name = seriesMetaData["name"]
     scale = seriesMetaData["scale"]
     
@@ -105,13 +105,19 @@ def getDrawSingleSeriesBars (seriesMetaData, values):
             
     return cmd
 
-def getDrawMultiSeriesBars (arrayOfMetAndDataTouples, defaultCommonOptions = {}):
+def getDrawMultiSeriesBarsFilterString (arrayOfMetAndDataTouples, defaultCommonOptions = {}):
     maxes = []
     for dataAndMeta in arrayOfMetAndDataTouples:
         maxes.append(max(dataAndMeta[1]))
+
     maxOfMaxes = float(max(maxes))
     for dataAndMeta in arrayOfMetAndDataTouples:
         dataAndMeta[0]["scale"] = max(dataAndMeta[1]) / maxOfMaxes;
+
+    # the other from defaults
+    for dataAndMeta in arrayOfMetAndDataTouples:
+        for metakey in ["bottomY", "width", "spacing", "maxHeight", "labelColor"]:
+            dataAndMeta[0][metakey] = sv_utils.dictValue (dataAndMeta[0], metakey, sv_utils.dictValue (defaultCommonOptions, metakey, None))
 
     filterOutputLabel = "getDrawMultiSeriesBars"
     countOfSeries = len(arrayOfMetAndDataTouples)
@@ -127,14 +133,14 @@ def getDrawMultiSeriesBars (arrayOfMetAndDataTouples, defaultCommonOptions = {})
 
 
 if __name__ == "__main__":
-    meta = {"bottomX" : 30, "bottomY" : 640, "width" : 50, "spacing" : 80, "maxHeight" : 500, "color" : "#ff0000", "labelColor" : "#ffffff", "name" : "Average" }
-    meta2 = {"bottomX" : 90, "bottomY" : 640, "width" : 50, "spacing" : 80, "maxHeight" : 500, "color" : "#0000ff", "labelColor" : "#ffffff", "name" : "One percent" }
+    meta = {"bottomX" : 30, "color" : "#ff0000", "name" : "Average" }
+    meta2 = {"bottomX" : 90, "color" : "#0000ff", "name" : "One percent" }
     
     params = getDefaultGraphInputArgs()
     params.append ("-filter_complex")
 
 
-    params.append(getDrawMultiSeriesBars ([( meta , [37,43,58]) , ( meta2 , [13,20,42])]))
+    params.append(getDrawMultiSeriesBarsFilterString ([( meta , [37,43,58]) , ( meta2 , [13,20,42])], {"bottomY" : 640, "width" : 50, "spacing" : 80, "maxHeight" : 500, "labelColor" : "#ffffff",} ))
 
     params = params + ["-frames:v", "1"]
 
