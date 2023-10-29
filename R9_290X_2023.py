@@ -42,10 +42,10 @@ Music provided by Audio Library Plus
 Watch: https://www.youtube.com/watch?v=16eNerPDIsU&t=0s
 Free Download / Stream: https://alplus.io/guide-you-home
 
-Iceberg Tech's review of UHD 730: https://www.youtube.com/watch?v=5xvRPxVMQ1k
-Our 2022 review of the R7 250: https://youtu.be/61OYLI9ym3s
+Our 2022 review of the R9 290X: https://youtu.be/XrdwJSfOHOs
+Recapping the R9 290X: https://youtu.be/D313YKF-Hsw
 
-TechPowerup entry: https://www.techpowerup.com/gpu-specs/asus-hd-7750.b614
+TechPowerup entry: https://www.techpowerup.com/gpu-specs/sapphire-r9-290x.b2458
 ''', \
 "tags" : "AMD,ATI,Radeon,R9 290X,Hawaii,GCN,GCN2,GCN 2",\
 "language" : "EN", \
@@ -78,7 +78,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : ("00:28", "00:43" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file": "R9_290X_coolerWeight-converted.mp4"}\
+"video" : {"file": "R9_290X_coolerWeight-converted.mp4", "rotation" : 90}\
 })
 
 configs["episodes"].append(\
@@ -91,6 +91,12 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The test system",\
 "audio" : {"timestamps" : ("00:55.5", "01:12" ), "volume" : 0.999, "padding" : 0.25 },\
+"overlay" : { \
+    "text" : ["'Z230 workstation from HP'",\
+              "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
+              "'RAM\: 32GB DDR3 at 1600 MHz, dual channel'",\
+    ]\
+}, \
 "video" : {"file" : "Z230_closed.mp4", "rotation" : 180}\
 })
 
@@ -213,9 +219,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("05:36", "06:08" ), "padding" : 0.25  },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1920x1080, performance mode', , ), \
-              scriptedvided.r6sText('1600x900, performance mode', , ),\
-              scriptedvided.r6sText('1280x720, performance mode', , )]\
+              scriptedvided.r6sText('1920x1080, performance mode', 124, 66 ), \
+              scriptedvided.r6sText('1600x900, performance mode', 131, 67 ),\
+              scriptedvided.r6sText('1280x720, performance mode', 137, 68)]\
 }, \
 })
 
@@ -266,7 +272,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "HiRez Studios trio (Paladins, Realm Royale, Rogue Company)",\
-"audio" : {"timestamps" : ("07:59", "08:08.75" ), "volume" : 0.999 , "padding" : 0.25  },\
+"audio" : {"timestamps" : ("07:59", "08:10" ), "volume" : 0.999 , "padding" : 0.25  },\
 "video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 })
 
@@ -275,7 +281,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Paladins",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("08:08.75", "08:17.2" ), "padding" : 0.25  },\
+"audio" : {"timestamps" : ("08:10", "08:17.2" ), "padding" : 0.25  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, high settings", \
@@ -393,7 +399,7 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][28], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][13], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][29], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][30], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][31], configs)

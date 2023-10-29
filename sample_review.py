@@ -91,6 +91,12 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The test system",\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.25 },\
+"overlay" : { \
+    "text" : ["'Z230 workstation from HP'",\
+              "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
+              "'RAM\: 32GB DDR3 at 1600 MHz, dual channel'",\
+    ]\
+}, \
 "video" : {"file" : "Z230_closed.mp4", "rotation" : 180}\
 })
 
