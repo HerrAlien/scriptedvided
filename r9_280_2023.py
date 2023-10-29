@@ -386,7 +386,7 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][27], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][25], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][29], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][30], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][31], configs)

@@ -1,15 +1,15 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "r7_260X.ogg",\
-"mediaFolder" : "F:\\Videos\\r7_260X", \
+configs = { "defaultAudioFile" : "R9_290X_2023.ogg",\
+"mediaFolder" : "F:\\Videos\\R9_290X_2023", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\r7_260X\\Benchmark_R7_260X.txt",\
-"outputFolder" : "F:\\Videos\\r7_260X\\output", \
-"outputFile" : "r7_260X.mp4", \
+"benchmarkFile" : "F:\\Videos\\R9_290X_2023\\Benchmark_R9_290X_2023.txt",\
+"outputFolder" : "F:\\Videos\\R9_290X_2023\\output", \
+"outputFile" : "R9_290X_2023.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Why re-reviewing the R7 260", "until" : "Alien: Isolation"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "I got lucky with my 10 USD", "until" : "Alien: Isolation"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
 "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Control"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
@@ -24,7 +24,7 @@ configs = { "defaultAudioFile" : "r7_260X.ogg",\
 ], "volume" : 0.04 },\
 "episodes" : [],\
 "youtube" : {"title" : "Cheapest DX12 Radeon video card tested in 2023", \
-"description" : '''In this video we're checking out the R7 260 (AKA R7 360). 
+"description" : '''In this video we're checking out the R9 290X. 
 As usual, we're using the Z230 workstation with an i7 4770 equivalent CPU and 32 GB of DDR3 running in dual channel at 1600MHz.''',\
 "links" : '''
 Track: Bliss Of Heaven — SOMM [Audio Library Release]
@@ -47,7 +47,7 @@ Our 2022 review of the R7 250: https://youtu.be/61OYLI9ym3s
 
 TechPowerup entry: https://www.techpowerup.com/gpu-specs/asus-hd-7750.b614
 ''', \
-"tags" : "AMD,ATI,Radeon,HD7750,HD 7750,R7 250E,R7 250 512SP,Cape Verde,GCN,GCN1,GCN 1",\
+"tags" : "AMD,ATI,Radeon,R9 290X,Hawaii,GCN,GCN2,GCN 2",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -64,29 +64,28 @@ TechPowerup entry: https://www.techpowerup.com/gpu-specs/asus-hd-7750.b614
 ####################### intro ###############################
 
 configs["episodes"].append(\
-{ "title": "R7 260X: a change of plans",\
+{ "title": "I got lucky with my 10 USD",\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file": "breel_r7_260_outside.mp4"}\
+"video" : {"file": "breel_r9_290x_outside.mp4"}\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file" : "R7_260_Heaven_GPUZ.mp4"}\
+"video" : {"file" : "R9_290X_noFanCurve_idle.mp4"}\
 })
-
-configs["episodes"].append(\
-{ "title": "DX 12 support",\
-"isChapter" : False, \
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file": "stock_re4demo_choppyExceptCutscenes.mp4", "start" : "03:07"}\
-})
-
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.25 },\
-"video" : {"file": "breel_hd7770_attic.mp4", "start" : "00:10"}\
+"video" : {"file": "R9_290X_coolerWeight-converted.mp4"}\
+})
+
+configs["episodes"].append(\
+{ "title": "fan curve",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.25 },\
+"video" : {"file": "custom_fan_curve.mp4"}\
 })
 
 configs["episodes"].append(\
@@ -124,32 +123,37 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "CoD Warzone",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.25  },\
+{ "title": "Resident Evil 4 (Remake)",\
+"audio" : {"timestamps" : ("10:12", "10:46" ), "padding" : 0.25  },\
+"video" : {"file": "stock_re4demo_choppyExceptCutscenes.mp4", "start" : "03:07"},\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, low settings", \
-    }\
+    "text" : ["'Resident Evil 4 (Remake)'",\
+              scriptedvided.r6sText('1920x1080, low settings', , ),\
+              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+    ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Battlefield V",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.25  },\
+"audio" : {"timestamps" : ("02:35", "03:14" ), "padding" : 0.25  },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, low settings", \
-    }\
+    "text" : ["'Battlefield V'",\
+              scriptedvided.r6sText('1920x1080, low settings', , ),\
+              scriptedvided.r6sText('1600x900, low settings', , ),\
+              scriptedvided.r6sText('1280x720, low settings', , ),\
+    ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.25  },\
+"audio" : {"timestamps" : ("03:14", "03:39" ), "padding" : 0.25  },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, low settings", \
-    }\
+    "text" : ["'Control'",\
+              scriptedvided.r6sText('1920x1080, low settings', , ),\
+              scriptedvided.r6sText('1280x720, low settings', , ),\
+    ]\
 }, \
 })
 
@@ -176,12 +180,14 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Counter Strike: Global Offensive",\
+{ "title": "Counter-Strike 2",\
 "audio" : {"timestamps" : ("", "" ), "padding" : 0.25  },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1920x1080, low settings", \
-    }\
+    "text" : ["'Counter-Strike 2'",\
+              scriptedvided.r6sText('1920x1080, low settings', , ),\
+              scriptedvided.r6sText('1600x900, low settings', , ),\
+              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+    ]\
 }, \
 })
 
@@ -247,16 +253,6 @@ configs["episodes"].append(\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
-    }\
-}, \
-})
-
-configs["episodes"].append(\
-{ "title": "Genshin Impact",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.25  },\
-"overlay" : { \
-    "benchmark" : { \
-        "settings" : "1920x1080, low settings, 1.0 render scale", \
     }\
 }, \
 })
@@ -333,7 +329,21 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "bottlenecks on either side are avoided",\
+{ "title": "repair segment",\
+"isChapter" : False,\
+"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.25  },\
+"video" : {"file" : ""}\
+})
+
+configs["episodes"].append(\
+{ "title": "more deffective on OLX",\
+"isChapter" : False,\
+"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.25  },\
+"video" : {"file" : ""}\
+})
+
+configs["episodes"].append(\
+{ "title": "working condition on OLX",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.25  },\
 "video" : {"file" : ""}\
@@ -341,22 +351,14 @@ configs["episodes"].append(\
 
 
 configs["episodes"].append(\
-{ "title": "pricing",\
+{ "title": "how about other cards",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.25  },\
 "video" : {"file" : ""}\
 })
 
 configs["episodes"].append(\
-{ "title": "olx searches",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.25  },\
-"video" : {"file" : ""}\
-})
-
-
-configs["episodes"].append(\
-{ "title": "R7 260X",\
+{ "title": "GT 1030",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.25  },\
 "video" : {"file" : ""}\
