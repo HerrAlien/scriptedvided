@@ -94,6 +94,12 @@ configs["episodes"].append(\
 { "title": "Z230",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("00:57", "01:13" ), "volume" : 0.999, "padAudio" : 0.25 },\
+"overlay" : { \
+    "text" : ["'Z230 workstation from HP'",\
+              "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
+              "'RAM\: 32GB DDR3 at 1600 MHz, dual channel'",\
+    ]\
+}, \
 "video" : {"file" : "Z230_closed.mp4" , "rotation" : 180}\
 })
 
@@ -154,7 +160,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("04:22.5", "04.29" ), "volume" : 0.999, "padAudio" : 0.25 },\
+"audio" : {"timestamps" : ("04:22.5", "04:29" ), "volume" : 0.999, "padAudio" : 0.25 },\
 "video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:00", "rotation" : 90}\
 })
 
