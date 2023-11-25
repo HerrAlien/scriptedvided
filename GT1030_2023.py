@@ -6,10 +6,10 @@ configs = { "defaultAudioFile" : "GT1030_2023.ogg",\
 "benchmarkFile" : "F:\\Videos\\GT1030_2023\\Benchmark_GT_1030_2023.txt",\
 "outputFolder" : "F:\\Videos\\GT1030_2023\\output", \
 "outputFile" : "GT1030_2023.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "I got lucky with my 10 USD - again", "until" : "Alien: Isolation"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "What 30W TDP can get you", "until" : "Alien: Isolation"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
 "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Control"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
@@ -23,8 +23,8 @@ configs = { "defaultAudioFile" : "GT1030_2023.ogg",\
 {"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : { "title": "Conclusions", "until" : "Blooper" }}, \
 ], "volume" : 0.04 },\
 "episodes" : [],\
-"youtube" : {"title" : "Cheapest DX12 Radeon video card tested in 2023", \
-"description" : '''In this video we're checking out the R9 290X. 
+"youtube" : {"title" : "Playing games on the little Pascal that could (GT 1030)", \
+"description" : '''In this video we're testing the 30W TDP tiny GT 1030.
 As usual, we're using the Z230 workstation with an i7 4770 equivalent CPU and 32 GB of DDR3 running in dual channel at 1600MHz.''',\
 "links" : '''
 Track: Bliss Of Heaven — SOMM [Audio Library Release]
@@ -42,12 +42,15 @@ Music provided by Audio Library Plus
 Watch: https://www.youtube.com/watch?v=16eNerPDIsU&t=0s
 Free Download / Stream: https://alplus.io/guide-you-home
 
-Iceberg Tech's review of UHD 730: https://www.youtube.com/watch?v=5xvRPxVMQ1k
-Our 2022 review of the R7 250: https://youtu.be/61OYLI9ym3s
+Previous reviews for the GPU:
+KFA2 version (GDDR5): https://youtu.be/_E-pguX_fJc
+Asus Phoenix (DDR4 variant): https://youtu.be/gI98DutuIis
 
-TechPowerup entry: https://www.techpowerup.com/gpu-specs/asus-hd-7750.b614
+Techpowerup entry: https://www.techpowerup.com/gpu-specs/asus-gt-1030.b5707
+Office PC and GT 1030 (Tech Yes City): https://www.youtube.com/watch?v=yP4z2Vdmf1o
+
 ''', \
-"tags" : "AMD,ATI,Radeon,R9 290X,Hawaii,GCN,GCN2,GCN 2",\
+"tags" : "NVidia,Pascal,GT1030,GT 1030,GP108",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -91,7 +94,7 @@ configs["episodes"].append(\
               "'Warframe\: 65C (40C delta over ambient)'",\
     ]\
 }, \
-"video" : {"file": "AsusGt1030LP_cooling.mp4"}\
+"video" : {"file": "AsusGt1030LP_cooling.mp4", "rotation" : 90}\
 })
 
 configs["episodes"].append(\
