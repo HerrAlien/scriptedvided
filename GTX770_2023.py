@@ -1,15 +1,15 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "R9_290X_2023.ogg",\
-"mediaFolder" : "F:\\Videos\\R9_290X_2023", \
+configs = { "defaultAudioFile" : "GTX770_2023.ogg",\
+"mediaFolder" : "F:\\Videos\\GTX770_2023", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\R9_290X_2023\\Benchmark_R9_290X_2023.txt",\
-"outputFolder" : "F:\\Videos\\R9_290X_2023\\output", \
-"outputFile" : "R9_290X_2023.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"benchmarkFile" : "F:\\Videos\\GTX770_2023\\Benchmark_GTX770_2023.txt",\
+"outputFolder" : "F:\\Videos\\GTX770_2023\\output", \
+"outputFile" : "GTX770_2023.mp4", \
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "I got lucky with my 10 USD", "until" : "Alien: Isolation"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "The shocking Kepler", "until" : "Alien: Isolation"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
 "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Control"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
@@ -64,29 +64,30 @@ TechPowerup entry: https://www.techpowerup.com/gpu-specs/asus-hd-7750.b614
 ####################### intro ###############################
 
 configs["episodes"].append(\
-{ "title": "I got lucky with my 10 USD",\
+{ "title": "The shocking Kepler",\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": "breel_r9_290x_outside.mp4"}\
+"video" : {"file": "breel_GTX770_outside.mp4"}\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file" : "R9_290X_noFanCurve_idle.mp4"}\
+"video" : {"file" : "gtx770_gpuz.mp4"}\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": "R9_290X_coolerWeight-converted.mp4"}\
+"video" : {"file": "gtx770_cooling.mp4"}\
 })
 
 configs["episodes"].append(\
-{ "title": "fan curve",\
+{ "title": "Temperatures",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": "custom_fan_curve.mp4"}\
+"video" : {"file": "gtx770_W_arframe_temps.mp4" , "start" : "02:00"}\
 })
+
 
 configs["episodes"].append(\
 { "title": "The test system",\
@@ -331,57 +332,30 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "breel_GTX770_R9_280_attic.mp4"}\
 })
 
 configs["episodes"].append(\
-{ "title": "repair segment",\
+{ "title": "r9 280 recommended",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
-})
-
-configs["episodes"].append(\
-{ "title": "more deffective on OLX",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
-})
-
-configs["episodes"].append(\
-{ "title": "working condition on OLX",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "breel_r9_280_outside.mp4"}\
 })
 
 
-configs["episodes"].append(\
-{ "title": "how about other cards",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
-})
 
 configs["episodes"].append(\
-{ "title": "GT 1030",\
+{ "title": "GTX960",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "breel_GTX770_GTX960_attic.mp4", "start" : "00:18"}\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
-})
-
-configs["episodes"].append(\
-{ "title": "Blooper",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "breel_GTX770_outside.mp4"}\
 })
 
 

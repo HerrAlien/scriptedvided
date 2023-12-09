@@ -133,7 +133,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusion",\
 "audio" : {"timestamps" : ("03:08", "03:17.4" ), "volume" : 0.999, "padAudio" : 0.25 },\
-"video" : {"file" : "breel_autumn_misfits_GT1030_RX460_GTX770.mp4"},\
+"video" : {"file" : "breel_autumn_misfits_GT1030_RX460_GTX770.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
