@@ -91,7 +91,7 @@ configs["episodes"].append(\
 { "title": "Temperatures",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("00:56", "01:18.2" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": "gtx770_W_arframe_temps.mp4" , "start" : "02:00"}\
+"video" : {"file": "gtx770_W_arframe_temps.mp4" , "start" : "02:00"},\
 "overlay" : { \
     "text" : ["'Thermals'",\
               "'Heaven\: 74C (49C delta over ambient)'",\
@@ -257,7 +257,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Splitgate",\
-"audio" : {"timestamps" : ("06:49.8", "07:29.3" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("06:49.8", "07:09.3" ), "padding" : 0.1  },\
 "video" : "stock_Splitgate_2023_06_17.mp4",\
 "overlay" : { \
     "text" : ["'Splitgate'",\
@@ -269,7 +269,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Valorant",\
-"audio" : {"timestamps" : ("07:29.3", "07:30" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("07:09.3", "07:30" ), "padding" : 0.1  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \

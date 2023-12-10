@@ -1,15 +1,15 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "R9_290X_2023.ogg",\
-"mediaFolder" : "F:\\Videos\\R9_290X_2023", \
+configs = { "defaultAudioFile" : "gtx_960_2023.ogg",\
+"mediaFolder" : "F:\\Videos\\GTX960_2023", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\R9_290X_2023\\Benchmark_R9_290X_2023.txt",\
-"outputFolder" : "F:\\Videos\\R9_290X_2023\\output", \
-"outputFile" : "R9_290X_2023.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"benchmarkFile" : "F:\\Videos\\GTX960_2023\\Benchmark_GTX960_2023.txt",\
+"outputFolder" : "F:\\Videos\\GTX960_2023\\output", \
+"outputFile" : "GTX960_2023.mp4", \
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "I got lucky with my 10 USD", "until" : "Alien: Isolation"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "MSI Gaming 4G", "until" : "Alien: Isolation"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
 "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Control"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
@@ -47,7 +47,7 @@ Our 2022 review of the R7 250: https://youtu.be/61OYLI9ym3s
 
 TechPowerup entry: https://www.techpowerup.com/gpu-specs/asus-hd-7750.b614
 ''', \
-"tags" : "AMD,ATI,Radeon,R9 290X,Hawaii,GCN,GCN2,GCN 2",\
+"tags" : "NVidia,Maxwell,GeForce,GTX,GTX960,GTX 960",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -64,33 +64,55 @@ TechPowerup entry: https://www.techpowerup.com/gpu-specs/asus-hd-7750.b614
 ####################### intro ###############################
 
 configs["episodes"].append(\
-{ "title": "I got lucky with my 10 USD",\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": "breel_r9_290x_outside.mp4"}\
+{ "title": "MSI Gaming 4G",\
+"audio" : {"timestamps" : ("00:00", "00:12" ), "volume" : 0.999, "padding" : 0.1 },\
+"video" : {"file": "breel_autumn_GTX960_4G_MSI.mp4"}\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file" : "R9_290X_noFanCurve_idle.mp4"}\
+"audio" : {"timestamps" : ("00:12", "00:39.7" ), "volume" : 0.999, "padding" : 0.1 },\
+"video" : {"file" : "gtx960_4G_GPUZ.mp4"}\
 })
+
+configs["episodes"].append(\
+{ "title": "TDP",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("00:39.7", "00:54.1" ), "volume" : 0.999, "padding" : 0.1 },\
+"video" : {"file": "gtx960_MSI_cooling_better.mp4", "start" : "00:05"}\
+})
+
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": "R9_290X_coolerWeight-converted.mp4"}\
+"audio" : {"timestamps" : ("00:54.1", "01:14.15" ), "volume" : 0.999, "padding" : 0.1 },\
+"video" : {"file": "msi_gtx960_cooling.mp4"}\
 })
 
 configs["episodes"].append(\
-{ "title": "fan curve",\
+{ "title": "Backplate",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": "custom_fan_curve.mp4"}\
+"audio" : {"timestamps" : ("01:14.15", "01:23.5" ), "volume" : 0.999, "padding" : 0.1 },\
+"video" : {"file": "gtx960_MSI_backplate.mp4"}\
+})
+
+
+configs["episodes"].append(\
+{ "title": "Temperatures",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("01:23.5", "01:41.3" ), "volume" : 0.999, "padding" : 0.1 },\
+"overlay" : { \
+    "text" : ["'Thermals'",\
+              "'Default fan curve\: 65C (43C delta over ambient)'",\
+              "'Fans at MAX\: 53C (31C delta over ambient)'",\
+    ]\
+}, \
+"video" : {"file": "gtx960_4G_GPUZ.mp4"}\
 })
 
 configs["episodes"].append(\
 { "title": "The test system",\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padding" : 0.1 },\
+"audio" : {"timestamps" : ("01:41.3", "02:04.6" ), "volume" : 0.999, "padding" : 0.1 },\
 "overlay" : { \
     "text" : ["'Z230 workstation from HP'",\
               "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
@@ -107,7 +129,7 @@ configs["episodes"].append(\
 ####################### gaming section ###############################
 configs["episodes"].append(\
 { "title": "Alien: Isolation",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("02:04.6", "02:26.4" ), "padding" : 0.1  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, ultra settings", \
@@ -118,66 +140,66 @@ configs["episodes"].append(\
 # this needs a longer stock video
 configs["episodes"].append(\
 { "title": "Apex Legends",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("02:26.4", "02:53" ), "padding" : 0.1  },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1600x900, low settings', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 106, 72),\
+              scriptedvided.r6sText('1600x900, low settings', 125, 86 ),\
+              scriptedvided.r6sText('1280x720, low settings', 139, 103 ),\
     ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Resident Evil 4 (Remake)",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1 },\
+"audio" : {"timestamps" : ("02:53", "03:26" ), "padding" : 0.1 },\
 "video" : {"file": "stock_re4demo_choppyExceptCutscenes.mp4", "start" : "03:07"},\
 "overlay" : { \
     "text" : ["'Resident Evil 4 (Remake)'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 41, 28),\
+              scriptedvided.r6sText('1280x720, low settings', 63,  37),\
     ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Battlefield V",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1 },\
+"audio" : {"timestamps" : ("03:26", "03:48" ), "padding" : 0.1 },\
 "overlay" : { \
     "text" : ["'Battlefield V'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1600x900, low settings', , ),\
-              scriptedvided.r6sText('1280x720, low settings', , ),\
+              scriptedvided.r6sText('1920x1080, low settings', 58, 48),\
+              scriptedvided.r6sText('1600x900, low settings', 69, 56),\
+              scriptedvided.r6sText('1280x720, low settings', 85, 67),\
     ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1 },\
+"audio" : {"timestamps" : ("03:48", "04:09.8" ), "padding" : 0.1 },\
 "overlay" : { \
     "text" : ["'Control'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1280x720, low settings', , ),\
+              scriptedvided.r6sText('1920x1080, low settings', 57, 49),\
+              scriptedvided.r6sText('1280x720, low settings', 111, 69),\
     ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("04:09.8", "04:31.3" ), "padding" : 0.1  },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', , ), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale', , ),\
-              scriptedvided.r6sText('1920x1080, low settings, 50% render scale', , ),\
-              scriptedvided.r6sText('1280x720, low settings, 50% render scale', , )]\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 122, 99), \
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 196, 134),\
+              scriptedvided.r6sText('1920x1080, low settings, 50% render scale', 157, 107),\
+              scriptedvided.r6sText('1280x720, low settings, 50% render scale', 214, 144)]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Grand Theft Auto V",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("04:31.3", "04:48.5" ), "padding" : 0.1  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -187,19 +209,19 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("04:48.5", "05:22.3" ), "padding" : 0.1  },\
 "overlay" : { \
     "text" : ["'Counter-Strike 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1600x900, low settings', , ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 113, 64),\
+              scriptedvided.r6sText('1600x900, low settings', 126 , 74),\
+              scriptedvided.r6sText('1280x720, low settings', 146, 84 ),\
     ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("05:22.3", "05:36.2" ), "padding" : 0.1  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -209,31 +231,31 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("05:36.2", "06:01" ), "padding" : 0.1  },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1920x1080, performance mode', , ), \
-              scriptedvided.r6sText('1600x900, performance mode', , ),\
-              scriptedvided.r6sText('1280x720, performance mode', , )]\
+              scriptedvided.r6sText('1920x1080, performance mode', 125, 70), \
+              scriptedvided.r6sText('1600x900, performance mode', 136, 75),\
+              scriptedvided.r6sText('1280x720, performance mode', 144, 80)]\
 }, \
 })
 
 
 configs["episodes"].append(\
 { "title": "Overwatch 2",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("06:01", "06:22.5" ), "padding" : 0.1  },\
 "overlay" : { \
     "text" : ["'Overwatch 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', ,  ),\
-              scriptedvided.r6sText('1600x900, low settings', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 196,  153),\
+              scriptedvided.r6sText('1600x900, low settings', 233, 182),\
+              scriptedvided.r6sText('1280x720, low settings', 360, 267 ),\
     ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Rocket League",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("06:22.5", "06:39.7" ), "padding" : 0.1  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings, 100% render scale", \
@@ -243,18 +265,18 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Splitgate",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("06:39.7", "06:58.2" ), "padding" : 0.1  },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', ,  ),\
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale', ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 168,  15),\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 232, 83 ),\
     ]\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Valorant",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("06:58.2", "07:17.5" ), "padding" : 0.1  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -264,7 +286,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "HiRez Studios trio (Paladins, Realm Royale, Rogue Company)",\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
+"audio" : {"timestamps" : ("07:17.5", "07:26.4" ), "volume" : 0.999 , "padding" : 0.1  },\
 "video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 })
 
@@ -273,7 +295,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Paladins",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("07:26.4", "07:33.2" ), "padding" : 0.1  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, high settings", \
@@ -284,7 +306,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Realm Royale",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("07:33.2", "07:40.7" ), "padding" : 0.1  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, high settings", \
@@ -295,7 +317,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Rogue Company",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("07:40.7", "07:49.5" ), "padding" : 0.1  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -305,7 +327,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "World of Tanks Blitz",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("07:49.5", "08:13" ), "padding" : 0.1  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, high settings", \
@@ -315,7 +337,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : ("", "" ), "padding" : 0.1  },\
+"audio" : {"timestamps" : ("08:13", "08:30.3" ), "padding" : 0.1  },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -329,60 +351,24 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
-})
-
-configs["episodes"].append(\
-{ "title": "repair segment",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
-})
-
-configs["episodes"].append(\
-{ "title": "more deffective on OLX",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
-})
-
-configs["episodes"].append(\
-{ "title": "working condition on OLX",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"audio" : {"timestamps" : ("08:30.3", "08:50.1" ), "volume" : 0.999 , "padding" : 0.1  },\
+"video" : {"file" : "gtx969_R9_280_OLX.mkv"}\
 })
 
 
 configs["episodes"].append(\
-{ "title": "how about other cards",\
+{ "title": "960 all the way",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"audio" : {"timestamps" : ("08:50.1", "09:05.5" ), "volume" : 0.999 , "padding" : 0.1  },\
+"video" : {"file" : "breel_gtx960_MSI_attic.mp4"}\
 })
 
 configs["episodes"].append(\
-{ "title": "GT 1030",\
+{ "title": "960 will be back and bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"audio" : {"timestamps" : ("09:05.5", "09:18.5" ), "volume" : 0.999 , "padding" : 0.1  },\
+"video" : {"file" : "breel_autumn_GTX960_4G_MSI.mp4"}\
 })
-
-configs["episodes"].append(\
-{ "title": "bye",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
-})
-
-configs["episodes"].append(\
-{ "title": "Blooper",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
-})
-
 
 ##configs["episodes"].append(\
 ##{ "title": "Blooper",\
