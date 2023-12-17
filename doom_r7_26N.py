@@ -8,7 +8,7 @@ configs = { "defaultAudioFile" : "Doom_R7_26N.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Good morning, Harran", "until" : "1920x1080 results"}}, \
+"timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "DOOM, 3 GPUs and a test system", "until" : "1920x1080 results"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
 "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1920x1080 results", "until" : "Conclusion"}}, \
 {"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : { "title": "Conclusion", "until" : "Blooper" }}, \
