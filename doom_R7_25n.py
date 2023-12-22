@@ -7,12 +7,10 @@ configs = { "defaultAudioFile" : "Doom_R7_25N.ogg",\
 "outputFile" : "Doom_r7_25N.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Going even lower in performance", "until" : "1920x1080 results"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1920x1080 results", "until" : "Is this the end for Cape Verde?"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The trick - explained", "until" : "Conclusion"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Going even lower in performance", "until" : "1920x1080 results"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1920x1080 results", "until" : "Is this the end for Cape Verde?"}}, \
+{"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Is this the end for Cape Verde?", "until" : "Introduce the trick"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The trick - explained", "until" : "Conclusion"}}, \
 {"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : { "title": "Conclusion", "until" : "Blooper" }}, \
 ], "volume" : 0.06 },\
 "episodes" : [],\
