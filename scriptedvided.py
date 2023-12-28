@@ -582,6 +582,7 @@ def aliases(inputName):
         ["Resident Evil 4 (Remake)", "re4demo.exe", "re4demo"],\
         ["PUBG", "TslGame.exe", "TslGame"],\
         ["CS2", "Counter-Strike 2" , "cs2.exe"],\
+        ["The Finals", "Finals" , "Discovery.exe"],\
     ]
 
     if inputName is None:
