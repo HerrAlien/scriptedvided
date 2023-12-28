@@ -61,14 +61,14 @@ configs["episodes"].append(\
 { "title": "Family",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("00:20.3", "00:32.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"00:00"},\
+"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"00:00", "rotation" : 90},\
 })
 
 configs["episodes"].append(\
 { "title": "GTX 1050Ti",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("00:32.3", "00:44.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"02:30"},\
+"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"02:30" , "rotation" : 90},\
 })
 
 # 7770 - 51, 7750 - 01:40 
@@ -77,21 +77,21 @@ configs["episodes"].append(\
 { "title": "GTX 960",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("00:44.2", "00:55.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"01:59"},\
+"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"01:59" , "rotation" : 90},\
 })
 
 configs["episodes"].append(\
 { "title": "R9 280",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("00:55.6", "01:04.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"01:24"},\
+"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"01:24" , "rotation" : 90},\
 })
 
 configs["episodes"].append(\
 { "title": "GTX 770",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("01:04.7", "01:15" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"00:40"},\
+"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"00:40" , "rotation" : 90},\
 })
 
 configs["episodes"].append(\
@@ -180,7 +180,7 @@ configs["episodes"].append(\
 { "title": "Family again and bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("05:39.9", "05:53" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"00:00"},\
+"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"00:00" , "rotation" : 90},\
 })
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][15], configs)
