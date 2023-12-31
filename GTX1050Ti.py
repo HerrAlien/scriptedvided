@@ -69,7 +69,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : ("00:16.5", "00:29.3" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": "GTX1050Ti_Heaven_GPUz_Temps.mp4"}\
+"video" : {"file": "GTX1050Ti_Heaven_GPUz_Temps.mp4", "start" : "00:00"}\
 })
 
 configs["episodes"].append(\
@@ -216,7 +216,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : ("06:00.1", "06:39.6" ), "padding" : 0.1  },\
-"video" : {"stock_FortniteClient-Win_2023_12_24.mp4" , "start" : "-01:12"},\
+"video" : {"file" : "stock_FortniteClient-Win_2023_12_24.mp4" , "start" : "19:11"},\
 "overlay" : { \
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText('1920x1080, performance mode', 140, 81 ), \
@@ -262,7 +262,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Valorant",\
 "audio" : {"timestamps" : ("08:05.6", "08:31.5" ), "padding" : 0.1  },\
-"video" : {"V_A_LORANT_noLaunch.mp4"},\
+"video" : "V_A_LORANT_noLaunch.mp4",\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -356,7 +356,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "1050ti list of issues.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : {"file" : "gtx1050Ti_betterBoilingMlccMemory.mp4"}\
+"video" : {"file" : "gtx1050Ti_betterBoilingMlccMemory.mp4", "start" : "00:00"}\
 })
 
 configs["episodes"].append(\
