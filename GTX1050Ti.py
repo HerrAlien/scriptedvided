@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "GTX1050Ti.ogg",\
+configs = { "defaultAudioFile" : "GTX1050Ti2.ogg",\
 "mediaFolder" : "F:\\Videos\\GTX1050Ti", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "F:\\Videos\\GTX1050Ti\\Benchmark_GTX_1050_Ti.txt",\
@@ -373,8 +373,8 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][28], configs)
-#scriptedvided.makeVideoForEpisode(configs["episodes"][29], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][10], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][30], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][31], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][32], configs)
