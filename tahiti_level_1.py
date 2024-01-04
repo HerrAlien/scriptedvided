@@ -51,16 +51,19 @@ configs["episodes"].append(\
 "video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"00:00", "rotation" : 90},\
 })
 
-# FC6 footage + png overlay?
+# meeds better video, or maybe break it up
 configs["episodes"].append(\
 { "title": "Value - the metric to choose by",\
-"audio" : {"timestamps" : ("00:19.7", "00:42.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start":"00:00", "rotation" : 90},\
-})
+"audio" : {"timestamps" : ("00:19.7", "00:50.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "00:22"},\
+"overlay" : { \
+    "image" : {"file" : "definition of performance.png", "chromaColor" : "0x00FF00"}\
+}})
 
+#this is not the Z230
 configs["episodes"].append(\
 { "title": "Z230",\
-"audio" : {"timestamps" : ("00:42.7" , "00:50.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("00:50.5", "01:01.75" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Z230 workstation from HP'",\
               "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
@@ -74,8 +77,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "settings",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("00:50.5", "01:11" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "00:22"},\
+"audio" : {"timestamps" : ("01:01.75", "01:11" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "01:22"},\
 })
 
 configs["episodes"].append(\
@@ -177,7 +180,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Pricing",\
 "audio" : {"timestamps" : ("04:27.9", "04:48.35" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "olx-search-R9-280-converted.mp4", "start":"00:00", "rotation" : 90},\
+"video" : {"file" : "olx-search-R9-280-converted.mp4", "start":"00:00"},\
 })
 
 configs["episodes"].append(\
