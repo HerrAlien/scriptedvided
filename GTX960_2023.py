@@ -352,7 +352,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : ("08:30.3", "08:50.1" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : "gtx969_R9_280_OLX.mkv"}\
+"video" : {"file" : "gtx960_R9_280_OLX.mkv"}\
 })
 
 
