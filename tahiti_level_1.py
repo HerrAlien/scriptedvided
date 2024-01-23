@@ -164,7 +164,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("03:40.7", "03:58.2" ), "padAudio" : 0.1 },\
 "video" : {"file" : "stock_Finals_2023_12_27_winners.mp4" , "start" : "02:37"},\
 "overlay" : { \
-    "image" : {"file" : "low settings.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "The Finals - 1080, low settings.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 
