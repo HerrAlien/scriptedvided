@@ -54,15 +54,47 @@ configs["episodes"].append(\
 # meeds better video, or maybe break it up
 configs["episodes"].append(\
 { "title": "Value - the metric to choose by",\
-"audio" : {"timestamps" : ("00:19.7", "00:50.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "00:22"},\
+"audio" : {"timestamps" : ("00:19.7", "00:22.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "02:20"},\
+})
+
+# meeds better video, or maybe break it up
+
+configs["episodes"].append(\
+{ "title": "Value - performance",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("00:22.5", "00:25.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "DO_OMEternal_GTX770_VRAM.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "Value - price",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("00:25.4", "00:30.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "olx-search-gtx770-converted.mp4"},\
+})
+
+
+configs["episodes"].append(\
+{ "title": "Value - definition",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("00:30.1", "00:35.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "02:23"},\
 "overlay" : { \
     "image" : {"file" : "definition of performance.png", "chromaColor" : "0x00FF00"}\
 }})
 
+configs["episodes"].append(\
+{ "title": "Value - expected price",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("00:35.8", "00:50.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "02:29"},\
+})
+
+
 #this is not the Z230
 configs["episodes"].append(\
-{ "title": "Z230",\
+{ "title": "Test system and settings",\
 "audio" : {"timestamps" : ("00:50.5", "01:01.75" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Z230 workstation from HP'",\
@@ -153,7 +185,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : ("03:24", "03:40.7" ), "padAudio" : 0.1 },\
-"video" : {"file" : "stock_Fortnite_c5s1.mp4", "start" : "01:00"},\
+"video" : {"file" : "stock_FortniteClient-Win_2023_12_24.mp4", "start" : "08:40"},\
 "overlay" : { \
     "image" : {"file" : "Fortnite - 1080, low settings.png", "chromaColor" : "0x00FF00"}\
 }, \
