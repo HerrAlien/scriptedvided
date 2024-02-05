@@ -9,22 +9,20 @@ configs = { "defaultAudioFile" : "FermigtGT730_2024.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
-"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "History repeats itself", "until" : "Alien: Isolation"}}, \
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "History repeats itself", "until" : "Resident Evil 4 (Remake)"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien: Isolation", "until" : "Control"}}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Resident Evil 4 (Remake)", "until" : "Fortnite"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Control", "until" : "DOTA2"}}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite", "until" : "DOTA2"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "DOTA2", "until" : "Rocket League"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rocket League", "until" : "Rogue Company"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3",\
-"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rogue Company", "until" : "Conclusions"}}, \
-{"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : { "title": "Conclusions", "until" : "Blooper" }}, \
+"timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "DOTA2", "until" : "Conclusions"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3",\
+"timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "htpc card"}}, \
+{"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : { "title": "htpc card", "until" : "Blooper" }}, \
 ], "volume" : 0.04 },\
 "episodes" : [],\
-"youtube" : {"title" : "A card that refused to die (GTX 1050 Ti)", \
-"description" : '''In this video we're using the ''',\
+"youtube" : {"title" : "History repeats itself (Fermi GT 730)", \
+"description" : '''In this video we're using the Fermi GT 730 to point out the frequent bait and switch games played in the GPU market.''',\
 "links" : '''
 Track: Bliss Of Heaven — SOMM [Audio Library Release]
 Music provided by Audio Library Plus
@@ -43,7 +41,7 @@ Free Download / Stream: https://alplus.io/guide-you-home
 
 TechPowerup entry: https://www.techpowerup.com/gpu-specs/msi-gtx-1050-ti-lp.b4033
 ''', \
-"tags" : "NVidia,Pascal,GeForce,GTX,GTX1050Ti,GTX 1050Ti,GTX 1050 Ti",\
+"tags" : "NVidia,Fermi,GeForce,GT430,GT 430,GT730,GT 730",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -69,14 +67,14 @@ configs["episodes"].append(\
 { "title": "Bait and switch",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("00:17", "00:30" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": ""}\
+"video" : {"file": "baitandswitch.mp4", "start" : "00:01"}\
 })
 
 configs["episodes"].append(\
 { "title": "GF4",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("00:30", "00:42.6" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": ""}\
+"video" : {"file": "GeForce4_series.mkv"}\
 })
 
 configs["episodes"].append(\
@@ -375,7 +373,7 @@ configs["episodes"].append(\
 { "title": "Magician",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "07:38.8", "08:04.3"), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "pick.mp4"}\
 })
 
 configs["episodes"].append(\
@@ -403,30 +401,32 @@ configs["episodes"].append(\
 { "title": "good men",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "08:40.8",  "08:54.7"), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "evil.mp4", "start" : "00:01"}\
 })
 
 configs["episodes"].append(\
 { "title": "good men - mirror",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("08:54.7", "09:08.2"), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "Wallet.mkv"}, \
+"overlay" : { \
+    "text" : ["'Google search results for customers'"]\
+}, \
 })
 
 configs["episodes"].append(\
 { "title": "htpc card",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("09:08.2", "09:22.2"), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "GF108_HTPC_King.mkv", "start" : "00:05"}\
 })
 
 configs["episodes"].append(\
 { "title": "STALKER: Call of Prypiat",\
 "audio" : {"timestamps" : ("09:22.2", "09:41.3" ), "padding" : 0.1  },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, medium settings", \
-    }\
+    "text" : ["'STALKER\: Call of Prypiat'",\
+              scriptedvided.r6sText('1280x720, DX11, medium settings', 42, 30)]\
 }, \
 "video" : {"file" : "xrEngine_COP.mp4", "start" : "01:50"}, \
 })
@@ -435,9 +435,8 @@ configs["episodes"].append(\
 { "title": "Wolfenstein",\
 "audio" : {"timestamps" : ("09:41.3" , "09:59.5" ), "padding" : 0.1  },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, medium settings", \
-    }\
+    "text" : ["'Wolfenstein (2009)'",\
+              scriptedvided.r6sText('1280x720, high settings', 56, 38)]\
 }, \
 "video" : {"file" : "Wolf2_2009.mp4", "start" : "00:40"}, \
 })
@@ -467,9 +466,9 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode(configs["episodes"][10], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][30], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][31], configs)
-#scriptedvided.makeVideoForEpisode(configs["episodes"][32], configs)
+scriptedvided.makeVideoForEpisode(configs["episodes"][33], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Splitgate"][0], configs)
-scriptedvided.makeVideo(configs)
+#scriptedvided.makeVideo(configs)
 
 
 
