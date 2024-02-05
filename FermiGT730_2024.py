@@ -62,7 +62,7 @@ TechPowerup entry: https://www.techpowerup.com/gpu-specs/msi-gtx-1050-ti-lp.b403
 configs["episodes"].append(\
 { "title": "History repeats itself",\
 "audio" : {"timestamps" : ("00:00", "00:17" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": ""}\
+"video" : {"file": "breel_FermiGT730_outside.mp4"}\
 })
 
 configs["episodes"].append(\
@@ -83,26 +83,26 @@ configs["episodes"].append(\
 { "title": "Bitten by the 730",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("00:42.6", "00:54" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": ""}\
+"video" : {"file": "breel_FermiGT730_slomo_outside.mp4"}\
 })
 
 configs["episodes"].append(\
 { "title": "Did not do homework",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("00:54", "01:05.3" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": ""}\
+"video" : {"file": "GT730_announcement.mkv"}\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : ("01:05.3", "01:27.3" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": ""}\
+"video" : {"file": "FermiGT730_Heaven_GPUZ_long.mp4"}\
 })
 
 configs["episodes"].append(\
 { "title": "Where are the drivers",\
 "audio" : {"timestamps" : ("01:27.3", "01:49.4" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": ""}\
+"video" : {"file": "GF108_download_kepler_driver.mkv", "start" : "00:20"}\
 })
 
 configs["episodes"].append(\
@@ -121,7 +121,7 @@ configs["episodes"].append(\
 { "title": "Settings",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("02:11.2", "02:22.3" ), "volume" : 0.999, "padding" : 0.1 },\
-"video" : {"file": ""}\
+"video" : {"file": "stock_AlienIsolation_3.mp4" , "start" : "01:00"}\
 })
 
 
@@ -134,7 +134,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Resident Evil 4 (Remake)",\
 "audio" : {"timestamps" : ("02:22.3", "02:36.5" ), "padding" : 0.1  },\
-"video" : {"file": "stock_re4demo_choppyExceptCutscenes.mp4", "start" : "03:07"},\
+"video" : {"file" : "FermiGT730_RE4.mp4", "start" : "00:04"}, \
 "overlay" : { \
     "text" : ["'Resident Evil 4 (Remake)'",\
               scriptedvided.r6sText('1280x720, low settings', 0, 0),\
@@ -150,6 +150,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1280x720, low settings', 0, 0),\
     ]\
 }, \
+"video" : {"file" : "FermiGT730_BFV.mp4", "start" : "00:04"}, \
 })
 
 configs["episodes"].append(\
@@ -177,12 +178,11 @@ configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
 "audio" : {"timestamps" : ("03:12.2", "03:31" ), "padding" : 0.1  },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, low settings", \
-    }\
+    "text" : ["'Rainbow Six\: Siege'",\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 24, 18),\
+              scriptedvided.r6sText('1280x720, low settings, 50% render scale', 32, 22)]\
 }, \
 })
-
 
 configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
@@ -346,7 +346,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : ("06:50.6", "07:06.8" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "Fermi_legacy.mkv"}\
 })
 
 
@@ -354,21 +354,21 @@ configs["episodes"].append(\
 { "title": "Drivers page",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("07:06.8", "07:17.35" ), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file": "GF108_download_kepler_driver.mkv", "start" : "00:21"}\
 })
 
 configs["episodes"].append(\
 { "title": "Attempt to install",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("07:17.35" , "07:28.3"), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "GF108_install_kepler_driver.mkv", "start" : "00:42"}\
 })
 
 configs["episodes"].append(\
 { "title": "430 instead",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("07:28.3", "07:38.8"), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file": "GF108_download_fermi_driver.mkv", "start" : "00:18"}\
 })
 
 configs["episodes"].append(\
@@ -382,21 +382,21 @@ configs["episodes"].append(\
 { "title": "1060 3g",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ( "08:04.3", "08:11.9"), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "GTX1060_3G.mkv"}\
 })
 
 configs["episodes"].append(\
 { "title": "3060 8g",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("08:11.9", "08:18.9"), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "RTX3060_8G.mkv"}\
 })
 
 configs["episodes"].append(\
 { "title": "4080 12g",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("08:18.9", "08:40.8"), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "RTX4080_12G.mkv"}\
 })
 
 configs["episodes"].append(\
@@ -428,6 +428,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, medium settings", \
     }\
 }, \
+"video" : {"file" : "xrEngine_COP.mp4", "start" : "01:50"}, \
 })
 
 configs["episodes"].append(\
@@ -438,19 +439,20 @@ configs["episodes"].append(\
         "settings" : "1280x720, medium settings", \
     }\
 }, \
+"video" : {"file" : "Wolf2_2009.mp4", "start" : "00:40"}, \
 })
 
 configs["episodes"].append(\
 { "title": "Quite a few better options, even for a display adapter",\
 "audio" : {"timestamps" : ("09:59.5", "10:10.5"), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "broll_GTX1050Ti_outside.mp4"}\
 })
 
 configs["episodes"].append(\
-{ "title": "Quite a few better options, even for a display adapter",\
+{ "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("10:10.5", "10:15.8"), "volume" : 0.999 , "padding" : 0.1  },\
-"video" : {"file" : ""}\
+"video" : {"file" : "breel_FermiGT730_outside.mp4"}\
 })
 
 
