@@ -262,7 +262,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Paladins",\
+{ "title": "Rogue Company",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("05:42.4", "05:50" ), "padding" : 0.1  },\
 "overlay" : { \
@@ -284,7 +284,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Rogue Company",\
+{ "title": "Paladins",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("06:00", "06:07" ), "padding" : 0.1  },\
 "overlay" : { \
@@ -422,10 +422,10 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "STALKER: Call of Prypiat",\
+{ "title": "STALKER: Call of Pripyat",\
 "audio" : {"timestamps" : ("09:22.2", "09:41.3" ), "padding" : 0.1  },\
 "overlay" : { \
-    "text" : ["'STALKER\: Call of Prypiat'",\
+    "text" : ["'STALKER\: Call of Pripyat'",\
               scriptedvided.r6sText('1280x720, DX11, medium settings', 42, 30)]\
 }, \
 "video" : {"file" : "xrEngine_COP.mp4", "start" : "01:50"}, \
@@ -462,13 +462,13 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs)
+scriptedvided.makeVideoForEpisode(configs["episodes"][6], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][10], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][30], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][31], configs)
-scriptedvided.makeVideoForEpisode(configs["episodes"][33], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][33], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Splitgate"][0], configs)
-#scriptedvided.makeVideo(configs)
+scriptedvided.makeVideo(configs)
 
 
 

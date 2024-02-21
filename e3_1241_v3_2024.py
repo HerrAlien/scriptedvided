@@ -7,11 +7,10 @@ configs = { "defaultAudioFile" : "e3_1241_v3_2024.ogg",\
 "outputFile" : "E3_1241_v3_2024.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Which one to pick", "until" : "Doom Eternal"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Doom Eternal", "until" : "Performance values (important)"}}, \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Performance values (important)", "until" : "Conclusions"}}, \
-{"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "Blooper"}}, \
-], "volume" : 0.08 },\
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "4th gen, 4 core CPUs", "until" : "Apex Legends"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Apex Legends", "until" : "Hyperthreading, average FPS and the 1 percent lows"}}, \
+{"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Hyperthreading, average FPS and the 1 percent lows", "until" : "Blooper"}}, \
+], "volume" : 0.06 },\
 "episodes" : [],\
 "youtube" : {"title" : "How well do Intel 4th Gen CPUs run games today?", \
 "description" : '''We'll be exploring how the 4th gen Intel core i7 and i5 equivalents run today.''',\
@@ -48,9 +47,9 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "4th gen, 4 core CPUs",\
 "audio" : {"timestamps" : (lastTS, "00:12.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Z230_closed.mp4", "rotation" : 180},\
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "BIOS and inspectre",\
@@ -58,16 +57,16 @@ configs["episodes"].append(\
 "video" : {"file" : ""},\
 "isChapter" : False, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 # meeds better video, or maybe break it up
 configs["episodes"].append(\
 { "title": "hint at games",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "00:37.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_Finals_2023_12_27_winners.mp4" },\
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 #this is not the Z230
 configs["episodes"].append(\
@@ -81,7 +80,7 @@ configs["episodes"].append(\
 }, \
 "video" : {"file" : "Z230_closed.mp4", "rotation" : 180}\
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "More details on the 4 configurations",\
@@ -89,7 +88,7 @@ configs["episodes"].append(\
 "video" : {"file" : ""},\
 "isChapter" : False, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
@@ -99,16 +98,16 @@ configs["episodes"].append(\
     "image" : {"file" : "Apex Legends.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "Counter Strike 2",\
+{ "title": "Counter-Strike 2",\
 "audio" : {"timestamps" : (lastTS, "02:24" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "image" : {"file" : "Counter Strike 2.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
@@ -117,7 +116,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Rainbow Six Siege.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "The Finals",\
@@ -127,7 +126,7 @@ configs["episodes"].append(\
     "image" : {"file" : "The Finals.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
@@ -137,7 +136,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Fortnite.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Valorant",\
@@ -146,19 +145,19 @@ configs["episodes"].append(\
     "image" : {"file" : "Valorant.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 
 configs["episodes"].append(\
 { "title": "Hyperthreading, average FPS and the 1 percent lows",\
 "audio" : {"timestamps" : (lastTS, "04:48.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "HyperThreading.mkv", "start" : "00:10"},\
 "overlay" : { \
     "image" : {"file" : "Total FPS.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "BIOS",\
@@ -166,33 +165,33 @@ configs["episodes"].append(\
 "video" : {"file" : ""},\
 "isChapter" : False,\
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Disable security patches, or not",\
 "audio" : {"timestamps" : (lastTS, "05:16.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "inspectre_haswell.mkv"},\
 "overlay" : { \
     "image" : {"file" : "Total FPS.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (lastTS, "05:25.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_SandyBridge_outside.mp4"},\
 "isChapter" : False,\
 })
 lastTS = "05:37.8"
 
 configs["episodes"].append(\
 { "title": "Bye",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "05:43.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "Z230_closed.mp4", "rotation" : 180},\
 "isChapter" : False,\
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"](1)
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][15], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs)
