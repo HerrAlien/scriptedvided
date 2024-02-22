@@ -47,14 +47,14 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "4th gen, 4 core CPUs",\
 "audio" : {"timestamps" : (lastTS, "00:12.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "Z230_closed.mp4", "rotation" : 180},\
+"video" : {"file" : "z230_inside_slomo.mp4", "start" : "00:15" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "BIOS and inspectre",\
 "audio" : {"timestamps" : (lastTS, "00:24.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "inspectre_haswell.mkv"},\
 "isChapter" : False, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -74,7 +74,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "00:54.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Z230 workstation from HP'",\
-              "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
+              "'GPU\: AMD Radeon R9 290X'",\
               "'RAM\: 32GB DDR3 at 1600 MHz, dual channel'",\
     ]\
 }, \
@@ -85,7 +85,10 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "More details on the 4 configurations",\
 "audio" : {"timestamps" : (lastTS, "01:28" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "z230_inside_blurred_slomo.mp4"},\
+"overlay" : { \
+    "image" : {"file" : "configs.png", "chromaColor" : "0x00FF00"}\
+}, \
 "isChapter" : False, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -152,7 +155,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Hyperthreading, average FPS and the 1 percent lows",\
 "audio" : {"timestamps" : (lastTS, "04:48.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "HyperThreading.mkv", "start" : "00:10"},\
+"video" : {"file" : "sblurred_ht.mp4", "start" : "00:10"},\
 "overlay" : { \
     "image" : {"file" : "Total FPS.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -162,7 +165,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "BIOS",\
 "audio" : {"timestamps" : (lastTS, "05:00" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "HyperThreading.mkv", "start" : "00:45"},\
 "isChapter" : False,\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -170,7 +173,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Disable security patches, or not",\
 "audio" : {"timestamps" : (lastTS, "05:16.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "inspectre_haswell.mkv"},\
+"video" : {"file" : "sblurred_inspectre.mp4"},\
 "overlay" : { \
     "image" : {"file" : "Total FPS.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -193,8 +196,11 @@ configs["episodes"].append(\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][15], configs)
-#scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][1], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][4], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][11], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][12], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][13], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][8], configs)
 #print(scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs))
 #print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
