@@ -1,10 +1,10 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "e3_1241_v3_2024.ogg",\
-"mediaFolder" : "F:\\Videos\\E3_1241_v3_2024", \
+configs = { "defaultAudioFile" : "i5_2400.ogg",\
+"mediaFolder" : "F:\\Videos\\i5_2400", \
 "stockFolder" : "F:\\Videos\\stock",\
-"outputFolder" : "F:\\Videos\\E3_1241_v3_2024\\output", \
-"outputFile" : "E3_1241_v3_2024.mp4", \
+"outputFolder" : "F:\\Videos\\i5_2400\\output", \
+"outputFile" : "i5_2400.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "4th gen, 4 core CPUs", "until" : "Apex Legends"}}, \
@@ -31,7 +31,7 @@ Watch: https://www.youtube.com/watch?v=16eNerPDIsU&t=0s
 Free Download / Stream: https://alplus.io/guide-you-home
 
 ''', \
-"tags" : "Haswell,Intel,i7 4770,i5 4570,e3 1241 v3,Spectre,Meltdown,Inspectre",\
+"tags" : "Sandy Bridge,Intel,i5 2400,Spectre,Meltdown,Inspectre",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -45,11 +45,278 @@ Free Download / Stream: https://alplus.io/guide-you-home
 
 lastTS = "00:00"
 configs["episodes"].append(\
-{ "title": "4th gen, 4 core CPUs",\
-"audio" : {"timestamps" : (lastTS, "00:12.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "z230_inside_slomo.mp4", "start" : "00:15" },\
+{ "title": "Going full potato",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "The test platform",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "The i5 2400",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Downloading extra performance with Inspectre",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "System RAM",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "GPU",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "shot with the case",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Drake meme with the PSUs",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Game settings",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+
+configs["episodes"].append(\
+{ "title": "Alien Isolation",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Grand Theft Auto V",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Control",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Resident Evil 4 (Remake)",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, 50% render scale, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Warframe",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Battlefield V",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, 50% render scale, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Apex Legends",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Fortnite",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, 30% 3D scale, FAR render distance, performance mode", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Rocket League",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "The Finals",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, 50% render scale, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Rainbow Six: Siege",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, 50% render scale, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Counter-Strike 2",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Valorant",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "DOTA2",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Overwatch 2",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Paladins, Realm Royale and Rogue Company",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Paladins",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Realm Royale",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Rogue Company",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Splitgate",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : { \
+    "text" : ["'Splitgate'",\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 220,  42),\
+              scriptedvided.r6sText('1280x720, low settings, 50% render scale', 229,  51),\
+    ]\
+}, \
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "World of Tanks Blitz",\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : {  "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+}}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 configs["episodes"].append(\
 { "title": "BIOS and inspectre",\
