@@ -165,9 +165,8 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Apex Legends",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"overlay" : {  "benchmark" : { \
-        "settings" : "1280x720, low settings", \
-}}})
+"overlay" : { "image" : {"file" : "Apex Legends.png", "chromaColor" : "0x00FF00"}\
+}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
@@ -189,33 +188,30 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "The Finals",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"overlay" : {  "benchmark" : { \
-        "settings" : "1280x720, 50% render scale, low settings", \
-}}})
+"overlay" : { "image" : {"file" : "The Finals.png", "chromaColor" : "0x00FF00"}\
+}})
+
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"overlay" : {  "benchmark" : { \
-        "settings" : "1280x720, 50% render scale, low settings", \
-}}})
+"overlay" : { "image" : {"file" : "Rainbow Six Siege.png", "chromaColor" : "0x00FF00"}\
+}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"overlay" : {  "benchmark" : { \
-        "settings" : "1280x720, low settings", \
-}}})
+"overlay" : { "image" : {"file" : "Counter Strike 2.png", "chromaColor" : "0x00FF00"}\
+}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Valorant",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"overlay" : {  "benchmark" : { \
-        "settings" : "1280x720, low settings", \
-}}})
+"overlay" : { "image" : {"file" : "Valorant.png", "chromaColor" : "0x00FF00"}\
+}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
@@ -287,6 +283,87 @@ configs["episodes"].append(\
 "overlay" : {  "benchmark" : { \
         "settings" : "1280x720, low settings", \
 }}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+
+configs["episodes"].append(\
+{ "title": "After disabling SPECTRE and MELTDOWN patches",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Fortnite",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : { "image" : {"file" : "Fortnite_inspectre.png", "chromaColor" : "0x00FF00"}\
+}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+
+configs["episodes"].append(\
+{ "title": "Rainbow Six: Siege",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : { "image" : {"file" : "Rainbow Six Siege_inspectre.png", "chromaColor" : "0x00FF00"}\
+}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Apex Legends",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : { "image" : {"file" : "Apex Legends_inspectre.png", "chromaColor" : "0x00FF00"}\
+}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Valorant",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : { "image" : {"file" : "Valorant_inspectre.png", "chromaColor" : "0x00FF00"}\
+}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Counter-Strike 2",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"overlay" : { "image" : {"file" : "Counter Strike 2_inspectre.png", "chromaColor" : "0x00FF00"}\
+}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Is it worth buying?",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "very cheap - price",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Comparison to Haswell",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+"overlay" : { "image" : {"file" : "MORE_THAN_FREQUENCIES.png", "chromaColor" : "0x00FF00"}\
+}})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "bye",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
+})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
