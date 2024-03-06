@@ -47,30 +47,34 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "Going full potato",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "X79-andys-tech.mp4", "start" : "00:01" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "The test platform",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_SandyBridge_outside.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+
+## this might need breaking up ...
 configs["episodes"].append(\
 { "title": "The i5 2400",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_i5_2400_noCooler_4.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+#####
 
+## record inspectre on the 2400
 configs["episodes"].append(\
 { "title": "Downloading extra performance with Inspectre",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "" , "start" : "00:00" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -78,7 +82,7 @@ configs["episodes"].append(\
 { "title": "System RAM",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_RAM_4x4GB.mp4", "start" : "00:08" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -86,7 +90,7 @@ configs["episodes"].append(\
 { "title": "GPU",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "broll_GTX1050Ti_outside.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -94,7 +98,7 @@ configs["episodes"].append(\
 { "title": "shot with the case",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_i5_2400_case_3.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -102,14 +106,15 @@ configs["episodes"].append(\
 { "title": "Drake meme with the PSUs",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
-})
+"video" : {"file" : "PSUs_drakeMeme_input.mp4" , "start" : "00:05"},\
+"overlay" : { "image" : {"file" : "drake_meme.png", "chromaColor" : "0x00FF00"}\
+}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Game settings",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "lowRes_4nite.mp4" , "start" : "00:10"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -293,8 +298,10 @@ configs["episodes"].append(\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+### manually specify videos here!
+
 configs["episodes"].append(\
-{ "title": "Fortnite",\
+{ "title": "Fortnite (retested)",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Fortnite_inspectre.png", "chromaColor" : "0x00FF00"}\
@@ -303,7 +310,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
-{ "title": "Rainbow Six: Siege",\
+{ "title": "Rainbow Six: Siege (retested)",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Rainbow Six Siege_inspectre.png", "chromaColor" : "0x00FF00"}\
@@ -311,7 +318,7 @@ configs["episodes"].append(\
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "Apex Legends",\
+{ "title": "Apex Legends (retested)",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Apex Legends_inspectre.png", "chromaColor" : "0x00FF00"}\
@@ -319,7 +326,7 @@ configs["episodes"].append(\
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "Valorant",\
+{ "title": "Valorant (retested)",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Valorant_inspectre.png", "chromaColor" : "0x00FF00"}\
@@ -327,7 +334,7 @@ configs["episodes"].append(\
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "Counter-Strike 2",\
+{ "title": "Counter-Strike 2 (retested)",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Counter Strike 2_inspectre.png", "chromaColor" : "0x00FF00"}\
