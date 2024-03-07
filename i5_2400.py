@@ -67,7 +67,7 @@ configs["episodes"].append(\
 { "title": "The i5 2400",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "01:07" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_i5_2400_noCooler_4.mp4" },\
+"video" : {"file" : "ark_i5_2400.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 #####
