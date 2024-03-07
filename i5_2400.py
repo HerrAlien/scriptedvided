@@ -74,7 +74,7 @@ configs["episodes"].append(\
 { "title": "Downloading extra performance with Inspectre",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" , "start" : "00:00" },\
+"video" : {"file" : "inspectre_off.mp4" , "start" : "00:00" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -294,7 +294,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "After disabling SPECTRE and MELTDOWN patches",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "inspectre_on.mp4" , "start" : "00:00"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -303,6 +303,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Fortnite (retested)",\
 "isChapter" : False, \
+"video" : {"file" : "stock_FortniteClient-Win_2023_12_24.mp4" , "start" : "08:40"},\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Fortnite_inspectre.png", "chromaColor" : "0x00FF00"}\
 }})
@@ -312,6 +313,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege (retested)",\
 "isChapter" : False, \
+"video" : {"file" : "stock_RainbowSixSiege_benchmark2.mp4"},\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Rainbow Six Siege_inspectre.png", "chromaColor" : "0x00FF00"}\
 }})
@@ -319,6 +321,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Apex Legends (retested)",\
+"video" : {"file" : "stock_ApexLegends_long.mp4" , "start" : "01:20"},\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Apex Legends_inspectre.png", "chromaColor" : "0x00FF00"}\
@@ -328,6 +331,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Valorant (retested)",\
 "isChapter" : False, \
+"video" : {"file" : "stock_VALORANT_r7_265_2023.mp4" , "start" : "00:10"},\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Valorant_inspectre.png", "chromaColor" : "0x00FF00"}\
 }})
@@ -336,6 +340,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Counter-Strike 2 (retested)",\
 "isChapter" : False, \
+"video" : {"file" : "stock_cs2_CT_gt1030lp.mp4" , "start" : "01:30"},\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Counter Strike 2_inspectre.png", "chromaColor" : "0x00FF00"}\
 }})
@@ -344,7 +349,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Is it worth buying?",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_SandyBridge_outside.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -352,15 +357,16 @@ configs["episodes"].append(\
 { "title": "very cheap - price",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "i5_2400_olx.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+## might need a longer video file
 configs["episodes"].append(\
 { "title": "Comparison to Haswell",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "blurred_Finals.mp4" },\
 "overlay" : { "image" : {"file" : "MORE_THAN_FREQUENCIES.png", "chromaColor" : "0x00FF00"}\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -369,7 +375,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_SandyBridge_outside.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
