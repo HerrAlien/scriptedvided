@@ -137,7 +137,7 @@ configs["episodes"].append(\
 { "title": "Game settings",\
 "overlay" : { \
     "text" : ["'1280x720 resolution'",\
-              "'50\% or less 3D scale, when available'",\
+              "'50\\\% or less 3D scale, when available'",\
               "'lowest settings'",\
     ]\
 }, \
@@ -267,9 +267,7 @@ configs["episodes"].append(\
 { "title": "Paladins, Realm Royale and Rogue Company",\
 "video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"},\
 "audio" : {"timestamps" : (lastTS, "08:26.3" ), "padAudio" : 0.1 },\
-"overlay" : {  "benchmark" : { \
-        "settings" : "1280x720, low settings", \
-}}})
+})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
