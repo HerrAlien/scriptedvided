@@ -9,9 +9,10 @@ configs = { "defaultAudioFile" : "i5_2400.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Going full potato", "until" : "Alien Isolation"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien Isolation", "until" : "Apex Legends"}}, \
-{"file" : "Inspired - MaikonMusic", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Apex Legends", "until" : "After disabling SPECTRE and MELTDOWN patches"}}, \
-{"file" : "Wait For Me - Jeff The Second", "timestamps" : ("00:35", None ), "destinationTimestamp" : {"title" : "After disabling SPECTRE and MELTDOWN patches", "until" : "Is it worth buying?"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien Isolation", "until" : "Counter-Strike 2"}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Counter-Strike 2", "until" : "Splitgate"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Splitgate", "until" : "After disabling SPECTRE and MELTDOWN patches"}}, \
+{"file" : "Wait For Me  Jeff The Second (No Copyright Music).mp3", "timestamps" : ("00:35", None ), "destinationTimestamp" : {"title" : "After disabling SPECTRE and MELTDOWN patches", "until" : "Is it worth buying?"}}, \
 {"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Is it worth buying?", "until" : "Blooper"}}, \
 ], "volume" : 0.06 },\
 "episodes" : [],\
@@ -27,6 +28,17 @@ Track: Far Far Away - Ferco [Audio Library Release]
 Music provided by Audio Library Plus
 Watch: https://www.youtube.com/watch?v=SrkQ3K1umlc&t=0s 
 Free Download / Stream: https://alplus.io/far-far-away
+
+Track: Inspired - MaikonMusic [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=RUkdTkk_52o&t=0s
+Free Download / Stream: https://alplus.io/inspired
+
+Wait For Me - Jeff The Second  https://www.youtube.com/watch?v=YuBBSQI2XDQ&t=0s
+Creative Commons Attribution
+Free Download / Stream: https://bit.ly/3LLKFj0
+Music promoted by Audio Library   
+https://www.youtube.com/watch?v=YuBBSQI2XDQ&t=0s
 
 Track: Guide You Home - Ferco & Andie [Audio Library Release]
 Music provided by Audio Library Plus
@@ -66,6 +78,13 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "The i5 2400",\
 "isChapter" : False, \
+"overlay" : { \
+    "text" : ["'Cores\: 4'",\
+              "'Threads\: 4'",\
+              "'Base Frequency\: 3.1 GHz'",\
+              "'Max Turbo Frequency\: 3.4 GHz'",\
+    ]\
+}, \
 "audio" : {"timestamps" : (lastTS, "01:07" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "ark_i5_2400.mp4" },\
 })
@@ -116,6 +135,12 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Game settings",\
+"overlay" : { \
+    "text" : ["'1280x720 resolution'",\
+              "'50\% or less 3D scale, when available'",\
+              "'lowest settings'",\
+    ]\
+}, \
 "audio" : {"timestamps" : (lastTS, "02:57.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "lowRes_4nite.mp4" , "start" : "00:10"},\
 })
@@ -234,7 +259,7 @@ configs["episodes"].append(\
 { "title": "Overwatch 2",\
 "audio" : {"timestamps" : (lastTS, "08:21.8" ), "padAudio" : 0.1 },\
 "overlay" : {  "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1280x720, 50% 3D scale, low settings", \
 }}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -318,7 +343,7 @@ configs["episodes"].append(\
 { "title": "Rainbow Six: Siege (retested)",\
 "isChapter" : False, \
 "video" : {"file" : "stock_RainbowSixSiege_benchmark2.mp4"},\
-"audio" : {"timestamps" : (lastTS, "10:01:6" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "10:01.6" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Rainbow Six Siege_inspectre.png", "chromaColor" : "0x00FF00"}\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -336,7 +361,7 @@ configs["episodes"].append(\
 { "title": "Valorant (retested)",\
 "isChapter" : False, \
 "video" : {"file" : "stock_VALORANT_r7_265_2023.mp4" , "start" : "00:10"},\
-"audio" : {"timestamps" : (lastTS, "10:32.85" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "10:31.85" ), "padAudio" : 0.1 },\
 "overlay" : { "image" : {"file" : "Valorant_inspectre.png", "chromaColor" : "0x00FF00"}\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -371,7 +396,7 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "11:44.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "blurred_Finals.mp4" },\
-"overlay" : { "image" : {"file" : "MORE_THAN_FREQUENCIES.png", "chromaColor" : "0x00FF00"}\
+"overlay" : { "image" : {"file" : "MORE_THAN_FREQUENCIES2.png", "chromaColor" : "0x00FF00"}\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
