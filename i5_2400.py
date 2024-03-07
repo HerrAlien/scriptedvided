@@ -5,6 +5,7 @@ configs = { "defaultAudioFile" : "i5_2400.ogg",\
 "stockFolder" : "F:\\Videos\\stock",\
 "outputFolder" : "F:\\Videos\\i5_2400\\output", \
 "outputFile" : "i5_2400.mp4", \
+"benchmarkFile" : "F:\\Videos\\i5_2400\\Benchmark_i5_2400.txt",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Going full potato", "until" : "Alien Isolation"}}, \
@@ -394,7 +395,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 #print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Usefulness of the HD 6850"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Alien Isolation"][0], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 1080 results"][0], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 900 results"][0], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 720 results"][0], configs)

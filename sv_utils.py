@@ -95,6 +95,7 @@ def parseBenchmarkFile (benchmarkFile):
     
     fileHandler = open(benchmarkFile, "r")
     fileLines = fileHandler.readlines()
+    lineIndexFollowingKey = -1
     for line in fileLines:
         if benchmarkCompletedMark in line:
             currentKey = line[21:]
@@ -111,6 +112,9 @@ def parseBenchmarkFile (benchmarkFile):
             elif lineIndexFollowingKey == 4: # 0.1%
                 currentValue[2] = getFpsValueFromLine(line)
                 returnedDict[currentKey] = currentValue
-                
-            lineIndexFollowingKey = lineIndexFollowingKey + 1
+                lineIndexFollowingKey = -1
+            
+            if lineIndexFollowingKey >= 0:
+                lineIndexFollowingKey = lineIndexFollowingKey + 1
+
     return returnedDict
