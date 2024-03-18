@@ -394,7 +394,7 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "11:44.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "blurred_Finals.mp4" },\
-"overlay" : { "image" : {"file" : "MORE_THAN_FREQUENCIES2.png", "chromaColor" : "0x00FF00"}\
+"overlay" : { "image" : {"file" : "MORE_THAN_FREQUENCIES3.png", "chromaColor" : "0x00FF00"}\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
