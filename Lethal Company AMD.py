@@ -227,6 +227,9 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "05:08.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "broll_hd6670_horizontal.mp4"},\
+"overlay" : { \
+    "image" : {"file" : "pay respects.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
