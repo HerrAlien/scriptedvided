@@ -7,12 +7,9 @@ configs = { "defaultAudioFile" : "Lethal Company AMD.ogg",\
 "outputFile" : "Lethal Company AMD.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#08000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Going full potato", "until" : "Alien Isolation"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien Isolation", "until" : "Counter-Strike 2"}}, \
-{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Counter-Strike 2", "until" : "Splitgate"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Splitgate", "until" : "After disabling SPECTRE and MELTDOWN patches"}}, \
-{"file" : "Wait For Me  Jeff The Second (No Copyright Music).mp3", "timestamps" : ("00:35", None ), "destinationTimestamp" : {"title" : "After disabling SPECTRE and MELTDOWN patches", "until" : "Is it worth buying?"}}, \
-{"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Is it worth buying?", "until" : "Blooper"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Coop Horror", "until" : "1920x1080 results"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1920x1080 results", "until" : "CPU can be 5 generations older"}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "CPU can be 5 generations older", "until" : "EOF"}}, \
 ], "volume" : 0.06 },\
 "episodes" : [],\
 "youtube" : {"title" : "Lethal Company under the minimum requirements", \
@@ -32,17 +29,6 @@ Track: Inspired - MaikonMusic [Audio Library Release]
 Music provided by Audio Library Plus
 Watch: https://www.youtube.com/watch?v=RUkdTkk_52o&t=0s
 Free Download / Stream: https://alplus.io/inspired
-
-Wait For Me - Jeff The Second  https://www.youtube.com/watch?v=YuBBSQI2XDQ&t=0s
-Creative Commons Attribution
-Free Download / Stream: https://bit.ly/3LLKFj0
-Music promoted by Audio Library   
-https://www.youtube.com/watch?v=YuBBSQI2XDQ&t=0s
-
-Track: Guide You Home - Ferco & Andie [Audio Library Release]
-Music provided by Audio Library Plus
-Watch: https://www.youtube.com/watch?v=16eNerPDIsU&t=0s
-Free Download / Stream: https://alplus.io/guide-you-home
 
 ''', \
 "tags" : "Lethal Company,Radeon,AMD,HD 6670,HD6670,HD7750,HD 7750,R7 250,RX460,RX 460,GCN,Polaris,TeraScale 2",\
@@ -69,14 +55,14 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Requirements look sus",\
 "audio" : {"timestamps" : (lastTS, "00:21.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "original_requirements.mp4", "start" : "00:05" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "4 GPUs weaker than required",\
 "audio" : {"timestamps" : (lastTS, "00:29" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "merged.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -134,7 +120,7 @@ configs["episodes"].append(\
 { "title": "resolution trick, start",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "01:24.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "desktop_resolution.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -142,7 +128,7 @@ configs["episodes"].append(\
 { "title": "resolution trick, end",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "01:28.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "video modes.mkv", "start" : "00:10"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -156,7 +142,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
-{ "title": "1920x1080",\
+{ "title": "1920x1080 results",\
 "audio" : {"timestamps" : (lastTS, "01:54.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "Lethal Company_2024_03_09_22_25_45_404-converted.mp4"},\
 "overlay" : { \
@@ -189,7 +175,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
-{ "title": "1600x900",\
+{ "title": "1600x900 results",\
 "audio" : {"timestamps" : (lastTS, "03:09.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "Lethal Company_2024_03_09_22_22_06_104-converted.mp4"},\
 "overlay" : { \
@@ -199,7 +185,7 @@ configs["episodes"].append(\
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "1280x720",\
+{ "title": "1280x720 results",\
 "audio" : {"timestamps" : (lastTS, "03:40.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "stock_Lethal Company_2024_03_10_2.mp4"},\
 "overlay" : { \
@@ -218,7 +204,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "More realistic requirements",\
 "audio" : {"timestamps" : (lastTS, "04:31.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "fixed_requirements.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -227,15 +213,20 @@ configs["episodes"].append(\
 { "title": "resolution behavior",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "04:54.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_Lethal Company_2024_03_10_2.mp4"},\
+"overlay" : { \
+    "image" : {"file" : "rx460_overlay.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+
+# overlay with press 'F' to pay respects
 configs["episodes"].append(\
 { "title": "TeraScale 2 - not usable",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "05:08.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "broll_ts2family_outside.mp4"},\
+"video" : {"file" : "broll_hd6670_horizontal.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -243,7 +234,7 @@ configs["episodes"].append(\
 { "title": "NVidia",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "05:23" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_autumn_GT1030_KFA2.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
