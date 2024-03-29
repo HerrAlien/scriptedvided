@@ -62,14 +62,14 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "Compact card",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_autumn_RX570.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "The Polaris GPU",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "RX570_GPUZ_Heaven.mp4", "start" : "00:00"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -77,14 +77,14 @@ configs["episodes"].append(\
 { "title": "TDP",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "RX570_TDP_TechPowerup.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "rx570_itx_cooling.mp4" , "start" : "00:16" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -92,7 +92,7 @@ configs["episodes"].append(\
 { "title": "Temps",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "RX570_GPUZ_Heaven.mp4", "start" : "00:50"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -113,7 +113,7 @@ configs["episodes"].append(\
 { "title": "CPU bottlenecks",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "CPU_bound_R_six_S_720.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -153,7 +153,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Battlefield V",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "CPU_bound_B_F_V.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -169,7 +169,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Control",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "CPU_bound_C_ontrol.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -189,7 +189,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "CPU_bound_R_six_S_720.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -256,7 +256,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Overwatch 2",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "CPU_bound_Over_Watch_2.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -282,7 +282,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Splitgate",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "CPU_bound_Split_Gate.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -359,7 +359,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Is it worth buying?",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "RX570_olx.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -367,7 +367,7 @@ configs["episodes"].append(\
 { "title": "miner background",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "rx570_mined.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -376,7 +376,7 @@ configs["episodes"].append(\
 { "title": "Driver support is dwindling",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "anandtech_GCN4_5_support.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -384,7 +384,7 @@ configs["episodes"].append(\
 { "title": "matches the PSU",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "Z230_PSU.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -393,7 +393,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_autumn_RX570.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -414,6 +414,9 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 900 results"][0], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 720 results"][0], configs)
 #print (scriptedvided.getSuitableImage([x for x in configs["episodes"] if x["title"] == "actual 1080 results"][0], configs))
+
+for x in configs["episodes"]:
+    scriptedvided.makeVideoForEpisode(x, configs)
 
 scriptedvided.makeVideo(configs)
 
