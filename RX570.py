@@ -9,9 +9,9 @@ configs = { "defaultAudioFile" : "rx570.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "A (mighty) compact card", "until" : "Alien Isolation"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien Isolation", "until" : "The Finals"}}, \
-{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "The Finals", "until" : "Rocket League"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rocket League", "until" : "Worth buying"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Alien Isolation", "until" : "Counter-Strike 2"}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Counter-Strike 2", "until" : "Overwatch 2"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Overwatch 2", "until" : "Is it worth buying?"}}, \
 {"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Is it worth buying?", "until" : "Blooper"}}, \
 ], "volume" : 0.06 },\
 "episodes" : [],\
@@ -142,7 +142,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Resident Evil 4 (Remake)",\
-"audio" : {"timestamps" : (lastTS, "02:34.7" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "02:43.7" ), "padAudio" : 0.1 },\
 "overlay" : {  "benchmark" : { \
         "settings" : "1920x1080, low settings", \
 }}})
@@ -198,7 +198,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
               scriptedvided.r6sText('1920x1080, low settings, 100% render scale',177 ,114), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale',208, 127),\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale',208, 127),]\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -218,7 +218,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "text" : ["'The Finals'",\
               scriptedvided.r6sText('1920x1080, low settings, 100% render scale',60 ,21 ), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale',54 , 16),\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale',54 , 16),]\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
