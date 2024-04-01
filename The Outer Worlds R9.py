@@ -1,9 +1,9 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "",\
-"mediaFolder" : "F:\\Videos\\", \
+configs = { "defaultAudioFile" : "The Outer Worlds AMD.ogg",\
+"mediaFolder" : "F:\\Videos\\TheOuterWorlds_R9", \
 "stockFolder" : "F:\\Videos\\stock",\
-"outputFolder" : "F:\\Videos\\\\output", \
+"outputFolder" : "F:\\Videos\\TheOuterWorlds_R9\\output", \
 "outputFile" : "The Outer Worlds R9.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
@@ -48,24 +48,24 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "The Outer Worlds - free on Epic Games Store",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "00:11.75" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_07_57_33_680-converted.mp4" , "start" : "00:36"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 # website screenshot
 configs["episodes"].append(\
 { "title": "Epic Games",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "00:26.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "2024-04-01 13-06-02.mkv", "start" : "00:04"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
 { "title": "Below the minimum requirements",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "00:42.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "2024-04-01 13-06-02.mkv", "start" : "01:04"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -73,40 +73,40 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "R9 290X",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "00:53.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_r9_290x_outside.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "R9 280",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "00:59.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_r9_280_outside.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "R9 270",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "01:06.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_GigASUS_R9_270.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 # black screen
 configs["episodes"].append(\
-{ "title": "Test system",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+{ "title": "Test system and settings",\
+"audio" : {"timestamps" : (lastTS, "01:09.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "black_screen.mkv"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
-{ "title": "",\
+{ "title": "Z230",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:21.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Z230 workstation from HP'",\
               "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
@@ -119,19 +119,20 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 # capture with settings
 configs["episodes"].append(\
-{ "title": "",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+{ "title": "Settings",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "01:31" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
 { "title": "1920x1080 results",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "02:13" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_07_58_52_988-converted.mp4", "start" :"06:40"},\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "1080, low settings.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -139,20 +140,20 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "1600x900 results",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "02:58.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_17_58_163-converted.mp4", "start" : "00:04"},\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "900, low settings.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "1280x720 results",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "03:34" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4", "start" : "01:50"},\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "720, low settings.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -161,35 +162,53 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # overlay with FPS for the 290X
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "03:49" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_r9_290x_outside.mp4"},\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "text" : [scriptedvided.r6sText('1920x1080, low settings, 100% render scale',59,32), \
+              scriptedvided.r6sText('1600x900, low settings, 100% render scale', 77,44), \
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 85,47), \
+    ]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 #R9 280 breel
 configs["episodes"].append(\
-{ "title": "",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+{ "title": "R9 280 - 720p",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "04:05.25" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_r9_280_outside.mp4"},\
+"overlay" : { \
+    "text" : [scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 41,29), \
+              scriptedvided.r6sText('1600x900, low settings, 100% render scale', 45,28), \
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale',57 ,37), \
+    ]\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 #R9 270 breel
 configs["episodes"].append(\
-{ "title": "",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+{ "title": "r9 270 nope",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "04:18.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_GigASUS_R9_270.mp4"},\
+"overlay" : { \
+    "text" : [scriptedvided.r6sText('1920x1080, low settings, 100% render scale',21 ,7), \
+              scriptedvided.r6sText('1600x900, low settings, 100% render scale',25 ,8), \
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 29,11), \
+    ]\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 # gameplay
 configs["episodes"].append(\
-{ "title": "",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+{ "title": "bye",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "04:30" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_17_58_163-converted.mp4", "start" : "02:36"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
