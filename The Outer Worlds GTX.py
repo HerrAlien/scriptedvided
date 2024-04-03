@@ -1,13 +1,13 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "The Outer Worlds AMD.ogg",\
-"mediaFolder" : "F:\\Videos\\TheOuterWorlds_R9", \
+configs = { "defaultAudioFile" : "The Outer Worlds GTX.ogg",\
+"mediaFolder" : "F:\\Videos\\TheOuterWorlds_GTX", \
 "stockFolder" : "F:\\Videos\\stock",\
-"outputFolder" : "F:\\Videos\\TheOuterWorlds_R9\\output", \
-"outputFile" : "The Outer Worlds R9.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"outputFolder" : "F:\\Videos\\TheOuterWorlds_GTX\\output", \
+"outputFile" : "The Outer Worlds GTX.mp4", \
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "The Outer Worlds - free on Epic Games Store", "until" : "1920x1080 results"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "The game is free until Apr 11", "until" : "1920x1080 results"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1920x1080 results", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.06 },\
@@ -31,7 +31,7 @@ Watch: https://www.youtube.com/watch?v=RUkdTkk_52o&t=0s
 Free Download / Stream: https://alplus.io/inspired
 
 ''', \
-"tags" : "The Outer Worlds,AMD,Radeon,GCN,R9,R9 290X,R9 280,R9 270,HD 2950,HD7950,HD 7870,HD7870,Epic Games,Epic Games Store",\
+"tags" : "The Outer Worlds,NVidia,GeForce,GTX,GTX770,GTX 770,GTX960,GTX 960,GTX1050Ti,GTX 1050Ti,Epic Games,Epic Games Store",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -46,59 +46,51 @@ Free Download / Stream: https://alplus.io/inspired
 # gameplay
 lastTS = "00:00"
 configs["episodes"].append(\
-{ "title": "The Outer Worlds - free on Epic Games Store",\
-"isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "00:11.75" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_07_57_33_680-converted.mp4" , "start" : "00:36"},\
+{ "title": "The game is free until Apr 11",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+#"isChapter" : False, \
 # website screenshot
 configs["episodes"].append(\
-{ "title": "Epic Games",\
-"audio" : {"timestamps" : (lastTS, "00:26.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "2024-04-01 13-06-02.mkv", "start" : "00:04"},\
+{ "title": "The GPUs",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-
 configs["episodes"].append(\
-{ "title": "Below the minimum requirements",\
-"audio" : {"timestamps" : (lastTS, "00:42.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "2024-04-01 13-06-02.mkv", "start" : "01:04"},\
-})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
-
-
-configs["episodes"].append(\
-{ "title": "R9 290X",\
+{ "title": "GTX 770",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "00:53.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_r9_290x_outside.mp4"},\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_GTX770_outside.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "R9 280",\
+{ "title": "GTX 960",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "00:59.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_r9_280_outside.mp4"},\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_autumn_GTX960_4G_MSI.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "R9 270",\
+{ "title": "GTX 1050Ti",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "01:06.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_GigASUS_R9_270.mp4"},\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "broll_GTX1050Ti_outside.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-# black screen
+#"isChapter" : False, \
+# website screenshot
 configs["episodes"].append(\
-{ "title": "Test system and settings",\
-"audio" : {"timestamps" : (lastTS, "01:09.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "black_screen.mkv"},\
+{ "title": "Settings and test system",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -106,10 +98,11 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Z230",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "01:21.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Z230 workstation from HP'",\
               "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
+              "' ... but with hypethreading disabled.'",\
               "'RAM\: 32GB DDR3 at 1600 MHz, dual channel'",\
     ]\
 }, \
@@ -117,31 +110,21 @@ configs["episodes"].append(\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-# capture with settings
-configs["episodes"].append(\
-{ "title": "Settings",\
-"isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "01:31" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
-})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
-
 
 configs["episodes"].append(\
 { "title": "1920x1080 results",\
-"audio" : {"timestamps" : (lastTS, "02:13" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_07_58_52_988-converted.mp4", "start" :"06:40"},\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
 "overlay" : { \
     "image" : {"file" : "1080, low settings.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-
 configs["episodes"].append(\
 { "title": "1600x900 results",\
-"audio" : {"timestamps" : (lastTS, "02:58.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_17_58_163-converted.mp4", "start" : "00:04"},\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_07_58_52_988-converted.mp4"},\
 "overlay" : { \
     "image" : {"file" : "900, low settings.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -150,65 +133,46 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "1280x720 results",\
-"audio" : {"timestamps" : (lastTS, "03:34" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4", "start" : "01:50"},\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_17_58_163-converted.mp4"},\
 "overlay" : { \
     "image" : {"file" : "720, low settings.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-#R9 290X breel?
-# overlay with FPS for the 290X
+
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (lastTS, "03:49" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_r9_290x_outside.mp4"},\
-"overlay" : { \
-    "text" : [scriptedvided.r6sText('1920x1080, low settings, 100% render scale',59,32), \
-              scriptedvided.r6sText('1600x900, low settings, 100% render scale', 77,44), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 85,47), \
-    ]\
-}, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_GTX770_outside.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-#R9 280 breel
 configs["episodes"].append(\
-{ "title": "R9 280 - 720p",\
+{ "title": "Conclusions - 960 R9 280 1050ti",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "04:05.25" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_r9_280_outside.mp4"},\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_autumn_GTX960_4G_MSI.mp4"},\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 41,29), \
-              scriptedvided.r6sText('1600x900, low settings, 100% render scale', 45,28), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale',57 ,37), \
-    ]\
+    "image" : {"file" : "compared_to_R9_280.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-#R9 270 breel
 configs["episodes"].append(\
-{ "title": "r9 270 nope",\
+{ "title": "Conclusions - 1050ti and cpus",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "04:18.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_GigASUS_R9_270.mp4"},\
-"overlay" : { \
-    "text" : [scriptedvided.r6sText('1920x1080, low settings, 100% render scale',21 ,7), \
-              scriptedvided.r6sText('1600x900, low settings, 100% render scale',25 ,8), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 29,11), \
-    ]\
-}, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "broll_GTX1050Ti_outside.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-# gameplay
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "04:30" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_17_58_163-converted.mp4", "start" : "02:36"},\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_07_58_52_988-converted.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
