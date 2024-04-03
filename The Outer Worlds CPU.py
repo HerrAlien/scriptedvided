@@ -1,11 +1,11 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "tow_gtx.ogg",\
-"mediaFolder" : "F:\\Videos\\TheOuterWorlds_GTX", \
+configs = { "defaultAudioFile" : "TOW CPUs.ogg",\
+"mediaFolder" : "F:\\Videos\\TheOuterWorlds_CPUs", \
 "stockFolder" : "F:\\Videos\\stock",\
-"outputFolder" : "F:\\Videos\\TheOuterWorlds_GTX\\output", \
-"outputFile" : "The Outer Worlds GTX.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
+"outputFolder" : "F:\\Videos\\TheOuterWorlds_CPUs\\output", \
+"outputFile" : "The Outer Worlds CPUs.mp4", \
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "The game is free until Apr 11", "until" : "1920x1080 results"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1920x1080 results", "until" : "Conclusions"}}, \
@@ -31,7 +31,7 @@ Watch: https://www.youtube.com/watch?v=RUkdTkk_52o&t=0s
 Free Download / Stream: https://alplus.io/inspired
 
 ''', \
-"tags" : "The Outer Worlds,NVidia,GeForce,GTX,GTX770,GTX 770,GTX960,GTX 960,GTX1050Ti,GTX 1050Ti,Epic Games,Epic Games Store",\
+"tags" : "The Outer Worlds,Intel,E3-1241v3,Haswell,Sandy Bridge,4th gen,2nd gen,core i5,i5,core i7,i7,i5 2400,i5 4570,i7 4770,Inspectre,Spectre,Meltdown",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -48,122 +48,87 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "The game is free until Apr 11",\
 "audio" : {"timestamps" : (lastTS, "00:17.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_17_58_163-converted.mp4", "start" : "03:25"},\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_07_58_52_988-converted.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 #"isChapter" : False, \
 # website screenshot
 configs["episodes"].append(\
-{ "title": "The GPUs",\
-"audio" : {"timestamps" : (lastTS, "00:25.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_GTX770_outside.mp4"},\
-})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
-
-configs["episodes"].append(\
-{ "title": "GTX 960",\
-"isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "00:34" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_autumn_GTX960_4G_MSI.mp4"},\
-})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
-
-configs["episodes"].append(\
-{ "title": "GTX 1050Ti",\
-"isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "00:41.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "broll_GTX1050Ti_outside.mp4"},\
-})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
-
-#"isChapter" : False, \
-# website screenshot
-configs["episodes"].append(\
-{ "title": "Settings and test system",\
-"audio" : {"timestamps" : (lastTS, "00:48.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
-})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
-
-
-configs["episodes"].append(\
-{ "title": "Z230",\
-"isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "01:10.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"overlay" : { \
-    "text" : ["'Z230 workstation from HP'",\
-              "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
-              "' ... but with hypethreading disabled.'",\
-              "'RAM\: 32GB DDR3 at 1600 MHz, dual channel'",\
-    ]\
-}, \
+{ "title": "The CPUs",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "Z230_closed.mp4", "rotation" : 180}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-
 configs["episodes"].append(\
-{ "title": "1920x1080 results",\
-"audio" : {"timestamps" : (lastTS, "01:47" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
-"overlay" : { \
-    "image" : {"file" : "1080, low settings.png", "chromaColor" : "0x00FF00"}\
-}, \
+{ "title": "INSPECTRE",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "inspectre_off.mp4" , "start" : "00:00" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "1600x900 results",\
-"audio" : {"timestamps" : (lastTS, "02:19.75" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_07_58_52_988-converted.mp4"},\
-"overlay" : { \
-    "image" : {"file" : "900, low settings.png", "chromaColor" : "0x00FF00"}\
-}, \
+{ "title": "HT",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "HyperThreading.mkv", "start" : "00:45"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "1280x720 results",\
-"audio" : {"timestamps" : (lastTS, "02:52.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
+{ "title": "i52400",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_SandyBridge_outside.mp4" },\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+
+#"isChapter" : False, \
+# website screenshot
+configs["episodes"].append(\
+{ "title": "Settings",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_17_58_163-converted.mp4"},\
 "overlay" : { \
-    "image" : {"file" : "720, low settings.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "six_configs.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+configs["episodes"].append(\
+{ "title": "Out of the box results",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
+"overlay" : { \
+    "image" : {"file" : "SAFE.png", "chromaColor" : "0x00FF00"}\
+}, \
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "Turning off security patches",\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
+"overlay" : { \
+    "image" : {"file" : "UNSAFE.png", "chromaColor" : "0x00FF00"}\
+}, \
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (lastTS, "03:11.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_GTX770_outside.mp4"},\
-})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
-
-configs["episodes"].append(\
-{ "title": "Conclusions - 960 R9 280 1050ti",\
-"isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "03:25.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_autumn_GTX960_4G_MSI.mp4"},\
-"overlay" : { \
-    "image" : {"file" : "compared_to_R9_280.png", "chromaColor" : "0x00FF00"}\
-}, \
-})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
-
-configs["episodes"].append(\
-{ "title": "Conclusions - 1050ti and cpus",\
-"isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "03:34.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "broll_GTX1050Ti_outside.mp4"},\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "HyperThreading.mkv", "start" : "00:45"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "03:41" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_07_58_52_988-converted.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]

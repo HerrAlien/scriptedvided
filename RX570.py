@@ -191,14 +191,15 @@ configs["episodes"].append(\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+#updated FPS
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege - results",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "04:08.5" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale',177 ,114), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale',208, 127),]\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale',180 ,146), \
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale',223, 142),]\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -243,12 +244,17 @@ configs["episodes"].append(\
 }}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+#updated FPS
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (lastTS, "06:15" ), "padAudio" : 0.1 },\
-"overlay" : {  "benchmark" : { \
-        "settings" : "1920x1080, performance mode, FAR render distance", \
-}}})
+"overlay" : { \
+    "text" : ["'Fortnite'",\
+              scriptedvided.r6sText('1920x1080, performance mode', 185, 75 ), \
+              scriptedvided.r6sText('1600x900, performance mode', 186 , 81),\
+              scriptedvided.r6sText('1280x720, performance mode', 188, 77)]\
+}, \
+})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
