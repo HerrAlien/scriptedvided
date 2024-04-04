@@ -7,8 +7,8 @@ configs = { "defaultAudioFile" : "TOW CPUs.ogg",\
 "outputFile" : "The Outer Worlds CPUs.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "The game is free until Apr 11", "until" : "1920x1080 results"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1920x1080 results", "until" : "Conclusions"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "The game is free until Apr 11", "until" : "Out of the box results"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Out of the box results", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.06 },\
 "episodes" : [],\
@@ -69,10 +69,10 @@ configs["episodes"].append(\
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "HT",\
+{ "title": "emmulate i5",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "00:55.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "HyperThreading.mkv", "start" : "00:45"},\
+"video" : {"file" : "HyperThreading.mkv"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
