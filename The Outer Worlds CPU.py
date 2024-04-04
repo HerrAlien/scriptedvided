@@ -47,16 +47,15 @@ Free Download / Stream: https://alplus.io/inspired
 lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "The game is free until Apr 11",\
-"audio" : {"timestamps" : (lastTS, "00:17.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:11.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_07_58_52_988-converted.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 #"isChapter" : False, \
-# website screenshot
 configs["episodes"].append(\
 { "title": "The CPUs",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:21.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "Z230_closed.mp4", "rotation" : 180}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -64,7 +63,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "INSPECTRE",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:40.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "inspectre_off.mp4" , "start" : "00:00" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -72,7 +71,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "HT",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:55.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "HyperThreading.mkv", "start" : "00:45"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -80,7 +79,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "i52400",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:14.75" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_SandyBridge_outside.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -90,7 +89,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # website screenshot
 configs["episodes"].append(\
 { "title": "Settings",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:24" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_17_58_163-converted.mp4"},\
 "overlay" : { \
     "image" : {"file" : "six_configs.png", "chromaColor" : "0x00FF00"}\
@@ -100,7 +99,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Out of the box results",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:55.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
 "overlay" : { \
     "image" : {"file" : "SAFE.png", "chromaColor" : "0x00FF00"}\
@@ -110,7 +109,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Turning off security patches",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "02:29.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
 "overlay" : { \
     "image" : {"file" : "UNSAFE.png", "chromaColor" : "0x00FF00"}\
@@ -120,7 +119,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "02:58.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "HyperThreading.mkv", "start" : "00:45"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -128,7 +127,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:13.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_07_58_52_988-converted.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
