@@ -142,15 +142,18 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Resident Evil 4 (Remake)",\
-"audio" : {"timestamps" : (lastTS, "02:43.7" ), "padAudio" : 0.1 },\
-"overlay" : {  "benchmark" : { \
-        "settings" : "1920x1080, low settings", \
-}}})
+"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
+"overlay" : { \
+    "text" : ["'Resident Evil 4 (Remake)'",\
+              scriptedvided.r6sText('1920x1080, low settings', 74 , 24 ),\
+              scriptedvided.r6sText('1280x720, low settings', 100 , 57 ),\
+    ]\
+}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Battlefield V",\
-"audio" : {"timestamps" : (lastTS, "02:53.8" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("02:43.7", "02:53.8" ), "padAudio" : 0.1 },\
 "video" : {"file" : "CPU_bound_B_F_V.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -164,21 +167,14 @@ configs["episodes"].append(\
 }}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-configs["episodes"].append(\
-{ "title": "Control",\
-"audio" : {"timestamps" : (lastTS, "03:14.5" ), "padAudio" : 0.1 },\
-"video" : {"file" : "CPU_bound_C_ontrol.mp4" },\
-})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "Control - results",\
-"isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "03:38.5" ), "padAudio" : 0.1 },\
+{ "title": "Control",\
+"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Control'",\
-              scriptedvided.r6sText('1920x1080, low settings', 99, 58),\
-              scriptedvided.r6sText('1280x720, low settings', 148, 64),\
+              scriptedvided.r6sText('1920x1080, low settings', 104, 84),\
+              scriptedvided.r6sText('1280x720, low settings', 261, 142),\
     ]\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -186,7 +182,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : (lastTS, "03:44" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("03:38.5", "03:44" ), "padAudio" : 0.1 },\
 "video" : {"file" : "CPU_bound_R_six_S_720.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -195,18 +191,21 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege - results",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "04:08.5" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale',180 ,146), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale',223, 142),]\
-}})
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 180 , 146), \
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 223, 142 ),\
+              scriptedvided.r6sText('1920x1080, low settings, 50% render scale', 216, 145),\
+              scriptedvided.r6sText('1280x720, low settings, 50% render scale', 214, 137)]\
+}, \
+})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
 { "title": "Grand Theft Auto V",\
-"audio" : {"timestamps" : (lastTS, "04:25.3" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : {  "benchmark" : { \
         "settings" : "1920x1080, low settings", \
 }}})
@@ -215,18 +214,18 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "The Finals",\
-"audio" : {"timestamps" : (lastTS, "04:55" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'The Finals'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale',60 ,21 ), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale',54 , 16),]\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 69, 40), \
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 72, 26),]\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
-"audio" : {"timestamps" : (lastTS, "05:19.5" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("04:55", "05:19.5" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Counter-Strike 2'",\
               scriptedvided.r6sText('1920x1080, low settings', 132, 78),\
@@ -255,37 +254,32 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1280x720, performance mode', 188, 77)]\
 }, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
 
 configs["episodes"].append(\
 { "title": "Overwatch 2",\
-"audio" : {"timestamps" : (lastTS, "06:22.6" ), "padAudio" : 0.1 },\
-"video" : {"file" : "CPU_bound_Over_Watch_2.mp4" },\
+"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
+"overlay" : { \
+    "text" : ["'Overwatch 2'",\
+              scriptedvided.r6sText('1920x1080, low settings', 272,  214), \
+              scriptedvided.r6sText('1600x900, low settings',  363, 283),\
+              scriptedvided.r6sText('1280x720, low settings', 455, 296)]\
+}, \
 })
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
-
-configs["episodes"].append(\
-{ "title": "Overwatch 2 - results",\
-"isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "07:08.4" ), "padAudio" : 0.1 },\
-"overlay" : {  "benchmark" : { \
-        "settings" : "1920x1080, low settings", \
-}}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
 { "title": "Rocket League",\
-"audio" : {"timestamps" : (lastTS, "07:35.3" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : {  "benchmark" : { \
         "settings" : "1920x1080, low settings, 100% render scale", \
 }}})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
 { "title": "Splitgate",\
-"audio" : {"timestamps" : (lastTS, "07:44.7" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("07:35.3", "07:44.7" ), "padAudio" : 0.1 },\
 "video" : {"file" : "CPU_bound_Split_Gate.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -330,39 +324,43 @@ configs["episodes"].append(\
 "overlay" : {  "benchmark" : { \
         "settings" : "1920x1080, high settings", \
 }}})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+
 
 configs["episodes"].append(\
 { "title": "Rogue Company",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "09:08.4" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
 "overlay" : {  "benchmark" : { \
         "settings" : "1920x1080, low settings", \
 }}})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
 
 configs["episodes"].append(\
 { "title": "World of Tanks Blitz",\
-"audio" : {"timestamps" : (lastTS, "09:24.2" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("09:08.4", "09:24.2" ), "padAudio" : 0.1 },\
 "overlay" : {  "benchmark" : { \
         "settings" : "1920x1080, low settings", \
 }}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+
+
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : (lastTS, "09:47.6" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
 "overlay" : {  "benchmark" : { \
         "settings" : "1920x1080, low settings", \
 }}})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
 
 
 ##################################################################
 
 configs["episodes"].append(\
 { "title": "Is it worth buying?",\
-"audio" : {"timestamps" : (lastTS, "09:57.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("09:47.6", "09:57.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "RX570_olx.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
