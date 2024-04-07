@@ -142,7 +142,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Resident Evil 4 (Remake)",\
-"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("11:38.8", "12:01.2" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Resident Evil 4 (Remake)'",\
               scriptedvided.r6sText('1920x1080, low settings', 74 , 24 ),\
@@ -170,7 +170,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("12:01.2", "12:21.9" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Control'",\
               scriptedvided.r6sText('1920x1080, low settings', 104, 84),\
@@ -182,7 +182,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : ("03:38.5", "03:44" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "12.26.8" ), "padAudio" : 0.1 },\
 "video" : {"file" : "CPU_bound_R_six_S_720.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -191,7 +191,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege - results",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "12:52" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
               scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 180 , 146), \
@@ -205,7 +205,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Grand Theft Auto V",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "13:09" ), "padAudio" : 0.1 },\
 "overlay" : {  "benchmark" : { \
         "settings" : "1920x1080, low settings", \
 }}})
@@ -214,7 +214,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "The Finals",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "13:30.6" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'The Finals'",\
               scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 69, 40), \
@@ -258,7 +258,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Overwatch 2",\
-"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("13:30.6", "14:09.4" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Overwatch 2'",\
               scriptedvided.r6sText('1920x1080, low settings', 272,  214), \
@@ -271,7 +271,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Rocket League",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "14:31.5" ), "padAudio" : 0.1 },\
 "overlay" : {  "benchmark" : { \
         "settings" : "1920x1080, low settings, 100% render scale", \
 }}})
@@ -330,7 +330,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Rogue Company",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("14:31.5", "14:38.5" ), "padAudio" : 0.1 },\
 "overlay" : {  "benchmark" : { \
         "settings" : "1920x1080, low settings", \
 }}})
@@ -348,7 +348,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : ("", "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("14:38.5", "15:00.7" ), "padAudio" : 0.1 },\
 "overlay" : {  "benchmark" : { \
         "settings" : "1920x1080, low settings", \
 }}})
