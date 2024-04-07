@@ -145,7 +145,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("11:38.8", "12:01.2" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Resident Evil 4 (Remake)'",\
-              scriptedvided.r6sText('1920x1080, low settings', 74 , 24 ),\
+              scriptedvided.r6sText('1920x1080, low settings', 75 , 48 ),\
               scriptedvided.r6sText('1280x720, low settings', 100 , 57 ),\
     ]\
 }})
@@ -174,7 +174,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "text" : ["'Control'",\
               scriptedvided.r6sText('1920x1080, low settings', 104, 84),\
-              scriptedvided.r6sText('1280x720, low settings', 261, 142),\
+              scriptedvided.r6sText('1280x720, low settings', 176, 96),\
     ]\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
