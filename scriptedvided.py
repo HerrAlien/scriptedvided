@@ -583,7 +583,7 @@ def aliases(inputName):
         ["PUBG", "TslGame.exe", "TslGame"],\
         ["CS2", "Counter-Strike 2" , "cs2.exe"],\
         ["The Finals", "Finals" , "Discovery.exe"],\
-        ["Doom Eternal", "DoomEternal" , ],\
+        ["Doom Eternal", "DoomEternal" , "DOOMEternalx64vk.exe" ],\
     ]
 
     if inputName is None:

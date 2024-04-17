@@ -182,7 +182,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : (lastTS, "12.26.8" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "12:26.8" ), "padAudio" : 0.1 },\
 "video" : {"file" : "CPU_bound_R_six_S_720.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -192,6 +192,7 @@ configs["episodes"].append(\
 { "title": "Rainbow Six: Siege - results",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "12:52" ), "padAudio" : 0.1 },\
+"video" : {"file" : "stock_RainbowSixSiege_benchmark2.mp4" },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
               scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 180 , 146), \
@@ -410,7 +411,8 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][1], configs)
-#scriptedvided.makeVideoForEpisode(configs["episodes"][4], configs)
+#print (configs["episodes"][14]["title"])
+#scriptedvided.makeVideoForEpisode(configs["episodes"][14], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][11], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][12], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][13], configs)
