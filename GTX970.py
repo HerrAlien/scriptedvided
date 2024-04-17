@@ -33,12 +33,6 @@ Music provided by Audio Library Plus
 Watch: https://www.youtube.com/watch?v=RUkdTkk_52o&t=0s
 Free Download / Stream: https://alplus.io/inspired
 
-Wait For Me - Jeff The Second  https://www.youtube.com/watch?v=YuBBSQI2XDQ&t=0s
-Creative Commons Attribution
-Free Download / Stream: https://bit.ly/3LLKFj0
-Music promoted by Audio Library   
-https://www.youtube.com/watch?v=YuBBSQI2XDQ&t=0s
-
 Track: Guide You Home - Ferco & Andie [Audio Library Release]
 Music provided by Audio Library Plus
 Watch: https://www.youtube.com/watch?v=16eNerPDIsU&t=0s
