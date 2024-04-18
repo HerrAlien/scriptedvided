@@ -55,14 +55,14 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "I (heart) Maxwell",\
 "audio" : {"timestamps" : (lastTS, "00:25" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_autumn_GTX970.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "The GM-204-200-A1 GPU",\
 "audio" : {"timestamps" : (lastTS, "00:57.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX970_HeavenGpuZ.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -70,14 +70,14 @@ configs["episodes"].append(\
 { "title": "TDP",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "01:14.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX970_TDP.mkv"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (lastTS, "01:44.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX970_cooling.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -85,14 +85,22 @@ configs["episodes"].append(\
 { "title": "Temps",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "02:30.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "repairGTX970_Heaven_phone.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Dual BIOS card, single BIOS if you are not careful",\
+"audio" : {"timestamps" : (lastTS, "02:43.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "DualBiosSwitches.mp4"},\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "EVGA - single BIOS if you are not careful",\
+"isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "02:51.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "EVGA_dualBiosSwitch-better.mp4", "start" : "00:14"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -340,14 +348,17 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Again, (heart) Maxwell ...",\
 "audio" : {"timestamps" : (lastTS, "11:00.8" ),  "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_autumn_GTX970.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "But should you buy one?",\
 "audio" : {"timestamps" : (lastTS, "11:13.1" ),  "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_OLX.mkv" },\
+"overlay" : { \
+    "text" : ["'... this one is actually less than 50 USD.'"]\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -356,7 +367,7 @@ configs["episodes"].append(\
 { "title": "When 4G is not 4G",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "11:27.4" ),  "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_memory.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -364,7 +375,7 @@ configs["episodes"].append(\
 { "title": "breel2",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "11:38" ),  "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_autumn_GTX970.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -372,7 +383,7 @@ configs["episodes"].append(\
 { "title": "peers",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "11:47.4" ),  "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:36", "rotation" :90 },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -381,7 +392,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "11:54" ),  "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_autumn_GTX970.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
