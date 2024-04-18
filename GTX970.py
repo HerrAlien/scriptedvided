@@ -39,7 +39,7 @@ Watch: https://www.youtube.com/watch?v=16eNerPDIsU&t=0s
 Free Download / Stream: https://alplus.io/guide-you-home
 
 ''', \
-"tags" : "AMD,Radeon,Polaris,GCN,GCN4,GCN 4,GTX970,RX 570,Sapphire,ITX",\
+"tags" : "NVidia,GeForce,GTX,GTX970,GTX 970,Maxwell,Maxwell 2.0",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -55,7 +55,7 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "I (heart) Maxwell",\
 "audio" : {"timestamps" : (lastTS, "00:25" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_autumn_GTX970.mp4" },\
+"video" : {"file" : "" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -127,9 +127,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "04:02.5" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
-              scriptedvided.r6sText('1920x1080, low settings',  ,  ),\
-              scriptedvided.r6sText('1600x900, low settings' ,  ,  ),\
-              scriptedvided.r6sText('1280x720, low settings' ,  ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 171 , 117 ),\
+              scriptedvided.r6sText('1600x900, low settings' , 203 , 139 ),\
+              scriptedvided.r6sText('1280x720, low settings' , 230 , 151 ),\
     ]\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -139,8 +139,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "04:31.5" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Resident Evil 4 (Remake)'",\
-              scriptedvided.r6sText('1920x1080, low settings',  ,   ),\
-              scriptedvided.r6sText('1280x720, low settings',   ,   ),\
+              scriptedvided.r6sText('1920x1080, low settings', 64 , 46  ),\
+              scriptedvided.r6sText('1280x720, low settings',  86 , 55  ),\
     ]\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -170,8 +170,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "05:35.3" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Control'",\
-              scriptedvided.r6sText('1920x1080, low settings',  ,  ),\
-              scriptedvided.r6sText('1280x720, low settings' ,  ,  ),]\
+              scriptedvided.r6sText('1920x1080, low settings', 92 , 76 ),\
+              scriptedvided.r6sText('1280x720, low settings' , 167 , 74 ),]\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -181,10 +181,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "06:00" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', , ), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale' , , ),\
-              scriptedvided.r6sText('1920x1080, low settings, 50% render scale' , , ),\
-              scriptedvided.r6sText('1280x720, low settings, 50% render scale'  , , )]\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 173, 121 ), \
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale' , 211,146 ),\
+              scriptedvided.r6sText('1920x1080, low settings, 50% render scale' , 197,132 ),\
+              scriptedvided.r6sText('1280x720, low settings, 50% render scale'  , 213, 147)]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -204,9 +204,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "06:33" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'The Finals'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', , ),\
-              scriptedvided.r6sText('1600x900, low settings, 100% render scale' , , ),\
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale' , , ),]\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 80, 49),\
+              scriptedvided.r6sText('1600x900, low settings, 100% render scale' , 81, 47),\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale' , 86, 48),]\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -216,9 +216,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "07:00.3" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Counter-Strike 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1600x900, low settings' , , ),\
-              scriptedvided.r6sText('1280x720, low settings' , , ),]\
+              scriptedvided.r6sText('1920x1080, low settings', 146, 81),\
+              scriptedvided.r6sText('1600x900, low settings' , 137, 81),\
+              scriptedvided.r6sText('1280x720, low settings' , 127, 70),]\
 }})
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -235,9 +235,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "07:46.5" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1920x1080, performance mode', , ), \
-              scriptedvided.r6sText('1600x900, performance mode' , , ),\
-              scriptedvided.r6sText('1280x720, performance mode' , , )]\
+              scriptedvided.r6sText('1920x1080, performance mode', 112,76 ), \
+              scriptedvided.r6sText('1600x900, performance mode' , 135, 89),\
+              scriptedvided.r6sText('1280x720, performance mode' , 156, 87)]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -247,9 +247,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "08:24.2" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Overwatch 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1600x900, low settings' , , ),\
-              scriptedvided.r6sText('1280x720, low settings' , , ),]\
+              scriptedvided.r6sText('1920x1080, low settings',310 , 241),\
+              scriptedvided.r6sText('1600x900, low settings' , 400,272 ),\
+              scriptedvided.r6sText('1280x720, low settings' ,466 ,282 ),]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -268,8 +268,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "09:06.3" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', , ),\
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale' , , ),\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 262, 77),\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale' , 296, 87),\
     ]\
 }, \
 })
