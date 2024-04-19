@@ -61,7 +61,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "The GM-204-200-A1 GPU",\
-"audio" : {"timestamps" : (lastTS, "00:57.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("12:02.2", "12:29.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "GTX970_HeavenGpuZ.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -69,7 +69,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "TDP",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "01:14.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("00:57.2", "01:14.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "GTX970_TDP.mkv"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
