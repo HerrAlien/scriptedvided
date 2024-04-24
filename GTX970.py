@@ -13,7 +13,7 @@ configs = { "defaultAudioFile" : "GTX970.ogg",\
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Counter-Strike 2", "until" : "Overwatch 2"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Overwatch 2", "until" : "Again, (heart) Maxwell ..."}}, \
 {"file" : "Guide You Home - Ferco and Andie - Free Background Music - Audio Library Release.ogg", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Again, (heart) Maxwell ...", "until" : "Blooper"}}, \
-], "volume" : 0.06 },\
+], "volume" : 0.045 },\
 "episodes" : [],\
 "youtube" : {"title" : "  ...  ... ", \
 "description" : '''In this one we're testing the 4(?)GB GTX 970 using some games from today.''',\
