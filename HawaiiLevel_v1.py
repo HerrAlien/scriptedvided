@@ -47,7 +47,7 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "Taking my own advice",\
 "audio" : {"timestamps" : (lastTS, "00:17.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "c_ontrol_lowest_high.mp4" },\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40", "rotation" : "90" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -70,7 +70,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Meet the hardware",\
 "audio" : {"timestamps" : (lastTS, "00:51.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40" },\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40", "rotation" : "90" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -303,7 +303,7 @@ configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "06:45.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40" },\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40", "rotation" : "90" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
