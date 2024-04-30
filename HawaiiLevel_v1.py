@@ -47,7 +47,7 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "Taking my own advice",\
 "audio" : {"timestamps" : (lastTS, "00:17.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "c_ontrol_lowest_high.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -55,7 +55,7 @@ configs["episodes"].append(\
 { "title": "This is for single player",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "00:34.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "rx570_re4demo_quality.mp4", "start" : "03:30" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -63,14 +63,14 @@ configs["episodes"].append(\
 { "title": "What is good enough",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "00:45.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Meet the hardware",\
 "audio" : {"timestamps" : (lastTS, "00:51.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -78,7 +78,7 @@ configs["episodes"].append(\
 { "title": "R9 290X",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "01:00" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_r9_290x_outside_dog.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -86,7 +86,7 @@ configs["episodes"].append(\
 { "title": "GTX 970",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "01:14.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_autumn_GTX970.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -94,7 +94,7 @@ configs["episodes"].append(\
 { "title": "RX570",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "01:24.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_autumn_RX570.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -118,7 +118,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Control - high settings",\
 "audio" : {"timestamps" : (lastTS, "01:49.6" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "c_ontrol_lowest_high.mp4" },\
 "overlay" : { \
     "image" : {"file" : "Control-lowest-high.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -130,9 +130,9 @@ configs["episodes"].append(\
 { "title": "Control - high - GTX 970",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "01:57.9" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_Control_DX11_high.mp4", "start" : "00:00" },\
 "overlay" : { \
-    "image" : {"file" : "Control-high.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Control-high-results.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -141,9 +141,9 @@ configs["episodes"].append(\
 { "title": "Control - high - R9 290X",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "02:18.2" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_Control_DX11_high.mp4", "start" : "00:08.3"  },\
 "overlay" : { \
-    "image" : {"file" : "Control-high.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Control-high-results.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -152,9 +152,9 @@ configs["episodes"].append(\
 { "title": "Control - high - RX570",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "02:27.5" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_Control_DX11_high.mp4", "start" : "00:29.6"  },\
 "overlay" : { \
-    "image" : {"file" : "Control-high.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Control-high-results.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -162,9 +162,9 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Control - medium settings",\
 "audio" : {"timestamps" : (lastTS, "02:35.5" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "c_ontrol_medium_high.mp4" },\
 "overlay" : { \
-    "image" : {"file" : "Control-medium.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Control-medium-high.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -173,9 +173,9 @@ configs["episodes"].append(\
 { "title": "Control - medium - all",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "03:12" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_Control_DX11_medium.mp4" , "start" : "00:30"},\
 "overlay" : { \
-    "image" : {"file" : "Control-medium.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Control-medium-results.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -184,7 +184,7 @@ configs["episodes"].append(\
 { "title": "Control - conclusion",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "03:20.7" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_Control_DX11_medium.mp4", "start" : "01:06.5" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
