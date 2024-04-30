@@ -191,7 +191,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Fallout 4 - ultra",\
 "audio" : {"timestamps" : (lastTS, "03:30" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_Fallout4_2024_04_21_21_51_05_157.mp4", "start" : "00:01" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -199,7 +199,7 @@ configs["episodes"].append(\
 { "title": "Fallout 4 - high vs medium",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "03:40.4" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "F4_medium_high.mp4" },\
 "overlay" : { \
     "image" : {"file" : "Fallout4-medium-high.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -210,7 +210,7 @@ configs["episodes"].append(\
 { "title": "Fallout 4 - ultra results",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "04:12" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_Fallout4_2024_04_20_23_20_24_502.mp4", "start" : "00:00" },\
 "overlay" : { \
     "image" : {"file" : "Fallout4-ultra.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -220,7 +220,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Fallout 4 - high",\
 "audio" : {"timestamps" : (lastTS, "04:35" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_Fallout4_2024_04_20_23_20_24_502.mp4", "start" : "00:31.4" },\
 "overlay" : { \
     "image" : {"file" : "Fallout4-high.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -231,14 +231,14 @@ configs["episodes"].append(\
 { "title": "Fallout 4 - conclusion",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "04:51.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_Fallout4_2024_04_20_23_20_24_502.mp4", "start" : "00:58.4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "The exception to 30 FPS 1% lows",\
 "audio" : {"timestamps" : (lastTS, "05:11.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "03:19.8" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -254,7 +254,7 @@ configs["episodes"].append(\
 { "title": "Doom Eternal - high",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "05:58.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "04:00" },\
 "overlay" : { \
     "image" : {"file" : "DoomEternal-high.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -265,7 +265,7 @@ configs["episodes"].append(\
 { "title": "Doom Eternal - conclusions",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "06:10.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "04:30.5" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -273,7 +273,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (lastTS, "06:20.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "GTX970_Control_DX11_medium.mp4", "start" : "01:16" },\
 "overlay" : { \
     "image" : {"file" : "sum-averages.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -284,7 +284,7 @@ configs["episodes"].append(\
 { "title": "Conclusions one percent",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "06:30.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "04:45" },\
 "overlay" : { \
     "image" : {"file" : "sum-one-percent.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -295,7 +295,7 @@ configs["episodes"].append(\
 { "title": "Other games",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "06:36.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "stock_FarCry6_benchmark.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
