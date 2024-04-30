@@ -246,7 +246,7 @@ configs["episodes"].append(\
 { "title": "Doom Eternal - not higher than high",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "05:28" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "DOOMEternalx64vk_noyHigherThanHigh.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -303,7 +303,7 @@ configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "06:45.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
