@@ -127,6 +127,9 @@ configs["episodes"].append(\
 { "title": "Control - high settings",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "video" : {"file" : "" },\
+"overlay" : { \
+    "image" : {"file" : "Control-lowest-high.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -168,6 +171,9 @@ configs["episodes"].append(\
 { "title": "Control - medium settings",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "video" : {"file" : "" },\
+"overlay" : { \
+    "image" : {"file" : "Control-medium.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -202,6 +208,9 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "video" : {"file" : "" },\
+"overlay" : { \
+    "image" : {"file" : "Fallout4-medium-high.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
