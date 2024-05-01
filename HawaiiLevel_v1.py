@@ -250,6 +250,8 @@ configs["episodes"].append(\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+
+# should split up a medium
 configs["episodes"].append(\
 { "title": "Doom Eternal - high",\
 "isChapter" : False, \
@@ -266,6 +268,9 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "06:10.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "04:30.5" },\
+"overlay" : { \
+    "image" : {"file" : "DoomEternal-medium.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
