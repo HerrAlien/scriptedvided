@@ -47,21 +47,21 @@ Free Download / Stream: https://alplus.io/inspired
 lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "Taking my own advice, again",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:18.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "What is good enough",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:34.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Meet the (same) hardware",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:39.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40", "rotation" : "90" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -69,7 +69,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "GTX 970",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:43.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_autumn_GTX970.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -77,7 +77,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "R9 290X",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:52" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_r9_290x_outside_dog.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -85,7 +85,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "RX570",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:58.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_autumn_RX570.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -93,7 +93,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Z230",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:14.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Z230 workstation from HP'",\
               "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
@@ -109,7 +109,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # ===========================================================================
 configs["episodes"].append(\
 { "title": "Resident Evil 4 - balanced",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:34.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { \
     "image" : {"file" : "re4-low-balanced.png", "chromaColor" : "0x00FF00"}\
@@ -120,7 +120,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Resident Evil 4 - balanced 1080",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "02:15" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { \
     "image" : {"file" : "re4-balanced-1080.png", "chromaColor" : "0x00FF00"}\
@@ -131,7 +131,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Resident Evil 4 - balanced 900p",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "02:39.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { \
     "image" : {"file" : "re4-balanced-900.png", "chromaColor" : "0x00FF00"}\
@@ -143,14 +143,14 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # ===========================================================================
 configs["episodes"].append(\
 { "title": "Far Cry 6 - ultra settings",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:01.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Far Cry 6 - ultra settings 1080",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:35.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "isChapter" : False, \
 "overlay" : { \
@@ -161,7 +161,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Far Cry 6 - high settings 1080",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:55.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "isChapter" : False, \
 "overlay" : { \
@@ -174,7 +174,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # ===========================================================================
 configs["episodes"].append(\
 { "title": "When medium is better than high",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "04:24.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { \
     "image" : {"file" : "tow-high-medium.png", "chromaColor" : "0x00FF00"}\
@@ -185,10 +185,32 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "tow - medium results",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "04:53.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { \
     "image" : {"file" : "tow-medium.png", "chromaColor" : "0x00FF00"}\
+}, \
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "tow - low results",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "05:10.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+"overlay" : { \
+    "image" : {"file" : "tow-low.png", "chromaColor" : "0x00FF00"}\
+}, \
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "tow - medium 900 results",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "05:24.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+"overlay" : { \
+    "image" : {"file" : "tow-medium-900.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -198,7 +220,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # average FPS
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "05:35.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { \
     "image" : {"file" : "sum-avg-and-one-percent.png", "chromaColor" : "0x00FF00"}\
@@ -209,7 +231,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "subscribe",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "05:46.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -217,7 +239,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "05:53" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40", "rotation" : "90" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
