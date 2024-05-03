@@ -48,14 +48,14 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "Taking my own advice, again",\
 "audio" : {"timestamps" : (lastTS, "00:18.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "rx570_re4demo_balanced.mp4"},\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:35", "rotation" : "90" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "What is good enough",\
 "audio" : {"timestamps" : (lastTS, "00:34.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_06_36_774-converted.mp4"},\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4", "start" : "00:45"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -208,7 +208,7 @@ configs["episodes"].append(\
 { "title": "tow - medium 900 results",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "05:24.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_06_36_774-converted.mp4"},\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4", "start" : "00:59"},\
 "overlay" : { \
     "text" : ["'1600x900, medium settings'",\
               scriptedvided.r6sText('AMD Radeon R9 290X', 61, 33),\
@@ -223,7 +223,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (lastTS, "05:35.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4"},\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40", "rotation" : "90" },\
 "overlay" : { \
     "image" : {"file" : "sum-avg-and-one-percent.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -234,7 +234,7 @@ configs["episodes"].append(\
 { "title": "subscribe",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "05:46.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4", "start" : "00:59"}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
