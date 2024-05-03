@@ -110,7 +110,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Resident Evil 4 - balanced",\
 "audio" : {"timestamps" : (lastTS, "01:34.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R_e_4_low_balanced.mp4"},\
 "overlay" : { \
     "image" : {"file" : "re4-low-balanced.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -121,7 +121,7 @@ configs["episodes"].append(\
 { "title": "Resident Evil 4 - balanced 1080",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "02:15" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r9_290x_r_e4demo_balanced_s60.mp4", "start" : "01:10"},\
 "overlay" : { \
     "image" : {"file" : "re4-balanced-1080.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -132,7 +132,7 @@ configs["episodes"].append(\
 { "title": "Resident Evil 4 - balanced 900p",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "02:39.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "rx570_re4demo_balanced.mp4", "start" : "00:10"},\
 "overlay" : { \
     "image" : {"file" : "re4-balanced-900.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -144,14 +144,14 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Far Cry 6 - ultra settings",\
 "audio" : {"timestamps" : (lastTS, "03:01.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FarCry6Trial_ultra.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Far Cry 6 - ultra settings 1080",\
 "audio" : {"timestamps" : (lastTS, "03:35.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FarCry6Trial_ultra.mp4"},\
 "isChapter" : False, \
 "overlay" : { \
     "image" : {"file" : "fc6-ultra-results.png", "chromaColor" : "0x00FF00"}\
@@ -162,7 +162,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Far Cry 6 - high settings 1080",\
 "audio" : {"timestamps" : (lastTS, "03:55.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FarCry6Trial_high.mp4"},\
 "isChapter" : False, \
 "overlay" : { \
     "image" : {"file" : "fc6-high-results.png", "chromaColor" : "0x00FF00"}\
@@ -175,7 +175,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "When medium is better than high",\
 "audio" : {"timestamps" : (lastTS, "04:24.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "tow_high_medium.mp4"},\
 "overlay" : { \
     "image" : {"file" : "tow-high-medium.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -186,7 +186,7 @@ configs["episodes"].append(\
 { "title": "tow - medium results",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "04:53.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_47_13_622-converted.mp4"},\
 "overlay" : { \
     "image" : {"file" : "tow-medium.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -197,7 +197,7 @@ configs["episodes"].append(\
 { "title": "tow - low results",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "05:10.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4"},\
 "overlay" : { \
     "image" : {"file" : "tow-low.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -208,7 +208,7 @@ configs["episodes"].append(\
 { "title": "tow - medium 900 results",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "05:24.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_06_36_774-converted.mp4"},\
 "overlay" : { \
     "image" : {"file" : "tow-medium-900.png", "chromaColor" : "0x00FF00"}\
 }, \
