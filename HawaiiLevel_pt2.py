@@ -1,10 +1,10 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "HawaiiLevel_v1.ogg",\
-"mediaFolder" : "F:\\Videos\\HawaiiLevel_v1", \
+configs = { "defaultAudioFile" : "HawaiiLevel_part2.ogg",\
+"mediaFolder" : "F:\\Videos\\Hawaii_part2", \
 "stockFolder" : "F:\\Videos\\stock",\
-"outputFolder" : "F:\\Videos\\HawaiiLevel_v1\\output", \
-"outputFile" : "HawaiiLevel_v1.mp4", \
+"outputFolder" : "F:\\Videos\\Hawaii_part2\\output", \
+"outputFile" : "Hawaii_part2.mp4", \
 "benchmarkFile" : "",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
@@ -210,7 +210,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "05:24.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_06_36_774-converted.mp4"},\
 "overlay" : { \
-    "image" : {"file" : "tow-medium-900.png", "chromaColor" : "0x00FF00"}\
+    "text" : ["'1600x900, medium settings'",\
+              scriptedvided.r6sText('AMD Radeon R9 290X', 61, 33),\
+    ]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
