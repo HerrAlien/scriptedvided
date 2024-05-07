@@ -89,49 +89,9 @@ def getFpsValueFromLine(line):
 # move to UTILS
 def parseBenchmarkFile (benchmarkFile):
     returnedDict = {}
-    currentKey = ""
-    currentValue = [0,0,0]
-    benchmarkCompletedMark = " benchmark completed,"
-    framesRenderedInMark = "frames rendered in"
-    
-    fileHandler = open(benchmarkFile, "r")
-    fileLines = fileHandler.readlines()
-    lineIndexFollowingKey = -1
-    for line in fileLines:
-        if benchmarkCompletedMark in line:
-            currentKey = line[21:]
-            gameNameEndsAt = currentKey.index(benchmarkCompletedMark)
-            currentKey = currentKey[0:gameNameEndsAt]
-            currentKey = currentKey.upper()
-            lineIndexFollowingKey = 0
-            
-            tagsStartAt = line.index(framesRenderedInMark) + len(framesRenderedInMark)
-            tagsStr = line[tagsStartAt:]
-            tagsStartAt = tagsStr.index(" s") + 2
-            tagsStr = tagsStr[tagsStartAt:]
-            tagsStr = tagsStr.replace("(", "").replace(")", ",").replace("\r","").replace("\n","")
-            tagsArr = tagsStr.split(",")
-            finalTags = []
-            for tag in tagsArr:
-                tag = tag.strip()
-                if len(tag) > 0:
-                    finalTags.append(tag)
-            finalTags.sort() 
-            finalTags.append(currentKey)
-            currentValue = [0,0,0, finalTags]
-        else:
-            if lineIndexFollowingKey == 0: # average
-                currentValue[0] = getFpsValueFromLine(line)
-            elif lineIndexFollowingKey == 3: # 1%
-                currentValue[1] = getFpsValueFromLine(line)
-            elif lineIndexFollowingKey == 4: # 0.1%
-                currentValue[2] = getFpsValueFromLine(line)
-                returnedDict[currentKey] = currentValue
-                lineIndexFollowingKey = -1
-            
-            if lineIndexFollowingKey >= 0:
-                lineIndexFollowingKey = lineIndexFollowingKey + 1
-
+    arrayData = parseBenchmarkFileAsArray(benchmarkFile);
+    for entry in arrayData:
+        returnedDict[entry[-1][-1]] = entry[0:-1]
     return returnedDict
 
 def parseBenchmarkFileAsArray (benchmarkFile):
@@ -261,4 +221,4 @@ def aliases(inputName):
         
         arrToReturn = uppedArr
         
-    return arrToReturn # no lnown
+    return arrToReturn
