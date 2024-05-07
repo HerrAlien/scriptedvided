@@ -276,6 +276,10 @@ def makeVideoForEpisode (episode, configs, targetRes=(1920,1080) ):
     
     opts["padAudio"] = sv_utils.dictValue(audioDict, "padAudio", opts["padAudio"])
     
+    # here we have a problem, both 'textArray' and 'overlayImageDict' stand for overlays.
+    # Both get applied when both supplied, with the text overlaying on top of the overlay
+    # image.
+    
     builtVideo = makeEpisodeWithAllInputs (videoDict, audioDict, textArray, overlayImageDict, opts)
     # get extension and dir
     dir = sv_utils.dictValue(configs, "outputFolder", ".")
