@@ -8,9 +8,9 @@ configs = { "defaultAudioFile" : "hd5770_2024.ogg",\
 "benchmarkFile" : "",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Taking my own advice, again", "until" : "Resident Evil 4 - balanced"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Resident Evil 4 - balanced", "until" : "When medium is better than high"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "When medium is better than high", "until" : "Conclusions"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "(lest) I forget", "until" : "Nope"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Nope", "until" : "DOTA2"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "DOTA2", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.045 },\
 "episodes" : [],\
@@ -120,10 +120,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "video" : {"file" : "" },\
 "overlay" : { \
-    "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1920x1080, performance mode', , ), \
-              scriptedvided.r6sText('1600x900, performance mode' , , ),\
-              scriptedvided.r6sText('1280x720, performance mode' , , )]\
+    "text" : ["'Fortnite, performance mode'",\
+              scriptedvided.r6sText('1920x1080, borderless', 60, 36), \
+              scriptedvided.r6sText('1280x720, windowed' , 86, 40)]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -134,9 +133,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "video" : {"file" : "" },\
 "overlay" : { \
-    "text" : ["'Fallout 4'",\
-              scriptedvided.r6sText('1280x720, regular environment' , , ),\
-              scriptedvided.r6sText('1280x720, Diamond City' , , )]\
+    "text" : ["'Fallout 4, low settings, windowed'",\
+              scriptedvided.r6sText('1280x720, regular environment' , 48, 28),\
+              scriptedvided.r6sText('1280x720, Diamond City' , 27, 25)]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -148,8 +147,8 @@ configs["episodes"].append(\
 "video" : {"file" : "" },\
 "overlay" : { \
     "text" : ["'Prey'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ), \
-              scriptedvided.r6sText('1280x720, low settings' , , )]\
+              scriptedvided.r6sText('1920x1080, low settings', 32, 22), \
+              scriptedvided.r6sText('1280x720, low settings' , 70, 44)]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -160,7 +159,7 @@ configs["episodes"].append(\
 "video" : {"file" : "" },\
 "overlay" : { \
     "text" : ["'Grand Theft Auto V'",\
-              scriptedvided.r6sText('794x571 wtf?, low settings', , )]\
+              scriptedvided.r6sText('794x571 (wtf?), low settings', 94, 58)]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -171,8 +170,8 @@ configs["episodes"].append(\
 "video" : {"file" : "" },\
 "overlay" : { \
     "text" : ["'Counter-Strike 2'",\
-              scriptedvided.r6sText('1280x720, low settings' , , ),\
-              scriptedvided.r6sText('1280x720, low settings, FSR Quality' , , )]\
+              scriptedvided.r6sText('1280x720, low settings' , 37, 20),\
+              scriptedvided.r6sText('1280x720, low settings, FSR Quality' , 53, 27)]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -194,8 +193,8 @@ configs["episodes"].append(\
 "video" : {"file" : "" },\
 "overlay" : { \
     "text" : ["'Rogue Company'",\
-              scriptedvided.r6sText('1920x1080, low settings' , , ),\
-              scriptedvided.r6sText('1280x720, low settings'  , , )]\
+              scriptedvided.r6sText('1920x1080, low settings' , 56, 20),\
+              scriptedvided.r6sText('1280x720, low settings'  , 80, 53)]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -205,8 +204,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', , ), \
-              scriptedvided.r6sText('1920x1080, low settings, 50% render scale' , , )]\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 22, 15), \
+              scriptedvided.r6sText('1920x1080, low settings, 50% render scale' , 43, 24)]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -217,8 +216,8 @@ configs["episodes"].append(\
 "video" : {"file" : "" },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', , ), \
-              scriptedvided.r6sText('1920x1080, low settings, 50% render scale' , , )]\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 40, 29), \
+              scriptedvided.r6sText('1920x1080, low settings, 50% render scale' , 56, 40)]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -285,6 +284,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Not cheap enough",\
+"isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" },\
 })
@@ -292,6 +292,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Not the sunset I had in mind",\
+"isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" },\
 })
