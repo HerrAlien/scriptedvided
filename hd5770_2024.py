@@ -47,8 +47,8 @@ Free Download / Stream: https://alplus.io/inspired
 lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "(lest) I forget",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "00:10.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_gigabyte_hd5770_juniper.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -56,45 +56,46 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "No fullscreen",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "00:30.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "HD5770_Fallout4_windowed.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
 { "title": "Juniper, but not the plant",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "00:42.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "Gigabyte_HD5770_GpuZ_phone.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+#needs overlay
 configs["episodes"].append(\
 { "title": "Games added, games removed",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "00:54" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "Gigabyte_HD5770_GpuZ_phone.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "01:15" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "GigabyteHd5770Cooling.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Temps",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "01:27.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "Gigabyte_HD5770_HeavenGpuZ_phone.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "The brand old (!) Z230",\
-"audio" : {"timestamps" : (lastTS, "01:14.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:44.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Z230 workstation from HP'",\
               "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
@@ -110,15 +111,14 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # ===========================================================================
 configs["episodes"].append(\
 { "title": "Nope",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "01:58.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "HD5770_Overwatch2.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "02:37" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Fortnite, performance mode'",\
               scriptedvided.r6sText('1920x1080, borderless', 60, 36), \
@@ -130,8 +130,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Fallout 4",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "02:56.8" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Fallout 4, low settings, windowed'",\
               scriptedvided.r6sText('1280x720, regular environment' , 48, 28),\
@@ -143,8 +142,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Prey",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "03:20.3" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Prey'",\
               scriptedvided.r6sText('1920x1080, low settings', 32, 22), \
@@ -155,8 +153,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Grand Theft Auto V",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "03:48.8" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Grand Theft Auto V'",\
               scriptedvided.r6sText('794x571 (wtf?), low settings', 94, 58)]\
@@ -166,8 +163,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "04:10.9" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Counter-Strike 2'",\
               scriptedvided.r6sText('1280x720, low settings' , 37, 20),\
@@ -178,7 +174,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "04:34.6" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -189,8 +185,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Rogue Company",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "04:52.7" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Rogue Company'",\
               scriptedvided.r6sText('1920x1080, low settings' , 56, 20),\
@@ -201,7 +196,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "05:06.6" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
               scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 22, 15), \
@@ -212,8 +207,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Splitgate",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "05:16.6" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Splitgate'",\
               scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 40, 29), \
@@ -224,7 +218,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Valorant",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "05:34.5" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -235,7 +229,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "05:48.3" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -246,7 +240,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "World of Tanks Blitz",\
-"audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "06:11.7" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -261,15 +255,15 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # average FPS
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "06:25.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "HD5770_Fallout4_windowed.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Still, they worked again a year ago",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "06:35.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -277,15 +271,15 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Nimez",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "06:44.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "HD5770_nimez.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Not cheap enough",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "07:08.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -293,8 +287,8 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Not the sunset I had in mind",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "07:25.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "HD5770_P_rey_issues.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -302,16 +296,16 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Sentimental values",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "07:40.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "HD5770_both_breel.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"audio" : {"timestamps" : (lastTS, "07:48.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "Gigabyte_HD5770_breel.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
