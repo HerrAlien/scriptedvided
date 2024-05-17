@@ -69,14 +69,15 @@ configs["episodes"].append(\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
-#needs overlay
-configs["episodes"].append(\
-{ "title": "Games added, games removed",\
-"isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "00:54" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "Gigabyte_HD5770_GpuZ_phone.mp4" },\
-})
-lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+##needs overlay
+#configs["episodes"].append(\
+#{ "title": "Games added, games removed",\
+#"isChapter" : False, \
+#"audio" : {"timestamps" : (lastTS, "00:54" ), "volume" : 0.999, "padAudio" : 0.1 },\
+#"video" : {"file" : "Gigabyte_HD5770_GpuZ_phone.mp4" },\
+#})
+#lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+lastTS = "00:54"
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
@@ -112,7 +113,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Nope",\
 "audio" : {"timestamps" : (lastTS, "01:58.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "HD5770_Overwatch2.mkv" },\
+"video" : {"file" : "HD5770_Overwatch2.mkv", "start" : "00:21" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -250,8 +251,6 @@ configs["episodes"].append(\
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
-
-
 # average FPS
 configs["episodes"].append(\
 { "title": "Conclusions",\
@@ -280,7 +279,7 @@ configs["episodes"].append(\
 { "title": "Not cheap enough",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "07:08.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "olx_5770_7770.mkv", "start" : "00:55" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
