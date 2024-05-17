@@ -5,7 +5,7 @@ configs = { "defaultAudioFile" : "hd5770_2024.ogg",\
 "stockFolder" : "F:\\Videos\\stock",\
 "outputFolder" : "F:\\Videos\\hd5770_2024\\output", \
 "outputFile" : "hd5770_2024.mp4", \
-"benchmarkFile" : "",\
+"benchmarkFile" : "F:\\Videos\\hd5770_2024\\Benchmark_HD5770_2024.txt",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "(lest) I forget", "until" : "Nope"}}, \
@@ -91,6 +91,11 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "01:27.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "Gigabyte_HD5770_HeavenGpuZ_phone.mp4" },\
+"overlay" : { \
+    "text" : ["'Thermals'",\
+              "'Heaven\: 63C (38C delta over ambient)'",\
+    ]\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -320,7 +325,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 #print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Alien Isolation"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "DOTA2"][0], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 1080 results"][0], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 900 results"][0], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 720 results"][0], configs)

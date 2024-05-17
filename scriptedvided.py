@@ -571,7 +571,7 @@ def aliases(inputName):
         ["Hyperscape", "Hyperscape.exe"],\
         ["Warframe", "Warframe.x64.exe"],\
         ["Control", "Control_DX11.exe"],\
-        ["DOTA2", "dota2.exe"],\
+        ["DOTA2", "DOTA 2", "dota2.exe"],\
         ["Grand Theft Auto V", "gtav", "gta5", "GTA5.exe", "GTA V", "GTA_V", "gta_5"],\
         ["Splitgate", "PortalWars-Win64-Shipping.exe", "PortalWars"],\
         ["Fortnite", "FortniteClient-Win64-Shipping.exe"],\
@@ -584,6 +584,8 @@ def aliases(inputName):
         ["CS2", "Counter-Strike 2" , "cs2.exe"],\
         ["The Finals", "Finals" , "Discovery.exe"],\
         ["Doom Eternal", "DoomEternal" , "DOOMEternalx64vk.exe" ],\
+        ["Fallout 4", "Fallout4" , "Fallout4.exe" ],\
+        ["Prey", "Prey.exe" ],\
     ]
 
     if inputName is None:
