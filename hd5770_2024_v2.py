@@ -67,7 +67,6 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 #"video" : {"file" : "Gigabyte_HD5770_GpuZ_phone.mp4" },\
 #})
 #lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
-lastTS = "00:54"
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
