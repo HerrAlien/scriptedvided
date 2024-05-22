@@ -162,6 +162,16 @@ configs["episodes"].append(\
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
+{ "title": "Overwatch 2",\
+"audio" : {"timestamps" : ("08:21.6", "08:47.7" ), "padAudio" : 0.1 },\
+"overlay" : { \
+    "text" : ["'Overwatch 2, lowest settings'",\
+              scriptedvided.r6sText('1920x1080, borderless', 60, 36), \
+              scriptedvided.r6sText('1280x720, windowed' , 86, 40)]\
+}, \
+})
+
+configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
 "audio" : {"timestamps" : (lastTS, "03:54.6" ), "padAudio" : 0.1 },\
 "overlay" : { \
