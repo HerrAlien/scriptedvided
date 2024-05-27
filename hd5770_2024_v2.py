@@ -119,9 +119,9 @@ configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (lastTS, "02:26.3" ), "padAudio" : 0.1 },\
 "overlay" : { \
-    "text" : ["'Fortnite, performance mode'",\
-              scriptedvided.r6sText('1920x1080, borderless', 60, 36), \
-              scriptedvided.r6sText('1280x720, windowed' , 86, 40)]\
+    "text" : ["'Fortnite'",\
+              scriptedvided.r6sText('1920x1080, performance mode', 60, 36), \
+              scriptedvided.r6sText('1280x720, performance mode' , 86, 40)]\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -131,10 +131,11 @@ configs["episodes"].append(\
 { "title": "Fallout 4",\
 "audio" : {"timestamps" : (lastTS, "02:43" ), "padAudio" : 0.1 },\
 "overlay" : { \
-    "text" : ["'Fallout 4, low settings, windowed'",\
+    "text" : ["'Fallout 4, low settings'",\
               scriptedvided.r6sText('1280x720, regular environment' , 48, 28),\
               scriptedvided.r6sText('1280x720, Diamond City' , 27, 25)]\
 }, \
+"video" : {"file" : "GTX970_Fallout4_2024_04_20_08_31_40_266.mp4", "start" : "06:00"}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 

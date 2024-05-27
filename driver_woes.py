@@ -1,9 +1,9 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "driver_woes.ogg",\
-"mediaFolder" : "F:\\Videos\\ ... ...", \
+configs = { "defaultAudioFile" : "legacy_drivers.ogg",\
+"mediaFolder" : "F:\\Videos\\driverw_woes", \
 "stockFolder" : "F:\\Videos\\stock",\
-"outputFolder" : "F:\\Videos\\... ...\\output", \
+"outputFolder" : "F:\\Videos\\driverw_woes\\output", \
 "outputFile" : "driver_woes.mp4", \
 "benchmarkFile" : "",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
@@ -48,7 +48,7 @@ configs["episodes"].append(\
 { "title": "Legacy video cards FTW ... right?",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" },\
-})
+}) # needs a video with TS2, R9 270 and GT 730
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
@@ -57,7 +57,7 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" },\
-})
+}) # a driver install package? or ?
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
@@ -72,15 +72,18 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "1 - Dude, where's your full screen mode? | Radeon HD 5000-6000 series",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
-})
+"video" : {"file" : "HD5770_F_allout4_windowed.mp4" },\
+"overlay" : { \
+    "image" : {"file" : "dude_where_is_fs.png", "chromaColor" : "0x00FF00"}\
+}, \
+}) # overlay with batman
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "DX11 is popular",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "w_arzone-a_pex-side-by-side.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -88,7 +91,7 @@ configs["episodes"].append(\
 { "title": "TS2 cards - first for DX11",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "broll_ts2_family_outside_takingTurns.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -96,7 +99,7 @@ configs["episodes"].append(\
 { "title": "HD5770 and Fortnite",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "hd5770_f_ortnite_B-Reel.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -104,7 +107,7 @@ configs["episodes"].append(\
 { "title": "Fallout 4 in windowed",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "HD5770_F_allout4_windowed.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -112,7 +115,7 @@ configs["episodes"].append(\
 { "title": "Game crashing at launch",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "HD5770_O_verwatch2.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -120,7 +123,7 @@ configs["episodes"].append(\
 { "title": "No driver would help. But!",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "HD5770_nimez.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -128,7 +131,7 @@ configs["episodes"].append(\
 { "title": "CCC",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "TS2_fix_FS.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -136,7 +139,7 @@ configs["episodes"].append(\
 { "title": "R9 270",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "breel_r9_270_outside.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -144,7 +147,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "2 - Error 182 | Radeon HD 7000, R7-R9 200-300 series",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "R9_family_poor.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -152,7 +155,7 @@ configs["episodes"].append(\
 { "title": "GCN search for drivers",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "AMD_recommends_22.6.1.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -160,7 +163,7 @@ configs["episodes"].append(\
 { "title": "Blink 182",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "blink_182.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -168,7 +171,7 @@ configs["episodes"].append(\
 { "title": "Actual error 182",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "error_182.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -177,7 +180,7 @@ configs["episodes"].append(\
 { "title": "Trust Microsoft",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "win_update.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -185,7 +188,7 @@ configs["episodes"].append(\
 { "title": "Win update means old drivers",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "gcn_win_update_old_drivers.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -193,7 +196,7 @@ configs["episodes"].append(\
 { "title": "a - punch card name",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "gcn_21.5.1_downloading.mkv" , "start" : "00:07"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -201,7 +204,7 @@ configs["episodes"].append(\
 { "title": "b - ignore 22.6.1",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "gcn_21.5.1_downloading.mkv" , "start" : "00:20"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -209,7 +212,7 @@ configs["episodes"].append(\
 { "title": "c - previous drivers",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "gcn_21.5.1_downloading.mkv" , "start" : "00:25"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -217,7 +220,7 @@ configs["episodes"].append(\
 { "title": "d - choose 21.5.1",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "gcn_21.5.1_downloading.mkv" , "start" : "00:35"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -225,7 +228,7 @@ configs["episodes"].append(\
 { "title": "e - this one installs",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "gcn_21.5.1_downloading.mkv" , "start" : "02:41"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -233,7 +236,7 @@ configs["episodes"].append(\
 { "title": "f - driver is installed",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "gcn_21.5.1_installed.mkv" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -289,7 +292,7 @@ configs["episodes"].append(\
 { "title": "low budget, not buying new",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "broll_ts2_family_outside_takingTurns.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -305,7 +308,7 @@ configs["episodes"].append(\
 { "title": "no open source",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "hd5770_f_ortnite_B-Reel.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
