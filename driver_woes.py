@@ -47,7 +47,7 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "Legacy video cards FTW ... right?",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "broll_legacy_gpus.mp4" },\
 }) # needs a video with TS2, R9 270 and GT 730
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -64,7 +64,7 @@ configs["episodes"].append(\
 { "title": "all issues in one screen",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "4_issues_merged.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -316,7 +316,7 @@ configs["episodes"].append(\
 { "title": "Brees with cards, end",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "broll_legacy_gpus.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -325,7 +325,7 @@ configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "broll_legacy_gpus.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
