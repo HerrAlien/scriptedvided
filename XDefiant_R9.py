@@ -47,21 +47,21 @@ Free Download / Stream: https://alplus.io/inspired
 lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "Missed the launch",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:13.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "XDefiant_2024_05_28_23_50_27_454.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Below the minimum requirements. Again.",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "00:32.42" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "X_D_efiant_minimum_req.mkv", "start" : "00:20"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "The R9 family",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:38.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "R9_family_poor.mkv"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -69,7 +69,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "R9 290X",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:44.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_r9_290x_outside.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -77,7 +77,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "R9 280",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:51" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_r9_280_outside.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -85,7 +85,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "R9 270",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:57.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_r9_270_outside.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -93,7 +93,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # black screen
 configs["episodes"].append(\
 { "title": "Test system and settings",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:12.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Z230 workstation from HP'",\
               "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
@@ -108,7 +108,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "captures at 720",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:21.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "XDefiant_2024_05_28_23_01_28_977.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -116,7 +116,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "1920x1080 results",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "02:31.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "XDefiant_2024_05_28_22_53_25_357.mp4"},\
 "overlay" : { \
     "image" : {"file" : "1080, low settings.png", "chromaColor" : "0x00FF00"}\
@@ -127,7 +127,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "1280x720 results",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:38.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "XDefiant_2024_05_28_23_27_12_246.mp4"},\
 "overlay" : { \
     "image" : {"file" : "720, low settings.png", "chromaColor" : "0x00FF00"}\
@@ -139,7 +139,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # overlay with FPS for the 290X
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:56" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "XDefiant_2024_05_28_23_50_27_454.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -148,8 +148,8 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "minimum req are fine",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "04:06.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_r9_280_outside.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -157,8 +157,8 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "r9 270",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (lastTS, "04:19" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_r9_270_outside.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -166,7 +166,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "04:26.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "XDefiant_2024_05_28_23_27_12_246.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
