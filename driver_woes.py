@@ -148,7 +148,7 @@ configs["episodes"].append(\
 { "title": "GCN search for drivers",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "03:02.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "AMD_recommends_22.6.1.mp4" },\
+"video" : {"file" : "AMD_recommends_22_6_1.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -189,7 +189,7 @@ configs["episodes"].append(\
 { "title": "a - punch card name",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "03:41.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "gcn_21.5.1_downloading.mkv" , "start" : "00:07"},\
+"video" : {"file" : "gcn_21_5_1_downloading.mkv" , "start" : "00:07"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -197,7 +197,7 @@ configs["episodes"].append(\
 { "title": "b - ignore 22.6.1",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "03:44.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "gcn_21.5.1_downloading.mkv" , "start" : "00:20"},\
+"video" : {"file" : "gcn_21_5_1_downloading.mkv" , "start" : "00:20"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -205,7 +205,7 @@ configs["episodes"].append(\
 { "title": "c - previous drivers",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "03:50.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "gcn_21.5.1_downloading.mkv" , "start" : "00:25"},\
+"video" : {"file" : "gcn_21_5_1_downloading.mkv" , "start" : "00:25"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -213,7 +213,7 @@ configs["episodes"].append(\
 { "title": "d - choose 21.5.1",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "04:01.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "gcn_21.5.1_downloading.mkv" , "start" : "00:35"},\
+"video" : {"file" : "gcn_21_5_1_downloading.mkv" , "start" : "00:35"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -221,7 +221,7 @@ configs["episodes"].append(\
 { "title": "e - this one installs",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "04:04.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "gcn_21.5.1_downloading.mkv" , "start" : "02:41"},\
+"video" : {"file" : "gcn_21_5_1_downloading.mkv" , "start" : "02:41"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -276,7 +276,7 @@ configs["episodes"].append(\
 { "title": "better testing means more effort",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "05:57" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "HD5770_both_breel.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
