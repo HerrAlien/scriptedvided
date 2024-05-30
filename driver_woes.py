@@ -245,7 +245,7 @@ configs["episodes"].append(\
 { "title": "Download drivers 730",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "04:33.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "GF108_download_kepler_driver.mkv" },\
+"video" : {"file" : "GF108_download_kepler_driver.mkv", "start" : "00:08" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
