@@ -8,10 +8,10 @@ configs = { "defaultAudioFile" : "legacy_drivers.ogg",\
 "benchmarkFile" : "",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Legacy video cards FTW ... right?", "until" : "1 - Dude, where's your full screen mode? | Radeon HD 5000-6000 series"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1 - Dude, where's your full screen mode? | Radeon HD 5000-6000 series", "until" : "2 - Error 182 | Radeon HD 7000, R7-R9 200-300 series"}}, \
-{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "2 - Error 182 | Radeon HD 7000, R7-R9 200-300 series", "until" : "3 - The GT 730 ... but which one? | Fermi (GF108) GT 730"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "3 - The GT 730 ... but which one? | Fermi (GF108) GT 730", "until" : "Closing words"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Legacy video cards FTW ... right?", "until" : "1 - Dude, where's your full screen mode? (Radeon HD 5000-6000 series)"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1 - Dude, where's your full screen mode? (Radeon HD 5000-6000 series)", "until" : "2 - Error 182 (Radeon HD 7000, R7-R9 200-300 series)"}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "2 - Error 182 (Radeon HD 7000, R7-R9 200-300 series)", "until" : "3 - The GT 730 ... but which one? (Fermi (GF108) GT 730)"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "3 - The GT 730 ... but which one? (Fermi (GF108) GT 730)", "until" : "Closing words"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Closing words", "until" : "[eof]"}}, \
 ], "volume" : 0.045 },\
 "episodes" : [],\
@@ -63,7 +63,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 #let's start with AMD - zoom out on the where's your full screen
 configs["episodes"].append(\
-{ "title": "1 - Dude, where's your full screen mode? | Radeon HD 5000-6000 series",\
+{ "title": "1 - Dude, where's your full screen mode? (Radeon HD 5000-6000 series)",\
 "audio" : {"timestamps" : (lastTS, "00:43.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "HD5770_F_allout4_windowed.mp4" },\
 "overlay" : { \
@@ -138,7 +138,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 # GCN is now legacy
 configs["episodes"].append(\
-{ "title": "2 - Error 182 | Radeon HD 7000, R7-R9 200-300 series",\
+{ "title": "2 - Error 182 (Radeon HD 7000, R7-R9 200-300 series)",\
 "audio" : {"timestamps" : (lastTS, "02:49.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "R9_family_poor.mkv" },\
 })
@@ -235,7 +235,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
-{ "title": "3 - The GT 730 ... but which one? | Fermi (GF108) GT 730",\
+{ "title": "3 - The GT 730 ... but which one? (Fermi (GF108) GT 730)",\
 "audio" : {"timestamps" : (lastTS, "04:23.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "730_family_2.mkv" },\
 })
