@@ -10,8 +10,8 @@ configs = { "defaultAudioFile" : "legacy_drivers.ogg",\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Legacy video cards FTW ... right?", "until" : "1 - Dude, where's your full screen mode? (Radeon HD 5000-6000 series)"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1 - Dude, where's your full screen mode? (Radeon HD 5000-6000 series)", "until" : "2 - Error 182 (Radeon HD 7000, R7-R9 200-300 series)"}}, \
-{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "2 - Error 182 (Radeon HD 7000, R7-R9 200-300 series)", "until" : "3 - The GT 730 ... but which one? (Fermi (GF108) GT 730)"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "3 - The GT 730 ... but which one? (Fermi (GF108) GT 730)", "until" : "Closing words"}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "2 - Error 182 (Radeon HD 7000, R7-R9 200-300 series)", "until" : "3 - Let's play Doom Eternal ... not."}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "3 - Let's play Doom Eternal ... not.", "until" : "Closing words"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Closing words", "until" : "[eof]"}}, \
 ], "volume" : 0.045 },\
 "episodes" : [],\
@@ -225,6 +225,58 @@ configs["episodes"].append(\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+# ------------------------------------
+
+lastTsNimez = "00:00"
+configs["episodes"].append(\
+{ "title": "3 - Let's play Doom Eternal ... not.",\
+"audio" : {"file" : "drivers_nimez.ogg", "timestamps" : (lastTsNimez, "00:21.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4" },\
+})
+lastTsNimez = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "last warning",\
+"isChapter" : False, \
+"audio" : {"file" : "drivers_nimez.ogg", "timestamps" : (lastTsNimez, "00:24" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "black_screen.mkv" },\
+})
+lastTsNimez = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "strobefest",\
+"isChapter" : False, \
+"audio" : {"file" : "drivers_nimez.ogg", "timestamps" : (lastTsNimez, "00:43.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "GCN1_DE_Adrenalin_22_6_1.mp4" },\
+})
+lastTsNimez = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "gradual degradation",\
+"isChapter" : False, \
+"audio" : {"file" : "drivers_nimez.ogg", "timestamps" : (lastTsNimez, "00:49" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "4_stages_of_strobing.mp4" },\
+}) 
+lastTsNimez = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "sample of fixed",\
+"isChapter" : False, \
+"audio" : {"file" : "drivers_nimez.ogg", "timestamps" : (lastTsNimez, "01:00" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4" },\
+})
+lastTsNimez = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "nimez",\
+"isChapter" : False, \
+"audio" : {"file" : "drivers_nimez.ogg", "timestamps" : (lastTsNimez, "01:20" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "downloading_R_ID.mkv", "start" : "00:15" },\
+})
+lastTsNimez = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+# ------------- 6 extra segments
+
 configs["episodes"].append(\
 { "title": "NVidia does it too",\
 "isChapter" : False, \
@@ -235,7 +287,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
-{ "title": "3 - The GT 730 ... but which one? (Fermi (GF108) GT 730)",\
+{ "title": "4 - The GT 730 ... but which one? (Fermi (GF108) GT 730)",\
 "audio" : {"timestamps" : (lastTS, "04:23.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "730_family_2.mkv" },\
 })
@@ -292,7 +344,7 @@ configs["episodes"].append(\
 { "title": "Brees with cards, end",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "06:44.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "broll_legacy_gpus.mp4" },\
+"video" : {"file" : "broll_ts2_family_outside_takingTurns.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
