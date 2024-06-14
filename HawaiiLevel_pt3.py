@@ -222,26 +222,50 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # average FPS
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (lastTS, "05:35.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40", "rotation" : "90" },\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "" },\
 "overlay" : { \
-    "image" : {"file" : "sum-avg-and-one-percent.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Total average FPS.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
-{ "title": "subscribe",\
+{ "title": "one percent",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "05:46.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "IndianaEpicGameStore-Win64-Shipping_2024_03_31_17_22_41_226-converted.mp4", "start" : "00:59"}\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""}\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "one percent rx 570",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""}\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "one percent GTX 970",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""}\
+})
+lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
+
+configs["episodes"].append(\
+{ "title": "one percent R9 290X",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (lastTS, "05:53" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40", "rotation" : "90" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
