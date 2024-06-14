@@ -122,7 +122,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Shadow of The Toomb Raider",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "SOTTR_benchmark_highest.mp4", "start" : "00:10"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -130,7 +130,7 @@ configs["episodes"].append(\
 { "title": "SOTTR highest",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "00:05"},\
 "overlay" : { \
     "image" : {"file" : "Shadow of The Toomb Raider - 1080, highest.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -143,7 +143,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { \
-    "image" : {"file" : "Shadow of The Toomb Raider - 1080, high.png", "chromaColor" : "0x00FF00"}\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "04:20"},\
+"0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -152,7 +153,7 @@ configs["episodes"].append(\
 { "title": "SOTTR medium",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "07:00"},\
 "overlay" : { \
     "image" : {"file" : "Shadow of The Toomb Raider - 1080, medium.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -163,11 +164,11 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # ==================== PREY =================
 
 configs["episodes"].append(\
-{ "title": "GTA V, but high",\
+{ "title": "Prey, highest",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Prey_2024_05_05_22_55_19_979.mp4"},\
 "overlay" : { \
-    "image" : {"file" : "GTA V - 1080, High.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Prey - 1080, Highest.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -177,7 +178,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Borderlands 3",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Borderlands3_benchmark_ultra.mp4"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -185,7 +186,7 @@ configs["episodes"].append(\
 { "title": "Borderlands 3 ultra",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Borderlands3_2024_05_03_22_37_22_347.mp4", "start" : "00:01"},\
 "overlay" : { \
     "image" : {"file" : "Borderlands 3 - 1080, ultra.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -196,7 +197,7 @@ configs["episodes"].append(\
 { "title": "Borderlands 3 high",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Borderlands3_2024_05_03_22_37_22_347.mp4", "start" : "12:01"},\
 "overlay" : { \
     "image" : {"file" : "Borderlands 3 - 1080, high.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -207,7 +208,7 @@ configs["episodes"].append(\
 { "title": "Borderlands 3 medium",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Borderlands3_2024_05_03_22_58_15_076.mp4", "start" : "09:00"},\
 "overlay" : { \
     "image" : {"file" : "Borderlands 3 - 1080, medium.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -223,7 +224,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "" },\
+"video" : {"file" : "Prey_2024_05_05_22_55_19_979.mp4" },\
 "overlay" : { \
     "image" : {"file" : "Total average FPS.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -234,7 +235,10 @@ configs["episodes"].append(\
 { "title": "one percent",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""}\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:40", "rotation" : "90" },\
+"overlay" : { \
+    "image" : {"file" : "Total average and percentpng.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -242,7 +246,10 @@ configs["episodes"].append(\
 { "title": "one percent rx 570",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""}\
+"video" : {"file" : "breel_autumn_RX570.mp4" },\
+"overlay" : { \
+    "image" : {"file" : "Total average and percentpng.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -250,7 +257,10 @@ configs["episodes"].append(\
 { "title": "one percent GTX 970",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""}\
+"video" : {"file" : "breel_autumn_GTX970.mp4" },\
+"overlay" : { \
+    "image" : {"file" : "Total average and percentpng.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -258,7 +268,10 @@ configs["episodes"].append(\
 { "title": "one percent R9 290X",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""}\
+"video" : {"file" : "breel_r9_290x_outside_dog.mp4" },\
+"overlay" : { \
+    "image" : {"file" : "Total average and percentpng.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
