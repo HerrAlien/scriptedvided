@@ -48,7 +48,7 @@ lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "More than old locations for a brand new game mode",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FReloaded.mp4", "start" : "00:10"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -56,7 +56,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "The GPUs and test system",\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:00", "rotation" : 90}\
+"video" : {"file" : "breel_CapeVerde_2024.mp4" }\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -64,7 +64,7 @@ configs["episodes"].append(\
 { "title": "HD 7770",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:51", "rotation" : 90}\
+"video" : {"file" : "breel_hd7770_2024.mp4", "start" : "00:51", "rotation" : 90}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -72,7 +72,7 @@ configs["episodes"].append(\
 { "title": "HD 7750",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "01:40", "rotation" : 90}\
+"video" : {"file" : "breel_HD7750_2024.mp4", "start" : "01:40", "rotation" : 90}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -80,7 +80,7 @@ configs["episodes"].append(\
 { "title": "R7 250",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "02:24", "rotation" : 90}\
+"video" : {"file" : "breel_r7_250_2024.mp4", "start" : "02:24", "rotation" : 90}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -101,7 +101,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "1920x1080 results",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2024_06_24_07_59_39_389-converted"},\
 "overlay" : { \
     "image" : {"file" : "1080, low settings.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -112,7 +112,7 @@ configs["episodes"].append(\
 { "title": "1920x1080 reload results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FReloaded.mp4", "start" : "00:30"},\
 "overlay" : { \
     "image" : {"file" : "1080, reload.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -123,7 +123,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "1600x900 results",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2024_06_24_07_59_39_389-converted"},\
 "overlay" : { \
     "image" : {"file" : "900, low settings.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -134,7 +134,7 @@ configs["episodes"].append(\
 { "title": "1600x900 reload results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FReloaded.mp4", "start" : "01:25"},\
 "overlay" : { \
     "image" : {"file" : "900, reload.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -145,7 +145,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "1280x720 results",\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2024_06_24_07_59_39_389-converted"},\
 "overlay" : { \
     "image" : {"file" : "720, low settings.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -156,7 +156,7 @@ configs["episodes"].append(\
 { "title": "1280x720 reload results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "" ), "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FReloaded.mp4", "start" : "01:50"},\
 "overlay" : { \
     "image" : {"file" : "720, reload.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -176,7 +176,7 @@ configs["episodes"].append(\
 { "title": "2x gain",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FReloaded.mp4", "start" : "04:00"},\
 "overlay" : { \
     "image" : {"file" : "Regular vs Reload 720.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -187,7 +187,7 @@ configs["episodes"].append(\
 { "title": "fewer players",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FReloaded.mp4", "start" : "05:00"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -195,7 +195,7 @@ configs["episodes"].append(\
 { "title": "nice mod",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FReloaded.mp4", "start" : "06:00"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -203,7 +203,7 @@ configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""}\
+"video" : {"file" : "breel_CapeVerde_2024.mp4" }\
 })
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][15], configs)
