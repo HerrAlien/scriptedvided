@@ -13,7 +13,7 @@ configs = { "defaultAudioFile" : "Fortnite_reload_CapeVerde.ogg",\
 ], "volume" : 0.045 },\
 "episodes" : [],\
 "youtube" : {"title" : "  ", \
-"description" : '''In this video, we'll see if 3 of the AMD Radeon entry level R7 cards handle The new Reload mode in Fortnite.
+"description" : '''In this video, we'll see if 3 of the AMD Radeon entry level R7 cards handle the new Reload mode in Fortnite.
 As usual, we're pairing the cards with the i7 4770 equivalent Xeon (E3-1241 v3), and 32 GB DDR3 @1600MHz, in dual channel.''',\
 "links" : '''
 Track: Bliss Of Heaven - SOMM [Audio Library Release]
@@ -64,7 +64,7 @@ configs["episodes"].append(\
 { "title": "HD 7770",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "00:29.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_hd7770_2024.mp4", "start" : "00:51", "rotation" : 90}\
+"video" : {"file" : "breel_hd7770_2024.mp4"}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -72,7 +72,7 @@ configs["episodes"].append(\
 { "title": "HD 7750",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "00:38.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_HD7750_2024.mp4", "start" : "01:40", "rotation" : 90}\
+"video" : {"file" : "breel_HD7750_2024.mp4"}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -80,7 +80,7 @@ configs["episodes"].append(\
 { "title": "R7 250",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "00:49.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_r7_250_2024.mp4", "start" : "02:24", "rotation" : 90}\
+"video" : {"file" : "breel_r7_250_2024.mp4"}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -103,7 +103,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "01:25" ), "padAudio" : 0.1 },\
 "video" : {"file" : "FortniteClient-Win64-Shipping_2024_06_24_07_59_39_389-converted"},\
 "overlay" : { \
-    "image" : {"file" : "1080, low settings.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "1920x1080, Chapter 5 Season 3,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -114,7 +114,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "01:49.9" ), "padAudio" : 0.1 },\
 "video" : {"file" : "FReloaded.mp4", "start" : "00:30"},\
 "overlay" : { \
-    "image" : {"file" : "1080, reload.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "1920x1080, Reload,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -125,7 +125,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "02:15.9" ), "padAudio" : 0.1 },\
 "video" : {"file" : "FortniteClient-Win64-Shipping_2024_06_24_07_59_39_389-converted"},\
 "overlay" : { \
-    "image" : {"file" : "900, low settings.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "1600x900, Chapter 5 Season 3,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -136,7 +136,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "02:42" ), "padAudio" : 0.1 },\
 "video" : {"file" : "FReloaded.mp4", "start" : "01:25"},\
 "overlay" : { \
-    "image" : {"file" : "900, reload.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "1600x900, Reload,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -147,7 +147,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "03:04" ), "padAudio" : 0.1 },\
 "video" : {"file" : "FortniteClient-Win64-Shipping_2024_06_24_07_59_39_389-converted"},\
 "overlay" : { \
-    "image" : {"file" : "720, low settings.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "1280x720, Chapter 5 Season 3,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -158,7 +158,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "03:26.7" ), "padAudio" : 0.1 },\
 "video" : {"file" : "FReloaded.mp4", "start" : "01:50"},\
 "overlay" : { \
-    "image" : {"file" : "720, reload.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "1280x720, Reload,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -177,7 +177,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "03:48.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "FReloaded.mp4", "start" : "04:00"},\
 "overlay" : { \
-    "image" : {"file" : "Regular vs Reload 720.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "1280x720, HD 7770, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
