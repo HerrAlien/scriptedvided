@@ -56,7 +56,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "The GPUs and test system",\
 "audio" : {"timestamps" : (lastTS, "00:20.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_CapeVerde_2024.mp4" }\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:00", "rotation" : 90}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -64,7 +64,7 @@ configs["episodes"].append(\
 { "title": "HD 7770",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "00:29.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_hd7770_2024.mp4"}\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:51", "rotation" : 90}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -72,7 +72,7 @@ configs["episodes"].append(\
 { "title": "HD 7750",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "00:38.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_HD7750_2024.mp4"}\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "01:40", "rotation" : 90}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -80,7 +80,7 @@ configs["episodes"].append(\
 { "title": "R7 250",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "00:49.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_r7_250_2024.mp4"}\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "02:24", "rotation" : 90}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -110,7 +110,6 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "1920x1080 reload results",\
-"isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "01:49.9" ), "padAudio" : 0.1 },\
 "video" : {"file" : "FReloaded.mp4", "start" : "00:30"},\
 "overlay" : { \
@@ -132,7 +131,6 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "1600x900 reload results",\
-"isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "02:42" ), "padAudio" : 0.1 },\
 "video" : {"file" : "FReloaded.mp4", "start" : "01:25"},\
 "overlay" : { \
@@ -154,7 +152,6 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "1280x720 reload results",\
-"isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "03:26.7" ), "padAudio" : 0.1 },\
 "video" : {"file" : "FReloaded.mp4", "start" : "01:50"},\
 "overlay" : { \
@@ -185,7 +182,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "fewer players",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "03.56.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:56.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "FReloaded.mp4", "start" : "05:00"},\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -202,7 +199,7 @@ configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "04:23.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_CapeVerde_2024.mp4" }\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "00:00", "rotation" : 90}\
 })
 
 #scriptedvided.makeVideoForEpisode(configs["episodes"][15], configs)
