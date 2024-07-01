@@ -196,7 +196,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 "overlay" : { \
-    "image" : {"file" : "1280x720, GT 430 730, performance mode.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "1280x720, GT 430_730, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
