@@ -112,7 +112,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "1920x1080 results",\
 "audio" : {"timestamps" : (lastTS, "01:27.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "FortniteClient-bench_2024_07_01.mp4" }\
+"video" : {"file" : "FortniteClient-bench_2024_07_01.mp4" },\
 "overlay" : { \
     "image" : {"file" : "1920x1080, Chapter 5 Season 3,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -123,7 +123,7 @@ configs["episodes"].append(\
 { "title": "1920x1080 reload results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "01:48.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "FortniteClient-bench_reload_2024_07_01.mp4" }\
+"video" : {"file" : "FortniteClient-bench_reload_2024_07_01.mp4" },\
 "overlay" : { \
     "image" : {"file" : "1920x1080, Reload,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -134,7 +134,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "1600x900 results",\
 "audio" : {"timestamps" : (lastTS, "02:18.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "FortniteClient-Win64-Shipping_2024_06_24_07_59_39_389-converted.mp4" }\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2024_06_24_07_59_39_389-converted.mp4" },\
 "overlay" : { \
     "image" : {"file" : "1600x900, Chapter 5 Season 3,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -145,7 +145,7 @@ configs["episodes"].append(\
 { "title": "1600x900 reload results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "02:44.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "FReloaded.mp4" }\
+"video" : {"file" : "FReloaded.mp4" },\
 "overlay" : { \
     "image" : {"file" : "1600x900, Reload,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -156,7 +156,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "1280x720 results",\
 "audio" : {"timestamps" : (lastTS, "03:09.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "FortniteClient-bench_2024_07_01.mp4" }\
+"video" : {"file" : "FortniteClient-bench_2024_07_01.mp4" },\
 "overlay" : { \
     "image" : {"file" : "1280x720, Chapter 5 Season 3,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -167,7 +167,7 @@ configs["episodes"].append(\
 { "title": "1280x720 reload results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "03:26.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "FortniteClient-bench_reload_2024_07_01.mp4" }\
+"video" : {"file" : "FortniteClient-bench_reload_2024_07_01.mp4" },\
 "overlay" : { \
     "image" : {"file" : "1280x720, Reload,  performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -178,7 +178,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (lastTS, "03:39.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "FReloaded.mp4" }\
+"video" : {"file" : "FReloaded.mp4" },\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -187,7 +187,7 @@ configs["episodes"].append(\
 { "title": "players like reload",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "03:46.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_FermiGT730_outside.mp4" }\
+"video" : {"file" : "breel_FermiGT730_outside.mp4"}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -195,7 +195,7 @@ configs["episodes"].append(\
 { "title": "2x gain",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "03:55.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "FortniteClient-bench_reload_2024_07_01.mp4" }\
+"video" : {"file" : "FortniteClient-bench_reload_2024_07_01.mp4" },\
 "overlay" : { \
     "image" : {"file" : "1280x720, GT 430_730, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
