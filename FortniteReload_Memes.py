@@ -47,7 +47,7 @@ Free Download / Stream: https://alplus.io/inspired
 lastTS = "00:00"
 configs["episodes"].append(\
 { "title": "But what about meme cards",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:16" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -55,7 +55,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 # this will be split up
 configs["episodes"].append(\
 { "title": "The GPUs and test system",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:21.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -63,7 +63,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "HD 6670",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:28.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -71,7 +71,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "GT 730",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:37.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -79,7 +79,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "R7 250",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:44.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -87,7 +87,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Z230",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "00:56.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Z230 workstation from HP'",\
               "'CPU\: E3-1241v3 Xeon (i7 4770 equivalent)'",\
@@ -102,7 +102,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Reload breel",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:05.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -111,7 +111,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "1920x1080 results",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:27.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 "overlay" : { \
     "image" : {"file" : "1920x1080, Chapter 5 Season 3,  performance mode.png", "chromaColor" : "0x00FF00"}\
@@ -122,7 +122,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "1920x1080 reload results",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "01:48.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 "overlay" : { \
     "image" : {"file" : "1920x1080, Reload,  performance mode.png", "chromaColor" : "0x00FF00"}\
@@ -133,7 +133,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "1600x900 results",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "02:18.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 "overlay" : { \
     "image" : {"file" : "1600x900, Chapter 5 Season 3,  performance mode.png", "chromaColor" : "0x00FF00"}\
@@ -144,7 +144,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "1600x900 reload results",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "02:44.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 "overlay" : { \
     "image" : {"file" : "1600x900, Reload,  performance mode.png", "chromaColor" : "0x00FF00"}\
@@ -155,7 +155,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "1280x720 results",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:09.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 "overlay" : { \
     "image" : {"file" : "1280x720, Chapter 5 Season 3,  performance mode.png", "chromaColor" : "0x00FF00"}\
@@ -166,7 +166,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "1280x720 reload results",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:26.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 "overlay" : { \
     "image" : {"file" : "1280x720, Reload,  performance mode.png", "chromaColor" : "0x00FF00"}\
@@ -177,15 +177,16 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:39.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
+# video from players count, from fortnite lobby
 configs["episodes"].append(\
 { "title": "players like reload",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:46.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
@@ -193,7 +194,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "2x gain",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "03:55.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 "overlay" : { \
     "image" : {"file" : "1280x720, GT 430_730, performance mode.png", "chromaColor" : "0x00FF00"}\
@@ -204,7 +205,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (lastTS, "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (lastTS, "04:06" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "" }\
 })
 
