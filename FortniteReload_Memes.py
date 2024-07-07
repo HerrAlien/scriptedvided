@@ -8,9 +8,9 @@ configs = { "defaultAudioFile" : "Fortnite_reload_Memes.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "But what about meme cards", "until" : "1920x1080 results"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1920x1080 results", "until" : "Conclusions"}}, \
-{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
-], "volume" : 0.045 },\
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1920x1080 results", "until" : "2 or 3 times faster"}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "2 or 3 times faster", "until" : "EOF"}}, \
+], "volume" : 0.06 },\
 "episodes" : [],\
 "youtube" : {"title" : "  ", \
 "description" : '''In this video, we'll see if 3 of the AMD Radeon entry level R7 cards handle the new Reload mode in Fortnite.
@@ -56,7 +56,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "The GPUs and test system",\
 "audio" : {"timestamps" : (lastTS, "00:21.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_FermiGT730_outside.mp4" }\
+"video" : {"file" : "gt730_hd6670.mp4" }\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -80,7 +80,7 @@ configs["episodes"].append(\
 { "title": "R7 250",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "00:44.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "02:24", "rotation" : 90}\
+"video" : {"file" : "breel_r7_250_2024.mp4"}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
@@ -176,7 +176,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
 
 configs["episodes"].append(\
-{ "title": "Conclusions",\
+{ "title": "2 or 3 times faster",\
 "audio" : {"timestamps" : (lastTS, "03:39.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "FReloaded.mp4" },\
 })
@@ -187,7 +187,7 @@ configs["episodes"].append(\
 { "title": "players like reload",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "03:46.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_FermiGT730_outside.mp4"}\
+"video" : {"file" : "FReload_popularity.mp4"}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
