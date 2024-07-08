@@ -25,6 +25,10 @@ import os
 import sv_utils
 import sv_ffutils
 
+defaultAudioBitrate = "256k"
+defaultVideoBitrate = "30M"
+
+
 def toInputParams (inputStream):
     params = [];
 
@@ -299,7 +303,9 @@ def xfadedMultiple (streams, output=None, fadeDuration=1, recompressVideo=True):
         output = "_append_.mp4"
 
     params.append ("-b:v")
+    params.append (defaultVideoBitrate)
     params.append ("-b:a")
+    params.append (defaultAudioBitrate)
     params.append(output)
     subprocess.run(params)
     
@@ -330,7 +336,9 @@ def concatNoRecompress(streams, output=None):
     params.append("-c")
     params.append("copy")
     params.append ("-b:v")
+    params.append (defaultVideoBitrate)
     params.append ("-b:a")
+    params.append (defaultAudioBitrate)
     params.append(output)
     subprocess.run(params)
     return output
@@ -377,7 +385,9 @@ def drawText (stream, text, output=None, opts={"fontcolor" : "White", "boxcolor"
         output = sv_ffutils.defaultOutput (root, "_withText_"  + ext)
 
     params.append ("-b:v")
+    params.append (defaultVideoBitrate)
     params.append ("-b:a")
+    params.append (defaultAudioBitrate)
     params.append(output)
     subprocess.run(params)
     
@@ -394,7 +404,10 @@ def scaleVideo(video, resolutionPair, output=None):
         root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
         output = sv_ffutils.defaultOutput (root, "_scaled_" + str(resolutionPair[0]) + "x" + str(resolutionPair[1])  + ext)
 
+    params.append ("-b:v")
+    params.append (defaultVideoBitrate)
     params.append ("-b:a")
+    params.append (defaultAudioBitrate)
     params.append(output)   
     subprocess.run(params)
     
@@ -415,7 +428,9 @@ def rotateVideo(video, angle, output=None):
         output = sv_ffutils.defaultOutput (root, "_rotated_" + str(angle) + "_degrees" + ext)
 
     params.append ("-b:v")
+    params.append (defaultVideoBitrate)
     params.append ("-b:a")
+    params.append (defaultAudioBitrate)
     params.append(output)   
     subprocess.run(params)
     
@@ -434,7 +449,9 @@ def setSarToOne(video, output=None):
         output = sv_ffutils.defaultOutput (root, "_setSar1_" + ext)
     
     params.append ("-b:v")
+    params.append (defaultVideoBitrate)
     params.append ("-b:a")
+    params.append (defaultAudioBitrate)
     params.append(output)   
     subprocess.run(params)
     
@@ -459,7 +476,9 @@ def overlayImage (canvas, overlay, colorForChroma="0x00FF00", colorTolerance=0.3
         output = sv_ffutils.defaultOutput (root, "_overlayImage_" + ext)
     
     params.append ("-b:v")
+    params.append (defaultVideoBitrate)
     params.append ("-b:a")
+    params.append (defaultAudioBitrate)
     params.append(output)   
     subprocess.run(params)
     

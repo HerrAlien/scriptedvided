@@ -56,7 +56,7 @@ lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 configs["episodes"].append(\
 { "title": "The GPUs and test system",\
 "audio" : {"timestamps" : (lastTS, "00:21.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "gt730_hd6670.mp4" }\
+"video" : {"file" : "memes_cards_breel.mp4" }\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
