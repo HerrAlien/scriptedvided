@@ -343,7 +343,6 @@ def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
         root,ext = os.path.splitext (sv_utils.getFileFromInput(stream))
         output = sv_ffutils.defaultOutput (root, "_padded_"  + str(ammountBegin) + "_" + str(amountEnd))
 
-    params.append ("-b:a")
     params.append(output)
     subprocess.run(params)
     
@@ -381,7 +380,6 @@ def scaleVideo(video, resolutionPair, output=None):
         root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
         output = sv_ffutils.defaultOutput (root, "_scaled_" + str(resolutionPair[0]) + "x" + str(resolutionPair[1])  + ext)
 
-    params.append ("-b:a")
     params.append(output)   
     subprocess.run(params)
     
