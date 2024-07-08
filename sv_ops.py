@@ -27,6 +27,7 @@ import sv_ffutils
 
 
 defaultOutputParameters = ["-c:a", "libvorbis", "-qscale:a", "9", "-c:v", "libx264", "-preset", "slow", "-crf", "15"];
+defaultOutputParametersNoVideo = ["-c:a", "libvorbis", "-qscale:a", "9"];
 
 def toInputParams (inputStream):
     params = [];
@@ -244,7 +245,11 @@ def appendMultiple (streams, output=None, recompressVideo=True, video=True, audi
         secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(streams[0]))
         output = secondRoot + "_append_" + ext
 
-    params = params + defaultOutputParameters
+    if video:
+        params = params + defaultOutputParameters
+    else:
+        params = params + defaultOutputParametersNoVideo
+        
     params.append(output)
     subprocess.run(params)
     
