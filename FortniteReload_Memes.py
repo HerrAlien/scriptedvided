@@ -80,7 +80,7 @@ configs["episodes"].append(\
 { "title": "R7 250",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (lastTS, "00:44.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_r7_250_2024.mp4"}\
+"video" : {"file" : "stock_CapeVerde_family.mp4", "start" : "02:30", "rotation" : 90}\
 })
 lastTS = configs["episodes"][-1]["audio"]["timestamps"][1]
 
