@@ -139,6 +139,8 @@ def truncate(input, start=None, length=None, output=None, recompress=True):
         params.append("-c")
         params.append("copy")
 
+    params.append ("-b:v")
+    params.append ("-b:a")
     params.append(output)
     
     subprocess.run(params)
@@ -188,6 +190,9 @@ def overlayAudio (inputVid, inputAudio, output=None, firstStreamAudioWeight=0.1,
         params.append ("-c:v")
         params.append ("copy")
     
+    params.append ("-b:v")
+    params.append ("-b:a")
+
     params.append(output)
     subprocess.run(params)
     
@@ -240,6 +245,8 @@ def appendMultiple (streams, output=None, recompressVideo=True, video=True, audi
         secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(streams[0]))
         output = secondRoot + "_append_" + ext
 
+    params.append ("-b:v")
+    params.append ("-b:a")
     params.append(output)
     subprocess.run(params)
     
@@ -291,6 +298,8 @@ def xfadedMultiple (streams, output=None, fadeDuration=1, recompressVideo=True):
         secondRoot,ext = os.path.splitext (sv_utils.getFileFromInput(streams[0]))
         output = "_append_.mp4"
 
+    params.append ("-b:v")
+    params.append ("-b:a")
     params.append(output)
     subprocess.run(params)
     
@@ -320,6 +329,8 @@ def concatNoRecompress(streams, output=None):
     params.append("concat.txt")
     params.append("-c")
     params.append("copy")
+    params.append ("-b:v")
+    params.append ("-b:a")
     params.append(output)
     subprocess.run(params)
     return output
@@ -343,6 +354,7 @@ def padAudioStream (stream, output=None, ammountBegin = 0, amountEnd = 0):
         root,ext = os.path.splitext (sv_utils.getFileFromInput(stream))
         output = sv_ffutils.defaultOutput (root, "_padded_"  + str(ammountBegin) + "_" + str(amountEnd))
 
+    params.append ("-b:a")
     params.append(output)
     subprocess.run(params)
     
@@ -364,6 +376,8 @@ def drawText (stream, text, output=None, opts={"fontcolor" : "White", "boxcolor"
         root,ext = os.path.splitext (sv_utils.getFileFromInput(stream))
         output = sv_ffutils.defaultOutput (root, "_withText_"  + ext)
 
+    params.append ("-b:v")
+    params.append ("-b:a")
     params.append(output)
     subprocess.run(params)
     
@@ -380,6 +394,7 @@ def scaleVideo(video, resolutionPair, output=None):
         root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
         output = sv_ffutils.defaultOutput (root, "_scaled_" + str(resolutionPair[0]) + "x" + str(resolutionPair[1])  + ext)
 
+    params.append ("-b:a")
     params.append(output)   
     subprocess.run(params)
     
@@ -399,6 +414,8 @@ def rotateVideo(video, angle, output=None):
         root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
         output = sv_ffutils.defaultOutput (root, "_rotated_" + str(angle) + "_degrees" + ext)
 
+    params.append ("-b:v")
+    params.append ("-b:a")
     params.append(output)   
     subprocess.run(params)
     
@@ -416,6 +433,8 @@ def setSarToOne(video, output=None):
         root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
         output = sv_ffutils.defaultOutput (root, "_setSar1_" + ext)
     
+    params.append ("-b:v")
+    params.append ("-b:a")
     params.append(output)   
     subprocess.run(params)
     
@@ -439,6 +458,8 @@ def overlayImage (canvas, overlay, colorForChroma="0x00FF00", colorTolerance=0.3
         root,ext = os.path.splitext (sv_utils.getFileFromInput(canvas))
         output = sv_ffutils.defaultOutput (root, "_overlayImage_" + ext)
     
+    params.append ("-b:v")
+    params.append ("-b:a")
     params.append(output)   
     subprocess.run(params)
     
