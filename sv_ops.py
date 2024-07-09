@@ -26,10 +26,10 @@ import sv_utils
 import sv_ffutils
 
 
-#defaultOutputParametersNoVideo = ["-c:a", "libvorbis", "-qscale:a", "9"];
-#defaultOutputParameters = defaultOutputParametersNoVideo + ["-c:v", "libx264", "-preset", "slow", "-crf", "15"];
-defaultOutputParametersNoVideo = ["-c:a", "libvorbis", "-qscale:a", "7"];
-defaultOutputParameters = defaultOutputParametersNoVideo + ["-c:v", "libx264", "-preset", "medium", "-crf", "18"];
+defaultOutputParametersNoVideo = ["-c:a", "libvorbis", "-qscale:a", "9"];
+defaultOutputParameters = defaultOutputParametersNoVideo + ["-c:v", "libx264", "-preset", "slow", "-crf", "15"];
+#defaultOutputParametersNoVideo = ["-c:a", "libvorbis", "-qscale:a", "7"];
+#defaultOutputParameters = defaultOutputParametersNoVideo + ["-c:v", "libx264", "-preset", "medium", "-crf", "18"];
 
 def toInputParams (inputStream):
     params = [];
