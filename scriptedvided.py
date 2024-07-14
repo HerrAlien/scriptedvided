@@ -586,6 +586,10 @@ def aliases(inputName):
         ["Doom Eternal", "DoomEternal" , "DOOMEternalx64vk.exe" ],\
         ["Fallout 4", "Fallout4" , "Fallout4.exe" ],\
         ["Prey", "Prey.exe" ],\
+        ["Shadow of the Tomb Raider", "SOTTR", "SOTTR.exe" ],\
+        ["Borderlands 3", "Borderlands3", "Borderlands3.exe" ],\
+        ["Terminator: Resistance", "Terminator", "Terminator-Win64-Shipping.exe" ],\
+        ["Zenless Zone Zero", "ZenlessZoneZero", "ZenlessZoneZero.exe" ],\
     ]
 
     if inputName is None:
@@ -621,6 +625,10 @@ def aliases(inputName):
 def r6sText (settings, average, _1percent):
     text = settings + " - Average: " + str(average) + "fps, 1% lows: " + str(_1percent) + "fps"
     return "'" + sv_ffutils.ffmpegSafeString(text) + "'"
+
+def nextTS (configs):
+    return configs["episodes"][-1]["audio"]["timestamps"][1];
+
     
 if __name__ == "__main__":
 #   truncatedvid = sv_ops.truncate ( "C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", -10, 30, "vid.mp4" )
