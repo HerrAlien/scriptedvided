@@ -61,19 +61,19 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Different games",\
 "audio" : {"timestamps" : (nextTS(configs), "00:43" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : ""\
+"video" : "removed_games.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (nextTS(configs), "00:56.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : ""\
+"video" : "hd7770_heaven_gpuz.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (nextTS(configs), "01:16" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : ""\
+"video" : {"file" : "asus_hd7770.MOV", "start" : "00:00" }\
 })
 
 configs["episodes"].append(\
