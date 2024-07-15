@@ -8,10 +8,14 @@ configs = { "defaultAudioFile" : "hd7770_2024.ogg",\
 "outputFile" : "hd7770_2024.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Is a 12 years old GPU still of any use", "until" : "Fallout 4"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fallout 4", "until" : "Fortnite"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite", "until" : "DOTA2"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "DOTA2", "until" : "Conclusions"}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.06 },\
 "episodes" : [],\
-"youtube" : {"title" : "", \
+"youtube" : {"title" : "AMD Radeon HD 7770 - what games can it play in 2024?", \
 "description" : '''We're revisiting the HD7770. Again. Different games though. 
 We're using the same Z230 workstation with an i7 4770 equivalent CPU and 32 GB of DDR3 running in dual channel at 1600MHz.''',\
 "links" : '''
@@ -55,13 +59,13 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-hd-7770.b609
 configs["episodes"].append(\
 { "title": "Is a 12 years old GPU still of any use",\
 "audio" : {"timestamps" : ("00:00", "00:20" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : ""\
+"video" : "bared_7770.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Different games",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : "removed_games.mp4"\
+"video" : "removed_games_bw.mp4"\
 })
 
 configs["episodes"].append(\
@@ -120,6 +124,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Shadow of the Tomb Raider",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:31.3" ), "padAudio" : 0.1 },\
+"video" : {"file" : "hd7770_SOTTR.mp4", "start" : "01:37"},\
 "overlay" : { \
     "text" : ["'Shadow of the Tomb Raider'",\
               scriptedvided.r6sText('1920x1080, lowest settings', 34,25 ),\
@@ -171,6 +176,7 @@ configs["episodes"].append(\
 { "title": "Fortnite Reload results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:45.5" ), "padAudio" : 0.1 },\
+"video" : "FortniteClient-bench_reload_2024_07_01.mp4",\
 "overlay" : { \
     "text" : ["'Fortnite Reload'",\
               scriptedvided.r6sText('1920x1080, performance mode', 134, 97),\
@@ -182,6 +188,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Terminator: Resistance",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:18" ), "padAudio" : 0.1 },\
+"video" : {"file" : "Terminator-Win64-Shipping_2024_07_09_22_58_21_483.mp4", "start" : "00:48"},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, low settings", \
@@ -203,6 +210,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Zenless Zone Zero",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:14.6" ), "padAudio" : 0.1 },\
+"video" : {"file" : "ZenlessZoneZero_2024_07_07_20m.mp4", "start" : "00:40"},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, low settings", \
@@ -215,7 +223,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:32.6" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1920x1080, low settings", \
     }\
 }, \
 })
@@ -223,6 +231,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Control",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:56" ), "padAudio" : 0.1 },\
+"video" : "stock_Control_720p.mp4",\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, low settings", \
@@ -243,6 +252,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Warframe",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:36.2" ), "padAudio" : 0.1 },\
+"video" : {"file" : "stock_Warframe_Mariana.mp4", "start" : "00:10"},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -268,14 +278,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:18.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : ""\
+"video" : "stock_wotblitz_R9_270.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Dedicated feature videos",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:24.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : ""\
+"video" : {"file" : "stock_DOOMx64vk_RX460_r_shadowAtlasWidth_8.mp4", "start" : "02:45"},\
 })
 
 
@@ -283,21 +293,21 @@ configs["episodes"].append(\
 { "title": "Card is old - breel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:30.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : ""\
+"video" : "bared_7770.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Card is old - games",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:39" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : ""\
+"video" : {"file" : "stock_GenshinImpact_R7_265_2023.mp4", "start" : "00:00"} \
 })
 
 configs["episodes"].append(\
 { "title": "not doom and gloom",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:46" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : ""\
+"video" : "stock_VALORANT_r7_265_2023.mp4"\
 })
 
 
@@ -305,7 +315,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:53" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : ""\
+"video" : "bared_7770.mp4"\
 })
 
 
@@ -316,7 +326,17 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][3], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][7], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][13], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][15], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][16], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][17], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][18], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][19], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][21], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][22], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][24], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Apex Legends"][0], configs)
 scriptedvided.makeVideo(configs)
 
