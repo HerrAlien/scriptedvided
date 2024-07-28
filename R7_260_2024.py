@@ -3,7 +3,7 @@ import scriptedvided
 configs = { "defaultAudioFile" : "R7_260_2024.ogg",\
 "mediaFolder" : "F:\\Videos\\R7_260_2024", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\R7_260_2024\\Benchmark_hd7770_2024.txt",\
+"benchmarkFile" : "F:\\Videos\\R7_260_2024\\Benchmark_R7_260_2024.txt",\
 "outputFolder" : "F:\\Videos\\R7_260_2024\\output", \
 "outputFile" : "R7_260_2024.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
@@ -94,7 +94,7 @@ configs["episodes"].append(\
 ####################### gaming section ###############################
 configs["episodes"].append(\
 { "title": "Fallout 4",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:50.9" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:38.8" ), "padAudio" : 0.1 },\
  "overlay" : { \
     "text" : ["'Fallout 4'",\
               scriptedvided.r6sText('1920x1080, low settings', 49, 42),\
@@ -119,7 +119,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Shadow of the Tomb Raider",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:28.4" ), "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "SOTTR_2024_07_27_22_58_17_417-converted.mp4", "start" : "01:36"},\
 "overlay" : { \
     "text" : ["'Shadow of the Tomb Raider'",\
               scriptedvided.r6sText('1920x1080, lowest settings', 43, 31),\
@@ -177,7 +177,6 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Terminator: Resistance",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:35.4" ), "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
 "overlay" : { \
     "text" : ["'Terminator\: Resistance'",\
               scriptedvided.r6sText('1920x1080, low settings',  50,  40),\
@@ -319,6 +318,7 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode(configs["episodes"][21], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][22], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][24], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Apex Legends"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Borderlands 3"][0], configs)
+#scriptedvided.makeVideo(configs)
 scriptedvided.makeVideo(configs)
 
