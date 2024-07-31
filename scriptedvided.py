@@ -590,6 +590,8 @@ def aliases(inputName):
         ["Borderlands 3", "Borderlands3", "Borderlands3.exe" ],\
         ["Terminator: Resistance", "Terminator", "Terminator-Win64-Shipping.exe" ],\
         ["Zenless Zone Zero", "ZenlessZoneZero", "ZenlessZoneZero.exe" ],\
+        ["XDefiant", "X-Defiant", "XDefiant.exe" ],\
+        ["Far Cry 6", "FarCry 6", "FarCry6Trial", "FarCry6Trial.exe"],\
     ]
 
     if inputName is None:
