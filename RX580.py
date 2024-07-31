@@ -8,9 +8,9 @@ configs = { "defaultAudioFile" : "RX_580.ogg",\
 "outputFile" : "RX_580.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "A favorite of miners and gamers alike", "until" : "Fallout 4"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fallout 4", "until" : "Fortnite"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite", "until" : "DOTA2"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "A favorite of miners and gamers alike", "until" : "Rainbow Six: Siege"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rainbow Six: Siege", "until" : "XDefiant"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "XDefiant", "until" : "DOTA2"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "DOTA2", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.06 },\
@@ -299,28 +299,27 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:22.3" ), "padAudio" : 0.1 },\
-"video" : "stock_Control_720p.mp4",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1920x1080, high settings", \
     }\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Grand Theft Auto V",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:37.9" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1920x1080, low settings", \
+        "settings" : "1920x1080, high settings", \
     }\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:01" ), "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.1 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -330,43 +329,49 @@ configs["episodes"].append(\
 
 ####################### end of gaming section ###############################
 
-
 ####################### conclusion ###############################
-# what's with the card?
+# really need an upgrade
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:48.7" ),  "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_r7_260_outside.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
 })
 
-# extra performance over the 7770
 configs["episodes"].append(\
-{ "title": "only 10 extra watts",\
+{ "title": "CPU bottleneck - finals",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:04.2" ),  "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "r7_260_1.mp4", "start" : "00:00"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : "",\
 })
 
 # reviews back in the day
 configs["episodes"].append(\
-{ "title": "Priced too close to the 260x",\
+{ "title": "Cheap card",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:17.4" ),  "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "r7_260x_and_260_OLX.mkv"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# reviews back in the day
+configs["episodes"].append(\
+{ "title": "bought deffective, with issues",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "removing the 260X",\
+{ "title": "hook, end",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:26" ),  "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_R7_260_and_260X.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:36" ),  "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_r7_260_outside.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
 })
 
 
