@@ -103,7 +103,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Fallout 4", "video" : "GTX970_Fallout4_2024_04_21_22_06_49_725.mp4",\
+{ "title": "Fallout 4", "video" : {"file" : "GTX970_Fallout4_2024_04_20_07_44_27_134.mp4", "start" : "00:00"},\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:46" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fallout 4'",\
