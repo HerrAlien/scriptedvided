@@ -55,19 +55,21 @@ TechPowerup entry: https://www.techpowerup.com/gpu-specs/radeon-hd-7750.c309
 configs["episodes"].append(\
 { "title": "No need for an extra power connector",\
 "audio" : {"timestamps" : ("00:00", "00:14.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_hd7750_outside.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:31.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : ""\
+"video" : "hd7750_gpuz.mp4"\
 })
+
+# side by side? hd7750_heaven.mp4
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:47.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : ""\
+"video" : "bared_7750.mp4"\
 })
 
 configs["episodes"].append(\
@@ -246,14 +248,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:09.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_r7_250_hd7770_hd7750_attic.mp4", "start" : "00:05"},\
 })
 
 configs["episodes"].append(\
 { "title": "Getting old",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:23.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : "",\
+"video" : "old_fnite_r_6_side_by_side_1080.mp4",\
 })
 
 # reviews back in the day
@@ -261,14 +263,14 @@ configs["episodes"].append(\
 { "title": "has competition",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:45.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_gtx1050_hd7750.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:51.53" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "bared_7750.mp4"},\
 })
 
 
