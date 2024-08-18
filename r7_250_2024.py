@@ -51,6 +51,14 @@ TechPowerup entry: https://www.techpowerup.com/gpu-specs/radeon-hd-7750.c309
 
 ####################### intro ###############################
 
+configs["episodes"].append(\
+{ "title": "AMD learned from their mistake",\
+"isChapter" : False,\
+"audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+
 # this is the hook
 configs["episodes"].append(\
 { "title": "Higher TDP, lower performance",\
@@ -244,7 +252,7 @@ configs["episodes"].append(\
 ####################### end of gaming section ###############################
 
 ####################### conclusion ###############################
-# really need an upgrade
+# sad tale
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
@@ -252,7 +260,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Worst GCN1",\
+{ "title": "AMD learned lesson",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
@@ -261,13 +269,6 @@ configs["episodes"].append(\
 # reviews back in the day
 configs["episodes"].append(\
 { "title": "has competition",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "As long as you do not pay more than 5 USD",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
