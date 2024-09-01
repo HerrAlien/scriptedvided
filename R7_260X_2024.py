@@ -9,8 +9,8 @@ configs = { "defaultAudioFile" : "r7_260X_2024.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Bonaire - the XTX one", "until" : "Rainbow Six: Siege"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rainbow Six: Siege", "until" : "Fortnite"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite", "until" : "Conclusions"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rainbow Six: Siege", "until" : "Resident Evil 4 (Remake)"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Resident Evil 4 (Remake)", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.06 },\
 "episodes" : [],\
@@ -226,10 +226,10 @@ configs["episodes"].append(\
 { "title": "Terminator: Resistance",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:46.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1920x1080, lowest settings", \
-    }\
-}, \
+    "text" : ["'Terminator\: Resistance'",\
+              scriptedvided.r6sText('1920x1080, low settings', 56, 43),\
+              scriptedvided.r6sText('1280x720, low settings' , 105, 77),\
+]}, \
 })
 
 configs["episodes"].append(\
