@@ -56,7 +56,7 @@ TechPowerup entry: https://www.techpowerup.com/gpu-specs/msi-r7-260x-ocv1.b3094
 configs["episodes"].append(\
 { "title": "Bonaire - the XTX one",\
 "audio" : {"timestamps" : ("00:00", "00:21" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "breel_R7_260_and_260X.mp4"},\
+"video" : {"file" : "r7_260x_breel_outside.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -125,6 +125,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fallout 4", \
+"video" : {"file" : "GTX970_Fallout4_2024_04_21_21_55_58_601.mp4", "start" : "02:40"},\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:02.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fallout 4'",\
@@ -149,9 +150,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:05" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Shadow of the Tomb Raider'",\
-              scriptedvided.r6sText('1920x1080, low settings', 50, 37), \
-              scriptedvided.r6sText('1600x900, low settings', 62, 43), \
-              scriptedvided.r6sText('1280x720, low settings', 75, 43), \
+              scriptedvided.r6sText('1920x1080, lowest settings', 50, 37), \
+              scriptedvided.r6sText('1600x900, lowest settings', 62, 43), \
+              scriptedvided.r6sText('1280x720, lowest settings', 75, 43), \
 ]}, \
 "video" : {"file" : "rx580_SOTTR_2024_07_27_22_58_17_417-converted.mp4" , "start" : "01:42"}\
 })
@@ -182,9 +183,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:12.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'XDefiant'",\
-              scriptedvided.r6sText('1920x1080, ultra settings', 75,  53),\
-              scriptedvided.r6sText('1920x1080, high settings',  100,  71),\
-              scriptedvided.r6sText('1920x1080, low settings',  138 ,  91),\
+              scriptedvided.r6sText('1920x1080, lowest settings', 75,  53),\
+              scriptedvided.r6sText('1600x900, lowest settings',  100,  71),\
+              scriptedvided.r6sText('1280x720, lowest settings',  138 ,  91),\
 ]}, \
 })
 
@@ -200,7 +201,8 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:46.4" ), "padAudio" : 0.05 },\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2024_06_24_07_59_39_389-converted.mp4", "start" : "04:00"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:56.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText('1920x1080, performance mode', 83, 57),\
@@ -224,6 +226,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Terminator: Resistance",\
+"video" : {"file" : "Terminator-Win64-Shipping_2024_07_20_23_51_41_842-converted.mp4", "start" : "28:00"},\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:46.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Terminator\: Resistance'",\
@@ -267,10 +270,10 @@ configs["episodes"].append(\
 { "title": "Control",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:15.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, lowest settings", \
-    }\
-}, \
+    "text" : ["'Control'",\
+              scriptedvided.r6sText('1920x1080, lowest settings', 38, 31),\
+              scriptedvided.r6sText('1280x720, lowest settings' , 74, 57),\
+]}, \
 })
 
 configs["episodes"].append(\
