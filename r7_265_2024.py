@@ -61,14 +61,14 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/sapphire-dual-x-r7-26
 configs["episodes"].append(\
 { "title": "3 line-ups, one GPU",\
 "audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_r7_265_outside.mp4"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "The GPU details",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r7_265_GPUZ.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -284,7 +284,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_r7_265_outside_2.mp4"},\
 })
 
 # cards from the latter
@@ -306,14 +306,14 @@ configs["episodes"].append(\
 { "title": "R7 270",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_r7_265_270_outside.mp4", "start" : "00:17"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_r7_265_outside.mp4"},\
 })
 
 
