@@ -114,7 +114,8 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Fallout 4", "video" : "GTX970_Fallout4_2024_04_21_22_06_49_725.mp4",\
+{ "title": "Fallout 4", \
+"video" : {"file" : "GTX970_Fallout4_2024_04_20_08_16_35_879.mp4", "start":"00:00"},\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:03.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
@@ -260,6 +261,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Grand Theft Auto V",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:18.8" ), "padAudio" : 0.05 },\
+"video" : {"file" : "stock_gtaV_tutorial2.mp4", "start" : "00:20"},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
