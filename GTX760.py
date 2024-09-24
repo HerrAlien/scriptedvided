@@ -85,7 +85,7 @@ configs["episodes"].append(\
 { "title": "temps",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:31.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GTX_760_HeavenAndSensors.mkv"},\
+"video" : {"file" : "GTX_760_HeavenAndSensors_compressed.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -176,7 +176,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Borderlands 3",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:10" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:01.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Borderlands 3'",\
               scriptedvided.r6sText('1920x1080, very low settings' , 57, 42 ),\
@@ -184,6 +184,14 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900, medium settings'    ,47 , 33 ),\
               scriptedvided.r6sText('1280x720, high settings'      , 37, 27 ),\
 ]}, \
+})
+
+
+configs["episodes"].append(\
+{ "title": "Borderlands 3 medium high",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:10" ), "padAudio" : 0.05 },\
+"video" : {"file" : "B_or_derlands3_sideBySide.mp4", "start" : "00:20"},\
+"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -255,6 +263,8 @@ configs["episodes"].append(\
 ]}, \
 })
 
+# re-record, bad FPS in the audio
+
 configs["episodes"].append(\
 { "title": "DOTA2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:08.9" ), "padAudio" : 0.05 },\
@@ -265,6 +275,7 @@ configs["episodes"].append(\
 }, \
 })
 
+# bad timestamp, re-render
 configs["episodes"].append(\
 { "title": "Control",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:32.8" ), "padAudio" : 0.05 },\
@@ -316,7 +327,7 @@ configs["episodes"].append(\
 { "title": "repairs",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:08.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "gtx760_removedDrMosfet.mp4"},\
+"video" : {"file" : "GTX760_makeshiftVrmHeatsink.mp4"},\
 })
 
 # Fortnite footage - or crashes?
@@ -343,7 +354,7 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][7], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][3], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][13], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][15], configs)
