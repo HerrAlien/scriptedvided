@@ -77,8 +77,22 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:48.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "GTX760_cooling_barred.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "vrm heatsink",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:57.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "GTX760_makeshiftVrmHeatsink.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "Cooling and thermals back",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:11" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GTX760_cooling_barred.mp4"},\
+"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -267,7 +281,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:08.9" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:05.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -327,7 +341,7 @@ configs["episodes"].append(\
 { "title": "repairs",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:08.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GTX760_makeshiftVrmHeatsink.mp4"},\
+"video" : {"file" : "gtx760_removedDrMosfet.mp4"},\
 })
 
 # Fortnite footage - or crashes?
