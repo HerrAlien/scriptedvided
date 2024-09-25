@@ -12,7 +12,7 @@ configs = { "defaultAudioFile" : "GTX760.ogg",\
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rainbow Six: Siege", "until" : "Resident Evil 4 (Remake), Far Cry 6"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Resident Evil 4 (Remake), Far Cry 6", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
-], "volume" : 0.06 },\
+], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "", \
 "description" : '''Testing this pretty looking GTX 760 turned to be a bit of a rollecroaster, in terms of performance.
