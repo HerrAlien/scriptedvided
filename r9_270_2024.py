@@ -54,34 +54,34 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Not an ASUS card",\
 "audio" : {"timestamps" : ("00:00", "00:12.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GigASUS_R9_270.mp4", "start" : "00:25", "rotation" : 180},\
 })
 
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:33" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "need a record for gigasus"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:48.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GigASUS_r9_270_DCUII_cooling.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "pipe gap",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:56.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GigASUS_r9_270_DCUII_heatpipes.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "temps",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:10.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "same recording, maybe without GPUZ"},\
 })
 
 configs["episodes"].append(\
@@ -115,7 +115,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Doom Eternal",\
+{ "title": "Doom Eternal", "video" : "R9_270_DOOMEternalx64vk.mp4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:33.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Doom Eternal - nope'",\
@@ -296,7 +296,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:06.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "record the package, or what's left of it"},\
 })
 
 
@@ -304,42 +304,42 @@ configs["episodes"].append(\
 { "title": "heatsink from the 270x",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:18.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "record it side by side with the ASUS one"},\
 })
 
 configs["episodes"].append(\
 { "title": "gigasus is born",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:34" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GigASUS_R9_270.mp4", "start" : "00:00", "rotation" : 180},\
 })
 
 configs["episodes"].append(\
 { "title": "cheap",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:51" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "olx"},\
 })
 
 configs["episodes"].append(\
 { "title": "drivers",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:08.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "error_182.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "subscribe",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:15.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GigASUS_R9_270.mp4", "start" : "00:00", "rotation" : 180},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:28.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GigASUS_R9_270.mp4", "rotation" : 180},\
 })
 
 
