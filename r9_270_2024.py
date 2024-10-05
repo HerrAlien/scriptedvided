@@ -1,11 +1,11 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "",\
-"mediaFolder" : "F:\\Videos\\....", \
+configs = { "defaultAudioFile" : "r9_270_2024",\
+"mediaFolder" : "F:\\Videos\\r9_270_2024", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\....\\....",\
-"outputFolder" : "F:\\Videos\\....\\output", \
-"outputFile" : ".....mp4", \
+"benchmarkFile" : "F:\\Videos\\r9_270_2024\\Benchmark_r9_270_2024.txt",\
+"outputFolder" : "F:\\Videos\\r9_270_2024\\output", \
+"outputFile" : "r9_270_2024.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "", "until" : "Rainbow Six: Siege"}}, \
@@ -14,9 +14,9 @@ configs = { "defaultAudioFile" : "",\
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
-"youtube" : {"title" : "", \
-"description" : ''' GPU Hook 
-We're using the same Z230 workstation with an i7 4770 equivalent CPU and 32 GB of DDR3 running in dual channel at 1600MHz.''',\
+"youtube" : {"title" : "The GigASUS R9 270 tested in 2024", \
+"description" : '''Gigabyte and ASUS do play along - at least when it comes to this revived R9 270.
+We're using the same Z230 workstation to test it, with an i7 4770 equivalent CPU and 32 GB of DDR3 running in dual channel at 1600MHz.''',\
 "links" : '''
 Track: Bliss Of Heaven - SOMM [Audio Library Release]
 Music provided by Audio Library Plus
@@ -50,17 +50,6 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 "cards" : None, \
 }\
 }
-
-#"isChapter" : False, \
-
-####################### intro ###############################
-
-# this is the hook
-#configs["episodes"].append(\
-#{ "title": "A favorite of miners and gamers alike",\
-#"audio" : {"timestamps" : ("09:37.3", "09:46" ), "volume" : 0.999, "padAudio" : 0.05 },\
-#"video" : {"file" : "rx580_ethereumDust.mp4", "start" : "00:00"},\
-#})
 
 configs["episodes"].append(\
 { "title": "Not an ASUS card",\
