@@ -61,7 +61,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:33" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "need a record for gigasus"},\
+"video" : {"file" : "Gigasus_GPUZ.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -81,7 +81,7 @@ configs["episodes"].append(\
 { "title": "temps",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:10.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "same recording, maybe without GPUZ"},\
+"video" : {"file" : "stock_heaven720p_noTessellation.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -296,7 +296,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:06.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "record the package, or what's left of it"},\
+"video" : {"file" : "breel_GigASUS_R9_270.mp4", "rotation" : 180},\
 })
 
 
@@ -304,7 +304,7 @@ configs["episodes"].append(\
 { "title": "heatsink from the 270x",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:18.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "record it side by side with the ASUS one"},\
+"video" : {"file" : "GigASUS_bad_caps.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -318,7 +318,7 @@ configs["episodes"].append(\
 { "title": "cheap",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:51" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "olx"},\
+"video" : {"file" : "olx_R9_270_GT1030.mkv"},\
 })
 
 configs["episodes"].append(\
