@@ -16,7 +16,7 @@ configs = { "defaultAudioFile" : "r9_270_2024",\
 "episodes" : [],\
 "youtube" : {"title" : "The GigASUS R9 270 tested in 2024", \
 "description" : '''Gigabyte and ASUS do play along - at least when it comes to this revived R9 270.
-We're using the same Z230 workstation to test it, with an i7 4770 equivalent CPU and 32 GB of DDR3 running in dual channel at 1600MHz.''',\
+We're using the same Z230 workstation to test it, with an i7 4770 equivalent CPU and 32 GB of DDR3 running in dual channel at 1600MHz. The driver package is the Adrenalin 21.5.1 from AMD.''',\
 "links" : '''
 Track: Bliss Of Heaven - SOMM [Audio Library Release]
 Music provided by Audio Library Plus
@@ -33,13 +33,9 @@ Music provided by Audio Library Plus
 Watch: https://www.youtube.com/watch?v=RUkdTkk_52o&t=0s
 Free Download / Stream: https://alplus.io/inspired
 
-Our 2023 review of the HD 7770: 
-Our 2022 review of the HD 7770: https://youtu.be/4rEcNy2YC0I
-
-TechPowerup entries: https://www.techpowerup.com/gpu-specs/radeon-r7-260.c2511
-TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b2732
+Drivers: https://drivers.amd.com/drivers/non-whql-radeon-software-adrenalin-2020-21.5.1-win10-64bit-may6.exe
 ''', \
-"tags" : "",\
+"tags" : "AMD,Radeon,GCN,GCN1.0,GCN 1.0,R9 270,Pitcairn,Adrenalin,drivers",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -74,7 +70,7 @@ configs["episodes"].append(\
 { "title": "pipe gap",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:56.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GigASUS_r9_270_DCUII_heatpipes.mp4"},\
+"video" : {"file" : "GigASUS_r9_270_DCUII_heatpipes.mp4", "rotation" : -90, "start" : "00:07"},\
 })
 
 configs["episodes"].append(\
@@ -185,9 +181,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:28.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'XDefiant'",\
-              scriptedvided.r6sText('1920x1080, ultra settings', 91, 62 ),\
-              scriptedvided.r6sText('1920x1080, high settings',  119, 79 ),\
-              scriptedvided.r6sText('1920x1080, low settings',   154, 95 ),\
+              scriptedvided.r6sText('1920x1080, low settings', 91, 62 ),\
+              scriptedvided.r6sText('1600x900, low settings',  119, 79 ),\
+              scriptedvided.r6sText('1280x720, low settings',   154, 95 ),\
 ]}, \
 })
 
@@ -339,7 +335,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:28.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "breel_GigASUS_R9_270.mp4", "rotation" : 180},\
+"video" : {"file" : "breel_GigASUS_R9_270.mp4", "start" : "00:15", "rotation" : 180},\
 })
 
 
@@ -361,7 +357,8 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode(configs["episodes"][21], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][22], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][24], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Borderlands 3"][0], configs)
+
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "cheap"][0], configs)
 #scriptedvided.makeVideo(configs)
 
 #for x in range(19,26):
