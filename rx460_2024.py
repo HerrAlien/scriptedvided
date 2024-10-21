@@ -66,8 +66,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "a bit late - 750 ti 1",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("00:00", "00:24.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:24.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "rx460_GTX750Ti_barred.mp4", "start" : "00:26"},\
 })
 
 
@@ -209,7 +209,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:40.3" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:04.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText('1920x1080, performance mode', 105 , 74 ),\
@@ -303,21 +303,21 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:58.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "rx460_GTX750Ti_GTX1050ti_barred.mp4", "start" : "00:17"},\
 })
 
 configs["episodes"].append(\
 { "title": "vs 1050ti",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:04.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "rx460_GTX750Ti_GTX1050ti_barred.mp4", "start" : "00:56"},\
 })
 
 configs["episodes"].append(\
 { "title": "can still game",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:12.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_DOOMx64vk_RX460_r_shadowAtlasWidth_8.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -332,7 +332,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:47.55" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_autumn_RX460.mp4"},\
 })
 
 
