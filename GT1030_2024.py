@@ -111,10 +111,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', , ), \
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale',  , ),\
-              scriptedvided.r6sText('1920x1080, low settings, 50% render scale',  , ), \
-              scriptedvided.r6sText('1280x720, low settings, 50% render scale',   , ),\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale',36 ,29 ), \
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale', 65 ,49 ),\
+              scriptedvided.r6sText('1920x1080, low settings, 50% render scale',  54, 42), \
+              scriptedvided.r6sText('1280x720, low settings, 50% render scale',   89, 64),\
 ]}, \
 })
 
@@ -122,32 +122,20 @@ configs["episodes"].append(\
 { "title": "Doom Eternal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Doom Eternal'",\
-              scriptedvided.r6sText('1920x1080, ultra nightmare settings', , ), \
-              scriptedvided.r6sText('1920x1080, low settings', , ), \
-]}, \
-})
-
-configs["episodes"].append(\
-{ "title": "The Finals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : ["'The Finals'",\
-              scriptedvided.r6sText('1920x1080, low settings'     , , ), \
-              scriptedvided.r6sText('1600x900, low settings'      , , ), \
-              scriptedvided.r6sText('1280x720, low settings'      , , ), \
-]}, \
-"video" : "rx580_Discovery_2024_07_26_23_03_56_417-converted.mp4" \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+    }\
+}, \
 })
 
 configs["episodes"].append(\
 { "title": "Fallout 4", "video" : "GTX970_Fallout4_2024_04_21_22_06_49_725.mp4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1920x1080, ultra settings", \
-    }\
-}, \
+    "text" : ["'Fallout 4'",\
+              scriptedvided.r6sText('1920x1080, low settings, Diamond City', 38, 30), \
+              scriptedvided.r6sText('1920x1080, low settings, outside'     , 53, 30), \
+]}, \
 })
 
 configs["episodes"].append(\
@@ -155,9 +143,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
-              scriptedvided.r6sText('1920x1080, low settings'     , , ), \
-              scriptedvided.r6sText('1600x900, low settings'      , , ), \
-              scriptedvided.r6sText('1280x720, low settings'      , , ), \
+              scriptedvided.r6sText('1920x1080, low settings' , 54, 41), \
+              scriptedvided.r6sText('1600x900, low settings'  , 65, 50), \
+              scriptedvided.r6sText('1280x720, low settings'  , 84, 63), \
 ]}, \
 "video" : "rx580_r5apex_2024_07_26_22_34_08_382-converted.mp4" \
 })
@@ -167,52 +155,51 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1920x1080, highest settings", \
+        "settings" : "1280x720, lowest settings", \
     }\
 }, \
 "video" : {"file" : "rx580_SOTTR_2024_07_27_22_58_17_417-converted.mp4" , "start" : "01:42"}\
 })
 
+# need to rearrange the order for CS2 in the benchmark file
 configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Counter-Strike 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1600x900, low settings' , , ),\
-              scriptedvided.r6sText('1280x720, low settings' , , ),\
-]}, \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+    }\
+}, \
 })
 
 configs["episodes"].append(\
 { "title": "Borderlands 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1920x1080, badass settings", \
-    }\
-}, \
+    "text" : ["'Borderlands 3'",\
+              scriptedvided.r6sText('1280x720, very low settings', 51,  36),\
+              scriptedvided.r6sText('1600x900, very low settings', 40 , 31 ),\
+]}, \
 })
 
 configs["episodes"].append(\
 { "title": "XDefiant",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'XDefiant'",\
-              scriptedvided.r6sText('1920x1080, ultra settings', ,  ),\
-              scriptedvided.r6sText('1920x1080, high settings',  ,  ),\
-              scriptedvided.r6sText('1920x1080, low settings',   ,  ),\
-]}, \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+    }\
+}, \
 })
 
 configs["episodes"].append(\
 { "title": "Resident Evil 4 (Remake)", "video" : "stock_re4demo_phoneCall.mp4", \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Resident Evil 4 (Remake)'",\
-              scriptedvided.r6sText('1920x1080, prioritize performance', , ),\
-              scriptedvided.r6sText('1920x1080, balanced'              , , ),\
-]}, \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+    }\
+}, \
 })
 
 configs["episodes"].append(\
@@ -220,9 +207,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1920x1080, performance mode',  ,  ),\
-              scriptedvided.r6sText('1600x900, performance mode',   ,  ),\
-              scriptedvided.r6sText('1280x720, performance mode' ,  ,  ),\
+              scriptedvided.r6sText('1920x1080, performance mode', 72 , 49 ),\
+              scriptedvided.r6sText('1600x900, performance mode',  92 , 61 ),\
+              scriptedvided.r6sText('1280x720, performance mode' , 116 , 71 ),\
 ]}, \
 "video" : "rx580_high_FortniteClient-Win64.mp4"\
 })
@@ -234,9 +221,9 @@ configs["episodes"].append(\
 "video" : "FortniteClient-bench_reload_2024_07_01.mp4",\
 "overlay" : { \
     "text" : ["'Fortnite Reload'",\
-              scriptedvided.r6sText('1920x1080, performance mode',  ,  ),\
-              scriptedvided.r6sText('1600x900, performance mode',   ,  ),\
-              scriptedvided.r6sText('1280x720, performance mode' ,  ,  ),\
+              scriptedvided.r6sText('1920x1080, performance mode', 127 ,  87),\
+              scriptedvided.r6sText('1600x900, performance mode', 152  , 100 ),\
+              scriptedvided.r6sText('1280x720, performance mode' , 179 , 111 ),\
 ]}, \
 })
 
@@ -244,10 +231,12 @@ configs["episodes"].append(\
 { "title": "Terminator: Resistance",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1920x1080, highest settings", \
-    }\
-}, \
+    "text" : ["'Terminator\: Resistance'",\
+              scriptedvided.r6sText('1920x1080, low settings'  , 52 , 37 ),\
+              scriptedvided.r6sText('1600x900, medium settings', 52 , 38 ),\
+              scriptedvided.r6sText('1280x720, high settings'  , 54 , 40 ),\
+              scriptedvided.r6sText('1280x720, low settings'   , 96 , 66 ),\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -255,21 +244,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Overwatch 2'",\
-              scriptedvided.r6sText('1920x1080, low settings',  ,  ),\
-              scriptedvided.r6sText('1600x900, low settings' ,  ,  ),\
-              scriptedvided.r6sText('1280x720, low settings' ,  ,  ),\
-]}, \
-})
-
-configs["episodes"].append(\
-{ "title": "Far Cry 6",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : ["'Far Cry 6'",\
-              scriptedvided.r6sText('1920x1080, ultra settings' ,  ,  ),\
-              scriptedvided.r6sText('1920x1080, high settings'  ,  ,  ),\
-              scriptedvided.r6sText('1920x1080, medium settings',  ,  ),\
-              scriptedvided.r6sText('1920x1080, low settings'   ,  ,  ),\
+              scriptedvided.r6sText('1920x1080, low settings', 86 ,68 ),\
+              scriptedvided.r6sText('1600x900, low settings' , 117 , 93 ),\
+              scriptedvided.r6sText('1280x720, low settings' , 166 , 135 ),\
 ]}, \
 })
 
@@ -288,7 +265,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1920x1080, high settings", \
+        "settings" : "1280x720, lowest settings", \
     }\
 }, \
 "video" : "rx580_Control_DX11_2024_07_27_22_47_25_351-converted.mp4" \
