@@ -1,11 +1,11 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "",\
-"mediaFolder" : "F:\\Videos\\....", \
+configs = { "defaultAudioFile" : "GT1030_2024.ogg",\
+"mediaFolder" : "F:\\Videos\\GT1030_2024", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\....\\....",\
-"outputFolder" : "F:\\Videos\\....\\output", \
-"outputFile" : ".....mp4", \
+"benchmarkFile" : "F:\\Videos\\GT1030_2024\\Benchmark_GT1030_2024.txt",\
+"outputFolder" : "F:\\Videos\\GT1030_2024\\output", \
+"outputFile" : "GT1030_2024.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Meme or not", "until" : "Rainbow Six: Siege"}}, \
@@ -65,20 +65,20 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Meme or not",\
 "audio" : {"timestamps" : ("00:00", "00:15.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_autumn_GT1030_KFA2.mp4"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "AsusLP_GT1030_HeavenGpuZ_2.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:59" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Gt1030_family_outside.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -122,7 +122,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Fallout 4", "video" : "GTX970_Fallout4_2024_04_21_22_06_49_725.mp4",\
+{ "title": "Fallout 4", "video" : {"file":"GTX970_Fallout4_2024_04_20_22_21_16_151.mp4", "start":"00:10"},\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:22.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fallout 4'",\
@@ -206,13 +206,14 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900, performance mode',  92 , 61 ),\
               scriptedvided.r6sText('1280x720, performance mode' , 116 , 71 ),\
 ]}, \
+"video" : {"file" : "FortniteClient-Win64-Shipping_2024_11_01_22_51_03_848-converted.mp4" , "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "Fortnite Reload results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:41.6" ), "padAudio" : 0.05 },\
-"video" : "FortniteClient-bench_reload_2024_07_01.mp4",\
+"video" : "Fortnite_Reload_2024_10_06.mp4",\
 "overlay" : { \
     "text" : ["'Fortnite Reload'",\
               scriptedvided.r6sText('1920x1080, performance mode', 127 ,  87),\
@@ -292,28 +293,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:24" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_gt1030_outside.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "But not a speedy one also",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:34.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Discovery_2024_08_24_07_38_14_149-converted.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Price ...",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:53.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GT1030_vs_GTX760_olx.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "both lp and kfa again",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:03.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Gt1030_family_outside.mp4"},\
 })
 
 
@@ -321,7 +322,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:11" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_autumn_GT1030_KFA2.mp4"},\
 })
 
 
