@@ -1,4 +1,5 @@
 import scriptedvided
+import time
 
 configs = { "defaultAudioFile" : "r9_270_2024",\
 "mediaFolder" : "F:\\Videos\\r9_270_2024", \
@@ -364,5 +365,7 @@ configs["episodes"].append(\
 #for x in range(19,26):
 #    scriptedvided.makeVideoForEpisode(configs["episodes"][x], configs)
 #
-scriptedvided.makeVideo(configs)
 
+start = time.time()
+scriptedvided.makeVideo(configs)
+print ("Rendering took " + str(round(time.time() - start, 1)) + " seconds")
