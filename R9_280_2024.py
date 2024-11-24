@@ -65,41 +65,41 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Still fine wine?",\
 "audio" : {"timestamps" : ("00:00", "00:14" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start" : "01:30"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:31.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_280_GPUZ_Valley_better.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:53.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start" : "01:30"},\
 })
 
 configs["episodes"].append(\
 { "title": "VRM and RAM cooling",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:05.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_280_vrmHeatsink_lastRam.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "temps",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:14.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r9_280_thermals.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Methodology - some game footage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:31.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "high_settings_GTA5.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -135,6 +135,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Doom Eternal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:34.1" ), "padAudio" : 0.05 },\
+"video" : "4_stages_of_strobing.mp4",\
 "overlay" : { \
     "text" : ["'Doom Eternal'", "... just don't, not without NimeZ drivers."]}, \
 })
@@ -142,17 +143,18 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:44" ), "padAudio" : 0.05 },\
-"video" : a part of my older video \
+"video" : "Partial_Finals_R9_280_GTX770_960_1050Ti.mp4" \
 })
 
 configs["episodes"].append(\
 { "title": "Finals crashed",\
 "isChapter" : False,\
+"video" : "R9_280_Finals_crash.mkv" \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:55" ), "padAudio" : 0.05 },\
 })
 
 configs["episodes"].append(\
-{ "title": "Fallout 4", "video" : "GTX970_Fallout4_2024_04_21_22_06_49_725.mp4",\
+{ "title": "Fallout 4", "video" : "GTX970_Fallout4_2024_04_20_08_00_49_437.mp4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:18.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fallout 4'",\
@@ -335,14 +337,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:05.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_r9_280_outside.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "legacy drivers support",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:13.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "error_182.mp4"},\
 })
 
 
@@ -350,7 +352,7 @@ configs["episodes"].append(\
 { "title": "pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:28.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_280_breelAndPricing.mp4"},\
 })
 
 
@@ -358,7 +360,7 @@ configs["episodes"].append(\
 { "title": "competition",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:45.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_280_GTX1050Ti.mp4", "start" : "00:20"},\
 })
 
 
@@ -366,7 +368,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:56" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_r9_280_outside.mp4"},\
 })
 
 
