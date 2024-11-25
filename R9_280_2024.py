@@ -65,7 +65,7 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Still fine wine?",\
 "audio" : {"timestamps" : ("00:00", "00:14" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start" : "01:30"},\
+"video" : {"file" : "breel_r9_280_outside.mp4"},\
 })
 
 
@@ -78,7 +78,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:53.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start" : "01:30"},\
+"video" : {"file" : "broll_GTX1050Ti_960_770_R9_280.mp4", "start" : "01:30", "rotation" : 90},\
 })
 
 configs["episodes"].append(\
@@ -149,7 +149,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Finals crashed",\
 "isChapter" : False,\
-"video" : "R9_280_Finals_crash.mkv" \
+"video" : "R9_280_Finals_crash.mkv", \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:55" ), "padAudio" : 0.05 },\
 })
 
@@ -344,7 +344,7 @@ configs["episodes"].append(\
 { "title": "legacy drivers support",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:13.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "error_182.mp4"},\
+"video" : {"file" : "R9_280_Finals_sideBySide.mp4"},\
 })
 
 
@@ -379,7 +379,7 @@ configs["episodes"].append(\
 ##"video" : {"file":"HiRezTrio-P_aladins_R_ealmRoyale_R_ogueCompany.mp4"}\
 ##})
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][7], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][2], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][13], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][15], configs)
@@ -397,4 +397,3 @@ configs["episodes"].append(\
 #    scriptedvided.makeVideoForEpisode(configs["episodes"][x], configs)
 #
 scriptedvided.makeVideo(configs)
-
