@@ -242,19 +242,6 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Fortnite OG results",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : ".mp4",\
-"overlay" : { \
-    "text" : ["'Fortnite OG'",\
-              scriptedvided.r6sText('1920x1080, performance mode', , ),\
-              scriptedvided.r6sText('1600x900, performance mode',  , ),\
-              scriptedvided.r6sText('1280x720, performance mode' , , ),\
-]}, \
-})
-
-configs["episodes"].append(\
 { "title": "Terminator: Resistance",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
@@ -346,17 +333,9 @@ configs["episodes"].append(\
 "video" : {"file" : ".mp4"},\
 })
 
-configs["episodes"].append(\
-{ "title": "Pascal is better",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
-})
-
-
 
 configs["episodes"].append(\
-{ "title": "teabaging",\
+{ "title": "new life for Sandy Bridge",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ".mp4"},\
