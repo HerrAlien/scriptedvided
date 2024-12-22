@@ -348,7 +348,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "pricing",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10.29.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:29.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GTX960_olx_2024.mkv"},\
 })
 
@@ -356,7 +356,7 @@ configs["episodes"].append(\
 { "title": "Pascal is better",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:45" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "1050Ti_960_R9_280.MTS", "start" : "00:15"},\
+"video" : {"file" : "1050Ti_960_R9_280.mp4", "start" : "00:15"},\
 })
 
 
@@ -365,7 +365,7 @@ configs["episodes"].append(\
 { "title": "teabaging",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:55" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "1050Ti_teabaging.MTS", "start" : "00:00"},\
+"video" : {"file" : "1050Ti_teabaging.mp4", "start" : "00:00"},\
 })
 
 
