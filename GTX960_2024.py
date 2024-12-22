@@ -250,7 +250,7 @@ configs["episodes"].append(\
 { "title": "Fortnite OG results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:20.34" ), "padAudio" : 0.05 },\
-"video" : ".mp4",\
+"video" : "OG_F_ortnite.mp4",\
 "overlay" : { \
     "text" : ["'Fortnite OG'",\
               scriptedvided.r6sText('1920x1080, performance mode', 179, 115),\
