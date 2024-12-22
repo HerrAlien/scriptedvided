@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "gtx960_2024.ogg",\
+configs = { "defaultAudioFile" : "gtx960_2024_2.ogg",\
 "mediaFolder" : "F:\\Videos\\gtx960_2024", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "F:\\Videos\\gtx960_2024\\Benchmark_GTX_960_2024.txt",\
@@ -198,10 +198,10 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900, high settings'     , 38, 29), \
 ]}, \
 })
-
+# 10:56.7 => 11:07 => 10.3 sec less
 configs["episodes"].append(\
 { "title": "XDefiant",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:40.8" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:30.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'XDefiant'",\
               scriptedvided.r6sText('1920x1080, low settings', 119, 74),\
@@ -212,7 +212,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Resident Evil 4 (Remake)", "video" : "stock_re4demo_phoneCall.mp4", \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:11.1" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:00.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Resident Evil 4 (Remake)'",\
               scriptedvided.r6sText('1920x1080, low settings', 42, 26),\
@@ -223,7 +223,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:35.5" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:25.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText('1920x1080, performance mode', 166, 53),\
@@ -236,7 +236,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite Reload results",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:55.14" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:44.84" ), "padAudio" : 0.05 },\
 "video" : "FortniteReload_2024_12_21.mp4",\
 "overlay" : { \
     "text" : ["'Fortnite Reload'",\
@@ -249,7 +249,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite OG results",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:20.34" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:10.04" ), "padAudio" : 0.05 },\
 "video" : "OG_F_ortnite.mp4",\
 "overlay" : { \
     "text" : ["'Fortnite OG'",\
@@ -261,7 +261,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Terminator: Resistance",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:39.4" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:29.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, epic settings", \
@@ -271,7 +271,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Overwatch 2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:00.14" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "7:49.84" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Overwatch 2'",\
               scriptedvided.r6sText('1920x1080, low settings', 182, 143),\
@@ -282,7 +282,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Far Cry 6",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:21.6" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:11.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Far Cry 6'",\
               scriptedvided.r6sText('1920x1080, low settings'   , 51, 43),\
@@ -294,7 +294,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:37.65" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:27.35" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -304,7 +304,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:08.9" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:58.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Control'",\
               scriptedvided.r6sText('1920x1080, lowest settings' , 55, 41),\
@@ -317,7 +317,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Grand Theft Auto V",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:37" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:26.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Grand Theft Auto V'",\
               scriptedvided.r6sText('1920x1080, low settings'     , 119, 60),\
@@ -327,7 +327,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Warframe",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:56.1" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:45.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -341,21 +341,21 @@ configs["episodes"].append(\
 # better than the 280
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:13.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:02.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_autumn_GTX960_4G_MSI.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "pricing",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:29.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:19.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GTX960_olx_2024.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pascal is better",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:45" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:34.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "1050Ti_960_R9_280.mp4", "start" : "00:15"},\
 })
 
@@ -364,7 +364,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "teabaging",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:55" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:44.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "1050Ti_teabaging.mp4", "start" : "00:00"},\
 })
 
@@ -372,7 +372,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:04.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:54.55" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_autumn_GTX960_4G_MSI.mp4"},\
 })
 
