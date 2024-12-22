@@ -122,8 +122,8 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Doom Eternal",\
+"video" : "stock_DOOMEternal_2023_12_26.mp4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:38.7" ), "padAudio" : 0.05 },\
-"video" : "",\
 "overlay" : { \
     "text" : ["'Doom Eternal'",\
               scriptedvided.r6sText('1280x720, high settings'  , 85, 59),\
@@ -312,7 +312,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1280x720, medium settings'  , 58, 47),\
               scriptedvided.r6sText('1280x720, high settings'    , 35, 27),\
 ]}, \
-"video" : ".mp4" \
+"video" : "GTX970_Control_DX11_medium.mp4" \
 })
 
 configs["episodes"].append(\
