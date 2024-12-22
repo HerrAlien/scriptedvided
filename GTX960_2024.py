@@ -1,11 +1,11 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : ".ogg",\
-"mediaFolder" : "F:\\Videos\\", \
+configs = { "defaultAudioFile" : "gtx960_2024.ogg",\
+"mediaFolder" : "F:\\Videos\\gtx960_2024", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\\\.txt",\
-"outputFolder" : "F:\\Videos\\\\output", \
-"outputFile" : "GTX960_2024.mp4", \
+"benchmarkFile" : "F:\\Videos\\gtx960_2024\\Benchmark_GTX_960_2024.txt",\
+"outputFolder" : "F:\\Videos\\GTX960_2024\\output", \
+"outputFile" : "GTX960_2025.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "An old 4GB card", "until" : "Rainbow Six: Siege"}}, \
@@ -66,20 +66,20 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "An old 4GB card",\
 "audio" : {"timestamps" : ("00:00", "00:13.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
+"video" : {"file" : "breel_autumn_GTX960_4G_MSI.mp4"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX960_GPUZ_Valley.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:49.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "msi_gtx960_cooling.mp4"},\
 })
 
 
@@ -99,7 +99,7 @@ configs["episodes"].append(\
 { "title": "Methodology - some game footage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:21.55" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX970_Control_DX11_ultra.mp4"},\
 })
 
 ####################### end of intro ###############################
@@ -141,11 +141,11 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900, low settings' , 69, 40), \
               scriptedvided.r6sText('1280x720, low settings' , 77, 47), \
 ]}, \
-"video" : "" \
+"video" : "TheFinals_Discovery_short_W.mp4" \
 })
 
 configs["episodes"].append(\
-{ "title": "Fallout 4", "video" : "",\
+{ "title": "Fallout 4", \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:24.55" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fallout 4'",\
@@ -163,7 +163,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900, low settings' , 144, 98), \
               scriptedvided.r6sText('1280x720, low settings' , 174, 122), \
 ]}, \
-"video" : "rx580_r5apex_2024_07_26_22_34_08_382-converted.mp4" \
+"video" : "r5apex_bot_royale.mp4" \
 })
 
 configs["episodes"].append(\
@@ -230,14 +230,14 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900, performance mode', 173 , 58),\
               scriptedvided.r6sText('1280x720, performance mode' , 167, 54),\
 ]}, \
-"video" : ".mp4"\
+"video" : "Fortnite_C6S1_short.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Fortnite Reload results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:55.14" ), "padAudio" : 0.05 },\
-"video" : ".mp4",\
+"video" : "FortniteReload_2024_12_21.mp4",\
 "overlay" : { \
     "text" : ["'Fortnite Reload'",\
               scriptedvided.r6sText('1920x1080, performance mode', 155, 75),\
@@ -342,21 +342,21 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:13.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
+"video" : {"file" : "breel_autumn_GTX960_4G_MSI.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10.29.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
+"video" : {"file" : "GTX960_olx_2024.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pascal is better",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:45" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
+"video" : {"file" : "1050Ti_960_R9_280.MTS", "start" : "00:15"},\
 })
 
 
@@ -365,7 +365,7 @@ configs["episodes"].append(\
 { "title": "teabaging",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:55" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
+"video" : {"file" : "1050Ti_teabaging.MTS", "start" : "00:00"},\
 })
 
 
@@ -373,7 +373,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:04.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
+"video" : {"file" : "breel_autumn_GTX960_4G_MSI.mp4"},\
 })
 
 
