@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "gtx1050ti_2025.ogg",\
+configs = { "defaultAudioFile" : "gtx1050ti_2025_2.ogg",\
 "mediaFolder" : "F:\\Videos\\GTX1050Ti_2024", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "F:\\Videos\\GTX1050Ti_2024\\.txt",\
