@@ -112,10 +112,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:45.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', , ),\
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale',  , ),\
-              scriptedvided.r6sText('1920x1080, low settings, 50% render scale',  , ),\
-              scriptedvided.r6sText('1280x720, low settings, 50% render scale',   , ),\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 84, 66),\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale',159, 114),\
+              scriptedvided.r6sText('1920x1080, low settings, 50% render scale',  128, 97),\
+              scriptedvided.r6sText('1280x720, low settings, 50% render scale',   196, 133),\
 ]}, \
 })
 
@@ -125,17 +125,21 @@ configs["episodes"].append(\
 "video" : "",\
 "overlay" : { \
     "text" : ["'Doom Eternal'",\
-              scriptedvided.r6sText('', , ),\
-              scriptedvided.r6sText('', , ),\
-              scriptedvided.r6sText('', , ),\
-              scriptedvided.r6sText('', , ),\
+              scriptedvided.r6sText('1920x1080, low settings'   , 74, 52),\
+              scriptedvided.r6sText('1920x1080, medium settings', 61, 47),\
+              scriptedvided.r6sText('1600x900, high settings'   , 74, 54),\
 ]}, \
 })
 
 configs["episodes"].append(\
 { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:32.3" ), "padAudio" : 0.05 },\
-"video" : "" \
+"overlay" : { \
+    "text" : ["'The Finals'",\
+              scriptedvided.r6sText('1920x1080, low settings', 76, 48), \
+              scriptedvided.r6sText('1600x900, low settings' , 77, 51), \
+              scriptedvided.r6sText('1280x720, low settings' , 80, 53), \
+]}, \
 })
 
 configs["episodes"].append(\
