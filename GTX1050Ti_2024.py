@@ -1,14 +1,14 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : ".ogg",\
-"mediaFolder" : "F:\\Videos\\", \
+configs = { "defaultAudioFile" : "gtx1050ti_2025.ogg",\
+"mediaFolder" : "F:\\Videos\\GTX1050Ti_2024", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\\\.txt",\
-"outputFolder" : "F:\\Videos\\\\output", \
-"outputFile" : "GTX960_2024.mp4", \
+"benchmarkFile" : "F:\\Videos\\GTX1050Ti_2024\\.txt",\
+"outputFolder" : "F:\\Videos\\GTX1050Ti_2024\\output", \
+"outputFile" : "GTX1050Ti_2025.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "", "until" : "Rainbow Six: Siege"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Better than the R9 280", "until" : "Rainbow Six: Siege"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rainbow Six: Siege", "until" : "Fortnite"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
