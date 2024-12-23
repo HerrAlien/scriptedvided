@@ -244,7 +244,6 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Terminator: Resistance",\
-"video" : "Terminator-Win64-Shipping_2024_07_16_23_30_08_297_compressed.mp4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:07.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
@@ -368,10 +367,10 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode(configs["episodes"][21], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][22], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][24], configs)
-scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Terminator: Resistance"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Terminator: Resistance"][0], configs)
 #scriptedvided.makeVideo(configs)
 
 #for x in range(19,26):
 #    scriptedvided.makeVideoForEpisode(configs["episodes"][x], configs)
 #
-#scriptedvided.makeVideo(configs)
+scriptedvided.makeVideo(configs)
