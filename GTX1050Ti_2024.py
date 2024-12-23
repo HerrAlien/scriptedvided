@@ -65,20 +65,20 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Better than the R9 280",\
 "audio" : {"timestamps" : ("00:00", "00:11.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
+"video" : {"file" : "1050Ti_R9_280.mp4"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX1050Ti_Valley_GPUZ.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:42.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "gtx1050Ti_cooling.mp4", "start" : "00:12"},\
 })
 
 
@@ -98,7 +98,7 @@ configs["episodes"].append(\
 { "title": "Methodology - some game footage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:09.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "XDefiant_2024_11_17_23_00_29_745-converted.mp4"},\
 })
 
 ####################### end of intro ###############################
@@ -143,7 +143,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Fallout 4", "video" : "",\
+{ "title": "Fallout 4", "video" : "GTX970_Fallout4_2024_04_20_22_46_15_889.mp4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:52.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fallout 4'",\
@@ -227,14 +227,14 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900, performance mode', 156 , 52),\
               scriptedvided.r6sText('1280x720, performance mode' , 156, 60),\
 ]}, \
-"video" : ".mp4"\
+"video" : "Fortnite_C6S1-win.mp4"\
 })
 
 configs["episodes"].append(\
 { "title": "Fortnite Reload results",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:49.2" ), "padAudio" : 0.05 },\
-"video" : ".mp4",\
+"video" : "FortniteReload_2024_12_21.mp4",\
 "overlay" : { \
     "text" : ["'Fortnite Reload'",\
               scriptedvided.r6sText('1920x1080, performance mode', 202, 89),\
@@ -293,7 +293,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1920x1080, lowest settings' , 62, 52),\
               scriptedvided.r6sText('1920x1080, medium settings' , 29, 21),\
 ]}, \
-"video" : ".mp4" \
+"video" : "stock_Control_R9_270.mp4" \
 })
 
 configs["episodes"].append(\
@@ -323,14 +323,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:44" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
+"video" : {"file" : "broll_GTX1050Ti_outside.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:55.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
+"video" : {"file" : "1050Ti_olx_2025.mkv"},\
 })
 
 
@@ -338,7 +338,7 @@ configs["episodes"].append(\
 { "title": "new life for Sandy Bridge",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:09" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
+"video" : {"file" : "rx460_GTX750Ti_GTX1050ti_barred.mp4", "start" : "01:00"},\
 })
 
 
@@ -346,7 +346,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:16.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ".mp4"},\
+"video" : {"file" : "broll_GTX1050Ti_outside.mp4"},\
 })
 
 
