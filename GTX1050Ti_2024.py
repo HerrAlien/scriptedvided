@@ -122,7 +122,6 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Doom Eternal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:07.3" ), "padAudio" : 0.05 },\
-"video" : "",\
 "overlay" : { \
     "text" : ["'Doom Eternal'",\
               scriptedvided.r6sText('1920x1080, low settings'   , 74, 52),\
