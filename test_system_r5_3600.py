@@ -64,49 +64,56 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 
 configs["episodes"].append(\
 { "title": "Something new, something old, something defective",\
-"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00", "00:13.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 
 configs["episodes"].append(\
 { "title": "The Z230 is getting old",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:30" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "A new test system",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "The case",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:58" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "looks like the Z230",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:06.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "has enough room",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:22.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"isChapter" : False,\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "tempered metal",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "The CPU",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:03.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
