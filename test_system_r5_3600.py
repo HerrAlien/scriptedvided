@@ -122,105 +122,105 @@ configs["episodes"].append(\
 { "title": "The motherboard",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:14.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "BReel_B450M_ProM2V2_3.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "control CPU voltage",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:27" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "B450M_bios1.mp4", "start" : "02:32"},\
 })
 
 configs["episodes"].append(\
 { "title": "plain mobo",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:38.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_MSI_B450M_and_issues.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "with no RGB",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:49.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_MSI_B450M_features.mp4", "start" : "00:50"},\
 })
 
 configs["episodes"].append(\
 { "title": "but with EZ-debug",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:57.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_MSI_B450M_features.mp4", "start" : "02:55"},\
 })
 
 configs["episodes"].append(\
 { "title": "no m2 standoff and no backplate",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:03.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_MSI_B450M_and_issues.mp4", "start" : "01:23"},\
 })
 
 configs["episodes"].append(\
 { "title": "backplate from Aliexpress",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:14.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_b450M_metalBackplate.mp4", "start" : "00:15"},\
 })
 
 configs["episodes"].append(\
 { "title": "vs makeshist backplate",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:21.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_MSI_B450M_withBackplate_M2Post.mp4", "start" : "00:43"},\
 })
 
 configs["episodes"].append(\
 { "title": "nylon retainer for M2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:38.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_MSI_B450M_withBackplate_M2Post.mp4", "start" : "01:43"},\
 })
 
 configs["episodes"].append(\
 { "title": "replaced with a regular nylon post",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:48" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "tempered panel",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:02.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "need video file"},\
 })
 
 configs["episodes"].append(\
 { "title": "The CPU cooler",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:11.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_cpuCooler_directTouched.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "direct touched",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:11.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"isChapter" : False,\
+"video" : {"file" : "cooler_installation.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "same company as the case",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:20.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_aigo_sameManufacturer.mp4", "start" : "00:11"},\
 })
 
 configs["episodes"].append(\
 { "title": "The RAM",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:34.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_DDR4_2x16GB.mp4", "start" : "01:40"},\
 })
 
 configs["episodes"].append(\
 { "title": "started single channel",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:52.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "building_loadingMoboNoCooler.mp4", "start" : "02:15"},\
 })
 
 configs["episodes"].append(\
@@ -234,77 +234,77 @@ configs["episodes"].append(\
 { "title": "The boot drive",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:21.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "... where did my videos go?"},\
 })
 
 configs["episodes"].append(\
 { "title": "just a plain nvme drive",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:34.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "... where did my videos go?"},\
 })
 
 configs["episodes"].append(\
 { "title": "Single exhaust fan",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:48.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_exhaustFan.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "but can get intake fans as well",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:53" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_intakeFans.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The PSU - not a defective one",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:06.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "still meed videos"},\
 })
 
 configs["episodes"].append(\
 { "title": "it is the old one",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:17.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "mounting_ioShieldAndPSU.mp4", "start" : "01:01"},\
 })
 
 configs["episodes"].append(\
 { "title": "A GPU ... any GPU.",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:32.25" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_RX580-converted.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "needs 8 pin",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:42.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "XFX_RX580_breel.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:47.35" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_noGPU.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "not current gen",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:54.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_RX580-converted.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:02" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_noGPU.mp4"},\
 })
 
 
@@ -333,8 +333,3 @@ configs["episodes"].append(\
 #    scriptedvided.makeVideoForEpisode(configs["episodes"][x], configs)
 #
 scriptedvided.makeVideo(configs)
-{ "title": "A new test system",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
-"video" : {"file" : ""},\
-})
