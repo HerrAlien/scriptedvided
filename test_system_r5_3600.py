@@ -65,7 +65,7 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Something new, something old, something defective",\
 "audio" : {"timestamps" : ("00:00", "00:13.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_noGPU.mp4"},\
 })
 
 
@@ -73,49 +73,49 @@ configs["episodes"].append(\
 { "title": "The Z230 is getting old",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:30" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_z230.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "A new test system",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_noGPU.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The case",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:58" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_b351_temperedMetal.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "looks like the Z230",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:06.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_b351_z230.mp4", "start" : "00:15"},\
 })
 
 configs["episodes"].append(\
 { "title": "has enough room",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:22.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_b351_airflow.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "tempered metal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_b351_temperedMetal.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:03.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_R5_3600.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -227,7 +227,7 @@ configs["episodes"].append(\
 { "title": "paired with a corsair",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:03.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "B450M_bios2-converted.mp4", "start" : "01:10"},\
 })
 
 configs["episodes"].append(\
