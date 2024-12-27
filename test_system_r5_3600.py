@@ -196,13 +196,6 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "direct touched",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:11.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
-"video" : {"file" : "cooler_installation.mp4"},\
-})
-
-configs["episodes"].append(\
 { "title": "same company as the case",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:20.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
