@@ -120,189 +120,189 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "The motherboard",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:14.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "control CPU voltage",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:27" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "plain mobo",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:38.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "with no RGB",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:49.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "but with EZ-debug",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:57.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "no m2 standoff and no backplate",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:03.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "backplate from Aliexpress",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:14.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "vs makeshist backplate",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:21.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "nylon retainer for M2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:38.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "replaced with a regular nylon post",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:48" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"isChapter" : False,\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "tempered panel",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:02.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "The CPU cooler",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "cooler buckle",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:11.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "same company as the case",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:20.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "The RAM",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:34.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "started single channel",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:52.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "paired with a corsair",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:03.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "The boot drive",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:21.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "just a plain nvme drive",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:34.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Single exhaust fan",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:48.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "but can get intake fans as well",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:53" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "The PSU - not a defective one",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:06.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "it is the old one",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:17.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "A GPU ... any GPU.",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:32.25" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "needs 8 pin",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:42.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:47.35" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "not current gen",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:54.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:02" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
