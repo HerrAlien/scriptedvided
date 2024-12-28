@@ -86,7 +86,6 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The case",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:58" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
 "video" : {"file" : "system_b351_temperedMetal.mp4"},\
 })
 
@@ -114,14 +113,12 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:03.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
 "video" : {"file" : "broll_R5_3600.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The motherboard",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:14.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
 "video" : {"file" : "BReel_B450M_ProM2V2_3.mp4"},\
 })
 
@@ -185,13 +182,13 @@ configs["episodes"].append(\
 { "title": "replaced with a regular nylon post",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:48" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : "need video file"},\
+"video" : {"file" : "nvme_nylon_post.MP4", "start" : "00:50"},\
 })
 
+# needs better audio
 configs["episodes"].append(\
 { "title": "The CPU cooler",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:11.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
 "video" : {"file" : "system_cpuCooler_directTouched.mp4"},\
 })
 
@@ -205,7 +202,6 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The RAM",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:34.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
 "video" : {"file" : "broll_DDR4_2x16GB.mp4", "start" : "01:40"},\
 })
 
@@ -226,21 +222,19 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The boot drive",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:21.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
-"video" : {"file" : "... where did my videos go?"},\
+"video" : {"file" : "nvme_drive.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "just a plain nvme drive",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:34.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : "... where did my videos go?"},\
+"video" : {"file" : "building_loadingMoboNoCooler.mp4", "start" : "03:27"},\
 })
 
 configs["episodes"].append(\
 { "title": "Single exhaust fan",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:48.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
 "video" : {"file" : "system_exhaustFan.mp4"},\
 })
 
@@ -254,8 +248,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The PSU - not a defective one",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:06.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
-"video" : {"file" : "still meed videos"},\
+"video" : {"file" : "PSU_FSP_hydro.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -268,7 +261,6 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "A GPU ... any GPU.",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:32.25" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
 "video" : {"file" : "test_system_RX580-converted.mp4"},\
 })
 
@@ -282,7 +274,6 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:47.35" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"isChapter" : False,\
 "video" : {"file" : "test_system_noGPU.mp4"},\
 })
 
