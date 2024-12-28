@@ -107,7 +107,7 @@ configs["episodes"].append(\
 { "title": "tempered metal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : "system_b351_temperedMetal.mp4"},\
+"video" : {"file" : "system_b351_temperedMetal.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
@@ -126,7 +126,7 @@ configs["episodes"].append(\
 { "title": "control CPU voltage",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:27" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : "B450M_bios1.mp4", "start" : "02:32"},\
+"video" : {"file" : "B450M_bios1.mp4", "start" : "02:32", "rotation" : -2.5},\
 })
 
 configs["episodes"].append(\
@@ -216,7 +216,7 @@ configs["episodes"].append(\
 { "title": "paired with a corsair",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:03.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : "B450M_bios2-converted.mp4", "start" : "01:10"},\
+"video" : {"file" : "B450M_bios2-converted.mp4", "start" : "01:10", "rotation" : -2.5},\
 })
 
 configs["episodes"].append(\
@@ -310,7 +310,7 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode(configs["episodes"][21], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][22], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][24], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Terminator: Resistance"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "control CPU voltage"][0], configs)
 #scriptedvided.makeVideo(configs)
 
 #for x in range(19,26):
