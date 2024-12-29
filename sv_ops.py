@@ -412,7 +412,7 @@ def rotateVideo(video, angle, output=None):
 
     angleRadStr = str(angle)  + "*PI/180"
     
-    params.append("[0]rotate='" +angleRadStr+":ow=max(iw*abs(cos("+angleRadStr+")),ih*abs(sin("+angleRadStr+"))):oh=max(iw*abs(sin("+angleRadStr+")),ih*abs(cos("+angleRadStr+")))'[R0];[R0]scale='1920x1080:flags=lanczos'")
+    params.append("[0]rotate='" +angleRadStr+":ow=max(iw*abs(cos("+angleRadStr+")),ih*abs(sin("+angleRadStr+"))):oh=max(iw*abs(sin("+angleRadStr+")),ih*abs(cos("+angleRadStr+")))'[R0];[R0]scale='1920x1080:flags=lanczos'[S0];[S0]setsar=1")
     
     if (output == None):
         root,ext = os.path.splitext (sv_utils.getFileFromInput(video))
