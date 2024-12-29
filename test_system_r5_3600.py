@@ -193,8 +193,15 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
+{ "title": "BUCKLE",\
+"audio" : {"timestamps" : ("04:02.7", "04:11.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"isChapter" : False,\
+"video" : {"file" : "cooler_installation.mp4", "start" : "00:26"},\
+})
+
+configs["episodes"].append(\
 { "title": "same company as the case",\
-"audio" : {"timestamps" : ("04:11.3", "04:20.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:20.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : "system_aigo_sameManufacturer.mp4", "start" : "00:11"},\
 })
