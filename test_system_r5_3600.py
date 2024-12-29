@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "R5_3600_build.ogg",\
+configs = { "defaultAudioFile" : "R5_3600_build_2.ogg",\
 "mediaFolder" : "F:\\Videos\\R5_3600_build", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "F:\\Videos\\R5_3600_build\\Benchmark_GTX_1050Ti_2024.txt",\
@@ -188,13 +188,13 @@ configs["episodes"].append(\
 # needs better audio
 configs["episodes"].append(\
 { "title": "The CPU cooler",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:11.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("07:04.7", "07:17.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "system_cpuCooler_directTouched.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "same company as the case",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:20.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : "04:11.3", "04:20.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : "system_aigo_sameManufacturer.mp4", "start" : "00:11"},\
 })
