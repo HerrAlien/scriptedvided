@@ -128,7 +128,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The motherboard",\
 "audio" : {"timestamps" : ("07:20", "07:36.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H-MoboOverview.MP4", "start" : "01:40"},\
 "overlay" : { \
     "text" : ["'Motherboard\: GA-A320M-H'",\
               "'Price [USD]\: 7'",\
@@ -140,7 +140,7 @@ configs["episodes"].append(\
 { "title": "Connectors",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:47.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H-MoboOverview.MP4", "start" : "00:45"},\
 })
 
 configs["episodes"].append(\
@@ -159,7 +159,7 @@ configs["episodes"].append(\
 { "title": "BIOS",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:07.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H-Bios.MP4", "start" : "01:35"},\
 })
 
 
@@ -180,7 +180,7 @@ configs["episodes"].append(\
 { "title": "BUCKLE",\
 "audio" : {"timestamps" : ("04:02.7", "04:11.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H-CoolerMounting.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -205,14 +205,14 @@ configs["episodes"].append(\
 { "title": "started single channel",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:52.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H-RamAndNvme.MP4", "start" : "00:07"},\
 })
 
 configs["episodes"].append(\
 { "title": "paired with a corsair",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:03.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H-Bios.MP4", "start" : "00:35"},\
 })
 
 configs["episodes"].append(\
@@ -230,7 +230,7 @@ configs["episodes"].append(\
 { "title": "just a plain nvme drive",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:34.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H-RamAndNvme.MP4", "start" : "01:10"},\
 })
 
 configs["episodes"].append(\
