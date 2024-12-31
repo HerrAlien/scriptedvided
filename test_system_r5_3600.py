@@ -15,8 +15,7 @@ configs = { "defaultAudioFile" : "R5_3600_build_2.ogg",\
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "", \
-"description" : ''' GPU Hook 
-We're using the same Z230 workstation with an i7 4770 equivalent CPU and 32 GB of DDR3 running in dual channel at 1600MHz.''',\
+"description" : '''This should replace the Z230 workstation as a test system.''',\
 "links" : '''
 Track: Bliss Of Heaven - SOMM [Audio Library Release]
 Music provided by Audio Library Plus
@@ -87,6 +86,11 @@ configs["episodes"].append(\
 { "title": "The case",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:58" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "system_b351_temperedMetal.mp4"},\
+"overlay" : { \
+    "text" : ["'Case\: Darkflash B351'",\
+              "'Price [USD]\: 25'",\
+              "'Total [USD]\: 25'",\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -114,12 +118,22 @@ configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:03.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "broll_R5_3600.mp4"},\
+"overlay" : { \
+    "text" : ["'CPU\: Ryzen 5 3600'",\
+              "'Price [USD]\: 45'",\
+              "'Total [USD]\: 70'",\
+]}, \
 })
 
 configs["episodes"].append(\
 { "title": "The motherboard",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:14.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "BReel_B450M_ProM2V2_3.mp4"},\
+"video" : {"file" : "broll_MSI_B450M_and_issues.mp4", "start" : "00:00"},\
+"overlay" : { \
+    "text" : ["'CPU\: MSI B450M-Pro M2 V2'",\
+              "'Price [USD]\: 15'",\
+              "'Total [USD]\: 85'",\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -162,6 +176,11 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:14.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : "system_b450M_metalBackplate.mp4", "start" : "00:15"},\
+"overlay" : { \
+    "text" : ["'Backplate\: generic from AliExpress'",\
+              "'Price [USD]\: 3'",\
+              "'Total [USD]\: 88'",\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -187,9 +206,14 @@ configs["episodes"].append(\
 
 # needs better audio
 configs["episodes"].append(\
-{ "title": "The CPU cooler",\
+{ "title": "The improper CPU cooler",\
 "audio" : {"timestamps" : ("07:04.7", "07:17.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "system_cpuCooler_directTouched.mp4"},\
+"overlay" : { \
+    "text" : ["'CPU Cooler\: Aigo ICE400SE'",\
+              "'Price [USD]\: 10'",\
+              "'Total [USD]\: 98'",\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -210,6 +234,11 @@ configs["episodes"].append(\
 { "title": "The RAM",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:34.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "broll_DDR4_2x16GB.mp4", "start" : "01:40"},\
+"overlay" : { \
+    "text" : ["'RAM\: 32GB, 300MHz CL16, mismatched'",\
+              "'Price [USD]\: 40'",\
+              "'Total [USD]\: 138'",\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -230,6 +259,11 @@ configs["episodes"].append(\
 { "title": "The boot drive",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:21.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "nvme_drive.MP4"},\
+"overlay" : { \
+    "text" : ["'NVME\: Silicon Power P34A60'",\
+              "'Price [USD]\: 20'",\
+              "'Total [USD]\: 158'",\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -243,6 +277,11 @@ configs["episodes"].append(\
 { "title": "Single exhaust fan",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:48.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "system_exhaustFan.mp4"},\
+"overlay" : { \
+    "text" : ["'Fan\: Zalman ZM-F3(SF)'",\
+              "'Price [USD]\: 20'",\
+              "'Total [USD]\: 158'",\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -262,7 +301,12 @@ configs["episodes"].append(\
 { "title": "it is the old one",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:17.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : "mounting_ioShieldAndPSU.mp4", "start" : "01:01"},\
+"video" : {"file" : "mounting_ioShieldAndPSU.mp4", "start" : "01:05"},\
+"overlay" : { \
+    "text" : ["'PSU\: already owned 650W'",\
+              "'Price [USD]\: 0'",\
+              "'Total [USD]\: 158'",\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -276,6 +320,11 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:42.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : "XFX_RX580_breel.mp4"},\
+"overlay" : { \
+    "text" : ["'GPU\: already owned RX580'",\
+              "'Price [USD]\: 0'",\
+              "'Total [USD]\: 158'",\
+]}, \
 })
 
 configs["episodes"].append(\
