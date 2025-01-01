@@ -64,7 +64,7 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Something new, something old, something defective",\
 "audio" : {"timestamps" : ("00:00", "00:13.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_noGPU.mp4"},\
 })
 
 
@@ -79,7 +79,7 @@ configs["episodes"].append(\
 { "title": "A new test system",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_noGPU.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -147,7 +147,7 @@ configs["episodes"].append(\
 { "title": "Backplate side by side",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:59" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "backplates_side_by_side_1080.mp4", "start" : "00:00"},\
 "overlay" : { \
     "text" : ["'Backplate and hooks\: generic, from AliExpress'",\
               "'Price [USD]\: 3'",\
@@ -212,7 +212,7 @@ configs["episodes"].append(\
 { "title": "paired with a corsair",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:03.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : "GA-A320M-H-Bios.MP4", "start" : "00:35"},\
+"video" : {"file" : "GA-A320M-H-Bios.MP4", "start" : "00:38"},\
 })
 
 configs["episodes"].append(\
@@ -284,27 +284,27 @@ configs["episodes"].append(\
 { "title": "needs 8 pin",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:42.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_RX580.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:47.35" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_noGPU.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "not current gen",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:54.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H-CoolerMounting.MP4", "start" : "00:30"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:02" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_noGPU.mp4"},\
 })
 
 
