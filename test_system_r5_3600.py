@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "R5_3600_build_2.ogg",\
+configs = { "defaultAudioFile" : "R5_3600_build_3.ogg",\
 "mediaFolder" : "F:\\Videos\\R5_3600_build", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "F:\\Videos\\R5_3600_build\\Benchmark_GTX_1050Ti_2024.txt",\
@@ -195,7 +195,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:34.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "broll_DDR4_2x16GB.mp4", "start" : "01:40"},\
 "overlay" : { \
-    "text" : ["'RAM\: 32GB, 300MHz CL16, mismatched'",\
+    "text" : ["'RAM\: 32GB, 3000MHz CL16, mismatched'",\
               "'Price [USD]\: 40'",\
               "'Total [USD]\: 130'",\
 ]}, \
@@ -212,7 +212,7 @@ configs["episodes"].append(\
 { "title": "paired with a corsair",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:03.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : "GA-A320M-H-Bios.MP4", "start" : "00:38"},\
+"video" : {"file" : "GA-A320M-H-Bios.MP4", "start" : "00:42"},\
 })
 
 configs["episodes"].append(\
