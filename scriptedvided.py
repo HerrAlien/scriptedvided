@@ -592,6 +592,7 @@ def aliases(inputName):
         ["Zenless Zone Zero", "ZenlessZoneZero", "ZenlessZoneZero.exe" ],\
         ["XDefiant", "X-Defiant", "XDefiant.exe" ],\
         ["Far Cry 6", "FarCry 6", "FarCry6Trial", "FarCry6Trial.exe"],\
+        ["Delta Force", "DeltaForce", "DeltaForceClient"],\
     ]
 
     if inputName is None:
