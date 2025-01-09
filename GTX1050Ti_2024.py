@@ -3,7 +3,7 @@ import scriptedvided
 configs = { "defaultAudioFile" : "gtx1050ti_2025_2.ogg",\
 "mediaFolder" : "F:\\Videos\\GTX1050Ti_2024", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\GTX1050Ti_2024\\.txt",\
+"benchmarkFile" : "F:\\Videos\\GTX1050Ti_2024\\Benchmark_GTX_1050Ti_2024.txt",\
 "outputFolder" : "F:\\Videos\\GTX1050Ti_2024\\output", \
 "outputFile" : "GTX1050Ti_2025.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
@@ -367,7 +367,7 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode(configs["episodes"][21], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][22], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][24], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Borderlands 3"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Terminator: Resistance"][0], configs)
 #scriptedvided.makeVideo(configs)
 
 #for x in range(19,26):
