@@ -61,40 +61,40 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "A hot card",\
 "audio" : {"timestamps" : ("00:00", "00:12.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_r9_290x_outside.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:28.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r9_290X_GPUZ_Valley.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:39" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_290_X_and_nonX.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Blower cooler",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:49.55" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_290X_cooling-converted.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Default fan curve means 90C",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:04.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_290X_Heaven_noFanCurve.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Custom fan curve means 70C",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:18.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_290X-blooper-custom-fan-curve.mp4"},\
 })
 
 
@@ -107,14 +107,14 @@ configs["episodes"].append(\
               "'RAM\: 32GB DDR4 at 3000 MHz, dual channel'",\
     ]\
 }, \
-"video" : {"file" : "" }\
+"video" : {"file" : "test_system_noGPU.mp4" }\
 })
 
 configs["episodes"].append(\
 { "title": "Methodology - some game footage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:47.35" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "DeltaForceClient_2025_01_06.mp4"},\
 })
 
 ####################### end of intro ###############################
@@ -180,7 +180,6 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fallout 4", \
-"video" : "",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:45.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fallout 4'",\
@@ -255,7 +254,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900, performance mode',  213, 132),\
               scriptedvided.r6sText('1280x720, performance mode' , 227, 133),\
 ]}, \
-"video" : "Fortnite_C6S1-win.mp4"\
+"video" : "FortniteClient_2024_12_25.mp4"\
 })
 
 configs["episodes"].append(\
@@ -322,7 +321,6 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1920x1080, low settings'    , 85, 60),\
               scriptedvided.r6sText('1920x1080, medium settings' , 54, 33),\
 ]}, \
-"video" : "" \
 })
 
 configs["episodes"].append(\
@@ -352,35 +350,35 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:28" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_r9_290x_outside.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "TDP is high",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:46.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_290X_baseline_temps.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "price about the RX 570",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:01" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_290X_RX570_olx.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "alternatives",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:12.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "start" : "00:34", "rotation" : 90},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:18.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_r9_290x_outside.mp4"},\
 })
 
 
