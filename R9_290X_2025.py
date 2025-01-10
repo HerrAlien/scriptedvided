@@ -73,7 +73,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:39" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "R9_290_X_and_nonX.mp4"},\
+"video" : {"file" : "R9_290_X_and_nonX.mp4", "start" : "00:00", "rotation" : -90},\
 })
 
 configs["episodes"].append(\
@@ -239,7 +239,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:51.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Resident Evil 4 (Remake)'",\
-              scriptedvided.r6sText('1920x1080, performance', 71, 72),\
+              scriptedvided.r6sText('1920x1080, performance', 71, 42),\
               scriptedvided.r6sText('1920x1080, balanced'   , 48, 26),\
               scriptedvided.r6sText('1600x900, balanced'    , 59, 28),\
 ]}, \
