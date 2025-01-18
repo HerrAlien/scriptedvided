@@ -121,6 +121,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Doom Eternal",\
+"video" : "stock_DOOMEternal_2023_12_26.mp4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:07.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Doom Eternal'",\
