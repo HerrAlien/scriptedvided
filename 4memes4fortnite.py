@@ -1,11 +1,11 @@
 import scriptedvided
 
 configs = { "defaultAudioFile" : "",\
-"mediaFolder" : "F:\\Videos\\....", \
+"mediaFolder" : "F:\\Videos\\4memes4Fortnite", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\....\\....",\
-"outputFolder" : "F:\\Videos\\....\\output", \
-"outputFile" : ".....mp4", \
+"benchmarkFile" : "not needed",\
+"outputFolder" : "F:\\Videos\\4memes4Fortnite\\output", \
+"outputFile" : "4memes4Fortnite.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "", "until" : "Rainbow Six: Siege"}}, \
@@ -130,7 +130,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite (C6S1), 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
@@ -140,7 +140,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite (C6S1), 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
@@ -150,7 +150,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite (C6S1), 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
@@ -166,7 +166,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite OG (C1S1), 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
@@ -176,7 +176,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite OG (C1S1), 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
@@ -186,7 +186,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite OG (C1S1), 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
@@ -202,7 +202,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite Reload, 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
@@ -212,7 +212,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite Reload, 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
@@ -222,7 +222,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite Reload, 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
@@ -238,7 +238,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite Ballistic, 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
@@ -248,7 +248,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite Ballistic, 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
@@ -258,7 +258,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "Fortnite Ballistic, 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
 "video" : "" \
 })
