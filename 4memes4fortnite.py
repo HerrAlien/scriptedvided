@@ -122,7 +122,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite, Chapter 6 Season 1",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:49.6" ), "padAudio" : 0.05 },\
-"video" : "" \
+"video" : {"file" : "Fortnite_C6S1_2025_01_30_p1.mp4", "start" : "02:00"} \
 })
 
 configs["episodes"].append(\
@@ -132,7 +132,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite (C6S1), 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : {"file" : "Fortnite_C6S1_2025_01_30_p1.mp4", "start" : "02:10"} \
 })
 
 configs["episodes"].append(\
@@ -142,7 +142,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite (C6S1), 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : {"file" : "Fortnite_C6S1_2025_01_30_p1.mp4", "start" : "02:35"} \
 })
 
 configs["episodes"].append(\
@@ -152,13 +152,13 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite (C6S1), 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : {"file" : "Fortnite_C6S1_2025_01_30_p1.mp4", "start" : "02:55"} \
 })
 
 configs["episodes"].append(\
 { "title": "Fortnite OG, Chapter 1 Season 1",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:22" ), "padAudio" : 0.05 },\
-"video" : "" \
+"video" : {"file" : "OG_F_ortnite.mp4", "start" : "00:00"} \
 })
 
 configs["episodes"].append(\
@@ -168,7 +168,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite OG (C1S1), 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : {"file" : "OG_F_ortnite.mp4", "start" : "00:15"} \
 })
 
 configs["episodes"].append(\
@@ -178,7 +178,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite OG (C1S1), 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : {"file" : "OG_F_ortnite.mp4", "start" : "00:33"} \
 })
 
 configs["episodes"].append(\
@@ -188,13 +188,13 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite OG (C1S1), 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : {"file" : "OG_F_ortnite.mp4", "start" : "01:10"} \
 })
 
 configs["episodes"].append(\
 { "title": "Fortnite Reload",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:17" ), "padAudio" : 0.05 },\
-"video" : "" \
+"video" : {"file" : "F_ortnite_Reload_2024_12_06.mp4", "start" : "00:00"} \
 })
 
 configs["episodes"].append(\
@@ -204,7 +204,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite Reload, 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : {"file" : "F_ortnite_Reload_2024_12_06.mp4", "start" : "00:14"} \
 })
 
 configs["episodes"].append(\
@@ -214,7 +214,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite Reload, 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : {"file" : "F_ortnite_Reload_2024_12_06.mp4", "start" : "00:42"} \
 })
 
 configs["episodes"].append(\
@@ -224,7 +224,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite Reload, 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : {"file" : "F_ortnite_Reload_2024_12_06.mp4", "start" : "01:21"} \
 })
 
 configs["episodes"].append(\
@@ -240,7 +240,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite Ballistic, 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : { "file" : "4meme_cards_F_nite_Ballistic_fullRound.mp4" , "start" : "00:22" }\
 })
 
 configs["episodes"].append(\
@@ -250,7 +250,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite Ballistic, 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : { "file" : "4meme_cards_F_nite_Ballistic_4.mp4" , "start" : "00:22" }\
 })
 
 configs["episodes"].append(\
@@ -260,7 +260,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite Ballistic, 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : "" \
+"video" : { "file" : "4meme_cards_F_nite_Ballistic.mp4" , "start" : "00:18" }\
 })
 
 ####################### end of gaming section ###############################
@@ -270,14 +270,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Time waits for no GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:37" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_4meme_cards_porch_hd5770_hd6670_gt730_r7_250.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Other games got heavy",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:47.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GImpact_2022_2023.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
