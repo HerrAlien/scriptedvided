@@ -63,44 +63,44 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 #})
 
 configs["episodes"].append(\
-{ "title": "",\
+{ "title": "This is not a BUY recommendation",\
 "audio" : {"timestamps" : ("00:00", "00:09" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_4meme_cards_porch_hd5770_hd6670_gt730_r7_250.MP4"},\
 })
 
 ## HD5770
 configs["episodes"].append(\
 { "title": "The GPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:21.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_4meme_cards_porch_hd5770.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "HD6670",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:34.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_4meme_cards_porch_gt730_hd6670.MP4", "start" : "00:06"},\
 })
 
 configs["episodes"].append(\
 { "title": "GT730",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:44.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_4meme_cards_porch_gt730_hd6670.MP4", "start" : "00:40"},\
 })
 
 configs["episodes"].append(\
 { "title": "R7 250",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:15.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_4meme_cards_porch_r7_250.MP4", "start" : "00:16"},\
 })
 
 # the game, fortnite 
 configs["episodes"].append(\
 { "title": "Test setup",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:23.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Fortnite_C6S1_2025_01_30_p1.mp4", "start" : "01:30"},\
 })
 
 configs["episodes"].append(\
@@ -230,7 +230,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite Ballistic",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:25.9" ), "padAudio" : 0.05 },\
-"video" : "" \
+"video" : { "file" : "4meme_cards_F_nite_Ballistic_fullRound.mp4" , "start" : "00:00" }\
 })
 
 configs["episodes"].append(\
