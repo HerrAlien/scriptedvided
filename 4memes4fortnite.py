@@ -1,6 +1,7 @@
 import scriptedvided
+import sv_ffutils
 
-configs = { "defaultAudioFile" : "",\
+configs = { "defaultAudioFile" : "4memes4fortnite.ogg",\
 "mediaFolder" : "F:\\Videos\\4memes4Fortnite", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
@@ -10,10 +11,10 @@ configs = { "defaultAudioFile" : "",\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "This is not a BUY recommendation", "until" : "Fortnite, Chapter 6 Season 1"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite, Chapter 6 Season 1", "until" : "Fortnite OG, Chapter 1 Season 1"}}, \
-{"file" : "Ferco -Lake Of The Honesty.mp3", "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Fortnite OG, Chapter 1 Season 1", "until" : "Fortnite Reload"}}, \
-{"file" : "01_Ferco - Inquisitiveness.mp3", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Fortnite Reload", "until" : "Fortnite Ballistic"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite Ballistic", "until" : "Conclusions"}}, \
-{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
+{"file" : "Ferco - Lake Of The Honesty.ogg", "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Fortnite OG, Chapter 1 Season 1", "until" : "Fortnite Reload"}}, \
+{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Fortnite Reload", "until" : "Fortnite Ballistic"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite Ballistic", "until" : "Time waits for no GPU"}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Time waits for no GPU", "until" : "EOF"}}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "", \
@@ -78,7 +79,7 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "This is not a BUY recommendation",\
 "audio" : {"timestamps" : ("00:00", "00:09" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "broll_4meme_cards_porch_hd5770_hd6670_gt730_r7_250.MP4"},\
+"video" : {"file" : "broll_4meme_cards_porch_hd5770_hd6670_gt730_r7_250.MP4", "start" : "00:39"},\
 })
 
 ## HD5770
@@ -92,20 +93,20 @@ configs["episodes"].append(\
 { "title": "HD6670",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:34.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "broll_4meme_cards_porch_gt730_hd6670.MP4", "start" : "00:06"},\
+"video" : {"file" : "broll_4meme_cards_porch_gt730_hd6670.MP4", "start" : "00:40"},\
 })
 
 configs["episodes"].append(\
 { "title": "GT730",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:44.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "broll_4meme_cards_porch_gt730_hd6670.MP4", "start" : "00:40"},\
+"video" : {"file" : "broll_4meme_cards_porch_gt730_hd6670.MP4", "start" : "00:06"},\
 })
 
 configs["episodes"].append(\
 { "title": "R7 250",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:15.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:05.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "broll_4meme_cards_porch_r7_250.MP4", "start" : "00:16"},\
 })
 
@@ -283,7 +284,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Time waits for no GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:37" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "broll_4meme_cards_porch_hd5770_hd6670_gt730_r7_250.MP4"},\
+"video" : {"file" : "broll_4meme_cards_porch_hd5770_hd6670_gt730_r7_250.MP4", "start" : "00:39"},\
 })
 
 configs["episodes"].append(\
@@ -332,7 +333,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:01" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "broll_4meme_cards_porch_hd5770_hd6670_gt730_r7_250.MP4"},\
+"video" : {"file" : "broll_4meme_cards_porch_hd5770_hd6670_gt730_r7_250.MP4", "start" : "00:39"},\
 })
 
 
@@ -361,4 +362,3 @@ configs["episodes"].append(\
 #    scriptedvided.makeVideoForEpisode(configs["episodes"][x], configs)
 #
 scriptedvided.makeVideo(configs)
-
