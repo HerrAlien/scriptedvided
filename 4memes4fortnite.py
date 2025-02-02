@@ -8,9 +8,11 @@ configs = { "defaultAudioFile" : "",\
 "outputFile" : "4memes4Fortnite.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "", "until" : "Rainbow Six: Siege"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rainbow Six: Siege", "until" : "Fortnite"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite", "until" : "Conclusions"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "This is not a BUY recommendation", "until" : "Fortnite, Chapter 6 Season 1"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite, Chapter 6 Season 1", "until" : "Fortnite OG, Chapter 1 Season 1"}}, \
+{"file" : "Ferco -Lake Of The Honesty.mp3", "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Fortnite OG, Chapter 1 Season 1", "until" : "Fortnite Reload"}}, \
+{"file" : "01_Ferco - Inquisitiveness.mp3", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Fortnite Reload", "until" : "Fortnite Ballistic"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Fortnite Ballistic", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
@@ -27,6 +29,17 @@ Track: Far Far Away - Ferco [Audio Library Release]
 Music provided by Audio Library Plus
 Watch: https://www.youtube.com/watch?v=SrkQ3K1umlc&t=0s 
 Free Download / Stream: https://alplus.io/far-far-away
+
+Ferco - Lake Of The Honesty
+Creative Commons - Attribution 3.0 Unported (CC BY 3.0)
+Free Download: hypeddit.com/lo55nr
+Video: https://www.youtube.com/watch?v=LMQEm8PVnpc&t=0s
+
+Ferco - Inquisitiveness
+Creative Commons - Attribution 3.0 Unported (CC BY 3.0)
+Free Download: https://hypeddit.com/mlsvxq
+Streams: https://share.amuse.io/track/ferco-inquisitiveness
+Video: https://www.youtube.com/watch?v=dhJdmwLWtFM&t=0s
 
 Track: Inspired - MaikonMusic [Audio Library Release]
 Music provided by Audio Library Plus
@@ -284,42 +297,42 @@ configs["episodes"].append(\
 { "title": "Normal trend HW SW",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:55.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "nvidia_kepler_launch.mp4", "start" : "00:10"},\
 })
 
 configs["episodes"].append(\
 { "title": "Live service games",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:03.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_F_ortnite_performance.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "HD5770 vs GT 730 - not a display adapter",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:25.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_4meme_cards_porch_hd5770_hd6670_gt730_r7_250.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "HD5770 - The gap",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:39.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_4meme_cards_porch_hd5770.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "HD5770 - Maybe retro",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:49.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "xfire-zoomin.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:01" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_4meme_cards_porch_hd5770_hd6670_gt730_r7_250.MP4"},\
 })
 
 
