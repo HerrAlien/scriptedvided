@@ -64,49 +64,49 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 
 configs["episodes"].append(\
 { "title": "",\
-"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00", "00:09" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 ## HD5770
 configs["episodes"].append(\
 { "title": "The GPUs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:21.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "HD6670",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:34.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "GT730",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:44.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "R7 250",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:15.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 # the game, fortnite 
 configs["episodes"].append(\
 { "title": "Test setup",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:23.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "The test system",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:39.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Custom build'",\
               "'CPU\: Ryzen 5 3600'",\
@@ -121,14 +121,14 @@ configs["episodes"].append(\
 ####################### gaming section ###############################
 configs["episodes"].append(\
 { "title": "Fortnite, Chapter 6 Season 1",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:49.6" ), "padAudio" : 0.05 },\
 "video" : "" \
 })
 
 configs["episodes"].append(\
 { "title": "1080p C6S1",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:14.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite (C6S1), 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -138,7 +138,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "900p C6S1",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:34.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite (C6S1), 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -148,7 +148,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "720p C6S1",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:07" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite (C6S1), 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -157,14 +157,14 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite OG, Chapter 1 Season 1",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:22" ), "padAudio" : 0.05 },\
 "video" : "" \
 })
 
 configs["episodes"].append(\
 { "title": "1080p OG C1S1",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:50.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite OG (C1S1), 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -174,7 +174,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "900p OG C1S1",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:27.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite OG (C1S1), 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -184,7 +184,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "720p OG C1S1",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:03.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite OG (C1S1), 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -193,14 +193,14 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite Reload",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:17" ), "padAudio" : 0.05 },\
 "video" : "" \
 })
 
 configs["episodes"].append(\
 { "title": "1080p Reload",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:45.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite Reload, 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -210,7 +210,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "900p Reload",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:23.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite Reload, 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -220,7 +220,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "720p Reload",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:02.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite Reload, 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -229,14 +229,14 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite Ballistic",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:25.9" ), "padAudio" : 0.05 },\
 "video" : "" \
 })
 
 configs["episodes"].append(\
 { "title": "1080p Ballistic",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:02.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite Ballistic, 1920x1080, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -246,7 +246,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "900p Ballistic",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:33.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite Ballistic, 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -256,7 +256,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "720p Ballistic",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:17.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite Ballistic, 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -269,42 +269,56 @@ configs["episodes"].append(\
 # really need an upgrade
 configs["episodes"].append(\
 { "title": "Time waits for no GPU",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:37" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "Normal trend",\
+{ "title": "Other games got heavy",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:47.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Normal trend HW SW",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:55.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Live service games",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:03.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "HD5770 vs GT 730 - not a display adapter",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:25.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "HD5770 - The gap",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:39.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "HD5770 - Maybe retro",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:49.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:01" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
