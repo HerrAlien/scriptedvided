@@ -1,7 +1,7 @@
 import scriptedvided
 import sv_ffutils
 
-configs = { "defaultAudioFile" : "4memes4fortnite.ogg",\
+configs = { "defaultAudioFile" : "4memes4fortnite_v2.ogg",\
 "mediaFolder" : "F:\\Videos\\4memes4Fortnite", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
@@ -188,7 +188,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "900p OG C1S1",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:27.7" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("11:05.5", "11:43" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite OG (C1S1), 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -198,7 +198,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "720p OG C1S1",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:03.7" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:18.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Fortnite OG (C1S1), 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
@@ -207,7 +207,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite Reload",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:17" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("05:03.7", "05:17" ), "padAudio" : 0.05 },\
 "video" : {"file" : "F_ortnite_Reload_2024_12_06.mp4", "start" : "00:00"} \
 })
 
