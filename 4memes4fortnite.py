@@ -192,7 +192,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite OG (C1S1), 1600x900, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : {"file" : "OG_F_ortnite.mp4", "start" : "00:33"} \
+"video" : {"file" : "OG_F_ortnite.mp4", "start" : "00:43"} \
 })
 
 configs["episodes"].append(\
@@ -202,7 +202,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite OG (C1S1), 1280x720, performance mode.png", "chromaColor" : "0x00FF00"}\
 }, \
-"video" : {"file" : "OG_F_ortnite.mp4", "start" : "01:10"} \
+"video" : {"file" : "OG_F_ortnite.mp4", "start" : "01:20"} \
 })
 
 configs["episodes"].append(\
