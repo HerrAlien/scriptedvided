@@ -115,14 +115,14 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:41.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GA-A320M-H_ExpansionSlots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "PCIEx1 vs RX580",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:41.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4"},\
 })
 
