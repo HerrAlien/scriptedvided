@@ -130,7 +130,7 @@ configs["episodes"].append(\
 { "title": "SATA vs RX580",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:01.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Asrock_A320M-DVS_SataVs2SlotCard.MP4"},\
+"video" : {"file" : "GA-A320M-H_SataVs2SlotCard.MP4", "start" : "00:10"},\
 })
 
 configs["episodes"].append(\
