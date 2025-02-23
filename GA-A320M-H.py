@@ -102,14 +102,14 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DIMMs, only two of them",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:20.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:10.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GA-A320M-H_RamSlots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "DIMMs - Asrock",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:10.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:20.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Asrock_A320M-DVS_memorySlots.MP4"},\
 })
 
