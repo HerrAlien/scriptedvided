@@ -120,18 +120,34 @@ configs["episodes"].append(\
 { "title": "Test system",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:02.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
+"overlay" : { \
+    "text" : ["'Custom build'",\
+              "'RAM\: 32GB DDR4 at 3000 MHz, dual channel'",\
+              "'GPUs\: XFX Radeon RX 580, Sapphire Radeon R9 290X'",\
+    ]\
+}, \
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Marvel Rivals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:27.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings, 30% render scale", \
+    }\
+}, \
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:42.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+    }\
+}, \
 "video" : {"file" : ""},\
 })
 
@@ -139,6 +155,11 @@ configs["episodes"].append(\
 { "title": "Fortnite Reload",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:55.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+    }\
+}, \
 "isChapter" : False,\
 })
 
@@ -151,24 +172,44 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Apex Legends",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:49.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+    }\
+}, \
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Overwatch 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:07.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings, 50% render scale", \
+    }\
+}, \
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:31.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+    }\
+}, \
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:56.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings, 50% render scale", \
+    }\
+}, \
 "video" : {"file" : ""},\
 })
 
