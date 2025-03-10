@@ -10,9 +10,8 @@ configs = { "defaultAudioFile" : "GA-A320M-H.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Budget boards are legion", "until" : "The VRMs"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : "Rear IO"}}, \
-{"file" : "Ferco - Lake Of The Honesty.ogg", "timestamps" : ("00:30", None ), "destinationTimestamp" : {"title" : "Rear IO", "until" : "The BIOS setup utility"}}, \
-{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "The BIOS setup utility", "until" : "Conclusions"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : "The audio ... oh, the audio."}}, \
+{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "The audio ... oh, the audio.", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
@@ -123,7 +122,7 @@ configs["episodes"].append(\
 { "title": "PCIEx1 vs RX580",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:41.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4"},\
+"video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4", "start" : "00:16"},\
 })
 
 configs["episodes"].append(\
