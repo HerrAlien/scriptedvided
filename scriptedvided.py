@@ -480,7 +480,6 @@ def makeVideo (configs):
 
 # needs an audio - see makeAudioForEposiode
 def makeEpisodeWithAllInputs (video, audio, textLinesArray, overlayImageDict, options):
-
     videoLen = sv_ffutils.getLengthOfStream(video)
     audioLen = sv_ffutils.getLengthOfStream(audio)
     padding = sv_utils.dictValue (options, "padAudio", 1)
@@ -588,12 +587,12 @@ def aliases(inputName):
         ["Prey", "Prey.exe" ],\
         ["Shadow of the Tomb Raider", "SOTTR", "SOTTR.exe" ],\
         ["Borderlands 3", "Borderlands3", "Borderlands3.exe" ],\
-        ["Terminator: Resistance", "Terminator", "Terminator-Win64-Shipping.exe" ],\
+        ["Terminator: Resistance", "Terminator", "Terminator-Win64-Shipping.exe" , "Terminator-Win64-Shipping" ],\
         ["Zenless Zone Zero", "ZenlessZoneZero", "ZenlessZoneZero.exe" ],\
         ["XDefiant", "X-Defiant", "XDefiant.exe" ],\
         ["Far Cry 6", "FarCry 6", "FarCry6Trial", "FarCry6Trial.exe"],\
         ["Delta Force", "DeltaForce", "DeltaForceClient"],\
-        ["Marvel Rivals", "MarvelRivals", "Marvel-Win64-Shipping.exe"],\
+        ["Marvel Rivals", "MarvelRivals", "Marvel-Win64-Shipping.exe", "Marvel-Win64-Shipping"],\
     ]
 
     if inputName is None:
