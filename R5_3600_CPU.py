@@ -64,40 +64,41 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "New and improved bottlenecks",\
 "audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R5_3600_6c12t.mp4"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R5_3600_params_AmdCom.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "65W TDP, if you squint a bit",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R5_3600_TDP.mp4"},\
 })
 
+# needs better video
 configs["episodes"].append(\
 { "title": "bundled cooler",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "wraith_coolers.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "better cooler",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_WraithPrism.MP4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "The games and test system",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "O_verwatch_720p_50scale2.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -226,46 +227,46 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_gigasus.mp4"},\
 })
 
 configs["episodes"].append(\
-{ "title": "A number for IPC",\
+{ "title": "Assigning a number to IPC",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5_3600_blurred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Single core",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_gigasus.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Clock cycles",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5_3600_blurred.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "SMT - what is it good for",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_gigasus.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "SMT on compared to SMT off",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5_3600_blurred.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Cache size ... nope",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_gigasus.mp4"},\
 "isChapter" : False,\
 })
 
@@ -278,14 +279,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5_3600_concat_breels.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "motherboard - stretching for the TDP",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H_Overview.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -299,21 +300,21 @@ configs["episodes"].append(\
 { "title": "pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Ryzen5_3600_olx.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "other CPUs on the way",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_AMD_vs_Intel.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R5_3600_6c12t.mp4"},\
 })
 
 
