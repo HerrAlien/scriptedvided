@@ -180,6 +180,7 @@ configs["episodes"].append(\
     "text" : ["'Delta Force'",\
               "'Nice to know you, good bye'",\
 ]}, \
+"video" : "DeltaForce_loadingResources.mp4",\
 })
 
 configs["episodes"].append(\
@@ -244,11 +245,10 @@ configs["episodes"].append(\
 "video" : {"file" : "breel_R5_3600_6c12t.mp4"},\
 })
 
-# different video
 configs["episodes"].append(\
 { "title": "Performance onion",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:30.4" ), "padAudio" : 0.05 },\
-"video" : {"file" : "another breel ... maybe 6?"},\
+"video" : {"file" : "Breel_R5-3600_InMobo9.MP4"},\
 "isChapter" : False,\
 })
 
