@@ -232,7 +232,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
-"audio" : {"timestamps" : ( "04:56.1", "05:08.7" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ( "04:56.1", "05:08.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "blurred_gigasus.mp4"},\
 "overlay" : { \
     "image" : {"file" : "overlays_r5_3600_multiCore.png", "chromaColor" : "0x00FF00"}\
@@ -241,20 +241,20 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Assigning a number to IPC",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:16.2" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:16.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_R5_3600_6c12t.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Performance onion",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:30.4" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:30.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Breel_R5-3600_InMobo9.MP4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Single core",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:42" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:42" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "r5_3600_blurred.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
@@ -264,7 +264,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Clock cycles",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:58.5" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:58.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "blurred_gigasus.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
@@ -274,30 +274,33 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "SMT - what is it good for",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:08.2" ), "padAudio" : 0.05 },\
-"video" : {"file" : "r5_3600_blurred.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:08.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "Breel_R5-3600_InMobo9.MP4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "SMT on compared to SMT off",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:28.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "blurred_gigasus.mp4"},\
+"isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "overlays_r5_3600_cyclesSmtOff.png", "chromaColor" : "0x00FF00"}\
 }, \
 })
 
 configs["episodes"].append(\
-{ "title": "SMT on compared to SMT off",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:28.2" ), "padAudio" : 0.05 },\
-"video" : {"file" : "blurred_gigasus.mp4"},\
-"isChapter" : False,\
-})
-
-configs["episodes"].append(\
 { "title": "and power",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:43.4" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:43.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "r5_3600_blurred.mp4"},\
 "isChapter" : False,\
+"overlay" : { \
+    "image" : {"file" : "SMT.png", "chromaColor" : "0x00FF00"}\
+},\
 })
 
 configs["episodes"].append(\
 { "title": "Cache size ... nope",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:57.6" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:57.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_Ryzen5_2600.MP4", "start" : "00:16"},\
 "isChapter" : False,\
 })
