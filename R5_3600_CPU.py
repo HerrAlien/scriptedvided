@@ -233,18 +233,22 @@ configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
 "audio" : {"timestamps" : ( "04:56.1", "05:08.7" ), "padAudio" : 0.05 },\
 "video" : {"file" : "blurred_gigasus.mp4"},\
+"overlay" : { \
+    "image" : {"file" : "overlays_r5_3600_multiCore.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 
 configs["episodes"].append(\
 { "title": "Assigning a number to IPC",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:16.2" ), "padAudio" : 0.05 },\
-"video" : {"file" : "r5_3600_blurred.mp4"},\
+"video" : {"file" : "breel_R5_3600_6c12t.mp4"},\
 })
 
+# different video
 configs["episodes"].append(\
 { "title": "Performance onion",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:30.4" ), "padAudio" : 0.05 },\
-"video" : {"file" : "blurred_gigasus.mp4"},\
+"video" : {"file" : "another breel ... maybe 6?"},\
 "isChapter" : False,\
 })
 
@@ -253,6 +257,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:42" ), "padAudio" : 0.05 },\
 "video" : {"file" : "r5_3600_blurred.mp4"},\
 "isChapter" : False,\
+"overlay" : { \
+    "image" : {"file" : "overlays_r5_3600_singleCore.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 
 configs["episodes"].append(\
@@ -260,12 +267,18 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:58.5" ), "padAudio" : 0.05 },\
 "video" : {"file" : "blurred_gigasus.mp4"},\
 "isChapter" : False,\
+"overlay" : { \
+    "image" : {"file" : "overlays_r5_3600_cycles.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 
 configs["episodes"].append(\
 { "title": "SMT - what is it good for",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:08.2" ), "padAudio" : 0.05 },\
 "video" : {"file" : "r5_3600_blurred.mp4"},\
+"overlay" : { \
+    "image" : {"file" : "overlays_r5_3600_cyclesSmtOff.png", "chromaColor" : "0x00FF00"}\
+}, \
 })
 
 configs["episodes"].append(\
