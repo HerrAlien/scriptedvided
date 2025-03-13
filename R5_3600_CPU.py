@@ -74,7 +74,6 @@ configs["episodes"].append(\
 "video" : {"file" : "breel_R5_3600_6c12t.mp4"},\
 })
 
-
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
@@ -87,12 +86,11 @@ configs["episodes"].append(\
 "video" : {"file" : "R5_3600_TDP.mp4"},\
 })
 
-# needs better video
 configs["episodes"].append(\
 { "title": "bundled cooler",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:59.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "wraith_coolers.mp4"},\
+"video" : {"file" : "breel_Ryzen5_2600.MP4", "start" : "02:16"},\
 })
 
 configs["episodes"].append(\
@@ -112,7 +110,7 @@ configs["episodes"].append(\
 { "title": "Video compression test",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:47.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -287,7 +285,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cache size ... nope",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:57.6" ), "padAudio" : 0.05 },\
-"video" : {"file" : "blurred_gigasus.mp4"},\
+"video" : {"file" : "breel_Ryzen5_2600.MP4", "start" : "00:16"},\
 "isChapter" : False,\
 })
 
@@ -314,7 +312,7 @@ configs["episodes"].append(\
 { "title": "coolers not really suited for 85W",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:41.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Ryzen5_2600.MP4", "start" : "03:57"},\
 })
 
 configs["episodes"].append(\
