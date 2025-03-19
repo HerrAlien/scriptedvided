@@ -1,10 +1,10 @@
 import scriptedvided
 
 configs = { "defaultAudioFile" : "....ogg",\
-"mediaFolder" : "F:\\Videos\\...", \
+"mediaFolder" : "F:\\Videos\\RX570_2025", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\...\\....txt",\
-"outputFolder" : "F:\\Videos\\...\\output", \
+"benchmarkFile" : "F:\\Videos\\RX570_2025\\Benchmark_RX570_2025.txt",\
+"outputFolder" : "F:\\Videos\\RX570_2025\\output", \
 "outputFile" : "RX570_2025.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
@@ -59,7 +59,7 @@ Free Download / Stream: https://alplus.io/inspired
 #})
 
 configs["episodes"].append(\
-{ "title": "",\
+{ "title": "The card to test",\
 "audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
