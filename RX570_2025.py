@@ -61,7 +61,7 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "The card to test",\
 "audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_autumn_RX570.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -80,13 +80,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "RX570_GPUZ_Heaven.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "cooler breel"},\
+"video" : {"file" : "rx570_itx_cooling.mp4"},\
 })
 
 
@@ -94,7 +94,7 @@ configs["episodes"].append(\
 { "title": "Methodology - some game footage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_07_57_44_978-converted.mp4", "start" : "00:01"},\
 })
 
 ####################### end of intro ###############################
@@ -111,6 +111,8 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1920x1080, low settings', , ),\
               scriptedvided.r6sText('1280x720, low settings' , , ),\
 ]}, \
+"video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_07_57_44_978-converted.mp4", "start" : "00:01"},\
+})
 })
 
 configs["episodes"].append(\
@@ -326,42 +328,56 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "favourite GPU types"},\
+"video" : {"file" : "breel_RX570_R9_270_GTX1050Ti_GT1030.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "R9 270 and RX 570",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_RX570_R9_270.MP4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "SP",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "RoboCop-Win64-Shipping_2025_02_24_23_28_48_260.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "MP",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "Discovery_2025_03_15_22_55_07_819.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "price about the RX 570",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "RX570_olx.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "mined and no drivers",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "rx570_mined.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "alternatives GTX 970",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_autumn_GTX970.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_autumn_RX570.mp4"},\
 })
 
 
