@@ -112,8 +112,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:22.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Marvel Rivals'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1280x720, low settings' , , ),\
+              scriptedvided.r6sText('1920x1080, low settings, training', 55, 44),\
+              scriptedvided.r6sText('1280x720, low settings, training' , 84, 59),\
+              scriptedvided.r6sText('1920x1080, low settings, in game' , 69, 48),\
+              scriptedvided.r6sText('1280x720, low settings, in game'  , 101, 73),\
 ]}, \
 "video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_07_57_44_978-converted.mp4", "start" : "00:13"},\
 })
@@ -125,9 +127,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:39.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'The Finals'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ), \
-              scriptedvided.r6sText('1600x900, low settings' , , ), \
-              scriptedvided.r6sText('1280x720, low settings' , , ), \
+              scriptedvided.r6sText('1920x1080, low settings', 76, 58), \
+              scriptedvided.r6sText('1600x900, low settings' , 95, 71), \
+              scriptedvided.r6sText('1280x720, low settings' , 103, 72), \
 ]}, \
 })
 
@@ -136,9 +138,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:57.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ), \
-              scriptedvided.r6sText('1600x900, low settings' , , ), \
-              scriptedvided.r6sText('1280x720, low settings' , , ), \
+              scriptedvided.r6sText('1920x1080, low settings', 144, 106), \
+              scriptedvided.r6sText('1600x900, low settings' , 176, 126), \
+              scriptedvided.r6sText('1280x720, low settings' , 211, 149), \
 ]}, \
 "video" : "rx580_r5apex_2024_07_26_22_34_08_382-converted.mp4" \
 })
@@ -148,9 +150,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:21.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Counter-Strike 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1600x900, low settings' , , ),\
-              scriptedvided.r6sText('1280x720, low settings' , , ),\
+              scriptedvided.r6sText('1920x1080, low settings', 189, 140),\
+              scriptedvided.r6sText('1600x900, low settings' ,217 , 121),\
+              scriptedvided.r6sText('1280x720, low settings' , 232, 103),\
 ]}, \
 })
 
@@ -170,9 +172,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:54.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1920x1080, performance mode', , ),\
-              scriptedvided.r6sText('1600x900, performance mode',  , ),\
-              scriptedvided.r6sText('1280x720, performance mode' , , ),\
+              scriptedvided.r6sText('1920x1080, performance mode', 232,138 ),\
+              scriptedvided.r6sText('1600x900, performance mode',  240,145 ),\
+              scriptedvided.r6sText('1280x720, performance mode' ,238 , 139),\
 ]}, \
 "video" : "FortniteClient-Win64-Shipping_2025_03_15_06_53_56_749-converted.mp4"\
 })
@@ -183,9 +185,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:09.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite Reload'",\
-              scriptedvided.r6sText('1920x1080, performance mode', , ),\
-              scriptedvided.r6sText('1600x900, performance mode',  , ),\
-              scriptedvided.r6sText('1280x720, performance mode' , , ),\
+              scriptedvided.r6sText('1920x1080, performance mode',247 ,138 ),\
+              scriptedvided.r6sText('1600x900, performance mode', 244 , 136),\
+              scriptedvided.r6sText('1280x720, performance mode' , 247, 140),\
 ]}, \
 "video" : "FortniteClient-Win64-Shipping_2025_03_15_07_03_21_337-converted.mp4",\
 })
@@ -195,9 +197,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:26.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Overwatch 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1600x900, low settings' , , ),\
-              scriptedvided.r6sText('1280x720, low settings' , , ),\
+              scriptedvided.r6sText('1920x1080, low settings', 259,219 ),\
+              scriptedvided.r6sText('1600x900, low settings' , 341, 293),\
+              scriptedvided.r6sText('1280x720, low settings' ,488 ,425 ),\
 ]}, \
 })
 
@@ -207,9 +209,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:45.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'XDefiant'",\
-              scriptedvided.r6sText('1920x1080, low settings', 160, 104),\
-              scriptedvided.r6sText('1600x900, low settings' , 198, 120),\
-              scriptedvided.r6sText('1280x720, low settings' , 247, 136),\
+              scriptedvided.r6sText('1920x1080, low settings', 180, 130),\
+              scriptedvided.r6sText('1600x900, low settings' ,232 ,155),\
+              scriptedvided.r6sText('1280x720, low settings' , 292, 188),\
 ]}, \
 })
 
@@ -218,10 +220,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:01.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 146, 119),\
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale',  230, 177),\
-              scriptedvided.r6sText('1920x1080, low settings, 50% render scale',  198, 157),\
-              scriptedvided.r6sText('1280x720, low settings, 50% render scale',   279, 209),\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 149, 121),\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale',  239, 183),\
+              scriptedvided.r6sText('1920x1080, low settings, 50% render scale',  200, 159),\
+              scriptedvided.r6sText('1280x720, low settings, 50% render scale',   288, 216),\
 ]}, \
 })
 
@@ -231,9 +233,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:35.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Robocop'",\
-              scriptedvided.r6sText('1920x1080, medium settings', , ),\
-              scriptedvided.r6sText('1920x1080, high settings',   , ),\
-              scriptedvided.r6sText('1600x900, high settings'   , , ),\
+              scriptedvided.r6sText('1920x1080, medium settings',39, 33),\
+              scriptedvided.r6sText('1920x1080, high settings',   38,29 ),\
+              scriptedvided.r6sText('1600x900, high settings'   , 36, 28),\
 ]}, \
 })
 
@@ -254,8 +256,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:05.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Terminator\: Resistance'",\
-              scriptedvided.r6sText('1920x1080, epic settings', , ),\
-              scriptedvided.r6sText('2560x1440, epic settings', , ),\
+              scriptedvided.r6sText('1920x1080, epic settings', 46, 34),\
+              scriptedvided.r6sText('2560x1440, epic settings', 70, 42),\
 ]}, \
 })
 
@@ -264,8 +266,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:25.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Control'",\
-              scriptedvided.r6sText('1920x1080, medium settings' , , ),\
-              scriptedvided.r6sText('1280x720, high settings' ,    , ),\
+              scriptedvided.r6sText('1920x1080, medium settings' ,51, 40),\
+              scriptedvided.r6sText('1280x720, ultra settings' ,   34 , 28),\
 ]}, \
 })
 
@@ -274,9 +276,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:58.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Borderlands 3'",\
-              scriptedvided.r6sText('1920x1080, high settings'  , , ), \
-              scriptedvided.r6sText('1600x900, ultra settings'  , , ), \
-              scriptedvided.r6sText('1600x900, badass settings' , , ), \
+              scriptedvided.r6sText('1920x1080, high settings'  , 45, 28), \
+              scriptedvided.r6sText('1600x900, ultra settings'  , 42, 35), \
+              scriptedvided.r6sText('1600x900, badass settings' , 39, 32), \
 ]}, \
 })
 
@@ -286,9 +288,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:22.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Resident Evil 4 (Remake)'",\
-              scriptedvided.r6sText('1920x1080, performance'         , , ),\
-              scriptedvided.r6sText('1920x1080, performance, FSR off', , ),\
-              scriptedvided.r6sText('1920x1080, balanced'            , , ),\
+              scriptedvided.r6sText('1920x1080, performance'         , 93,58 ),\
+              scriptedvided.r6sText('1920x1080, performance, FSR off', 68, 48),\
+              scriptedvided.r6sText('1920x1080, balanced'            , 46,29 ),\
 ]}, \
 })
 
