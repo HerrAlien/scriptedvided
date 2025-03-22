@@ -79,13 +79,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:34.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "RX570_GPUZ_Heaven.mp4"},\
+"video" : {"file" : "RX570_GPUZ_Heaven.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:45.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "rx570_itx_cooling.mp4"},\
+"video" : {"file" : "rx570_itx_cooling.mp4", "start" : "00:08"},\
 "overlay" : { \
     "text" : ["'Heaven Benchmark, looping'",\
               "'Max. temp\: 67C, delta over ambient\: 45C'",\
@@ -118,7 +118,6 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1280x720, low settings, in game'  , 101, 73),\
 ]}, \
 "video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_07_57_44_978-converted.mp4", "start" : "00:13"},\
-})
 })
 
 configs["episodes"].append(\
@@ -158,7 +157,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DOTA2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:34.3" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:37.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -345,14 +344,14 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "SP",\
+{ "title": "SP part",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:09.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "RoboCop-Win64-Shipping_2025_02_24_23_28_48_260.mp4"},\
 })
 
 configs["episodes"].append(\
-{ "title": "MP",\
+{ "title": "MP part",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:21" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Discovery_2025_03_15_22_55_07_819.mp4"},\
@@ -408,7 +407,7 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Borderlands 3"][0], configs)
 #scriptedvided.makeVideo(configs)
 
-#for x in range(19,26):
+#for x in range(2,28):
 #    scriptedvided.makeVideoForEpisode(configs["episodes"][x], configs)
-#
+
 scriptedvided.makeVideo(configs)
