@@ -593,6 +593,7 @@ def aliases(inputName):
         ["Far Cry 6", "FarCry 6", "FarCry6Trial", "FarCry6Trial.exe"],\
         ["Delta Force", "DeltaForce", "DeltaForceClient"],\
         ["Marvel Rivals", "MarvelRivals", "Marvel-Win64-Shipping.exe", "Marvel-Win64-Shipping"],\
+        ["Robocop", "RoboCop-Win64-Shipping.exe", "RoboCop-Win64-Shipping"],\
     ]
 
     if inputName is None:
