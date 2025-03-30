@@ -16,7 +16,7 @@ configs = { "defaultAudioFile" : "....ogg",\
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "", \
-"description" : ''' Taking a closer look at a budget AM4 motherboard, the Gigabyte GA-A320M-H. ''',\
+"description" : ''' A320M does not mean a chea board, and the MSI A320M Grenade is here to prove it. ''',\
 "links" : '''
 Track: Bliss Of Heaven - SOMM [Audio Library Release]
 Music provided by Audio Library Plus
