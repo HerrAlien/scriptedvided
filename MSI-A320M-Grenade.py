@@ -1,11 +1,11 @@
 import scriptedvided
 import sv_ffutils
 
-configs = { "defaultAudioFile" : "....ogg",\
-"mediaFolder" : "F:\\Videos\\...", \
+configs = { "defaultAudioFile" : "MSI-A320M-Grenade.ogg",\
+"mediaFolder" : "F:\\Videos\\MSI-A320M-Grenade", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
-"outputFolder" : "F:\\Videos\\...\\output", \
+"outputFolder" : "F:\\Videos\\MSI-A320M-Grenade\\output", \
 "outputFile" : "MSI-A320M-Grenade.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
@@ -76,7 +76,7 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "A good looking board",\
 "audio" : {"timestamps" : ("00:00", "00:10.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320M_Grenade_overview.MP4"},\
+"video" : {"file" : "A320M_Grenade_overview.MP4", "start" : "00:49"},\
 })
 
 configs["episodes"].append(\
@@ -96,20 +96,20 @@ configs["episodes"].append(\
 { "title": "VRM has a heatsink",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:46.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320_Grenade-LEDs.MP4"},\
+"video" : {"file" : "A320_Grenade-LEDs.MP4", "start" : "00:12"},\
 })
 
 # this might need a better shot, when filming the 2 slots GPU
 configs["episodes"].append(\
 { "title": "DIMMs, also just two of them",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:55.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320M_Grenade_overview.MP4"},\
+"video" : {"file" : "A320M_Grenade_overview.MP4", "start" : "00:49"},\
 })
 
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:16" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320M_Grenade_expansionSlots.MP4"},\
+"video" : {"file" : "A320M_Grenade_expansionSlots.MP4", "start" : "00:20"},\
 })
 
 # needs video
@@ -124,14 +124,14 @@ configs["episodes"].append(\
 { "title": "M2 slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:30" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320M_Grenade_expansionSlots.MP4"},\
+"video" : {"file" : "A320M_Grenade_expansionSlots.MP4", "start" : "00:20"},\
 })
 
 configs["episodes"].append(\
 { "title": "SATA",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:38.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320M_Grenade_SATA.MP4"},\
+"video" : {"file" : "A320M_Grenade_SATA.MP4", "start" : "00:30"},\
 })
 
 #needs video
@@ -139,14 +139,14 @@ configs["episodes"].append(\
 { "title": "SATA vs GTX970",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:48.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "A320M_Grenade_SATA.MP4", "start" : "00:30"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin headers 1",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:06.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320M_Grenade_pinHeader1.mp4"},\
+"video" : {"file" : "A320M_Grenade_pinHeader1.mp4", "start" : "00:45"},\
 })
 
 configs["episodes"].append(\
@@ -166,19 +166,19 @@ configs["episodes"].append(\
 { "title": "Rear IO - audio",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:56.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MSI-A320M-Grenade_Audio.mkv"},\
 }) # audacity
 
 configs["episodes"].append(\
 { "title": "The audio - a bit meh",\
-"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : ("00:00", "00:14" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : "MSI-A320M-Grenade_Audio.mkv", "start" : "00:12"},\
 }) # audacity
 
 configs["episodes"].append(\
 { "title": "Audio wrapup",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("02:56.8", "03:03.5" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("02:56.8", "03:03.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "A320M_Grenade_IO.mp4"},\
 }) # rear IO, maybe?
 
@@ -207,7 +207,7 @@ configs["episodes"].append(\
 { "title": "CPU frequency - nope",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:56.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320M-Grenade_BIOS_CpuNoOC_cropped.mp4"},\
+"video" : {"file" : "Grenade_AndA320M-H_CpuFreq.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -243,21 +243,21 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:47.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320_Grenade-LEDs.MP4"},\
+"video" : {"file" : "A320_Grenade-LEDs.MP4", "start" : "00:12"},\
 })
 
 configs["episodes"].append(\
 { "title": "bad BIOS circuitry",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:03.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "A320M_Grenade_overview.MP4", "start" : "00:49"},\
 })
 
 configs["episodes"].append(\
 { "title": "bad BIOS circuitry 2",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:13.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MSI-B450M-Pro-M2-V2_BiosChipOff.mp4"},\
 })
 
 # maybe side by side programmer and programming ?
@@ -265,14 +265,14 @@ configs["episodes"].append(\
 { "title": "reprogramming",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:28.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MSI-B450M-Pro-M2-V2_ReprogramBios.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Back to breel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:53.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320M_Grenade_overview.MP4"},\
+"video" : {"file" : "A320M_Grenade_overview.MP4", "start" : "00:49"},\
 })
 
 configs["episodes"].append(\
@@ -286,7 +286,7 @@ configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:06" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320M_Grenade_overview.MP4"},\
+"video" : {"file" : "A320M_Grenade_overview.MP4", "start" : "00:49"},\
 })
 
 scriptedvided.makeVideo(configs)
