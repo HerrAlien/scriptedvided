@@ -117,7 +117,7 @@ configs["episodes"].append(\
 { "title": "PCIEx1 vs GTX970",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:21.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "A320M-Grenade_GpuVsPcie1x.mp4", "start" : "00:05"},\
 })
 
 configs["episodes"].append(\
@@ -139,7 +139,7 @@ configs["episodes"].append(\
 { "title": "SATA vs GTX970",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:48.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "A320M_Grenade_SATA.MP4", "start" : "00:30"},\
+"video" : {"file" : "A320M-Grenade_GpuVsSata.MP4", "start" : "00:15"},\
 })
 
 configs["episodes"].append(\
