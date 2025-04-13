@@ -364,7 +364,7 @@ configs["episodes"].append(\
 
 
 ####################### conclusion ###############################
-# really need an upgrade
+# similar ro 4th gen i7
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs,  "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
@@ -372,14 +372,14 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "motherboard - stretching for the TDP",\
+{ "title": "Marvel Rivals, cpu usage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs,  "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "coolers not really suited for 85W",\
+{ "title": "Finals does better - reuse video and overlay",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs,  "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
@@ -393,7 +393,14 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "other CPUs on the way",\
+{ "title": "odd piece",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTSconfigs,  "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "anybody still using it",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs,  "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
