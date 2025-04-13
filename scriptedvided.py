@@ -594,6 +594,7 @@ def aliases(inputName):
         ["Delta Force", "DeltaForce", "DeltaForceClient"],\
         ["Marvel Rivals", "MarvelRivals", "Marvel-Win64-Shipping.exe", "Marvel-Win64-Shipping"],\
         ["Robocop", "RoboCop-Win64-Shipping.exe", "RoboCop-Win64-Shipping"],\
+        ["Cyberpunk 2077", "Cyberpunk2077.exe", "Cyberpunk2077"],\
     ]
 
     if inputName is None:
