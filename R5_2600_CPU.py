@@ -142,7 +142,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "01:50.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 30% render scale, low settings", \
+        "settings" : "1024x768, FSR ultra performance, low settings", \
     }\
 }, \
 })
@@ -462,7 +462,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "anybody still using it",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "10.00.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "10:00.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "SteamSurvey_CPU.mkv"},\
 })
 
