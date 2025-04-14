@@ -75,7 +75,7 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Better than Sandy",\
 "audio" : {"timestamps" : "00:00", "00:13.2", "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Ryzen5_2600.MP4", "start" : "03:56"},\
 })
 
 configs["episodes"].append(\
@@ -95,7 +95,7 @@ configs["episodes"].append(\
 { "title": "bundled cooler",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "00:36.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Ryzen5_2600.MP4", "start" : "02:30"},\
 })
 
 configs["episodes"].append(\
@@ -115,7 +115,7 @@ configs["episodes"].append(\
 { "title": "Selected games",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "01:04.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_07_57_44_978-converted.mp4", "start" : "00:15"},\
 })
 
 
@@ -133,6 +133,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, 30% render scale, low settings", \
     }\
 }, \
+"video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_07_57_44_978-converted.mp4", "start" : "00:29"},\
 })
 
 configs["episodes"].append(\
@@ -152,7 +153,7 @@ configs["episodes"].append(\
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText('1280x720, performance mode',  , ,)\
 ]}, \
-"video" : "rx580_high_FortniteClient-Win64.mp4"\
+"video" : "FortniteClient-Win64-Shipping_2025_04_03_22_54_36_904-converted.mp4"\
 })
 
 configs["episodes"].append(\
@@ -282,7 +283,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, low settings", \
     }\
 },\
-"video" : "rx580_Discovery_2024_07_26_23_03_56_417-converted.mp4" \
+"video" : "Discovery_2025_03_15_22_55_07_819.mp4" \
 })
 
 configs["episodes"].append(\
@@ -292,7 +293,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : ""}\
 }, \
-"video" : "rx580_Discovery_2024_07_26_23_03_56_417-converted.mp4" \
+"video" : "Discovery_2025_03_15_22_55_07_819.mp4" \
 })
 
 configs["episodes"].append(\
