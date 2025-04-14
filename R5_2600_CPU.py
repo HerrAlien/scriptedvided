@@ -151,7 +151,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "02:09" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1280x720, performance mode',  , ,)\
+              scriptedvided.r6sText('1280x720, performance mode',  174, 74)\
 ]}, \
 "video" : "FortniteClient-Win64-Shipping_2025_04_03_22_54_36_904-converted.mp4"\
 })
@@ -162,7 +162,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "02:28" ), "padAudio" : 0.05 },\
 "video" : "",\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "CpuUsage_F-ortnite.mp4"}\
 }, \
 })
 
@@ -173,7 +173,7 @@ configs["episodes"].append(\
 "video" : "FortniteClient-bench_reload_2024_07_01.mp4",\
 "overlay" : { \
     "text" : ["'Fortnite Reload'",\
-              scriptedvided.r6sText('1280x720, performance mode',  , ,)\
+              scriptedvided.r6sText('1280x720, performance mode',  182,87)\
 ]}, \
 })
 
@@ -191,7 +191,7 @@ configs["episodes"].append(\
 { "title": "r6s Haswell",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "03:15.7" ), "padAudio" : 0.05 },\
-"video" : "",\
+"video" : "CpuUsage_R-6s_2.mp4",\
 "overlay" : { \
     "image" : {"file" : ""}\
 }, \
@@ -233,7 +233,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "04:20.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "CpuUsage_O-verwatch.mp4"}\
 }, \
 })
 
@@ -252,7 +252,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "04:54" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "stock_CS2_CT_R7_260X.mp4"}\
 }, \
 })
 
@@ -264,6 +264,7 @@ configs["episodes"].append(\
         "settings" : "1920x1080, low settings", \
     }\
 },\
+"video" : "stock_dota2_1080pLow_scale100.mp4"\
 })
 
 configs["episodes"].append(\
@@ -273,6 +274,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : ""}\
 }, \
+"video" : "stock_dota2_1080pLow_scale100.mp4"\
 })
 
 configs["episodes"].append(\
@@ -304,14 +306,13 @@ configs["episodes"].append(\
         "settings" : "1280x720, low settings", \
     }\
 },\
-"video" : "rx580_Discovery_2024_07_26_23_03_56_417-converted.mp4" \
 })
 
 configs["episodes"].append(\
 { "title": "SOTTR CPU usage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "06:09.8" ), "padAudio" : 0.05 },\
-"video" : ""\
+"video" : "CpuUsage_S-ottr_village.mp4"\
 })
 
 configs["episodes"].append(\
@@ -328,7 +329,7 @@ configs["episodes"].append(\
 { "title": "Borderlands CPU usage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "06:35.7" ), "padAudio" : 0.05 },\
-"video" : ""\
+"video" : "CpuUsage_B-orderlands3.mp4"\
 })
 
 configs["episodes"].append(\
@@ -345,7 +346,7 @@ configs["episodes"].append(\
 { "title": "Control CPU usage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "07:06.4" ), "padAudio" : 0.05 },\
-"video" : ""\
+"video" : "CpuUsage_C-ontrol.mp4"\
 })
 
 configs["episodes"].append(\
@@ -362,7 +363,7 @@ configs["episodes"].append(\
 { "title": "Doom CPU usage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "07:32.8" ), "padAudio" : 0.05 },\
-"video" : ""\
+"video" : "CpuUsage_D-oomEternal.mp4"\
 })
 
 # maybe a mash-up of all CPU usages?
@@ -381,7 +382,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "07:58.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_gigasus.mp4"},\
 "overlay" : { \
     "image" : {"file" : ""}\
 }, \
@@ -390,7 +391,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cycles",\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "08:12.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5_3600_blurred.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : ""}\
@@ -400,7 +401,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "SMT on compared to SMT off and power",\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "08:22.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_gigasus.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : ""}\
@@ -410,8 +411,11 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "IPC compared to 3600",\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "08:40" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5_3600_blurred.mp4"},\
 "isChapter" : False,\
+"overlay" : { \
+    "image" : {"file" : ""}\
+}, \
 })
 
 #############################################################################
@@ -423,49 +427,49 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "08:51.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Ryzen5_2600.MP4", "start" : "03:56"},\
 })
 
 configs["episodes"].append(\
 { "title": "Marvel Rivals, cpu usage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "09:07.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "CpuUsage_M-arvelRivals.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Finals does better - reuse video and overlay",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "09:20.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : "Discovery_2025_03_15_22_55_07_819.mp4" \
 })
 
 configs["episodes"].append(\
 { "title": "pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "09:38.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R5_2600_olx.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "odd piece",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "09:51.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Ryzen5_2600.MP4", "start" : "03:56"},\
 })
 
 configs["episodes"].append(\
 { "title": "anybody still using it",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "10.00.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "SteamSurvey_CPU.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTSconfigs(),  "10.08.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Ryzen5_2600.MP4", "start" : "03:56"},\
 })
 
 
