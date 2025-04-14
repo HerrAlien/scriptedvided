@@ -161,9 +161,9 @@ configs["episodes"].append(\
 { "title": "Fortnite Haswell",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "02:28" ), "padAudio" : 0.05 },\
-"video" : "",\
+"video" : "CpuUsage_F-ortnite.mp4",\
 "overlay" : { \
-    "image" : {"file" : "CpuUsage_F-ortnite.mp4"}\
+    "image" : {"file" : ""}\
 }, \
 })
 
@@ -234,8 +234,9 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "04:20.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "CpuUsage_O-verwatch.mp4"}\
+    "image" : {"file" : ""}\
 }, \
+"video" : "CpuUsage_O-verwatch.mp4"\
 })
 
 configs["episodes"].append(\
@@ -253,8 +254,9 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "04:54" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "stock_CS2_CT_R7_260X.mp4"}\
+    "image" : {"file" : ""}\
 }, \
+"video" : "stock_CS2_CT_R7_260X.mp4"\
 })
 
 configs["episodes"].append(\
