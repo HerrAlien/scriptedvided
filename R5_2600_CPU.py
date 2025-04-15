@@ -163,7 +163,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "02:28" ), "padAudio" : 0.05 },\
 "video" : "CpuUsage_F-ortnite.mp4",\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "Fortnite, 720, performance mode.png"}\
 }, \
 })
 
@@ -194,7 +194,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "03:15.7" ), "padAudio" : 0.05 },\
 "video" : "CpuUsage_R-6s_2.mp4",\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "Rainbow 6_ Siege, 720, 50% render scale, low settings.png"}\
 }, \
 })
 
@@ -214,7 +214,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "03:41.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "Apex Legends, 720, low settings.png"}\
 }, \
 "video" : "rx580_r5apex_2024_07_26_22_34_08_382-converted.mp4" \
 })
@@ -234,7 +234,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "04:20.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "Overwatch 2, 720, low settings.png"}\
 }, \
 "video" : "CpuUsage_O-verwatch.mp4"\
 })
@@ -254,7 +254,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "04:54" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "Counter-Strike 2, 720, low settings.png"}\
 }, \
 "video" : "stock_CS2_CT_R7_260X.mp4"\
 })
@@ -275,7 +275,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "05:18.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "DOTA2, 720, low settings.png"}\
 }, \
 "video" : "stock_dota2_1080pLow_scale100.mp4"\
 })
@@ -296,7 +296,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "05:42.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "The Finals, 720, low settings.png"}\
 }, \
 "video" : "Discovery_2025_03_15_22_55_07_819.mp4" \
 })
