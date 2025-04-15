@@ -82,14 +82,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "00:22.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R5_2600_PropsAndTdp.mkv", "start" : "00:05"},\
 })
 
 # needs a side by side video
 configs["episodes"].append(\
 { "title": "The TDP is real",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "00:30.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "real_TDP.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -387,7 +387,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "07:58.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "blurred_gigasus.mp4"},\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "completion_time.png"}\
 }, \
 })
 
@@ -397,7 +397,7 @@ configs["episodes"].append(\
 "video" : {"file" : "r5_3600_blurred.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "cycles.png"}\
 }, \
 })
 
@@ -407,7 +407,7 @@ configs["episodes"].append(\
 "video" : {"file" : "blurred_gigasus.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "smt_efficiency.png"}\
 }, \
 })
 
@@ -417,7 +417,7 @@ configs["episodes"].append(\
 "video" : {"file" : "r5_3600_blurred.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "Clock Cycles_CPUs.png"}\
 }, \
 })
 
@@ -444,6 +444,9 @@ configs["episodes"].append(\
 { "title": "Finals does better - reuse video and overlay",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "09:20.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"overlay" : { \
+    "image" : {"file" : "The Finals, 720, low settings.png"}\
+}, \
 "video" : "Discovery_2025_03_15_22_55_07_819.mp4" \
 })
 
