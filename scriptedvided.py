@@ -569,7 +569,7 @@ def aliases(inputName):
         "WoT_Blitz", "wotblitz", "wotblitz.exe"], \
         ["Hyperscape", "Hyperscape.exe"],\
         ["Warframe", "Warframe.x64.exe"],\
-        ["Control", "Control_DX11.exe"],\
+        ["Control", "Control_DX11.exe", "Control_DX12.exe" , "Control_DX12", "Control_DX11"],\
         ["DOTA2", "DOTA 2", "dota2.exe"],\
         ["Grand Theft Auto V", "gtav", "gta5", "GTA5.exe", "GTA V", "GTA_V", "gta_5"],\
         ["Splitgate", "PortalWars-Win64-Shipping.exe", "PortalWars"],\
