@@ -294,7 +294,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The Final Haswell",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "04:42.3" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "05:42.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : ""}\
 }, \
