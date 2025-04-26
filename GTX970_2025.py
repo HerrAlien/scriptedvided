@@ -134,10 +134,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:02.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Robocop'",\
-              scriptedvided.r6sText('1920x1080, low settings', 30, 22)\
-              scriptedvided.r6sText('1600x900, low settings',39 , 32)\
-              scriptedvided.r6sText('1600x900, medium settings', 34, 25 )\
-              scriptedvided.r6sText('1280x720, high settings', 45,33 )\
+              scriptedvided.r6sText('1920x1080, low settings', 30, 22),\
+              scriptedvided.r6sText('1600x900, low settings',39 , 32),\
+              scriptedvided.r6sText('1600x900, medium settings', 34, 25 ),\
+              scriptedvided.r6sText('1280x720, high settings', 45,33 ),\
 ]}, \
 })
 
@@ -146,9 +146,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:19.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1920x1080, performance mode', 215, 119)\
-              scriptedvided.r6sText('1600x900, performance mode', 236, 125 )\
-              scriptedvided.r6sText('1280x720, performance mode', 233, 123)\
+              scriptedvided.r6sText('1920x1080, performance mode', 215, 119),\
+              scriptedvided.r6sText('1600x900, performance mode', 236, 125 ),\
+              scriptedvided.r6sText('1280x720, performance mode', 233, 123),\
 ]}, \
 "video" : "Fortnite_2025_04_03_win.mp4"\
 })
@@ -159,9 +159,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:35.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite Reload'",\
-              scriptedvided.r6sText('1920x1080, performance mode', 268, 146)\
-              scriptedvided.r6sText('1600x900, performance mode', 267, 154)\
-              scriptedvided.r6sText('1280x720, performance mode', 265 , 157)\
+              scriptedvided.r6sText('1920x1080, performance mode', 268, 146),\
+              scriptedvided.r6sText('1600x900, performance mode', 267, 154),\
+              scriptedvided.r6sText('1280x720, performance mode', 265 , 157),\
 ]}, \
 "video" : "Fortnite_Reload_2024_11_01.mp4",\
 })
@@ -214,9 +214,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:13.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Doom Eternal'",\
-              scriptedvided.r6sText('1920x1080, low settings', 99, 70)\
-              scriptedvided.r6sText('1920x1080, medium settings', 86, 58)\
-              scriptedvided.r6sText('1600x900, high settings', 96, 68)\
+              scriptedvided.r6sText('1920x1080, low settings', 99, 70),\
+              scriptedvided.r6sText('1920x1080, medium settings', 86, 58),\
+              scriptedvided.r6sText('1600x900, high settings', 96, 68),\
 ]}, \
 })
 
