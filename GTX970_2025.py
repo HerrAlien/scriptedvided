@@ -1,14 +1,14 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "RX570_2025.ogg",\
-"mediaFolder" : "F:\\Videos\\RX570_2025", \
+configs = { "defaultAudioFile" : "GTX970_2025.ogg",\
+"mediaFolder" : "F:\\Videos\\GTX970_2025", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\RX570_2025\\Benchmark_RX570_2025.txt",\
-"outputFolder" : "F:\\Videos\\RX570_2025\\output", \
-"outputFile" : "RX570_2025.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"benchmarkFile" : "F:\\Videos\\GTX970_2025\\Benchmark_GTX970_2025.txt",\
+"outputFolder" : "F:\\Videos\\GTX970_2025\\output", \
+"outputFile" : "GTX970_2025.mp4", \
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "The card to test", "until" : "Marvel Rivals"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Heart 4 Maxwell", "until" : "Marvel Rivals"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Robocop"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Robocop", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
@@ -60,26 +60,26 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "Heart 4 Maxwell",\
 "audio" : {"timestamps" : ("00:00", "00:13.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_autumn_GTX970.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:34.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "", "start" : "00:00"},\
+"video" : {"file" : "GTX970_GPUZ_Valley.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "The lawsuit",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:48.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "", "start" : "00:00"},\
+"video" : {"file" : "GTX970_lawsuit.mkv"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:04.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "", "start" : "00:00"},\
+"video" : {"file" : "GTX970_cooling.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
@@ -103,10 +103,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:45.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Marvel Rivals'",\
-              scriptedvided.r6sText('',  , ),\
-              scriptedvided.r6sText('',  , ),\
-              scriptedvided.r6sText('',  , ),\
-              scriptedvided.r6sText('',  , ),\
+              scriptedvided.r6sText('1920x1080, low settings', 54 , 46),\
+              scriptedvided.r6sText('1280x720, low settings', 89 , 69),\
 ]}, \
 })
 
@@ -115,22 +113,20 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:15.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Marvel Rivals'",\
-              scriptedvided.r6sText('',  , ),\
-              scriptedvided.r6sText('',  , ),\
-              scriptedvided.r6sText('',  , ),\
-              scriptedvided.r6sText('',  , ),\
+              scriptedvided.r6sText('1920x1080, lowest settings', 42 , 29),\
+              scriptedvided.r6sText('1600x900, lowest settings', 53 , 36),\
+              scriptedvided.r6sText('1280x720, lowest settings', 68 , 45),\
 ]}, \
 })
 
 configs["episodes"].append(\
 { "title": "The Finals",\
-"video" : "Discovery_2025_03_15_22_55_07_819.mp4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:35.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'The Finals'",\
-              scriptedvided.r6sText('',  , ), \
-              scriptedvided.r6sText('',  , ), \
-              scriptedvided.r6sText('',  , ), \
+              scriptedvided.r6sText('1920x1080, low settings', 62 , 47 ), \
+              scriptedvided.r6sText('1600x900, low settings', 88 , 70), \
+              scriptedvided.r6sText('1280x720, low settings',  105, 73), \
 ]}, \
 })
 
@@ -139,9 +135,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:02.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Robocop'",\
-              scriptedvided.r6sText('', , )\
-              scriptedvided.r6sText('', , )\
-              scriptedvided.r6sText('', , )\
+              scriptedvided.r6sText('1920x1080, low settings', 30, 22)\
+              scriptedvided.r6sText('1600x900, low settings',39 , 32)\
+              scriptedvided.r6sText('1600x900, medium settings', 34, 25 )\
+              scriptedvided.r6sText('1280x720, high settings', 45,33 )\
 ]}, \
 })
 
@@ -150,11 +147,11 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:19.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('', , )\
-              scriptedvided.r6sText('', , )\
-              scriptedvided.r6sText('', , )\
+              scriptedvided.r6sText('1920x1080, performance mode', 215, 119)\
+              scriptedvided.r6sText('1600x900, performance mode', 236, 125 )\
+              scriptedvided.r6sText('1280x720, performance mode', 233, 123)\
 ]}, \
-"video" : ""\
+"video" : "Fortnite_2025_04_03_win.mp4"\
 })
 
 configs["episodes"].append(\
@@ -163,11 +160,11 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:35.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite Reload'",\
-              scriptedvided.r6sText('', , )\
-              scriptedvided.r6sText('', , )\
-              scriptedvided.r6sText('', , )\
+              scriptedvided.r6sText('1920x1080, performance mode', 268, 146)\
+              scriptedvided.r6sText('1600x900, performance mode', 267, 154)\
+              scriptedvided.r6sText('1280x720, performance mode', 265 , 157)\
 ]}, \
-"video" : "",\
+"video" : "Fortnite_Reload_2024_11_01.mp4",\
 })
 
 configs["episodes"].append(\
@@ -175,8 +172,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:52" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Terminator\: Resistance'",\
-              scriptedvided.r6sText('',  , ),\
-              scriptedvided.r6sText('',  , ),\
+              scriptedvided.r6sText('2560x1440, epic settings', 87 , 61),\
 ]}, \
 })
 
@@ -310,7 +306,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:21" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_autumn_GTX970.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -324,21 +320,21 @@ configs["episodes"].append(\
 { "title": "with r9 290 and rx 570",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:45.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "olx pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:00.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX970_olx.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:07.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_autumn_GTX970.mp4"},\
 })
 
 
