@@ -111,7 +111,7 @@ configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:15.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Marvel Rivals'",\
+    "text" : ["'Cyberpunk 2077'",\
               scriptedvided.r6sText('1920x1080, lowest settings', 42 , 29),\
               scriptedvided.r6sText('1600x900, lowest settings', 53 , 36),\
               scriptedvided.r6sText('1280x720, lowest settings', 68 , 45),\
