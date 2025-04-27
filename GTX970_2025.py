@@ -285,7 +285,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('2560x1440, medium settings', 40 , 29),\
               scriptedvided.r6sText('1920x1080, highest settings', 52 , 31),\
 ]}, \
-"video" : {"file" : ""}\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "04:53"}\
 })
 
 configs["episodes"].append(\
@@ -312,14 +312,14 @@ configs["episodes"].append(\
 { "title": "VRAM not much of an issue",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:31.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Cyberpunk2077_2025_04_06_22_32_03_731-converted.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "with r9 290 and rx 570",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:45.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4"},\
+"video" : {"file" : "breel_R9_290_RX570_GTX970_attic.mp4", "rotation" : -90},\
 })
 
 configs["episodes"].append(\
