@@ -84,7 +84,7 @@ configs["episodes"].append(\
 { "title" : "Costs me most",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:26.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "A320m-dvs_olx_deffective.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -252,7 +252,7 @@ configs["episodes"].append(\
 { "title" : "TPM and REBAR",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:30.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "A320m-dvs-tpm-rebar.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -294,21 +294,21 @@ configs["episodes"].append(\
 { "title" : "pricing - bought as deffective",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:02.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "A320m-dvs_olx_deffective.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title" : "pricing - HD and HDV are better",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:17.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Asrock_AM4_emag.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title" : "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:26.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Asrock_A320M-DVS-overview.MP4"},\
 })
 
 scriptedvided.makeVideo(configs)
