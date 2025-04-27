@@ -1,0 +1,297 @@
+import scriptedvided
+import sv_ffutils
+
+configs = { "defaultAudioFile" : "Asrock-A320M-DVS.ogg",\
+"mediaFolder" : "F:\\Videos\\Asrock-A320M-DVS", \
+"stockFolder" : "F:\\Videos\\stock",\
+"benchmarkFile" : "not needed",\
+"outputFolder" : "F:\\Videos\\Asrock-A320M-DVS\\output", \
+"outputFile" : "Asrock-A320M-DVS.mp4", \
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"backgroundTrack" : { "audioTracks" : [ \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "", "until" : "The VRMs"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : ""}}, \
+{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Audio wrapup", "until" : "Conclusions"}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
+], "volume" : 0.05 },\
+"episodes" : [],\
+"youtube" : {"title" : "", \
+"description" : '''I think I overpaid for this Asrock A320M-DVS.''',\
+"links" : '''
+Track: Bliss Of Heaven - SOMM [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=JQ6mKeQLZak&t=0s
+Free Download / Stream: https://alplus.io/blisss-heaven
+
+Track: Far Far Away - Ferco [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=SrkQ3K1umlc&t=0s 
+Free Download / Stream: https://alplus.io/far-far-away
+
+Ferco - Lake Of The Honesty
+Creative Commons - Attribution 3.0 Unported (CC BY 3.0)
+Free Download: hypeddit.com/lo55nr
+Video: https://www.youtube.com/watch?v=LMQEm8PVnpc&t=0s
+
+Ferco - Inquisitiveness
+Creative Commons - Attribution 3.0 Unported (CC BY 3.0)
+Free Download: https://hypeddit.com/mlsvxq
+Streams: https://share.amuse.io/track/ferco-inquisitiveness
+Video: https://www.youtube.com/watch?v=dhJdmwLWtFM&t=0s
+
+Track: Inspired - MaikonMusic [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=RUkdTkk_52o&t=0s
+Free Download / Stream: https://alplus.io/inspired
+
+Our 2023 review of the HD 7770: 
+Our 2022 review of the HD 7770: https://youtu.be/4rEcNy2YC0I
+
+TechPowerup entries: https://www.techpowerup.com/gpu-specs/radeon-r7-260.c2511
+TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b2732
+''', \
+"tags" : "",\
+"language" : "EN", \
+"Caption certification" : "None",\
+"recording date" : None,\
+"video location" : None, \
+"category" : "Gaming", \
+"subtitles" : None, \
+"endscreen" : None, \
+"cards" : None, \
+}\
+}
+
+#"isChapter" : False, \
+
+####################### intro ###############################
+
+# this is the hook
+#configs["episodes"].append(\
+#{ "title": "A favorite of miners and gamers alike",\
+#"audio" : {"timestamps" : ("09:37.3", "09:46" ), "volume" : 0.999, "padAudio" : 0.05 },\
+#"video" : {"file" : ""},\
+#})
+
+configs["episodes"].append(\
+{ "title" : "Fine distilled garboleum",\
+"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "Costs me most",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "The VRMs",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "zoom on core and soc",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+# this might need a better shot, when filming the 2 slots GPU
+configs["episodes"].append(\
+{ "title" : "The DIMM slots",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "insert RAM",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "remove RAM",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+
+configs["episodes"].append(\
+{ "title" : "The expansion slots",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+# needs video
+configs["episodes"].append(\
+{ "title" : "insert GPU",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "back to slots breel",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "SATA ports",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+}) # maybe an overlay with the DVI-D to HDMI adapter?
+
+configs["episodes"].append(\
+{ "title" : "No M.2 for you",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+}) # audacity
+
+configs["episodes"].append(\
+{ "title" : "The pin heaers",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+}) # audacity
+
+configs["episodes"].append(\
+{ "title" : "chassis intrusion, front panel",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+}) # rear IO, maybe?
+
+configs["episodes"].append(\
+{ "title" : "USB pin headers",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+}) # rear IO, maybe?
+
+configs["episodes"].append(\
+{ "title" : "SPI header",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+}) # list of bios? or side by side BIOS and list of BIOS-es?
+
+# vide outputs
+configs["episodes"].append(\
+{ "title" : "Rear IO",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "rear io, others",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+# maybe a side by side here with GA-A320M-H
+configs["episodes"].append(\
+{ "title" : "The audio",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "actual audio",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "The BIOS",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "DOCP - yes",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "Save OC profile",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+# maybe side by side programmer and programming ?
+configs["episodes"].append(\
+{ "title" : "TPM and REBAR",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "Fan control",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "No CPU voltage, no multiplier",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+# conflicted
+configs["episodes"].append(\
+{ "title" : "Conclusions",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "but then the DIMMs",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "then the BIOS",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "pricing - bought as deffective",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "pricing - HD and HDV are better",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "Bye",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+scriptedvided.makeVideo(configs)
+
