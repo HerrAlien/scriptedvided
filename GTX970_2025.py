@@ -79,6 +79,8 @@ configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:04.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GTX970_cooling.mp4", "rotation" : 180},\
+"overlay" : { \
+    "text" : ["'Temperatures (Heaven)\: 67C (45C delta over ambient)'"]}, \
 })
 
 configs["episodes"].append(\
