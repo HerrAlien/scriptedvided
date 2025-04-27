@@ -75,55 +75,69 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 
 configs["episodes"].append(\
 { "title" : "Fine distilled garboleum",\
-"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00", "00:12.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "Costs me most",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:26.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "The VRMs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:38.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "zoom on core and soc",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:52.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "cheap out on mosfet count",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:58.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "VRM coils",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:09.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 # this might need a better shot, when filming the 2 slots GPU
 configs["episodes"].append(\
 { "title" : "The DIMM slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:18.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "insert RAM",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:22.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "remove RAM",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:26.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 
 configs["episodes"].append(\
 { "title" : "The expansion slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:34.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -131,20 +145,20 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "insert GPU",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:40.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "back to slots breel",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:49.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "SATA ports",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:05.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
@@ -155,7 +169,7 @@ configs["episodes"].append(\
 }) # audacity
 
 configs["episodes"].append(\
-{ "title" : "The pin heaers",\
+{ "title" : "The pin headers",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # audacity
