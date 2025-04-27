@@ -78,7 +78,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:04.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GTX970_cooling.mp4", "start" : "00:00"},\
+"video" : {"file" : "GTX970_cooling.mp4", "rotation" : 180},\
 })
 
 configs["episodes"].append(\
@@ -127,6 +127,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900, low settings', 88 , 70), \
               scriptedvided.r6sText('1280x720, low settings',  105, 73), \
 ]}, \
+"video" : "Discovery_2025_03_15_22_55_07_819.mp4"\
 })
 
 configs["episodes"].append(\
@@ -206,7 +207,6 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900, low settings',  198 , 134 ), \
               scriptedvided.r6sText('1280x720, low settings',  242 , 166), \
 ]}, \
-"video" : "" \
 })
 
 configs["episodes"].append(\
