@@ -41,8 +41,14 @@ def getLengthOfStream (stream):
             return length
     
     filepath = sv_utils.getFileFromInput (stream)
+    
+    print ("\n\n" + filepath + "\n\n")
+    
     finishedProc = subprocess.run (["ffprobe", filepath], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out = str(finishedProc.stderr) + str(finishedProc.stdout)
+    
+    print ("\n\n" + out + "\n\n")
+    
     durationIndex = out.index("Duration")
     out = out[durationIndex:];
     commaIndex = out.index(",")
