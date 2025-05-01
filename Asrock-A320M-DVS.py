@@ -12,8 +12,7 @@ configs = { "defaultAudioFile" : "Asrock-A320M-DVS.ogg",\
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Fine distilled garboleum", "until" : "The VRMs"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : "actual audio"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "The BIOS", "until" : "Conclusions"}}, \
-{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "pricing - bought as deffective"}}, \
-{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "pricing - bought as deffective", "until" : "EOF"}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "", \
@@ -274,7 +273,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:26.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Asrock_A320M-DVS-overview.MP4"},\
+"video" : {"file" : "Asrock_A320M-DVS_VRMs.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -285,7 +284,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title" : "then the BIOS",\
+{ "title" : "then the setup utility",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:44" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Asrock-A320M-DVS_RAM.MP4"},\
