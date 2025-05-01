@@ -332,10 +332,8 @@ def buildBackgroundTrack (backgroundTrack, configs):
                 if endsAt > 0:
                     trackLength = endsAt - trackIsInsertedAt
         
-#        if trackLength == 0 or trackLength is None:            
-#            trackLength = sv_ffutils.getLengthOfStream(track["file"])
         if trackLength == 0 or trackLength is None:            
-            trackLength = sv_ffutils.getLengthOfStream(os.path.join(configs["stockFolder"], track["file"]))
+            trackLength = sv_ffutils.getLengthOfStream(track["file"])
             
         audioForSegment = sv_utils.dictValue(track,"file")
         if not os.path.exists (audioForSegment):
