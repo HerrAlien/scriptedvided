@@ -272,9 +272,17 @@ configs["episodes"].append(\
 # conflicted
 configs["episodes"].append(\
 { "title" : "Conclusions",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:14" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "Asrock_A320M-DVS-overview.MP4"},\
+})
+
+configs["episodes"].append(\
+{ "title" : "conclusions 2",\
+"isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:26.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Asrock_A320M-DVS_VRMs.MP4"},\
 })
+
 
 configs["episodes"].append(\
 { "title" : "but then the DIMMs",\
