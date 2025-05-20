@@ -627,8 +627,10 @@ def aliases(inputName):
         
     return arrToReturn # no lnown
     
-def r6sText (settings, average, _1percent):
+def r6sText (settings, average, _1percent, _p1percent : None):
     text = settings + " - Average: " + str(average) + "fps, 1% lows: " + str(_1percent) + "fps"
+    if _p1percent is not None:
+        text = text + ", 0.1% lows: " + str(_p1percent) + "fps"
     return "'" + sv_ffutils.ffmpegSafeString(text) + "'"
 
 def nextTS (configs):
