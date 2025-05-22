@@ -71,28 +71,28 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "The OG 2600",\
 "audio" : {"timestamps" : ("00:00", "00:14.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "bared_i7_2600.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "inspectre",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:19.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "inspectre_off.mp4"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:34.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "i7_2600_cores_tdp.mkv"},\
 })
 
 # needs a side by side video
 configs["episodes"].append(\
 { "title": "The TDP is real",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "i7_2600_realTDP.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -105,21 +105,21 @@ configs["episodes"].append(\
               "'GPU\: EVGA GTX 970'",\
     ]\
 }, \
-"video" : {"file" : "" }\
+"video" : {"file" : "breel_GA-B75-D3V_i7_2600_case.mp4" }\
 })
 
 configs["episodes"].append(\
 { "title": "case modding",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:19.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "case_modding_before_after.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "GPU",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:29.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_autumn_GTX970.mp4"},\
 })
 
 
@@ -127,21 +127,21 @@ configs["episodes"].append(\
 { "title": "Selected games",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:38.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Discovery_2025_03_15_22_55_07_819.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Selected games sp",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:44" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Cyberpunk2077_2025_04_06_22_32_03_731-converted.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Gigasus test",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:51.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 ####################### end of intro ###############################
 
@@ -155,7 +155,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, 30% render scale, low settings", \
     }\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "Marvel-Win64-Shipping_2025_03_09_23_32_45_673.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -173,10 +173,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:05.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1280x720, performance mode', 133 , 54, 15 )\
+              scriptedvided.r6sText('1280x720, performance mode', 133 , 54, 15 ),\
               scriptedvided.r6sText('1280x720, performance mode, inSpectre', 135 , 67, 15)\
 ]}, \
-"video" : ""\
+"video" : "Fortnite_Win_2025-04-21.mkv"\
 })
 
 configs["episodes"].append(\
@@ -184,7 +184,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:44.8"), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1280x720, 50% scale, low settings', 160 , 127, 105)\
+              scriptedvided.r6sText('1280x720, 50% scale, low settings', 160 , 127, 105),\
               scriptedvided.r6sText('1280x720, 50% scale, low settings, inSpectre', 172 , 134, 114)\
 ]}, \
 },
@@ -216,7 +216,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:04.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Counter-Strike 2'",\
-              scriptedvided.r6sText('1280x720, low settings', 87 , 53, 6)\
+              scriptedvided.r6sText('1280x720, low settings', 87 , 53, 6),\
               scriptedvided.r6sText('1280x720, low settings, inSpectre', 92, 60, 41)\
 ]},\
 })
@@ -288,7 +288,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:26.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:00"},\
 "overlay" : { \
     "image" : {"file" : ""}\
 }, \
@@ -297,7 +297,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "HT on, no inSpectre",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:47.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:30"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : ""}\
@@ -307,7 +307,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "HT on, w inSpectre",\
 "audio" : {"timestamps" : ("07:48.3", "08:02.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : ""}\
@@ -317,7 +317,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "HT off, no inSpectre",\
 "audio" : {"timestamps" : ("08:03.9", "08:23.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:00"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : ""}\
@@ -327,7 +327,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "HT vs power consumption",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:31.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:30"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : ""}\
@@ -337,7 +337,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "IPC compared to other CPUs, spectre and meltdown",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:41.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : ""}\
@@ -347,7 +347,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "cs2, r6s and ",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:49.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_CS2_CT_R7_260X.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : ""}\
@@ -357,7 +357,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Final warning",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:59.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "rx580_Discovery_2024_07_26_23_03_56_417-converted.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : ""}\
@@ -373,31 +373,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:06.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "bared_i7_2600.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "with i5 2400",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:14.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "olx_i7_2600_i5_2400.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "2400 alone",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:21.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"overlay" : { \
-    "image" : {"file" : ""}\
-}, \
-"video" : "" \
+"video" : "bared__i7_2600_i5_2500.mp4" \
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "09:31.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "bared_i7_2600.mp4"},\
 })
 
 
