@@ -127,14 +127,14 @@ configs["episodes"].append(\
 { "title": "Selected games",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:38.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Discovery_2025_03_15_22_55_07_819.mp4"},\
+"video" : {"file" : "i7_2600_cpu_usage_M_arvelRivals.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Selected games sp",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:44" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Cyberpunk2077_2025_04_06_22_32_03_731-converted.mp4"},\
+"video" : {"file" : "i7_2600_cpu_usage_S_O_TTR.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -187,7 +187,6 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1280x720, 50% scale, low settings', 160 , 127, 105),\
               scriptedvided.r6sText('1280x720, 50% scale, low settings, inSpectre', 172 , 134, 114)\
 ]}, \
-},
 })
 
 configs["episodes"].append(\
