@@ -3,7 +3,7 @@ import scriptedvided
 configs = { "defaultAudioFile" : "i7_2600.ogg",\
 "mediaFolder" : "F:\\Videos\\i7_2600", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\i7_2600\\Benchmark_R5_2600.txt",\
+"benchmarkFile" : "F:\\Videos\\i7_2600\\Benchmark_i7_2600.txt",\
 "outputFolder" : "F:\\Videos\\i7_2600\\output", \
 "outputFile" : "i7_2600.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
@@ -173,8 +173,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:05.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1280x720, performance mode', 133 , 54, 15 ),\
-              scriptedvided.r6sText('1280x720, performance mode, inSpectre', 135 , 67, 15)\
+              scriptedvided.r6sText('1280x720, performance mode', 133 , 54 ),\
+              scriptedvided.r6sText('1280x720, performance mode, inSpectre', 135 , 67)\
 ]}, \
 "video" : "Fortnite_Win_2025-04-21.mkv"\
 })
@@ -184,8 +184,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:44.8"), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1280x720, 50% scale, low settings', 160 , 127, 105),\
-              scriptedvided.r6sText('1280x720, 50% scale, low settings, inSpectre', 172 , 134, 114)\
+              scriptedvided.r6sText('1280x720, 50% scale, low settings', 160 , 127),\
+              scriptedvided.r6sText('1280x720, 50% scale, low settings, inSpectre', 172 , 134)\
 ]}, \
 })
 
@@ -215,8 +215,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:04.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Counter-Strike 2'",\
-              scriptedvided.r6sText('1280x720, low settings', 87 , 53, 6),\
-              scriptedvided.r6sText('1280x720, low settings, inSpectre', 92, 60, 41)\
+              scriptedvided.r6sText('1280x720, low settings', 87 , 53),\
+              scriptedvided.r6sText('1280x720, low settings, inSpectre', 92, 60)\
 ]},\
 })
 
