@@ -296,7 +296,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "HT on, no inSpectre",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:47.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "blurred_gigasus.mp4", "start" : "00:30"},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "00:30"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "Clock Cycles stock.png"}\
@@ -306,7 +306,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "HT on, w inSpectre",\
 "audio" : {"timestamps" : ("07:48.3", "08:02.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "blurred_gigasus.mp4", "start" : "01:00"},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "Clock Cycles w inspectre.png"}\
@@ -316,7 +316,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "HT off, no inSpectre",\
 "audio" : {"timestamps" : ("08:03.9", "08:23.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "blurred_gigasus.mp4", "start" : "00:00"},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "00:00"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "Clock Cycles HT.png"}\
@@ -326,7 +326,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "HT vs power consumption",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:31.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "blurred_gigasus.mp4", "start" : "00:30"},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "00:30"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "Clock Cycles HT and power.png"}\
@@ -336,7 +336,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "IPC compared to other CPUs, spectre and meltdown",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:41.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "blurred_gigasus.mp4", "start" : "01:00"},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "Clock Cycles w inspectre.png"}\
