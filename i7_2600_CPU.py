@@ -158,12 +158,13 @@ configs["episodes"].append(\
 "video" : {"file" : "Marvel-Win64-Shipping_2025_03_09_23_32_45_673.mp4"},\
 })
 
+# needs redone
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:34.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1024x768, FSR 2.1 performance, low settings", \
+        "settings" : "1280x720, FSR 2.1 performance, low settings", \
     }\
 }, \
 })
@@ -241,6 +242,7 @@ configs["episodes"].append(\
 },\
 })
 
+#redo and specify a smoother video
 configs["episodes"].append(\
 { "title": "Shadow of the Tomb Raider",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:00.3" ), "padAudio" : 0.05 },\
