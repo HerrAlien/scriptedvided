@@ -251,6 +251,7 @@ configs["episodes"].append(\
         "settings" : "800x600, low settings", \
     }\
 },\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "04:53"}\
 })
 
 configs["episodes"].append(\
