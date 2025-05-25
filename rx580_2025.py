@@ -8,7 +8,7 @@ configs = { "defaultAudioFile" : "RX580_2025.ogg",\
 "outputFile" : "RX580_2025.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "", "until" : "Marvel Rivals"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Definitely easy to find", "until" : "Marvel Rivals"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Rainbow Six: Siege"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Rainbow Six: Siege", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
@@ -61,30 +61,29 @@ Free Download / Stream: https://alplus.io/inspired
 #})
 
 configs["episodes"].append(\
-{ "title": "Heart 4 Maxwell",\
+{ "title": "Definitely easy to find",\
 "audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "breel_autumn_GTX970.mp4"},\
+"video" : {"file" : "XFX_RX580_breel.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GTX970_GPUZ_Valley.mkv"},\
-})
-
-configs["episodes"].append(\
-{ "title": "The lawsuit",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GTX970_lawsuit.mkv"},\
-"isChapter" : False,\
+"video" : {"file" : "RX_580_GPUZ_Valley.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GTX970_cooling.mp4", "rotation" : 180},\
+"video" : {"file" : "rx580_coolingPortrait.mp4", "rotation" : 90},\
 "overlay" : { \
-    "text" : ["'Temperatures (Heaven)\: 67C (45C delta over ambient)'"]}, \
+    "text" : ["'Temperatures (Heaven)\: 71C (48C delta over ambient)'"]}, \
+})
+
+configs["episodes"].append(\
+{ "title": "Dual Bios",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
@@ -96,7 +95,7 @@ configs["episodes"].append(\
               "'RAM\: 32GB DDR4 at 3000 MHz, dual channel'",\
     ]\
 }, \
-"video" : {"file" : "test_system_noGPU.mp4" }\
+"video" : {"file" : "test_system_RX580.mp4" }\
 })
 
 ####################### end of intro ###############################
