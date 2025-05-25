@@ -150,7 +150,7 @@ configs["episodes"].append(\
 // ;; We neet to record the audio for it. ;; //
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("07:25", "07:50.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText('1920x1080, performance mode, FAR view distance' , 240, 141),\
@@ -161,7 +161,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Terminator: Resistance",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:08.6" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("02:55.5", "03:08.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "2560x1440, epic settings", \
@@ -299,7 +299,7 @@ configs["episodes"].append(\
 { "title": "Spiritual successor for the 750 Ti",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:14.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "we need a vide here"},\
 })
 
 configs["episodes"].append(\
