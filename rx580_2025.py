@@ -146,8 +146,6 @@ configs["episodes"].append(\
 ]}, \
 })
 
-
-// ;; We neet to record the audio for it. ;; //
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : ("07:25", "07:50.3" ), "padAudio" : 0.05 },\
@@ -299,7 +297,7 @@ configs["episodes"].append(\
 { "title": "Spiritual successor for the 750 Ti",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:14.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "we need a vide here"},\
+"video" : {"file" : "bared_GTX750Ti.mp4"},\
 })
 
 configs["episodes"].append(\
