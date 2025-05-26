@@ -297,7 +297,7 @@ configs["episodes"].append(\
 { "title": "Spiritual successor for the 750 Ti",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:14.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "bared_GTX750Ti.mp4"},\
+"video" : {"file" : "barred_rx580_gtx750ti.mp4", "start" : "00:10"},\
 })
 
 configs["episodes"].append(\
