@@ -75,7 +75,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:49.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "rx580_coolingPortrait.mp4", "rotation" : 90},\
+"video" : {"file" : "rx580_coolingPortrait.mp4", "rotation" : 90, "start" : "00:00"},\
 "overlay" : { \
     "text" : ["'Temperatures (Heaven)\: 71C (48C delta over ambient)'"]}, \
 })
@@ -83,7 +83,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Dual Bios",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:16.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "gotta get a video of the switch and the bios versions"},\
+"video" : {"file" : "RX580_bioses.mp4"},\
 })
 
 configs["episodes"].append(\
