@@ -76,27 +76,27 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title" : "A sight for sore eyes",\
 "audio" : {"timestamps" : ("00:00", "00:11.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk-LEDs.MP4", "start" : "00:25"},\
 })
 
 # this is for the heatsinks segment
 configs["episodes"].append(\
 { "title" : "The VRMs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:23.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_VRM.MP4", "start" : "01:46"},\
 })
 
 configs["episodes"].append(\
 { "title" : "NB topology",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:37.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MSI-B350-Tomahawk_VRMs.MP4", "file" : "01:00"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title" : "VCORE and SOC topology",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MSI-B350-Tomahawk_VRMs.MP4", "file" : "01:50"},\
 "isChapter" : False,\
 })
 
@@ -104,7 +104,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "The DIMM slots",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:00" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_unboxing_overview.MP4", "start" : "01:05"},\
 })
 
 # needs another BREEL?
@@ -119,7 +119,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "The expansion slots",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:22.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_extensionSlots.MP4", "start" : "00:07"},\
 })
 
 # needs video
@@ -127,7 +127,7 @@ configs["episodes"].append(\
 { "title" : "M.2 slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:34" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_extensionSlots.MP4", "start" : "00:00"},\
 })
 
 
@@ -136,33 +136,35 @@ configs["episodes"].append(\
 { "title" : "PCI slots",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:53.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_extensionSlots.MP4", "start" : "00:55"},\
 })
 
 configs["episodes"].append(\
 { "title" : "SATA ports",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:06.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_secondUSB3.MP4", "start" : "00:12"},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 configs["episodes"].append(\
 { "title" : "The pin headers",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:30.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_pinHeaders.MP4", "start" : "00:41"},\
 }) # audacity
 
 configs["episodes"].append(\
 { "title" : "usb2 usb3 FP1 FP2",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:42.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_pinHeaders.MP4", "start" : "01:15"},\
 }) # rear IO, maybe?
 
+
+# needs an arrow overlayed, pointing to the debug LEDs
 configs["episodes"].append(\
 { "title" : "Debug LEDs",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:50" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_unboxing_overview.MP4", "start" : "01:15"},\
 }) # rear IO, maybe?
 
 configs["episodes"].append(\
