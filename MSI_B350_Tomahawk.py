@@ -168,100 +168,109 @@ configs["episodes"].append(\
 }) # rear IO, maybe?
 
 configs["episodes"].append(\
-{ "title" : "clear cmos tpm SPI header",\
+{ "title" : "clear cmos",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:56" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "B350_pinHeaders.MP4", "start" : "01:35"},\
+}) # list of bios? or side by side BIOS and list of BIOS-es?
+
+configs["episodes"].append(\
+{ "title" : "ci tpm SPI header",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:04" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_pinHeaders.MP4", "start" : "01:45"},\
 }) # list of bios? or side by side BIOS and list of BIOS-es?
 
 configs["episodes"].append(\
 { "title" : "CH341A",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:15.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MSI-B450M-Pro-M2-V2_ReprogramBios.mp4"},\
 }) # list of bios? or side by side BIOS and list of BIOS-es?
 
-# vide outputs
+# must provide some overlays ...
 configs["episodes"].append(\
 { "title" : "Rear IO",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:33.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_IO.MP4"},\
 })
 
+# must provide some overlays ...
 configs["episodes"].append(\
 { "title" : "LAN, USB3, USB-C",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:42.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_IO.MP4"},\
 })
 
 # maybe a side by side here with GA-A320M-H
 configs["episodes"].append(\
 { "title" : "The audio",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:53.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk-LEDs.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "actual audio",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:00.6"), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_unboxing_overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "The BIOS",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:11.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk_MFlash_rotated.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "CPU multiplier",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:23.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk_CpuMultiplier_rotated.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "CPU voltage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:39.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk_CpuVoltage_rotated.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "DOCP",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:46.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk_RamProfiles_rotated.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "ram timings",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:52" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk_RamSubtimings_rotated.mp4"},\
 })
 
+# needs overlay
 configs["episodes"].append(\
-{ "title" : "fclock and gear ratio",\
+{ "title" : "overlay or better video fclock and gear ratio",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk_multiplier2_rotated.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "Fan control",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:14.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk_Fans2_rotated.mp4"},\
 })
 
 configs["episodes"].append(\
-{ "title" : "Fan type",\
+{ "title" : "Fan type could be better",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:26.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk_Fans1_rotated.mp4"},\
 })
 
 # maybe side by side programmer and programming ?
