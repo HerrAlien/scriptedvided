@@ -215,7 +215,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "actual audio",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:00.6"), "volume" : 0.001, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:00.6"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "B350_unboxing_overview.MP4"},\
 })
 
