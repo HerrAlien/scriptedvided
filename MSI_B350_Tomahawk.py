@@ -112,7 +112,9 @@ configs["episodes"].append(\
 { "title" : "remove RAM comparisons",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:07.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"overlay" : { \
+    "text" : ["'RAM removal, Asrock A320M-DVS'"] },\
+"video" : {"file" : "Asrock_A320M-DVS_RamInsertionRemoval.MP4", "start" : "00:25"},\
 })
 
 
