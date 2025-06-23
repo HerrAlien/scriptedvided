@@ -83,20 +83,20 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "The VRMs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:23.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_VRM.MP4", "start" : "01:46"},\
+"video" : {"file" : "B350_VRM.MP4", "start" : "00:46"},\
 })
 
 configs["episodes"].append(\
 { "title" : "NB topology",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:37.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "MSI-B350-Tomahawk_VRMs.MP4", "file" : "01:00"},\
+"video" : {"file" : "MSI-B350-Tomahawk_VRMs.MP4", "start" : "01:00"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title" : "VCORE and SOC topology",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "MSI-B350-Tomahawk_VRMs.MP4", "file" : "01:50"},\
+"video" : {"file" : "MSI-B350-Tomahawk_VRMs.MP4", "start" : "01:50"},\
 "isChapter" : False,\
 })
 
