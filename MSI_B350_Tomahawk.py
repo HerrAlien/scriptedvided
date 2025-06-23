@@ -9,7 +9,7 @@ configs = { "defaultAudioFile" : "MSI-B350-Tomahawk.ogg",\
 "outputFile" : "MSI-B350-Tomahawk.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Fine distilled garboleum", "until" : "The VRMs"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "A sight for sore eyes", "until" : "The VRMs"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : "actual audio"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "The BIOS", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
