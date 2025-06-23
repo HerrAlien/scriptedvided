@@ -2,10 +2,10 @@ import scriptedvided
 import sv_ffutils
 
 configs = { "defaultAudioFile" : "MSI-B350-Tomahawk.ogg",\
-"mediaFolder" : "F:\\Videos\\MSI-B350-Tomahawk", \
+"mediaFolder" : "F:\\Videos\\B350 Tomahawk", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
-"outputFolder" : "F:\\Videos\\MSI-B350-Tomahawk\\output", \
+"outputFolder" : "F:\\Videos\\B350 Tomahawk\\output", \
 "outputFile" : "MSI-B350-Tomahawk.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
@@ -256,7 +256,7 @@ configs["episodes"].append(\
 { "title" : "overlay or better video fclock and gear ratio",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk_multiplier2_rotated.mp4"},\
+"video" : {"file" : "B350_Tomahawk_FClock_GearRatio.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -270,7 +270,7 @@ configs["episodes"].append(\
 { "title" : "Fan type could be better",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:26.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk_Fans1_rotated.mp4"},\
+"video" : {"file" : "B350_Tomahawk_FanTypes.mp4"},\
 })
 
 # maybe side by side programmer and programming ?
@@ -278,21 +278,21 @@ configs["episodes"].append(\
 { "title" : "TPM and REBAR",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:37.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk_TpmRebar.mp4"},\
 })
 
 # conflicted
 configs["episodes"].append(\
 { "title" : "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:52.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_unboxing_overview.MP4", "start" : "00:47"},\
 })
 
 configs["episodes"].append(\
 { "title" : "conclusions vcore and heatsink",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:08" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_VRM.MP4", "start" : "00:35"},\
 })
 
 
@@ -300,14 +300,14 @@ configs["episodes"].append(\
 { "title" : "I like it",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:22.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_Tomahawk-LEDs.MP4", "start" : "00:08"},\
 })
 
 configs["episodes"].append(\
 { "title" : "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:30" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B350_unboxing_overview.MP4", "start" : "01:05"},\
 })
 
 scriptedvided.makeVideo(configs)
