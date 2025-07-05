@@ -71,7 +71,7 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "The 2nd gen core i5",\
 "audio" : {"timestamps" : ("00:00", "00:15.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "i5_2400_wide.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -155,7 +155,6 @@ configs["episodes"].append(\
         "settings" : "1280x720, low settings", \
     }\
 },
-"video" : "rx580_r5apex_2024_07_26_22_34_08_382-converted.mp4" \
 })
 
 configs["episodes"].append(\
@@ -282,7 +281,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:47.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "i5_2400_wide.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -317,14 +316,14 @@ configs["episodes"].append(\
 { "title": "pricing CPU alone",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:46.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "olx_i5_2400.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:56" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "i5_2400_wide.mp4"},\
 })
 
 
