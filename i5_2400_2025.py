@@ -286,28 +286,28 @@ configs["episodes"].append(\
 { "title": "4 threads - too few",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : "bared__i7_2600_i5_2500.mp4" \
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "older games still fine",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : "bared__i7_2600_i5_2500.mp4" \
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "pricing for a combo",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : "bared__i7_2600_i5_2500.mp4" \
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "pricing CPU alone",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : "bared__i7_2600_i5_2500.mp4" \
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
