@@ -3,12 +3,12 @@ import scriptedvided
 configs = { "defaultAudioFile" : "i5_2400_2025.ogg",\
 "mediaFolder" : "F:\\Videos\\i5_2400_2025", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\i5_2400_2025\\Benchmark_i7_2600.txt",\
+"benchmarkFile" : "F:\\Videos\\i5_2400_2025\\Benchmark_i5_2400_2025.txt",\
 "outputFolder" : "F:\\Videos\\i5_2400_2025\\output", \
 "outputFile" : "i5_2400_2025.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "The OG 2600", "until" : "Marvel Rivals"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "The 2nd gen core i5", "until" : "Marvel Rivals"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Shadow of the Tomb Raider"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Shadow of the Tomb Raider", "until" : "Video rendering test (The GigASUS)"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Video rendering test (The GigASUS)", "until" : "Conclusions"}}, \
@@ -71,21 +71,21 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "The 2nd gen core i5",\
 "audio" : {"timestamps" : ("00:00", "00:15.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "i5_2400_wide.mp4"},\
+"video" : {"file" : "breel_i5_2400_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The CPU",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "i5_2400_params.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Gigasus for IPC",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:36" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -98,7 +98,7 @@ configs["episodes"].append(\
               "'GPU\: EVGA GTX 970'",\
     ]\
 }, \
-"video" : {"file" : ""}\
+"video" : {"file" : "breel_i7_2600_GA-B75-D3V.mp4"}\
 })
 
 ####################### end of intro ###############################
@@ -113,7 +113,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, 30% render scale, low settings", \
     }\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_08_00_31_860-converted.mp4"},\
 })
 
 # needs redone
@@ -217,7 +217,7 @@ configs["episodes"].append(\
         "settings" : "800x600, low settings", \
     }\
 },\
-"video" : {"file" : ""}\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "04:53"}\
 })
 
 configs["episodes"].append(\
@@ -249,26 +249,26 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:13.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 
 configs["episodes"].append(\
-{ "title": "Needs overlay - By itself",\
+{ "title": "By itself",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:22" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "00:30"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "overlays_i5_2400.png"}\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Compared with others",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:35.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "ipc_others.png"}\
 }, \
 })
 
@@ -281,35 +281,35 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:47.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "i5_2400_wide.mp4"},\
+"video" : {"file" : "breel_i5_2400_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "80 percent",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:58.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_2400_i7_2600_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "4 threads - too few",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:12.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Discovery_2025_03_15_22_55_07_819.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "older games still fine",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:20.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_Overwatch2_gameplay_5770.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "pricing for a combo",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:38.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "kit_i5_2400_olx.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -323,7 +323,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:56" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "i5_2400_wide.mp4"},\
+"video" : {"file" : "breel_i5_2400_barred.mp4"},\
 })
 
 
