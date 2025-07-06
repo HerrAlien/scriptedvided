@@ -214,7 +214,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:14" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "800x600, low settings", \
+        "settings" : "1280x720, low settings", \
     }\
 },\
 "video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "04:53"}\
