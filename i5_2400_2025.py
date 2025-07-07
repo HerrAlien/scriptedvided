@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "i5_2400_2025.ogg",\
+configs = { "defaultAudioFile" : "i5_2400_2025_v2.ogg",\
 "mediaFolder" : "F:\\Videos\\i5_2400_2025", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "F:\\Videos\\i5_2400_2025\\Benchmark_i5_2400_2025.txt",\
@@ -90,7 +90,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "The test system",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:46.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("07:14.6", "07:27.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Custom build'",\
               "'CPU\: Core i5 2400'",\
@@ -107,7 +107,7 @@ configs["episodes"].append(\
 ####################### gaming section ###############################
 configs["episodes"].append(\
 { "title": "Marvel Rivals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:07" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:46.3", "01:07" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 30% render scale, low settings", \
@@ -129,7 +129,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:56.2" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("06:56", "07:14.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, performance mode", \
@@ -139,7 +139,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:12.4"), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("01:56.2", "02:12.4"), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% scale, low settings", \
