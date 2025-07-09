@@ -64,33 +64,33 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "A cheap 50 Ti card",\
 "audio" : {"timestamps" : ("00:00", "00:19.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "bared_GTX750Ti.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:35.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "GTX750Ti_GpuZ_Valley.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU - power efficient",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:48" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "bared_GTX750Ti_moving.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "TDP",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:01" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "GTX750Ti_Techpowerup.mkv", "start" : "00:10"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:18.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "GTX750Ti_cooling.mp4"},\
 "overlay" : { \
     "text" : ["'Temperatures (Heaven)\: 64C (39C delta over ambient)'"]}, \
 })
@@ -104,7 +104,7 @@ configs["episodes"].append(\
               "'RAM\: 32GB DDR4 at 3000 MHz, dual channel'",\
     ]\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "system_b351_z230.mp4", "start" : "00:15" }\
 })
 
 ####################### end of intro ###############################
@@ -115,7 +115,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Games that went NOPE",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:50.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "r5apex_bot_royale.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -252,42 +252,42 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:44.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "GTX750Ti_Techpowerup.mkv", "start" : "01:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "Leads to games not playing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:59.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "bared_GTX750Ti_moving.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The blame game - NVidia",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:09" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "nvidia_Pascal.mkv", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "The blame game - Game devs",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:18.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "hd_6800_EA.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "The blame game 2 - NVidia",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:28.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "jensen_oven.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:47.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "GTX750Ti_OLX.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -301,7 +301,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:03" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "bared_GTX750Ti.mp4"},\
 })
 
 
