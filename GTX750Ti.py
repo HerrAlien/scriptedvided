@@ -114,7 +114,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Games that went NOPE",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:50.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "overlay" : { \
     "text" : ["'Temperatures (Heaven)\: C ( C delta over ambient)'"]}, \
@@ -122,10 +122,10 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:12" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Cyberpunk 2077'",\
-              scriptedvided.r6sText('' , 37, 28 ),\
+              scriptedvided.r6sText('' , , ),\
               scriptedvided.r6sText('' , , ),\
               scriptedvided.r6sText('' , , ),\
 ]}, \
@@ -133,7 +133,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "The Finals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:33.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'The Finals'",\
               scriptedvided.r6sText('' , , ), \
@@ -145,7 +145,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : ("07:25", "07:50.3" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:57.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText('' , , ),\
