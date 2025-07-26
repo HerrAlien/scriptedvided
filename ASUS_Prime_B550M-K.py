@@ -89,7 +89,7 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 #})
 
 configs["episodes"].append(\
-{ "title" : "A sight for sore eyes",\
+{ "title" : "Best budget board ... maybe",\
 "audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
@@ -102,14 +102,21 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title" : "NB topology",\
+{ "title" : "VCORE",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
-{ "title" : "VCORE and SOC topology",\
+{ "title" : "SOC topology",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
+{ "title" : "again no heatsinks",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
@@ -122,17 +129,6 @@ configs["episodes"].append(\
 "video" : {"file" : ""},\
 })
 
-# needs another BREEL?
-configs["episodes"].append(\
-{ "title" : "remove RAM comparisons",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : ["'RAM removal, Asrock A320M-DVS'"] },\
-"video" : {"file" : ""},\
-})
-
-
 configs["episodes"].append(\
 { "title" : "The expansion slots",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
@@ -141,16 +137,14 @@ configs["episodes"].append(\
 
 # needs video
 configs["episodes"].append(\
-{ "title" : "M.2 slot",\
+{ "title" : "first M.2 slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
-
-## maybe s[lit it at 01:40.9 ?
 configs["episodes"].append(\
-{ "title" : "PCI slots",\
+{ "title" : "second M.2 slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
@@ -178,32 +172,21 @@ configs["episodes"].append(\
 
 # needs an arrow overlayed, pointing to the debug LEDs
 configs["episodes"].append(\
-{ "title" : "Debug LEDs",\
+{ "title" : "speaker port",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # rear IO, maybe?
 
+# needs an arrow overlayed, pointing to the debug LEDs
 configs["episodes"].append(\
-{ "title" : "clear cmos",\
+{ "title" : "front usb3",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
-}) # list of bios? or side by side BIOS and list of BIOS-es?
+}) # rear IO, maybe?
 
-configs["episodes"].append(\
-{ "title" : "ci tpm SPI header",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-}) # list of bios? or side by side BIOS and list of BIOS-es?
 
-configs["episodes"].append(\
-{ "title" : "CH341A",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-}) # list of bios? or side by side BIOS and list of BIOS-es?
 
 # must provide some overlays ...
 configs["episodes"].append(\
@@ -212,18 +195,24 @@ configs["episodes"].append(\
 "video" : {"file" : ""},\
 })
 
-# must provide some overlays ...
+# maybe a side by side here with GA-A320M-H
 configs["episodes"].append(\
-{ "title" : "LAN, USB3, USB-C",\
-"isChapter" : False,\
+{ "title" : "The video out",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 # maybe a side by side here with GA-A320M-H
 configs["episodes"].append(\
-{ "title" : "The audio",\
+{ "title" : "Audio codec",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "ALC887 was tested before",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -241,6 +230,13 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
+{ "title" : "CPU compat list",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
 { "title" : "CPU multiplier",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
@@ -248,55 +244,47 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title" : "CPU voltage",\
+{ "title" : "front page",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title" : "DOCP",\
+{ "title" : "DOCP and rebar side by side",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title" : "ram timings",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-# needs overlay
-configs["episodes"].append(\
-{ "title" : "overlay or better video fclock and gear ratio",\
+{ "title" : "fan profiles and fan curve",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title" : "Fan control",\
+{ "title" : "fan types",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title" : "Fan type could be better",\
+{ "title" : "CPU multiplier",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
-# maybe side by side programmer and programming ?
 configs["episodes"].append(\
-{ "title" : "TPM and REBAR",\
+{ "title" : "VCORE setup",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
+
 
 # conflicted
 configs["episodes"].append(\
@@ -306,7 +294,35 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title" : "conclusions vcore and heatsink",\
+{ "title" : "does have some features but",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "best used with downdrafts",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "do not use a ryzen 7",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "CPU compat is an issue",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "Tourist trap",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
