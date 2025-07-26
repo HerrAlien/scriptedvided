@@ -63,6 +63,21 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 }
 
 #"isChapter" : False, \
+#"isChapter" : False, \
+
+####################### intro ###############################
+
+# this is the hook 
+#  scriptedvided.nextTS\(configs\)\, *\"[0-9][0-9]\:[0-9][0-9]\.?[0-9]?[0-9]?\"
+#  \"file\" *\: *\".*\"
+#  scriptedvided.r6sText\('.*' *\, *[0-9]*\, *[0-9]*\)
+#   "timestamps" *\: *\( *"[0-9\:\.]*" *\, *"[0-9\:\.]*" *\)
+#configs["episodes"].append(\
+#{ "title": "A favorite of miners and gamers alike",\
+#"audio" : {"timestamps" : (scriptedvided.nextTS(configs),  "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+#"video" : {"file" : ""},\
+# \"video\" *: *\{\"file\" *: *\".*\"\}
+#})
 
 ####################### intro ###############################
 
@@ -75,61 +90,61 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 
 configs["episodes"].append(\
 { "title" : "A sight for sore eyes",\
-"audio" : {"timestamps" : ("00:00", "00:11.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk-LEDs.MP4", "start" : "00:25"},\
+"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 # this is for the heatsinks segment
 configs["episodes"].append(\
 { "title" : "The VRMs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:23.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_VRM.MP4", "start" : "00:46"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "NB topology",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:37.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "MSI-B350-Tomahawk_VRMs.MP4", "start" : "01:00"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title" : "VCORE and SOC topology",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "MSI-B350-Tomahawk_VRMs.MP4", "start" : "01:50"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 "isChapter" : False,\
 })
 
 # this might need a better shot, when filming the 2 slots GPU
 configs["episodes"].append(\
 { "title" : "The DIMM slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:00" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_unboxing_overview.MP4", "start" : "01:05"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 # needs another BREEL?
 configs["episodes"].append(\
 { "title" : "remove RAM comparisons",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:07.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'RAM removal, Asrock A320M-DVS'"] },\
-"video" : {"file" : "Asrock_A320M-DVS_RamInsertionRemoval.MP4", "start" : "00:25"},\
+"video" : {"file" : ""},\
 })
 
 
 configs["episodes"].append(\
 { "title" : "The expansion slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:22.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_extensionSlots.MP4", "start" : "00:07"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 # needs video
 configs["episodes"].append(\
 { "title" : "M.2 slot",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:34" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_extensionSlots.MP4", "start" : "00:00"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 
@@ -137,27 +152,27 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "PCI slots",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:53.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_extensionSlots.MP4", "start" : "00:55"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "SATA ports",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:06.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_secondUSB3.MP4", "start" : "00:12"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 configs["episodes"].append(\
 { "title" : "The pin headers",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:30.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_pinHeaders.MP4", "start" : "00:41"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 }) # audacity
 
 configs["episodes"].append(\
 { "title" : "usb2 usb3 FP1 FP2",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:42.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_pinHeaders.MP4", "start" : "01:15"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 }) # rear IO, maybe?
 
 
@@ -165,151 +180,151 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "Debug LEDs",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:50" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_unboxing_overview.MP4", "start" : "01:15"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 }) # rear IO, maybe?
 
 configs["episodes"].append(\
 { "title" : "clear cmos",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:56" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_pinHeaders.MP4", "start" : "01:35"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 }) # list of bios? or side by side BIOS and list of BIOS-es?
 
 configs["episodes"].append(\
 { "title" : "ci tpm SPI header",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:04" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_pinHeaders.MP4", "start" : "01:45"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 }) # list of bios? or side by side BIOS and list of BIOS-es?
 
 configs["episodes"].append(\
 { "title" : "CH341A",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:15.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "MSI-B450M-Pro-M2-V2_ReprogramBios.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 }) # list of bios? or side by side BIOS and list of BIOS-es?
 
 # must provide some overlays ...
 configs["episodes"].append(\
 { "title" : "Rear IO",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:33.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_IO.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 # must provide some overlays ...
 configs["episodes"].append(\
 { "title" : "LAN, USB3, USB-C",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:42.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_IO.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 # maybe a side by side here with GA-A320M-H
 configs["episodes"].append(\
 { "title" : "The audio",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:53.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk-LEDs.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "actual audio",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:00.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_unboxing_overview.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "The BIOS",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:11.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk_MFlash_rotated.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "CPU multiplier",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:23.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk_CpuMultiplier_rotated.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "CPU voltage",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:39.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk_CpuVoltage_rotated.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "DOCP",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:46.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk_RamProfiles_rotated.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "ram timings",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:52" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk_RamSubtimings_rotated.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 # needs overlay
 configs["episodes"].append(\
 { "title" : "overlay or better video fclock and gear ratio",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk_FClock_GearRatio.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "Fan control",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:14.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk_Fans2_rotated.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "Fan type could be better",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:26.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk_FanTypes.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 # maybe side by side programmer and programming ?
 configs["episodes"].append(\
 { "title" : "TPM and REBAR",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:37.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk_TpmRebar.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 # conflicted
 configs["episodes"].append(\
 { "title" : "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:52.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_unboxing_overview.MP4", "start" : "00:47"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "conclusions vcore and heatsink",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:08" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_VRM.MP4", "start" : "00:35"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 
 configs["episodes"].append(\
 { "title" : "I like it",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:22.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_Tomahawk-LEDs.MP4", "start" : "00:08"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "Bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:30" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "B350_unboxing_overview.MP4", "start" : "01:05"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
 })
 
 scriptedvided.makeVideo(configs)
