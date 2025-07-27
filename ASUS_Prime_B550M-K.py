@@ -265,42 +265,42 @@ configs["episodes"].append(\
 { "title" : "bioses side by side",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:13.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-TPM_rotated.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "DOCP and rebar side by side",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:26.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "rebar_docp_budget_cards.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "fan profiles and fan curve",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:35.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-Fans2_rotated.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "fan types",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:44.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-Fans_rotated.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "CPU multiplier",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:51" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-MemTimingCpuVoltage_rotated.mp4", "start" : "00:18"},\
 })
 
 configs["episodes"].append(\
 { "title" : "VCORE setup",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-MemTimingCpuVoltage_rotated.mp4", "start" : "01:05"},\
 })
 
 
