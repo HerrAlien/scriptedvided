@@ -9,14 +9,14 @@ configs = { "defaultAudioFile" : "MSI-B350-Tomahawk.ogg",\
 "outputFile" : "MSI-B350-Tomahawk.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "A sight for sore eyes", "until" : "The VRMs"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Best budget board ... maybe", "until" : "The VRMs"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : "actual audio"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "The BIOS", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "", \
-"description" : '''I think I overpaid for this Asrock A320M-DVS.''',\
+"description" : '''Not great, not terrible | ASUS Prime B550M-K''',\
 "links" : '''
 Track: Bliss Of Heaven - SOMM [Audio Library Release]
 Music provided by Audio Library Plus
@@ -91,32 +91,32 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title" : "Best budget board ... maybe",\
 "audio" : {"timestamps" : ("00:00", "00:18.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-breel1.MP4"},\
 })
 
 # this is for the heatsinks segment
 configs["episodes"].append(\
 { "title" : "The VRMs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:30.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-breel2.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "VCORE",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:37.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-"isChapter" : False,\
-})
-
-configs["episodes"].append(\
-{ "title" : "Asus and Asrock side by side",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-VRM.MP4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title" : "SOC topology",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "ASUS-B550M-K-VRM.MP4"},\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
+{ "title" : "Asus and Asrock side by side",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:50.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
@@ -125,7 +125,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "again no heatsinks",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:57" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-breel2.MP4"},\
 "isChapter" : False,\
 })
 
@@ -133,13 +133,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "The DIMM slots",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:12.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "01:12.4"},\
+"video" : {"file" : "ASUS-B550M-K-MemSlots.MP4", "start" : "00:23"},\
 })
 
 configs["episodes"].append(\
 { "title" : "The expansion slots",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:29.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-slots.MP4"},\
 })
 
 # needs video
@@ -147,14 +147,14 @@ configs["episodes"].append(\
 { "title" : "first M.2 slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:43.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-slots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "second M.2 slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:59.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-slots.MP4"},\
 })
 
 configs["episodes"].append(\
