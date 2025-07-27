@@ -160,20 +160,20 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "SATA ports",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:15.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-headersSataUsb3.MP4", "start" : "01:25"},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 configs["episodes"].append(\
 { "title" : "The pin headers",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:26.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-headersSataUsb3.MP4", "start" : "00:06"},\
 }) # audacity
 
 configs["episodes"].append(\
 { "title" : "usb2 usb3 FP1 FP2",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:37.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-headersSataUsb3.MP4"},\
 }) # rear IO, maybe?
 
 
@@ -182,7 +182,7 @@ configs["episodes"].append(\
 { "title" : "speaker port",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:42.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-headersSataUsb3.MP4"},\
 }) # rear IO, maybe?
 
 # needs an arrow overlayed, pointing to the debug LEDs
@@ -190,7 +190,7 @@ configs["episodes"].append(\
 { "title" : "front usb3",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:50.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-headersSataUsb3.MP4"},\
 }) # rear IO, maybe?
 
 
