@@ -90,34 +90,41 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 
 configs["episodes"].append(\
 { "title" : "Best budget board ... maybe",\
-"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00", "00:18.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 # this is for the heatsinks segment
 configs["episodes"].append(\
 { "title" : "The VRMs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:30.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "VCORE",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:37.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
+{ "title" : "Asus and Asrock side by side",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title" : "SOC topology",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:50.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title" : "again no heatsinks",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:57" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
 })
@@ -125,13 +132,13 @@ configs["episodes"].append(\
 # this might need a better shot, when filming the 2 slots GPU
 configs["episodes"].append(\
 { "title" : "The DIMM slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:12.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "01:12.4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "The expansion slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:29.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -139,33 +146,33 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "first M.2 slot",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:43.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "second M.2 slot",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:59.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "SATA ports",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:15.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 configs["episodes"].append(\
 { "title" : "The pin headers",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:26.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # audacity
 
 configs["episodes"].append(\
 { "title" : "usb2 usb3 FP1 FP2",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:37.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # rear IO, maybe?
 
@@ -174,7 +181,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "speaker port",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:42.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # rear IO, maybe?
 
@@ -182,10 +189,9 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "front usb3",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:50.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # rear IO, maybe?
-
 
 
 # must provide some overlays ...
