@@ -239,7 +239,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "The BIOS",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:44.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-TPM.MP4"},\
 })
 
 configs["episodes"].append(\
