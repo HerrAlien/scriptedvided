@@ -5,7 +5,7 @@ configs = { "defaultAudioFile" : "Asus-b550m-k.ogg",\
 "mediaFolder" : "F:\\Videos\\ASUS-B550M-K", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
-"outputFolder" : "F:\\Videos\\ASUS-B550M-Kk\\output", \
+"outputFolder" : "F:\\Videos\\ASUS-B550M-K\\output", \
 "outputFile" : "ASUS-B550M-K.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
