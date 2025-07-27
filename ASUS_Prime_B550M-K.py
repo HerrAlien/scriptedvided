@@ -118,7 +118,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "Asus and Asrock side by side",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:50.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "budget_cards_PrimeB550M-K_A320M-DVS.mp4"},\
 "isChapter" : False,\
 })
 
@@ -212,21 +212,21 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "Audio codec",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:21.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Prime-B550M-K_audioCodec.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "ALC887 was tested before breel with boards",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:28.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ALC897_powered_cards.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "ALC887 tested before breel with audios",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:39.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H-audioTestNoPreamp.mkv"},\
 })
 
 configs["episodes"].append(\
