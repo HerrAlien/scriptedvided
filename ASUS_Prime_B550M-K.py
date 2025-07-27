@@ -170,10 +170,10 @@ configs["episodes"].append(\
 }) # audacity
 
 configs["episodes"].append(\
-{ "title" : "usb2 usb3 FP1 FP2",\
+{ "title" : "usb2 com fp",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:37.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-B550M-K-headersSataUsb3.MP4"},\
+"video" : {"file" : "ASUS-B550M-K-headersSataUsb3.MP4", "start" : "00:37"},\
 }) # rear IO, maybe?
 
 
@@ -182,7 +182,7 @@ configs["episodes"].append(\
 { "title" : "speaker port",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:42.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-B550M-K-headersSataUsb3.MP4"},\
+"video" : {"file" : "ASUS-B550M-K-headersSataUsb3.MP4", "start" : "00:50"},\
 }) # rear IO, maybe?
 
 # needs an arrow overlayed, pointing to the debug LEDs
@@ -190,7 +190,7 @@ configs["episodes"].append(\
 { "title" : "front usb3",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:50.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-B550M-K-headersSataUsb3.MP4"},\
+"video" : {"file" : "ASUS-B550M-K-headersSataUsb3.MP4", "start" : "02:27"},\
 }) # rear IO, maybe?
 
 
@@ -198,14 +198,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "Rear IO",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:01.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-RearIO.MP4"},\
 })
 
 # maybe a side by side here with GA-A320M-H
 configs["episodes"].append(\
 { "title" : "The video out",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:13" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-RearIO.MP4"},\
 })
 
 # maybe a side by side here with GA-A320M-H
@@ -246,14 +246,19 @@ configs["episodes"].append(\
 { "title" : "others did more with less",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:56.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H-CpuCompat.mkv"},\
+"overlay" : { \
+    "text" : ["'GA\-A320M\-H'",\
+              "'Supports Ryzen 1000\-5000 series'",\
+    ]\
+}, \
 })
 
 configs["episodes"].append(\
 { "title" : "CPU compat list",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:06.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Prime-B550M-K-CpuCompatList.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -303,49 +308,49 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:14" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-breel1.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "does have some features but",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:21.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-breel2.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "best used with downdrafts",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:32.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "WraithPrism_Asus_Prime_B550M-K.MP4", "start" : "00:17"},\
 })
 
 configs["episodes"].append(\
 { "title" : "do not use a ryzen 7",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:43.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-powerOn.MP4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title" : "blown mosfets",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:46.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-VRM.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "CPU compat is an issue",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:53" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-UsbWBios.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "Tourist trap",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:01.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-unboxing.MP4" , "start" : "00:10"},\
 })
 
 
@@ -353,7 +358,7 @@ configs["episodes"].append(\
 { "title" : "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:12.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ASUS-B550M-K-LEDs.MP4"},\
 })
 
 scriptedvided.makeVideo(configs)
