@@ -1,12 +1,12 @@
 import scriptedvided
 import sv_ffutils
 
-configs = { "defaultAudioFile" : "MSI-B350-Tomahawk.ogg",\
-"mediaFolder" : "F:\\Videos\\B350 Tomahawk", \
+configs = { "defaultAudioFile" : "Asus-b550m-k.ogg",\
+"mediaFolder" : "F:\\Videos\\ASUS-B550M-K", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
-"outputFolder" : "F:\\Videos\\B350 Tomahawk\\output", \
-"outputFile" : "MSI-B350-Tomahawk.mp4", \
+"outputFolder" : "F:\\Videos\\ASUS-B550M-Kk\\output", \
+"outputFile" : "ASUS-B550M-K.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Best budget board ... maybe", "until" : "The VRMs"}}, \
