@@ -1,7 +1,7 @@
 import scriptedvided
 import sv_ffutils
 
-configs = { "defaultAudioFile" : "Asus-b550m-k.ogg",\
+configs = { "defaultAudioFile" : "Asus-b550m-k_v2.ogg",\
 "mediaFolder" : "F:\\Videos\\ASUS-B550M-K", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
