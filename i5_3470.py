@@ -69,9 +69,16 @@ Free Download / Stream: https://alplus.io/inspired
 #})
 
 configs["episodes"].append(\
-{ "title": "The 2nd gen core i5",\
+{ "title": "The 3rd gen core i5",\
 "audio" : {"timestamps" : ("00:00", "00:15.3"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_i5_2400_barred.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "vs second gen",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "i5_2400_params.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -82,10 +89,17 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Gigasus for IPC",\
+{ "title": "Temps",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:36" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Gigasus_ffwd10.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "i5_2400_params.mkv"},\
+})
+
+configs["episodes"].append(\
+{ "title": "Paste vs solder",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "i5_2400_params.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -93,12 +107,19 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("07:14.6", "07:27.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Custom build'",\
-              "'CPU\: Core i5 2400'",\
-              "'RAM\: 16GB DDR3, 1333MHz, dual channel'",\
+              "'CPU\: Core i5 3470'",\
+              "'RAM\: 16GB DDR3, 1600MHz, dual channel'",\
               "'GPU\: EVGA GTX 970'",\
     ]\
 }, \
 "video" : {"file" : "breel_i7_2600_GA-B75-D3V.mp4"}\
+})
+
+configs["episodes"].append(\
+{ "title": "Gigasus for IPC",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:36" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 
 ####################### end of intro ###############################
@@ -285,38 +306,24 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "80 percent",\
+{ "title": "Lenovh IH61M",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:58.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_i5_2400_i7_2600_barred.mp4"},\
 })
 
 configs["episodes"].append(\
-{ "title": "4 threads - too few",\
+{ "title": "with second gen",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:12.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Discovery_2025_03_15_22_55_07_819.mp4"},\
 })
 
 configs["episodes"].append(\
-{ "title": "older games still fine",\
+{ "title": "with haswell",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:20.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "stock_Overwatch2_gameplay_5770.mp4"},\
-})
-
-configs["episodes"].append(\
-{ "title": "pricing for a combo",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:38.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "kit_i5_2400_olx.mkv"},\
-})
-
-configs["episodes"].append(\
-{ "title": "pricing CPU alone",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:46.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "olx_i5_2400.mkv"},\
 })
 
 configs["episodes"].append(\
