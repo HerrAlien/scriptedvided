@@ -3,7 +3,7 @@ import scriptedvided
 configs = { "defaultAudioFile" : "i5_3470.ogg",\
 "mediaFolder" : "F:\\Videos\\i5_3470", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\i5_3470\\Benchmark_i5_2400_2025.txt",\
+"benchmarkFile" : "F:\\Videos\\i5_3470\\Benchmark_i5_3470.txt",\
 "outputFolder" : "F:\\Videos\\i5_3470\\output", \
 "outputFile" : "i5_3470.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
@@ -119,7 +119,7 @@ configs["episodes"].append(\
 { "title": "Gigasus for IPC",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:21.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 
 ####################### end of intro ###############################
@@ -134,7 +134,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, 30% render scale, low settings", \
     }\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_08_00_31_860-converted.mp4"},\
 })
 
 # needs redone
@@ -238,7 +238,7 @@ configs["episodes"].append(\
         "settings" : "800x600, low settings", \
     }\
 },\
-"video" : {"file" : ""}\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "04:53"}\
 })
 
 configs["episodes"].append(\
@@ -270,13 +270,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:22.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "By itself",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:35" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "overlays_i5_3470.png"}\
@@ -286,7 +286,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Compared with others",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:44.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "00:30"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "ipc_others.png"}\
