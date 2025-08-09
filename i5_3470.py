@@ -214,7 +214,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:28.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1280x720, 50% render scale, low settings", \
     }\
 },\
 })
@@ -235,7 +235,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:27" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "800x600, low settings", \
     }\
 },\
 "video" : {"file" : ""}\
@@ -256,7 +256,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:09.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "960x540, lowest settings", \
+        "settings" : "1280x720, lowest settings", \
     }\
 },\
 })
