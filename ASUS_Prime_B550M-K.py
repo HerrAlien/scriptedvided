@@ -97,34 +97,34 @@ configs["episodes"].append(\
 # this is for the heatsinks segment
 configs["episodes"].append(\
 { "title" : "The VRMs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:30.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("06:14", "06:25.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-B550M-K-breel2.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "VCORE",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:37.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("06:29", "06:32.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-B550M-K-VRM.MP4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title" : "SOC topology",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:41.35" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-B550M-K-VRM.MP4"},\
 "isChapter" : False,\
 })
 
-configs["episodes"].append(\
-{ "title" : "Asus and Asrock side by side",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:50.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "budget_cards_PrimeB550M-K_A320M-DVS.mp4"},\
-"isChapter" : False,\
-})
+#configs["episodes"].append(\
+#{ "title" : "Asus and Grenade side by side",\
+#"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:50.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
+#"video" : {"file" : "budget_cards_PrimeB550M-K_Grenade.mp4"},\
+#"isChapter" : False,\
+#})
 
 configs["episodes"].append(\
 { "title" : "again no heatsinks",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:57" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:50.2", "00:57" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-B550M-K-breel2.MP4"},\
 "isChapter" : False,\
 })
@@ -197,28 +197,28 @@ configs["episodes"].append(\
 # must provide some overlays ...
 configs["episodes"].append(\
 { "title" : "Rear IO",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:01.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("06:41.5", "06:53.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-B550M-K-RearIO.MP4"},\
 })
 
 # maybe a side by side here with GA-A320M-H
 configs["episodes"].append(\
 { "title" : "The video out",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:13" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("03:01.6", "03:13" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-B550M-K-RearIO.MP4"},\
 })
 
 # maybe a side by side here with GA-A320M-H
 configs["episodes"].append(\
 { "title" : "Audio codec",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:21.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("06:54", "07:02.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Prime-B550M-K_audioCodec.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "ALC887 was tested before breel with boards",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:28.2"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("03:21.2", "03:28.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ALC897_powered_cards.mp4"},\
 })
 
@@ -282,12 +282,12 @@ configs["episodes"].append(\
 "video" : {"file" : "ASUS-B550M-K-Fans2_rotated.mp4"},\
 })
 
-configs["episodes"].append(\
-{ "title" : "fan types",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:44.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-B550M-K-Fans_rotated.mp4"},\
-})
+#configs["episodes"].append(\
+#{ "title" : "fan types",\
+#"isChapter" : False,\
+#"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:44.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
+#"video" : {"file" : "ASUS-B550M-K-Fans_rotated.mp4"},\
+#})
 
 configs["episodes"].append(\
 { "title" : "CPU multiplier",\

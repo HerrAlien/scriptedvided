@@ -71,21 +71,21 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "The 3rd gen core i5",\
 "audio" : {"timestamps" : ("00:00", "00:09.1"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_3470.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "vs second gen",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:19.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_3470_2400.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The CPU",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:39.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ark_i5_3470.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -99,7 +99,7 @@ configs["episodes"].append(\
 { "title": "Paste vs solder",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:59" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "TIM_i5_3470.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -302,7 +302,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:56.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_3470.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -316,7 +316,7 @@ configs["episodes"].append(\
 { "title": "with second gen",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:36.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_3470_2400.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -330,7 +330,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:57" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_3470.mp4"},\
 })
 
 
