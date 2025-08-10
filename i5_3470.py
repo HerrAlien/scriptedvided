@@ -92,7 +92,7 @@ configs["episodes"].append(\
 { "title": "Temps",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:50.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_3470.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -309,7 +309,7 @@ configs["episodes"].append(\
 { "title": "Lenovh IH61M",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:21.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Lenovo_IH61M.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -323,7 +323,7 @@ configs["episodes"].append(\
 { "title": "with haswell",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:51.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA_H81_S2V_withCPU.mp4"},\
 })
 
 configs["episodes"].append(\
