@@ -283,10 +283,10 @@ configs["episodes"].append(\
 "video" : "stock_re4demo_phoneCall.mp4", \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1920x1080, balanced preset", \
-    }\
-}, \
+    "text" : ["'Resident Evil 4 \(Remake\)'",\
+              "HD7790 \: LOL",
+              scriptedvided.r6sText('R7 260X, 720p prioritize performance' , 47, 27),\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -314,9 +314,10 @@ configs["episodes"].append(\
 { "title": "Borderlands 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1920x1080, badass settings", \
-    }\
+    "text" : ["'Borderlands 3'",\
+              scriptedvided.r6sText('' , , ),\
+              scriptedvided.r6sText('' , , ),\
+              scriptedvided.r6sText('' , , ),\
 }, \
 })
 
@@ -331,7 +332,28 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Spiritual successor for the 750 Ti",\
+{ "title": "12_0 not a silver bullet",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
+})
+
+configs["episodes"].append(\
+{ "title": "1GB not enough",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
+})
+
+configs["episodes"].append(\
+{ "title": "Pricing",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
+})
+
+configs["episodes"].append(\
+{ "title": "Side by side again",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
