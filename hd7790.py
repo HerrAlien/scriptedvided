@@ -323,7 +323,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900, low settings'       , 45, 36),\
               scriptedvided.r6sText('1280x720, medium settings'    , 43, 32),\
               scriptedvided.r6sText('1280x720, low settings'       , 58, 45),\
-}, \
+]}, \
 })
 
 ####################### end of gaming section ###############################
