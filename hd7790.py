@@ -209,7 +209,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Apex Legends",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:05.5" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("04:43.4", "05:05.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
               scriptedvided.r6sText('1920x1080, low settings' , 50, 38),\
@@ -223,7 +223,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:25.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Doom Eternal'",\
-              "HD7790 \: nope \:\)",
+              "'HD7790 \: nope \:\)'",
               scriptedvided.r6sText('R7 260X, 720p low settings' , 82, 61),\
 ]}, \
 })
