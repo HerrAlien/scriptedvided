@@ -208,17 +208,6 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Far Cry 6 with 260X",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:43.4" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, lowest settings", \
-    }\
-}, \
-"video" : "FarCry6Trial_high.mp4",
-})
-
-configs["episodes"].append(\
 { "title": "Apex Legends",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:05.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
