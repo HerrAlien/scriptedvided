@@ -63,47 +63,48 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "One interesting card",\
 "audio" : {"timestamps" : ("00:00", "00:20.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "barred_breel_HD7790.mp4"},\
 })
 
 # GPU-Z side by side
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:40.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "HD7790_GPUZ_ValleyAndHeaven.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "GPU-Z Just 21_5_1 driver",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:49.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "HD7790_GpuZ_Heaven.mkv"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "side by side with 260X",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:04.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_HD7790_260X.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "260X alone",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:08.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "r7_260x_breel_outside.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:22.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "barred_breel_HD7790_v3.mp4"},\
 )
 
 # same video as for cooling
 configs["episodes"].append(\
 { "title": "Temps",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:29.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "barred_breel_HD7790_v3.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "text" : ["'Temperatures (Heaven)\: 63C (38C delta over ambient)'"]}, \
@@ -214,6 +215,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, lowest settings", \
     }\
 }, \
+"video" : "FarCry6Trial_high.mp4",
 })
 
 configs["episodes"].append(\
@@ -256,6 +258,7 @@ configs["episodes"].append(\
     "image" : {"file" : "R6S_BonaireXT.png"}\
 }, \
 "isChapter" : False,\
+"video" : "stock_RainbowSixSiege_benchmark3.mp4",
 })
 
 configs["episodes"].append(\
@@ -275,6 +278,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Control_BonaireXT.png"}\
 }, \
 "isChapter" : False,\
+"video" : "GTX970_Control_DX11_medium.mp4",
 })
 
 configs["episodes"].append(\
@@ -317,7 +321,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('' , , ),\
               scriptedvided.r6sText('' , , ),\
 ]}, \
-"video" : {"file" : " "}\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "04:53"}\
 })
 
 configs["episodes"].append(\
@@ -338,7 +342,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:25.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "barred_breel_HD7790_v2.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -366,14 +370,14 @@ configs["episodes"].append(\
 { "title": "Side by side again",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:20.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_HD7790_260X.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:28.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "barred_breel_HD7790_v2.mp4"},\
 })
 
 
