@@ -98,7 +98,7 @@ configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:22.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "barred_breel_HD7790_v3.mp4"},\
-)
+})
 
 # same video as for cooling
 configs["episodes"].append(\
