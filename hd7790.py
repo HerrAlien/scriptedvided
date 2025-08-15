@@ -351,21 +351,21 @@ configs["episodes"].append(\
 { "title": "12_0 not a silver bullet",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:33.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "RoboCop-Win64-Shipping_2025_02_24_23_28_48_260.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "1GB not enough",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:49.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_RainbowSixSiege_benchmark3.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:01.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "barred_breel_HD7790_v3.mp4"},\
 })
 
 configs["episodes"].append(\
