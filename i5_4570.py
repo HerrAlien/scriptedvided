@@ -71,26 +71,26 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "The upcoming teenager",\
 "audio" : {"timestamps" : ("00:00", "00:12.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA_H81_S2V_withCPU.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:25.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Ark_i5_4570.mkv", "start" : "00:03"},\
 })
 
 configs["episodes"].append(\
 { "title": "AVX2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:32" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Ark_i5_4570.mkv", "start" : "00:55"},\
 })
 
 # broll with the H81 mobo from GA
 configs["episodes"].append(\
 { "title": "The test system",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""}\
+"video" : {"file" : "GA_H81_S2V_withCPU.mp4"}\
 })
 
 configs["episodes"].append(\
@@ -103,7 +103,7 @@ configs["episodes"].append(\
               "'GPU\: EVGA GTX 970'",\
     ]\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "GA_H81_S2V_withCooler.mp4"},\
 "isChapter" : False,\
 })
 
@@ -293,28 +293,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:10.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA_H81_S2V_withCPU.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pricing OLX vs i7",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:28.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "olx_4thGen_i5_i7.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Z230 footage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:34.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_b351_z230.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:41" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA_H81_S2V_withCPU.mp4"},\
 })
 
 
