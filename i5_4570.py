@@ -307,7 +307,7 @@ configs["episodes"].append(\
 { "title": "Z230 footage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:34.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_b351_z230.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
