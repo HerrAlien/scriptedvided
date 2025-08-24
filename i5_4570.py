@@ -247,7 +247,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:06.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, lowest settings", \
+        "settings" : "960x540, lowest settings", \
     }\
 },\
 })
