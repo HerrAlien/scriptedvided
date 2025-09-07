@@ -90,34 +90,41 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 
 configs["episodes"].append(\
 { "title" : "Only 20 bucks",\
-"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00", "00:11.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 # this is for the heatsinks segment
 configs["episodes"].append(\
 { "title" : "The VRMs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:23.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title" : "The VRMs overview",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "SOC topology",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:37" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title" : "VCORE topology",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:47.05" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title" : "VRM overview no heatsinks",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:59.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
 })
@@ -132,13 +139,13 @@ configs["episodes"].append(\
 # this might need a better shot, when filming the 2 slots GPU
 configs["episodes"].append(\
 { "title" : "The DIMM slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:10.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "The expansion slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:30.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -146,33 +153,33 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "first M.2 slot",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:49.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "pcie 2 x 4",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:58.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "SATA ports",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:13.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 configs["episodes"].append(\
 { "title" : "The pin headers",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:31.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # audacity
 
 configs["episodes"].append(\
 { "title" : "last bottom pins",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:48.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # rear IO, maybe?
 
@@ -180,28 +187,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "EZ debug LEDs",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:57.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # rear IO, maybe?
 
 configs["episodes"].append(\
 { "title" : "JBAT header",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:03.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "JRGB1 header",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:11.55" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "SPI header",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:20.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -209,28 +216,28 @@ configs["episodes"].append(\
 # must provide some overlays ...
 configs["episodes"].append(\
 { "title" : "Rear IO",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:44.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 # maybe a side by side here with GA-A320M-H
 configs["episodes"].append(\
 { "title" : "The video out",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:50.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 # maybe a side by side here with GA-A320M-H
 configs["episodes"].append(\
 { "title" : "Audio codec",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:02.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title" : "actual audio",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ( scriptedvided.nextTS(configs) , "" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ( "end minus legth" , "04:02.5" ), "volume" : 0.001, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
