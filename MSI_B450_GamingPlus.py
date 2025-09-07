@@ -91,41 +91,41 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title" : "Only 20 bucks",\
 "audio" : {"timestamps" : ("00:00", "00:11.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_overview.MP4"},\
 })
 
 # this is for the heatsinks segment
 configs["episodes"].append(\
 { "title" : "The VRMs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:23.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_VRM-ish.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "The VRMs overview",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B450_GamingPlus_VRMs_wBars.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "SOC topology",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:37" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B450_GamingPlus_VRMs_soc.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title" : "VCORE topology",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:47.05" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B450_GamingPlus_VRMs_core.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title" : "VRM overview no heatsinks",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:59.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "B450_GamingPlus_VRMs_wBars.mp4"},\
 "isChapter" : False,\
 })
 
@@ -140,13 +140,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "The DIMM slots",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:10.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_Dimms.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "The expansion slots",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:30.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_slots.MP4"},\
 })
 
 # needs video
@@ -154,33 +154,33 @@ configs["episodes"].append(\
 { "title" : "first M.2 slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:49.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_slots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "pcie 2 x 4",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:58.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_slots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "SATA ports",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:13.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_SATA.MP4"},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 configs["episodes"].append(\
 { "title" : "The pin headers",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:31.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_pins1.MP4"},\
 }) # audacity
 
 configs["episodes"].append(\
 { "title" : "last bottom pins",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:48.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_pins2.MP4"},\
 }) # rear IO, maybe?
 
 
@@ -188,105 +188,104 @@ configs["episodes"].append(\
 { "title" : "EZ debug LEDs",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:57.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_Debug.MP4"},\
 }) # rear IO, maybe?
 
 configs["episodes"].append(\
 { "title" : "JBAT header",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:03.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_pins3.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "JRGB1 header",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:11.55" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_RgbPins2.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "SPI header",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:20.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_SpiPins.MP4"},\
 })
-
 
 # must provide some overlays ...
 configs["episodes"].append(\
 { "title" : "Rear IO",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:44.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_IO2.MP4"},\
 })
 
 # maybe a side by side here with GA-A320M-H
 configs["episodes"].append(\
 { "title" : "The video out",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:50.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_IO.MP4"},\
 })
 
 # maybe a side by side here with GA-A320M-H
 configs["episodes"].append(\
 { "title" : "Audio codec",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:02.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_IO2.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "actual audio",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ( "end minus legth" , "04:02.5" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : ( "03:47" , "04:02.5" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : "B450_GamingPlus_audio.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title" : "The BIOS",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:09.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_BiosMflash_noTilt.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "CPU multiplier",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:19.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_BiosCpuMultiplier_noTilt.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "VCORE setup",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:38" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_BiosCpuVoltage_noTilt.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "DOCP",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:47.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_BiosRAM_noTilt.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "OC profiles",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_BiosOcProfiles_noTilt.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "TPM an REBAR",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:10.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_BiosRebarTpm.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "fan profiles and fan curve",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:25.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_BiosFans_noTilt.mp4"},\
 })
 
 
@@ -294,28 +293,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title" : "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:34.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "Replacement for the Tomahawk",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:48.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MsiB450GamingPlus_VRM-ish.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title" : "Pricing",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "06:03"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:03" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "B450_GamingPlus_olx.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title" : "Bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "06:17"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:17" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "MsiB450GamingPlus_overview.MP4"},\
 })
 
 scriptedvided.makeVideo(configs)
