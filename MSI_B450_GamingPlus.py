@@ -1,11 +1,11 @@
 import scriptedvided
 import sv_ffutils
 
-configs = { "defaultAudioFile" : "MSI-B450-GamingPlus.ogg",\
-"mediaFolder" : "F:\\Videos\\MSI-B450-GamingPlus", \
+configs = { "defaultAudioFile" : "MSI-B450m-GamingPlus.ogg",\
+"mediaFolder" : "F:\\Videos\\B450 Gaming Plus", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
-"outputFolder" : "F:\\Videos\\MSI-B450-GamingPlus\\output", \
+"outputFolder" : "F:\\Videos\\B450 Gaming Plus\\output", \
 "outputFile" : "MSI-B450-GamingPlus.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
