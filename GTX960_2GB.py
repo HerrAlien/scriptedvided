@@ -119,8 +119,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:01" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Cyberpunk 2077'",\
-              scriptedvided.r6sText('1280x720, low settings, no FSR' , , ),\
-              scriptedvided.r6sText('1920x1080, low settings, FSR balanced' , , ),\
+              scriptedvided.r6sText('1280x720, low settings, no FSR' , 44, 30),\
+              scriptedvided.r6sText('1920x1080, low settings, FSR balanced' ,40, 28),\
 ]}, \
 })
 
@@ -128,7 +128,7 @@ configs["episodes"].append(\
 { "title": "CP2077 both cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:09.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "...png"}\
+    "image" : {"file" : "Cyberpunk 2077, 1080p, low settings, FSR balanced.png"}\
 }, \
 "isChapter" : False,\
 "video" : {"file" : ""},
@@ -149,7 +149,7 @@ configs["episodes"].append(\
 { "title": "The Finals both cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:31.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "...png"}\
+    "image" : {"file" : "The Finals, 1280x720, low settings.png"}\
 }, \
 "isChapter" : False,\
 "video" : {"file" : ""},
@@ -170,7 +170,7 @@ configs["episodes"].append(\
 { "title": "Robocop both cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:56" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "...png"}\
+    "image" : {"file" : "Robocop, 1280x720, low settings.png"}\
 }, \
 "isChapter" : False,\
 "video" : {"file" : ""},
@@ -181,9 +181,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:20.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1920x1080, performance mode, FAR view distance' , , ),\
-              scriptedvided.r6sText('1600x900, performance mode, FAR view distance'  , , ),\
-              scriptedvided.r6sText('1280x720, performance mode, FAR view distance'  , , ),\
+              scriptedvided.r6sText('1920x1080, performance mode, FAR view distance' , 174, 119),\
+              scriptedvided.r6sText('1600x900, performance mode, FAR view distance'  , 209, 130),\
+              scriptedvided.r6sText('1280x720, performance mode, FAR view distance'  , 245, 128),\
 ]}, \
 })
 
@@ -201,7 +201,7 @@ configs["episodes"].append(\
 { "title": "Terminator both cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:45.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "...png"}\
+    "image" : {"file" : "Terminator, 1920x1080, epic settings.png"}\
 }, \
 "isChapter" : False,\
 "video" : {"file" : ""},
@@ -212,9 +212,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:10.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Counter-Strike 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1600x900, low settings' , , ),\
-              scriptedvided.r6sText('1280x720, low settings' , , ),\
+              scriptedvided.r6sText('1920x1080, low settings', 171, 95),\
+              scriptedvided.r6sText('1600x900, low settings' , 185, 95),\
+              scriptedvided.r6sText('1280x720, low settings' , 198, 100),\
 ]}, \
 })
 
@@ -223,9 +223,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:25.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Far Cry 6'",\
-              scriptedvided.r6sText('1920x1080, low settings'   , , ),\
-              scriptedvided.r6sText('1600x900, medium settings' , , ),\
-              scriptedvided.r6sText('1280x720, high settings'   , , ),\
+              scriptedvided.r6sText('1920x1080, low settings'   , 40, 34),\
+              scriptedvided.r6sText('1600x900, medium settings' , 37, 32),\
+              scriptedvided.r6sText('1280x720, high settings'   ,41, 34),\
 ]}, \
 })
 
@@ -233,7 +233,7 @@ configs["episodes"].append(\
 { "title": "fc6 both cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:39" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "...png"}\
+    "image" : {"file" : "Far Cry 6, 1920x1080, low settings.png"}\
 }, \
 "isChapter" : False,\
 "video" : {"file" : ""},
@@ -244,9 +244,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:02.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1600x900, low settings' , , ),\
-              scriptedvided.r6sText('1280x720, low settings' , , ),\
+              scriptedvided.r6sText('1920x1080, low settings', 99, 71),\
+              scriptedvided.r6sText('1600x900, low settings' , 122, 90),\
+              scriptedvided.r6sText('1280x720, low settings' , 158, 106),\
 ]}, \
 })
 
@@ -254,7 +254,7 @@ configs["episodes"].append(\
 { "title": "Apex both cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:17.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "...png"}\
+    "image" : {"file" : "Apex Legends, 1920x1080, low settings.png"}\
 }, \
 "isChapter" : False,\
 "video" : {"file" : ""},
@@ -264,17 +264,18 @@ configs["episodes"].append(\
 { "title": "Doom Eternal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:39.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "", \
-    }\
-}, \
+    "text" : ["'Doom Eternal'",\
+              scriptedvided.r6sText('1920x1080, low settings', 57, 43),\
+              scriptedvided.r6sText('1600x900, low settings' , 69, 52),\
+              scriptedvided.r6sText('1280x720, low settings' , 90, 63),\
+]}, \
 })
 
 configs["episodes"].append(\
 { "title": "Doom both cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:52.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "...png"}\
+    "image" : {"file" : "Doom Eternal, 1920x1080, low settings.png"}\
 }, \
 "isChapter" : False,\
 "video" : {"file" : ""},
@@ -286,10 +287,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:23.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', , ),\
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale' , , ),\
-              scriptedvided.r6sText('1920x1080, low settings, 50% render scale' , , ),\
-              scriptedvided.r6sText('1280x720, low settings, 50% render scale'  , , ),\
+              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 56, 43),\
+              scriptedvided.r6sText('1280x720, low settings, 100% render scale' , 112, 78),\
+              scriptedvided.r6sText('1920x1080, low settings, 50% render scale' , 92, 68),\
+              scriptedvided.r6sText('1280x720, low settings, 50% render scale'  , 158, 106),\
 ]}, \
 })
 
@@ -298,9 +299,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:43" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Overwatch 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', , ),\
-              scriptedvided.r6sText('1600x900, low settings' , , ),\
-              scriptedvided.r6sText('1280x720, low settings' , , ),\
+              scriptedvided.r6sText('1920x1080, low settings', 176, 146),\
+              scriptedvided.r6sText('1600x900, low settings' , 232, 195),\
+              scriptedvided.r6sText('1280x720, low settings' , 334, 278),\
 ]}, \
 })
 
@@ -308,7 +309,7 @@ configs["episodes"].append(\
 { "title": "Overwatch 2 both cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:55.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "...png"}\
+    "image" : {"file" : "Overwatch 2, 1920x1080, low settings.png"}\
 }, \
 "isChapter" : False,\
 "video" : {"file" : ""},
@@ -320,8 +321,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:19" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Resident Evil 4 \(Remake\)'",\
-              scriptedvided.r6sText('1600x900, low settings' , , ),\
-              scriptedvided.r6sText('1280x720, low settings' , , ),\
+              scriptedvided.r6sText('1600x900, low settings' , 43, 29),\
+              scriptedvided.r6sText('1280x720, low settings' , 58, 35),\
 ]}, \
 })
 
@@ -329,7 +330,7 @@ configs["episodes"].append(\
 { "title": "RE4 both cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:30.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "...png"}\
+    "image" : {"file" : "Resident Evil 4, 1280x720, prioritize performance, no FSR.png"}\
 }, \
 "isChapter" : False,\
 "video" : {"file" : ""},
@@ -350,8 +351,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:59.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Shadow of the Tomb Raider'",\
-              scriptedvided.r6sText('1920x1080, high settings'  , , ),\
-              scriptedvided.r6sText('1920x1080, medium settings', , ),\
+              scriptedvided.r6sText('1920x1080, high settings'  , 38, 27),\
+              scriptedvided.r6sText('1920x1080, medium settings', 40, 28),\
 ]}, \
 "video" : {"file" : ""}\
 })
@@ -360,7 +361,7 @@ configs["episodes"].append(\
 { "title": "SOTTR both cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:13.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "...png"}\
+    "image" : {"file" : "Shadow of the Tomb Raider, 1920x1080, medium settings.png"}\
 }, \
 "isChapter" : False,\
 "video" : {"file" : ""},
@@ -371,8 +372,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:37.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Borderlands 3'",\
-              scriptedvided.r6sText('1920x1080, low settings'   , , ),\
-              scriptedvided.r6sText('1600x900, medium settings' , , ),\
+              scriptedvided.r6sText('1920x1080, very low settings' , 69, 57),\
+              scriptedvided.r6sText('1920x1080, medium settings'   , 45, 37),\
+              scriptedvided.r6sText('1600x900, high settings'      , 36, 29),\
 ]}, \
 })
 
@@ -380,7 +382,7 @@ configs["episodes"].append(\
 { "title": "BL3 both cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:47.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : "...png"}\
+    "image" : {"file" : "Borderlands 3, 1920x1080, medium settings.png"}\
 }, \
 "isChapter" : False,\
 "video" : {"file" : ""},
@@ -419,7 +421,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "960s and 1050 TIs",\
+{ "title": "1050 TI",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:44.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
