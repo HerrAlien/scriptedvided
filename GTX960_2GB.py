@@ -1,12 +1,12 @@
 import scriptedvided
 
 configs = { "defaultAudioFile" : "GTX960_2GB.ogg",\
-"mediaFolder" : "F:\\Videos\\...", \
+"mediaFolder" : "F:\\Videos\\GTX960_ref", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\...\\....txt",\
-"outputFolder" : "F:\\Videos\\...\\output", \
+"benchmarkFile" : "F:\\Videos\\GTX960_ref\\Benchmark_GTX960_ref.txt",\
+"outputFolder" : "F:\\Videos\\GTX960_ref\\output", \
 "outputFile" : "GTX960_2GB.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "An old aquaintance", "until" : "Marvel Rivals"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Apex both cards"}}, \
@@ -15,7 +15,7 @@ configs = { "defaultAudioFile" : "GTX960_2GB.ogg",\
 ], "volume" : 0.05 },\
 "episodes" : [],\
 "youtube" : {"title" : "", \
-"description" : '''In this one we re-visit the former mining superstar, AMD's RX 580.''',\
+"description" : '''NVidia's GTX 960 gets tested in 2025. Will 2 GB of VRAM be enough to get somewhat playable framerates? How about 4 GB?''',\
 "links" : '''
 Track: Bliss Of Heaven - SOMM [Audio Library Release]
 Music provided by Audio Library Plus
@@ -63,13 +63,13 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "An old aquaintance",\
 "audio" : {"timestamps" : ("00:00", "00:07.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX960_bars.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "All 3 960s",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:23.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX960_addingFirstRef.mp4", "start" : "00:00"},\
 "isChapter" : False,\
 })
 
@@ -77,13 +77,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:34.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX960_reference_GPUZ.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:59" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX960_bars_cooling.mp4"},\
 "overlay" : { \
     "text" : ["'Temperatures (Heaven)\: 78C (54C delta over ambient)'"]}, \
 })
@@ -97,7 +97,7 @@ configs["episodes"].append(\
               "'RAM\: 32GB DDR4 at 3600 MHz, dual channel'",\
     ]\
 }, \
-"video" : {"file" : ""}\
+"video" : {"file" : "test_system_RX580.mp4" }\
 })
 
 ####################### end of intro ###############################
