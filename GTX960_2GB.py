@@ -131,7 +131,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Cyberpunk 2077, 1080p, low settings, FSR balanced.png"}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},
+"video" : {"file" : "Cyberpunk2077_2025_04_03_16_11_14_515-converted.mp4"},
 })
 
 configs["episodes"].append(\
@@ -152,7 +152,7 @@ configs["episodes"].append(\
     "image" : {"file" : "The Finals, 1280x720, low settings.png"}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},
+"video" : {"file" : "Discovery_2025_03_15_22_55_07_819.mp4", "start" : "00:05"},
 })
 
 
@@ -173,7 +173,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Robocop, 1280x720, low settings.png"}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},
+"video" : {"file" : "RoboCop-Win64-Shipping_2025_02_24_23_28_48_260.mp4"},
 })
 
 configs["episodes"].append(\
@@ -204,7 +204,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Terminator, 1920x1080, epic settings.png"}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},
+"video" : {"file" : "Terminator-Win64-Shipping_2024_07_26_22_03_38_031-converted.mp4"},
 })
 
 configs["episodes"].append(\
@@ -236,7 +236,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Far Cry 6, 1920x1080, low settings.png"}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},
+"video" : {"file" : "FarCry6Trial_high.mp4"},
 })
 
 configs["episodes"].append(\
@@ -257,7 +257,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Apex Legends, 1920x1080, low settings.png"}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},
+"video" : {"file" : "r5apex_bot_royale.mp4"},
 })
 
 configs["episodes"].append(\
@@ -278,7 +278,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Doom Eternal, 1920x1080, low settings.png"}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "07:00"},
 })
 
 
@@ -312,7 +312,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Overwatch 2, 1920x1080, low settings.png"}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},
+"video" : {"file" : "stock_Overwatch2_gameplay_5770.mp4", "start" : "01:00"},
 })
 
 configs["episodes"].append(\
@@ -333,7 +333,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Resident Evil 4, 1280x720, prioritize performance, no FSR.png"}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},
+"video" : {"file" : "stock_re4demo_choppyExceptCutscenes.mp4", "start" : "03:00"},
 })
 
 configs["episodes"].append(\
@@ -354,7 +354,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1920x1080, high settings'  , 38, 27),\
               scriptedvided.r6sText('1920x1080, medium settings', 40, 28),\
 ]}, \
-"video" : {"file" : ""}\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "04:53"}\
 })
 
 configs["episodes"].append(\
@@ -364,7 +364,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Shadow of the Tomb Raider, 1920x1080, medium settings.png"}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},
+"video" : {"file" : "rx580_SOTTR_2024_07_27_22_58_17_417-converted.mp4", "start" : "00:00"},
 })
 
 configs["episodes"].append(\
@@ -385,7 +385,7 @@ configs["episodes"].append(\
     "image" : {"file" : "Borderlands 3, 1920x1080, medium settings.png"}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},
+"video" : {"file" : "Borderlands3_2024_05_03_22_58_15_076.mp4"},
 })
 
 
@@ -396,49 +396,42 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:58.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX960_ref_moved.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Fine for esports",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:10.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Fortnite_Win_2025-04-21.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pricing",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:21.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "Pricing 4G",\
-"isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:29.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX960_olx_2GB_4GB.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "1050 TI",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:44.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "broll_GTX1050Ti_outside.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Support ending",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:59.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Maxwell_Pascal_sunset.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:08.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX960_both.mp4"},\
 })
 
 
