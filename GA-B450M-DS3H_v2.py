@@ -129,7 +129,7 @@ configs["episodes"].append(\
 { "title": "PCIEx1 vs RX580",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:15.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4"},\
+"video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4", "start" : "00:16"},\
 })
 
 configs["episodes"].append(\
@@ -157,7 +157,7 @@ configs["episodes"].append(\
 { "title": "SATA vs RX580",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:51.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A320M-H_SataVs2SlotCard.MP4"},\
+"video" : {"file" : "GA-A320M-H_SataVs2SlotCard.MP4", "start" : "00:10"},\
 })
 
 configs["episodes"].append(\
