@@ -273,7 +273,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:15.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-DS3H_overview.MP4"},\ 
+"video" : {"file" : "GA-B450M-DS3H_overview.MP4"},\
 })
 
 configs["episodes"].append(\
