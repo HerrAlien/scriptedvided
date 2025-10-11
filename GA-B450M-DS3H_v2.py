@@ -1,17 +1,17 @@
 import scriptedvided
 import sv_ffutils
 
-configs = { "defaultAudioFile" : "....ogg",\
-"mediaFolder" : "F:\\Videos\\...", \
+configs = { "defaultAudioFile" : "GA-B450M-DS3H.ogg",\
+"mediaFolder" : "F:\\Videos\\GA-B450M-DS3H_v2", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
-"outputFolder" : "F:\\Videos\\...\\output", \
+"outputFolder" : "F:\\Videos\\GA-B450M-DS3H_v2\\output", \
 "outputFile" : "GA-B450M-DS3H_v2.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Is this a good budget B450 board", "until" : "The VRMs"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : "Audio from GA-A320M-H"}}, \
-{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Audio from GA-A320M-H", "until" : "Conclusions"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : "Audio from GA-B450M-DS3H"}}, \
+{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "The BIOS setup utility", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.05 },\
 "episodes" : [],\
@@ -185,7 +185,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Rear IO",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:52" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-DS3H_IO.MP4"},\
+"video" : {"file" : "GA-B450M-DS3H_IoPs2.mp4"},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 configs["episodes"].append(\
@@ -198,14 +198,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The audio ... oh, the audio.",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:19.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_audioIntro.mp4"},\
 }) # maybe use a muted video of Audacity
 
 configs["episodes"].append(\
 { "title": "Audio from GA-B450M-DS3H",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("minus the length of the video", "03:19.7" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : ("03:05.7", "03:19.7" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : "GA-B450M-DS3H_audioSample.mkv"},\
 })
 
 configs["episodes"].append(\
