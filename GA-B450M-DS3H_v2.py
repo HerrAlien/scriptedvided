@@ -202,7 +202,7 @@ configs["episodes"].append(\
 }) # maybe use a muted video of Audacity
 
 configs["episodes"].append(\
-{ "title": "Audio from GA-A320M-H",\
+{ "title": "Audio from GA-B450M-DS3H",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("minus the length of the video", "03:19.7" ), "volume" : 0.001, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
@@ -246,7 +246,7 @@ configs["episodes"].append(\
 { "title": "REBAR and TPM",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:25.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450m-DS3Hv2_BIOS_tpm_rebar.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -280,7 +280,7 @@ configs["episodes"].append(\
 { "title": "Do not try an R9 in it",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:22.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_notR9.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -294,21 +294,21 @@ configs["episodes"].append(\
 { "title": "Dislikes",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:43.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "audio clip video"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:02.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_OLX.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Better boards, worse boards",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:11.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA_AM4_boards_better_worse.mp4"},\
 })
 
 configs["episodes"].append(\
