@@ -76,53 +76,53 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Is this a good budget B450 board",\
 "audio" : {"timestamps" : ("00:00", "00:08.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The VRMs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:20.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_VrmHeatsinks.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - no heatsink",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:24.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_ShowAllPhases.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - core",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:30.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_CorePhases.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - SOC",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:35.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_SocPhases.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - conclusion",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:44.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_VrmHeatsinks.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "DIMM slots, four of them",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:58.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_DIMMs.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:07.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_slots.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -136,21 +136,21 @@ configs["episodes"].append(\
 { "title": "PCIEx4",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:27.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_slots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "M2 slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:38.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_slots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "SATA ports",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:44.75" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_SATA.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -164,28 +164,35 @@ configs["episodes"].append(\
 { "title": "Pin headers 1",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:08.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_pins.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin headers 2",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:24.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_pins2.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin headers RGB",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:34" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_PinsCpuLed.MP4"},\
 })
 
 # too long of a cut ...
 configs["episodes"].append(\
 { "title": "Rear IO",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:52" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "GA-B450M-DS3H_IO.MP4"},\
+}) # maybe an overlay with the DVI-D to HDMI adapter?
+
+configs["episodes"].append(\
+{ "title": "Rear IO 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:04.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_IO2.MP4"},\
+"isChapter" : False,\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 configs["episodes"].append(\
@@ -204,35 +211,35 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The BIOS setup utility",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:26.55" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450m-DS3Hv2_BIOS_easy.MP4"},\
 }) # list of bios
 
 configs["episodes"].append(\
 { "title": "BIOS advanced, CPU freq",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:40.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450m-DS3Hv2_BIOS_CpuMultiplier.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU voltage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:51.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450m-DS3Hv2_BIOS_CpuVoltage.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem profile",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:59.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450m-DS3Hv2_BIOS_Xmp.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem subtimings",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:08.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450m-DS3Hv2_BIOS_MemTimings.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -243,30 +250,30 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Fans profiles",\
+{ "title": "Fans types",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:41.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450m-DS3Hv2_BIOS_FanType.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Fans curve",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:51.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450m-DS3Hv2_BIOS_FanCurve.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "RGB fusion",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:07.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450m-DS3Hv2_BIOS_Rgb1.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:15.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\ 
+"video" : {"file" : "GA-B450M-DS3H_overview.MP4"},\ 
 })
 
 configs["episodes"].append(\
@@ -280,7 +287,7 @@ configs["episodes"].append(\
 { "title": "Good DIMM slots",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:32.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_overview.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -308,7 +315,7 @@ configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:19" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-DS3H_overview.MP4"},\
 })
 
 scriptedvided.makeVideo(configs)
