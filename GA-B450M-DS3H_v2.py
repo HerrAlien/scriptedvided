@@ -129,21 +129,21 @@ configs["episodes"].append(\
 { "title": "PCIEx1 vs RX580",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:15.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "PCIEx4",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:27.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-DS3H_slots.MP4"},\
+"video" : {"file" : "GA-B450M-DS3H_slots_PcieX4.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "M2 slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:38.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-DS3H_slots.MP4"},\
+"video" : {"file" : "GA-B450M-DS3H_slots_M2.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -157,7 +157,7 @@ configs["episodes"].append(\
 { "title": "SATA vs RX580",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:51.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H_SataVs2SlotCard.MP4"},\
 })
 
 configs["episodes"].append(\
