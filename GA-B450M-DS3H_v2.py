@@ -185,7 +185,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Rear IO",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:52" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-DS3H_IoPs2.mp4"},\
+"video" : {"file" : "GA-B450M-DS3H_IoPs2.mp4" , "start" : "00:00"},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 configs["episodes"].append(\
