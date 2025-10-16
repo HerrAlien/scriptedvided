@@ -87,6 +87,8 @@ def getDrawTextCommandFromArray (text, opts):
         
     '''
     
+    # use a boxw=H-borderWidth, and a boxh=stepSize
+    
     transition=":x=if(gt(t\,4)\, "+ str(borderWidth) + "\,\(t-4\)*\(tw + " + str(borderWidth) + "\)/2)"
     
     if (type(text) is type("")):
