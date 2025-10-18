@@ -118,9 +118,9 @@ configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:01" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Cyberpunk 2077'",\
-              scriptedvided.r6sText('1280x720, low settings, no FSR' , 44, 30),\
-              scriptedvided.r6sText('1920x1080, low settings, FSR balanced' ,40, 28),\
+    "text" : ["'Cyberpunk 2077, low settings'",\
+              scriptedvided.r6sText('1280x720, no FSR' , 44, 30),\
+              scriptedvided.r6sText('1920x1080, FSR balanced' ,40, 28),\
 ]}, \
 })
 
@@ -180,10 +180,10 @@ configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:20.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Fortnite'",\
-              scriptedvided.r6sText('1920x1080, performance mode, FAR view distance' , 174, 119),\
-              scriptedvided.r6sText('1600x900, performance mode, FAR view distance'  , 209, 130),\
-              scriptedvided.r6sText('1280x720, performance mode, FAR view distance'  , 245, 128),\
+    "text" : ["'Fortnite, performance mode, FAR view distance'",\
+              scriptedvided.r6sText('1920x1080' , 174, 119),\
+              scriptedvided.r6sText('1600x900'  , 209, 130),\
+              scriptedvided.r6sText('1280x720'  , 245, 128),\
 ]}, \
 })
 
@@ -211,10 +211,10 @@ configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:10.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Counter-Strike 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', 171, 95),\
-              scriptedvided.r6sText('1600x900, low settings' , 185, 95),\
-              scriptedvided.r6sText('1280x720, low settings' , 198, 100),\
+    "text" : ["'Counter-Strike 2, low settings'",\
+              scriptedvided.r6sText('1920x1080', 171, 95),\
+              scriptedvided.r6sText('1600x900' , 185, 95),\
+              scriptedvided.r6sText('1280x720' , 198, 100),\
 ]}, \
 })
 
@@ -243,10 +243,10 @@ configs["episodes"].append(\
 { "title": "Apex Legends",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:02.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Apex Legends'",\
-              scriptedvided.r6sText('1920x1080, low settings', 99, 71),\
-              scriptedvided.r6sText('1600x900, low settings' , 122, 90),\
-              scriptedvided.r6sText('1280x720, low settings' , 158, 106),\
+    "text" : ["'Apex Legends, low settings'",\
+              scriptedvided.r6sText('1920x1080', 99, 71),\
+              scriptedvided.r6sText('1600x900' , 122, 90),\
+              scriptedvided.r6sText('1280x720' , 158, 106),\
 ]}, \
 })
 
@@ -264,10 +264,10 @@ configs["episodes"].append(\
 { "title": "Doom Eternal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:39.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Doom Eternal'",\
-              scriptedvided.r6sText('1920x1080, low settings', 57, 43),\
-              scriptedvided.r6sText('1600x900, low settings' , 69, 52),\
-              scriptedvided.r6sText('1280x720, low settings' , 90, 63),\
+    "text" : ["'Doom Eternal, low settings'",\
+              scriptedvided.r6sText('1920x1080', 57, 43),\
+              scriptedvided.r6sText('1600x900' , 69, 52),\
+              scriptedvided.r6sText('1280x720' , 90, 63),\
 ]}, \
 })
 
@@ -286,11 +286,11 @@ configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:23.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Rainbow Six\: Siege'",\
-              scriptedvided.r6sText('1920x1080, low settings, 100% render scale', 56, 43),\
-              scriptedvided.r6sText('1280x720, low settings, 100% render scale' , 112, 78),\
-              scriptedvided.r6sText('1920x1080, low settings, 50% render scale' , 92, 68),\
-              scriptedvided.r6sText('1280x720, low settings, 50% render scale'  , 158, 106),\
+    "text" : ["'Rainbow Six\: Siege, low settings'",\
+              scriptedvided.r6sText('1920x1080, 100% render scale', 56, 43),\
+              scriptedvided.r6sText('1280x720, 100% render scale' , 112, 78),\
+              scriptedvided.r6sText('1920x1080, 50% render scale' , 92, 68),\
+              scriptedvided.r6sText('1280x720, 50% render scale'  , 158, 106),\
 ]}, \
 })
 
@@ -298,10 +298,10 @@ configs["episodes"].append(\
 { "title": "Overwatch 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:43" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Overwatch 2'",\
-              scriptedvided.r6sText('1920x1080, low settings', 176, 146),\
-              scriptedvided.r6sText('1600x900, low settings' , 232, 195),\
-              scriptedvided.r6sText('1280x720, low settings' , 334, 278),\
+    "text" : ["'Overwatch 2, low settings'",\
+              scriptedvided.r6sText('1920x1080', 176, 146),\
+              scriptedvided.r6sText('1600x900' , 232, 195),\
+              scriptedvided.r6sText('1280x720' , 334, 278),\
 ]}, \
 })
 
@@ -320,9 +320,9 @@ configs["episodes"].append(\
 "video" : "stock_re4demo_phoneCall.mp4", \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:19" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Resident Evil 4 \(Remake\)'",\
-              scriptedvided.r6sText('1600x900, low settings' , 43, 29),\
-              scriptedvided.r6sText('1280x720, low settings' , 58, 35),\
+    "text" : ["'Resident Evil 4 \(Remake\), low settings'",\
+              scriptedvided.r6sText('1600x900' , 43, 29),\
+              scriptedvided.r6sText('1280x720' , 58, 35),\
 ]}, \
 })
 
@@ -416,14 +416,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "1050 TI",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:44.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00.3", "00:15" ),  "volume" : 0.999, "padAudio" : 0.05, "file" : "gtx960_2gb_conclusion.ogg" },\
 "video" : {"file" : "broll_GTX1050Ti_outside.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Support ending",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:59.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("09:44.4", "09:59.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Maxwell_Pascal_sunset.mkv"},\
 })
 

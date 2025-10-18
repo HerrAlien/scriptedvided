@@ -64,7 +64,8 @@ def toInputParams (inputStream):
 
     
 def getDrawTextCommandFromArray (text, opts):
-    textSize = float(sv_utils.dictValue(opts,"fontsize", 48))
+    textSize = float(sv_utils.dictValue(opts,"fontsize", 36))
+    enableAfter = float(sv_utils.dictValue(opts,"enableAfter", 4))
     paramText = ""
     borderWidth = 0.5 * textSize
     boxcolor=sv_utils.dictValue(opts,"boxcolor", "#80000080")
@@ -89,13 +90,13 @@ def getDrawTextCommandFromArray (text, opts):
     
     # use a boxw=H-borderWidth, and a boxh=stepSize
     
-    transition=":x=if(gt(t\,4)\, "+ str(borderWidth) + "\,\(t-4\)*\(tw + " + str(borderWidth) + "\)/2)"
+    transition=":x=0:enable=gt(t\," +str(enableAfter)+ ")"
     
     if (type(text) is type("")):
         paramText = "drawtext=y=H:box=1:boxborderw=" + str(borderWidth) +":boxcolor="+boxcolor+":font=Arial:fontsize=" + str (textSize) + ":fontcolor=" + fontcolor + ":text="+text
         paramText = paramText + transition
     else:
-        lineSpacing = 0.5 * textSize
+        lineSpacing = 0 * textSize
         stepSize = (textSize + 2 * borderWidth + lineSpacing)
         offsetFromBottom = len(text) * stepSize
         step = 0
