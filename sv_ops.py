@@ -86,17 +86,20 @@ def getDrawTextCommandFromArray (text, opts):
         
         
     '''
+    lineSpacing = 0
+    stepSize = (textSize + 2 * borderWidth + lineSpacing)
     
     # use a boxw=H-borderWidth, and a boxh=stepSize
     
-    transition=":x=if(gt(t\,4)\, "+ str(borderWidth) + "\,\(t-4\)*\(tw + " + str(borderWidth) + "\)/2)"
+    #transition=":x=if(gt(t\,4)\, "+ str(borderWidth) + "\,\(t-4\)*\(tw + " + str(borderWidth) + "\)/2)"
+    transition=":x="+ str(borderWidth) + ":enable=gt(t\,4)"
+    #boxparams=":boxcolor="+boxcolor + ":boxw=(w-"+ str(2*borderWidth)+"):boxh="+str(stepSize)
+    boxparams=":boxcolor="+boxcolor+ ":boxborderw="+ str(borderWidth)+ ":boxw=1920-"+ str(2*borderWidth)+":boxh="+str(textSize + lineSpacing)
     
     if (type(text) is type("")):
-        paramText = "drawtext=y=H:box=1:boxborderw=" + str(borderWidth) +":boxcolor="+boxcolor+":font=Arial:fontsize=" + str (textSize) + ":fontcolor=" + fontcolor + ":text="+text
+        paramText = "drawtext=y=H:box=1" + boxparams + ":font=Arial:fontsize=" + str (textSize) + ":fontcolor=" + fontcolor + ":text="+text
         paramText = paramText + transition
     else:
-        lineSpacing = 0.5 * textSize
-        stepSize = (textSize + 2 * borderWidth + lineSpacing)
         offsetFromBottom = len(text) * stepSize
         step = 0
         initialOffset = offsetFromBottom
@@ -110,13 +113,14 @@ def getDrawTextCommandFromArray (text, opts):
             if (step == (len(text) - 1)):
                 iterationEndNode = ""
 
-            paramText = paramText  + iterationStartNode + "drawtext=y=(H+"+str(initialOffset)+")/2-"+ str(offsetFromBottom) +":box=1:boxborderw="+ str(borderWidth) + ":boxcolor="+boxcolor+":font=Arial:fontsize="+ str (textSize) +":fontcolor=" + fontcolor + ":text="+line 
+            paramText = paramText  + iterationStartNode + "drawtext=y=(H+"+str(initialOffset)+")/2-"+ str(offsetFromBottom) +":box=1" + boxparams + ":font=Arial:fontsize="+ str (textSize) +":fontcolor=" + fontcolor + ":text="+line 
             paramText = paramText + transition
             paramText = paramText + iterationEndNode
 
             offsetFromBottom = offsetFromBottom - stepSize
             step=step+1
 
+    print (paramText + "\n\n")
     return paramText
         
 def getScaleCommand(resolutionPair):
