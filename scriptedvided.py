@@ -650,7 +650,7 @@ if __name__ == "__main__":
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
     #print(sv_ffutils.getLengthOfStream ("C:\\Users\\Admin\\Videos\\stock\\jensen_oven.mkv"))
 #    print(getFpsStatsText(73, 32, 27, 80, 27))
-    sv_ops.drawText ("F:\\Videos\\1.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27), "some conclusions", "and some more text"])
+#    sv_ops.drawText ("merged_audio.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27)])
 #     print(sv_ffutils.getResolution ("audio.ogg"))
 #    print(getSuitableVideos ("C:\\Users\\Admin\\Videos\\hd7770", ["fortnite"]))
 #    episode = { "title": "Apex Legends",\
@@ -689,4 +689,4 @@ if __name__ == "__main__":
 #    aliases(None)
 #    sv_ops.rotateVideo("C:\\Users\\Admin\\Videos\\msi_hd7770\\IMG_0059.MOV", 90)
 #    sv_ops.rotateVideo("C:\\Users\\Admin\\Videos\\msi_hd7770\\fan controller, glued in.mp4", 90)
-#    sv_ops.overlayImage("F:\\Videos\\stock\\6500xt_short_rant.mp4", "F:\\Videos\\gta5_vs_ts2\\720_2.png", output="F:\\Videos\\1.mp4")
+    sv_ops.overlayImage("F:\\Videos\\stock\\6500xt_short_rant.mp4", "F:\\Videos\\gta5_vs_ts2\\720_2.png", output="F:\\Videos\\1.mp4")
