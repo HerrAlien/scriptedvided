@@ -650,7 +650,7 @@ if __name__ == "__main__":
 #   {"file":"C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", "start" : -40, "length" : 10}, "appended.mp4")
     #print(sv_ffutils.getLengthOfStream ("C:\\Users\\Admin\\Videos\\stock\\jensen_oven.mkv"))
 #    print(getFpsStatsText(73, 32, 27, 80, 27))
-    sv_ops.drawText ("F:\\Videos\\1.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27), "some conclusions", "and some more text"])
+#    sv_ops.drawText ("F:\\Videos\\1.mp4", ["'Rainbow 6 Siege (720p, low settings, render scale 100\\\%)'", getFpsStatsText(73, 32, 27), "some conclusions", "and some more text"])
 #     print(sv_ffutils.getResolution ("audio.ogg"))
 #    print(getSuitableVideos ("C:\\Users\\Admin\\Videos\\hd7770", ["fortnite"]))
 #    episode = { "title": "Apex Legends",\
