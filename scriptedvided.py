@@ -581,7 +581,7 @@ def aliases(inputName):
         ["Resident Evil 4 (Remake)", "re4demo.exe", "re4demo"],\
         ["PUBG", "TslGame.exe", "TslGame"],\
         ["CS2", "Counter-Strike 2" , "cs2.exe"],\
-        ["The Finals", "Finals" , "Discovery.exe"],\
+        ["The Finals", "Finals" , "Discovery.exe", "Discovery-e.exe"],\
         ["Doom Eternal", "DoomEternal" , "DOOMEternalx64vk.exe" ],\
         ["Fallout 4", "Fallout4" , "Fallout4.exe" ],\
         ["Prey", "Prey.exe" ],\
