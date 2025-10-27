@@ -70,7 +70,7 @@ Free Download / Stream: https://alplus.io/inspired
 #})
 
 configs["episodes"].append(\
-{ "title": "The upcoming teenager",\
+{ "title": "The i7 equivalent Xeon",\
 "audio" : {"timestamps" : ("00:00", ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
@@ -82,30 +82,24 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "AVX2",\
+{ "title": "TDP and cooling",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
+"isChapter" : False,\
 })
 
 # broll with the H81 mobo from GA
 configs["episodes"].append(\
 { "title": "The test system",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "}\
-})
-
-configs["episodes"].append(\
-{ "title": "The actual test system",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Custom build'",\
-              "'CPU\: Core i5 3470'",\
-              "'RAM\: 16GB DDR3, 1600MHz, dual channel'",\
-              "'GPU\: EVGA GTX 970'",\
+    "text" : ["'Z230 workstation'",\
+              "'CPU\: Xeon E3 1241 v3'",\
+              "'RAM\: 32GB DDR3, 1600MHz, dual channel'",\
+              "'GPU\: Radeon RX 570'",\
     ]\
 }, \
 "video" : {"file" : " "},\
-"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -281,7 +275,7 @@ configs["episodes"].append(\
 "video" : {"file" : " "},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : "overlays_i5_4570.png"}\
+    "image" : {"file" : "overlay_e3_1241_v3.png"}\
 }, \
 })
 
@@ -291,7 +285,7 @@ configs["episodes"].append(\
 "video" : {"file" : " "},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : "ipc_others.png"}\
+    "image" : {"file" : "Clock Cycles emphasis.png"}\
 }, \
 })
 
@@ -308,14 +302,21 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Pricing OLX vs i7",\
+{ "title": "Still ok for gaming",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "Z230 footage",\
+{ "title": "Pricing OLX",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
+})
+
+configs["episodes"].append(\
+{ "title": "pricing vs r5 2600",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
