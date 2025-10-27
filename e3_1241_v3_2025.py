@@ -71,19 +71,19 @@ Free Download / Stream: https://alplus.io/inspired
 
 configs["episodes"].append(\
 { "title": "The i7 equivalent Xeon",\
-"audio" : {"timestamps" : ("00:00", ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00", "00:16.1"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "The CPU",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "TDP and cooling",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:38.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "isChapter" : False,\
 })
@@ -91,7 +91,7 @@ configs["episodes"].append(\
 # broll with the H81 mobo from GA
 configs["episodes"].append(\
 { "title": "The test system",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:58.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Z230 workstation'",\
               "'CPU\: Xeon E3 1241 v3'",\
@@ -105,7 +105,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Gigasus for IPC",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:14.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
@@ -115,7 +115,7 @@ configs["episodes"].append(\
 ####################### gaming section ###############################
 configs["episodes"].append(\
 { "title": "Marvel Rivals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:43" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 30% render scale, low settings", \
@@ -126,7 +126,7 @@ configs["episodes"].append(\
 # needs redone
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:10.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1024x768, FSR disabled, low settings", \
@@ -135,8 +135,29 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
+{ "title": "The Finals",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:29.9" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, 50% scale, low settings", \
+    }\
+}, \
+"video" : "Discovery_2025_03_15_22_55_07_819.mp4"\
+})
+
+configs["episodes"].append(\
+{ "title": "Robocop",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:51.9" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, 50% render scale, low settings", \
+    }\
+},\
+})
+
+configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:35" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite, performance mode, FAR view distance'",\
               scriptedvided.r6sText('1280x720'  , 151, 16),\
@@ -145,13 +166,33 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "padAudio" : 0.05 },\
+{ "title": "Terminator: Resistance",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:12.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% scale, low settings", \
     }\
 }, \
+})
+
+configs["episodes"].append(\
+{ "title": "Counter-Strike 2",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+    }\
+}\
+})
+
+configs["episodes"].append(\
+{ "title": "Far Cry 6",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, 50% scale, low settings", \
+    }\
+}\
 })
 
 configs["episodes"].append(\
@@ -174,6 +215,27 @@ configs["episodes"].append(\
 },
 })
 
+
+configs["episodes"].append(\
+{ "title": "Rainbow Six: Siege",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, 50% scale, low settings", \
+    }\
+}, \
+})
+
+configs["episodes"].append(\
+{ "title": "Control",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "960x540, lowest settings", \
+    }\
+},\
+})
+
 configs["episodes"].append(\
 { "title": "Overwatch 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
@@ -185,11 +247,12 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Counter-Strike 2",\
+{ "title": "Resident Evil 4 (Remake)", \
+"video" : "stock_re4demo_phoneCall.mp4", \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "640x480, low settings", \
     }\
 }\
 })
@@ -203,26 +266,6 @@ configs["episodes"].append(\
     }\
 },\
 "video" : "stock_dota2_1080pLow_scale100.mp4"\
-})
-
-configs["episodes"].append(\
-{ "title": "Robocop",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, 50% render scale, low settings", \
-    }\
-},\
-})
-
-configs["episodes"].append(\
-{ "title": "The Finals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, 50% scale, low settings", \
-    }\
-},\
 })
 
 #redo and specify a smoother video
@@ -243,16 +286,6 @@ configs["episodes"].append(\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 100% render scale, lowest settings", \
-    }\
-},\
-})
-
-configs["episodes"].append(\
-{ "title": "Control",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "benchmark" : { \
-        "settings" : "960x540, lowest settings", \
     }\
 },\
 })
