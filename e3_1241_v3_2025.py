@@ -234,6 +234,7 @@ configs["episodes"].append(\
         "settings" : "960x540, lowest settings", \
     }\
 },\
+"video" : {"file" : "rx580_Control_DX11_2024_07_27_22_47_25_351-converted.mp4", "start" : "02:10"},\
 })
 
 configs["episodes"].append(\
