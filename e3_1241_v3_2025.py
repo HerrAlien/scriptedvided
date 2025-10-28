@@ -9,8 +9,8 @@ configs = { "defaultAudioFile" : "e3-1241-v3-2025.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "The i7 equivalent Xeon", "until" : "Marvel Rivals"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Shadow of the Tomb Raider"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Shadow of the Tomb Raider", "until" : "Video rendering test (The GigASUS)"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Far Cry 6"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Far Cry 6", "until" : "Video rendering test (The GigASUS)"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Video rendering test (The GigASUS)", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.038 },\
@@ -72,19 +72,19 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "The i7 equivalent Xeon",\
 "audio" : {"timestamps" : ("00:00", "00:16.1"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Z230_inside_full_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "E3-1241-v3-ARK.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "TDP and cooling",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:38.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Z230_CpuCooling.mp4"},\
 "isChapter" : False,\
 })
 
@@ -99,14 +99,14 @@ configs["episodes"].append(\
               "'GPU\: Radeon RX 570'",\
     ]\
 }, \
-"video" : {"file" : "system_b351_z230.mp4", "start" : "00:00"},\
+"video" : {"file" : "Z230_inside_full_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Gigasus for IPC",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:14.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 
 ####################### end of intro ###############################
@@ -308,7 +308,7 @@ configs["episodes"].append(\
 "video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : "overlay_e3_1241_v3.png"}\
+    "image" : {"file" : "overlays_E3_1241_v3.png"}\
 }, \
 })
 
@@ -331,35 +331,35 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:14.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Z230_inside_full_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Still ok for gaming",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:27" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2025_04_03_22_54_36_904-converted.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pricing OLX",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:40" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "i7-4770-vs-r5-2600-olx_xeonOnly.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "pricing vs r5 2600",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:58" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "i7-4770-vs-r5-2600-olx.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:11" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "system_b351_z230.mp4", "start" : "00:00"},\
 })
 
 
