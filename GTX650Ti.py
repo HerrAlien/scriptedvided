@@ -155,9 +155,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite, performance mode, FAR view distance'",\
-              scriptedvided.r6sText('1920x1080' , , ),\
-              scriptedvided.r6sText('1600x900'  , , ),\
-              scriptedvided.r6sText('1280x720'  , , ),\
+              scriptedvided.r6sText('1920x1080' , 81, 65),\
+              scriptedvided.r6sText('1600x900'  , 103 , 78),\
+              scriptedvided.r6sText('1280x720'  , 132, 92),\
 ]}, \
 })
 
@@ -166,8 +166,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Terminator\: Resistance'",\
-              scriptedvided.r6sText('1920x1080, low settings'    , , ),\
-              scriptedvided.r6sText('1920x1080, medium settings' , , ),\
+              scriptedvided.r6sText('1920x1080, low settings'    , 47, 36 ),\
+              scriptedvided.r6sText('1920x1080, medium settings' , 38, 29),\
 ]}, \
 })
 
@@ -185,9 +185,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Counter-Strike 2, low settings'",\
-              scriptedvided.r6sText('1920x1080' , , ),\
-              scriptedvided.r6sText('1600x900'  , , ),\
-              scriptedvided.r6sText('1280x720'  , , ),\
+              scriptedvided.r6sText('1920x1080' , 67, 49),\
+              scriptedvided.r6sText('1600x900'  , 78, 55),\
+              scriptedvided.r6sText('1280x720'  , 95, 66),\
 ]}, \
 })
 
@@ -223,9 +223,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Overwatch 2, low settings'",\
-              scriptedvided.r6sText('' , , ),\
-              scriptedvided.r6sText('' , , ),\
-              scriptedvided.r6sText('' , , ),\
+              scriptedvided.r6sText('1920x1080' , 86, 70),\
+              scriptedvided.r6sText('1600x900'  , 117, 97),\
+              scriptedvided.r6sText('1280x720'  , 167, 139),\
 ]}, \
 })
 
@@ -274,8 +274,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Borderlands 3, very low settings'",\
-              scriptedvided.r6sText('' , , ),\
-              scriptedvided.r6sText('' , , ),\
+              scriptedvided.r6sText('1600x900' , 40, 32),\
+              scriptedvided.r6sText('1280x720' , 51, 35),\
 ]}, \
 })
 
