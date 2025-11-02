@@ -154,7 +154,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('Radeon HD 7770'      , 20, 12),\
 ]}, \
 "isChapter" : False,\
-"video" : {"file" : "Cyberpunk2077_2025_04_06_23_01_24_280-converted.mp4" : "start" : "02:12"},\
+"video" : {"file" : "Cyberpunk2077_2025_04_06_23_01_24_280-converted.mp4" , "start" : "02:12"},\
 })
 
 configs["episodes"].append(\
