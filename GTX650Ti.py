@@ -85,7 +85,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GPU - counterparts",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "sideBySide_HD7790_R7_260.mp4"},\
 "isChapter" : False,\
 })
 
@@ -148,7 +148,7 @@ configs["episodes"].append(\
     "image" : {"file" : " "}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "Cyberpunk2077_2025_04_06_23_01_24_280-converted.mp4" : "start" : "02:12"},\
 })
 
 configs["episodes"].append(\
@@ -169,7 +169,7 @@ configs["episodes"].append(\
     "image" : {"file" : " "}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "Fortnite_Win_2025-04-21.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -188,7 +188,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "Terminator-Win64-Shipping_2024_07_20_08_16_41_274-converted.mp4", "start" : "02:12"},\
 "isChapter" : False,\
 })
 
@@ -209,7 +209,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_CS2_CT_R7_260X.mp4"},\
 "isChapter" : False,\
 })
 
@@ -230,7 +230,7 @@ configs["episodes"].append(\
     "image" : {"file" : " "}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "02:03"},\
 })
 
 configs["episodes"].append(\
@@ -267,7 +267,7 @@ configs["episodes"].append(\
     "image" : {"file" : " "}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_Overwatch2_gameplay.mp4", "start" : "01:50"},\
 })
 
 configs["episodes"].append(\
@@ -288,7 +288,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, lowest settings", \
     }\
 }, \
-"video" : {"file" : " "}\
+"video" : {"file" : "SOTTR_gaming_highest.mp4"}\
 })
 
 configs["episodes"].append(\
@@ -298,7 +298,7 @@ configs["episodes"].append(\
     "image" : {"file" : " "}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : " "},
+"video" : {"file" : "SOTTR_gaming_highest.mp4"}\
 })
 
 configs["episodes"].append(\
@@ -318,7 +318,7 @@ configs["episodes"].append(\
     "image" : {"file" : " "}\
 }, \
 "isChapter" : False,\
-"video" : {"file" : ""},\
+"video" : {"file" : "Borderlands3_2024_05_03_22_58_15_076.mp4"},\
 })
 
 
