@@ -63,21 +63,21 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "50 Ti - cards that will not die",\
 "audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_MSI_GTX650Ti.mp4"},\
 })
 
 # GPU-Z side by side
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "MSI-GTX-650-Ti_GPUZ.mkv"},\
 })
 
 # GPU-Z side by side
 configs["episodes"].append(\
 { "title": "The GPU - dx11",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Fortnite_Win_2025-04-21.mkv"},\
 "isChapter" : False,\
 })
 
@@ -93,14 +93,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GPU - HD7770",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_MSI_GTX650Ti_HD7770.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_MSI_GTX650Ti.mp4"},\
 "overlay" : { \
     "text" : ["'Temperatures (Valley)\: 57C (34C delta over ambient)'"]}, \
 })
@@ -121,7 +121,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Games failing to launch",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "MSI_GTX650Ti_VRM_barred.mp4"},\
 "isChapter" : False,\
 })
 
@@ -148,6 +148,7 @@ configs["episodes"].append(\
     "image" : {"file" : " "}\
 }, \
 "isChapter" : False,\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
@@ -159,6 +160,16 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900'  , 103 , 78),\
               scriptedvided.r6sText('1280x720'  , 132, 92),\
 ]}, \
+})
+
+configs["episodes"].append(\
+{ "title": "Fortnite both cards",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "image" : {"file" : " "}\
+}, \
+"isChapter" : False,\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
@@ -177,6 +188,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
+"video" : {"file" : ""},\
 "isChapter" : False,\
 })
 
@@ -189,6 +201,16 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1600x900'  , 78, 55),\
               scriptedvided.r6sText('1280x720'  , 95, 66),\
 ]}, \
+})
+
+configs["episodes"].append(\
+{ "title": "CS2 both cards",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "image" : {"file" : " "}\
+}, \
+"video" : {"file" : ""},\
+"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -208,13 +230,22 @@ configs["episodes"].append(\
     "image" : {"file" : " "}\
 }, \
 "isChapter" : False,\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : ""}\
+}, \
+})
+
+configs["episodes"].append(\
+{ "title": "Control",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "image" : {"file" : ""}\
 }, \
 })
 
@@ -236,6 +267,7 @@ configs["episodes"].append(\
     "image" : {"file" : " "}\
 }, \
 "isChapter" : False,\
+"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
@@ -286,6 +318,7 @@ configs["episodes"].append(\
     "image" : {"file" : " "}\
 }, \
 "isChapter" : False,\
+"video" : {"file" : ""},\
 })
 
 
