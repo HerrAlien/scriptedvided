@@ -1,11 +1,11 @@
 import scriptedvided
 import sv_ffutils
 
-configs = { "defaultAudioFile" : ".ogg",\
-"mediaFolder" : "F:\\Videos\\...", \
+configs = { "defaultAudioFile" : "GA-B450M-Aorus-Elite-V2.ogg",\
+"mediaFolder" : "F:\\Videos\\GA-B450M-Aorus-Elite-V2", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
-"outputFolder" : "F:\\Videos\\...\\output", \
+"outputFolder" : "F:\\Videos\\GA-B450M-Aorus-Elite-V2\\output", \
 "outputFile" : "GA-B450M-AorusElite.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
