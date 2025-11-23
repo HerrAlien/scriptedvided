@@ -76,13 +76,13 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "This has to be good",\
 "audio" : {"timestamps" : ("00:00", "00:12.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_Overall.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The VRMs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:22.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_VRM.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -110,7 +110,7 @@ configs["episodes"].append(\
 { "title": "VRMs - overview",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:07.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_VRM.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -124,69 +124,69 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Four good DIMM slots",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_DIMMs.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:52.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_Slots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "M2 slots",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:07" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_Slots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "SATA ports",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:23.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_SATA.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin headers 1, up to com",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:50.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_Pins1.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin headers 2, from com",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:26.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_Pins2.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin headers RGB, top",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:36" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_RgbLed1.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin headers RGB, next to CPU",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:46.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_RgbLED2.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Debug LEDs",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:07" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_DebugLEDs.MP4"},\
 })
 
 # too long of a cut ...
 configs["episodes"].append(\
 { "title": "Rear IO",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:27.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_IO.MP4"},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 # breel with rear IO and side by side the audio in Audacity
@@ -214,77 +214,77 @@ configs["episodes"].append(\
 { "title": "BIOS - EZ mode",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:14.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_Easy.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "BIOS advanced, CPU freq",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:25.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_CpuMultiplier.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU voltage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:43.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_CpuVoltage.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem profile",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:52" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_XMP.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem subtimings",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:07.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_MemFreqTimings.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "REBAR and TPM",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:25" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_TpmAbove4G.MP4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "Fans types",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:31.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_FanType.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Fans curve",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:40.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_FanCurve.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "RGB fusion",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:54.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_Rgb1.MP4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "RGB fusion - color selection",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:00.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_Rgb1.MP4", "start" : "00:14"},\
 })
 
 # likes
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:15" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_Overall.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -298,7 +298,7 @@ configs["episodes"].append(\
 { "title": "dislikes - heatsinks and pins",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:45.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_heatsinkSecured.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -312,14 +312,14 @@ configs["episodes"].append(\
 { "title": "People might like it",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:14.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_Overall.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:31.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_Overall.MP4"},\
 })
 
 scriptedvided.makeVideo(configs)
