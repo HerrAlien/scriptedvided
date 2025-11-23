@@ -89,21 +89,21 @@ configs["episodes"].append(\
 { "title": "VRMs - boardview, core",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:36" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-AorusElite_BViewVrmVcore.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - boardview, soc",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:42" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-AorusElite_BViewVrmSoc.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - boardview, advertising",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:50.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-AorusEliteV2_8+8Phases.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -117,7 +117,7 @@ configs["episodes"].append(\
 { "title": "VRMs - ESP, boarview and mobo",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:16.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-AorusEliteV2-12VEps.mp4"},\
 })
 
 
@@ -193,21 +193,21 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The Gigabyte microphone input",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:37.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-AorusEliteV2_AudioIoAndClip.mp4"},\
 }) # maybe use a muted video of Audacity
 
 configs["episodes"].append(\
 { "title": "Audio from GA-B450M-AorusElite",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("04:27.6", "04:37.6" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-AorusEliteV2_AudioSample.mkv", "start" : "03:00"},\
 })
 
 # EC spi chip first
 configs["episodes"].append(\
 { "title": "The BIOS setup utility",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-AorusEliteV2_EcChip.mp4"},\
 }) # list of bios
 
 configs["episodes"].append(\
@@ -291,7 +291,7 @@ configs["episodes"].append(\
 { "title": "dislikes",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:27.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-AorusEliteV2-12VEps.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -305,7 +305,7 @@ configs["episodes"].append(\
 { "title": "Harrowing bios update",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:05.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B450M-AorusEliteV2_BiosUpdateProcess.mkv"},\
 })
 
 configs["episodes"].append(\
