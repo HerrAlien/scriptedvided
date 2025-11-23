@@ -155,7 +155,14 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Pin headers 2, from com",\
+{ "title": "Pin headers 2, com USBs",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:09.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "Aorus-B450-Elite_Pins2.MP4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "Pin headers 3, FP, cmos",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:26.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Aorus-B450-Elite_Pins2.MP4"},\
