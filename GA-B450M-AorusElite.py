@@ -200,7 +200,7 @@ configs["episodes"].append(\
 { "title": "Audio from GA-B450M-AorusElite",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("04:27.6", "04:37.6" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-AorusEliteV2_AudioSample.mkv", "start" : "03:00"},\
+"video" : {"file" : "GA-B450M-AorusEliteV2_AudioSample.mp4", "start" : "00:03"},\
 })
 
 # EC spi chip first
