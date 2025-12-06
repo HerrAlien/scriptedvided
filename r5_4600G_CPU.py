@@ -3,7 +3,7 @@ import scriptedvided
 configs = { "defaultAudioFile" : "",\
 "mediaFolder" : "F:\\Videos\\Ryzen5_4600G", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\Ryzen5_4600G\\Benchmark_e3_1241_v3_2025.txt",\
+"benchmarkFile" : "F:\\Videos\\Ryzen5_4600G\\Benchmark_R5_4600G_cpu.txt",\
 "outputFolder" : "F:\\Videos\\Ryzen5_4600G\\output_cpu", \
 "outputFile" : "Ryzen5_4600G_cpu.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
