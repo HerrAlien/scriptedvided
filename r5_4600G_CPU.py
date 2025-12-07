@@ -135,7 +135,7 @@ configs["episodes"].append(\
               "'GPU\: Radeon RX 580'",\
     ]\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R5_2400g_platform.mp4" and "case_final.mp4"},\
 })
 
 ####################### end of intro ###############################
@@ -156,9 +156,9 @@ configs["episodes"].append(\
 { "title": "Marvel Rivals both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:58.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "Marvel Rivals, 1280x720, 50% scale, low settings.png"}\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_07_57_44_978-converted.mp4"},\
 "isChapter" : False,\
 })
 
@@ -208,9 +208,9 @@ configs["episodes"].append(\
 { "title": "Apex both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:51.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "Apex Legends, 1280x720, low settings.png"}\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "r5apex_bot_royale.mp4"},\
 "isChapter" : False,\
 })
 
@@ -229,9 +229,9 @@ configs["episodes"].append(\
 { "title": "Overwatch both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:26" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "Overwatch 2, 1280x720, low settings.png"}\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_Overwatch2_gameplay.mp4"},\
 "isChapter" : False,\
 })
 
@@ -262,9 +262,9 @@ configs["episodes"].append(\
 { "title": "DOTA2 both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:20.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "DOTA2, 1920x1080, low settings.png"}\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_dota2_1080pLow_scale100.mp4"},\
 "isChapter" : False,\
 })
 
@@ -299,7 +299,7 @@ configs["episodes"].append(\
         "settings" : "800x600, low settings", \
     }\
 },\
-"video" : {"file" : ""}\
+"video" : {"file" : "SOTTR_gaming_highest.mp4"}\
 })
 
 configs["episodes"].append(\
@@ -320,7 +320,7 @@ configs["episodes"].append(\
         "settings" : "960x540, lowest settings", \
     }\
 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX970_Control_DX11_medium.mp4"},\
 })
 
 
@@ -367,7 +367,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:45.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "Sum of FPS.png"}\
 }, \
 })
 
