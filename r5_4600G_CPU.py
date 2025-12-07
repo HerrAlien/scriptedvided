@@ -177,10 +177,10 @@ configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:47" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Fortnite, performance mode, FAR view distance'",\
-              scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
-]}, \
+    "benchmark" : { \
+        "settings" : "1280x720, performance mode", \
+    }\
+}, \
 })
 
 
@@ -296,7 +296,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:18.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "800x600, lowest settings", \
+        "settings" : "800x600, low settings", \
     }\
 },\
 "video" : {"file" : ""}\
