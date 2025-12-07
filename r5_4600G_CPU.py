@@ -72,7 +72,7 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "Not sure about them APUs",\
 "audio" : {"timestamps" : ("00:00", "00:16.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R5_4600G_CpuAlone_barred.mp4"},\
 })
 
 # focus on PCIE lanes
@@ -99,14 +99,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "L3 cache gaming footage",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:18.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5apex_bot_royale.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Testing - cs2 low res footage",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_CS2_CT_R7_260X.mp4"},\
 "isChapter" : False,\
 })
 
@@ -114,13 +114,13 @@ configs["episodes"].append(\
 { "title": "Gigasus for IPC",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:48.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "comparisons with 3600",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:57.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5_4600G_3600.mp4"},\
 "isChapter" : False,\
 })
 
@@ -181,6 +181,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, performance mode", \
     }\
 }, \
+"video" : {"file" : "FortniteClient-Win64-Shipping_2025_12_01_15_55_26_661.mp4"}\
 })
 
 
@@ -333,13 +334,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:07.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "By itself",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:20.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : ""}\
@@ -349,7 +350,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Compared with others",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:33" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "00:30"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : ""}\
@@ -365,7 +366,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:45.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5apex_bot_royale.mp4"},\
 "overlay" : { \
     "image" : {"file" : "Sum of FPS.png"}\
 }, \
@@ -375,21 +376,21 @@ configs["episodes"].append(\
 { "title": "space is a premium",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:54.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R5_4600G_inBox_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "is the IGPU good enough",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:10.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R5_4600G_opened_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:15.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R5_4600G_CpuAlone_barred.mp4"},\
 })
 
 
