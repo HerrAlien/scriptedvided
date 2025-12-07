@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "",\
+configs = { "defaultAudioFile" : "R5_4600G_CPU.ogg",\
 "mediaFolder" : "F:\\Videos\\Ryzen5_4600G", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "F:\\Videos\\Ryzen5_4600G\\Benchmark_R5_4600G_cpu.txt",\
