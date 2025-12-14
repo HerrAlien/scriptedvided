@@ -130,7 +130,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_08_00_31_860-converted.mp4"},\
 "isChapter" : False,\
 })
 
@@ -151,7 +151,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "Cyberpunk2077_2025_04_03_16_39_57_810-converted.mp4"},\
 "isChapter" : False,\
 })
 
@@ -172,7 +172,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "rx580_Discovery_2024_07_26_23_03_56_417-converted.mp4"},\
 "isChapter" : False,\
 })
 
@@ -193,7 +193,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "RoboCop-Win64-Shipping_2025_02_24_23_18_20_139.mp4"},\
 "isChapter" : False,\
 })
 
@@ -205,7 +205,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, performance mode", \
     }\
 }, \
-"video" : {"file" : " "}\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2025_12_01_15_55_26_661.mp4"}\
 })
 
 configs["episodes"].append(\
@@ -214,7 +214,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2025_12_01_15_55_26_661.mp4"},\
 "isChapter" : False,\
 })
 
@@ -234,7 +234,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "Terminator-Win64-Shipping_2024_07_21_01_07_50_759-converted.mp4"},\
 "isChapter" : False,\
 })
 
@@ -254,7 +254,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_cs2_R9_270_ct.mp4"},\
 "isChapter" : False,\
 })
 
@@ -275,7 +275,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_FarCry6_benchmark.mp4"},\
 "isChapter" : False,\
 })
 
@@ -295,7 +295,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "r5apex_bot_royale.mp4"},\
 "isChapter" : False,\
 })
 
@@ -315,7 +315,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "12:00"},\
 "isChapter" : False,\
 })
 
@@ -336,7 +336,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_RainbowSixSiege_benchmark3.mp4"},\
 "isChapter" : False,\
 })
 
@@ -358,7 +358,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "GTX970_Control_DX11_medium.mp4"},\
 "isChapter" : False,\
 })
 
@@ -379,7 +379,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_Overwatch2_gameplay_5770.mp4"},\
 "isChapter" : False,\
 })
 
@@ -399,7 +399,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "rx570_re4demo_balanced.mp4"},\
 "isChapter" : False,\
 })
 
@@ -422,7 +422,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_dota2_1080pLow_scale100.mp4"},\
 "isChapter" : False,\
 })
 
@@ -444,7 +444,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "SOTTR_gaming_highest.mp4"},\
 "isChapter" : False,\
 })
 
@@ -464,7 +464,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : " "}\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "Borderlands3_2024_05_03_22_37_22_347.mp4"},\
 "isChapter" : False,\
 })
 
