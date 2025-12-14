@@ -8,7 +8,7 @@ configs = { "defaultAudioFile" : "R5_4600G_Vega7.ogg",\
 "outputFile" : "Ryzen5_4600G_Vega7.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Not sure about them APUs", "until" : "Marvel Rivals"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Vega 7 better be worth it", "until" : "Marvel Rivals"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "DOTA2 both"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "DOTA2 both", "until" : "Video rendering test (The GigASUS)"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Video rendering test (The GigASUS)", "until" : "Conclusions"}}, \
@@ -70,14 +70,14 @@ Free Download / Stream: https://alplus.io/inspired
 #})
 
 configs["episodes"].append(\
-{ "title": "Not sure about them APUs",\
-"audio" : {"timestamps" : ("00:00", "00:16.9"), "volume" : 0.999, "padAudio" : 0.05 },\
+{ "title": "Vega 7 better be worth it",\
+"audio" : {"timestamps" : ("00:00", ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_R5_4600G_CpuAlone_barred.mp4"},\
 })
 
-# focus on PCIE lanes
+# GPU-Z
 configs["episodes"].append(\
-{ "title": "The CPU",\
+{ "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:46.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "r5_4600G_3600_TPU_Lanes.mkv"},\
 "overlay" : { \
@@ -86,7 +86,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "L3 cache compared to 3600",\
+{ "title": "IGPU price",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:56.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "r5_4600G_3600_TPU_Cache.mkv"},\
 "overlay" : { \
@@ -96,37 +96,9 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "TDP compared to 3600",\
+{ "title": "DGPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:03.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "R5_4600G_TechPowerup.mkv"},\
-"isChapter" : False,\
-})
-
-configs["episodes"].append(\
-{ "title": "L3 cache gaming footage",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:18.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "r5apex_bot_royale.mp4"},\
-"isChapter" : False,\
-})
-
-configs["episodes"].append(\
-{ "title": "Testing - cs2 low res footage",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "stock_CS2_CT_R7_260X.mp4"},\
-"isChapter" : False,\
-})
-
-configs["episodes"].append(\
-{ "title": "Gigasus for IPC",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:48.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Gigasus_ffwd10.mp4"},\
-})
-
-configs["episodes"].append(\
-{ "title": "comparisons with 3600",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:57.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "r5_4600G_3600.mp4"},\
 "isChapter" : False,\
 })
 
@@ -525,7 +497,21 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "is the IGPU good enough",\
+{ "title": "not for full towers",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:10.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "breel_R5_4600G_opened_barred.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "sell the DGPU",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:10.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "breel_R5_4600G_opened_barred.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "DGPU better option",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:10.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_R5_4600G_opened_barred.mp4"},\
