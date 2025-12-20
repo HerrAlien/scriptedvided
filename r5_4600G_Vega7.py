@@ -128,7 +128,7 @@ configs["episodes"].append(\
 { "title": "Marvel Rivals both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Marvel Rivals, 1280x720, 100% scale, low settings.png"}\
 }, \
 "video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_08_00_31_860-converted.mp4"},\
 "isChapter" : False,\
@@ -149,7 +149,7 @@ configs["episodes"].append(\
 { "title": "Cyberpunk 2077 both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Cyberpunk 2077, 1280x720, low settings.png"}\
 }, \
 "video" : {"file" : "Cyberpunk2077_2025_04_03_16_39_57_810-converted.mp4"},\
 "isChapter" : False,\
@@ -160,7 +160,7 @@ configs["episodes"].append(\
 { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - The Finals, 1280x720, low settings.png"}\
 }, \
 })
 
@@ -179,7 +179,7 @@ configs["episodes"].append(\
 { "title": "Robocop both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Robocop, 1280x720, low settings.png"}\
 }, \
 "video" : {"file" : "RoboCop-Win64-Shipping_2025_02_24_23_18_20_139.mp4"},\
 "isChapter" : False,\
@@ -201,7 +201,7 @@ configs["episodes"].append(\
 { "title": "Fortnite both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Fortnite, 1920x1080, performance mode.png"}\
 }, \
 "video" : {"file" : "FortniteClient-Win64-Shipping_2025_12_01_15_55_26_661.mp4"},\
 "isChapter" : False,\
@@ -222,7 +222,7 @@ configs["episodes"].append(\
 { "title": "Terminator both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Terminator, 1920x1080, low settings.png"}\
 }, \
 "video" : {"file" : "Terminator-Win64-Shipping_2024_07_21_01_07_50_759-converted.mp4"},\
 "isChapter" : False,\
@@ -243,7 +243,7 @@ configs["episodes"].append(\
 { "title": "CS2 both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Counter-Strike 2, 1920x1080, low settings.png"}\
 }, \
 "video" : {"file" : "stock_cs2_R9_270_ct.mp4"},\
 "isChapter" : False,\
@@ -264,7 +264,7 @@ configs["episodes"].append(\
 { "title": "FC6 both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Far Cry 6, 1280x720, low settings.png"}\
 }, \
 "video" : {"file" : "stock_FarCry6_benchmark.mp4"},\
 "isChapter" : False,\
@@ -285,7 +285,7 @@ configs["episodes"].append(\
 { "title": "Apex both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Apex Legends, 1920x1080, low settings.png"}\
 }, \
 "video" : {"file" : "r5apex_bot_royale.mp4"},\
 "isChapter" : False,\
@@ -296,7 +296,7 @@ configs["episodes"].append(\
 { "title": "Doom",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Doom Eternal, 1280x720, low settings.png"}\
 }, \
 })
 
@@ -316,7 +316,7 @@ configs["episodes"].append(\
 { "title": "r6s both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Rainbow 6_ Siege, 1920x1080, low settings.png"}\
 }, \
 "video" : {"file" : "stock_RainbowSixSiege_benchmark3.mp4"},\
 "isChapter" : False,\
@@ -327,7 +327,7 @@ configs["episodes"].append(\
 { "title": "Control",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Control, 1280x720, lowest settings.png"}\
 }, \
 })
 
@@ -346,7 +346,7 @@ configs["episodes"].append(\
 { "title": "Overwatch both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Overwatch 2, 1920x1080, low settings.png"}\
 }, \
 "video" : {"file" : "stock_Overwatch2_gameplay_5770.mp4"},\
 "isChapter" : False,\
@@ -357,7 +357,7 @@ configs["episodes"].append(\
 { "title": "RE4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Resident Evil 4, 1280x720, low settings.png"}\
 }, \
 })
 
@@ -366,7 +366,7 @@ configs["episodes"].append(\
 { "title": "DOTA 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - DOTA2, 1920x1080, low settings.png"}\
 }, \
 "video" : "stock_dota2_1080pLow_scale100.mp4"\
 })
@@ -389,7 +389,7 @@ configs["episodes"].append(\
 { "title": "SOTTR both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Shadow of the Tomb Raider, 1920x1080, lowest settings.png"}\
 }, \
 "video" : {"file" : "SOTTR_gaming_highest.mp4"},\
 "isChapter" : False,\
@@ -410,7 +410,7 @@ configs["episodes"].append(\
 { "title": "BL3 both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - Borderlands 3, 1920x1080, very low settings.png"}\
 }, \
 "video" : {"file" : "Borderlands3_2024_05_03_22_37_22_347.mp4"},\
 "isChapter" : False,\
@@ -427,7 +427,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "Vega7 - SUM of all FPS.png"}\
 }, \
 })
 
