@@ -71,27 +71,27 @@ Free Download / Stream: https://alplus.io/inspired
 
 configs["episodes"].append(\
 { "title": "Vega 7 better be worth it",\
-"audio" : {"timestamps" : ("00:00", ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00", "00:10.5"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 # GPU-Z
 configs["episodes"].append(\
 { "title": "The GPU",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "IGPU price",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:41.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "DGPUs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:59.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "isChapter" : False,\
 })
@@ -99,7 +99,7 @@ configs["episodes"].append(\
 # broll with the H81 mobo from GA
 configs["episodes"].append(\
 { "title": "The test system",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:13.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Custom PC'",\
               "'CPU\: Ryzen 5 4600G'",\
@@ -110,13 +110,20 @@ configs["episodes"].append(\
 "video" : {"file" : " "},\
 })
 
+configs["episodes"].append(\
+{ "title": "Faster RAM",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:30.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
+"isChapter" : False,\
+})
+
 ####################### end of intro ###############################
 
 
 ####################### gaming section ###############################
 configs["episodes"].append(\
 { "title": "Marvel Rivals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:51" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Marvel Rivals'",\
               scriptedvided.r6sText('1280x720, low settings'                       , 37 ,32 ),\
@@ -126,7 +133,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Marvel Rivals both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:14.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Marvel Rivals, 1280x720, 100% scale, low settings.png"}\
 }, \
@@ -137,7 +144,7 @@ configs["episodes"].append(\
 # needs redone
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:41.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Cyberpunk 2077'",\
               scriptedvided.r6sText('1280x720, low settings'            , 35 , 23),\
@@ -147,7 +154,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077 both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:58.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Cyberpunk 2077, 1280x720, low settings.png"}\
 }, \
@@ -158,7 +165,7 @@ configs["episodes"].append(\
 # single resolution
 configs["episodes"].append(\
 { "title": "The Finals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:30.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - The Finals, 1280x720, low settings.png"}\
 }, \
@@ -167,7 +174,7 @@ configs["episodes"].append(\
 # needs redone
 configs["episodes"].append(\
 { "title": "Robocop",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:57.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Robocop'",\
               scriptedvided.r6sText('1280x720, low settings'                     , 23 , 20),\
@@ -177,7 +184,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Robocop both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:08.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Robocop, 1280x720, low settings.png"}\
 }, \
@@ -187,7 +194,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:30.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText('1920x1080, performance mode', 84 ,60),\
@@ -199,7 +206,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:46.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Fortnite, 1920x1080, performance mode.png"}\
 }, \
@@ -209,7 +216,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Terminator",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:07.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Terminator\: Resistance'",\
               scriptedvided.r6sText('1920x1080, low settings'   ,  51, 38),\
@@ -220,7 +227,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Terminator both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:19.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Terminator, 1920x1080, low settings.png"}\
 }, \
@@ -230,7 +237,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:42.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Counter-Strike 2'",\
               scriptedvided.r6sText('1920x1080, low settings', 77,  61),\
@@ -241,7 +248,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "CS2 both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:57.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Counter-Strike 2, 1920x1080, low settings.png"}\
 }, \
@@ -252,7 +259,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "FC6",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:13.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Far Cry 6'",\
               scriptedvided.r6sText('1600x900, low settings',  36,  32),\
@@ -262,7 +269,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "FC6 both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:29" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Far Cry 6, 1280x720, low settings.png"}\
 }, \
@@ -272,7 +279,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Apex Legends",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:53.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Apex Legends'",\
               scriptedvided.r6sText('1920x1080, low settings',  62, 50),\
@@ -283,7 +290,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Apex both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:07.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Apex Legends, 1920x1080, low settings.png"}\
 }, \
@@ -294,7 +301,7 @@ configs["episodes"].append(\
 # single resolution
 configs["episodes"].append(\
 { "title": "Doom",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:45.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Doom Eternal, 1280x720, low settings.png"}\
 }, \
@@ -302,7 +309,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:02.2"), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Rainbow Six\: Siege'",\
               scriptedvided.r6sText('1920x1080, low settings, 100% scale',  38, 32 ),\
@@ -314,7 +321,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "r6s both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:13" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Rainbow 6_ Siege, 1920x1080, low settings.png"}\
 }, \
@@ -325,7 +332,7 @@ configs["episodes"].append(\
 # single resolution
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:43.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Control, 1280x720, lowest settings.png"}\
 }, \
@@ -333,7 +340,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Overwatch 2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:10.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Overwatch 2'",\
               scriptedvided.r6sText('1920x1080, low settings',  72, 52 ),\
@@ -344,7 +351,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Overwatch both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:20.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Overwatch 2, 1920x1080, low settings.png"}\
 }, \
@@ -355,7 +362,7 @@ configs["episodes"].append(\
 # single resolution
 configs["episodes"].append(\
 { "title": "RE4",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:52.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Resident Evil 4, 1280x720, low settings.png"}\
 }, \
@@ -364,7 +371,7 @@ configs["episodes"].append(\
 # single resolution
 configs["episodes"].append(\
 { "title": "DOTA 2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:23.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - DOTA2, 1920x1080, low settings.png"}\
 }, \
@@ -375,7 +382,7 @@ configs["episodes"].append(\
 #redo and specify a smoother video
 configs["episodes"].append(\
 { "title": "Shadow of the Tomb Raider",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:45.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Shadow of the Tomb Raider'",\
               scriptedvided.r6sText('1920x1080, very low settings', 31 , 26 ),\
@@ -387,7 +394,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "SOTTR both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:55.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Shadow of the Tomb Raider, 1920x1080, lowest settings.png"}\
 }, \
@@ -397,7 +404,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Borderlands 3",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:21.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Borderlands 3'",\
               scriptedvided.r6sText('1920x1080, very low settings', 37, 25),\
@@ -408,7 +415,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "BL3 both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:40.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Borderlands 3, 1920x1080, very low settings.png"}\
 }, \
@@ -424,7 +431,7 @@ configs["episodes"].append(\
 # sum of all fps
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:10" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "overlay" : { \
     "image" : {"file" : "Vega7 - SUM of all FPS.png"}\
@@ -434,35 +441,35 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "space is a premium",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:28.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "not for full towers",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:45.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "sell the DGPU",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:52.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "DGPU better option",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:05.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:12" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
