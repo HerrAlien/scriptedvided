@@ -10,8 +10,8 @@ configs = { "defaultAudioFile" : "R5_4600G_Vega7.ogg",\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Vega 7 better be worth it", "until" : "Marvel Rivals"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "DOTA2 both"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "DOTA2 both", "until" : "Video rendering test (The GigASUS)"}}, \
-{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Video rendering test (The GigASUS)", "until" : "Conclusions"}}, \
+{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Terminator both", "until" : "Control"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Control", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.038 },\
 "episodes" : [],\
@@ -72,27 +72,27 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "Vega 7 better be worth it",\
 "audio" : {"timestamps" : ("00:00", "00:10.5"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_4600G_CpuAlone_barred.mp4"},\
 })
 
 # GPU-Z
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Vega7-GPUZ.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "IGPU price",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:41.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Vega7-PriceAsDeltaOfMSRPs.mkv"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "DGPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:59.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "rx460_GTX750Ti_GTX1050ti_barred.mp4", "start" : "00:55"},\
 "isChapter" : False,\
 })
 
@@ -107,13 +107,13 @@ configs["episodes"].append(\
               "'GPUs\: Radeon Vega 7, Radeon RX 460, GTX 1050Ti'",\
     ]\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_2400g_platform.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Faster RAM",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:30.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_2400g_platform.mp4"},\
 "isChapter" : False,\
 })
 
@@ -432,7 +432,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:10" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Cyberpunk2077_2025_04_03_07_03_32_039-converted.mp4"},\
 "overlay" : { \
     "image" : {"file" : "Vega7 - SUM of all FPS.png"}\
 }, \
@@ -442,35 +442,35 @@ configs["episodes"].append(\
 { "title": "space is a premium",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:28.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "mini-PC.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "not for full towers",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:45.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_2400g_platform.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "sell the DGPU",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:52.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "1050Ti_olx_2025.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "DGPU better option",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:05.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "R5_4600G_vs_3600AndDGPU_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:12" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_4600G_opened_barred.mp4"},\
 })
 
 
