@@ -258,7 +258,7 @@ configs["episodes"].append(\
 
 
 configs["episodes"].append(\
-{ "title": "FC6",\
+{ "title": "Far Cry 6",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:13.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Far Cry 6'",\
@@ -300,7 +300,7 @@ configs["episodes"].append(\
 
 # single resolution
 configs["episodes"].append(\
-{ "title": "Doom",\
+{ "title": "Doom Eternal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:45.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Vega7 - Doom Eternal, 1280x720, low settings.png"}\
