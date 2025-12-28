@@ -71,263 +71,193 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 #configs["episodes"].append(\
 #{ "title": "A favorite of miners and gamers alike",\
 #"audio" : {"timestamps" : ("09:37.3", "09:46" ), "volume" : 0.999, "padAudio" : 0.05 },\
-#"video" : {"file" : ""},\
+#"video" : {"file" : " "},\
 #})
 
 configs["episodes"].append(\
-{ "title": "This has to be good",\
-"audio" : {"timestamps" : ("00:00", "00:12.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_Overall.MP4"},\
+{ "title": "A different flavor",\
+"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "The VRMs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:22.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_VRM.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "VRMs - boardview, core",\
+{ "title": "VRMs - core",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:36" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-AorusElite_BViewVrmVcore.mkv"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "VRMs - boardview, soc",\
+{ "title": "VRMs - soc",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:42" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-AorusElite_BViewVrmSoc.mkv"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
-
-configs["episodes"].append(\
-{ "title": "VRMs - boardview, advertising",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:50.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-AorusEliteV2_8+8Phases.mkv"},\
-})
-
-configs["episodes"].append(\
-{ "title": "VRMs - overview",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:07.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_VRM.MP4"},\
-})
-
-configs["episodes"].append(\
-{ "title": "VRMs - ESP, boarview and mobo",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:16.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-AorusEliteV2-12VEps.mp4"},\
-})
-
 
 configs["episodes"].append(\
 { "title": "Four good DIMM slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_DIMMs.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:52.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_Slots.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "M2 slots",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:07" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_Slots.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "SATA ports",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:23.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_SATA.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "Pin headers 1, up to com",\
+{ "title": "Pin headers 1",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:50.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_Pins1.MP4"},\
-})
-
-configs["episodes"].append(\
-{ "title": "Pin headers 2, com USBs",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:09.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_Pins2.MP4"},\
-})
-
-configs["episodes"].append(\
-{ "title": "Pin headers 3, FP, cmos",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:26.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_Pins2.MP4"},\
-})
-
-configs["episodes"].append(\
-{ "title": "Pin headers RGB, top",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:36" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_RgbLed1.MP4"},\
-})
-
-configs["episodes"].append(\
-{ "title": "Pin headers RGB, next to CPU",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:46.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_RgbLED2.MP4"},\
-})
-
-configs["episodes"].append(\
-{ "title": "Debug LEDs",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:07" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_DebugLEDs.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 # too long of a cut ...
 configs["episodes"].append(\
 { "title": "Rear IO",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:27.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_IO.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
+
 
 # breel with rear IO and side by side the audio in Audacity
 configs["episodes"].append(\
 { "title": "The Gigabyte microphone input",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:37.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-AorusEliteV2_AudioIoAndClip.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 }) # maybe use a muted video of Audacity
 
 configs["episodes"].append(\
-{ "title": "Audio from GA-B450M-AorusElite",\
+{ "title": "Audio from GA-A520M-DS3H",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("04:27.6", "04:37.6" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-AorusEliteV2_AudioSample.mp4", "start" : "00:03"},\
+"audio" : {"timestamps" : ("", "" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 # EC spi chip first
 configs["episodes"].append(\
 { "title": "The BIOS setup utility",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-AorusEliteV2_EcChip.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 }) # list of bios
 
 configs["episodes"].append(\
-{ "title": "BIOS - EZ mode",\
+{ "title": "BIOS advanced, No CPU freq",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:14.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_Easy.MP4"},\
-})
-
-configs["episodes"].append(\
-{ "title": "BIOS advanced, CPU freq",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:25.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_CpuMultiplier.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU voltage",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:43.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_CpuVoltage.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem profile",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:52" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_XMP.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem subtimings",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:07.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_MemFreqTimings.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "REBAR and TPM",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:25" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_TpmAbove4G.MP4", "start" : "00:00"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Fans types",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:31.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_FanType.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Fans curve",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:40.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_FanCurve.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "RGB fusion",\
+{ "title": "Save profiles",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:54.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_Rgb1.MP4", "start" : "00:00"},\
-})
-
-configs["episodes"].append(\
-{ "title": "RGB fusion - color selection",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:00.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450-AorusEliteV2_BIOS_Rgb1.MP4", "start" : "00:14"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 # likes
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:15" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_Overall.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "dislikes",\
+{ "title": "likes 4 RAMs",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:27.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-AorusEliteV2-12VEps.mp4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "dislikes - heatsinks and pins",\
+{ "title": "dislikes - BIOS issues",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:45.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_heatsinkSecured.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "Harrowing bios update",\
+{ "title": "Not much different than the A320",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:05.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-B450M-AorusEliteV2_BiosUpdateProcess.mkv"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "People might like it",\
+{ "title": "Better budget boards",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:14.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_Overall.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:31.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Aorus-B450-Elite_Overall.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 scriptedvided.makeVideo(configs)
