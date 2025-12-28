@@ -9,7 +9,7 @@ configs = { "defaultAudioFile" : "GA-A520M-DS3H.ogg",\
 "outputFile" : "GA-A520M-DS3H.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "This has to be good", "until" : "The VRMs"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Back to budget boards", "until" : "The VRMs"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : "Debug LEDs"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Debug LEDs", "until" : "Audio from GA-B450M-AorusElite"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "The BIOS setup utility", "until" : "Conclusions"}}, \
@@ -75,68 +75,82 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 #})
 
 configs["episodes"].append(\
-{ "title": "A different flavor",\
-"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+{ "title": "Back to budget boards",\
+"audio" : {"timestamps" : ("00:00", "00:14.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "The VRMs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:22") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - core",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:33.1") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - soc",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:41.7") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "Four good DIMM slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+{ "title": "Three good DIMM slots",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:55.7") : 0.05 },\
+"video" : {"file" : " "},\
+})
+
+configs["episodes"].append(\
+{ "title": "Damaged dimm",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:05.3") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:24.2") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "M2 slots",\
+{ "title": "M2 slot",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:33.7") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "SATA ports",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:45") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
-{ "title": "Pin headers 1",\
+{ "title": "Pin headers up to TPM",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:06") : 0.05 },\
+"video" : {"file" : " "},\
+})
+
+configs["episodes"].append(\
+{ "title": "Pin headers USBs, FP, Clear CMOS",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:25.3") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 # too long of a cut ...
 configs["episodes"].append(\
 { "title": "Rear IO",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:01.8") : 0.05 },\
 "video" : {"file" : " "},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
@@ -144,119 +158,119 @@ configs["episodes"].append(\
 # breel with rear IO and side by side the audio in Audacity
 configs["episodes"].append(\
 { "title": "The Gigabyte microphone input",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:01.8") : 0.05 },\
 "video" : {"file" : " "},\
 }) # maybe use a muted video of Audacity
 
 configs["episodes"].append(\
 { "title": "Audio from GA-A520M-DS3H",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", "" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : ("02:49.8", "03:01.8" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : "GA-A520M-DS3H_audioSample.mkv"},\
 })
 
 # EC spi chip first
 configs["episodes"].append(\
 { "title": "The BIOS setup utility",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:10.1") : 0.05 },\
 "video" : {"file" : " "},\
 }) # list of bios
 
 configs["episodes"].append(\
 { "title": "BIOS advanced, No CPU freq",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU voltage",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem profile",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem subtimings",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "REBAR and TPM",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Fans types",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Fans curve",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Save profiles",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 # likes
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "likes 4 RAMs",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "dislikes - BIOS issues",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Not much different than the A320",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Better budget boards",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "") : 0.05 },\
 "video" : {"file" : " "},\
 })
 
