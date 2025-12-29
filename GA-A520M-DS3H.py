@@ -154,13 +154,6 @@ configs["episodes"].append(\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 
-# breel with rear IO and side by side the audio in Audacity
-configs["episodes"].append(\
-{ "title": "The Gigabyte microphone input",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:01.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H_IO.MP4"},\
-}) # maybe use a muted video of Audacity
-
 configs["episodes"].append(\
 { "title": "Audio from GA-A520M-DS3H",\
 "isChapter" : False,\
