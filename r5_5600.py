@@ -72,14 +72,14 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "Last architecture for AM4",\
 "audio" : {"timestamps" : ("00:00", "00:18"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "R5_5600_boxed.mp4"},\
+"video" : {"file" : "R5_5600_boxed_barred.mp4"},\
 })
 
 # focus on PCIE lanes
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:33.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "R5_5600_TechPowerup.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -312,7 +312,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:20.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "price comparisons"},\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "olx_r5_5600_3600.mkv"}\
 }, \
 })
 
@@ -320,21 +320,21 @@ configs["episodes"].append(\
 { "title": "3600 also pcie gen 4",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:34.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "R5_5600_boxContents.mp4"},\
+"video" : {"file" : "R5_5600_boxContents_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "5600 - not much IPC",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:52" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "r5_5600_3600.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:59" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "R5_5600_inHand.mp4"},\
+"video" : {"file" : "R5_5600_inHand_barred.mp4"},\
 })
 
 
