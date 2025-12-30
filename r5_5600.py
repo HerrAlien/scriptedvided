@@ -111,7 +111,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, performance upscaling, low settings", \
+        "settings" : "1280x720, 30% render scale, low settings", \
     }\
 }, \
 })
@@ -132,10 +132,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:08.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, performance mode", \
+        "settings" : "1280x720, 50% render scale, performance mode", \
     }\
 }, \
-"video" : {"file" : " "}\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2025_12_01_15_55_26_661.mp4"}\
 })
 
 
@@ -144,7 +144,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:37.7"), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 50% scale, low settings", \
+        "settings" : "1024x768, 25% scale, low settings", \
     }\
 }, \
 })
@@ -175,7 +175,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:39.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1280x720, 50% render scale, low settings", \
     }\
 }\
 })
@@ -185,7 +185,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:57.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1280x720, 50% render scale, low settings", \
     }\
 }\
 })
@@ -196,7 +196,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:19.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1280x720, performance FSR, low settings", \
     }\
 }\
 })
@@ -206,7 +206,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:40.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1280x720, performance FSR, low settings", \
     }\
 }\
 })
@@ -241,10 +241,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:36.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "800x600, low settings", \
+        "settings" : "1280x720, 50% scale, low settings", \
     }\
 },\
-"video" : {"file" : " "}\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "04:53"}\
 })
 
 configs["episodes"].append(\
@@ -252,7 +252,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:55.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 100% render scale, lowest settings", \
+        "settings" : "1280x720, 50% render scale, lowest settings", \
     }\
 },\
 })
@@ -265,7 +265,7 @@ configs["episodes"].append(\
         "settings" : "960x540, lowest settings", \
     }\
 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "GTX970_Control_DX11_medium.mp4"},\
 })
 
 
