@@ -72,7 +72,7 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "Last architecture for AM4",\
 "audio" : {"timestamps" : ("00:00", "00:18"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "R5_5600_boxed.mp4"},\
 })
 
 # focus on PCIE lanes
@@ -85,7 +85,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "will have gigasus",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:50.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 "isChapter" : False,\
 })
 
@@ -99,7 +99,7 @@ configs["episodes"].append(\
               "'GPU\: Radeon RX 580'",\
     ]\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "test_system_RX580.mp4" }\
 })
 
 ####################### end of intro ###############################
@@ -278,26 +278,26 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:24.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "By itself",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:37.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "R5_5600_ipc.png"}\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Compared with others",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:00.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "00:30"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "R5_5600_ipc_vs_others.png"}\
 }, \
 })
 
@@ -320,7 +320,7 @@ configs["episodes"].append(\
 { "title": "3600 also pcie gen 4",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:34.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "R5_5600_boxContents.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -334,7 +334,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:59" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "R5_5600_inHand.mp4"},\
 })
 
 
