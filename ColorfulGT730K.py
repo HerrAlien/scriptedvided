@@ -72,20 +72,20 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "Potehto, potahto",\
 "audio" : {"timestamps" : ("00:00", ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_ColorfulGt730K_alone2_barred.mp4"},\
 })
 
 # GPU-Z
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Colorful_GT730_GPUZ.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Copmarisons Fermi",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_FermiGT730_outside.mp4"},\
 "isChapter" : False,\
 })
 
@@ -99,16 +99,16 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Copmarisons Kepler DDR3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_ColorfulGt730K_lookingAround_barred.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "4"},\
+"video" : {"file" : "breel_ColorfulGt730K_cooling2_barred.mp4"},\
 "overlay" : { \
-    "text" : ["'Temperatures (Valley)\:  C ( C delta over ambient)'"]}, \
+    "text" : ["'Temperatures (Valley)\: 39C (16C delta over ambient)'"]}, \
 })
 
 configs["episodes"].append(\
@@ -155,7 +155,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Fortnite, 1280x720, 67% render scale, performance mode.png"}\
 }, \
-"video" : {"file" : " "}\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2025_12_13_22_22_36_353.mkv"}\
 })
 
 configs["episodes"].append(\
@@ -219,7 +219,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "image" : {"file" : "Shadow of the Tomb Raider, 1280x720, 50% scale, lowest settings.png"}\
 }, \
-"video" : {"file" : " "}\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "04:53"}\
 })
 
 configs["episodes"].append(\
@@ -240,7 +240,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "overlay" : { \
-    "image" : {"file" : " "}\
+    "image" : {"file" : "breel_ColorfulGt730K_alone_barred.mp4"}\
 }, \
 })
 
@@ -268,14 +268,14 @@ configs["episodes"].append(\
 { "title": "Pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_ColorfulGt730K_alone2_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_ColorfulGt730K_lookingAround_barred.mp4"},\
 })
 
 
