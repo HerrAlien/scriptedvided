@@ -75,204 +75,204 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 
 configs["episodes"].append(\
 { "title": "Hungry for more",\
-"audio" : {"timestamps" : ("00:00", "00:14.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H_overall.MP4"},\
+"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "The VRMs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:22"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_VRM.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - core",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:33.1"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_VRM2.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - soc",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:41.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_VRM.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Two DIMM slots, two clips",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:55.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_DIMM.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "RAM removal",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:41.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_VRM.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:24.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_slots.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Decorative 1x slot",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:05.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_DimmDamaged.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 
 configs["episodes"].append(\
 { "title": "M2 slot",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:33.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_slots.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "SATA ports",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:45"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H_SATA.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin headers up to USB",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:06"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_Pins.MP4", "start" : "00:00"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin headers USBs, FP, Clear CMOS",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:25.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_Pins.MP4", "start" : "00:30"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Ambient LED",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:25.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_Pins.MP4", "start" : "00:30"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "SPI programing port",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:25.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_Pins.MP4", "start" : "00:30"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 # too long of a cut ...
 configs["episodes"].append(\
 { "title": "Rear IO",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:01.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_IO.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 
 configs["episodes"].append(\
 { "title": "Audio from Prime-A320M-K",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("02:49.8", "03:01.8" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H_audioSample.mkv"},\
+"audio" : {"timestamps" : ("", "" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 # EC spi chip first
 configs["episodes"].append(\
 { "title": "The BIOS setup utility",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:10.1"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520m-DS3Hv2_BIOS_Easy.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 }) # list of bios
 
 configs["episodes"].append(\
 { "title": "BIOS advanced, No CPU freq",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:20.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520m-DS3Hv2_BIOS_NoCpuMultiplier.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU voltage",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:26.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520m-DS3Hv2_BIOS_CpuVoltage2.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem profile - maybe both Easy and advanced",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:38.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520m-DS3Hv2_BIOS_XMP2.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem subtimings",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:49.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520m-DS3Hv2_BIOS_Timings.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "REBAR and TPM",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:01.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520m-DS3Hv2_BIOS_Tpm.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Fans types and fan curve",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:16.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520m-DS3Hv2_BIOS_FanType.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Save profiles",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:31.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520m-DS3Hv2_BIOS_FanProfiles.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 # likes
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:37.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H_overall.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "likes",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:43.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H_DIMMs.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "good enough to connect parts",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:54.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520m-DS3Hv2_BIOS_Advanced.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Better budget boards",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:15.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Asus_Prime_A320m-k_overview.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:20.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A520M-DS3H-V2_overview.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
 })
 
 scriptedvided.makeVideo(configs)
