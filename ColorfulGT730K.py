@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : ". . . .ogg",\
+configs = { "defaultAudioFile" : ".Colorful_GT730_Kepler_DDR3.ogg",\
 "mediaFolder" : "F:\\Videos\\Colorful_GT730K_DDR3", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "F:\\Videos\\Colorful_GT730K_DDR3\\Benchmark_GT730_KeplerDDR3.txt",\
@@ -150,6 +150,14 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
+{ "title": "Overwatch 2",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "image" : {"file" : "Overwatch 2, 1280x720, low settings.png"}\
+}, \
+})
+
+configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
@@ -190,14 +198,6 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "image" : {"file" : "Control, 1280x720, lowest settings.png"}\
-}, \
-})
-
-configs["episodes"].append(\
-{ "title": "Overwatch 2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "image" : {"file" : "Overwatch 2, 1280x720, low settings.png"}\
 }, \
 })
 
