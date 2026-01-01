@@ -289,7 +289,7 @@ configs["episodes"].append(\
 { "title": "OLX pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:22.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GT730_OLX_2026.mkv"},\
 })
 
 configs["episodes"].append(\
