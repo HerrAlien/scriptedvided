@@ -6,7 +6,7 @@ configs = { "defaultAudioFile" : "Colorful_GT730_Kepler_DDR3.ogg",\
 "benchmarkFile" : "F:\\Videos\\Colorful_GT730K_DDR3\\Benchmark_GT730_KeplerDDR3.txt",\
 "outputFolder" : "F:\\Videos\\Colorful_GT730K_DDR3\\output", \
 "outputFile" : "GT730_KeplerDDR3.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Potehto, potahto", "until" : "Cyberpunk 2077"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Cyberpunk 2077", "until" : "Conclusions"}}, \
