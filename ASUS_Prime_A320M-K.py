@@ -76,47 +76,47 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Hungry for more",\
 "audio" : {"timestamps" : ("00:00", "00:14.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_bowing.MP4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "The VRMs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:17.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_VRM.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - core",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:24.1"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_VrmCore.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - soc",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_VrmSoc.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - coils",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:37.5"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_VRM.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Two DIMM slots, two clips",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:45.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_DIMMs.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "RAM removal",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asrock_A320M-DVS_RamInsertionRemoval.MP4", "start" : "00:23"},\
 })
 
 
