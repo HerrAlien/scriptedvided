@@ -1,16 +1,16 @@
 import scriptedvided
 import sv_ffutils
 
-configs = { "defaultAudioFile" : ". . . .ogg",\
-"mediaFolder" : "F:\\Videos\\. . . ", \
+configs = { "defaultAudioFile" : "Asus Prime A320M-K.ogg",\
+"mediaFolder" : "F:\\Videos\\ASUS_Prime_A320M-K", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
-"outputFolder" : "F:\\Videos\\. . . \\output", \
+"outputFolder" : "F:\\Videos\\ASUS_Prime_A320M-K\\output", \
 "outputFile" : "Asus_Prime_A320M-K.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Back to budget boards", "until" : "The VRMs"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : "Audio from GA-A520M-DS3H"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Hungry for more", "until" : "The VRMs"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : "Audio from Prime-A320M-K"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "The BIOS setup utility", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.05 },\
@@ -123,14 +123,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:59.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_Slots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Decorative 1x slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:13.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4", "start" : "00:15"},\
 })
 
 
@@ -138,78 +138,78 @@ configs["episodes"].append(\
 { "title": "M2 slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:27.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_Slots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "SATA ports",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:36.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_SATA.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin - audio",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:48.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_pins.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin - tpm",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:58.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_pins.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin - weird",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:05.1"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_pins.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin headers USBs, FP, Clear CMOS",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:17"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_pins2.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Ambient LED",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:28.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "SPI programing port",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:44.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_pinsSPI.MP4"},\
 })
 
 # too long of a cut ...
 configs["episodes"].append(\
 { "title": "Rear IO",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:13.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_IO.MP4"},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 
 configs["episodes"].append(\
 { "title": "Audio from Prime-A320M-K",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", "03:13.2" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : ("03:00.2", "03:13.2" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : "Prime_A320M-K_Audio.mkv"},\
 })
 
 # EC spi chip first
 configs["episodes"].append(\
 { "title": "The BIOS setup utility",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:22"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_BIOS_EZ.MP4"},\
 }) # list of bios
 
 # maybe side by 
@@ -217,84 +217,84 @@ configs["episodes"].append(\
 { "title": "BIOS advanced, No CPU freq, unlike GA-A320M-H",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:40"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_BIOS_NoOverclock.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU voltage",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:53.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_BIOS_VCORE.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem profile - maybe both Easy and advanced",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:01.5"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_BIOS_XMP.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem subtimings",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:15.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_BIOS_RamTimings.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "REBAR and TPM",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:23.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_BIOS_REBAR.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Fans types and fan curve",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:39"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_FanType.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Save profiles",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:54.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_BIOS_OverclockProfile.MP4"},\
 })
 
 # likes
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:09.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_VRM.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "likes",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:17"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_Slots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "good enough to connect parts",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:28.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Better budget boards",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:35"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "A320M_Grenade_overview.MP4", "start" : "00:48"},\
 })
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:40.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Asus_Prime_A320m-k_overview.MP4"},\
 })
 
 scriptedvided.makeVideo(configs)
