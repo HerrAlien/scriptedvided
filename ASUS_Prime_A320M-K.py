@@ -116,7 +116,9 @@ configs["episodes"].append(\
 { "title": "RAM removal",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Asrock_A320M-DVS_RamInsertionRemoval.MP4", "start" : "00:23"},\
+"video" : {"file" : "Asrock_A320M-DVS_RamInsertionRemoval.MP4", "start" : "00:25"},\
+"overlay" : { \
+    "text" : ["'Similar issue encountered with Asrock A320M DVS'"]}\
 })
 
 
@@ -130,7 +132,9 @@ configs["episodes"].append(\
 { "title": "Decorative 1x slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:13.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4", "start" : "00:15"},\
+"video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4", "start" : "00:12"},\
+"overlay" : { \
+    "text" : ["'Similar issue encountered with Gigabyte A320M H'"]}\
 })
 
 
