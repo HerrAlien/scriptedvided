@@ -118,7 +118,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Asrock_A320M-DVS_RamInsertionRemoval.MP4", "start" : "00:25"},\
 "overlay" : { \
-    "text" : ["'Similar issue encountered with Asrock A320M DVS'"]}\
+    "text" : ["'Similar issue shown here on the Asrock A320M DVS'"]}\
 })
 
 
@@ -134,7 +134,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:13.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4", "start" : "00:12"},\
 "overlay" : { \
-    "text" : ["'Similar issue encountered with Gigabyte A320M H'"]}\
+    "text" : ["'Similar issue shown here on the Gigabyte A320M H'"]}\
 })
 
 
