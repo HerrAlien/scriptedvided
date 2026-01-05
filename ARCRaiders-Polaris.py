@@ -46,7 +46,7 @@ Free Download / Stream: https://alplus.io/inspired
 # gameplay
 configs["episodes"].append(\
 { "title": "Money well spent, maybe",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:14.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("00:00", "00:14.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "00:05"},\
 })
 
@@ -75,7 +75,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "RX 570",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:00.7 ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:00.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "Polaris_Family_RX570_barred.mp4"},\
 })
 
@@ -112,7 +112,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:39.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "ARCRaiders_success.mp4", "start" : "01:00"},\
 "overlay" : { \
-    "image" : {"file" : "720, low settings.png"}\
+    "image" : {"file" : "ARC Raiders, 1280x720, low settings.png"}\
 }, \
 })
 
@@ -121,7 +121,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:04.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "ARCRaiders_runnig_swamp.mp4", "start" : "03:30"},\
 "overlay" : { \
-    "image" : {"file" : "900, low settings.png"}\
+    "image" : {"file" : "ARC Raiders, 1600x900, low settings.png"}\
 }, \
 })
 
@@ -138,7 +138,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:40.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "ARCRaiders_success.mp4", "start" : "01:40"},\
 "overlay" : { \
-    "image" : {"file" : "1080, low settings.png"}\
+    "image" : {"file" : "ARC Raiders, 1920x1080, low settings.png"}\
 }, \
 })
 
