@@ -62,28 +62,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The Polaris Family",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:39" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Polaris_Family_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "RX 580",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Polaris_Family_RX580_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "RX 570",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:00.7 ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Polaris_Family_RX570_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "RX 460",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:12" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Polaris_Family_RX460_barred.mp4"},\
 })
 
 # black screen
