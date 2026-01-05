@@ -46,96 +46,99 @@ Free Download / Stream: https://alplus.io/inspired
 # gameplay
 configs["episodes"].append(\
 { "title": "Money well spent, maybe",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:14.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "00:05"},\
 })
 
 configs["episodes"].append(\
 { "title": "Hardware requirements look sus",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:31.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "00:20"},\
+"overlay" : { \
+    "image" : {"file" : "overlay_requirements.png"}\
+}, \
 })
 
 configs["episodes"].append(\
 { "title": "The Polaris Family",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:39" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "RX 580",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "RX 570",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:00.7 ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "RX 460",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:12" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
 # black screen
 configs["episodes"].append(\
 { "title": "Test system and settings",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:34.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Custom PC'",\
               "'CPU\: Ryzen 5 5600'",\
               "'RAM\: 32GB DDR4, 3600MHz, dual channel'",\
     ]\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "test_system_noGPU-converted.mp4"},\
 })
 
 # capture with settings
 configs["episodes"].append(\
 { "title": "captures at 720",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:56.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "ARCRaiders__R9_270_1.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "1280x720 results",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:39.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "ARCRaiders_success.mp4", "start" : "01:00"},\
 "overlay" : { \
-    "image" : {"file" : "720, low settings.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "720, low settings.png"}\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "1600x900 results",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:04.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "ARCRaiders_runnig_swamp.mp4", "start" : "03:30"},\
 "overlay" : { \
-    "image" : {"file" : "720, low settings.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "900, low settings.png"}\
 }, \
 })
 
 
 configs["episodes"].append(\
 { "title": "Ready up for 1920x1080",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:23.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "00:35"},\
 "isChapter" : False, \
 })
 
 configs["episodes"].append(\
 { "title": "1920x1080 results",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:40.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "ARCRaiders_success.mp4", "start" : "01:40"},\
 "overlay" : { \
-    "image" : {"file" : "1080, low settings.png", "chromaColor" : "0x00FF00"}\
+    "image" : {"file" : "1080, low settings.png"}\
 }, \
 })
 
@@ -143,24 +146,24 @@ configs["episodes"].append(\
 # overlay with FPS for the 290X
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:56.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "04:00"},\
 })
 
 #R9 270 breel
 configs["episodes"].append(\
 { "title": "more to come",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:06.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "breel_GTX960_both.mp4"},\
 })
 
 # gameplay
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:16" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "ARCRaiders_success.mp4", "start" : "04:40"},\
 })
 
 
