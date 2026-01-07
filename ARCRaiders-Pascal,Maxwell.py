@@ -47,13 +47,13 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "VRAM, VRAM",\
 "audio" : {"timestamps" : ("00:00", "00:11.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "00:05"},\
+"video" : {"file" : "ARCRaiders_success.mp4", "start" : "00:05"},\
 })
 
 configs["episodes"].append(\
 { "title": "Hardware requirements still look sus",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "", "start" : "00:20"},\
+"video" : {"file" : "ARCRaiders_success.mp4", "start" : "00:12"},\
 })
 
 configs["episodes"].append(\
