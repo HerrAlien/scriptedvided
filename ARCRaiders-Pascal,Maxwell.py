@@ -101,7 +101,7 @@ configs["episodes"].append(\
 { "title": "settings",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders__R9_270_1.mp4"},\
+"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "00:25"},\
 })
 
 # capture with settings
@@ -115,7 +115,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "1280x720 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:28.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_success.mp4", "start" : "01:00"},\
+"video" : {"file" : "ARCRaiders_success.mp4", "start" : "01:20"},\
 "overlay" : { \
     "image" : {"file" : "ARC Raiders, 1280x720, low settings.png"}\
 }, \
@@ -124,7 +124,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "1600x900 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:00.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_runnig_swamp.mp4", "start" : "03:30"},\
+"video" : {"file" : "ARCRaiders_runnig_swamp.mp4", "start" : "02:30"},\
 "overlay" : { \
     "image" : {"file" : "ARC Raiders, 1600x900, low settings.png"}\
 }, \
@@ -134,14 +134,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Ready up for 1920x1080",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:17.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "00:35"},\
+"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "01:15"},\
 "isChapter" : False, \
 })
 
 configs["episodes"].append(\
 { "title": "1920x1080 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:45.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_success.mp4", "start" : "01:40"},\
+"video" : {"file" : "ARCRaiders_success.mp4", "start" : "02:00"},\
 "overlay" : { \
     "image" : {"file" : "ARC Raiders, 1920x1080, low settings.png"}\
 }, \
@@ -152,7 +152,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:05.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "04:00"},\
+"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "03:00"},\
 })
 
 #R9 270 breel
@@ -176,7 +176,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:43.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_success.mp4", "start" : "04:40"},\
+"video" : {"file" : "ARCRaiders_success.mp4", "start" : "04:00"},\
 })
 
 
