@@ -53,7 +53,10 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Hardware requirements still look sus",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_success.mp4", "start" : "00:12"},\
+"video" : {"file" : "ARCRaiders_success.mp4", "start" : "00:20"},\
+"overlay" : { \
+    "image" : {"file" : "overlay_requirements.png"}\
+}, \
 })
 
 configs["episodes"].append(\
