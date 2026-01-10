@@ -59,28 +59,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GeForce Family",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:30.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "need to record it"},\
+"video" : {"file" : "1050Ti_both960s.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "GTX 1050 Ti",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:38.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "need to record it"},\
+"video" : {"file" : "broll_GTX1050Ti_outside.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "GTX 960 4GB",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:47.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "need to record it"},\
+"video" : {"file" : "breel_GTX960_4GB.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "GTX 960 2GB",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:58.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "need to record it"},\
+"video" : {"file" : "breel_GTX960_bars.mp4"},\
 })
 
 # black screen
@@ -160,7 +160,7 @@ configs["episodes"].append(\
 { "title": "more to come GPU side",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:22.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "need to record"},\
+"video" : {"file" : "Vega11-GPUZ.mkv"},\
 })
 
 #R9 270 breel
@@ -168,7 +168,7 @@ configs["episodes"].append(\
 { "title": "more to come CPU side",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:34.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "need to record"},\
+"video" : {"file" : "r5_5600_3600.mp4"},\
 })
 
 # gameplay
@@ -176,7 +176,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:43.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_success.mp4", "start" : "04:00"},\
+"video" : {"file" : "1050Ti_960.mp4"},\
 })
 
 
