@@ -12,7 +12,7 @@ configs = { "defaultAudioFile" : "ARCRaiders-Maxwell,Pascal.ogg",\
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.045 },\
 "episodes" : [],\
-"youtube" : {"title" : " ", \
+"youtube" : {"title" : "Can Older GeForce Cards Run ARC Raiders? | GTX 960, GTX 1050 Ti", \
 "description" : ''' ''',\
 "links" : '''
 Track: Bliss Of Heaven - SOMM [Audio Library Release]
@@ -47,13 +47,13 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "VRAM, VRAM",\
 "audio" : {"timestamps" : ("00:00", "00:11.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_success.mp4", "start" : "00:05"},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "03:38"},\
 })
 
 configs["episodes"].append(\
 { "title": "Hardware requirements still look sus",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_success.mp4", "start" : "00:20"},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "03:50"},\
 "overlay" : { \
     "image" : {"file" : "overlay_requirements.png"}\
 }, \
@@ -104,7 +104,7 @@ configs["episodes"].append(\
 { "title": "settings",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "00:25"},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "04:02"},\
 })
 
 # capture with settings
@@ -112,13 +112,13 @@ configs["episodes"].append(\
 { "title": "captures at 720",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:51.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders__R9_270_1.mp4"},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "04:50"},\
 })
 
 configs["episodes"].append(\
 { "title": "1280x720 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:28.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_success.mp4", "start" : "01:20"},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "05:09.5"},\
 "overlay" : { \
     "image" : {"file" : "ARC Raiders, 1280x720, low settings.png"}\
 }, \
@@ -127,7 +127,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "1600x900 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:00.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_runnig_swamp.mp4", "start" : "02:30"},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "12:40"},\
 "overlay" : { \
     "image" : {"file" : "ARC Raiders, 1600x900, low settings.png"}\
 }, \
@@ -137,14 +137,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Ready up for 1920x1080",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:17.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "01:15"},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "15:30"},\
 "isChapter" : False, \
 })
 
 configs["episodes"].append(\
 { "title": "1920x1080 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:45.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_success.mp4", "start" : "02:00"},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "17:10"},\
 "overlay" : { \
     "image" : {"file" : "ARC Raiders, 1920x1080, low settings.png"}\
 }, \
@@ -155,7 +155,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:05.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "ARCRaiders_combat_failure.mp4", "start" : "03:00"},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "26:08"},\
 })
 
 #R9 270 breel
