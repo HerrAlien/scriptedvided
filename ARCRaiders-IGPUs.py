@@ -171,7 +171,7 @@ configs["episodes"].append(\
 { "title": "diff in specs performance explained",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:35.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Vega7vsVega11.mkv", "start" : "00:38"},\
 })
 
 #R9 270 breel
