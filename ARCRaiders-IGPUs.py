@@ -46,7 +46,7 @@ Free Download / Stream: https://alplus.io/inspired
 # gameplay
 configs["episodes"].append(\
 { "title": "System requirements, again",\
-"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("00:00", "00:17.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_SpacePort2.mp4", "start" : "03:00"},\
 "overlay" : { \
     "image" : {"file" : "ARC_overlay_requirements.png"}\
@@ -57,34 +57,34 @@ configs["episodes"].append(\
 { "title": "Need more than 2 GB",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "ARCRaiders__R9_270_1_quadrant2.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The IGPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_Ryzens_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Vega 7 4600G",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_4600G_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Vega 11 2400G",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_2400G_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Vega 8 3200G",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R3_3200G_inHand_barred.mp4"},\
 })
 
 # black screen
@@ -97,7 +97,7 @@ configs["episodes"].append(\
               "'RAM\: 32GB DDR4, 3000MHz, dual channel'",\
     ]\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_2400g_platform.mp4"},\
 })
 
 # capture with settings
@@ -155,7 +155,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_Ryzens_barred.mp4"},\
 })
 
 #R9 270 breel
@@ -163,7 +163,7 @@ configs["episodes"].append(\
 { "title": "breel and specs performance explained",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_2400G_inHand_barred.mp4"},\
 })
 
 #R9 270 breel
@@ -179,7 +179,7 @@ configs["episodes"].append(\
 { "title": "APU breels, in vacuum",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_4600G_inHand_barred.mp4"},\
 })
 
 #R9 270 breel
@@ -187,7 +187,7 @@ configs["episodes"].append(\
 { "title": "1050 ti breel dgpus better",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "broll_GTX1050Ti_outside.mp4"},\
 })
 
 #R9 270 breel
@@ -195,7 +195,7 @@ configs["episodes"].append(\
 { "title": "R9 family",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R9Family2026_barred.mp4"},\
 })
 
 # gameplay
