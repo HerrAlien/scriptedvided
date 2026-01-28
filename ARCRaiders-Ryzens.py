@@ -47,14 +47,14 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "System requirements, again",\
 "audio" : {"timestamps" : ("00:00", "00:11.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "01:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU req",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:30.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "01:11.5"},\
 "overlay" : { \
     "image" : {"file" : "ARC_overlay_requirements.png"}\
 }, \
@@ -70,21 +70,21 @@ configs["episodes"].append(\
 { "title": "R5 5600",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_Ryzen5000Box_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "R5 3600",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:56.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_3600_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "R5 2600",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:06" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_2600_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -105,21 +105,21 @@ configs["episodes"].append(\
 { "title": "3200g",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:26.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R3_3200G_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "2400g",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:36.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_2400G_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "4600g",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:46.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_4600G_inHand_barred.mp4"},\
 })
 
 # capture with settings
@@ -127,7 +127,7 @@ configs["episodes"].append(\
 { "title": "settngs and gameplay video",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:03.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "01:30.8"},\
 "overlay" : { \
     "text" : ["'Test settings\: 1280x720, 50\% render scale, low settings'",\
     ]\
@@ -146,7 +146,7 @@ configs["episodes"].append(\
               "'GPU\: RX 580'",\
     ]\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_2400g_platform.mp4"},\
 })
 
 # capture with settings
@@ -154,14 +154,14 @@ configs["episodes"].append(\
 { "title": "bar to cross",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:30.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "05:40"},\
 })
 
 # just the quad cores
 configs["episodes"].append(\
 { "title": "1280x720 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:04.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "05:51.4"},\
 "overlay" : { \
     "image" : {"file" : "ARC Raiders, 1920x1080, low settings.png"}\
 }, \
@@ -170,21 +170,21 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Add 2600",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:20.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:25.2"},\
 "isChapter" : False, \
 })
 
 configs["episodes"].append(\
 { "title": "Add 3600 and 4600g",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:49.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:41.3" },\
 "isChapter" : False, \
 })
 
 configs["episodes"].append(\
 { "title": "Add 5600",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:04.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:55.9"},\
 "isChapter" : False, \
 })
 
@@ -192,7 +192,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:14.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_Ryzens_barred.mp4"},\
 })
 
 #R9 270 breel
@@ -200,7 +200,7 @@ configs["episodes"].append(\
 { "title": "3600 sweetspot",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:21.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_3600_inHand_barred.mp4"},\
 })
 
 #R9 270 breel
@@ -208,7 +208,7 @@ configs["episodes"].append(\
 { "title": "intel preview",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:32" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_i5_6400_inMoboInHand_barred.mp4"},\
 })
 
 # gameplay
@@ -216,7 +216,7 @@ configs["episodes"].append(\
 { "title": "bye with gameplay",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:38" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "09:25"},\
 })
 
 
