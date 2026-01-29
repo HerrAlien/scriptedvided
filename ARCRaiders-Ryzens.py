@@ -7,8 +7,8 @@ configs = { "defaultAudioFile" : "ARCRaiders-Ryzens.ogg",\
 "outputFile" : "ARCRaiders-Ryzens.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "System requirements, again", "until" : "settngs and gameplay video"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "settngs and gameplay video", "until" : "Conclusions"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "System requirements, again", "until" : "Test system and settings"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Test system and settings", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.045 },\
 "episodes" : [],\
@@ -63,7 +63,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The CPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:34.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_6CoresRyzens_barred.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -90,14 +90,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "all 6 cores",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:13.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_6CoresRyzens_barred.mp4"},\
 "isChapter" : False, \
 })
 
 configs["episodes"].append(\
 { "title": "The APUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:15.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_RyzenAPUs_barred.mp4"},\
 "isChapter" : False, \
 })
 
@@ -124,8 +124,7 @@ configs["episodes"].append(\
 
 # capture with settings
 configs["episodes"].append(\
-{ "title": "settngs and gameplay video",\
-"isChapter" : False, \
+{ "title": "Test system and settings",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:03.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "01:30.8"},\
 "overlay" : { \
@@ -136,8 +135,9 @@ configs["episodes"].append(\
 
 
 # black screen
+{ "title": "actual test system",\
 configs["episodes"].append(\
-{ "title": "Test system and settings",\
+"isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:19.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Custom PC'",\
