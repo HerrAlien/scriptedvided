@@ -135,8 +135,8 @@ configs["episodes"].append(\
 
 
 # black screen
-{ "title": "actual test system",\
 configs["episodes"].append(\
+{ "title": "Actual Test system and settings",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:19.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
@@ -163,7 +163,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:04.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "05:51.4"},\
 "overlay" : { \
-    "image" : {"file" : "ARC Raiders, 1920x1080, low settings.png"}\
+    "image" : {"file" : "quad cores.png"}\
 }, \
 })
 
@@ -172,6 +172,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:20.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:25.2"},\
 "isChapter" : False, \
+"overlay" : { \
+    "image" : {"file" : "up to r5 2600.png"}\
+}, \
 })
 
 configs["episodes"].append(\
@@ -179,6 +182,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:49.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:41.3" },\
 "isChapter" : False, \
+"overlay" : { \
+    "image" : {"file" : "up to R5 3600.png"}\
+}, \
 })
 
 configs["episodes"].append(\
@@ -186,6 +192,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:04.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:55.9"},\
 "isChapter" : False, \
+"overlay" : { \
+    "image" : {"file" : "all.png"}\
+}, \
 })
 
 # quads are still useful
