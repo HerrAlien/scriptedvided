@@ -71,6 +71,9 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_Ryzen5000Box_barred.mp4"},\
+"overlay" : { \
+    "text" : ["'6 cores, 12 threads, 32MB L3 cache, up to 4.4 GHz'"]\
+}, \
 })
 
 configs["episodes"].append(\
@@ -78,6 +81,9 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:56.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_R5_3600_inHand_barred.mp4"},\
+"overlay" : { \
+    "text" : ["'6 cores, 12 threads, 32MB L3 cache, up to 4.2 GHz'"]\
+}, \
 })
 
 configs["episodes"].append(\
@@ -85,6 +91,9 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:06" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_R5_2600_inHand_barred.mp4"},\
+"overlay" : { \
+    "text" : ["'6 cores, 12 threads, 16MB L3 cache, up to 3.9 GHz'"]\
+}, \
 })
 
 configs["episodes"].append(\
@@ -106,6 +115,9 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:26.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_R3_3200G_inHand_barred.mp4"},\
+"overlay" : { \
+    "text" : ["'4 cores, 4 threads, 4MB L3 cache, up to 4 GHz'"]\
+}, \
 })
 
 configs["episodes"].append(\
@@ -113,6 +125,9 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:36.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_R5_2400G_inHand_barred.mp4"},\
+"overlay" : { \
+    "text" : ["'4 cores, 8 threads, 4MB L3 cache, up to 3.9 GHz'"]\
+}, \
 })
 
 configs["episodes"].append(\
@@ -120,6 +135,9 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:46.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "breel_R5_4600G_inHand_barred.mp4"},\
+"overlay" : { \
+    "text" : ["'6 cores, 12 threads, 8MB L3 cache, up to 4.2 GHz'"]\
+}, \
 })
 
 # capture with settings
@@ -128,7 +146,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:03.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "01:30.8"},\
 "overlay" : { \
-    "text" : ["'Test settings\: 1280x720, 50\% render scale, low settings'",\
+    "text" : ["'Test settings\: 1280x720, 50\\\% render scale, low settings'",\
     ]\
 }, \
 })
