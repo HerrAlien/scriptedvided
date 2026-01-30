@@ -157,6 +157,7 @@ configs["episodes"].append(\
 "video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "05:40"},\
 })
 
+# "05:40" + "02:30.7" - "02:19.3" = "05:40" + 11.4 = 05:51.4
 # just the quad cores
 configs["episodes"].append(\
 { "title": "1280x720 results",\
@@ -166,31 +167,57 @@ configs["episodes"].append(\
     "image" : {"file" : "quad cores.png"}\
 }, \
 })
-
+# "05:51.4" + "03:04.5" - "02:30.7" = "05:51.4" + 33.8 =  6:25.2
 configs["episodes"].append(\
-{ "title": "Add 2600",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:20.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:25.2"},\
+{ "title": "extra quads",\
+"audio" : {"file" : "ARCRaiders-Ryzens-extras.ogg", "timestamps" : ("00:00", "00:12.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:25.2" },\
 "isChapter" : False, \
 "overlay" : { \
     "image" : {"file" : "up to r5 2600.png"}\
 }, \
 })
 
+# 6:25.2 + 12.5 = 6:37.7
+
+configs["episodes"].append(\
+{ "title": "Add 2600",\
+"audio" : {"timestamps" : ("03:04.5", "03:20.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:37.7"},\
+"isChapter" : False, \
+"overlay" : { \
+    "image" : {"file" : "up to r5 2600.png"}\
+}, \
+})
+
+#6:37.7 + 03:20.6 - 03:04.5 = 6:37.7 + 16.1 = 6:53.8
+
 configs["episodes"].append(\
 { "title": "Add 3600 and 4600g",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:49.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:41.3" },\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:53.8" },\
 "isChapter" : False, \
 "overlay" : { \
     "image" : {"file" : "up to R5 3600.png"}\
 }, \
 })
+#  6:53.8 + 03:49.9 - 03:20.6 = 6:53.8 +  29.3 = 7:22.1
+configs["episodes"].append(\
+{ "title": "extra cache",\
+"audio" : {"file" : "ARCRaiders-Ryzens-extras.ogg", "timestamps" : ("00:12.5" , "00:26" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "07:22.1"},\
+"isChapter" : False, \
+"overlay" : { \
+    "image" : {"file" : "up to r5 2600.png"}\
+}, \
+})
+
+#7:22.1 + "00:26 - 00:12.5 = 7:22.1 +  13.5 = 07:35.6
 
 configs["episodes"].append(\
 { "title": "Add 5600",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:04.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:55.9"},\
+"audio" : {"timestamps" : ("03:49.9", "04:04.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "07:35.6"},\
 "isChapter" : False, \
 "overlay" : { \
     "image" : {"file" : "all.png"}\
