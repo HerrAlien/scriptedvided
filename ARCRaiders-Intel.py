@@ -47,16 +47,16 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "Time to test Intel CPUs",\
 "audio" : {"timestamps" : ("00:00", "00:11.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_07_35_27_380-converted.mp4", "start" : "06:40"},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU req and results from Tyzen Quads",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:23" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_07_35_27_380-converted.mp4", "start" : "06:51.4"},\
 "overlay" : { \
-    "image" : {"file" : "ARC_overlay_requirements.png"}\
+    "image" : {"file" : "overlay_quads_and_requirements.png"}\
 }, \
 })
 
@@ -118,7 +118,7 @@ configs["episodes"].append(\
               "'GPU\: RX 580'",\
     ]\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_Z170_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -133,7 +133,7 @@ configs["episodes"].append(\
               "'GPU\: RX 580'",\
     ]\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_Z97InCase_barred.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -151,7 +151,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "1280x720 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:26.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_07_35_27_380-converted.mp4", "start" : "07:03"},\
 "overlay" : { \
     "image" : {"file" : "i5s.png"}\
 }, \
@@ -160,7 +160,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "i7s at stock",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:01.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_07_35_27_380-converted.mp4", "start" : "07:35.4"},\
 "isChapter" : False, \
 "overlay" : { \
     "image" : {"file" : "add_i7s.png"}\
@@ -170,7 +170,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "with XMP",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:23.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_07_35_27_380-converted.mp4", "start" : "07:57.7"},\
 "isChapter" : False, \
 "overlay" : { \
     "image" : {"file" : "xmp_i7.png"}\
@@ -225,7 +225,7 @@ configs["episodes"].append(\
 { "title": "bye with gameplay",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:29" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_07_35_27_380-converted.mp4", "start" : "11:52"},\
 })
 
 
