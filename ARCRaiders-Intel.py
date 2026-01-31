@@ -70,7 +70,7 @@ configs["episodes"].append(\
 { "title": "i5 6400",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:36.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_i5_6400_inHand_barred.mp4"},\
 "overlay" : { \
     "text" : ["'4 cores, 4 threads, 6MB L3 cache, up to 3.3 GHz'"]\
 }, \
@@ -80,7 +80,7 @@ configs["episodes"].append(\
 { "title": "i5 4590",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:45.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_i5_4590_inHand_barred.mp4"},\
 "overlay" : { \
     "text" : ["'4 cores, 4 threads, 6MB L3 cache, up to 3.7 GHz'"]\
 }, \
@@ -90,7 +90,7 @@ configs["episodes"].append(\
 { "title": "i7 4790k",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:57.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_i7_4790k_inMoboInHand_barred.mp4"},\
 "overlay" : { \
     "text" : ["'4 cores, 8 threads, 8MB L3 cache, up to 4.4 GHz'"]\
 }, \
@@ -100,7 +100,7 @@ configs["episodes"].append(\
 { "title": "i7 6700K",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:14.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_i7_6700k_inHand_barred.mp4"},\
 "overlay" : { \
     "text" : ["'4 cores, 8 threads, 8MB L3 cache, up to 4.2 GHz'"]\
 }, \
@@ -140,7 +140,7 @@ configs["episodes"].append(\
 { "title": "GPU",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:54" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Polaris_Family_RX580_barred.mp4"},\
 "overlay" : { \
     "text" : ["'Test settings\: 1280x720, 50\\\% render scale, low settings'",\
     ]\
@@ -210,14 +210,14 @@ configs["episodes"].append(\
 { "title": "AM4 plug",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("03:56.4", "04:14.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "GA-B450M-DS3H_overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "R9 family breel",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:23" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R9Family2026_barred.mp4"},\
 })
 
 # gameplay
