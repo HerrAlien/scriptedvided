@@ -192,7 +192,7 @@ configs["episodes"].append(\
 "video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "06:25.2" },\
 "isChapter" : False, \
 "overlay" : { \
-    "image" : {"file" : "up to r5 2600.png"}\
+    "image" : {"file" : "quad cores.png"}\
 }, \
 })
 
@@ -226,7 +226,7 @@ configs["episodes"].append(\
 "video" : {"file" : "PioneerGame_SpacePort.mp4", "start" : "07:22.1"},\
 "isChapter" : False, \
 "overlay" : { \
-    "image" : {"file" : "up to r5 2600.png"}\
+    "image" : {"file" : "up to R5 3600.png"}\
 }, \
 })
 
