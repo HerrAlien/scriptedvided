@@ -46,14 +46,14 @@ Free Download / Stream: https://alplus.io/inspired
 # gameplay
 configs["episodes"].append(\
 { "title": "Time to test Intel CPUs",\
-"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("00:00", "00:11.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU req and results from Tyzen Quads",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:23" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "overlay" : { \
     "image" : {"file" : "ARC_overlay_requirements.png"}\
@@ -62,14 +62,14 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "The CPUs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:26.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "i5 6400",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:36.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "overlay" : { \
     "text" : ["'4 cores, 4 threads, 6MB L3 cache, up to 3.3 GHz'"]\
@@ -79,7 +79,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "i5 4590",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:45.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "overlay" : { \
     "text" : ["'4 cores, 4 threads, 6MB L3 cache, up to 3.7 GHz'"]\
@@ -89,7 +89,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "i7 4790k",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:57.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "overlay" : { \
     "text" : ["'4 cores, 8 threads, 8MB L3 cache, up to 4.4 GHz'"]\
@@ -99,7 +99,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "i7 6700K",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:14.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "overlay" : { \
     "text" : ["'4 cores, 8 threads, 8MB L3 cache, up to 4.2 GHz'"]\
@@ -109,7 +109,7 @@ configs["episodes"].append(\
 # capture with settings
 configs["episodes"].append(\
 { "title": "Test system and settings",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:26.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Custom PC - Skylake'",\
               "'CPUs\: Core i5 6400, Core i7 6700K'",\
@@ -124,7 +124,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Haswell PC",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:39.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Custom PC - Haswell'",\
               "'CPUs\: Core i5 6400, Core i7 6700K'",\
@@ -139,7 +139,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "GPU",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:54" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "overlay" : { \
     "text" : ["'Test settings\: 1280x720, 50\\\% render scale, low settings'",\
@@ -150,7 +150,7 @@ configs["episodes"].append(\
 # just the i5s
 configs["episodes"].append(\
 { "title": "1280x720 results",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:26.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "overlay" : { \
     "image" : {"file" : "i5s.png"}\
@@ -159,7 +159,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "i7s at stock",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:01.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "isChapter" : False, \
 "overlay" : { \
@@ -169,7 +169,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "with XMP",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:23.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "isChapter" : False, \
 "overlay" : { \
@@ -180,7 +180,7 @@ configs["episodes"].append(\
 # are i5s still useful?
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:27.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
@@ -188,28 +188,35 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "maybe yes maybe no",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:30" ), "volume" : 0.001, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "i5 conclusions",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("03:30", "03:39.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : " "},\
+})
+
+configs["episodes"].append(\
+{ "title": "i7 conclusions",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:55" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "AM4 plug",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("03:56.4", "04:14.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "R9 family breel",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:23" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
@@ -217,7 +224,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "bye with gameplay",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:29" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 })
 
