@@ -63,14 +63,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The CPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:26.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_Gen4Gen6Family_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "i5 6400",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:36.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_i5_6400_inHand_barred.mp4"},\
+"video" : {"file" : "breel_6400_inHand2_barred.mp4"},\
 "overlay" : { \
     "text" : ["'4 cores, 4 threads, 6MB L3 cache, up to 3.3 GHz'"]\
 }, \
@@ -80,7 +80,7 @@ configs["episodes"].append(\
 { "title": "i5 4590",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:45.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_i5_4590_inHand_barred.mp4"},\
+"video" : {"file" : "breel_4590_inHand2_barred.mp4"},\
 "overlay" : { \
     "text" : ["'4 cores, 4 threads, 6MB L3 cache, up to 3.7 GHz'"]\
 }, \
@@ -90,7 +90,7 @@ configs["episodes"].append(\
 { "title": "i7 4790k",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:57.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_i7_4790k_inMoboInHand_barred.mp4"},\
+"video" : {"file" : "breel_4790k_inHand2_barred.mp4"},\
 "overlay" : { \
     "text" : ["'4 cores, 8 threads, 8MB L3 cache, up to 4.4 GHz'"]\
 }, \
@@ -100,7 +100,7 @@ configs["episodes"].append(\
 { "title": "i7 6700K",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:14.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "breel_i7_6700k_inHand_barred.mp4"},\
+"video" : {"file" : "breel_6700k_inHand2_barred.mp4"},\
 "overlay" : { \
     "text" : ["'4 cores, 8 threads, 8MB L3 cache, up to 4.2 GHz'"]\
 }, \
@@ -113,7 +113,7 @@ configs["episodes"].append(\
 "overlay" : { \
     "text" : ["'Custom PC - Skylake'",\
               "'CPUs\: Core i5 6400, Core i7 6700K'",\
-              "'RAM\: 32GB DDR4, 3000MHz, dual channel'",\
+              "'RAM\: 32GB DDR4, 2133MHz and 3000MHz, dual channel'",\
               "'Motherboard\: ASUS Z170 Pro Gaming'",\
               "'GPU\: RX 580'",\
     ]\
@@ -127,8 +127,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:39.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "overlay" : { \
     "text" : ["'Custom PC - Haswell'",\
-              "'CPUs\: Core i5 6400, Core i7 6700K'",\
-              "'RAM\: 32GB DDR4, 3000MHz, dual channel'",\
+              "'CPUs\: Core i5 4590, Core i7 4790K'",\
+              "'RAM\: 32GB DDR4, 1600MHz, dual channel'",\
               "'Motherboard\: ASUS 97 Pro Gaming'",\
               "'GPU\: RX 580'",\
     ]\
@@ -181,29 +181,29 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:27.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_Gen4Gen6Family_barred.mp4"},\
 })
 
 #R9 270 breel
 configs["episodes"].append(\
 { "title": "maybe yes maybe no",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:30" ), "volume" : 0.001, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : ("03:27", "03:30" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"video" : {"file" : "Maybe-yes-maybe-no.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "i5 conclusions",\
 "isChapter" : False, \
 "audio" : {"timestamps" : ("03:30", "03:39.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_4590_inHand2_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "i7 conclusions",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:55" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_4790k_inHand2_barred.mp4"},\
 })
 
 configs["episodes"].append(\
