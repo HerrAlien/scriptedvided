@@ -5,9 +5,9 @@ configs = { "defaultAudioFile" : "ARCRaiders-Intel.ogg",\
 "stockFolder" : "F:\\Videos\\stock",\
 "outputFolder" : "F:\\Videos\\ARCRaiders-Intel\\output", \
 "outputFile" : "ARCRaiders-Intel.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "System requirements, again", "until" : "Test system and settings"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Time to test Intel CPUs", "until" : "Test system and settings"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Test system and settings", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.045 },\
@@ -31,7 +31,7 @@ Watch: https://www.youtube.com/watch?v=RUkdTkk_52o&t=0s
 Free Download / Stream: https://alplus.io/inspired
 
 ''', \
-"tags" : "ARC,ARC Raiders,AMD,Ryzen 5 5600,R5 5600,Ryzen 5 3600,R5 3600,Ryzen 5 2600,R5 2600,APU,Ryzen,Ryzen 5,Ryzen 3,Ryzen 3 3200G,Ryzen 5 2400G,Ryzen 5 4600G,R6 2400G,R5 4600G,R3 3200G",\
+"tags" : "ARC,ARC Raiders,AMD,Intel,Core,i5,i7,Haswell,Skylake,Gen4,Gen6,Devil's Canyon,4590,6400,4790K,6700k,i5 4590,i5 6400,i7 4790K,i7 6700K,Core i5 4590,Core i5 6400,Core i7 4790K,Core i7 6700K",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -170,7 +170,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "with XMP",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:23.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "PioneerGame_2026_01_17_07_35_27_380-converted.mp4", "start" : "07:57.7"},\
+"video" : {"file" : "PioneerGame_2026_01_17_07_35_27_380-converted.mp4", "start" : "08:10.8"},\
 "isChapter" : False, \
 "overlay" : { \
     "image" : {"file" : "xmp_i7.png"}\
@@ -188,8 +188,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "maybe yes maybe no",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("03:27", "03:30" ), "volume" : 0.001, "padAudio" : 0.1 },\
-"video" : {"file" : "Maybe-yes-maybe-no.mkv"},\
+"audio" : {"timestamps" : ("03:26.5", "03:30" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"video" : {"file" : "Maybe-yes-maybe-no.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -239,7 +239,7 @@ configs["episodes"].append(\
 #print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
 #print (configs["youtube"])
 #print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Alien Isolation"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "maybe yes maybe no"][0], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 1080 results"][0], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 900 results"][0], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 720 results"][0], configs)
