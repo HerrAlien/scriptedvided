@@ -63,28 +63,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R9Family2026_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "R9 290X",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R9Family2026_R9_290X_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "R9 280",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R9Family2026_R9_280_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "r9 370",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R9Family2026_R9_370_barred.mp4"},\
 })
 
 configs["episodes"].append(\
