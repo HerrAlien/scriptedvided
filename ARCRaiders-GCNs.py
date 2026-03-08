@@ -121,7 +121,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:18.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "05:30"},\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "1080p_370sOnly.png"}\
 }, \
 })
 
@@ -132,7 +132,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:39.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "05:53.7"},\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "1080p_add280.png"}\
 }, \
 })
 
@@ -143,7 +143,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:49.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "06:14.5"},\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "1080p_all.png"}\
 }, \
 })
 
@@ -153,7 +153,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:07.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "06:34.6"},\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "900p_290xOnly.png"}\
 }, \
 })
 
@@ -164,7 +164,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:25.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "06:52.9"},\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "900p_add280.png"}\
 }, \
 })
 
@@ -175,7 +175,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:56.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "07:10.8"},\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "900p_all.png"}\
 }, \
 })
 
@@ -185,7 +185,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:14.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "07:41.8"},\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "720p_290xOnly.png"}\
 }, \
 })
 
@@ -196,7 +196,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:26.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "07:59.4"},\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "720p_add280.png"}\
 }, \
 })
 
@@ -207,7 +207,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:49.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "08:11.4"},\
 "overlay" : { \
-    "image" : {"file" : ""}\
+    "image" : {"file" : "720p_all.png"}\
 }, \
 })
 
