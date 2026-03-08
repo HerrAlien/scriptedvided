@@ -47,7 +47,7 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "We must test even older GPUs",\
 "audio" : {"timestamps" : ("00:00", "00:08" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4", "start" : "05:22"},\
 "overlay" : { \
     "image" : {"file" : "ARC_overlay_requirements.png"}\
 }, \
@@ -91,14 +91,14 @@ configs["episodes"].append(\
 { "title": "r9 370 vs 265 vs 7850",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:19.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R9_370_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "r9 370 GPUZ",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:43.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "gpuz_370_265_720.mp4"},\
 })
 
 # black screen
@@ -125,75 +125,78 @@ configs["episodes"].append(\
 }, \
 })
 
+# len 20.8
 configs["episodes"].append(\
 { "title": "1080 plus R9 280",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:39.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "05:53.7"},\
 "overlay" : { \
     "image" : {"file" : ""}\
 }, \
 })
 
+#len 20.1
 configs["episodes"].append(\
 { "title": "1080 plus R9 290x",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:49.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "06:14.5"},\
 "overlay" : { \
     "image" : {"file" : ""}\
 }, \
 })
 
-# R9 290X only
+# R9 290X only - LEN 18.3
 configs["episodes"].append(\
 { "title": "1600x900 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:07.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "06:34.6"},\
 "overlay" : { \
-    "image" : {"file" : "ARC Raiders, 1600x900, low settings.png"}\
+    "image" : {"file" : ""}\
 }, \
 })
 
+# len 17.9
 configs["episodes"].append(\
 { "title": "900p plus r9 280",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:25.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "06:52.9"},\
 "overlay" : { \
-    "image" : {"file" : "ARC Raiders, 1600x900, low settings.png"}\
+    "image" : {"file" : ""}\
 }, \
 })
 
-# both frequencies
+# both frequencies len 31
 configs["episodes"].append(\
 { "title": "900p plus r9 370",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:56.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "07:10.8"},\
 "overlay" : { \
-    "image" : {"file" : "ARC Raiders, 1600x900, low settings.png"}\
+    "image" : {"file" : ""}\
 }, \
 })
 
-# r9 290X
+# r9 290X len 17.6
 configs["episodes"].append(\
 { "title": "1280x720 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:14.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "07:41.8"},\
 "overlay" : { \
-    "image" : {"file" : "ARC Raiders, 1280x720, low settings.png"}\
+    "image" : {"file" : ""}\
 }, \
 })
 
-# add R9 280
+# add R9 280 len 12
 configs["episodes"].append(\
 { "title": "720p plus R9 280",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:26.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "07:59.4"},\
 "overlay" : { \
-    "image" : {"file" : "ARC Raiders, 1280x720, low settings.png"}\
+    "image" : {"file" : ""}\
 }, \
 })
 
@@ -202,9 +205,9 @@ configs["episodes"].append(\
 { "title": "720p plus R9 370",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:49.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "08:11.4"},\
 "overlay" : { \
-    "image" : {"file" : "ARC Raiders, 1280x720, low settings.png"}\
+    "image" : {"file" : ""}\
 }, \
 })
 
@@ -244,7 +247,7 @@ configs["episodes"].append(\
 { "title": "gameplay",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:56.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "16:30"},\
 })
 
 # gameplay
