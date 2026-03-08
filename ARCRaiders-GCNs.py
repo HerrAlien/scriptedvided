@@ -7,8 +7,8 @@ configs = { "defaultAudioFile" : "ARCRaiders-GCNs.ogg",\
 "outputFile" : "ARCRaiders-GCNs.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "System requirements, again", "until" : "settngs and gameplay video"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "settngs and gameplay video", "until" : "Conclusions"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "We must test even older GPUs", "until" : "1920x1080 results"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "1920x1080 results", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.045 },\
 "episodes" : [],\
@@ -31,7 +31,7 @@ Watch: https://www.youtube.com/watch?v=RUkdTkk_52o&t=0s
 Free Download / Stream: https://alplus.io/inspired
 
 ''', \
-"tags" : "ARC,ARC Raiders,AMD,Radeon,Vega,Radeon Graphics,RX Vega,Vega 7,Vega 8,Vega 11,Radeon Graphics 448SP,APU,Ryzen,Ryzen 5,Ryzen 3,Ryzen 3 3200G,Ryzen 5 2400G,Ryzen 5 4600G",\
+"tags" : "ARC,ARC Raiders,AMD,Radeon,GCN,R9 290X,R9 280,R9 370,R7 265,HD 7950,HD 7850,HD7950,HD7850",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
