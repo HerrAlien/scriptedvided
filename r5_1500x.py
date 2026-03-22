@@ -381,7 +381,7 @@ configs["episodes"].append(\
 { "title": "Skylake breel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:03" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_i5_6400_inMoboInHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
