@@ -70,7 +70,7 @@ Free Download / Stream: https://alplus.io/inspired
 #})
 
 configs["episodes"].append(\
-{ "title": "Last architecture for AM4",\
+{ "title": "First gen Ryzen quad core, really?",\
 "audio" : {"timestamps" : ("00:00", ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
@@ -83,13 +83,6 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "will have gigasus",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
-"isChapter" : False,\
-})
-
-configs["episodes"].append(\
 { "title": "The test system",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : { \
@@ -99,8 +92,25 @@ configs["episodes"].append(\
               "'GPU\: Radeon RX 580'",\
     ]\
 }, \
-"video" : {"file" : "test_system_RX580.mp4" }\
+"video" : {"file" : "breel_R5_2400g_platform.mp4"},\
 })
+
+configs["episodes"].append(\
+{ "title": "RX 580 broll",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "Polaris_Family_RX580_barred.mp4"},\
+"isChapter" : False,\
+})
+
+
+configs["episodes"].append(\
+{ "title": "will have gigasus",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
+"isChapter" : False,\
+})
+
+
 
 ####################### end of intro ###############################
 
