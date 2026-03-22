@@ -314,26 +314,26 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Gigasus_ffwd10.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "By itself",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "00:30"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : "R5_5600_ipc.png"}\
+    "image" : {"file" : "overlays.png"}\
 }, \
 })
 
 configs["episodes"].append(\
 { "title": "Compared with others",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : "R5_5600_ipc_vs_others.png"}\
+    "image" : {"file" : "ipc_w_others.png"}\
 }, \
 })
 
