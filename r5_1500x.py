@@ -148,6 +148,16 @@ configs["episodes"].append(\
 "video" : {"file" : " "}\
 })
 
+configs["episodes"].append(\
+{ "title": "Control",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "960x540, lowest settings", \
+    }\
+},\
+"video" : {"file" : " "},\
+})
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
@@ -157,6 +167,17 @@ configs["episodes"].append(\
         "settings" : "1024x768, 25% scale, low settings", \
     }\
 }, \
+})
+
+# single resolution
+configs["episodes"].append(\
+{ "title": "Doom Eternal",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+    }\
+}\
 })
 
 configs["episodes"].append(\
@@ -169,13 +190,12 @@ configs["episodes"].append(\
 },
 })
 
-# single resolution
 configs["episodes"].append(\
-{ "title": "Doom Eternal",\
+{ "title": "Far Cry 6",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1280x720, 50% render scale, low settings", \
     }\
 }\
 })
@@ -191,15 +211,14 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Far Cry 6",\
+{ "title": "RE4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 50% render scale, low settings", \
+        "settings" : "1280x720, performance FSR, low settings", \
     }\
 }\
 })
-
 
 configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
@@ -212,17 +231,28 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "RE4",\
+{ "title": "Borderlands 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, performance FSR, low settings", \
+        "settings" : "1280x720, 50% render scale, lowest settings", \
     }\
-}\
+},\
 })
 
 configs["episodes"].append(\
 { "title": "DOTA 2",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1920x1080, low settings", \
+    }\
+},\
+"video" : "stock_dota2_1080pLow_scale100.mp4"\
+})
+
+configs["episodes"].append(\
+{ "title": "Robocop",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
@@ -257,27 +287,17 @@ configs["episodes"].append(\
 "video" : {"file" : " "}\
 })
 
+#redo and specify a smoother video
 configs["episodes"].append(\
-{ "title": "Borderlands 3",\
+{ "title": "Terminator",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 50% render scale, lowest settings", \
+        "settings" : "1280x720, 50% scale, low settings", \
     }\
 },\
+"video" : {"file" : " "}\
 })
-
-configs["episodes"].append(\
-{ "title": "Control",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "benchmark" : { \
-        "settings" : "960x540, lowest settings", \
-    }\
-},\
-"video" : {"file" : " "},\
-})
-
 
 ####################### end of gaming section ###############################
 
