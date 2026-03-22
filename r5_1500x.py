@@ -122,7 +122,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, FSR performance, low settings", \
+        "settings" : "1024x768, performance FSR, lowest settings", \
     }\
 }, \
 })
@@ -132,7 +132,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, FSR performance, low settings", \
+        "settings" : "1280x720, 50% render scale, low settings", \
     }\
 }, \
 })
@@ -156,7 +156,6 @@ configs["episodes"].append(\
         "settings" : "960x540, lowest settings", \
     }\
 },\
-"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
@@ -164,7 +163,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1024x768, 25% scale, low settings", \
+        "settings" : "1024x768, 50% scale, low settings", \
     }\
 }, \
 })
@@ -175,7 +174,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "800x600, low settings", \
     }\
 }\
 })
@@ -215,7 +214,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, performance FSR, low settings", \
+        "settings" : "800x600, performance FSR, low settings", \
     }\
 }\
 })
@@ -225,7 +224,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, performance FSR, low settings", \
+        "settings" : "1280x720, balanced FSR, low settings", \
     }\
 }\
 })
@@ -235,7 +234,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 50% render scale, lowest settings", \
+        "settings" : "1280x720, 50% render scale, very low settings", \
     }\
 },\
 })
@@ -256,10 +255,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1920x1080, low settings", \
+        "settings" : "1280x720, 33% render scale, low settings", \
     }\
 },\
-"video" : "stock_dota2_1080pLow_scale100.mp4"\
 })
 
 
@@ -281,10 +279,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 50% scale, low settings", \
+        "settings" : "800x600, lowest settings", \
     }\
 },\
-"video" : {"file" : " "}\
 })
 
 #redo and specify a smoother video
@@ -293,10 +290,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 50% scale, low settings", \
+        "settings" : "1024x768, 50% scale, low settings", \
     }\
 },\
-"video" : {"file" : " "}\
 })
 
 ####################### end of gaming section ###############################
