@@ -140,6 +140,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:21.3" ), "padAudio" : 0.05 },\
+"video" : {"file" : "PioneerGame_2026_01_17_08_01_54_227-converted.mp4" , "start": "05:30"},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
@@ -203,6 +204,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Far Cry 6",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:48.7" ), "padAudio" : 0.05 },\
+"video" : {"file" : "FarCry6Trial_high.mp4"},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
@@ -300,7 +302,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:17.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1024x768, 50% scale, low settings", \
+        "settings" : "1280x1024, 50% scale, low settings", \
     }\
 },\
 })
