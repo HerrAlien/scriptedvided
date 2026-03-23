@@ -72,14 +72,14 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "First gen Ryzen quad core, really?",\
 "audio" : {"timestamps" : ("00:00", "00:12.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_r5_1500x_barred.mp4"},\
 })
 
 # focus on PCIE lanes
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:32.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "maybe ryzen amd page"},\
+"video" : {"file" : "r5_1500X_amdPage.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -346,35 +346,35 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:16.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_r5_1500x_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "price olx",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:25.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "r5_1500x_olx.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "AM4 mobo breel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:31.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "TufX570Gaming+Wifi_overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "side by side with the 3600",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:44.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_r5_1500x_3600_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "1500x breel again",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:55.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_r5_1500x_barred.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -388,7 +388,7 @@ configs["episodes"].append(\
 { "title": "bye with 1500x breel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:10.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_r5_1500x_barred.mp4"},\
 })
 
 
