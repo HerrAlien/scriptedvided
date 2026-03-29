@@ -47,11 +47,11 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "Future build looking like the past",\
 "audio" : {"timestamps" : ("00:00", "00:08" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_overview.MP4"},\
 })
 
 configs["episodes"].append(\
-{ "title": "RAM pricing",\
+{ "title": "RAM pricing from OLX",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
@@ -60,14 +60,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "mistakes have been made",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_overview.MP4"},\
 "isChapter" : False, \
 })
 
 configs["episodes"].append(\
 { "title": "To heck with DDR",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_DDRs_v2.MP4" , "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
@@ -80,86 +80,87 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "need a vid and overlay"},\
 })
 
 configs["episodes"].append(\
 { "title": "The Motherboard",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_moboOverview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "mobo vrm",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "crop of retroPC_moboOverview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "mobo dimm slots",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_moboDimms.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "mobo storage",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_moboStorage.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "mobo slots",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_moboSlots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "mobo rear IO",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_moboIO.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_MX440_2_brighter.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Storage",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_storage_brighter.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The PSU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_PsuLabel_brighter.mp4
+"},\
 })
 
 configs["episodes"].append(\
 { "title": "usage of the FDD power connector",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_PsuFddPower.MP4", "start" : "00:10"},\
 })
 
 configs["episodes"].append(\
 { "title": "The Case",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "need video"},\
 })
 
 configs["episodes"].append(\
 { "title": "cable management",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_overview.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -171,19 +172,19 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Gaming Results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_games.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Quake 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Retro_Q3.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Quake 3 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "quake3_2026_03_22_15_45_04_286_barred.mp4"},\
 "isChapter" : False, \
 "overlay" : { \
     "text" : ["'Quake 3'", "'1024x768, high settings - average: 81 FPS'"]\
@@ -193,13 +194,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Medal of Honor: Allied Assault",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Retro_MOHAA.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "MOHAA results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "MOHAA_2026_03_29_17_21_09_595_barred.mp4"},\
 "isChapter" : False, \
 "overlay" : { \
     "text" : ["'Medal of Honor: Allied Assault'", "'640x480 - average: 41 FPS'"]\
@@ -209,13 +210,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Unreal Tournament",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Retro_UT2_brighter.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "UT results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "UT.mp4"},\
 "isChapter" : False, \
 "overlay" : { \
     "text" : ["'Unreal Tournament'", "'1024x768, high settings - average: 65 FPS'"]\
@@ -225,13 +226,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Aliens vs. Predator 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Retro_AvP2_3_brighter.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "AVP2 results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "lithtech_2026_03_22_16_00_53_338_barred.mp4", "start" : "00:40"},\
 "isChapter" : False, \
 "overlay" : { \
     "text" : ["'Aliens vs. Predator 2'", "'800x600, high settings - average: 22 FPS'"]\
@@ -241,13 +242,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Serious Sam: Second Encounter",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Retro_SSam.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Serious Sam results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "SeriousSam_2026_03_22_16_14_48_214_barred.mp4"},\
 "isChapter" : False, \
 "overlay" : { \
     "text" : ["'Serious Sam: Second Encounter'", "'640x480, quality preset - average: 51 FPS'"]\
@@ -257,13 +258,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Clive Barker's Undying",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Undying_2026_03_22_15_35_47_584_barred.mp4", "start" : "00:30"},\
 })
 
 configs["episodes"].append(\
 { "title": "Undying results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Undying_2026_03_22_15_37_29_923_barred.mp4", "start" : "00:36"},\
 "isChapter" : False, \
 "overlay" : { \
     "text" : ["'Clive Barker\'s Undying'", "'800x600, medium settings - average: 37 FPS'"]\
@@ -275,7 +276,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_MX440.MP4"},\
 })
 
 #R9 270 breel
@@ -291,7 +292,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "retroPC_overview.MP4"},\
 })
 
 
