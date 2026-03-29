@@ -185,6 +185,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "isChapter" : False, \
+"overlay" : { \
+    "text" : ["'Quake 3'", "'1024x768, high settings - average: 81 FPS'"]\
+}, \
 })
 
 configs["episodes"].append(\
@@ -198,6 +201,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "isChapter" : False, \
+"overlay" : { \
+    "text" : ["'Medal of Honor: Allied Assault'", "'640x480 - average: 41 FPS'"]\
+}, \
 })
 
 configs["episodes"].append(\
@@ -211,6 +217,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "isChapter" : False, \
+"overlay" : { \
+    "text" : ["'Unreal Tournament'", "'1024x768, high settings - average: 65 FPS'"]\
+}, \
 })
 
 configs["episodes"].append(\
@@ -224,6 +233,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "isChapter" : False, \
+"overlay" : { \
+    "text" : ["'Aliens vs. Predator 2'", "'800x600, high settings - average: 22 FPS'"]\
+}, \
 })
 
 configs["episodes"].append(\
@@ -237,6 +249,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "isChapter" : False, \
+"overlay" : { \
+    "text" : ["'Serious Sam: Second Encounter'", "'640x480, quality preset - average: 51 FPS'"]\
+}, \
 })
 
 configs["episodes"].append(\
@@ -250,6 +265,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : " "},\
 "isChapter" : False, \
+"overlay" : { \
+    "text" : ["'Clive Barker\'s Undying'", "'800x600, medium settings - average: 37 FPS'"]\
+}, \
 })
 
 
