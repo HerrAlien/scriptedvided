@@ -188,7 +188,7 @@ configs["episodes"].append(\
 "video" : {"file" : "quake3_2026_03_22_15_45_04_286_barred.mp4"},\
 "isChapter" : False, \
 "overlay" : { \
-    "text" : ["'Quake 3'", "'1024x768, high settings - average: 81 FPS'"]\
+    "text" : ["'Quake 3'", "'1024x768, high settings - average\: 81 FPS'"]\
 }, \
 })
 
@@ -204,7 +204,7 @@ configs["episodes"].append(\
 "video" : {"file" : "MOHAA_2026_03_29_17_21_09_595_barred.mp4"},\
 "isChapter" : False, \
 "overlay" : { \
-    "text" : ["'Medal of Honor: Allied Assault'", "'640x480 - average: 41 FPS'"]\
+    "text" : ["'Medal of Honor: Allied Assault'", "'640x480 - average\: 41 FPS'"]\
 }, \
 })
 
@@ -220,7 +220,7 @@ configs["episodes"].append(\
 "video" : {"file" : "UT.mp4"},\
 "isChapter" : False, \
 "overlay" : { \
-    "text" : ["'Unreal Tournament'", "'1024x768, high settings - average: 65 FPS'"]\
+    "text" : ["'Unreal Tournament'", "'1024x768, high settings - average\: 65 FPS'"]\
 }, \
 })
 
@@ -236,7 +236,7 @@ configs["episodes"].append(\
 "video" : {"file" : "lithtech_2026_03_22_16_00_53_338_barred.mp4", "start" : "00:40"},\
 "isChapter" : False, \
 "overlay" : { \
-    "text" : ["'Aliens vs. Predator 2'", "'800x600, high settings - average: 22 FPS'"]\
+    "text" : ["'Aliens vs. Predator 2'", "'800x600, high settings - average\: 22 FPS'"]\
 }, \
 })
 
@@ -252,7 +252,7 @@ configs["episodes"].append(\
 "video" : {"file" : "SeriousSam_2026_03_22_16_14_48_214_barred.mp4"},\
 "isChapter" : False, \
 "overlay" : { \
-    "text" : ["'Serious Sam: Second Encounter'", "'640x480, quality preset - average: 51 FPS'"]\
+    "text" : ["'Serious Sam: Second Encounter'", "'640x480, quality preset - average\: 51 FPS'"]\
 }, \
 })
 
@@ -268,7 +268,7 @@ configs["episodes"].append(\
 "video" : {"file" : "Undying_2026_03_22_15_37_29_923_barred.mp4", "start" : "00:36"},\
 "isChapter" : False, \
 "overlay" : { \
-    "text" : ["'Clive Barker\'s Undying'", "'800x600, medium settings - average: 37 FPS'"]\
+    "text" : ["'Undying'", "'800x600, medium settings - average\: 37 FPS'"]\
 }, \
 })
 
