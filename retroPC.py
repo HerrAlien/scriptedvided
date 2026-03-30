@@ -5,7 +5,7 @@ configs = { "defaultAudioFile" : "retro.ogg",\
 "stockFolder" : "F:\\Videos\\stock",\
 "outputFolder" : "F:\\Videos\\Aprils_Fool\\output", \
 "outputFile" : "Aprils_Fool_RetroPC.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Future build looking like the past", "until" : "Gaming Results"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Gaming Results", "until" : "Conclusions"}}, \
@@ -81,7 +81,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:26.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "retroPC_overview.MP4"},\
+"video" : {"file" : "Athlon_K7_barred.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -94,7 +94,7 @@ configs["episodes"].append(\
 { "title": "mobo vrm",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:45.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "crop of retroPC_moboOverview.MP4"},\
+"video" : {"file" : "retroPC_vrm.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -154,7 +154,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The Case",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:46" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "retroPC_overview.MP4"},\
+"video" : {"file" : "retroPC_case.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -217,7 +217,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "UT results",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:40.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "UT.mp4"},\
+"video" : {"file" : "retroPC_UT.mp4"},\
 "isChapter" : False, \
 "overlay" : { \
     "text" : ["'Unreal Tournament'", "'1024x768, high settings - average\: 65 FPS'"]\
@@ -285,7 +285,7 @@ configs["episodes"].append(\
 { "title": "breel 9000 Pro",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:20.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Radeon9000Pro_barred.mp4"},\
 })
 
 # gameplay
