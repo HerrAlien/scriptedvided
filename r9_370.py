@@ -211,8 +211,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:50.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Resident Evil 4'",\
-              scriptedvided.r6sText('1280x720, performance preset, no FSR'         ,  , ),\
-              scriptedvided.r6sText('1280x720, performance preset, performance FSR',  , ),\
+              scriptedvided.r6sText('1280x720, performance preset, no FSR'         , 33 , 19),\
+              scriptedvided.r6sText('1280x720, performance preset, performance FSR',  42, 22),\
 ]}, \
 })
 
