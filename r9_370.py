@@ -72,57 +72,57 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "It Plays Arc Raiders?",\
 "audio" : {"timestamps" : ("00:00", "00:14"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R9_370_inHand_barred.mp4"},\
 })
 
 # GPU-Z
 configs["episodes"].append(\
 { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:21.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "R9_370_1024_GPUZ.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "cut down version ",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:35.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R9Family2026_R9_370_barred.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Copmarisons, shaders, frequency",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:53.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "gpuz_370_265_720.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Copmarisons mem freq",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:06.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_370_1024_GpuzMaxFreq.mkv"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:26.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "compared with the RX 580 cooler"},\
-"overlay" : { \
-    "text" : ["'Temperatures (Valley)\: 39C (16C delta over ambient)'"]}, \
+"video" : {"file" : "AliExpress_Cooling_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "2 pin fans",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:40" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_370_2PinFans_barred.mp4"},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "temps and weights",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:57.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_370_R7_265_weightOutside.MP4"},\
 "isChapter" : False,\
+"overlay" : { \
+    "text" : ["'Temperatures (Valley)\: 67C (44C delta over ambient)'"]}, \
 })
 
 
@@ -133,15 +133,17 @@ configs["episodes"].append(\
     "text" : ["'Custom PC'",\
               "'CPU\: Ryzen 5 5600'",\
               "'RAM\: 32GB DDR4, 3600MHz, dual channel'",\
+              "'GPU\: Radeon R9 370 1024'",\
     ]\
 }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "test_system_RX580.mp4" }\
+
 })
 
 configs["episodes"].append(\
 { "title": "will be compared to the 265",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:30.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R7_365_R9_370_barred.mp4"},\
 "isChapter" : False,\
 })
 
