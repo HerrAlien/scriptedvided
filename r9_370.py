@@ -180,12 +180,14 @@ configs["episodes"].append(\
 { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:19.5" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1280x720, lowest settings", } }, \
+"video" : "PioneerGame_2026_02_21_Swamp.mp4",\
 })
 
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:35.4" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1280x720, lowest settings", } }, \
+"video" : {"file" : "Cyberpunk2077_2025_04_03_16_33_51_681-converted.mp4" , "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
@@ -225,7 +227,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:16.4" ), "padAudio" : 0.05 },\
-"video" : {"file" : "FortniteClient-Win64-Shipping_2026_02_19_22_46_14_501.mkv"},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_01_23_23_07_40_730-converted.mp4"},\
 "overlay" : { \
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText('1920x1080, legacy performance mode', 85, 61),\
@@ -238,7 +240,7 @@ configs["episodes"].append(\
 { "title": "Fortnite both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:32.3" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Fortnite, 1920x1080, performance mode.png"} }, \
-"video" : {"file" : "FortniteClient-Win64-Shipping_2026_02_19_22_46_14_501.mkv"},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_01_23_23_09_39_066-converted.mp4"},\
 "isChapter" : False,\
 })
 
@@ -285,6 +287,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('1280x720, high settings'   , 43, 37),\
               scriptedvided.r6sText('1280x720, low settings'    , 51,42),\
 ]}, \
+"video" : {"file" : "stock_FarCry6_benchmark.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -423,7 +426,7 @@ configs["episodes"].append(\
 { "title": "265 is faster sum all FPS",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:24.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "FortniteClient-Win64-Shipping_2026_02_19_22_46_14_501.mkv"},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_01_23_23_09_39_066-converted.mp4"},\
 "overlay" : { "image" : {"file" : "SUM of all FPS.png"} }, \
 })
 
@@ -482,7 +485,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Who is this GPU for",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12.51.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:51.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_R9_370_barred.mp4"},\
 })
 
