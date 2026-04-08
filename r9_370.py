@@ -225,7 +225,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:16.4" ), "padAudio" : 0.05 },\
-"video" : {"file" : "FortniteClient-Win64-Shipping_2026_02_19_22_46_14_501.mkv"}\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_02_19_22_46_14_501.mkv"},\
 "overlay" : { \
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText('1920x1080, legacy performance mode', 85, 61),\
