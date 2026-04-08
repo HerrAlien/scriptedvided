@@ -376,7 +376,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "DOTA 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:23.2" ), "padAudio" : 0.05 },\
-"video" : "stock_dota2_1080pLow_scale100.mp4"\
+"video" : "stock_dota2_1080pLow_scale100.mp4",\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, low settings", } }, \
 })
 
