@@ -435,7 +435,7 @@ configs["episodes"].append(\
 { "title": "FC6 and ARC Raiders love VRAM",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:06" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_FarCry6_benchmark.mp4"},\
 "overlay" : { "image" : {"file" : "Far Cry 6, 1920x1080, low settings.png"} }, \
 })
 
@@ -450,7 +450,7 @@ configs["episodes"].append(\
 { "title": "AliExpress pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:24" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "r9_370_pricing.mkv"},\
 })
 
 # olx or breel_GTX1060_inHand_barred.mp4
@@ -466,7 +466,7 @@ configs["episodes"].append(\
 { "title": "Used market has better prices rx 580",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:39.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Polaris_Family_RX580_barred.mp4"},\
 })
 
 configs["episodes"].append(\
