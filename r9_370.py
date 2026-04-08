@@ -238,7 +238,7 @@ configs["episodes"].append(\
 { "title": "Fortnite both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:32.3" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Fortnite, 1920x1080, performance mode.png"} }, \
-"video" : {"file" : "FortniteClient-Win64-Shipping_2026_02_19_22_46_14_501.mkv"}\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_02_19_22_46_14_501.mkv"},\
 "isChapter" : False,\
 })
 
