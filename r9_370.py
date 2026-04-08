@@ -193,6 +193,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:49.4" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Cyberpunk 2077, 1280x720, lowest settings. no FSR.png"} }, \
 "isChapter" : False,\
+"video" : {"file" : "Cyberpunk2077_2025_04_06_22_49_01_575-converted.mp4"},\
 })
 
 # single resolution
@@ -207,6 +208,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:16.3" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "The Finals, 1280x720, low settings.png"} }, \
 "isChapter" : False,\
+"video" : {"file" : "Discovery_2025_03_15_22_55_07_819.mp4"},\
 })
 
 # single resolution
@@ -223,7 +225,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:16.4" ), "padAudio" : 0.05 },\
-"video" : {"file" : " "}\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_02_19_22_46_14_501.mkv"}\
 "overlay" : { \
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText('1920x1080, legacy performance mode', 85, 61),\
@@ -236,6 +238,7 @@ configs["episodes"].append(\
 { "title": "Fortnite both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:32.3" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Fortnite, 1920x1080, performance mode.png"} }, \
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_02_19_22_46_14_501.mkv"}\
 "isChapter" : False,\
 })
 
@@ -250,6 +253,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:57.2" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Terminator, 1920x1080, high settings.png"} }, \
 "isChapter" : False,\
+"video" : {"file" : "Terminator-Win64-Shipping_2024_07_20_23_51_41_842-converted.mp4", "start" : "17:00"},\
 })
 
 configs["episodes"].append(\
@@ -268,6 +272,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:33.6" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Counter-Strike 2, 1920x1080, low settings.png"} }, \
 "isChapter" : False,\
+"video" : {"file" : "stock_cs2_2024_02_11.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -287,6 +292,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:08.9" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Far Cry 6, 1920x1080, low settings.png"} }, \
 "isChapter" : False,\
+"video" : {"file" : "stock_FarCry6_benchmark.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -306,6 +312,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:49" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Rainbow 6_ Siege, 1920x1080, low settings.png"} }, \
 "isChapter" : False,\
+"video" : {"file" : "stock_RainbowSixSiege_benchmark3.mp4"},\
 })
 
 # single resolution
@@ -324,6 +331,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:36.6" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Control, 1920x1080, lowest settings.png"} }, \
 "isChapter" : False,\
+"video" : {"file" : "GTX970_Control_DX11_medium.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -342,6 +350,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:19" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Overwatch 2, 1920x1080, low settings.png"} }, \
 "isChapter" : False,\
+"video" : {"file" : "stock_Overwatch2_gameplay_5770.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -360,6 +369,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:04" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Borderlands 3, 1920x1080, very low settings.png"} }, \
 "isChapter" : False,\
+"video" : {"file" : "Borderlands3_2024_05_03_22_58_15_076.mp4"},\
 })
 
 # single resolution
@@ -374,7 +384,6 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Shadow of the Tomb Raider",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:44" ), "padAudio" : 0.05 },\
-"video" : {"file" : " "}\
 "overlay" : { \
     "text" : ["'Shadow of the Tomb Raider'",\
               scriptedvided.r6sText('1920x1080, very low settings', 44, 32),\
@@ -388,6 +397,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:53.5" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Shadow of the Tomb Raider, 1280x720, medium settings.png"} }, \
 "isChapter" : False,\
+"video" : {"file" : "rx580_SOTTR_2024_07_27_22_58_17_417-converted.mp4", "start" : "00:00"},\
 })
 
 #configs["episodes"].append(\
@@ -406,14 +416,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:08" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R9Family2026_R9_370_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "265 is faster sum all FPS",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:24.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_02_19_22_46_14_501.mkv"},\
 "overlay" : { "image" : {"file" : "SUM of all FPS.png"} }, \
 })
 
@@ -421,14 +431,14 @@ configs["episodes"].append(\
 { "title": "VRAM not properly used, breel with both cards",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:41.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "gpuz_370_265_720.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "370 can OC",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:52.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R7_365_R9_370_barred.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -458,7 +468,7 @@ configs["episodes"].append(\
 { "title": "Used market has better prices",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:33.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX_1060_breel_andOLX.mp4"},\
 })
 
 #olx or Polaris_Family_RX580_barred.mp4
