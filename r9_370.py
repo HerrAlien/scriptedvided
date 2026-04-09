@@ -10,7 +10,8 @@ configs = { "defaultAudioFile" : "R9_370.ogg",\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "It Plays Arc Raiders?", "until" : "These games will not run"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "These games will not run", "until" : "CS2 both"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "CS2 both", "until" : "Conclusions"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "CS2 both", "until" : "DOTA2"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "DOTA2", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "Used market has better prices rx 580"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Used market has better prices rx 580", "until" : "EOF"}}, \
 ], "volume" : 0.038 },\
@@ -269,10 +270,12 @@ configs["episodes"].append(\
 ]}, \
 })
 
+
+# bad overlay, this is at 720 ...
 configs["episodes"].append(\
 { "title": "CS2 both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:33.6" ), "padAudio" : 0.05 },\
-"overlay" : { "image" : {"file" : "Counter-Strike 2, 1920x1080, low settings.png"} }, \
+"overlay" : { "image" : {"file" : "Counter-Strike 2, 1280x720, low settings.png"} }, \
 "isChapter" : False,\
 "video" : {"file" : "stock_cs2_2024_02_11.mp4"},\
 })
