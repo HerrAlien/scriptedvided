@@ -186,15 +186,15 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Audio introduction",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("03:00.2", "03:13.2" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : ("", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "Prime_B550m-a-WiFi_audio.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Audio sample",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("03:00.2", "03:13.2" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"audio" : {"timestamps" : ("", "" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : "Prime_B550m-a-WiFi_audio.mkv"},\
 })
 
 # EC spi chip first
@@ -237,7 +237,7 @@ configs["episodes"].append(\
 { "title": "REBAR and TPM",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Prime_B550m-a-wifi-tpm-rebar.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -279,7 +279,7 @@ configs["episodes"].append(\
 { "title": "likes - audio",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "Prime_B550m-a-WiFi_audio.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -293,7 +293,7 @@ configs["episodes"].append(\
 { "title": "dislikes",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "side by side DIMMs and fan support"},\
+"video" : {"file" : "PrimeB550M-A_WiFi_BIOS_FanTypeAndCurve.MP4"},\
 })
 
 configs["episodes"].append(\
