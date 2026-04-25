@@ -180,6 +180,7 @@ configs["episodes"].append(\
 }, \
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Marvel Rivals.png"} }, \
+"video" : {"file" : " "}\
 })
 
 # needs redone
@@ -204,12 +205,12 @@ configs["episodes"].append(\
 }, \
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Cyberpunk 2077.png"} }, \
+"video" : {"file" : " "}\
 })
 
 configs["episodes"].append(\
 { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
@@ -228,6 +229,7 @@ configs["episodes"].append(\
 }, \
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "ARC Raiders.png"} }, \
+"video" : {"file" : " "}\
 })
 
 configs["episodes"].append(\
@@ -262,7 +264,6 @@ configs["episodes"].append(\
         "settings" : "960x540, lowest settings", \
     }\
 },\
-"video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
@@ -298,6 +299,7 @@ configs["episodes"].append(\
 }, \
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Rainbow 6_ Siege.png"} }, \
+"video" : {"file" : " "}\
 })
 
 # single resolution
@@ -322,6 +324,7 @@ configs["episodes"].append(\
 }\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Doom Eternal.png"} }, \
+"video" : {"file" : " "}\
 })
 
 configs["episodes"].append(\
@@ -344,12 +347,12 @@ configs["episodes"].append(\
 },
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Apex Legends.png"} }, \
+"video" : {"file" : " "}\
 })
 
 configs["episodes"].append(\
 { "title": "Far Cry 6",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
@@ -368,6 +371,7 @@ configs["episodes"].append(\
 }\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Far Cry 6.png"} }, \
+"video" : {"file" : " "}\
 })
 
 configs["episodes"].append(\
@@ -390,6 +394,7 @@ configs["episodes"].append(\
 }\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Overwatch 2.png"} }, \
+"video" : {"file" : " "}\
 })
 
 configs["episodes"].append(\
@@ -412,6 +417,7 @@ configs["episodes"].append(\
 }\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Overwatch 2.png"} }, \
+"video" : {"file" : " "}\
 })
 
 configs["episodes"].append(\
@@ -434,6 +440,7 @@ configs["episodes"].append(\
 }\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Counter-Strike 2.png"} }, \
+"video" : {"file" : " "}\
 })
 
 configs["episodes"].append(\
@@ -456,6 +463,7 @@ configs["episodes"].append(\
 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Borderlands 3.png"} }, \
+"video" : {"file" : " "}\
 })
 
 configs["episodes"].append(\
@@ -502,6 +510,7 @@ configs["episodes"].append(\
 }, \
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "The Finals.png"} }, \
+"video" : {"file" : " "}\
 })
 
 #redo and specify a smoother video
@@ -526,6 +535,7 @@ configs["episodes"].append(\
 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Shadow of the Tomb Raider.png"} }, \
+"video" : {"file" : " "}\
 })
 
 #redo and specify a smoother video
@@ -550,6 +560,7 @@ configs["episodes"].append(\
 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Terminator_ Resistance.png"} }, \
+"video" : {"file" : " "}\
 })
 
 ####################### end of gaming section ###############################
