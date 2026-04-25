@@ -170,6 +170,17 @@ configs["episodes"].append(\
 }, \
 })
 
+configs["episodes"].append(\
+{ "title": "Marvel all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, 30% render scale, low settings", \
+    }\
+}, \
+"isChapter" : False,\
+})
+
 # needs redone
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
@@ -179,6 +190,18 @@ configs["episodes"].append(\
         "settings" : "1024x768, performance FSR, lowest settings", \
     }\
 }, \
+})
+
+# needs redone
+configs["episodes"].append(\
+{ "title": "Cyberpunk 2077 all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1024x768, performance FSR, lowest settings", \
+    }\
+}, \
+"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -193,6 +216,18 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
+{ "title": "ARC Raiders all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, 50% render scale, low settings", \
+    }\
+}, \
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
@@ -201,6 +236,18 @@ configs["episodes"].append(\
     }\
 }, \
 "video" : {"file" : " "}\
+})
+
+configs["episodes"].append(\
+{ "title": "Fortnite all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, 50% render scale, performance mode", \
+    }\
+}, \
+"video" : {"file" : " "}\
+"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -215,6 +262,18 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
+{ "title": "Control all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "960x540, lowest settings", \
+    }\
+},\
+"video" : {"file" : " "},\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "padAudio" : 0.05 },\
 "overlay" : { \
@@ -222,6 +281,17 @@ configs["episodes"].append(\
         "settings" : "1024x768, 50% scale, low settings", \
     }\
 }, \
+})
+
+configs["episodes"].append(\
+{ "title": "Rainbow Six: Siege all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1024x768, 50% scale, low settings", \
+    }\
+}, \
+"isChapter" : False,\
 })
 
 # single resolution
@@ -235,6 +305,18 @@ configs["episodes"].append(\
 }\
 })
 
+# single resolution
+configs["episodes"].append(\
+{ "title": "Doom Eternal all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "800x600, low settings", \
+    }\
+}\
+"isChapter" : False,\
+})
+
 configs["episodes"].append(\
 { "title": "Apex Legends",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
@@ -243,6 +325,17 @@ configs["episodes"].append(\
         "settings" : "1280x720, low settings", \
     }\
 },
+})
+
+configs["episodes"].append(\
+{ "title": "Apex Legends all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, low settings", \
+    }\
+},
+"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -257,6 +350,18 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
+{ "title": "Far Cry 6 all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"video" : {"file" : " "},\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, 50% render scale, low settings", \
+    }\
+}\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
 { "title": "Overwatch 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
@@ -264,6 +369,17 @@ configs["episodes"].append(\
         "settings" : "1280x720, 50% render scale, low settings", \
     }\
 }\
+})
+
+configs["episodes"].append(\
+{ "title": "Overwatch 2 all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, 50% render scale, low settings", \
+    }\
+}\
+"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -277,6 +393,17 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
+{ "title": "RE4 all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "800x600, performance FSR, low settings", \
+    }\
+}\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
@@ -287,6 +414,17 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
+{ "title": "Counter-Strike 2 all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, balanced FSR, low settings", \
+    }\
+}\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
 { "title": "Borderlands 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
@@ -294,6 +432,17 @@ configs["episodes"].append(\
         "settings" : "1280x720, 50% render scale, very low settings", \
     }\
 },\
+})
+
+configs["episodes"].append(\
+{ "title": "Borderlands 3 all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, 50% render scale, very low settings", \
+    }\
+},\
+"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -308,6 +457,18 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
+{ "title": "DOTA 2 all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1920x1080, low settings", \
+    }\
+},\
+"video" : "stock_dota2_1080pLow_scale100.mp4"\
+"isChapter" : False,\
+})
+
+configs["episodes"].append(\
 { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
@@ -317,6 +478,16 @@ configs["episodes"].append(\
 }, \
 })
 
+configs["episodes"].append(\
+{ "title": "The Finals all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x720, 50% scale, low settings", \
+    }\
+}, \
+"isChapter" : False,\
+})
 
 #redo and specify a smoother video
 configs["episodes"].append(\
@@ -331,6 +502,18 @@ configs["episodes"].append(\
 
 #redo and specify a smoother video
 configs["episodes"].append(\
+{ "title": "Shadow of the Tomb Raider all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "800x600, lowest settings", \
+    }\
+},\
+"isChapter" : False,\
+})
+
+#redo and specify a smoother video
+configs["episodes"].append(\
 { "title": "Terminator",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
@@ -338,6 +521,18 @@ configs["episodes"].append(\
         "settings" : "1280x1024, 50% scale, low settings", \
     }\
 },\
+})
+
+#redo and specify a smoother video
+configs["episodes"].append(\
+{ "title": "Terminator all",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "benchmark" : { \
+        "settings" : "1280x1024, 50% scale, low settings", \
+    }\
+},\
+"isChapter" : False,\
 })
 
 ####################### end of gaming section ###############################
