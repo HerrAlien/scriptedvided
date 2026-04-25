@@ -571,13 +571,13 @@ configs["episodes"].append(\
 # this is both time and cycles, for both SMT on and off
 configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:19.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "By itself",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:32.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "isChapter" : False,\
 "overlay" : { \
@@ -587,7 +587,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Compared with others",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:45.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "isChapter" : False,\
 "overlay" : { \
@@ -603,35 +603,35 @@ configs["episodes"].append(\
 # happy that it works
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:03.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "side by side with the 1500X",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:13.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "not the best stopgap",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:33" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "2400G and 4600G together or APU vs CPU and GPU",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:44.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:53.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
