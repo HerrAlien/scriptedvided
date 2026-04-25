@@ -71,7 +71,7 @@ Free Download / Stream: https://alplus.io/inspired
 
 configs["episodes"].append(\
 { "title": "One of the first AM4 APUs",\
-"audio" : {"timestamps" : ("", ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00", "00:14.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
@@ -79,14 +79,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "4600G",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:22.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 # focus on PCIE lanes
 configs["episodes"].append(\
 { "title": "The CPU",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:34.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
@@ -94,7 +94,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "L3 cache",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:42.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
@@ -102,14 +102,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "PCIE lanes",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:54.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 # focus on PCIE lanes
 configs["episodes"].append(\
 { "title": "What actually gets benchmarked",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:03" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
@@ -117,13 +117,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "sample benchmark",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:13" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 })
 
 configs["episodes"].append(\
 { "title": "The test system",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:26.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Custom PC'",\
               "'CPU\: Ryzen 5 1500X'",\
@@ -136,21 +136,21 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "RX 580 broll",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:40.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "IGPU test settings broll",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:50.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "will have gigasus",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:02.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "isChapter" : False,\
 })
@@ -162,7 +162,7 @@ configs["episodes"].append(\
 ####################### gaming section ###############################
 configs["episodes"].append(\
 { "title": "Marvel Rivals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:24.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 30% render scale, low settings", \
@@ -172,7 +172,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Marvel all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:37.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 30% render scale, low settings", \
@@ -186,7 +186,7 @@ configs["episodes"].append(\
 # needs redone
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:04" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1024x768, performance FSR, lowest settings", \
@@ -197,7 +197,7 @@ configs["episodes"].append(\
 # needs redone
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077 all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:12.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1024x768, performance FSR, lowest settings", \
@@ -210,7 +210,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "ARC Raiders",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:38.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
@@ -220,7 +220,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "ARC Raiders all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:47.2" ), "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "overlay" : { \
     "benchmark" : { \
@@ -234,7 +234,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:10" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, performance mode", \
@@ -245,7 +245,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Fortnite all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:25.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, performance mode", \
@@ -258,7 +258,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Control",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:51.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "960x540, lowest settings", \
@@ -268,7 +268,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Control all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "960x540, lowest settings", \
@@ -281,7 +281,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:18.6"), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1024x768, 50% scale, low settings", \
@@ -291,7 +291,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:30.1"), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1024x768, 50% scale, low settings", \
@@ -305,7 +305,7 @@ configs["episodes"].append(\
 # single resolution
 configs["episodes"].append(\
 { "title": "Doom Eternal",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:48.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "800x600, low settings", \
@@ -316,7 +316,7 @@ configs["episodes"].append(\
 # single resolution
 configs["episodes"].append(\
 { "title": "Doom Eternal all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:06.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "800x600, low settings", \
@@ -329,7 +329,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Apex Legends",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:29" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, low settings", \
@@ -339,7 +339,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Apex Legends all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:39.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, low settings", \
@@ -352,7 +352,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Far Cry 6",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:02.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
@@ -362,7 +362,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Far Cry 6 all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:14.9" ), "padAudio" : 0.05 },\
 "video" : {"file" : " "},\
 "overlay" : { \
     "benchmark" : { \
@@ -376,7 +376,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Overwatch 2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:44.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
@@ -386,7 +386,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Overwatch 2 all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:54.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
@@ -399,7 +399,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "RE4",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:24.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "800x600, performance FSR, low settings", \
@@ -409,7 +409,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "RE4 all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:39.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "800x600, performance FSR, low settings", \
@@ -422,7 +422,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:59.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, balanced FSR, low settings", \
@@ -432,7 +432,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Counter-Strike 2 all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:11.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, balanced FSR, low settings", \
@@ -445,7 +445,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Borderlands 3",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:32.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, very low settings", \
@@ -455,7 +455,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Borderlands 3 all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:49.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, very low settings", \
@@ -468,7 +468,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DOTA 2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:08.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -479,7 +479,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "DOTA 2 all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:19.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1920x1080, low settings", \
@@ -492,7 +492,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "The Finals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:42.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% scale, low settings", \
@@ -502,7 +502,7 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "The Finals all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:56.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% scale, low settings", \
@@ -516,7 +516,7 @@ configs["episodes"].append(\
 #redo and specify a smoother video
 configs["episodes"].append(\
 { "title": "Shadow of the Tomb Raider",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:17.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "800x600, lowest settings", \
@@ -527,7 +527,7 @@ configs["episodes"].append(\
 #redo and specify a smoother video
 configs["episodes"].append(\
 { "title": "Shadow of the Tomb Raider all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:32.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "800x600, lowest settings", \
@@ -541,7 +541,7 @@ configs["episodes"].append(\
 #redo and specify a smoother video
 configs["episodes"].append(\
 { "title": "Terminator",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:49.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x1024, 50% scale, low settings", \
@@ -552,7 +552,7 @@ configs["episodes"].append(\
 #redo and specify a smoother video
 configs["episodes"].append(\
 { "title": "Terminator all",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:00.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x1024, 50% scale, low settings", \
