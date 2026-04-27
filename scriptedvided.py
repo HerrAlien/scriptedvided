@@ -551,7 +551,7 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, overlayImageDict, op
     return fixedVideo
 
 # move to UTILS
-def aliases(inputName):
+def aliases(inputName, forceUppercase=True):
     gameAliases = [\
         ["Apex", "Apex Legends", "ApexLegends", "Apex_Legends", "r5apex.exe", "R5Apex", "r5apex_dx12.exe", "r5apex_dx12"],\
         ["Alien Isolation", "Alien: Isolation", "Alien:Isolation", "AlienIsolation", "Alien_Isolation", "AI.exe"],\
@@ -624,7 +624,8 @@ def aliases(inputName):
         for name in arrToReturn:
             uppedArr.append(name.upper())
         
-        arrToReturn = uppedArr
+        if forceUppercase:
+            arrToReturn = uppedArr
         
     return arrToReturn # no lnown
     
