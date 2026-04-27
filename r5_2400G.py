@@ -179,7 +179,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:37.5" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Marvel Rivals.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_08_00_31_860-converted.mp4"},\
 })
 
 # needs redone
@@ -200,7 +200,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:12.8" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Cyberpunk 2077.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "Cyberpunk2077_2025_04_06_22_37_46_461-converted.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -219,7 +219,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:47.2" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "ARC Raiders.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "08:00"},\
 })
 
 configs["episodes"].append(\
@@ -237,7 +237,7 @@ episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["t
 configs["episodes"].append(\
 { "title": "Fortnite all",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:25.3" ), "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2025_12_13_22_22_36_353.mp4"},\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Fortnite.png"} }, \
 })
@@ -256,7 +256,7 @@ episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["t
 configs["episodes"].append(\
 { "title": "Control all",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00.3" ), "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "GTX970_Control_DX11_medium.mp4"},\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Control.png"} }, \
 })
@@ -277,7 +277,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:30.1"), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Rainbow 6_ Siege.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_RainbowSixSiege_benchmark3.mp4"},\
 })
 
 # single resolution
@@ -298,7 +298,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:06.1" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Doom Eternal.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -317,7 +317,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:39.8" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Apex Legends.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "r5apex_bot_royale.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -336,7 +336,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:14.9" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Far Cry 6.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_FarCry6_benchmark.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -355,7 +355,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:54.9" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Overwatch 2.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_Overwatch2_gameplay_5770.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -374,7 +374,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:39.9" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Overwatch 2.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "stock_re4demo_phoneCall.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -393,7 +393,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:11.8" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Counter-Strike 2.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "cs2_2026_01_24_14_51_28_794-converted.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -412,7 +412,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:49.4" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Borderlands 3.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "Borderlands3_2024_05_03_22_37_22_347.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -451,7 +451,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:56.1" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "The Finals.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "TheFinals_Discovery_short_W.mp4"},\
 })
 
 #redo and specify a smoother video
@@ -472,7 +472,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:32.9" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Shadow of the Tomb Raider.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "SOTTR_gaming_highest.mp4"},\
 })
 
 #redo and specify a smoother video
@@ -493,7 +493,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "12:00.5" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Terminator_ Resistance.png"} }, \
-"video" : {"file" : " "},\
+"video" : {"file" : "Terminator-Win64-Shipping_2024_07_20_23_51_41_842-converted.mp4", "start" : "07:00"},\
 })
 
 ####################### end of gaming section ###############################
@@ -587,11 +587,11 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode(configs["episodes"][21], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][22], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][24], configs)
-scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Marvel Rivals"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Marvel Rivals"][0], configs)
 #scriptedvided.makeVideo(configs)
 
 #for x in range(19,26):
 #    scriptedvided.makeVideoForEpisode(configs["episodes"][x], configs)
 #
-#scriptedvided.makeVideo(configs)
+scriptedvided.makeVideo(configs)
 
