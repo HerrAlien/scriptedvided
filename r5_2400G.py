@@ -231,7 +231,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 2400G', 126,71),\
               scriptedvided.r6sText('R5 1500X', 123, 68),\
 ]}, \
-"video" : {"file" : " "},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2025_12_13_22_22_36_353.mp4"},\
 })
 episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
 
@@ -559,7 +559,7 @@ configs["episodes"].append(\
 { "title": "2400G and 4600G together or APU vs CPU and GPU",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:44.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "R5_4600G_vs_3600AndDGPU_barred.mp4"},\
 })
 
 configs["episodes"].append(\
