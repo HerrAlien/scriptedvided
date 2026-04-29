@@ -553,7 +553,7 @@ def makeEpisodeWithAllInputs (video, audio, textLinesArray, overlayImageDict, op
 # move to UTILS
 def aliases(inputName, forceUppercase=True):
     gameAliases = [\
-        ["Apex", "Apex Legends", "ApexLegends", "Apex_Legends", "r5apex.exe", "R5Apex", "r5apex_dx12.exe", "r5apex_dx12"],\
+        ["Apex Legends", "Apex", "ApexLegends", "Apex_Legends", "r5apex.exe", "R5Apex", "r5apex_dx12.exe", "r5apex_dx12"],\
         ["Alien Isolation", "Alien: Isolation", "Alien:Isolation", "AlienIsolation", "Alien_Isolation", "AI.exe"],\
         ["Call of Duty: Warzone","Call_of_Duty_Warzone", "CallOfDutyWarzone", "COD Warzone", "COD_Warzone", "Warzone", "ModernWarfare.exe", "ModernWarfare"],\
         ["Battlefield V","Battlefield 5", "Battlefield_V", "Battlefield_5", "bfv", "bf5", "bfv.exe"],\
@@ -570,7 +570,7 @@ def aliases(inputName, forceUppercase=True):
         ["Hyperscape", "Hyperscape.exe"],\
         ["Warframe", "Warframe.x64.exe"],\
         ["Control", "Control_DX11.exe", "Control_DX12.exe" , "Control_DX12", "Control_DX11"],\
-        ["DOTA2", "DOTA 2", "dota2.exe"],\
+        ["DOTA 2", "DOTA2", "dota2.exe"],\
         ["Grand Theft Auto V", "gtav", "gta5", "GTA5.exe", "GTA V", "GTA_V", "gta_5"],\
         ["Splitgate", "PortalWars-Win64-Shipping.exe", "PortalWars"],\
         ["Fortnite", "FortniteClient-Win64-Shipping.exe"],\
@@ -580,7 +580,7 @@ def aliases(inputName, forceUppercase=True):
         ["Dying Light", "DyingLightGame", "DyingLightGame.exe", "DyingLight"],\
         ["Resident Evil 4 (Remake)", "re4demo.exe", "re4demo"],\
         ["PUBG", "TslGame.exe", "TslGame"],\
-        ["CS2", "Counter-Strike 2" , "cs2.exe"],\
+        ["Counter-Strike 2", "Counter Strike 2", "CS2", "cs2.exe"],\
         ["The Finals", "Finals" , "Discovery.exe", "Discovery-e.exe", "Discovery-d.exe", "Discovery"],\
         ["Doom Eternal", "DoomEternal" , "DOOMEternalx64vk.exe" ],\
         ["Fallout 4", "Fallout4" , "Fallout4.exe" ],\

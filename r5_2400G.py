@@ -176,7 +176,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 133, 79),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'"
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'"
 
 configs["episodes"].append(\
 { "title": "Marvel all",\
@@ -196,7 +196,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 96, 70),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 # needs redone
 configs["episodes"].append(\
@@ -215,16 +215,16 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 2400G', 75, 41),\
               scriptedvided.r6sText('R5 1500X', 59, 29),\
 ]}, \
-"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "07:30"},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "07:50"},\
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "ARC Raiders all",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:47.2" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "ARC Raiders.png"} }, \
-"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "08:00"},\
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "08:20"},\
 })
 
 configs["episodes"].append(\
@@ -237,7 +237,7 @@ configs["episodes"].append(\
 ]}, \
 "video" : {"file" : "FortniteClient-Win64-Shipping_2025_12_13_22_22_36_353.mp4"},\
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Fortnite all",\
@@ -256,7 +256,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 152, 61),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Control all",\
@@ -275,7 +275,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 210, 158),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege all",\
@@ -295,7 +295,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 193, 141),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 # single resolution
 configs["episodes"].append(\
@@ -315,7 +315,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 194, 124),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Apex Legends all",\
@@ -334,7 +334,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 85, 64),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Far Cry 6 all",\
@@ -353,7 +353,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 474, 254),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Overwatch 2 all",\
@@ -372,7 +372,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 115, 69),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "RE4 all",\
@@ -391,7 +391,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 125, 74),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Counter-Strike 2 all",\
@@ -410,7 +410,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 83, 58),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Borderlands 3 all",\
@@ -430,7 +430,7 @@ configs["episodes"].append(\
 ]}, \
 "video" : "stock_dota2_1080pLow_scale100.mp4"\
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "DOTA 2 all",\
@@ -449,7 +449,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 121, 73),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "The Finals all",\
@@ -469,7 +469,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 113, 57),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 #redo and specify a smoother video
 configs["episodes"].append(\
@@ -490,7 +490,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 1500X', 201, 94),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
+episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 #redo and specify a smoother video
 configs["episodes"].append(\
