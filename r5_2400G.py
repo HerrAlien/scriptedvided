@@ -215,6 +215,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 2400G', 75, 41),\
               scriptedvided.r6sText('R5 1500X', 59, 29),\
 ]}, \
+"video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "07:30"},\
 })
 episodes[-1]["overlay"]["text"][0] = "'" + scriptedvided.aliases(episodes[-1]["title"], False)[0] + "'";
 
