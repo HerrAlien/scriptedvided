@@ -569,6 +569,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:13.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "r5_2400G_1500x_barred.mp4"},\
+"overlay" : { "image" : {"file" : "SUM of all FPS.png"} }, \
 })
 
 configs["episodes"].append(\
