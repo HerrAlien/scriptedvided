@@ -1,4 +1,5 @@
 import scriptedvided
+import sv_ffutils
 
 configs = { "defaultAudioFile" : "R5_2400G.ogg",\
 "mediaFolder" : "F:\\Videos\\R5_2400G", \
