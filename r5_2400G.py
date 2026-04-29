@@ -485,6 +485,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('R5 2400G', 92, 40),\
               scriptedvided.r6sText('R5 1500X', 113, 57),\
 ]}, \
+"video" : {"file" : "SOTTR_gaming_highest.mp4"},\
 })
 episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
