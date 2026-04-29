@@ -88,7 +88,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:34.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_2400G_inHand_barred.mp4"},\
+"overlay" : { "image" : {"file" : "2400G_specs.png"} }, \
 })
 
 # focus on PCIE lanes
@@ -96,7 +97,8 @@ configs["episodes"].append(\
 { "title": "L3 cache",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:42.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "r5_2400G_1500x_barred.mp4"},\
+"overlay" : { "image" : {"file" : "2400G_1500X_Cache_Emphasis.png"} }, \
 })
 
 # focus on PCIE lanes
@@ -104,7 +106,8 @@ configs["episodes"].append(\
 { "title": "PCIE lanes",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:54.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "r5_2400G_1500x_barred.mp4"},\
+"overlay" : { "image" : {"file" : "2400G_1500X_Pcie_Emphasis.png"} }, \
 })
 
 # focus on PCIE lanes
@@ -119,7 +122,7 @@ configs["episodes"].append(\
 { "title": "sample benchmark",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:13" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "12 Marvel all.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -145,7 +148,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "IGPU test settings broll",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:50.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "S_O_T_T_R_settings_veryLowToLow.mp4"},\
 "isChapter" : False,\
 })
 
@@ -545,14 +548,14 @@ configs["episodes"].append(\
 { "title": "side by side with the 1500X",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:13.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "r5_2400G_1500x_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "not the best stopgap",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "13:33" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : " "},\
+"video" : {"file" : "breel_R5_2400G_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
