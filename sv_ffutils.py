@@ -32,7 +32,7 @@ def ffmpegParams():
 #    return ["ffmpeg", "-y"]
     
 def ffmpegSafeString (someText):
-    return someText.replace(":", "\:").replace("%", "\\\%")
+    return someText.replace(":", "\:").replace("%", "\\\%").replace(",", "\,")
 
 def getLengthOfStream (stream):
     if type(stream) is type ({}):

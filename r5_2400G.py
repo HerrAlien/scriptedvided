@@ -173,6 +173,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:24.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.33 render scale"),\
               scriptedvided.r6sText('R5 2400G', 104, 82),\
               scriptedvided.r6sText('R5 1500X', 133, 79),\
 ]}, \
@@ -193,6 +194,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:04" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1024x768, lowest settings, FSR performance"),\
               scriptedvided.r6sText('R5 2400G', 83, 52),\
               scriptedvided.r6sText('R5 1500X', 96, 70),\
 ]}, \
@@ -213,6 +215,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:38.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 75, 41),\
               scriptedvided.r6sText('R5 1500X', 59, 29),\
 ]}, \
@@ -233,6 +236,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:10" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1280x720, performance mode, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 126,71),\
               scriptedvided.r6sText('R5 1500X', 123, 68),\
 ]}, \
@@ -253,6 +257,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:51.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("960x540, lowest settings"),\
               scriptedvided.r6sText('R5 2400G', 171, 76),\
               scriptedvided.r6sText('R5 1500X', 152, 61),\
 ]}, \
@@ -272,6 +277,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:18.6"), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 161,120),\
               scriptedvided.r6sText('R5 1500X', 210, 158),\
 ]}, \
@@ -292,6 +298,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:48.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("800x600, low settings"),\
               scriptedvided.r6sText('R5 2400G', 193, 137),\
               scriptedvided.r6sText('R5 1500X', 193, 141),\
 ]}, \
@@ -312,6 +319,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:29" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1280x720, low settings"),\
               scriptedvided.r6sText('R5 2400G', 213, 138),\
               scriptedvided.r6sText('R5 1500X', 194, 124),\
 ]}, \
@@ -331,6 +339,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:02.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 71, 55),\
               scriptedvided.r6sText('R5 1500X', 85, 64),\
 ]}, \
@@ -350,6 +359,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:44.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 224, 113),\
               scriptedvided.r6sText('R5 1500X', 474, 254),\
 ]}, \
@@ -369,6 +379,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:24.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("640x480, prioritize performance"),\
               scriptedvided.r6sText('R5 2400G', 80, 41),\
               scriptedvided.r6sText('R5 1500X', 115, 69),\
 ]}, \
@@ -388,6 +399,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:59.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1280x720, low settings, FSR balanced"),\
               scriptedvided.r6sText('R5 2400G', 120, 67),\
               scriptedvided.r6sText('R5 1500X', 125, 74),\
 ]}, \
@@ -407,6 +419,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:32.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1280x720, very low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 82, 53),\
               scriptedvided.r6sText('R5 1500X', 83, 58),\
 ]}, \
@@ -426,6 +439,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:08.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1920x1080, low settings"),\
               scriptedvided.r6sText('R5 2400G',75, 43),\
               scriptedvided.r6sText('R5 1500X', 81, 46),\
 ]}, \
@@ -446,6 +460,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:42.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 102, 67),\
               scriptedvided.r6sText('R5 1500X', 121, 73),\
 ]}, \
@@ -466,6 +481,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:17.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("800x600, very low settings"),\
               scriptedvided.r6sText('R5 2400G', 92, 40),\
               scriptedvided.r6sText('R5 1500X', 113, 57),\
 ]}, \
@@ -487,6 +503,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:49.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["will be overwritten",\
+              sv_ffutils.ffmpegSafeString("1024x768, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 192, 96),\
               scriptedvided.r6sText('R5 1500X', 201, 94),\
 ]}, \
