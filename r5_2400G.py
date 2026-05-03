@@ -168,17 +168,15 @@ configs["episodes"].append(\
 
 episodes = configs["episodes"]
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Marvel Rivals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:24.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.33 render scale"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.33 render scale"),\
               scriptedvided.r6sText('R5 2400G', 104, 82),\
               scriptedvided.r6sText('R5 1500X', 133, 79),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'"
 
 configs["episodes"].append(\
 { "title": "Marvel all",\
@@ -189,17 +187,15 @@ configs["episodes"].append(\
 })
 
 # needs redone
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Cyberpunk 2077",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:04" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1024x768, lowest settings, FSR performance"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1024x768, lowest settings, FSR performance"),\
               scriptedvided.r6sText('R5 2400G', 83, 52),\
               scriptedvided.r6sText('R5 1500X', 96, 70),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 # needs redone
 configs["episodes"].append(\
@@ -210,18 +206,16 @@ configs["episodes"].append(\
 "video" : {"file" : "Cyberpunk2077_2025_04_06_22_37_46_461-converted.mp4"},\
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:38.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 75, 41),\
               scriptedvided.r6sText('R5 1500X', 59, 29),\
 ]}, \
 "video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "07:50"},\
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "ARC Raiders all",\
@@ -231,18 +225,16 @@ configs["episodes"].append(\
 "video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "08:20"},\
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:10" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1280x720, performance mode, 0.5 render scale"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, performance mode, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 126,71),\
               scriptedvided.r6sText('R5 1500X', 123, 68),\
 ]}, \
 "video" : {"file" : "FortniteClient-Win64-Shipping_2025_12_13_22_22_36_353.mp4"},\
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Fortnite all",\
@@ -252,17 +244,15 @@ configs["episodes"].append(\
 "overlay" : { "image" : {"file" : "Fortnite.png"} }, \
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Control",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:51.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("960x540, lowest settings"),\
+    "text" : [sv_ffutils.ffmpegSafeString("960x540, lowest settings"),\
               scriptedvided.r6sText('R5 2400G', 171, 76),\
               scriptedvided.r6sText('R5 1500X', 152, 61),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Control all",\
@@ -272,17 +262,15 @@ configs["episodes"].append(\
 "overlay" : { "image" : {"file" : "Control.png"} }, \
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Rainbow Six: Siege",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:18.6"), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 161,120),\
               scriptedvided.r6sText('R5 1500X', 210, 158),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Rainbow Six: Siege all",\
@@ -293,17 +281,15 @@ configs["episodes"].append(\
 })
 
 # single resolution
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Doom Eternal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:48.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("800x600, low settings"),\
+    "text" : [sv_ffutils.ffmpegSafeString("800x600, low settings"),\
               scriptedvided.r6sText('R5 2400G', 193, 137),\
               scriptedvided.r6sText('R5 1500X', 193, 141),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 # single resolution
 configs["episodes"].append(\
@@ -314,17 +300,15 @@ configs["episodes"].append(\
 "video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4"},\
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Apex Legends",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:29" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1280x720, low settings"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings"),\
               scriptedvided.r6sText('R5 2400G', 213, 138),\
               scriptedvided.r6sText('R5 1500X', 194, 124),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Apex Legends all",\
@@ -334,17 +318,15 @@ configs["episodes"].append(\
 "video" : {"file" : "r5apex_bot_royale.mp4"},\
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Far Cry 6",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:02.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 71, 55),\
               scriptedvided.r6sText('R5 1500X', 85, 64),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Far Cry 6 all",\
@@ -354,17 +336,15 @@ configs["episodes"].append(\
 "video" : {"file" : "stock_FarCry6_benchmark.mp4"},\
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Overwatch 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:44.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 224, 113),\
               scriptedvided.r6sText('R5 1500X', 474, 254),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Overwatch 2 all",\
@@ -374,17 +354,15 @@ configs["episodes"].append(\
 "video" : {"file" : "stock_Overwatch2_gameplay_5770.mp4"},\
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "RE4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:24.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("640x480, prioritize performance"),\
+    "text" : [sv_ffutils.ffmpegSafeString("640x480, prioritize performance"),\
               scriptedvided.r6sText('R5 2400G', 80, 41),\
               scriptedvided.r6sText('R5 1500X', 115, 69),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "RE4 all",\
@@ -394,17 +372,15 @@ configs["episodes"].append(\
 "video" : {"file" : "stock_re4demo_phoneCall.mp4"},\
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Counter-Strike 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:59.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1280x720, low settings, FSR balanced"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, FSR balanced"),\
               scriptedvided.r6sText('R5 2400G', 120, 67),\
               scriptedvided.r6sText('R5 1500X', 125, 74),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Counter-Strike 2 all",\
@@ -414,17 +390,15 @@ configs["episodes"].append(\
 "video" : {"file" : "cs2_2026_01_24_14_51_28_794-converted.mp4"},\
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Borderlands 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:32.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1280x720, very low settings, 0.5 render scale"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, very low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 82, 53),\
               scriptedvided.r6sText('R5 1500X', 83, 58),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "Borderlands 3 all",\
@@ -434,18 +408,16 @@ configs["episodes"].append(\
 "video" : {"file" : "Borderlands3_2024_05_03_22_37_22_347.mp4"},\
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "DOTA 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:08.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1920x1080, low settings"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1920x1080, low settings"),\
               scriptedvided.r6sText('R5 2400G',75, 43),\
               scriptedvided.r6sText('R5 1500X', 81, 46),\
 ]}, \
 "video" : "stock_dota2_1080pLow_scale100.mp4"\
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "DOTA 2 all",\
@@ -455,17 +427,15 @@ configs["episodes"].append(\
 "overlay" : { "image" : {"file" : "DOTA2.png"} }, \
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:42.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 102, 67),\
               scriptedvided.r6sText('R5 1500X', 121, 73),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 configs["episodes"].append(\
 { "title": "The Finals all",\
@@ -476,18 +446,16 @@ configs["episodes"].append(\
 })
 
 #redo and specify a smoother video
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Shadow of the Tomb Raider",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:17.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("800x600, very low settings"),\
+    "text" : [sv_ffutils.ffmpegSafeString("800x600, very low settings"),\
               scriptedvided.r6sText('R5 2400G', 92, 40),\
               scriptedvided.r6sText('R5 1500X', 113, 57),\
 ]}, \
 "video" : {"file" : "SOTTR_gaming_highest.mp4"},\
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 #redo and specify a smoother video
 configs["episodes"].append(\
@@ -499,17 +467,15 @@ configs["episodes"].append(\
 })
 
 #redo and specify a smoother video
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Terminator",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:49.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["will be overwritten",\
-              sv_ffutils.ffmpegSafeString("1024x768, low settings, 0.5 render scale"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1024x768, low settings, 0.5 render scale"),\
               scriptedvided.r6sText('R5 2400G', 192, 96),\
               scriptedvided.r6sText('R5 1500X', 201, 94),\
 ]}, \
 })
-episodes[-1]["overlay"]["text"][0] = "'" + sv_ffutils.ffmpegSafeString(scriptedvided.aliases(episodes[-1]["title"], False)[0]) + "'";
 
 #redo and specify a smoother video
 configs["episodes"].append(\

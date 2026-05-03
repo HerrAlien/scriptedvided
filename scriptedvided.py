@@ -638,6 +638,9 @@ def r6sText (settings, average, _1percent, _p1percent=None):
 def nextTS (configs):
     return configs["episodes"][-1]["audio"]["timestamps"][1];
 
+def addEpisodeWithTextOverlay (episodesList, ep):
+    episodesList.append(ep)
+    episodesList[-1]["overlay"]["text"] = ["'" + sv_ffutils.ffmpegSafeString(aliases(episodesList[-1]["title"], False)[0]) + "'"] + episodesList[-1]["overlay"]["text"]
     
 if __name__ == "__main__":
 #   truncatedvid = sv_ops.truncate ( "C:\\Users\\Admin\\Videos\\hd7770\\hd7770_RainbowSix_720p_100renderScale.mp4", -10, 30, "vid.mp4" )
