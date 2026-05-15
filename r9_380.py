@@ -93,7 +93,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Copmarisons, shaders, frequency",\
+{ "title": "Comparisons, shaders, frequency",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
@@ -145,7 +145,6 @@ configs["episodes"].append(\
 "isChapter" : False,\
 })
 
-
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
@@ -156,7 +155,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077 both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { "image" : {"file" : "Cyberpunk 2077, 1280x720, lowest settings. no FSR.png"} }, \
+"overlay" : { "image" : {"file" : "Cyberpunk 2077.png"} }, \
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
@@ -173,7 +172,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ARC both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1280x720, lowest settings", } }, \
+"overlay" : { "image" : {"file" : "ARC Raiders.png"} }, \
 "video" : "",\
 "isChapter" : False,\
 })
@@ -193,7 +192,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { "image" : {"file" : "Fortnite, 1920x1080, performance mode.png"} }, \
+"overlay" : { "image" : {"file" : "Fortnite.png"} }, \
 "video" : {"file" : ""},\
 "isChapter" : False,\
 })
@@ -213,7 +212,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Control both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { "image" : {"file" : "Control, 1920x1080, lowest settings.png"} }, \
+"overlay" : { "image" : {"file" : "Control.png"} }, \
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
@@ -227,13 +226,25 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Doom both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"overlay" : { "image" : {"file" : "Doom Eternal.png"} }, \
 "video" : {"file" : ""},\
 "isChapter" : False,\
 })
 
 
-APEX
+configs["episodes"].append(\
+{ "title": "Apex Legends",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
 
+configs["episodes"].append(\
+{ "title": "Apex both",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"overlay" : { "image" : {"file" : "Apex Legends.png"} }, \
+"video" : {"file" : ""},\
+"isChapter" : False,\
+})
 
 configs["episodes"].append(\
 { "title": "FC6",\
@@ -251,7 +262,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "FC6 both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { "image" : {"file" : "Far Cry 6, 1920x1080, low settings.png"} }, \
+"overlay" : { "image" : {"file" : "Far Cry 6.png"} }, \
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
@@ -271,7 +282,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "re4 both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { "image" : {"file" : "Far Cry 6, 1920x1080, low settings.png"} }, \
+"overlay" : { "image" : {"file" : "Resident Evil 4.png"} }, \
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
@@ -292,7 +303,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "CS2 both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { "image" : {"file" : "Counter-Strike 2, 1280x720, low settings.png"} }, \
+"overlay" : { "image" : {"file" : "Counter-Strike 2.png"} }, \
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
@@ -311,7 +322,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "bl3 both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { "image" : {"file" : "Borderlands 3, 1920x1080, very low settings.png"} }, \
+"overlay" : { "image" : {"file" : "Borderlands 3.png"} }, \
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
@@ -336,7 +347,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Finals both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { "image" : {"file" : "The Finals, 1280x720, low settings.png"} }, \
+"overlay" : { "image" : {"file" : "The Finals.png"} }, \
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
@@ -357,7 +368,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "sottr both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { "image" : {"file" : "Shadow of the Tomb Raider, 1280x720, medium settings.png"} }, \
+"overlay" : { "image" : {"file" : "Shadow of the Tomb Raider.png"} }, \
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
@@ -372,18 +383,10 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Terminator both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { "image" : {"file" : "Terminator, 1920x1080, high settings.png"} }, \
+"overlay" : { "image" : {"file" : "Terminator_ Resistance.png"} }, \
 "isChapter" : False,\
 "video" : {"file" : ""},\
 })
-
-#configs["episodes"].append(\
-#{ "title": "Borderlands 3",\
-#"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-#"overlay" : { \
-#    "image" : {"file" : "Borderlands 3, 1280x720, 50% render scale, very low settings.png"}\
-#}, \
-#})
 
 ####################### end of gaming section ###############################
 
