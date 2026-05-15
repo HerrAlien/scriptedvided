@@ -183,9 +183,9 @@ configs["episodes"].append(\
 "video" : {"file" : ""},\
 "overlay" : { \
     "text" : ["'Fortnite'",\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
+              scriptedvided.r6sText( '1920x1080, legacy performance mode' , 74 , 24),\
+              scriptedvided.r6sText( '1600x900, legacy performance mode'  , 84 , 63),\
+              scriptedvided.r6sText( '1280x720, legacy performance mode'  , 89 , 67),\
 ]}, \
 })
 
@@ -204,8 +204,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Control'",\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
+              scriptedvided.r6sText( '1920x1080, low settings' ,  54, 36),\
+              scriptedvided.r6sText( '1280x720, low settings' , 86 , 49),\
 ]}, \
 })
 
@@ -220,7 +220,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Doom Eternal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"overlay" : {"benchmark" : {"settings" : "1920x1080, high settings", } }, \
 })
 
 configs["episodes"].append(\
@@ -235,7 +235,12 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Apex Legends",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"overlay" : { \
+    "text" : ["'Apex Legends'",\
+              scriptedvided.r6sText( '1920x1080, low settings' , 95 , 72),\
+              scriptedvided.r6sText( '1600x900, low settings'  , 114 , 83),\
+              scriptedvided.r6sText( '1280x720, low settings'  , 135 , 94),\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -251,10 +256,8 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Far Cry 6'",\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
+              scriptedvided.r6sText( '1920x1080 ultra settings' ,  34, 30),\
+              scriptedvided.r6sText( '1920x1080 high settings' ,  42, 37),\
 ]}, \
 "video" : {"file" : ""},\
 })
@@ -272,11 +275,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "RE4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : ["'Resident Evil 4'",\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-]}, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, prioritize performance, no FSR", } }, \
 })
 
 configs["episodes"].append(\
@@ -290,12 +289,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Counter-Strike 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : ["'Counter-Strike 2'",\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-]}, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, medium settings, no FSR", } }, \
 })
 
 
@@ -311,12 +305,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Borderlands 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : ["'Borderlands 3'",\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-]}, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, medium settings", } }, \
+
 })
 
 configs["episodes"].append(\
@@ -341,7 +331,12 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1280x720, lowest settings", } }, \
+"overlay" : { \
+    "text" : ["'The Finals'",\
+              scriptedvided.r6sText( '1920x1080, low settings' , 55, 42),\
+              scriptedvided.r6sText( '1600x900, low settings'  , 67, 52),\
+              scriptedvided.r6sText( '1280x720, low settings'  , 81, 60),\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -357,12 +352,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Shadow of the Tomb Raider",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : ["'Shadow of the Tomb Raider'",\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-]}, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, highest settings", } }, \
 })
 
 configs["episodes"].append(\
@@ -377,7 +367,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Terminator",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1920x1080, high settings", } }, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, epic settings", } }, \
 })
 
 configs["episodes"].append(\
