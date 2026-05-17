@@ -170,7 +170,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:24" ), "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_05_17_20_11_42_186.mp4" , "start":"02:50"},\
 "overlay" : { \
     "text" : ["'Fortnite'",\
               scriptedvided.r6sText( '1920x1080, legacy performance mode' , 74 , 24),\
@@ -183,7 +183,7 @@ configs["episodes"].append(\
 { "title": "Fortnite both",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:37.3" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Fortnite.png"} }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_05_17_20_11_42_186.mp4" , "start":"03:10"},\
 "isChapter" : False,\
 })
 
