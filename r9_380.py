@@ -394,21 +394,21 @@ configs["episodes"].append(\
 { "title": "300 series vs maxwell",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R9_380_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "price",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "R9_380_OLX.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "price too close to Polaris",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "OLX_R9_380_RX_570.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -422,7 +422,7 @@ configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_R9_380_inHand_barred.mp4"},\
 })
 
 
