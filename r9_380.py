@@ -8,8 +8,8 @@ configs = { "defaultAudioFile" : "R9_380.ogg",\
 "outputFile" : "R9_380.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Peak Rebrandeon", "until" : "These games will not run"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "These games will not run", "until" : "Counter-Strike 2"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Peak Rebrandeon", "until" : "Games that will not run"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Games that will not run", "until" : "Counter-Strike 2"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Counter-Strike 2", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.038 },\
@@ -242,6 +242,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText( '1920x1080 ultra settings' ,  34, 30),\
               scriptedvided.r6sText( '1920x1080 high settings' ,  42, 37),\
 ]}, \
+"video" : {"file" : "FarCry6Trial_high.mp4"},\
 })
 
 configs["episodes"].append(\
