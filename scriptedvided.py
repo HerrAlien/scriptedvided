@@ -578,7 +578,7 @@ def aliases(inputName, forceUppercase=True):
         ["Paladins", "Paladins.exe"],\
         ["Overwatch 2", "Overwatch", "Overwatch.exe", "Overwatch2", "Overwatch_2"],\
         ["Dying Light", "DyingLightGame", "DyingLightGame.exe", "DyingLight"],\
-        ["Resident Evil 4 (Remake)", "re4demo.exe", "re4demo"],\
+        ["Resident Evil 4 (Remake)", "re4demo.exe", "re4demo", "RE4"],\
         ["PUBG", "TslGame.exe", "TslGame"],\
         ["Counter-Strike 2", "Counter Strike 2", "CS2", "cs2.exe"],\
         ["The Finals", "Finals" , "Discovery.exe", "Discovery-e.exe", "Discovery-d.exe", "Discovery"],\
