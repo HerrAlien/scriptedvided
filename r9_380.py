@@ -154,11 +154,15 @@ configs["episodes"].append(\
 "video" : {"file" : "Cyberpunk2077_2025_04_06_22_49_01_575-converted.mp4", "start" : "00:30"},\
 })
 
-# scriptedvided.addEpisodeWithTextOverlay(episodes,\
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:45.7" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1280x720, lowest settings", } }, \
+"overlay" : { \
+    "text" : [sv_ffutils.ffmpegSafeString("Low Settings"),\
+              scriptedvided.r6sText( '1920x1080' , 53, 46),\
+              scriptedvided.r6sText( '1600x900' , 61, 50),\
+              scriptedvided.r6sText( '1280x720' , 73, 58),\
+]}, \
 "video" : {"file" : "PioneerGame_DOWNINGsNITCH.mp4" , "start" : "00:54" },\
 })
 
@@ -170,15 +174,15 @@ configs["episodes"].append(\
 "isChapter" : False,\
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:24" ), "padAudio" : 0.05 },\
 "video" : {"file" : "FortniteClient-Win64-Shipping_2026_05_17_20_11_42_186.mp4" , "start":"02:50"},\
 "overlay" : { \
-    "text" : ["'Fortnite'",\
-              scriptedvided.r6sText( '1920x1080, legacy performance mode' , 74 , 24),\
-              scriptedvided.r6sText( '1600x900, legacy performance mode'  , 84 , 63),\
-              scriptedvided.r6sText( '1280x720, legacy performance mode'  , 89 , 67),\
+    "text" : [sv_ffutils.ffmpegSafeString("Legacy Performance Mode, FAR rendering distance"),\
+              scriptedvided.r6sText( '1920x1080' , 74 , 24),\
+              scriptedvided.r6sText(  '1600x900' , 84 , 63),\
+              scriptedvided.r6sText(  '1280x720' , 89 , 67),\
 ]}, \
 })
 
@@ -192,13 +196,13 @@ configs["episodes"].append(\
 
 
 # single resolution
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Control",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:55.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Control'",\
-              scriptedvided.r6sText( '1920x1080, low settings' ,  54, 36),\
-              scriptedvided.r6sText( '1280x720, low settings' , 86 , 49),\
+    "text" : [sv_ffutils.ffmpegSafeString("Low Settings"),\
+              scriptedvided.r6sText( '1920x1080' ,  54, 36),\
+              scriptedvided.r6sText(  '1280x720' , 86 , 49),\
 ]}, \
 "video" : {"file" : "stock_Control_R9_270.mp4", "start" : "02:00"},\
 })
@@ -225,24 +229,22 @@ configs["episodes"].append(\
 "isChapter" : False,\
 })
 
-
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "Apex Legends",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:45.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Apex Legends'",\
-              scriptedvided.r6sText( '1920x1080, low settings' , 95 , 72),\
-              scriptedvided.r6sText( '1600x900, low settings'  , 114 , 83),\
-              scriptedvided.r6sText( '1280x720, low settings'  , 135 , 94),\
+    "text" : [sv_ffutils.ffmpegSafeString("Low Settings"),\
+              scriptedvided.r6sText( '1920x1080' , 95 , 72),\
+              scriptedvided.r6sText(  '1600x900'  , 114 , 83),\
+              scriptedvided.r6sText(  '1280x720'  , 135 , 94),\
 ]}, \
 })
 
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "FC6",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:04.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'Far Cry 6'",\
-              scriptedvided.r6sText( '1920x1080 ultra settings' ,  34, 30),\
+    "text" : [scriptedvided.r6sText( '1920x1080 ultra settings' ,  34, 30),\
               scriptedvided.r6sText( '1920x1080 high settings' ,  42, 37),\
 ]}, \
 "video" : {"file" : "FarCry6Trial_high.mp4"},\
@@ -314,15 +316,14 @@ configs["episodes"].append(\
 })
 
 
-# single resolution
-configs["episodes"].append(\
+scriptedvided.addEpisodeWithTextOverlay(episodes,\
 { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:04.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : ["'The Finals'",\
-              scriptedvided.r6sText( '1920x1080, low settings' , 55, 42),\
-              scriptedvided.r6sText( '1600x900, low settings'  , 67, 52),\
-              scriptedvided.r6sText( '1280x720, low settings'  , 81, 60),\
+    "text" : [sv_ffutils.ffmpegSafeString("Low Settings"),\
+              scriptedvided.r6sText( '1920x1080' , 55, 42),\
+              scriptedvided.r6sText(  '1600x900'  , 67, 52),\
+              scriptedvided.r6sText(  '1280x720'  , 81, 60),\
 ]}, \
 })
 
