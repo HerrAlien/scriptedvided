@@ -1,4 +1,5 @@
 import scriptedvided
+import sv_ffutils
 
 configs = { "defaultAudioFile" : "R9_380.ogg",\
 "mediaFolder" : "F:\\Videos\\R9_380", \
@@ -99,8 +100,15 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "Cooling and thermals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:20.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:13" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_r9_380_coolingDetails_barred.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "Finstack",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:20.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "breel_R9_380_onGrass_barred.mp4"},\
+"isChapter" : False,\
 })
 
 configs["episodes"].append(\
@@ -142,7 +150,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:19" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1280x720, lowest settings", } }, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, low settings", } }, \
 "video" : {"file" : "Cyberpunk2077_2025_04_06_22_49_01_575-converted.mp4", "start" : "00:00"},\
 })
 
@@ -348,7 +356,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:43.8" ), "padAudio" : 0.05 },\
 "overlay" : { "image" : {"file" : "Shadow of the Tomb Raider.png"} }, \
 "isChapter" : False,\
-"video" : {"file" : "SOTTR_gaming_highest.mp4"},\
+"video" : {"file" : "SOTTR_gaming_highest.mp4", "start" : "04:45"},\
 })
 
 
