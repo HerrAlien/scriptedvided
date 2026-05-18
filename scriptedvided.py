@@ -97,7 +97,7 @@ def getTextArrayForEpisode (episode, benchmarkFile=None):
         
     fpsAsText = getFpsStatsText (average, onePercent, pointOnePercent)
     
-    return (["'" + sv_ffutils.ffmpegSafeString(episodeName + " (" + settings) + ")'", fpsAsText ])
+    return (["'" + sv_ffutils.ffmpegSafeString( aliases(episodeName, False)[0] + " (" + settings) + ")'", fpsAsText ])
   
 def selectSuitableVideo (paths, desiredLength=30, desiredYRes=1080):
     if (len(paths) == 1):
