@@ -131,6 +131,8 @@ configs["episodes"].append(\
 ####################### gaming section ###############################
 # needs redone
 
+episodes = configs["episodes"]
+
 configs["episodes"].append(\
 { "title": "Games that will not run",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:57.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
@@ -152,6 +154,7 @@ configs["episodes"].append(\
 "video" : {"file" : "Cyberpunk2077_2025_04_06_22_49_01_575-converted.mp4", "start" : "00:30"},\
 })
 
+# scriptedvided.addEpisodeWithTextOverlay(episodes,\
 configs["episodes"].append(\
 { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:45.7" ), "padAudio" : 0.05 },\
