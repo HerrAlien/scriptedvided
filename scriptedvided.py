@@ -590,7 +590,7 @@ def aliases(inputName, forceUppercase=True):
         ["Terminator: Resistance", "Terminator", "Terminator-Win64-Shipping.exe" , "Terminator-Win64-Shipping" ],\
         ["Zenless Zone Zero", "ZenlessZoneZero", "ZenlessZoneZero.exe" ],\
         ["XDefiant", "X-Defiant", "XDefiant.exe" ],\
-        ["Far Cry 6", "FarCry 6", "FarCry6Trial", "FarCry6Trial.exe"],\
+        ["Far Cry 6", "FarCry 6", "FarCry6Trial", "FarCry6Trial.exe", "FC6"],\
         ["Delta Force", "DeltaForce", "DeltaForceClient"],\
         ["Marvel Rivals", "MarvelRivals", "Marvel-Win64-Shipping.exe", "Marvel-Win64-Shipping"],\
         ["Robocop: Rogue City", "Robocop", "RoboCop-Win64-Shipping.exe", "RoboCop-Win64-Shipping"],\
