@@ -74,7 +74,7 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 #})
 
 configs["episodes"].append(\
-{ "title": "Better than most",\
+{ "title": "Best board that I sold",\
 "audio" : {"timestamps" : ("00:00", "00:23.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550-A_WiFi_Overview_bright.mp4"},\
 })
@@ -100,6 +100,13 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
+{ "title": "EPS",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:00"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB550-A_WiFi_VRM_SOC_bright.mp4"},\
+})
+
+configs["episodes"].append(\
 { "title": "4 DIMM slots, 4 clips",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:09.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550-A_WiFi_DIMMs_bright.mp4"},\
@@ -113,15 +120,14 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Useful 1x slot",\
+{ "title": "plenty of room under the main x16",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:37"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550-A_WiFi_Slots_bright.mp4"},\
 })
 
-
 configs["episodes"].append(\
-{ "title": "Decorative PCIEx1 slot",\
+{ "title": "M.2 slots maybe with arrow overlay",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:46.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550-A_WiFi_Slots_bright.mp4"},\
@@ -129,6 +135,14 @@ configs["episodes"].append(\
 
 configs["episodes"].append(\
 { "title": "SATA ports",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:57.7"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB550-A_WiFi_Pins_USB2_FP_SATA_bright.mp4"},\
+})
+
+
+configs["episodes"].append(\
+{ "title": "Debug LEDs",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:57.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550-A_WiFi_Pins_USB2_FP_SATA_bright.mp4"},\
@@ -142,17 +156,10 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Pin - argb",\
+{ "title": "Pin - usb2, fans, front panel, clear cmos",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:15.5"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550-A_WiFi_RGB_USB2_bright.mp4"},\
-})
-
-configs["episodes"].append(\
-{ "title": "Pin - clear cmos",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:23.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "PrimeB550-A_WiFi_PinsClearRTC_bright.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -170,7 +177,14 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Pin TPM SPI",\
+{ "title": "CPU fan pins",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:55.7"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB550-A_WiFi_Pins_Tpm_bright.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "SPI header",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:55.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550-A_WiFi_Pins_Tpm_bright.mp4"},\
@@ -181,6 +195,14 @@ configs["episodes"].append(\
 { "title": "Rear IO",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:18.3"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550-A_WiFi_IO_bright.mp4"},\
+}) # maybe an overlay with the DVI-D to HDMI adapter?
+
+# too long of a cut ...
+configs["episodes"].append(\
+{ "title": "with router antenna",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:18.3"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB550-A_WiFi_IO_bright.mp4"},\
+"isChapter" : False,\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 configs["episodes"].append(\
@@ -255,7 +277,21 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Tools",\
+{ "title": "Tools - ezflash",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00.7"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB550M-A_WiFi_BIOS_Tools.MP4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "Tools - oc profiles",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00.7"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB550M-A_WiFi_BIOS_Tools.MP4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "Tools - AURA",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:00.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550M-A_WiFi_BIOS_Tools.MP4"},\
@@ -269,38 +305,45 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "likes - heatsink",\
+{ "title": "has wifi",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:14.8"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550-A_WiFi_VRM_Heatsink_bright.mp4"},\
 })
 
 configs["episodes"].append(\
-{ "title": "likes - audio",\
+{ "title": "likes - vrm for 200W plus",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:16.8"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Prime_B550m-a-WiFi_audio.mkv"},\
 })
 
 configs["episodes"].append(\
-{ "title": "likes - SATA and M2",\
+{ "title": "but I do not use more than 100W",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:20.9"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550-A_WiFi_Slots_bright.mp4"},\
 })
 
 configs["episodes"].append(\
-{ "title": "dislikes",\
+{ "title": "HP Z230",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:29.8"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550M-A_WiFi_BIOS_FanTypeAndCurve.MP4"},\
 })
 
 configs["episodes"].append(\
-{ "title": "pretty good though",\
+{ "title": "I test old GPUs, B550 at most for me",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:47.3"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB550-A_WiFi_Overview_bright.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "x570 is wasted on me",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:55"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "TufX570Gaming+Wifi_overview.MP4"},\
 })
 
 configs["episodes"].append(\
