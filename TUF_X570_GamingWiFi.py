@@ -90,6 +90,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570_VRM_Topology_bright.mp4"},\
+"overlay" : { "image" : {"file" : "core_phases.png"} }, \
 }) # add overlay
 
 configs["episodes"].append(\
@@ -97,6 +98,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570_VRM_Topology_bright.mp4"},\
+"overlay" : { "image" : {"file" : "soc_phases.png"} }, \
 }) # add overlay
 
 configs["episodes"].append(\
@@ -259,7 +261,7 @@ configs["episodes"].append(\
 { "title": "REBAR and TPM",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "TufX570Gaming+WiFi_tpm-rebar.mp4", "start" : "00:08"},\
 })
 
 configs["episodes"].append(\
@@ -322,7 +324,7 @@ configs["episodes"].append(\
 { "title": "but I do not use more than 100W",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5_5600_3600.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -336,7 +338,7 @@ configs["episodes"].append(\
 { "title": "I test old GPUs, B550 at most for me",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "r5_5600_3600.mp4"},\
+"video" : {"file" : "breel_RX570_R9_270_GTX1050Ti_GT1030.MP4"},\
 })
 
 configs["episodes"].append(\
