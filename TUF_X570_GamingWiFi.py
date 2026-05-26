@@ -75,20 +75,20 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 
 configs["episodes"].append(\
 { "title": "Best board that I sold",\
-"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00", "00:10.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The VRMs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:19.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_VrmHeatsinks.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "VRMs - core",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:33.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570_VRM_Topology_bright.mp4"},\
 "overlay" : { "image" : {"file" : "core_phases.png"} }, \
 }) # add overlay
@@ -96,7 +96,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "VRMs - soc",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:49.6"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570_VRM_Topology_bright.mp4"},\
 "overlay" : { "image" : {"file" : "soc_phases.png"} }, \
 }) # add overlay
@@ -104,41 +104,34 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "EPS",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:02.8"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_VrmHeatsinks.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "4 DIMM slots, 4 clips",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:15.5"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_DIMMs.MP4"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:37.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_slots.MP4"},\
-})
-
-configs["episodes"].append(\
-{ "title": "plenty of room under the main x16",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "M.2 slots maybe with arrow overlay",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:56.6"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "SATA ports",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:07.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_SataVsPcie_USB3.MP4"},\
 }) # TufX570Gaming+Wifi_pins22.MP4
 
@@ -146,63 +139,63 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Debug LEDs",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:17.8"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_pins3_DebugLeds.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin - audio",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:30.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_pins.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin - usb2, fans, front panel, clear cmos",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:39.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_pins2.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin USB3",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:51.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_USB3.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin RGB",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:01"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_pins4.MP4"},\
 }) # TufX570Gaming+Wifi_pins3_DebugLeds.MP4
 
 configs["episodes"].append(\
 { "title": "CPU fan pins",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:11.5"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_SpiPins.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "SPI header",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:22.9"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_SpiPins.MP4"},\
 })
 
 # too long of a cut ...
 configs["episodes"].append(\
 { "title": "Rear IO",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:46.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_IO.MP4"},\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
 # too long of a cut ...
 configs["episodes"].append(\
 { "title": "with router antenna",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:57.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_IO.MP4"},\
 "isChapter" : False,\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
@@ -210,21 +203,21 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Audio introduction",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:08.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Audio sample",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("03:07.7", "03:21.7" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("04:00.3", "04:08.3" ), "volume" : 0.001, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 # EC spi chip first
 configs["episodes"].append(\
 { "title": "The BIOS setup utility",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:18.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+WiFi_BiosEZ.MP4"},\
 }) # list of bios
 
@@ -232,133 +225,133 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "BIOS advanced, CPU freq",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:30.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+WiFi_BiosCpuFreq.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU voltage",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:45.5"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+WiFi_BiosCpuVoltage.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem profile - maybe both Easy and advanced",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:53.1"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+WiFi_Bios_DOCP.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem subtimings",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:04"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+WiFi_Bios_RamManual.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "REBAR and TPM",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:13.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+WiFi_tpm-rebar.mp4", "start" : "00:08"},\
 })
 
 configs["episodes"].append(\
 { "title": "Fans types",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:22.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+WiFi_BiosFanTypes.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "fan curve",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:37.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+WiFi_BiosFanProfilesAndCurve.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Tools - ezflash",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "TufX570Gaming+WiFi_BiosUtilities.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:47"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "TufX570Gaming+WiFi_BiosUtilities.MP4", "start" : "00:03"},\
 })
 
 configs["episodes"].append(\
 { "title": "Tools - oc profiles",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "TufX570Gaming+WiFi_BiosUtilities.MP4"},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:54"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "TufX570Gaming+WiFi_BiosUtilities.MP4", "start" : "00:18"},\
 })
 
 configs["episodes"].append(\
 { "title": "Tools - AURA",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:01"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+WiFi_Bios_Aura.MP4"},\
 })
 
 # likes
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:14.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "has wifi",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:22"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_IO.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "likes - vrm for 200W plus",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:30"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570_VRM_Topology_bright.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "but I do not use more than 100W",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:42.9"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "r5_5600_3600.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "HP Z230",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:48.3"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Z230_front_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "I test old GPUs, B550 at most for me",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:57.6"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_RX570_R9_270_GTX1050Ti_GT1030.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "x570 is wasted on me",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:07.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "other boards",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:15.1"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GA-B550m-DS3H-Overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:24.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "TufX570Gaming+Wifi_overview.MP4"},\
 })
 
