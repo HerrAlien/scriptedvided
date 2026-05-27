@@ -125,7 +125,8 @@ configs["episodes"].append(\
 { "title": "M.2 slots maybe with arrow overlay",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:56.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "TufX570Gaming+Wifi_slots.MP4"},\
+"overlay" : { "image" : {"file" : "m2_slots.png"} }, \
 })
 
 configs["episodes"].append(\
@@ -204,14 +205,14 @@ configs["episodes"].append(\
 { "title": "Audio introduction",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:08.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "x570_audio.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Audio sample",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("04:00.3", "04:08.3" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : ("03:57.3", "04:08.3" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : "x570_audio.mkv"},\
 })
 
 # EC spi chip first
