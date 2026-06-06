@@ -318,7 +318,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Compared with others",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:41.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:30"},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "Clock Cycles_edited.png"}\
