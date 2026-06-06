@@ -72,14 +72,14 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "The Office Lake CPU",\
 "audio" : {"timestamps" : ("00:00", ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_6400_inHand_barred.mp4"},\
 })
 
 # focus on PCIE lanes
 configs["episodes"].append(\
 { "title": "The CPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "i5_6400_IntelPage.mkv"},\
 "isChapter" : False,\
 })
 
@@ -87,7 +87,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Z170",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_6400_inMoboInHand_barred.mp4"},\
 "isChapter" : False,\
 })
 
@@ -101,13 +101,13 @@ configs["episodes"].append(\
               "'GPU\: GTX 980'",\
     ]\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "Z170_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "will have gigasus",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:00"},\
 "isChapter" : False,\
 })
 
@@ -139,7 +139,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PioneerGame_2026_01_16_23_34_36_085-converted.mp4", "start" : "03:19"},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
@@ -155,7 +155,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, 50% render scale, performance mode", \
     }\
 }, \
-"video" : {"file" : ""}\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_06_01_18_10_48_979.mkv", "start" : "00:07"}\
 })
 
 configs["episodes"].append(\
@@ -166,7 +166,7 @@ configs["episodes"].append(\
         "settings" : "960x540, lowest settings", \
     }\
 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX970_Control_DX11_medium.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -203,7 +203,6 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Far Cry 6",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
@@ -303,13 +302,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Video rendering test (The GigASUS)",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "By itself",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "overlays.png"}\
@@ -319,10 +318,10 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Compared with others",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:30"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : "ipc_w_others.png"}\
+    "image" : {"file" : "Clock Cycles_edited.png"}\
 }, \
 })
 
@@ -335,49 +334,56 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_6400_inMoboInHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "DDR4 curse",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "DDR4_mixed_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "price olx",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "OLX_i5_6400_prices.mkv"},\
+})
+
+configs["episodes"].append(\
+{ "title": "best under 10",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "I5_3470_4570_6400_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "mobo pricing",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Olx_H110_prices.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "AM5 vs AM4 like",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_6400_inMoboInHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "6700K breel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i7_6700k_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_6400_inHand2_barred.mp4"},\
 })
 
 
