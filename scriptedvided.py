@@ -595,7 +595,7 @@ def aliases(inputName, forceUppercase=True):
         ["Marvel Rivals", "MarvelRivals", "Marvel-Win64-Shipping.exe", "Marvel-Win64-Shipping"],\
         ["Robocop: Rogue City", "Robocop", "RoboCop-Win64-Shipping.exe", "RoboCop-Win64-Shipping"],\
         ["Cyberpunk 2077", "Cyberpunk2077.exe", "Cyberpunk2077"],\
-        ["ARC Raiders", "ARCRaiders", "PioneerGame.exe", "PioneerGame"],\
+        ["ARC Raiders", "ARCRaiders", "PioneerGame.exe", "PioneerGame", "PioneerGame-e.exe", "PioneerGame-e"],\
     ]
 
     if inputName is None:
