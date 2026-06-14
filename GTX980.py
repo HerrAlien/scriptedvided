@@ -71,20 +71,25 @@ Free Download / Stream: https://alplus.io/inspired
 
 configs["episodes"].append( { "title": "Back to Maxwell",\
 "audio" : {"timestamps" : ("00:00", "00:12.5"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX980_barred.mp4"},\
 })
 
 #Maybe have an overlay?
 configs["episodes"].append( { "title": "Arc Raiders preview",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PioneerGame_2026_02_21_BurriedCity.mp4", "start" : "02:47"},\
+"overlay" : { \
+    "text" : [scriptedvided.r6sText("1920x1080, low settings", 72, 49),\
+              scriptedvided.r6sText("1600x900, low settings", 87, 57),\
+              scriptedvided.r6sText("1280x720, low settings", 97, 58),\
+]}, \
 })
 
 # focus on PCIE lanes
 configs["episodes"].append( { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:43" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX980_GPUZ.mkv"},\
 })
 
 # focus on PCIE lanes
@@ -97,20 +102,22 @@ configs["episodes"].append( { "title": "TDP and Overwatch",\
 # focus on PCIE lanes
 configs["episodes"].append( { "title": "Cooling and Thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:58.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX980_cooling2_barred.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append( { "title": "Chunky cooler",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:04.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX980_RX580_coolerWeights_barred.mp4", "start" : "00:02"},\
 })
 
 # has overlay with temperatures
 configs["episodes"].append( { "title": "No RAM cooling",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:18" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX980_cooling1_barred.mp4", "start" : "00:00"},\
+"overlay" : { \
+    "text" : ["'Temperatures (Valley)\: 67C (44C delta over ambient)'"]}, \
 })
 
 configs["episodes"].append( { "title": "The test system",\
@@ -122,7 +129,7 @@ configs["episodes"].append( { "title": "The test system",\
               "'GPU\: GTX 980'",\
     ]\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "test_system_RX580.mp4" }\
 })
 
 ####################### end of intro ###############################
@@ -153,11 +160,11 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Cyberpunk 2077",\
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:37" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
-              scriptedvided.r6sText("", , ),\
-              scriptedvided.r6sText("", , ),\
+    "text" : [scriptedvided.r6sText("1920x1080, low settings", 72, 49),\
+              scriptedvided.r6sText("1600x900, low settings", 87, 57),\
+              scriptedvided.r6sText("1280x720, low settings", 97, 58),\
 ]}, \
-"video" : {"file" : ""},\
+"video" : {"file" : "PioneerGame_2026_02_21_BurriedCity.mp4", "start" : "02:47"},\
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
