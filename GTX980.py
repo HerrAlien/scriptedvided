@@ -178,12 +178,11 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
 "video" : {"file" : "FortniteClient-Win64-Shipping_2026_06_01_18_13_44_994.mkv"},\
 })
 
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite perf vs high",\
+configs["episodes"].append( { "title": "Fortnite perf vs high",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:09" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "video" : {"file" : "FNiteDX12VsPerformance.mp4", "start" : "00:05"},\
 })
-
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Control",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:30.8" ), "padAudio" : 0.05 },\
@@ -239,7 +238,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "RE4",\
 ]}, \
 })
 
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Counter-Strike 2",\
+configs["episodes"].append( { "title": "Counter-Strike 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:09" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, medium settings, no FSR", } }, \
 })
@@ -252,7 +251,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Borderlands 3",\
 ]}, \
 })
 
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "DOTA 2",\
+configs["episodes"].append(  { "title": "DOTA 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:46.9" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, highest settings" } }, \
 "video" : "stock_dota2_1080pLow_scale100.mp4"\
@@ -266,24 +265,23 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Robocop",\
 ]}, \
 })
 
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "The Finals",\
+configs["episodes"].append(  { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:26.3" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, low settings" } }, \
 "video" : {"file" : "Discovery_2025_03_15_22_55_07_819.mp4"},\
 })
 
 #redo and specify a smoother video
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Shadow of the Tomb Raider",\
+configs["episodes"].append( { "title": "Shadow of the Tomb Raider",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:41.1" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, highest settings" } }, \
 })
 
 #redo and specify a smoother video
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Terminator",\
+configs["episodes"].append(  { "title" : "Terminator", \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:59" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1920x1080, epic settings" } }, \
-{"video" : {"file" : "Terminator-Win64-Shipping_2024_07_20_23_51_41_842-converted.mp4", "start" : "35:02"}}\
-})
+"overlay" : {"benchmark" : {"settings" : "1920x1080, epic settings" } },\
+"video" : {"file" : "Terminator-Win64-Shipping_2024_07_20_23_51_41_842-converted.mp4", "start" : "35:02"}} )
 
 ####################### end of gaming section ###############################
 
