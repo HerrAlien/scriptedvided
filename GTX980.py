@@ -231,7 +231,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Overwatch 2",\
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "RE4",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:49.9" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("05:19.6", "05:45.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [scriptedvided.r6sText("1920x1080, performance preset, no FSR", 66, 51),\
               scriptedvided.r6sText("1920x1080, balanced preset, no FSR"   , 51, 33),\
@@ -381,7 +381,7 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode(configs["episodes"][17], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][18], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][19], configs)
-#scriptedvided.makeVideoForEpisode(configs["episodes"][21], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][20], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][22], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][24], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Marvel Rivals"][0], configs)
