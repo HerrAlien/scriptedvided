@@ -312,7 +312,7 @@ configs["episodes"].append(\
 { "title": "Gigabyte cooler weight",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:38.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "breel_GTX980_RX580_coolerWeights_barred.mp4", "start" : "00:3"},\
+"video" : {"file" : "breel_GTX980_RX580_coolerWeights_barred.mp4", "start" : "00:37"},\
 })
 
 configs["episodes"].append(\
