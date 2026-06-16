@@ -41,7 +41,7 @@ Watch: https://www.youtube.com/watch?v=RUkdTkk_52o&t=0s
 Free Download / Stream: https://alplus.io/inspired
 
 ''', \
-"tags" : "",\
+"tags" : "NVidia,GeForce,GTX,Maxwell,980,GTX980,GTX 980",\
 "language" : "EN", \
 "Caption certification" : "None",\
 "recording date" : None,\
@@ -264,7 +264,6 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Robocop",\
     "text" : [scriptedvided.r6sText("1920x1080, medium settings", 32, 25),\
               scriptedvided.r6sText("1920x1080, low settings"   , 35, 29),\
 ]}, \
-"video" : "stock_dota2_1080pLow_scale100.mp4"\
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "The Finals",\
@@ -294,77 +293,78 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Terminator",\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:05.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX980_inHands2_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "side by side with the RX 580",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:26.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_gtx980_rx580_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "ASUS cooler weight",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:32.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX980_RX580_coolerWeights_barred.mp4", "start" : "00:07"},\
 })
 
 configs["episodes"].append(\
 { "title": "Gigabyte cooler weight",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:38.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX980_RX580_coolerWeights_barred.mp4", "start" : "00:3"},\
 })
 
 configs["episodes"].append(\
 { "title": "Ripped off mem chip",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:49.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_RX580_rippedMem_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Gigabyte touches RAM compared to ASUS",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:59.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "coolers_VRAM_gtx980_rx580.mp4"},\
+"overlay" : { "image" : {"file" : "overlay_coolers.png"} }, \
 })
 
 configs["episodes"].append(\
 { "title": "ASUS does not care about lifespan",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:08.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX980_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "OLX",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:27.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "gtx980_olx.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Maxwell vs Pascal",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:33.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX980_inHands2_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "1060 preview",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:43.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX1060_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:49.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX980_barred.mp4"},\
 })
 
 
