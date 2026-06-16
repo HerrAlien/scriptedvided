@@ -231,7 +231,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Overwatch 2",\
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "RE4",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:45.9" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:49.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [scriptedvided.r6sText("1920x1080, performance preset, no FSR", 66, 51),\
               scriptedvided.r6sText("1920x1080, balanced preset, no FSR"   , 51, 33),\
