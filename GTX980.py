@@ -108,7 +108,7 @@ configs["episodes"].append( { "title": "Cooling and Thermals",\
 configs["episodes"].append( { "title": "Chunky cooler",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:04.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "breel_GTX980_RX580_coolerWeights_barred.mp4", "start" : "00:02"},\
+"video" : {"file" : "breel_GTX980_RX580_coolerWeights_barred.mp4", "start" : "00:11"},\
 })
 
 # has overlay with temperatures
