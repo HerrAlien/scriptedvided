@@ -111,13 +111,13 @@ configs["episodes"].append( { "title": "Chunky cooler",\
 "video" : {"file" : "breel_GTX980_RX580_coolerWeights_barred.mp4", "start" : "00:11"},\
 })
 
-# has overlay with temperatures
+# need to redo this one, had bad values
 configs["episodes"].append( { "title": "No RAM cooling",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:18" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GTX980_cooling1_barred.mp4", "start" : "00:00"},\
 "overlay" : { \
-    "text" : ["'Temperatures (Valley)\: 67C (44C delta over ambient)'"]}, \
+    "text" : ["'Temperatures (Valley)\: 75C (52C delta over ambient)'"]}, \
 })
 
 configs["episodes"].append( { "title": "The test system",\
