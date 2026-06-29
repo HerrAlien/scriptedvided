@@ -222,7 +222,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Audio conclusions",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:02.4" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:02.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Huananzhi-X99-QD4-BIOS-OC-bad.MP4"},\
 })
 
@@ -293,7 +293,8 @@ configs["episodes"].append(\
 { "title": "highlight the buck converters, maybe side by side, zoomed",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:29.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"overlay" : {"image" : {"file" : "overlay_ram_rail.png"} }, \
+"video" : {"file" : "HuananzhiQD4_DIMMs.MP4"},\ 
 })
 
 configs["episodes"].append(\
@@ -307,21 +308,21 @@ configs["episodes"].append(\
 { "title": "Pricing screencap",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:42.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Huananzhi-x99-qd4-pricing.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "more breel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:47.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "HuananzhiX99QD4_E5-2670-v3_RAM-good_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "B550 prices side by side with x99",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:59.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B550m-DS3H-Overview.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -342,7 +343,7 @@ configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:22.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "HuananzhiQD4_overview.MP4"},\
 })
 
 scriptedvided.makeVideo(configs)
