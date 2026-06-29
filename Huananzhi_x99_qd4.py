@@ -214,8 +214,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Audio sample",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("02:50", "02:57.9" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : ("02:45", "02:57.9" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : "Huananzhi-x99-qd4-audio.mkv"},\
 })
 
 # might be removed, if I don't have a good video segment, an have it blended with the BIOS
@@ -294,7 +294,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:29.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : {"image" : {"file" : "overlay_ram_rail.png"} }, \
-"video" : {"file" : "HuananzhiQD4_DIMMs.MP4"},\ 
+"video" : {"file" : "HuananzhiQD4_DIMMs.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -329,8 +329,8 @@ configs["episodes"].append(\
 { "title": "not really recommended",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:06.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "HuananzhiQD4_2023.MP4"},\
-})
+"video" : {"file" : "HuananzhiQD4_2023.MP4" } })
+
 
 configs["episodes"].append(\
 { "title": "zoom on CPUs",\
