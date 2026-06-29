@@ -83,7 +83,7 @@ configs["episodes"].append(\
 { "title": "actually a q87",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:20.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Huananzhi-x99-qd4_Q87Chipset_720p.mp4"},\
 }) # add the CPUZ as overlay 
 
 
@@ -99,7 +99,6 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:39.3"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "Huananzhi_x99_qd4_VrmMosfets2_barred.mp4"},\
-"overlay" : {"image" : {"file" : ""} }, \
 }) # add overlay
 
 configs["episodes"].append(\
@@ -112,8 +111,7 @@ configs["episodes"].append(\
 { "title": "quad channel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:09.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "HuananzhiX99QD4_E5-2670-v3_RAM-good_barred.mp4"},\
-"overlay" : {"image" : {"file" : ""} }, \
+"video" : {"file" : "HuananzhiX99QD4_E5-2670-v3_RAM-good_barred_QuadChannelOverlay.mp4"},\
 }) # add overlay qith cpuz again
 # HuananzhiX99QD4_E5-2670-v3_RAM-good_barred.mp4 or E5-2670-v3_LargerCPU-Z_mem.mkv, but trimmed down
 
@@ -129,15 +127,15 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "HuananzhiQD4_slots.MP4"},\
-"overlay" : {"image" : {"file" : ""} }, \
+"overlay" : {"image" : {"file" : "overlay_m2.png"} }, \
 }) # maybe overlay with the arrows pushing to the CPU?
 
 configs["episodes"].append(\
 { "title": "q87 and SATA channels",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:40.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-"overlay" : {"image" : {"file" : ""} }, \
+"video" : {"file" : "HuananzhiQD4_overview.MP4"},\
+"overlay" : {"image" : {"file" : "overlay_sata.png"} }, \
 })  # overlay with Intel Ark for Q87 SATA 
 
 configs["episodes"].append(\
@@ -145,7 +143,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:47"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_E5-2670-v3_mobo_inHand_barred.mp4"},\
-"overlay" : {"image" : {"file" : ""} }, \
+"overlay" : {"image" : {"file" : "overlay_cpu.png"} }, \
 }) # overlay with Intel Ark for Xeon PCIE lanes 
 
 
@@ -216,7 +214,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Audio sample",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("", "02:57.9" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("02:50", "02:57.9" ), "volume" : 0.001, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
