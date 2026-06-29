@@ -126,7 +126,7 @@ configs["episodes"].append(\
 { "title": "M.2 slots maybe with arrow overlay",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:32.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "HuananzhiQD4_slots.MP4"},\
+"video" : {"file" : "HuananzhiQD4_overview.MP4"},\
 "overlay" : {"image" : {"file" : "overlay_m2.png"} }, \
 }) # maybe overlay with the arrows pushing to the CPU?
 
