@@ -361,6 +361,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:56.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "r5apex_bot_royale.mp4"},\
+"overlay" : { "image" : {"file" : "Apex Legends.png"} } \
 })
 
 configs["episodes"].append(\
@@ -368,47 +369,48 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:07.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "02:00"},\
+"overlay" : { "image" : {"file" : "Doom Eternal.png"} } \
 })
 
 configs["episodes"].append(\
 { "title": "    Pricing",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:23.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Pricing_E5-2670-v3.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Mobos not that cheap",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:37" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Huananzhi-x99-qd4-pricing.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "who is this for then",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:53.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "AliExpress_XeonBuyers.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "move to AM4",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:05.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-B550m-DS3H-Overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "breel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:13.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_E5-2670-v3_mobo_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "11:19" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_e5-2670-v3_inHand_barred.mp4"},\
 })
 
 
