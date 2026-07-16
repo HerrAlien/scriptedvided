@@ -3,15 +3,15 @@ import scriptedvided
 configs = { "defaultAudioFile" : "E5-2670-v3.ogg",\
 "mediaFolder" : "F:\\Videos\\E5-2670-v3", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\E5-2670-v3\\Benchmark_ . .. .txt",\
+"benchmarkFile" : "F:\\Videos\\E5-2670-v3\\Benchmark_e5-2670-v3.txt",\
 "outputFolder" : "F:\\Videos\\E5-2670-v3\\output", \
 "outputFile" : "E5-2670-v3.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "The Office Lake CPU", "until" : "Marvel Rivals"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Haswell Server CPU", "until" : "Marvel Rivals"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Overwatch 2"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Overwatch 2", "until" : "Video rendering test (The GigASUS)"}}, \
-{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Video rendering test (The GigASUS)", "until" : "Conclusions"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Overwatch 2", "until" : "Checking the IPC"}}, \
+{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Checking the IPC", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.038 },\
 "episodes" : [],\
@@ -72,28 +72,31 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "Haswell Server CPU",\
 "audio" : {"timestamps" : ("00:00", "00:13.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_E5-2670-v3_mobo_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "ARC preview",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:34" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PioneerGame_2026_02_21_Swamp.mp4", "start" : "05:18"},\
 "isChapter" : False,\
+"overlay" : { \
+    "text" : [scriptedvided.r6sText("1280x720, low settings, 50% scale", 65, 40),\
+]}, \
 })
 
 # cpu cache
 configs["episodes"].append(\
 { "title": "Has a few tricks up its sleeve",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:54.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "E5_2670_v3_CPUZ_larger_720p.mp4"},\
 })
 
 # Quad channel
 configs["episodes"].append(\
 { "title": "Quad channel",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:11.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "HuananzhiX99QD4_E5-2670-v3_RAM-good_barred_QuadChannelOverlay.mp4"},\
 "isChapter" : False,\
 })
 
@@ -101,7 +104,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "GIGASUS preview",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:33.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:00"},\
 "isChapter" : False,\
 })
 
@@ -115,7 +118,7 @@ configs["episodes"].append(\
               "'GPU\: GTX 980'",\
     ]\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "HuananzhiX99QD4_E5-2670-v3_RAM-good_barred.mp4"},\
 })
 
 ####################### end of intro ###############################
@@ -173,7 +176,6 @@ configs["episodes"].append(\
         "settings" : "960x540, lowest settings", \
     }\
 },\
-"video" : {"file" : ""},\
 })
 
 
@@ -185,7 +187,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, 50% render scale, performance mode", \
     }\
 }, \
-"video" : {"file" : ""}\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_06_01_18_13_44_994.mkv", "start" : "02:45"}\
 })
 
 
@@ -310,15 +312,15 @@ configs["episodes"].append(\
 
 # this is both time and cycles, for both SMT on and off
 configs["episodes"].append(\
-{ "title": "Video rendering test (The GigASUS)",\
+{ "title": "Checking the IPC",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:57.3" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "By itself",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:18.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "overlays.png"}\
@@ -328,10 +330,10 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Compared with others",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:33.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : "Clock Cycles_edited.png"}\
+    "image" : {"file" : "IpcWOthers.png"}\
 }, \
 })
 
@@ -344,28 +346,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:39.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_e5-2670-v3_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "core count good for productivity",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:47.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "better lows",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:56.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5apex_bot_royale.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "but sometimes lower AVG",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:07.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4", "start" : "02:00"},\
 })
 
 configs["episodes"].append(\
