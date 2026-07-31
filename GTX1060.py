@@ -195,8 +195,8 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Control",\
     "text" : [sv_ffutils.ffmpegSafeString("1920x1080"),\
               scriptedvided.r6sText('High settings'   , 39, 31),\
               scriptedvided.r6sText('Medium settings' , 51, 43),\
-]}, \
-{"video" : { "file" : "rx580_Control_DX11_2024_07_27_22_47_25_351-converted.mp4", "start" : "01:29" } } \
+]},\
+"video" : { "file" : "rx580_Control_DX11_2024_07_27_22_47_25_351-converted.mp4", "start" : "01:29" }\
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
