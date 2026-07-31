@@ -152,8 +152,9 @@ episodes = configs["episodes"]
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Marvel Rivals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
+    "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
+              scriptedvided.r6sText('1920x1080' , 65, 52),\
+              scriptedvided.r6sText('1280x720'  , 115, 92),\
 ]}, \
 })
 
@@ -161,18 +162,20 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Marvel Rivals",\
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Cyberpunk 2077",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
+    "text" : [scriptedvided.r6sText('1920x1080, low settings' ,    67, 50),\
+              scriptedvided.r6sText('1920x1080, medium settings' , 40, 31),\
+              scriptedvided.r6sText('1600x900, high settings' ,    43, 33),\
+              scriptedvided.r6sText('1280x720, ultra settings' ,   51, 38),\
 ]}, \
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
+    "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
+              scriptedvided.r6sText('1920x1080' , 68, 46),\
+              scriptedvided.r6sText('1600x900'  , 84, 54),\
+              scriptedvided.r6sText('1280x720'  , 102, 65),\
 ]}, \
 "video" : {"file" : ""},\
 })
@@ -186,8 +189,9 @@ configs["episodes"].append( { "title": "Counter-Strike 2",\
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Control",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText('1920x1080, high settings'   , , ),\
-              scriptedvided.r6sText('1920x1080, medium settings' , , ),\
+    "text" : [sv_ffutils.ffmpegSafeString("1920x1080"),\
+              scriptedvided.r6sText('High settings'   , 39, 31),\
+              scriptedvided.r6sText('Medium settings' , 51, 43),\
 ]}, \
 })
 
@@ -195,9 +199,9 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("DX12 mode, medium settings"),\
-              scriptedvided.r6sText('1920x1080' , , ),\
-              scriptedvided.r6sText('1600x900'  , , ),\
-              scriptedvided.r6sText('1280x720'  , , ),\
+              scriptedvided.r6sText('1920x1080' , 103, 71),\
+              scriptedvided.r6sText('1600x900'  , 125, 89),\
+              scriptedvided.r6sText('1280x720'  , 156, 109),\
 ]}, \
 "video" : {"file" : ""},\
 })
@@ -212,9 +216,9 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Apex Legends",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("Low settings"),\
-              scriptedvided.r6sText('1920x1080' , , ),\
-              scriptedvided.r6sText('1600x900'  , , ),\
-              scriptedvided.r6sText('1280x720'  , , ),\
+              scriptedvided.r6sText('1920x1080' , 184, 129),\
+              scriptedvided.r6sText('1600x900'  , 228, 155),\
+              scriptedvided.r6sText('1280x720'  , 280, 187),\
 ]}, \
 })
 
@@ -227,9 +231,9 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Overwatch 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("Low settings"),\
-              scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
+              scriptedvided.r6sText('1920x1080' , 335, 242),\
+              scriptedvided.r6sText('1600x900'  , 449, 333),\
+              scriptedvided.r6sText('1280x720'  , 593, 462),\
 ]}, \
 })
 
@@ -243,8 +247,8 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Rainbow Six: Siege
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("Low settings"),\
-              scriptedvided.r6sText('1920x1080, 100% scale' , , ),\
-              scriptedvided.r6sText('1920x1080, 50% scale'  , , ),\
+              scriptedvided.r6sText('1920x1080, 100% scale' , 104, 80),\
+              scriptedvided.r6sText('1920x1080, 50% scale'  , 159, 121),\
 ]}, \
 })
 
@@ -258,8 +262,8 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Robocop",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [ sv_ffutils.ffmpegSafeString("Low settings"),\
-               scriptedvided.r6sText('1920x1080, native'      , , ),\
-               scriptedvided.r6sText('1920x1080, FSR Quality' , , ),\
+               scriptedvided.r6sText('1920x1080, native'      , 43, 35),\
+               scriptedvided.r6sText('1920x1080, FSR Quality' , 54, 44),\
 ]}, \
 })
 
