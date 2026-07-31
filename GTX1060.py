@@ -126,7 +126,7 @@ configs["episodes"].append( { "title": "on scale and temps",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "overlay" : { \
-    "text" : ["'Temperatures (Valley)\: 75C (52C delta over ambient)'"]}, \
+    "text" : ["'Temperatures (Valley)\: 66C (43C delta over ambient)'"]}, \
 })
 
 
@@ -186,8 +186,8 @@ configs["episodes"].append( { "title": "Counter-Strike 2",\
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Control",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
+    "text" : [scriptedvided.r6sText('1920x1080, high settings'   , , ),\
+              scriptedvided.r6sText('1920x1080, medium settings' , , ),\
 ]}, \
 })
 
@@ -195,19 +195,16 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("DX12 mode, medium settings"),\
-              scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
+              scriptedvided.r6sText('1920x1080' , , ),\
+              scriptedvided.r6sText('1600x900'  , , ),\
+              scriptedvided.r6sText('1280x720'  , , ),\
 ]}, \
 "video" : {"file" : ""},\
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Doom Eternal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText("1920x1080, ultra settings", 48, 40 ),\
-]}, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, ultra settings", } }, \
 })
 
 # single resolution
@@ -215,18 +212,15 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Apex Legends",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("Low settings"),\
-              scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
+              scriptedvided.r6sText('1920x1080' , , ),\
+              scriptedvided.r6sText('1600x900'  , , ),\
+              scriptedvided.r6sText('1280x720'  , , ),\
 ]}, \
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Far Cry 6",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText("1920x1080, ultra settings", 48, 40 ),\
-]}, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, ultra settings", } }, \
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Overwatch 2",\
@@ -241,37 +235,31 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Overwatch 2",\
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "RE4",\
 "audio" : {"timestamps" : ("05:19.6", "05:45.9" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
-]}, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, balanced preset", } }, \
 })
 
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Rainbow Six: Siege",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
+    "text" : [sv_ffutils.ffmpegSafeString("Low settings"),\
+              scriptedvided.r6sText('1920x1080, 100% scale' , , ),\
+              scriptedvided.r6sText('1920x1080, 50% scale'  , , ),\
 ]}, \
 })
 
-
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Borderlands 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
-]}, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, badass settings", } }, \
 })
 
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Robocop",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
+    "text" : [ sv_ffutils.ffmpegSafeString("Low settings"),\
+               scriptedvided.r6sText('1920x1080, native'      , , ),\
+               scriptedvided.r6sText('1920x1080, FSR Quality' , , ),\
 ]}, \
 })
 
