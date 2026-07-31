@@ -1,10 +1,10 @@
 import scriptedvided
 import sv_ffutils
 
-configs = { "defaultAudioFile" : "GTX1060.ogg",\
+configs = { "defaultAudioFile" : "gtx1060.ogg",\
 "mediaFolder" : "F:\\Videos\\GTX1060", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\GTX1060\\Benchmark_GTX1060.txt",\
+"benchmarkFile" : "F:\\Videos\\GTX1060\\Benchmark_GTX_1060.txt",\
 "outputFolder" : "F:\\Videos\\GTX1060\\output", \
 "outputFile" : "GTX1060.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
@@ -80,9 +80,10 @@ configs["episodes"].append( { "title": "Arc Raiders preview",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
-              scriptedvided.r6sText(' ' , , ),\
+    "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
+              scriptedvided.r6sText('1920x1080' , 68, 46),\
+              scriptedvided.r6sText('1600x900'  , 84, 54),\
+              scriptedvided.r6sText('1280x720'  , 102, 65),\
 ]}, \
 })
 

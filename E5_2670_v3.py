@@ -149,7 +149,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:10" ), "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PioneerGame_2026_02_21_Swamp.mp4", "start" : "05:30"},\
 "overlay" : { \
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
@@ -176,6 +176,7 @@ configs["episodes"].append(\
         "settings" : "960x540, lowest settings", \
     }\
 },\
+"video" : "GTX970_Control_DX11_medium.mp4"\
 })
 
 
@@ -199,7 +200,8 @@ configs["episodes"].append(\
     "benchmark" : { \
         "settings" : "1280x720, low settings", \
     }\
-}\
+},\
+"video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4"}\
 })
 
 configs["episodes"].append(\
@@ -292,6 +294,7 @@ configs["episodes"].append(\
         "settings" : "800x600, lowest settings", \
     }\
 },\
+"video" : {"file" : "rx580_SOTTR_2024_07_27_22_58_17_417-converted.mp4", "start" : "00:00"}\
 })
 
 #redo and specify a smoother video
