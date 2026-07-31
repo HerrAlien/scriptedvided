@@ -72,14 +72,15 @@ Free Download / Stream: https://alplus.io/inspired
 
 configs["episodes"].append( { "title": "Steam Hardware Survey Champion",\
 "audio" : {"timestamps" : ("00:00", "00:16.1"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX1060_inHand_barred.mp4"},\
 })
+# fixed in february
 
 #Maybe have an overlay?
 configs["episodes"].append( { "title": "Arc Raiders preview",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:28.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PioneerGame_gotBackSafe2.mp4", "start" : "10:22"},\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
               scriptedvided.r6sText('1920x1080' , 68, 46),\
@@ -91,7 +92,7 @@ configs["episodes"].append( { "title": "Arc Raiders preview",\
 # focus on PCIE lanes
 configs["episodes"].append( { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:47.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX1060_GPUZ.mkv"},\
 })
 
 
@@ -112,21 +113,21 @@ configs["episodes"].append( { "title": "Chunky cooler",\
 configs["episodes"].append( { "title": "VRAM and VRM cooling",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:12.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX1060_cooling.mp4"},\
 })
 
 # internal plate for VRAM 
 configs["episodes"].append( { "title": "empty PCB",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:26.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX1060_Pcb.mp4"},\
 })
 
 # internal plate for VRAM 
 configs["episodes"].append( { "title": "on scale and temps",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:42.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX1060_weight_barred.mp4"},\
 "overlay" : { \
     "text" : ["'Temperatures (Valley)\: 66C (43C delta over ambient)'"]}, \
 })
@@ -141,7 +142,7 @@ configs["episodes"].append( { "title": "The test system",\
               "'GPU\: GTX 1060'",\
     ]\
 }, \
-"video" : {"file" : ""}\
+"video" : {"file" : "test_system_RX580.mp4" }\
 })
 
 ####################### end of intro ###############################
@@ -179,7 +180,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "ARC Raiders",\
               scriptedvided.r6sText('1600x900'  , 84, 54),\
               scriptedvided.r6sText('1280x720'  , 102, 65),\
 ]}, \
-"video" : {"file" : ""},\
+"video" : {"file" : "PioneerGame_gotBackSafe2.mp4", "start" : "09:30"},\
 })
 
 configs["episodes"].append( { "title": "Counter-Strike 2",\
@@ -195,6 +196,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Control",\
               scriptedvided.r6sText('High settings'   , 39, 31),\
               scriptedvided.r6sText('Medium settings' , 51, 43),\
 ]}, \
+{"video" : { "file" : "rx580_Control_DX11_2024_07_27_22_47_25_351-converted.mp4", "start" : "01:29" } } \
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
@@ -205,7 +207,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
               scriptedvided.r6sText('1600x900'  , 125, 89),\
               scriptedvided.r6sText('1280x720'  , 156, 109),\
 ]}, \
-"video" : {"file" : ""},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_06_01_18_13_44_994.mkv", "start" : "01:54"},\
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Doom Eternal",\
@@ -272,7 +274,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Robocop",\
 configs["episodes"].append(  { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:06.9" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, low settings" } }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "Discovery_2025_03_15_22_55_07_819.mp4", "start" : "03:30"},\
 })
 
 #redo and specify a smoother video
@@ -285,7 +287,7 @@ configs["episodes"].append( { "title": "Shadow of the Tomb Raider",\
 configs["episodes"].append(  { "title" : "Terminator", \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:39.8" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, epic settings" } },\
-"video" : {"file" : ""} )
+)
 
 ####################### end of gaming section ###############################
 
@@ -295,7 +297,7 @@ configs["episodes"].append(  { "title" : "Terminator", \
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:48.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX1060_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -310,14 +312,14 @@ configs["episodes"].append(\
 { "title": "1060 and R7 370 both MSI",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:03.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX_1060_R9_370_weighted.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "R7 370 cooler weight",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:13.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX_1060_R9_370_weighted.mp4", "start" : "00:18"},\
 })
 
 
@@ -325,14 +327,14 @@ configs["episodes"].append(\
 { "title": "1060 cooler weight",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:23.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX_1060_R9_370_weighted.mp4", "start" : "00:05"},\
 })
 
 configs["episodes"].append(\
 { "title": "solder bals",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:34.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_RX580_rippedMem_barred.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -353,7 +355,7 @@ configs["episodes"].append(\
 { "title": "OLX",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:3.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX_1060_breel_andOLX.mp4"},\
 })
 
 configs["episodes"].append(\
