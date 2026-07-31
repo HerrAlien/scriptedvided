@@ -210,7 +210,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
 "video" : {"file" : "FortniteClient-Win64-Shipping_2026_06_01_18_13_44_994.mkv", "start" : "01:54"},\
 })
 
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Doom Eternal",\
+configs["episodes"].append( { "title": "Doom Eternal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:58.1" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, ultra settings", } }, \
 })
@@ -226,7 +226,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Apex Legends",\
 ]}, \
 })
 
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Far Cry 6",\
+configs["episodes"].append( { "title": "Far Cry 6",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:53.1" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, ultra settings", } }, \
 })
@@ -241,7 +241,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Overwatch 2",\
 ]}, \
 })
 
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "RE4",\
+configs["episodes"].append(  { "title": "RE4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:40.4" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, balanced preset", } }, \
 })
@@ -256,7 +256,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Rainbow Six: Siege
 ]}, \
 })
 
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Borderlands 3",\
+configs["episodes"].append(  { "title": "Borderlands 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:23.7" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, badass settings", } }, \
 })
