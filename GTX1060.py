@@ -287,7 +287,8 @@ configs["episodes"].append( { "title": "Shadow of the Tomb Raider",\
 configs["episodes"].append(  { "title" : "Terminator", \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:39.8" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, epic settings" } },\
-)
+
+})
 
 ####################### end of gaming section ###############################
 
