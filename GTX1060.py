@@ -72,7 +72,7 @@ Free Download / Stream: https://alplus.io/inspired
 
 configs["episodes"].append( { "title": "Steam Hardware Survey Champion",\
 "audio" : {"timestamps" : ("00:00", "00:16.1"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "breel_GTX1060_inHand_barred.mp4"},\
+"video" : {"file" : "breel_GTX1060_inGrass.MP4"},\
 })
 # fixed in february
 
@@ -99,21 +99,22 @@ configs["episodes"].append( { "title": "The GPU",\
 # side by side with the 290?
 configs["episodes"].append( { "title": "Cooling and Thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:57.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX1060_R9_290.MP4"},\
+"overlay" : { "image" : {"file" : "vs290.png"} }, \
 })
 
 #side by side, the cooler on its back, and the fans on the other side
 configs["episodes"].append( { "title": "Chunky cooler",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:06.25" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX1060_cooling.mp4", "start" : "00:26"},\
 })
 
 # internal plate for VRAM 
 configs["episodes"].append( { "title": "VRAM and VRM cooling",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:12.8" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GTX1060_cooling.mp4"},\
+"video" : {"file" : "GTX1060_cooling.mp4", "start" : "00:00"},\
 })
 
 # internal plate for VRAM 
@@ -305,7 +306,7 @@ configs["episodes"].append(\
 { "title": "side by side with the GTX 960 maybe",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:00.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX1060_family_barred.mp4"},\
 })
 
 
@@ -342,14 +343,14 @@ configs["episodes"].append(\
 { "title": "Zero RPM",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:42.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX1060_inGrass.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "3 fans 50 class",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:55" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "RTX_3050_3fans.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -363,7 +364,7 @@ configs["episodes"].append(\
 { "title": "price of RX 580",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:11.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "RX_580_olx.mkv"},\
 })
 
 
@@ -371,14 +372,14 @@ configs["episodes"].append(\
 { "title": "settings vs VRAM breel w both RX 580 and GTX 1060",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:17.7" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX1060_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:26.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX1060_inGrass.MP4"},\
 })
 
 
