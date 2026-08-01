@@ -117,11 +117,11 @@ configs["episodes"].append( { "title": "VRAM and VRM cooling",\
 "video" : {"file" : "GTX1060_cooling.mp4", "start" : "00:00"},\
 })
 
-# internal plate for VRAM 
+# this needs redoing - the video needs horizontal bars
 configs["episodes"].append( { "title": "empty PCB",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:26.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "GTX1060_Pcb.mp4"},\
+"video" : {"file" : "GTX1060_Pcb_barred.mp4"},\
 })
 
 # internal plate for VRAM 
@@ -306,7 +306,8 @@ configs["episodes"].append(\
 { "title": "side by side with the GTX 960 maybe",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:00.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "breel_GTX1060_family_barred.mp4"},\
+"video" : {"file" : "Gtx60Class.MP4"},\
+"overlay" : { "image" : {"file" : "vsOther60Cards.png"} }, \
 })
 
 
