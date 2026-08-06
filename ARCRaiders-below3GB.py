@@ -96,13 +96,15 @@ configs["episodes"].append(\
 { "title": "The GPUs to be tested",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 configs["episodes"].append(\
-{ "title": "snowballing to the 750 ti",\
+{ "title": "snowballing to the 750 ti and 1GB cards",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 # overlay with resolution, quality. Maybe add CPU specs
@@ -126,6 +128,7 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 # 3 slices zoomed on the MSI afterburner overlay.
@@ -134,6 +137,7 @@ configs["episodes"].append(\
 { "title": "Results for 2GB NVidia GPUs, DX12",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 configs["episodes"].append(\
@@ -141,6 +145,7 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 # the crash, without GPUZ overlay
@@ -155,6 +160,7 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 configs["episodes"].append(\
@@ -169,13 +175,16 @@ configs["episodes"].append(\
 { "title": "DX11 saves the Radeon cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
+# green checkmark overlay for the 380
 configs["episodes"].append(\
 { "title": "only the 380 works in dx12",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 configs["episodes"].append(\
@@ -190,13 +199,16 @@ configs["episodes"].append(\
 { "title": "Results for 2GB AMD GPUs, DX11",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
+# maybe the overlay can als point out what APIs can be used on each GPU for this game
 configs["episodes"].append(\
 { "title": "cannot compare dx11 to dx12 breel with all 6 cards",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 # 3 slices zoomed on the MSI afterburner overlay.
@@ -205,6 +217,7 @@ configs["episodes"].append(\
 { "title": "Results for 2GB NVidia GPUs, DX11",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 configs["episodes"].append(\
@@ -212,6 +225,7 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 configs["episodes"].append(\
@@ -219,6 +233,7 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 # maybe use an unblurred gameplay video here?
@@ -227,8 +242,119 @@ configs["episodes"].append(\
 { "title": "Comparing all 2GB GPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
+# side by side breels with the 650 Ti and HD 7790
+# add overlay, explaining which is which
+configs["episodes"].append(\
+{ "title": "How about 1GB GPUs",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
+})
+
+configs["episodes"].append(\
+{ "title": "ask for comments - 6 GPUs",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# maybe side by side in game cap, zoomed on the Afterburner overlay
+# maybe even add an overlay pointing out the two different APIs
+configs["episodes"].append(\
+{ "title": "Cannot really compare them - different DX APIs",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
+})
+
+# use a text overlay here, not an image
+configs["episodes"].append(\
+{ "title": "650 Ti results",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
+})
+
+# use a text overlay here, not an image
+configs["episodes"].append(\
+{ "title": "7790 results",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
+})
+
+# side by side, GCN crash and -dx11 fix.
+# maibe add an overlay.
+configs["episodes"].append(\
+{ "title": "Conclusions",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# in game cap, zoomed on the DX12 API. Maybe side by side with the 760 breel.
+configs["episodes"].append(\
+{ "title": "Kepler runs good in DX12",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "2GB can run the game - 6 cards breel",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Video quality - not that bad",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# gameplay crawling to the elevator
+# might cover also the last mention of -dx11 
+configs["episodes"].append(\
+{ "title": "fate of legacy cards",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Apex Legends dropped DX11",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Fortnite dropped DX11",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Kepler still works for now",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "bye",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
 
 
 
