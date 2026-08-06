@@ -1,0 +1,253 @@
+import scriptedvided
+
+configs = { "defaultAudioFile" : "",\
+"mediaFolder" : "F:\\Videos\\ARCRaiders-below3G", \
+"stockFolder" : "F:\\Videos\\stock",\
+"outputFolder" : "F:\\Videos\\ARCRaiders-below3G\\output", \
+"outputFile" : "ARCRaiders-below3G.mp4", \
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"backgroundTrack" : { "audioTracks" : [ \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "", "until" : ""}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "", "until" : ""}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "", "until" : "EOF"}}, \
+], "volume" : 0.045 },\
+"episodes" : [],\
+"youtube" : {"title" : " ", \
+"description" : ''' ''',\
+"links" : '''
+Track: Bliss Of Heaven - SOMM [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=JQ6mKeQLZak&t=0s
+Free Download / Stream: https://alplus.io/blisss-heaven
+
+Track: Far Far Away - Ferco [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=SrkQ3K1umlc&t=0s 
+Free Download / Stream: https://alplus.io/far-far-away
+
+Track: Inspired - MaikonMusic [Audio Library Release]
+Music provided by Audio Library Plus
+Watch: https://www.youtube.com/watch?v=RUkdTkk_52o&t=0s
+Free Download / Stream: https://alplus.io/inspired
+
+''', \
+"tags" : "ARC,ARC Raiders,AMD,NVidia,Radeon,GeForce,GCN,R9 270,R9 380,R7 260X,RX 460,GTX 1050,GTX 960,GTX 760,GTX 750 Ti,GTX 650 Ti,Kepler,Maxwell,Pascal",\
+"language" : "EN", \
+"Caption certification" : "None",\
+"recording date" : None,\
+"video location" : None, \
+"category" : "Gaming", \
+"subtitles" : None, \
+"endscreen" : None, \
+"cards" : None, \
+}\
+}
+
+# gameplay
+configs["episodes"].append(\
+{ "title": "3GB GPUs run ARC Raiders just fine",\
+"audio" : {"timestamps" : ("00:00", "00:08" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Exhibit no 1 the R9 280",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "But can it run with even less VRAM",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Even 1GB can do it",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Kepler does not work ok on DX11",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "GCN craps out in DX12",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "1060 3G hook",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# this is the initial 6
+configs["episodes"].append(\
+{ "title": "The GPUs to be tested",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "snowballing to the 750 ti",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# overlay with resolution, quality. Maybe add CPU specs
+# use January potato video. Or maybe just the PC and ingame settings
+configs["episodes"].append(\
+{ "title": "Test system and settings",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# Footage from 1050
+configs["episodes"].append(\
+{ "title": "image quality not that bad",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "side by side 1050 image and old potato",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# 3 slices zoomed on the MSI afterburner overlay.
+# Add image overlay, pointing out which card is what.
+configs["episodes"].append(\
+{ "title": "Results for 2GB NVidia GPUs, DX12",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Actual NVidia DX 12 graph",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# the crash, without GPUZ overlay
+configs["episodes"].append(\
+{ "title": "2GB AMD Radeon vs. DX12",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "all 4 debug cards with red X overlay",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Hallock segment",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# video of all 4 debug GPUs, overlays showing which card is which
+configs["episodes"].append(\
+{ "title": "DX11 saves the Radeon cards",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "only the 380 works in dx12",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "the cmdline opt",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# this is the actual graph
+configs["episodes"].append(\
+{ "title": "Results for 2GB AMD GPUs, DX11",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "cannot compare dx11 to dx12 breel with all 6 cards",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# 3 slices zoomed on the MSI afterburner overlay.
+# Add image overlay, pointing out which card is what.
+configs["episodes"].append(\
+{ "title": "Results for 2GB NVidia GPUs, DX11",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Actual NVidia DX 11 graph",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "NVidia DX 11 vs DX12 graph",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# maybe use an unblurred gameplay video here?
+# vs. blurred GPUs?
+configs["episodes"].append(\
+{ "title": "Comparing all 2GB GPUs",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+
+
+
+#scriptedvided.makeVideoForEpisode(configs["episodes"][1], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][4], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][11], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][12], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][13], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][8], configs)
+#print(scriptedvided.makeVideoForEpisode(configs["episodes"][9], configs))
+#print(scriptedvided.getSuitableVideoStream(configs["episodes"][9], configs))
+#print (configs["youtube"])
+#print(scriptedvided.getMusicCreditsString(configs["backgroundTrack"]))
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Alien Isolation"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 1080 results"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 900 results"][0], configs)
+#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 720 results"][0], configs)
+#print (scriptedvided.getSuitableImage([x for x in configs["episodes"] if x["title"] == "actual 1080 results"][0], configs))
+
+scriptedvided.makeVideo(configs)
+
+# meeds better video, or maybe break it up
