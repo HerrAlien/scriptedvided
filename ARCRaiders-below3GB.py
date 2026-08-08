@@ -46,55 +46,55 @@ Free Download / Stream: https://alplus.io/inspired
 # gameplay
 configs["episodes"].append(\
 { "title": "3GB GPUs run ARC Raiders just fine",\
-"audio" : {"timestamps" : ("00:00", "00:08" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : ("00:00", "00:11.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Exhibit no 1 the R9 280",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:22.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "But can it run with even less VRAM",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Even 1GB can do it",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:36" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Kepler does not work ok on DX11",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:42.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "GCN craps out in DX12",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:49.13" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "1060 3G hook",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:56.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 # this is the initial 6
 configs["episodes"].append(\
 { "title": "The GPUs to be tested",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:13" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -102,7 +102,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "snowballing to the 750 ti and 1GB cards",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:23.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -111,7 +111,7 @@ configs["episodes"].append(\
 # use January potato video. Or maybe just the PC and ingame settings
 configs["episodes"].append(\
 { "title": "Test system and settings",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:36.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
@@ -119,14 +119,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "image quality not that bad",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:43.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "side by side 1050 image and old potato",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:51.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -135,7 +135,7 @@ configs["episodes"].append(\
 # Add image overlay, pointing out which card is what.
 configs["episodes"].append(\
 { "title": "Results for 2GB NVidia GPUs, DX12",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:00.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -143,7 +143,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Actual NVidia DX 12 graph",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:30" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -151,29 +151,38 @@ configs["episodes"].append(\
 # the crash, without GPUZ overlay
 configs["episodes"].append(\
 { "title": "2GB AMD Radeon vs. DX12",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:36.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "all 4 debug cards with red X overlay",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:48.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
 
 configs["episodes"].append(\
-{ "title": "Hallock segment",\
+{ "title": "Hallock, on YT",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:52.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
+})
+
+configs["episodes"].append(\
+{ "title": "Hallock, full screen",\
+"isChapter" : False, \
+"audio" : {"timestamps" : ("minusWhateverSeconds", "02:52.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+"overlay" : { "image" : {"file" : ""} }, \
 })
 
 # video of all 4 debug GPUs, overlays showing which card is which
 configs["episodes"].append(\
 { "title": "DX11 saves the Radeon cards",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:58.4" ), "volume" : 0.001, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -182,7 +191,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "only the 380 works in dx12",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:03.7" ), "volume" : 0.001, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -190,14 +199,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "the cmdline opt",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:14.6" ), "volume" : 0.001, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 # this is the actual graph
 configs["episodes"].append(\
 { "title": "Results for 2GB AMD GPUs, DX11",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:41" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -206,7 +215,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "cannot compare dx11 to dx12 breel with all 6 cards",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:50.4" ), "volume" : 0.001, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -215,7 +224,7 @@ configs["episodes"].append(\
 # Add image overlay, pointing out which card is what.
 configs["episodes"].append(\
 { "title": "Results for 2GB NVidia GPUs, DX11",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:56.75" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -223,7 +232,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Actual NVidia DX 11 graph",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:13.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -231,7 +240,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "NVidia DX 11 vs DX12 graph",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:29.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -240,7 +249,7 @@ configs["episodes"].append(\
 # vs. blurred GPUs?
 configs["episodes"].append(\
 { "title": "Comparing all 2GB GPUs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:56.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -249,7 +258,7 @@ configs["episodes"].append(\
 # add overlay, explaining which is which
 configs["episodes"].append(\
 { "title": "How about 1GB GPUs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:09.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -257,7 +266,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ask for comments - 6 GPUs",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:18.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
@@ -266,7 +275,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cannot really compare them - different DX APIs",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:31.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -275,7 +284,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "650 Ti results",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:40.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -284,7 +293,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "7790 results",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:54" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -293,7 +302,7 @@ configs["episodes"].append(\
 # maibe add an overlay.
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:04.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
@@ -301,21 +310,36 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Kepler runs good in DX12",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:16.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+# impro might merge with the above.
+configs["episodes"].append(\
+{ "title": "Kepler runs good in DX12",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:27.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "2GB can run the game - 6 cards breel",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:32.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "2TFlops - maybe 750 Ti and GPUZ",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:41.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Video quality - not that bad",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:49.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
@@ -324,35 +348,42 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "fate of legacy cards",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:00.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "again-dx11",\
+"isChapter" : False, \
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:08.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Apex Legends dropped DX11",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:14.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Fortnite dropped DX11",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:20.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Kepler still works for now",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:26.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:35.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
