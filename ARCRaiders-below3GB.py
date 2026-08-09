@@ -55,13 +55,13 @@ configs["episodes"].append(\
 { "title": "Exhibit no 1 the R9 280",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:22.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "F:\\Videos\\ARCRaiders-GCNs\\output\\ARCRaiders-GCNs.mp4", "start" : "04:20"},\
 })
 
 configs["episodes"].append(\
 { "title": "But can it run with even less VRAM",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX1050_PioneerGame_2026_08_02_17_16_08_861_zoomedOnAfterburner.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
@@ -96,16 +96,16 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The GPUs to be tested",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:13" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "cards_gtx1050_960_760_rx460_r7_260X_R9_270_barred.mp4", "start" : "00:06"},\
+"overlay" : { "image" : {"file" : "6GPUsIDed.png"} }, \
 })
 
 configs["episodes"].append(\
 { "title": "snowballing to the 750 ti and 1GB cards",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:23.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "cards_GTX750Ti_650Ti_HD7790_barred.mp4"},\
+"overlay" : { "image" : {"file" : "overlay_3MoreCards.png"} }, \
 })
 
 # overlay with resolution, quality. Maybe add CPU specs
@@ -121,7 +121,7 @@ configs["episodes"].append(\
 { "title": "image quality not that bad",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:43.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX1050_PioneerGame_2026_08_02_17_16_08_861.mp4", "start" : "00:30"},\
 })
 
 configs["episodes"].append(\
@@ -137,16 +137,17 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Results for 2GB NVidia GPUs, DX12",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:00.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX1050_PioneerGame_2026_08_02_17_16_08_861.mp4", "start" : "00:40"},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
 
+#maybe blurr the video here?
 configs["episodes"].append(\
 { "title": "Actual NVidia DX 12 graph",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:30" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "GTX1050_PioneerGame_2026_08_02_17_16_08_861.mp4", "start" : "01:00"},\
+"overlay" : { "image" : {"file" : "NVidia ARC Raiders, DX12, 720p, low settings.png"} }, \
 })
 
 # the crash, without GPUZ overlay
@@ -160,8 +161,8 @@ configs["episodes"].append(\
 { "title": "all 4 debug cards with red X overlay",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:48.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "4DebugCards.MP4"},\
+"overlay" : { "image" : {"file" : "4DebugGPUsIDed.png"} }, \
 })
 
 configs["episodes"].append(\
@@ -184,8 +185,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "DX11 saves the Radeon cards",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:58.4" ), "volume" : 0.001, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "4DebugCards.MP4"},\
+"overlay" : { "image" : {"file" : "4DebugGPUsIDed.png"} }, \
 })
 
 # green checkmark overlay for the 380
@@ -193,8 +194,8 @@ configs["episodes"].append(\
 { "title": "only the 380 works in dx12",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:03.7" ), "volume" : 0.001, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "4DebugCards.MP4"},\
+"overlay" : { "image" : {"file" : "4DebugGPUs380Works.png"} }, \
 })
 
 configs["episodes"].append(\
@@ -209,7 +210,7 @@ configs["episodes"].append(\
 { "title": "Results for 2GB AMD GPUs, DX11",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:41" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"overlay" : { "image" : {"file" : "AMD ARC Raiders, DX11, 720p, low settings.png"} }, \
 })
 
 # maybe the overlay can als point out what APIs can be used on each GPU for this game
@@ -217,8 +218,8 @@ configs["episodes"].append(\
 { "title": "cannot compare dx11 to dx12 breel with all 6 cards",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:50.4" ), "volume" : 0.001, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "cards_gtx1050_960_760_rx460_r7_260X_R9_270_barred.mp4", "start" : "00:06"},\
+"overlay" : { "image" : {"file" : "6GPUsDxApis.png"} }, \
 })
 
 # 3 slices zoomed on the MSI afterburner overlay.
@@ -235,7 +236,7 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:13.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"overlay" : { "image" : {"file" : "NVidia ARC Raiders, DX11, 720p, low settings.png"} }, \
 })
 
 configs["episodes"].append(\
@@ -243,7 +244,7 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:29.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"overlay" : { "image" : {"file" : "NVidia ARC Raiders, DX11 vs DX12.png"} }, \
 })
 
 # maybe use an unblurred gameplay video here?
@@ -252,7 +253,7 @@ configs["episodes"].append(\
 { "title": "Comparing all 2GB GPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:56.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"overlay" : { "image" : {"file" : "Both ARC Raiders, DX11, 720p, low settings.png"} }, \
 })
 
 # side by side breels with the 650 Ti and HD 7790
@@ -268,7 +269,7 @@ configs["episodes"].append(\
 { "title": "ask for comments - 6 GPUs",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:18.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "cards_gtx1050_960_760_rx460_r7_260X_R9_270_barred.mp4", "start" : "00:06"},\
 })
 
 # maybe side by side in game cap, zoomed on the Afterburner overlay
