@@ -61,35 +61,35 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "But can it run with even less VRAM",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "GTX1050_PioneerGame_2026_08_02_17_16_08_861_zoomedOnAfterburner.mp4", "start" : "00:00"},\
+"video" : {"file" : "cards_gtx1050_960_760_rx460_r7_260X_R9_270_barred.mp4", "start" : "00:06"},\
 })
 
 configs["episodes"].append(\
 { "title": "Even 1GB can do it",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:36" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "HD7790_PioneerGame_2026_08_03_22_33_36_325_zoomedOnAfterburner.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "Kepler does not work ok on DX11",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:42.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Kepler_InGame_Dx11VsDx12.mp4", "start" : "00:10"},\
 })
 
 configs["episodes"].append(\
 { "title": "GCN craps out in DX12",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:49.13" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ARCRaiders_crash.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "1060 3G hook",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:56.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_GTX1060_3G_inGrass_barred.mp4"},\
 })
 
 # this is the initial 6
@@ -113,7 +113,15 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Test system and settings",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:36.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"overlay" : { \
+    "text" : ["'Custom PC'",\
+              "'CPU\: Ryzen 5 5600'",\
+              "'RAM\: 32GB DDR4, 3600MHz, dual channel'",\
+              "'GPUs\: GTX 1050, GTX 960, GTX 760, GTX 750 Ti, GTX 650 Ti'",\
+              "'           RX 460, R9 270, R7 260X, HD 7790'",\
+    ]\
+}, \
+"video" : {"file" : "test_system_RX580.mp4" }\
 })
 
 # Footage from 1050
@@ -128,8 +136,8 @@ configs["episodes"].append(\
 { "title": "side by side 1050 image and old potato",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:51.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "JanPotatoVsAugPotato.mp4", "start" : "00:14"},\
+"overlay" : { "image" : {"file" : "JanPotato_vs_AugPotato.png"} }, \
 })
 
 # 3 slices zoomed on the MSI afterburner overlay.
@@ -137,8 +145,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Results for 2GB NVidia GPUs, DX12",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:00.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "GTX1050_PioneerGame_2026_08_02_17_16_08_861.mp4", "start" : "00:40"},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "DX12_GTXes_sideBySide.mp4", "start" : "00:00" },\
+"overlay" : { "image" : {"file" : "3_GTX_Overlays.png"} }, \
 })
 
 #maybe blurr the video here?
@@ -154,7 +162,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "2GB AMD Radeon vs. DX12",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:36.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "ARCRaiders_crash.mkv"},\
 })
 
 configs["episodes"].append(\
