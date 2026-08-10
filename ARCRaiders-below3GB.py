@@ -55,7 +55,7 @@ configs["episodes"].append(\
 { "title": "Exhibit no 1 the R9 280",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:22.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "F:\\Videos\\ARCRaiders-GCNs\\output\\ARCRaiders-GCNs.mp4", "start" : "04:20"},\
+"video" : {"file" : "F:\\Videos\\ARCRaiders-GCNs\\output\\ARCRaiders-GCNs.mp4", "start" : 260},\
 })
 
 configs["episodes"].append(\
@@ -400,7 +400,7 @@ configs["episodes"].append(\
 
 
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][1], configs)
+scriptedvided.makeVideoForEpisode(configs["episodes"][1], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][4], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][11], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][12], configs)
@@ -416,6 +416,6 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 720 results"][0], configs)
 #print (scriptedvided.getSuitableImage([x for x in configs["episodes"] if x["title"] == "actual 1080 results"][0], configs))
 
-scriptedvided.makeVideo(configs)
+# scriptedvided.makeVideo(configs)
 
 # meeds better video, or maybe break it up
