@@ -1,4 +1,5 @@
 import scriptedvided
+import sv_ffutils
 
 configs = { "defaultAudioFile" : "ARCRaiders-lessThan3GB_2.ogg",\
 "mediaFolder" : "F:\\Videos\\ARCRaiders-below3G", \
