@@ -5,7 +5,7 @@ configs = { "defaultAudioFile" : "ARCRaiders-lessThan3GB_2.ogg",\
 "stockFolder" : "F:\\Videos\\stock",\
 "outputFolder" : "F:\\Videos\\ARCRaiders-below3G\\output", \
 "outputFile" : "ARCRaiders-below3G.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80808080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "3GB GPUs run ARC Raiders just fine", "until" : "image quality not that bad"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "image quality not that bad", "until" : "How about 1GB GPUs"}}, \
@@ -48,7 +48,7 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "3GB GPUs run ARC Raiders just fine",\
 "audio" : {"timestamps" : ("00:00", "00:11.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "TYC_10603GB.mkv"},\
 })
 
 configs["episodes"].append(\
@@ -297,8 +297,9 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:33.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "GTX650Ti_PioneerGame_2026_08_03_23_28_17_531.mp4"},\
-"overlay" : { "image" : {"file" : ""} }, \
-})
+"overlay" : { "text" : [ sv_ffutils.ffmpegSafeString("DX11, low settings"),\
+                         scriptedvided.r6sText('1280x720'  , 34, 16),\
+]} })
 
 # use a text overlay here, not an image
 configs["episodes"].append(\
@@ -306,52 +307,46 @@ configs["episodes"].append(\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:47.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "HD7790_PioneerGame_2026_08_03_22_37_27_811.mp4"},\
-"overlay" : { "image" : {"file" : ""} }, \
-})
+"overlay" : { "text" : [ sv_ffutils.ffmpegSafeString("DX11, low settings"),\
+                         scriptedvided.r6sText('1280x720'  , 50, 22),\
+]} })
 
 # side by side, GCN crash and -dx11 fix.
 # maibe add an overlay.
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:58.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GcnIssue_and_fix.mp4"},\
+"overlay" : { "image" : {"file" : "RadeonCrashAndFix.png"} }, \
 })
 
 # in game cap, zoomed on the DX12 API. Maybe side by side with the 760 breel.
 configs["episodes"].append(\
 { "title": "Kepler runs good in DX12",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:10.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-})
-
-# impro might merge with the above.
-configs["episodes"].append(\
-{ "title": "Kepler runs good in DX12",\
-"isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:21" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX760_PioneerGame_2026_08_02_16_26_11_616.mp4", "start" : "02:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "2GB can run the game - 6 cards breel",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:26" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "cards_gtx1050_960_760_rx460_r7_260X_R9_270_barred.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "2TFlops - maybe 750 Ti and GPUZ",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:35.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "rx460_GTX750Ti_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Video quality - not that bad",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:43.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX1050_PioneerGame_2026_08_02_17_12_35_247.mp4", "start" : "00:23"},\
 })
 
 # gameplay crawling to the elevator
@@ -360,42 +355,42 @@ configs["episodes"].append(\
 { "title": "fate of legacy cards",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:53.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "RX460_PioneerGame_2026_08_03_23_04_11_421.mp4", "start" : "00:40"},\
 })
 
 configs["episodes"].append(\
 { "title": "again-dx11",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:02" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GcnIssue_and_fix.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Apex Legends dropped DX11",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:08.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "r5apex_bot_royale.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Fortnite dropped DX11",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:13.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_05_17_20_11_42_186.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "Kepler still works for now",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:19.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Palit_GTX760_breel_.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:31" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "HD7790_PioneerGame_2026_08_03_22_37_27_811.mp4", "start" : "01:40"},\
 })
 
 
