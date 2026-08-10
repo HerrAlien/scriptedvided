@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "ARCRaiders-lessThan3GB.ogg",\
+configs = { "defaultAudioFile" : "ARCRaiders-lessThan3GB_2.ogg",\
 "mediaFolder" : "F:\\Videos\\ARCRaiders-below3G", \
 "stockFolder" : "F:\\Videos\\stock",\
 "outputFolder" : "F:\\Videos\\ARCRaiders-below3G\\output", \
@@ -153,7 +153,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Actual NVidia DX 12 graph",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:30" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:28.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "GTX1050_PioneerGame_2026_08_02_17_16_08_861.mp4", "start" : "01:00"},\
 "overlay" : { "image" : {"file" : "NVidia ARC Raiders, DX12, 720p, low settings.png"} }, \
 })
@@ -161,14 +161,14 @@ configs["episodes"].append(\
 # the crash, without GPUZ overlay
 configs["episodes"].append(\
 { "title": "2GB AMD Radeon vs. DX12",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:36.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:35.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "ARCRaiders_crash.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "all 4 debug cards with red X overlay",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:48.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:47.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "4DebugCards.MP4"},\
 "overlay" : { "image" : {"file" : "4DebugGPUsIDed.png"} }, \
 })
@@ -176,21 +176,21 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Hallock, on YT",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:52.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:51.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "Hallock_DX12.mkv", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "Hallock, full screen",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("02:45.3", "02:52.8" ), "volume" : 0.001, "padAudio" : 0.1 },\
-"video" : {"file" : "Hallock_DX12_GCN.mkv", "start" : "00:03"},\
+"audio" : {"timestamps" : ("02:39", "02:51.8" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"video" : {"file" : "Hallock_DX12_GCN.mkv", "start" : "00:00"},\
 })
 
 # video of all 4 debug GPUs, overlays showing which card is which
 configs["episodes"].append(\
 { "title": "DX11 saves the Radeon cards",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:58.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:57.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "4DebugCards.MP4"},\
 "overlay" : { "image" : {"file" : "4DebugGPUsIDed.png"} }, \
 })
@@ -199,7 +199,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "only the 380 works in dx12",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:03.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:02.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "4DebugCards.MP4"},\
 "overlay" : { "image" : {"file" : "4DebugGPUs380Works.png"} }, \
 })
@@ -207,14 +207,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "the cmdline opt",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:14.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:13.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "ArcRaidersMinusDX11Opt.mkv" , "start" : "00:00"},\
 })
 
 # this is the actual graph
 configs["episodes"].append(\
 { "title": "Results for 2GB AMD GPUs, DX11",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:41" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:34.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "RX460_PioneerGame_2026_08_03_23_04_11_421.mp4"},\
 "overlay" : { "image" : {"file" : "AMD ARC Raiders, DX11, 720p, low settings.png"} }, \
 })
@@ -223,7 +223,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "cannot compare dx11 to dx12 breel with all 6 cards",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:50.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:44" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "cards_gtx1050_960_760_rx460_r7_260X_R9_270_barred.mp4", "start" : "00:06"},\
 "overlay" : { "image" : {"file" : "6GPUsDxApis.png"} }, \
 })
@@ -232,7 +232,7 @@ configs["episodes"].append(\
 # Add image overlay, pointing out which card is what.
 configs["episodes"].append(\
 { "title": "Results for 2GB NVidia GPUs, DX11",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:56.75" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:50.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "DX11_GTXes_sideBySide.mp4"},\
 "overlay" : { "image" : {"file" : "DX11_3_GTX_Overlays.png"} }, \
 })
@@ -240,7 +240,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Actual NVidia DX 11 graph",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:13.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:07.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "GTX750Ti_DX12_PioneerGame_2026_08_04_19_36_02_349.mp4"},\
 "overlay" : { "image" : {"file" : "NVidia ARC Raiders, DX11, 720p, low settings.png"} }, \
 })
@@ -248,7 +248,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "NVidia DX 11 vs DX12 graph",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:29.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:22.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "GTX760_PioneerGame_2026_08_02_16_26_11_616.mp4"},\
 "overlay" : { "image" : {"file" : "NVidia ARC Raiders, DX11 vs DX12.png"} }, \
 })
@@ -257,7 +257,7 @@ configs["episodes"].append(\
 # vs. blurred GPUs?
 configs["episodes"].append(\
 { "title": "Comparing all 2GB GPUs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:56.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:49.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "cards_gtx1050_960_760_rx460_r7_260X_R9_270_barred.mp4", "start" : "00:00"},\
 "overlay" : { "image" : {"file" : "Both ARC Raiders, DX11, 720p, low settings.png"} }, \
 })
@@ -266,7 +266,7 @@ configs["episodes"].append(\
 # add overlay, explaining which is which
 configs["episodes"].append(\
 { "title": "How about 1GB GPUs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:09.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:02.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "cards_GTX750Ti_650Ti_HD7790_barred.mp4"},\
 "overlay" : { "image" : {"file" : "overlay_3MoreCards_wVRAM.png"} }, \
 })
@@ -274,7 +274,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ask for comments - 6 GPUs",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:18.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:12.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "cards_gtx1050_960_760_rx460_r7_260X_R9_270_barred.mp4", "start" : "00:06"},\
 })
 
@@ -283,7 +283,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Cannot really compare them - different DX APIs",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:31.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:25.1" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "GtxLikes12_GcnLikes11.mp4"},\
 })
 
@@ -295,7 +295,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "650 Ti results",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:40.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:33.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "GTX650Ti_PioneerGame_2026_08_03_23_28_17_531.mp4"},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -304,7 +304,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "7790 results",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:54" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:47.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "HD7790_PioneerGame_2026_08_03_22_37_27_811.mp4"},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
@@ -313,7 +313,7 @@ configs["episodes"].append(\
 # maibe add an overlay.
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:04.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:58.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
@@ -321,7 +321,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Kepler runs good in DX12",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:16.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:10.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
@@ -329,28 +329,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Kepler runs good in DX12",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:27.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:21" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "2GB can run the game - 6 cards breel",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:32.5" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:26" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "2TFlops - maybe 750 Ti and GPUZ",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:41.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:35.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Video quality - not that bad",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:49.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:43.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
@@ -359,42 +359,42 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "fate of legacy cards",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:00.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:53.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "again-dx11",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:08.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:02" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Apex Legends dropped DX11",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:14.9" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:08.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Fortnite dropped DX11",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:20.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:13.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "Kepler still works for now",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:26.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:19.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:35.3" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:31" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : ""},\
 })
 
