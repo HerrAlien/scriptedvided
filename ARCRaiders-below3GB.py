@@ -1,6 +1,6 @@
 import scriptedvided
 
-configs = { "defaultAudioFile" : "",\
+configs = { "defaultAudioFile" : "ARCRaiders-lessThan3GB.ogg",\
 "mediaFolder" : "F:\\Videos\\ARCRaiders-below3G", \
 "stockFolder" : "F:\\Videos\\stock",\
 "outputFolder" : "F:\\Videos\\ARCRaiders-below3G\\output", \
