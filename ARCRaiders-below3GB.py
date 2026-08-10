@@ -6,7 +6,7 @@ configs = { "defaultAudioFile" : "ARCRaiders-lessThan3GB_2.ogg",\
 "stockFolder" : "F:\\Videos\\stock",\
 "outputFolder" : "F:\\Videos\\ARCRaiders-below3G\\output", \
 "outputFile" : "ARCRaiders-below3G.mp4", \
-"textOpts" : {"fontcolor" : "White", "boxcolor" : "#80808080"},\
+"textOpts" : {"fontcolor" : "White", "boxcolor" : "#20202080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "3GB GPUs run ARC Raiders just fine", "until" : "image quality not that bad"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "image quality not that bad", "until" : "How about 1GB GPUs"}}, \
