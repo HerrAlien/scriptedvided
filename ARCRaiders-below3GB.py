@@ -396,7 +396,7 @@ configs["episodes"].append(\
 
 
 
-scriptedvided.makeVideoForEpisode(configs["episodes"][1], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][1], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][4], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][11], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][12], configs)
@@ -412,6 +412,6 @@ scriptedvided.makeVideoForEpisode(configs["episodes"][1], configs)
 #scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "actual 720 results"][0], configs)
 #print (scriptedvided.getSuitableImage([x for x in configs["episodes"] if x["title"] == "actual 1080 results"][0], configs))
 
-# scriptedvided.makeVideo(configs)
+scriptedvided.makeVideo(configs)
 
 # meeds better video, or maybe break it up
