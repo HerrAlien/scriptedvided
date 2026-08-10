@@ -177,22 +177,20 @@ configs["episodes"].append(\
 { "title": "Hallock, on YT",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:52.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "Hallock_DX12.mkv", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "Hallock, full screen",\
 "isChapter" : False, \
-"audio" : {"timestamps" : ("minusWhateverSeconds", "02:52.8" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"audio" : {"timestamps" : ("02:45.3", "02:52.8" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"video" : {"file" : "Hallock_DX12_GCN.mkv", "start" : "00:03"},\
 })
 
 # video of all 4 debug GPUs, overlays showing which card is which
 configs["episodes"].append(\
 { "title": "DX11 saves the Radeon cards",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:58.4" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:58.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "4DebugCards.MP4"},\
 "overlay" : { "image" : {"file" : "4DebugGPUsIDed.png"} }, \
 })
@@ -201,7 +199,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "only the 380 works in dx12",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:03.7" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:03.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "4DebugCards.MP4"},\
 "overlay" : { "image" : {"file" : "4DebugGPUs380Works.png"} }, \
 })
@@ -209,15 +207,15 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "the cmdline opt",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:14.6" ), "volume" : 0.001, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:14.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
+"video" : {"file" : "ArcRaidersMinusDX11Opt.mkv" , "start" : "00:00"},\
 })
 
 # this is the actual graph
 configs["episodes"].append(\
 { "title": "Results for 2GB AMD GPUs, DX11",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:41" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "RX460_PioneerGame_2026_08_03_23_04_11_421.mp4"},\
 "overlay" : { "image" : {"file" : "AMD ARC Raiders, DX11, 720p, low settings.png"} }, \
 })
 
@@ -225,7 +223,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "cannot compare dx11 to dx12 breel with all 6 cards",\
 "isChapter" : False, \
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:50.4" ), "volume" : 0.001, "padAudio" : 0.1 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:50.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "cards_gtx1050_960_760_rx460_r7_260X_R9_270_barred.mp4", "start" : "00:06"},\
 "overlay" : { "image" : {"file" : "6GPUsDxApis.png"} }, \
 })
@@ -235,15 +233,15 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Results for 2GB NVidia GPUs, DX11",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:56.75" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "DX11_GTXes_sideBySide.mp4"},\
+"overlay" : { "image" : {"file" : "DX11_3_GTX_Overlays.png"} }, \
 })
 
 configs["episodes"].append(\
 { "title": "Actual NVidia DX 11 graph",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:13.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX750Ti_DX12_PioneerGame_2026_08_04_19_36_02_349.mp4"},\
 "overlay" : { "image" : {"file" : "NVidia ARC Raiders, DX11, 720p, low settings.png"} }, \
 })
 
@@ -251,7 +249,7 @@ configs["episodes"].append(\
 { "title": "NVidia DX 11 vs DX12 graph",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:29.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX760_PioneerGame_2026_08_02_16_26_11_616.mp4"},\
 "overlay" : { "image" : {"file" : "NVidia ARC Raiders, DX11 vs DX12.png"} }, \
 })
 
@@ -260,7 +258,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Comparing all 2GB GPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:56.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "cards_gtx1050_960_760_rx460_r7_260X_R9_270_barred.mp4", "start" : "00:00"},\
 "overlay" : { "image" : {"file" : "Both ARC Raiders, DX11, 720p, low settings.png"} }, \
 })
 
@@ -269,8 +267,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "How about 1GB GPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:09.4" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "cards_GTX750Ti_650Ti_HD7790_barred.mp4"},\
+"overlay" : { "image" : {"file" : "overlay_3MoreCards_wVRAM.png"} }, \
 })
 
 configs["episodes"].append(\
@@ -286,16 +284,19 @@ configs["episodes"].append(\
 { "title": "Cannot really compare them - different DX APIs",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:31.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file" : "GtxLikes12_GcnLikes11.mp4"},\
 })
+
+#
+# resume here
+#
 
 # use a text overlay here, not an image
 configs["episodes"].append(\
 { "title": "650 Ti results",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:40.2" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GTX650Ti_PioneerGame_2026_08_03_23_28_17_531.mp4"},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
 
@@ -304,7 +305,7 @@ configs["episodes"].append(\
 { "title": "7790 results",\
 "isChapter" : False, \
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:54" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "HD7790_PioneerGame_2026_08_03_22_37_27_811.mp4"},\
 "overlay" : { "image" : {"file" : ""} }, \
 })
 
