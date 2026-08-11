@@ -260,7 +260,7 @@ configs["episodes"].append(\
 { "title": "Comparing all 2GB GPUs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:49.7" ), "volume" : 0.999, "padAudio" : 0.1 },\
 "video" : {"file" : "cards_gtx1050_960_760_rx460_r7_260X_R9_270_barred.mp4", "start" : "00:00"},\
-"overlay" : { "image" : {"file" : "Both ARC Raiders, DX11, 720p, low settings.png"} }, \
+"overlay" : { "image" : {"file" : "Both ARC Raiders, DX11, 720p, low settings2.png"} }, \
 })
 
 # side by side breels with the 650 Ti and HD 7790
@@ -396,7 +396,7 @@ configs["episodes"].append(\
 
 
 
-#scriptedvided.makeVideoForEpisode(configs["episodes"][1], configs)
+#scriptedvided.makeVideoForEpisode(configs["episodes"][40], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][4], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][11], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][12], configs)
