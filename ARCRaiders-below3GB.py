@@ -49,7 +49,7 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "3GB GPUs run ARC Raiders just fine",\
 "audio" : {"timestamps" : ("00:00", "00:11.6" ), "volume" : 0.999, "padAudio" : 0.1 },\
-"video" : {"file" : "TYC_10603GB.mkv"},\
+"video" : {"file" : "breel_GTX1060_3G_inGrass_barred.mp4"},\
 })
 
 configs["episodes"].append(\
