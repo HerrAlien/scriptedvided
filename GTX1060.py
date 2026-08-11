@@ -61,7 +61,7 @@ Free Download / Stream: https://alplus.io/inspired
 # this is the hook 
 #  scriptedvided.nextTS\(configs\)\, *\"[0-9][0-9]\:[0-9][0-9]\.?[0-9]?[0-9]?\"
 #  \"file\" *\: *\".*\"
-#  \"video\" *: *\{\"file\" *: *\".* \"\}
+#  \"video\" *: *\{ *\"file\" *: *\".*\" *\}
 #  scriptedvided.r6sText\('.*' *\, *[0-9]*\, *[0-9]*\)
 #   "timestamps" *\: *\( *"[0-9\:\.]*" *\, *"[0-9\:\.]*" *\)
 #configs["episodes"].append(\
