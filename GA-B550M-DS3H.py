@@ -357,7 +357,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "qflash",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:59.9"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:45.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GA-B550M-DS3H-BIOS-QFlash.MP4"},\
 })
 
