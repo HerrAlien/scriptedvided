@@ -144,7 +144,7 @@ episodes = configs["episodes"]
 configs["episodes"].append(\
 { "title": "Games that will not run",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:57.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "R9_380_MarvelRivalsError.mkv"},\
+"video" : {"file" : "R9_380_M_arvelRivalsError.mkv"},\
 })
 
 configs["episodes"].append(\

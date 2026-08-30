@@ -306,7 +306,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:56" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x1024, 50% scale, low settings", \
+        "settings" : "1920x1080, 20% scale, low settings", \
     }\
 },\
 })
@@ -339,7 +339,7 @@ configs["episodes"].append(\
 "video" : {"file" : ""},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : "IpcWOthers.png"}\
+    "image" : {"file" : "ipc_comparison.png"}\
 }, \
 })
 
