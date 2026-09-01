@@ -122,7 +122,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "GIGASUS preview",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:17.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:00"},\
 "isChapter" : False,\
 })
 
@@ -320,13 +320,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Checking the IPC",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:13.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "01:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "By itself",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:26.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "overlays.png"}\
@@ -336,7 +336,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Compared with others",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:34.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "ipc_comparison.png"}\
