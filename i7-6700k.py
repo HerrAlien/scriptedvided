@@ -72,13 +72,13 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "Labeled as eWaste",\
 "audio" : {"timestamps" : ("00:00", "00:09.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Z170_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU itself",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:17.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_6700k_inHand2_barred.mp4"},\
 "isChapter" : False,\
 })
 
@@ -86,19 +86,19 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ARC Raiders preview",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:26.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PioneerGame_2026_02_21_Swamp.mp4", "start" : "00:05"},\
 "isChapter" : False,\
 })
 
-# Quad channel
+# have some crashes maybe?
 configs["episodes"].append(\
 { "title": "cooked",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:37.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_6700k_inHand2_barred.mp4"},\
 "isChapter" : False,\
 })
 
-# this is about the memory
+# this is about the memory. Maybe BIOS screen cap?
 configs["episodes"].append(\
 { "title": "The test system",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:53.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
@@ -115,7 +115,7 @@ configs["episodes"].append(\
               "'GPU\: GTX 980'",\
     ]\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Z170_inHand_barred.mp4"},\
 "isChapter" : False,\
 })
 
@@ -171,7 +171,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, 50% render scale, performance mode", \
     }\
 }, \
-"video" : {"file" : ""}\
+"video" : {"file" : "FortniteClient-Win64-Shipping_2026_08_30_08_03_26_860-converted.mp4", "start" : "02:00"}\
 })
 
 configs["episodes"].append(\
