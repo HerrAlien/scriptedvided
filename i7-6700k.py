@@ -204,7 +204,6 @@ configs["episodes"].append(\
         "settings" : "1280x720, low settings", \
     }\
 },\
-"video" : {"file" : ""}\
 })
 
 configs["episodes"].append(\
@@ -237,6 +236,7 @@ configs["episodes"].append(\
 }\
 })
 
+# specify video
 configs["episodes"].append(\
 { "title": "RE4",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:20" ), "padAudio" : 0.05 },\
@@ -297,7 +297,6 @@ configs["episodes"].append(\
         "settings" : "800x600, lowest settings", \
     }\
 },\
-"video" : {"file" : ""}\
 })
 
 #redo and specify a smoother video
