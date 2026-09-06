@@ -248,7 +248,7 @@ configs["episodes"].append(\
     "benchmark" : { \
         "settings" : "1280x720, performance FSR, low settings", \
     }\
-}\
+},\
 "video" : "stock_re4demo_phoneCall.mp4", \
 })
 
