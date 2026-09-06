@@ -89,7 +89,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:26.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PioneerGame_2026_02_21_Swamp.mp4", "start" : "00:05"},\
 "overlay" : { \
-    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 50% scale"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
              scriptedvided.r6sText("RAM at 2133 MHz", 85, 42),\
 ]}, \
 "isChapter" : False,\
@@ -162,7 +162,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:18.7" ), "padAudio" : 0.05 },\
 "video" : {"file" : "PioneerGame_2026_02_21_Swamp.mp4", "start" : "00:25"},\
 "overlay" : { \
-    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 50% scale"),\
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 0.5 render scale"),\
               scriptedvided.r6sText("RAM at 2133 MHz", 85, 42),\
               scriptedvided.r6sText("RAM at 3000 MHz", 100, 51),\
 ]}, \
