@@ -1,4 +1,5 @@
 import scriptedvided
+import sv_ffutils
 
 configs = { "defaultAudioFile" : "i7-6700k.ogg",\
 "mediaFolder" : "F:\\Videos\\i7_6700K", \
