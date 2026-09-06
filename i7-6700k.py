@@ -87,6 +87,10 @@ configs["episodes"].append(\
 { "title": "ARC Raiders preview",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:26.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PioneerGame_2026_02_21_Swamp.mp4", "start" : "00:05"},\
+"overlay" : { \
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 50% scale"),\
+             scriptedvided.r6sText("RAM at 2133 MHz", 85, 42),\
+]}, \
 "isChapter" : False,\
 })
 
@@ -157,10 +161,10 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:18.7" ), "padAudio" : 0.05 },\
 "video" : {"file" : "PioneerGame_2026_02_21_Swamp.mp4", "start" : "00:25"},\
 "overlay" : { \
-    "benchmark" : { \
-        "settings" : "1280x720, 50% render scale, low settings", \
-    }\
-}, \
+    "text" : [sv_ffutils.ffmpegSafeString("1280x720, low settings, 50% scale"),\
+              scriptedvided.r6sText("RAM at 2133 MHz", 85, 42),\
+              scriptedvided.r6sText("RAM at 3000 MHz", 100, 51),\
+]}, \
 })
 
 configs["episodes"].append(\
@@ -245,6 +249,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, performance FSR, low settings", \
     }\
 }\
+"video" : "stock_re4demo_phoneCall.mp4", \
 })
 
 configs["episodes"].append(\
@@ -351,48 +356,48 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:49.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i7-6700k_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pricing",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:04.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "olx-i7-6700.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Competition from AM4",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:20" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_RyzenAPUs_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "poor value for i7s and Ks",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:36.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5_2400_i7_2600_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "move to AM4",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:52.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Aorus-B450-Elite_Overall.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "hint to the E5 2690 v2",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:02.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "XeonSizeDifferences2_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:11.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i7-6700k_inHand_barred.mp4"},\
 })
 
 
