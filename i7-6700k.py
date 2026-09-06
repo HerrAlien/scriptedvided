@@ -94,7 +94,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "cooked",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:37.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "breel_6700k_inHand2_barred.mp4"},\
+"video" : {"file" : "breel_i7-6700k_inHand_barred.mp4"},\
 "isChapter" : False,\
 })
 
@@ -102,7 +102,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "The test system",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:53.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_Z170_i7-6700k_RAM_barred.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -115,7 +115,7 @@ configs["episodes"].append(\
               "'GPU\: GTX 980'",\
     ]\
 }, \
-"video" : {"file" : "breel_Z170_inHand_barred.mp4"},\
+"video" : {"file" : "breel_Z170_i7-6700k_RAM3_barred.mp4"},\
 "isChapter" : False,\
 })
 
