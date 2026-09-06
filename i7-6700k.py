@@ -326,7 +326,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Checking the IPC",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:13.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "01:00"},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
