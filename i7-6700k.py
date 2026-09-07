@@ -359,6 +359,9 @@ configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:49.1" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_i7-6700k_inHand_barred.mp4"},\
+"overlay" : { \
+    "image" : {"file" : "6thGen_i5_i7.png"}\
+}, \
 })
 
 configs["episodes"].append(\
