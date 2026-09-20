@@ -157,8 +157,8 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Marvel Rivals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
+              scriptedvided.r6sText( '1920x1080' , 48 , 28),\
+              scriptedvided.r6sText( '1280x720' , 75 , 37),\
 ]}, \
 })
 
@@ -172,10 +172,10 @@ configs["episodes"].append( { "title": "Marvel - both",\
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Cyberpunk 2077",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
+    "text" : [scriptedvided.r6sText( '1920x1080, low settings'    , 56 , 40 ),\
+              scriptedvided.r6sText( '1920x1080, medium settings' , 47 , 35),\
+              scriptedvided.r6sText( '1600x900, high settings'    , 46 , 33),\
+              scriptedvided.r6sText( '1280x720, ultra settings'   , 51 , 35),\
 ]}, \
 })
 
@@ -189,9 +189,9 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
+              scriptedvided.r6sText( '1920x1080' , 91 , 69),\
+              scriptedvided.r6sText( '1600x900' ,  114, 88),\
+              scriptedvided.r6sText( '1280x720' ,  135, 101),\
 ]}, \
 "video" : {"file" : ""},\
 })
@@ -206,9 +206,9 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("DX12 mode, medium settings"),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
+              scriptedvided.r6sText( '1920x1080' ,  91, 73),\
+              scriptedvided.r6sText( '1600x900'  ,  113, 87),\
+              scriptedvided.r6sText( '1280x720'  ,  143, 109),\
 ]}, \
 "video" : {"file" : ""},\
 })
@@ -221,11 +221,7 @@ configs["episodes"].append( { "title": "Fortnite - both",\
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Control",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : [sv_ffutils.ffmpegSafeString("1920x1080"),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-]},\
+"overlay" : {"benchmark" : {"settings" : "1920x1080, high settings", } }, \
 "video" : {"file" : ""}\
 })
 
@@ -237,7 +233,7 @@ configs["episodes"].append( { "title": "Control - both",\
 
 configs["episodes"].append( { "title": "Doom Eternal",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1920x1080, ultra settings", } }, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, low settings", } }, \
 })
 
 configs["episodes"].append( { "title": "Doom - both",\
