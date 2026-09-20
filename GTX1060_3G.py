@@ -247,9 +247,9 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Apex Legends",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("Low settings"),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
+              scriptedvided.r6sText( '1920x1080' ,  105, 81),\
+              scriptedvided.r6sText( '1600x900'  ,  131, 99),\
+              scriptedvided.r6sText( '1280x720'  ,  170, 127),\
 ]}, \
 })
 
@@ -272,12 +272,7 @@ configs["episodes"].append( { "title": "FC6 - both",\
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Overwatch 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : [sv_ffutils.ffmpegSafeString("Low settings"),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-]}, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, low settings", } }, \
 })
 
 configs["episodes"].append( { "title": "Overwatch - both",\
@@ -323,8 +318,8 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Robocop",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [ sv_ffutils.ffmpegSafeString("Low settings"),\
-               scriptedvided.r6sText( ' ' ,  , ),\
-               scriptedvided.r6sText( ' ' ,  , ),\
+               scriptedvided.r6sText( '1600x900' ,  35, 28),\
+               scriptedvided.r6sText( '1280x720' ,  50, 40),\
 ]}, \
 })
 
@@ -349,7 +344,7 @@ configs["episodes"].append( { "title": "Finals - both",\
 #redo and specify a smoother video
 configs["episodes"].append( { "title": "Shadow of the Tomb Raider",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1920x1080, highest settings" } }, \
+"overlay" : {"benchmark" : {"settings" : "1920x1080, very high settings" } }, \
 })
 
 configs["episodes"].append( { "title": "sottr - both",\
