@@ -189,22 +189,6 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "ARC Raiders",\
 "video" : {"file" : ""},\
 })
 
-configs["episodes"].append( { "title": "Counter-Strike 2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1920x1080, medium settings, no FSR", } }, \
-})
-
-
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Control",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : [sv_ffutils.ffmpegSafeString("1920x1080"),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-]},\
-"video" : {"file" : ""}\
-})
-
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : { \
@@ -214,6 +198,16 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
               scriptedvided.r6sText( ' ' ,  , ),\
 ]}, \
 "video" : {"file" : ""},\
+})
+
+scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Control",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : { \
+    "text" : [sv_ffutils.ffmpegSafeString("1920x1080"),\
+              scriptedvided.r6sText( ' ' ,  , ),\
+              scriptedvided.r6sText( ' ' ,  , ),\
+]},\
+"video" : {"file" : ""}\
 })
 
 configs["episodes"].append( { "title": "Doom Eternal",\
@@ -252,21 +246,15 @@ configs["episodes"].append(  { "title": "RE4",\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, balanced preset", } }, \
 })
 
-
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Rainbow Six: Siege",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "padAudio" : 0.05 },\
-"overlay" : { \
-    "text" : [sv_ffutils.ffmpegSafeString("Low settings"),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-]}, \
+configs["episodes"].append( { "title": "Counter-Strike 2",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"overlay" : {"benchmark" : {"settings" : "1920x1080, medium settings, no FSR", } }, \
 })
 
 configs["episodes"].append(  { "title": "Borderlands 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, badass settings", } }, \
 })
-
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Robocop",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
@@ -302,80 +290,90 @@ configs["episodes"].append(  { "title" : "Terminator", \
 ####################### conclusion ###############################
 # like Maxwell
 configs["episodes"].append(\
+{ "title": "But the cooler ...",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "no VRM contact",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "little airflow for VRM",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "fins trap air against the mobo",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "dead mosfet",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "Aliexpress coolers touch the VRM",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "done venting",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "side by side with the GTX 960 maybe",\
+{ "title": "Not competing against 6G 1060",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "overlay" : { "image" : {"file" : "vsOther60Cards.png"} }, \
 })
 
-
 configs["episodes"].append(\
-{ "title": "1060 and R7 370 both MSI",\
+{ "title": "but against Polaris - prices",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "R7 370 cooler weight",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-
-configs["episodes"].append(\
-{ "title": "1060 cooler weight",\
+{ "title": "Doom Eternal - 3G stayed at medium",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "solder bals",\
+{ "title": "Extra 1G might help",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "Zero RPM",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "3 fans 50 class",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "OLX",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:3.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "price of RX 580",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-
-configs["episodes"].append(\
-{ "title": "settings vs VRAM breel w both RX 580 and GTX 1060",\
+{ "title": "RX 570 breel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
