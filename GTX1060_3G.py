@@ -76,16 +76,14 @@ configs["episodes"].append( { "title": "Another NVidia controversy",\
 })
 # fixed in february
 
-#Maybe have an overlay?
+# overlay with both GTX-es
 configs["episodes"].append( { "title": "Overwatch preview",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
-              scriptedvided.r6sText( ' ' ,  , ),\
+              scriptedvided.r6sText( '1920x1080' ,  301, 214),\
 ]}, \
 })
 
