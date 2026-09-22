@@ -71,7 +71,7 @@ Free Download / Stream: https://alplus.io/inspired
 #})
 
 configs["episodes"].append( { "title": "Another NVidia controversy",\
-"audio" : {"timestamps" : ("00:00", ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00", "00:12.5"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_GTX1060_3G_inHand_barred.mp4", "start" : "00:00"},\
 })
 # fixed in february
@@ -79,46 +79,52 @@ configs["episodes"].append( { "title": "Another NVidia controversy",\
 # overlay with both GTX-es
 configs["episodes"].append( { "title": "Overwatch preview",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:22.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "stock_Overwatch2_gameplay.mp4"},\
 "overlay" : { "image" : {"file" : "Overwatch 2.png"} }, \
 })
 
 # GPUZ side by side, or with an overlay
 configs["episodes"].append( { "title": "The GPU",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:35.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GTX1060_3G_GPUZ.mkv"},\
 })
 
 # side by side 1060s
 configs["episodes"].append( { "title": "Cooling and Thermals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:47.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_GTX1060_3G_inGrass_barred.mp4"},\
 })
 
 #
 configs["episodes"].append( { "title": "cooler with single heatpipe",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:57.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GTX1060_3G_Cooling_barred.mp4", "start" : "00:00"},\
+})
+
+configs["episodes"].append( { "title": "aliexprss coolers",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:05.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "breel with aliexpress cards, or cooling from the r9 370"},\
 })
 
 configs["episodes"].append( { "title": "no VRM contact",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:18.9" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_GTX1060_3G_mosfetCooling_barred.mp4"},\
 })
 
 #overlay to point out cooling
 configs["episodes"].append( { "title": "zoom in to cuts in heatsink",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:28.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GTX1060_3G_Cooling_barred.mp4"},\
 })
 
 configs["episodes"].append( { "title": "actual temps with GPU breel",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:40.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_GTX1060_3G_inGrass_barred.mp4"},\
 "overlay" : { \
     "text" : ["'Temperatures (Valley)\: 70C (46C delta over ambient)'"]}, \
@@ -126,20 +132,20 @@ configs["episodes"].append( { "title": "actual temps with GPU breel",\
 
 # side by side GPUzs
 configs["episodes"].append( { "title": "Just 3GB",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:48.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "GTX1060_3G.mkv"},\
 })
 
 # side by side GPUzs
 configs["episodes"].append( { "title": "VRAM mattered in this game",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:01" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "r5apex_bot_royale.mp4"},\
 "overlay" : { "image" : {"file" : "Apex Legends.png"} }, \
 })
 
 configs["episodes"].append( { "title": "The test system",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:11.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : ["'Custom PC'",\
               "'CPU\: Ryzen 5 5600'",\
@@ -158,7 +164,7 @@ configs["episodes"].append( { "title": "The test system",\
 episodes = configs["episodes"]
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Marvel Rivals",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:36" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
               scriptedvided.r6sText( '1920x1080' , 48 , 28),\
@@ -167,7 +173,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Marvel Rivals",\
 })
 
 configs["episodes"].append( { "title": "Marvel - both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:47" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Marvel Rivals.png"} }, \
 "video" : {"file" : "Marvel-Win64-Shipping_2025_03_15_07_57_44_978-converted.mp4"}\
@@ -175,7 +181,7 @@ configs["episodes"].append( { "title": "Marvel - both",\
 
 # needs redone
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Cyberpunk 2077",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:06" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [scriptedvided.r6sText( '1920x1080, low settings'    , 56 , 40 ),\
               scriptedvided.r6sText( '1920x1080, medium settings' , 47 , 35),\
@@ -185,14 +191,14 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Cyberpunk 2077",\
 })
 
 configs["episodes"].append( { "title": "CP2077 - both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:16.9" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Cyber Punk 2077.png"} }, \
 "video" : {"file" : "Cyberpunk2077_2025_04_03_16_33_51_681-converted.mp4"}\
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "ARC Raiders",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:37.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
               scriptedvided.r6sText( '1920x1080' , 91 , 69),\
@@ -203,14 +209,14 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "ARC Raiders",\
 })
 
 configs["episodes"].append( { "title": "ARC - both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:48.3" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "ARC Raiders.png"} }, \
 "video" : {"file" : "PioneerGame_2026_01_11_07_36_07_702-converted.mp4", "start" : "08:00"}\
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:10.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("DX12 mode, medium settings"),\
               scriptedvided.r6sText( '1920x1080' ,  91, 73),\
@@ -221,32 +227,32 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
 })
 
 configs["episodes"].append( { "title": "Fortnite - both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:20.5" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Fortnite.png"} }, \
 "video" : {"file" : "FortniteClient-Win64-Shipping_2026_08_30_08_03_26_860-converted.mp4"},\
 })
 
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Control",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:41.8" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, high settings", } }, \
 "video" : {"file" : "rx580_Control_DX11_2024_07_27_22_47_25_351-converted.mp4"}\
 })
 
 configs["episodes"].append( { "title": "Control - both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:56.1" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Control.png"} }, \
 "video" : {"file" : "GTX970_Control_DX11_medium.mp4"}\
 })
 
-configs["episodes"].append( { "title": "Doom Eternal",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+configs["episodes"].append( { "title": "Doom Eternal ",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:21.9" ), "padAudio" : 0.05 },\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, low settings", } }, \
 })
 
 configs["episodes"].append( { "title": "Doom - both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:31.5" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Doom Eternal.png"} }, \
 "video" : {"file" : "stock_DOOMEternal_2023_12_26.mp4"}\
@@ -254,7 +260,7 @@ configs["episodes"].append( { "title": "Doom - both",\
 
 # single resolution
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Apex Legends",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:54.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("Low settings"),\
               scriptedvided.r6sText( '1920x1080' ,  105, 81),\
@@ -264,7 +270,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Apex Legends",\
 })
 
 configs["episodes"].append( { "title": "Apex - both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:3.9" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Apex Legends.png"} }, \
 "video" : {"file" : "r5apex_bot_royale.mp4"},\
