@@ -9,11 +9,11 @@ configs = { "defaultAudioFile" : "GTX1060-3G.ogg",\
 "outputFile" : "GTX1060-3G.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Steam Hardware Survey Champion", "until" : "Marvel Rivals"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Another NVidia controversy", "until" : "Marvel Rivals"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Overwatch 2"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Overwatch 2", "until" : "Conclusions"}}, \
-{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "OLX"}}, \
-{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:10", None ), "destinationTimestamp" : {"title" : "OLX", "until" : "EOF"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Overwatch 2", "until" : "But the cooler ..."}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "But the cooler ...", "until" : "Conclusions"}}, \
+{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:10", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.046 },\
 "episodes" : [],\
 "youtube" : {"title" : "", \
@@ -207,7 +207,6 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "ARC Raiders",\
               scriptedvided.r6sText( '1600x900' ,  114, 88),\
               scriptedvided.r6sText( '1280x720' ,  135, 101),\
 ]}, \
-"video" : {"file" : ""},\
 })
 
 configs["episodes"].append( { "title": "ARC - both",\
