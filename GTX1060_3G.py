@@ -234,10 +234,10 @@ configs["episodes"].append( { "title": "Fortnite - both",\
 "video" : {"file" : "FortniteClient-Win64-Shipping_2026_08_30_08_03_26_860-converted.mp4"},\
 })
 
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Control",\
+configs["episodes"].append(  { "title": "Control",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:41.8" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1920x1080, high settings", } }, \
-"video" : {"file" : "rx580_Control_DX11_2024_07_27_22_47_25_351-converted.mp4"}\
+"video" : "rx580_Control_DX11_2024_07_27_22_47_25_351-converted.mp4",\
+"overlay" : {"benchmark" : {"settings" : "1920x1080, high settings" } },\
 })
 
 configs["episodes"].append( { "title": "Control - both",\
