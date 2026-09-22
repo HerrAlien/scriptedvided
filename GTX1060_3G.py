@@ -10,8 +10,9 @@ configs = { "defaultAudioFile" : "GTX1060-3G.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00800080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Another NVidia controversy", "until" : "Marvel Rivals"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Overwatch 2"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Overwatch 2", "until" : "But the cooler ..."}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Far Cry 6"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Far Cry 6", "until" : "The Finals"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The Finals", "until" : "But the cooler ..."}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "But the cooler ...", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:10", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.046 },\
@@ -203,9 +204,9 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:37.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
-              scriptedvided.r6sText( '1920x1080' , 91 , 69),\
-              scriptedvided.r6sText( '1600x900' ,  114, 88),\
-              scriptedvided.r6sText( '1280x720' ,  135, 101),\
+              scriptedvided.r6sText( '1920x1080' , 60 , 47),\
+              scriptedvided.r6sText( '1600x900' ,  89, 63),\
+              scriptedvided.r6sText( '1280x720' ,  100, 65),\
 ]}, \
 })
 
@@ -271,7 +272,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Apex Legends",\
 })
 
 configs["episodes"].append( { "title": "Apex - both",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:3.9" ), "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:03.9" ), "padAudio" : 0.05 },\
 "isChapter" : False,\
 "overlay" : { "image" : {"file" : "Apex Legends.png"} }, \
 "video" : {"file" : "r5apex_bot_royale.mp4"},\
@@ -348,9 +349,14 @@ configs["episodes"].append( { "title": "Robocop - both",\
 "video" : {"file" : "RoboCop-Win64-Shipping_2025_02_24_23_18_20_139.mp4", "start" : "00:40"},\
 })
 
-configs["episodes"].append(  { "title": "The Finals",\
+scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:53" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1920x1080, low settings" } }, \
+"overlay" : { \
+    "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
+              scriptedvided.r6sText( '1920x1080' , 91 , 69),\
+              scriptedvided.r6sText( '1600x900' ,  114, 88),\
+              scriptedvided.r6sText( '1280x720' ,  135, 101),\
+]}, \
 "video" : {"file" : "Discovery_2025_01_05_20_25_45_256-converted.mp4"},\
 })
 
