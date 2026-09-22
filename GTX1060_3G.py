@@ -289,7 +289,7 @@ configs["episodes"].append( { "title": "FC6 - both",\
 "video" : {"file" : "stock_FarCry6_benchmark.mp4"},\
 })
 
-scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Overwatch 2",\
+configs["episodes"].append({ "title": "Overwatch 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:59.8" ), "padAudio" : 0.05 },\
 "video" : {"file" : "stock_Overwatch2_gameplay.mp4"},\
 "overlay" : { "image" : {"file" : "Overwatch 2.png"} }, \
