@@ -321,9 +321,12 @@ configs["episodes"].append( { "title": "CS2 - both",\
 "overlay" : { "image" : {"file" : "Counter Strike 2.png"} }, \
 })
 
-configs["episodes"].append(  { "title": "Borderlands 3",\
+scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Borderlands 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:46.3" ), "padAudio" : 0.05 },\
-"overlay" : {"benchmark" : {"settings" : "1920x1080, badass settings", } }, \
+"overlay" : { \
+    "text" : [ scriptedvided.r6sText( '1920x1080, ultra settings' ,  38, 31),\
+               scriptedvided.r6sText( '1600x900, badass settings' ,  44, 37),\
+]}, \
 })
 
 configs["episodes"].append( { "title": "BL3 - both",\
