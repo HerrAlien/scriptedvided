@@ -373,6 +373,7 @@ configs["episodes"].append( { "title": "Finals - both",\
 #redo and specify a smoother video
 configs["episodes"].append( { "title": "Shadow of the Tomb Raider",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:17" ), "padAudio" : 0.05 },\
+"video" : "SOTTR_gaming_highest.mp4",\
 "overlay" : {"benchmark" : {"settings" : "1920x1080, very high settings" } }, \
 })
 
