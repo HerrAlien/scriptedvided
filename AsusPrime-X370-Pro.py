@@ -132,9 +132,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
-}) # TufX570Gaming+Wifi_pins22.MP4
-
--- -- - stopped here - -- --
+}) 
 
 configs["episodes"].append(\
 { "title": "Pins intro",\
@@ -144,101 +142,75 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Pin - audio, rgb",\
+{ "title": "Audio, com, tpm, PHD 6000",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "Pin - tpm, com, usb",\
+{ "title": "Pin - USB2, USB3, clear RTC, CI",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "Pin FP",\
+{ "title": "Pin fan headers, FP",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "Pin SYS FAN 2",\
+{ "title": "weird USB3",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "Pin SYS FAN 1, prism RGB",\
+{ "title": "CPU fans",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "Pin CPU FAN, more RGB",\
+{ "title": "sys fans",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "No debug LED",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("03:06.5", "03:13.5"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "No SPI header",\
+{ "title": "SPI header",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
-}) # TufX570Gaming+Wifi_pins3_DebugLeds.MP4
-
-
-configs["episodes"].append(\
-{ "title": "SOP clip",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("06:31.7", "06:38"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
 })
 
 
-###
-###  need to rescript and re-record, this one has a SOP-8 chip
-###
-
-###configs["episodes"].append(\
-###{ "title": "DFN vs SOP",\
-###"isChapter" : False,\
-###"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-###"video" : {"file" : ""},\
-###})
-###
-###configs["episodes"].append(\
-###{ "title": "MSI reprogram",\
-###"isChapter" : False,\
-###"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-###"video" : {"file" : ""},\
-###})
-###
-###configs["episodes"].append(\
-###{ "title": "Desoldered DFN",\
-###"isChapter" : False,\
-###"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-###"video" : {"file" : ""},\
-###})
-###
-# too long of a cut ...
 configs["episodes"].append(\
 { "title": "Rear IO",\
 "audio" : {"timestamps" : ("03:39.7", "03:53.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "video outs",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+"isChapter" : False,\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
+
+configs["episodes"].append(\
+{ "title": "USBs, ethernet, audio",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+"isChapter" : False,\
+}) # maybe an overlay with the DVI-D to HDMI adapter?
+
 
 # too long of a cut ...
 configs["episodes"].append(\
@@ -252,7 +224,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Audio sample",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("03:44.2", "03:57.2" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("", "" ), "volume" : 0.001, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -262,14 +234,6 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # list of bios
-
-# maybe side by 
-configs["episodes"].append(\
-{ "title": "BIOS advanced, BCLK",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
 
 configs["episodes"].append(\
 { "title": "BIOS advanced, CPU freq",\
@@ -307,42 +271,21 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "fan curve",\
+{ "title": "fan curve text mode",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "save fan curve",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "TPM",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "rebarrish",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "qflash",\
+{ "title": "fan curve with UI",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 
-# TO BE REPLACED
+# with VRMs. Side by side with the B550
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : ("06:39.6", "06:46.4"), "volume" : 0.999, "padAudio" : 0.05 },\
@@ -351,19 +294,32 @@ configs["episodes"].append(\
 
 
 configs["episodes"].append(\
-{ "title": "heatsinks",\
+{ "title": "decent VRM",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("06:10", "06:16.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "supports cheap coolers",\
+{ "title": "ok solution, but single M.2",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
+configs["episodes"].append(\
+{ "title": "SSD prices",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
+
+configs["episodes"].append(\
+{ "title": "motherboards to subscribe",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+})
 
 configs["episodes"].append(\
 { "title": "Bye",\
