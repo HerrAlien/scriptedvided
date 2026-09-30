@@ -120,7 +120,7 @@ configs["episodes"].append(\
 "video" : {"file" : "ASUS-PrimeX370Pro-Slots2.MP4"},\
 })
 
-Needs overlays:
+##Needs overlays:s:
 configs["episodes"].append(\
 { "title": "GPU slot",\
 "isChapter" : False,\
@@ -129,7 +129,7 @@ configs["episodes"].append(\
 "overlay" : { "image" : {"file" : "slots-overlays-GPU.png"} }, \
 })
 
-Needs overlays:
+##Needs overlays:s:
 configs["episodes"].append(\
 { "title": "x1 slots",\
 "isChapter" : False,\
@@ -138,7 +138,7 @@ configs["episodes"].append(\
 "overlay" : { "image" : {"file" : "slots-overlays-x1s.png"} }, \
 })
 
-Needs overlays:
+##Needs overlays:s:
 configs["episodes"].append(\
 { "title": "x8",\
 "isChapter" : False,\
@@ -147,7 +147,7 @@ configs["episodes"].append(\
 "overlay" : { "image" : {"file" : "slots-overlays-x8.png"} }, \
 })
 
-Needs overlays:
+##Needs overlays:s:
 configs["episodes"].append(\
 { "title": "x4 and x1",\
 "isChapter" : False,\
@@ -205,7 +205,7 @@ configs["episodes"].append(\
 "video" : {"file" : "ASUS-PrimeX370Pro-USBC31.MP4"},\
 })
 
-Needs overlay:
+##Needs overlays::
 configs["episodes"].append(\
 { "title": "CPU fans",\
 "isChapter" : False,\
@@ -228,14 +228,14 @@ configs["episodes"].append(\
 })
 
 
-Needs overlay:
+#Needs overlays::
 configs["episodes"].append(\
 { "title": "Rear IO",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:11"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-PrimeX370Pro-IO.MP4"},\
 })
 
-Needs overlay:
+#Needs overlays::
 configs["episodes"].append(\
 { "title": "video outs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:14.7"), "volume" : 0.999, "padAudio" : 0.05 },\
@@ -243,7 +243,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
-Needs overlay:
+#Needs overlays::
 configs["episodes"].append(\
 { "title": "USBs, ethernet, audio",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "3:21.4"), "volume" : 0.999, "padAudio" : 0.05 },\
@@ -382,5 +382,10 @@ configs["episodes"].append(\
 "video" : {"file" : "ASUS-PrimeX370Pro-Overview.MP4"},\
 })
 
-scriptedvided.makeVideo(configs)
+
+scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "GPU slot"][0], configs)
+
+
+
+# scriptedvided.makeVideo(configs)
 
