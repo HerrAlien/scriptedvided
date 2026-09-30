@@ -87,16 +87,16 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "VRMs topo",\
+{ "title": "Topo needs re-recording",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:35.5"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "X370-Pro-VRM-Topo.mkv", "start" : "00:15"},\
 }) # add overlay
 
 configs["episodes"].append(\
 { "title": "VRMs overview again",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:45.2"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:35.5", "00:45.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-PrimeX370Pro-VRM.MP4"},\
 }) # add overlay
 
@@ -110,7 +110,7 @@ configs["episodes"].append(\
 { "title": "RAM removal with overlay",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:02.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Asrock_A320M-DVS_RamInsertionRemoval.MP4", "start" : "00:23"},\
 }) # add overlay
 
 
@@ -126,6 +126,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:11.6"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-PrimeX370Pro-Slots2.MP4"},\
+"overlay" : { "image" : {"file" : "slots-overlays-GPU.png"} }, \
 })
 
 Needs overlays:
@@ -134,6 +135,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:20.3"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-PrimeX370Pro-Slots2.MP4"},\
+"overlay" : { "image" : {"file" : "slots-overlays-x1s.png"} }, \
 })
 
 Needs overlays:
@@ -142,6 +144,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:31.8"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-PrimeX370Pro-Slots2.MP4"},\
+"overlay" : { "image" : {"file" : "slots-overlays-x8.png"} }, \
 })
 
 Needs overlays:
@@ -150,6 +153,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:37"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-PrimeX370Pro-Slots2.MP4"},\
+"overlay" : { "image" : {"file" : "slots-overlays-x1x4.png"} }, \
 })
 
 configs["episodes"].append(\
