@@ -77,19 +77,20 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Good bang for the buck",\
 "audio" : {"timestamps" : ("00:00", "00:17.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Overview.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Overview_bright.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The VRMs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.1"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-VRM.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-VRM_bright.MP4"},\
 })
 
 configs["episodes"].append(\
-{ "title": "Topo needs re-recording",\
+{ "title": "VRM Topo",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:35.5"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"file" : "Prime-X370-Pro-VrmTopo.ogg", \
+"timestamps" : ("00:00", "00:13.1"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "X370-Pro-VRM-Topo.mkv", "start" : "00:15"},\
 }) # add overlay
 
@@ -97,13 +98,13 @@ configs["episodes"].append(\
 { "title": "VRMs overview again",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("00:35.5", "00:45.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-VRM.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-VRM_bright.MP4"},\
 }) # add overlay
 
 configs["episodes"].append(\
 { "title": "4 DIMM slots",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-DIMMs.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-DIMMs_bright.MP4"},\
 })
 
 configs["episodes"].append(\
@@ -117,7 +118,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:07.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Slots2.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Slots2_bright.MP4"},\
 })
 
 ##Needs overlays:s:
@@ -125,7 +126,7 @@ configs["episodes"].append(\
 { "title": "GPU slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:11.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Slots2.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Slots2_bright.MP4"},\
 "overlay" : { "image" : {"file" : "slots-overlays-GPU.png"} }, \
 })
 
@@ -134,7 +135,7 @@ configs["episodes"].append(\
 { "title": "x1 slots",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:20.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Slots2.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Slots2_bright.MP4"},\
 "overlay" : { "image" : {"file" : "slots-overlays-x1s.png"} }, \
 })
 
@@ -143,7 +144,7 @@ configs["episodes"].append(\
 { "title": "x8",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:31.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Slots2.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Slots2_bright.MP4"},\
 "overlay" : { "image" : {"file" : "slots-overlays-x8.png"} }, \
 })
 
@@ -152,7 +153,7 @@ configs["episodes"].append(\
 { "title": "x4 and x1",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:37"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Slots2.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Slots2_bright.MP4"},\
 "overlay" : { "image" : {"file" : "slots-overlays-x1x4.png"} }, \
 })
 
@@ -160,49 +161,49 @@ configs["episodes"].append(\
 { "title": "m.2",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:45.5"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-M2.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-M2_bright.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "SATA ports",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:57.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-SATA.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-SATA_bright.MP4"},\
 }) 
 
 configs["episodes"].append(\
 { "title": "Pins intro",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:01.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Overview.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Overview_bright.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Audio, com, tpm, PHD 6000",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:12.5"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Pins.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Pins_bright.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin - USB2, USB3, clear RTC, CI",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:31.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Pins2.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Pins2_bright.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Pin fan headers, FP",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:38.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Pins2.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Pins2_bright.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "weird USB3",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:44.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-USBC31.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-USBC31_bright.MP4"},\
 })
 
 ##Needs overlays::
@@ -210,21 +211,21 @@ configs["episodes"].append(\
 { "title": "CPU fans",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:47.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-VRM.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-VRM_bright.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "sys fans",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:52"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-SPI_RGB.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-SPI_RGB_bright.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "SPI header",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:58.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-SPI_RGB.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-SPI_RGB_bright.MP4"},\
 })
 
 
@@ -232,14 +233,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Rear IO",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:11"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-IO.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-IO_bright.MP4"},\
 })
 
 #Needs overlays::
 configs["episodes"].append(\
 { "title": "video outs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:14.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-IO.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-IO_bright.MP4"},\
 "isChapter" : False,\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
@@ -247,7 +248,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "USBs, ethernet, audio",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "3:21.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-IO.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-IO_bright.MP4"},\
 "isChapter" : False,\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
@@ -256,7 +257,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Audio hint",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:26.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Prime-X370-Pro-audioSample.mkv"},\
 "isChapter" : False,\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
@@ -264,8 +265,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Audio sample",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("minus ength of video", "03:26.9" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : ("03:16", "03:26.9" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : "Prime-X370-Pro-audioSample.mkv"},\
 })
 
 # EC spi chip first
@@ -314,7 +315,7 @@ configs["episodes"].append(\
 { "title": "Aigo",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:31.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "system_cpuCooler_coldplate.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -343,7 +344,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:10.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Overview.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Overview_bright.MP4"},\
 })
 
 
@@ -351,41 +352,41 @@ configs["episodes"].append(\
 { "title": "decent VRM",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:21.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-VRM.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-VRM_bright.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "ok solution, but single M.2",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:29.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-M2.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-M2_bright.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "SSD prices",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:34.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "SSD-prices.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "motherboards to subscribe",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:41.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "MSI-B350mProVD-Plus-Overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:48.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-Overview.MP4"},\
+"video" : {"file" : "ASUS-PrimeX370Pro-Overview_bright.MP4"},\
 })
 
 
-scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "GPU slot"][0], configs)
+# scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "GPU slot"][0], configs)
 
 
 
-# scriptedvided.makeVideo(configs)
+scriptedvided.makeVideo(configs)
 
