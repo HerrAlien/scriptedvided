@@ -95,15 +95,8 @@ configs["episodes"].append(\
 }) # add overlay
 
 configs["episodes"].append(\
-{ "title": "VRMs overview again",\
-"isChapter" : False,\
-"audio" : {"timestamps" : ("00:35.5", "00:45.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "ASUS-PrimeX370Pro-VRM_bright.MP4"},\
-}) # add overlay
-
-configs["episodes"].append(\
 { "title": "4 DIMM slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:45.2", "00:51"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-PrimeX370Pro-DIMMs_bright.MP4"},\
 })
 
@@ -322,7 +315,7 @@ configs["episodes"].append(\
 { "title": "Fans types again",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:36"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "PrimeX370-Pro_BIOS_FanTypes.MP4", "start" : "08:00"},\
+"video" : {"file" : "PrimeX370-Pro_BIOS_FanTypes.MP4", "start" : "00:08"},\
 })
 
 configs["episodes"].append(\
@@ -366,7 +359,7 @@ configs["episodes"].append(\
 { "title": "SSD prices",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:34.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "SSD-prices.mkv"},\
+"video" : {"file" : "SSD_prices.mkv"},\
 })
 
 configs["episodes"].append(\
