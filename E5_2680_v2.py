@@ -137,8 +137,8 @@ configs["episodes"].append(\
 { "title": "Cyberpunk 2077",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:05.2" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText('Cyberpunk 2077'),\
-              scriptedvided.r6sText('1280x720, performance FSR, lowest settings'),\
+    "text" : [sv_ffutils.ffmpegSafeString('Cyberpunk 2077'),\
+              sv_ffutils.ffmpegSafeString('1280x720, performance FSR, lowest settings'),\
               scriptedvided.r6sText('Low crowd density:' , 100 , 64  ),\
               scriptedvided.r6sText('High crowd density:' , 87 , 56  ),\
 ]}, \
