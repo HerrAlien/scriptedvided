@@ -141,8 +141,8 @@ configs["episodes"].append(\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString('Cyberpunk 2077'),\
               sv_ffutils.ffmpegSafeString('1280x720, performance FSR, lowest settings'),\
-              scriptedvided.r6sText('Low crowd density:' , 100 , 64  ),\
-              scriptedvided.r6sText('High crowd density:' , 87 , 56  ),\
+              scriptedvided.r6sText('High crowd density' , 87 , 56  ),\
+              scriptedvided.r6sText('Low crowd density' , 100 , 64  ),\
 ]}, \
 "video" : {"file" : "CP2077-crowdsHigh-s-60-e-121.mkv", "start" : "01:00"},\
 })
@@ -163,7 +163,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:47.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 50% render scale, low settings", \
+        "settings" : "1280x720, low settings", \
     }\
 }, \
 })
@@ -195,7 +195,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:44" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "960x540, lowest settings", \
+        "settings" : "1280x720, lowest settings", \
     }\
 },\
 "video" : "Control.mkv",\
@@ -216,7 +216,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:29.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 50% render scale, performance mode", \
+        "settings" : "1280x720, performance mode", \
     }\
 }, \
 })
@@ -226,7 +226,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:55.6" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 50% scale, low settings", \
+        "settings" : "1280x720, 50% scale, lowest settings", \
     }\
 }, \
 })
