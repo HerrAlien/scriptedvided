@@ -352,7 +352,7 @@ configs["episodes"].append( { "title": "sottr - both",\
 # more ram more better
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:55.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":""},\
 })
 
@@ -360,7 +360,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "More RAM - Apex",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:17.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":""},\
 })
 
@@ -368,14 +368,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "No need for RAM - CS2",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file":""},\
-})
-
-configs["episodes"].append(\
-{ "title": "little airflow for VRM",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:39.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":""},\
 })
 
@@ -383,42 +376,42 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Chose based on games",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:50.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":""},\
 })
 
 configs["episodes"].append(\
 { "title": "OLX pricing",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:06.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":""},\
 })
 
 configs["episodes"].append(\
 { "title": "One extra GB worth the price",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:18" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":""},\
 })
 
 configs["episodes"].append(\
 { "title": "Risky Polaris",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:31.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":""},\
 })
 
 configs["episodes"].append(\
 { "title": "Second recommendation",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:44.2" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":""},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:52" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":""},\
 })
 
