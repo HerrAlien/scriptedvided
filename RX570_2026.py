@@ -10,10 +10,9 @@ configs = { "defaultAudioFile" : "rx570_2026.ogg",\
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "This caused NVidia to panic", "until" : "Marvel Rivals"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Far Cry 6"}}, \
-{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Far Cry 6", "until" : "The Finals"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The Finals", "until" : "But the cooler ..."}}, \
-{"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "But the cooler ...", "until" : "Conclusions"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Apex - both"}}, \
+{"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Apex - both", "until" : "The Finals"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The Finals", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:10", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.046 },\
 "episodes" : [],\
@@ -103,7 +102,7 @@ configs["episodes"].append( { "title": "The test system",\
     "text" : ["'Custom PC'",\
               "'CPU\: Ryzen 5 5600'",\
               "'RAM\: 32GB DDR4, 3600MHz, dual channel'",\
-              "'GPU\: GTX 1060 3G'",\
+              "'GPU\: Sapphire RX 570'",\
     ]\
 }, \
 "video" : {"file":""}\

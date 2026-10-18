@@ -110,8 +110,10 @@ def selectSuitableVideo (paths, desiredLength=30, desiredYRes=1080):
 # move to UTILS
 def getFilesArrayFromFoldersAndNames (folders, names, extensions):
     paths = []
+    firstFolder = True
+    
     for folder in folders:
-        if (folder is not None):
+        if (folder is not None):            
             for file in os.listdir(folder):
                 ext = os.path.splitext(file)[1].upper()
                 hasExtension = False
@@ -128,6 +130,12 @@ def getFilesArrayFromFoldersAndNames (folders, names, extensions):
                             paths.append(fullPath)
                         elif fullPath.upper() == nameUpper:
                             paths.append(fullPath)
+
+            # if found in media folder, then just return it.
+            if firstFolder and len(paths) == 1 :
+                return paths
+
+            firstFolder = False
     return paths
 
 def getSuitableVideoFromFolders (folders, names, extensions):
@@ -595,6 +603,7 @@ def aliases(inputName, forceUppercase=True):
         ["Marvel Rivals", "MarvelRivals", "Marvel-Win64-Shipping.exe", "Marvel-Win64-Shipping"],\
         ["Robocop: Rogue City", "Robocop", "RoboCop-Win64-Shipping.exe", "RoboCop-Win64-Shipping"],\
         ["Cyberpunk 2077", "Cyberpunk2077.exe", "Cyberpunk2077"],\
+        ["Helldivers 2", "helldivers2.exe", "helldivers2"],\
         ["ARC Raiders", "ARCRaiders", "PioneerGame.exe", "PioneerGame", "PioneerGame-e.exe", "PioneerGame-e"],\
     ]
 
