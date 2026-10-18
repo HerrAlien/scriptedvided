@@ -6,7 +6,7 @@ configs = { "defaultAudioFile" : "rx570_2026.ogg",\
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "F:\\Videos\\RX570_2026\\Benchmark_RX570_2026.txt",\
 "outputFolder" : "F:\\Videos\\RX570_2026\\output", \
-"outputFile" : "GTX1060-3G.mp4", \
+"outputFile" : "RX570_2026.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "This caused NVidia to panic", "until" : "Marvel Rivals"}}, \
@@ -119,8 +119,8 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Marvel Rivals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:16.4" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
 ]}, \
 })
 
@@ -134,10 +134,10 @@ configs["episodes"].append( { "title": "Marvel - both",\
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Cyberpunk 2077",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:57.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
+    "text" : [scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
 ]}, \
 })
 
@@ -151,10 +151,10 @@ configs["episodes"].append( { "title": "CP2077 - both",\
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Helldivers 2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:34.8" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
+    "text" : [scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
 ]}, \
 })
 
@@ -163,9 +163,9 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "ARC Raiders",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:56.7" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
 ]}, \
 })
 
@@ -180,9 +180,9 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:26" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("DX12 mode, medium settings"),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
 ]}, \
 "video" : {"file":""},\
 })
@@ -224,9 +224,9 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Apex Legends",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:49.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("Low settings"),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
 ]}, \
 })
 
@@ -283,8 +283,8 @@ configs["episodes"].append( { "title": "CS2 - both",\
 scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Borderlands 3",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:50.5" ), "padAudio" : 0.05 },\
 "overlay" : { \
-    "text" : [ scriptedvided.r6sText(' ' ,  ,  ),\
-               scriptedvided.r6sText(' ' ,  ,  ),\
+    "text" : [ scriptedvided.r6sText(' ' , -1 , -1  ),\
+               scriptedvided.r6sText(' ' , -1 , -1  ),\
 ]}, \
 })
 
@@ -299,8 +299,8 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Robocop",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:23.9" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [ sv_ffutils.ffmpegSafeString("Low settings"),\
-               scriptedvided.r6sText(' ' ,  ,  ),\
-               scriptedvided.r6sText(' ' ,  ,  ),\
+               scriptedvided.r6sText(' ' , -1 , -1  ),\
+               scriptedvided.r6sText(' ' , -1 , -1  ),\
 ]}, \
 })
 
@@ -315,9 +315,9 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "The Finals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:01.3" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "text" : [sv_ffutils.ffmpegSafeString("low settings"),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
-              scriptedvided.r6sText(' ' ,  ,  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
+              scriptedvided.r6sText(' ' , -1 , -1  ),\
 ]}, \
 "video" : {"file":""},\
 })
@@ -433,11 +433,11 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode(configs["episodes"][20], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][22], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][24], configs)
-#scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Marvel Rivals"][0], configs)
+scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Counter-Strike 2"][0], configs)
 #scriptedvided.makeVideo(configs)
 
 #for x in range(19,26):
 #    scriptedvided.makeVideoForEpisode(configs["episodes"][x], configs)
 #
-scriptedvided.makeVideo(configs)
+# scriptedvided.makeVideo(configs)
 
