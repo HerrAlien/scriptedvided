@@ -131,6 +131,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, 30% render scale, low settings", \
     }\
 }, \
+"video" : {"file" : "marvelrivals.mkv", "start" : "04:00"},\
 })
 
 # needs redone
@@ -143,7 +144,7 @@ configs["episodes"].append(\
               scriptedvided.r6sText('Low crowd density:' , 100 , 64  ),\
               scriptedvided.r6sText('High crowd density:' , 87 , 56  ),\
 ]}, \
-"video" : {"file" : "CP2077-crowdsHigh-s-60-e-121.mkv"},\
+"video" : {"file" : "CP2077-crowdsHigh-s-60-e-121.mkv", "start" : "01:00"},\
 })
 
 # needs redone
@@ -185,7 +186,8 @@ configs["episodes"].append(\
     "benchmark" : { \
         "settings" : "1280x720, low settings", \
     }\
-},
+},\
+"video" : "ApexLegends.mkv",\
 })
 
 configs["episodes"].append(\
@@ -196,6 +198,7 @@ configs["episodes"].append(\
         "settings" : "960x540, lowest settings", \
     }\
 },\
+"video" : "Control.mkv",\
 })
 
 configs["episodes"].append(\
@@ -283,7 +286,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "time",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:31.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "blurred_dimmed_gigasus.mp4"},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:40"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "Completion Time E5-680-v2.png"}\
@@ -293,7 +296,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ipc alone",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:39" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "01:00"},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:30"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "ipc alone.png"}\
@@ -303,7 +306,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ipc",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:54.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "blurred_dimmed_gigasus.mp4"},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:15"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "Clock Cycles E5-2680-v2.png"}\

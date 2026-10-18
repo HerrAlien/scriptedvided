@@ -594,7 +594,7 @@ def aliases(inputName, forceUppercase=True):
         ["Fallout 4", "Fallout4" , "Fallout4.exe" ],\
         ["Prey", "Prey.exe" ],\
         ["Shadow of the Tomb Raider", "SOTTR", "SOTTR.exe" ],\
-        ["Borderlands 3", "Borderlands3", "Borderlands3.exe" ],\
+        ["Borderlands 3", "Borderlands3", "Borderlands3.exe", "bl3" ],\
         ["Terminator: Resistance", "Terminator", "Terminator-Win64-Shipping.exe" , "Terminator-Win64-Shipping" ],\
         ["Zenless Zone Zero", "ZenlessZoneZero", "ZenlessZoneZero.exe" ],\
         ["XDefiant", "X-Defiant", "XDefiant.exe" ],\
