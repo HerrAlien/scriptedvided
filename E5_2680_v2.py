@@ -3,12 +3,12 @@ import scriptedvided
 configs = { "defaultAudioFile" : "E5-2680-v2.ogg",\
 "mediaFolder" : "F:\\Videos\\e5-2680-v2", \
 "stockFolder" : "F:\\Videos\\stock",\
-"benchmarkFile" : "F:\\Videos\\e5-2680-v2\\Benchmark_e5-2670-v3.txt",\
+"benchmarkFile" : "F:\\Videos\\e5-2680-v2\\Benchmark_e5-2680-v2.txt",\
 "outputFolder" : "F:\\Videos\\e5-2680-v2\\output", \
-"outputFile" : "E5-2680-v3.mp4", \
+"outputFile" : "E5-2680-v2.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#00008080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Haswell Server CPU", "until" : "Marvel Rivals"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "The Ivy Bridge Server CPU", "until" : "Marvel Rivals"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Overwatch 2"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Overwatch 2", "until" : "Checking the IPC"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Checking the IPC", "until" : "Conclusions"}}, \
@@ -73,13 +73,13 @@ Free Download / Stream: https://alplus.io/inspired
 configs["episodes"].append(\
 { "title": "The Ivy Bridge Server CPU",\
 "audio" : {"timestamps" : ("00:00", "00:06.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "E5-2680-v2_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Helldivers 2 preview",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:17.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "HellDivers2.mkv"},\
 "isChapter" : False,\
 })
 
@@ -87,14 +87,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Why it could be good",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "E5-2680-v2_onZ420Board_inHand_barred.mp4"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "Max ram freq",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:40.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Z420_inGrass_barred.mp4"},\
 "isChapter" : False,\
 })
 
@@ -108,13 +108,13 @@ configs["episodes"].append(\
               "'GPU\: Strix GTX 980'",\
     ]\
 }, \
-"video" : {"file" : ""},\
+"video" : {"file" : "Z420_testSys3_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "IPC test preview",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:07.5" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:00"},\
 "isChapter" : False,\
 })
 
@@ -139,9 +139,10 @@ configs["episodes"].append(\
 "overlay" : { \
     "text" : [scriptedvided.r6sText('Cyberpunk 2077'),\
               scriptedvided.r6sText('1280x720, performance FSR, lowest settings'),\
-              scriptedvided.r6sText('Low crowd density:' , -1 , -1  ),\
-              scriptedvided.r6sText('Hifg crowd density:' , -1 , -1  ),\
+              scriptedvided.r6sText('Low crowd density:' , 100 , 64  ),\
+              scriptedvided.r6sText('High crowd density:' , 87 , 56  ),\
 ]}, \
+"video" : {"file" : "CP2077-crowdsHigh-s-60-e-121.mkv"},\
 })
 
 # needs redone
@@ -164,7 +165,6 @@ configs["episodes"].append(\
     }\
 }, \
 })
-
 
 # single resolution
 configs["episodes"].append(\
@@ -276,13 +276,13 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Checking the IPC",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:19.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
 { "title": "time",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:31.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "Completion Time E5-680-v2.png"}\
@@ -292,7 +292,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ipc alone",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:39" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "01:00"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "ipc alone.png"}\
@@ -302,7 +302,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ipc",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:54.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "Clock Cycles E5-2680-v2.png"}\
@@ -317,43 +317,50 @@ configs["episodes"].append(\
 # happy that it works
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:02.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "E5-2680-v2_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "best scenario for ddr3",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:13.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "E5-2680-v2_onZ420Board_inHand_barred.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "Ali Express CPU price",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:21.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "Ali Express market",\
+{ "title": "Compared to Ryzen prices",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:28.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "LGA2011 mobo vs AM4",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:37.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "8th gen breel",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:44.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "breel_i5-8400_inHand_barred.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:52.4" ),  "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "E5-2680-v2_inHand_barred.mp4"},\
 })
 
 
