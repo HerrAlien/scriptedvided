@@ -84,7 +84,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 })
 
-# cpu cache
+# cpu cache. Maybe add overlay with parameters.
 configs["episodes"].append(\
 { "title": "Why it could be good",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:29.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
@@ -286,7 +286,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "time",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:31.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:40"},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "E5-2680-v2-Time-HL2.png"}\
@@ -306,7 +306,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "ipc",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:54.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:15"},\
+"video" : {"file" : "blurred_dimmed_gigasus.mp4"},\
 "isChapter" : False,\
 "overlay" : { \
     "image" : {"file" : "E5-2680-v2-IPC-HL2.png"}\
