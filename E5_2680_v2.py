@@ -289,7 +289,7 @@ configs["episodes"].append(\
 "video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:40"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : "Completion Time E5-680-v2.png"}\
+    "image" : {"file" : "E5-2680-v2-Time-HL2.png"}\
 }, \
 })
 
@@ -309,7 +309,7 @@ configs["episodes"].append(\
 "video" : {"file" : "Gigasus_ffwd10.mp4", "start" : "00:15"},\
 "isChapter" : False,\
 "overlay" : { \
-    "image" : {"file" : "Clock Cycles E5-2680-v2.png"}\
+    "image" : {"file" : "E5-2680-v2-IPC-HL2.png"}\
 }, \
 })
 
@@ -336,21 +336,21 @@ configs["episodes"].append(\
 { "title": "Ali Express CPU price",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:21.3" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "aliexpress-e5-2680-v2.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Compared to Ryzen prices",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:28.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "olx-r5-1600.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "LGA2011 mobo vs AM4",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "07:37.9" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "aliexpress-x79-mobo.mkv"},\
 })
 
 configs["episodes"].append(\
