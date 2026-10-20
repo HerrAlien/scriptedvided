@@ -80,8 +80,8 @@ configs["episodes"].append( { "title": "This caused NVidia to panic",\
 configs["episodes"].append( { "title": "some game preview",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:17.7" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file":""},\
-"overlay" : { "image" : {"file" : ""} }, \
+"video" : {"file":"stock-ApexLegends-1080p-low.mkv"},\
+"overlay" : { "image" : {"file" : "Apex Legends.png"} }, \
 })
 
 # GPUZ side by side, or with an overlay
@@ -380,7 +380,7 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "OLX pricing",\
+{ "title": "OLX pricing single card breel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:06.6" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":""},\
@@ -390,14 +390,14 @@ configs["episodes"].append(\
 { "title": "One extra GB worth the price",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:18" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file":""},\
+"video" : {"file":"olx-rx570-gtx1060_3G.mkv"},\
 })
 
 configs["episodes"].append(\
 { "title": "Risky Polaris",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:31.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file":""},\
+"video" : {"file":"mining-rigs.mkv"},\
 })
 
 configs["episodes"].append(\
