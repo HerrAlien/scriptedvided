@@ -581,7 +581,7 @@ def aliases(inputName, forceUppercase=True):
         ["DOTA 2", "DOTA2", "dota2.exe"],\
         ["Grand Theft Auto V", "gtav", "gta5", "GTA5.exe", "GTA V", "GTA_V", "gta_5"],\
         ["Splitgate", "PortalWars-Win64-Shipping.exe", "PortalWars"],\
-        ["Fortnite", "FortniteClient-Win64-Shipping.exe"],\
+        ["Fortnite", "FortniteClient-Win64-Shipping.exe", "fortnite"],\
         ["Valorant", "VALORANT-Win64-Shipping.exe"],\
         ["Paladins", "Paladins.exe"],\
         ["Overwatch 2", "Overwatch", "Overwatch.exe", "Overwatch2", "Overwatch_2"],\
@@ -589,7 +589,7 @@ def aliases(inputName, forceUppercase=True):
         ["Resident Evil 4 (Remake)", "re4demo.exe", "re4demo", "RE4"],\
         ["PUBG", "TslGame.exe", "TslGame"],\
         ["Counter-Strike 2", "Counter Strike 2", "CS2", "cs2.exe"],\
-        ["The Finals", "Finals" , "Discovery.exe", "Discovery-e.exe", "Discovery-d.exe", "Discovery"],\
+        ["The Finals", "Finals" , "Discovery.exe", "Discovery-e.exe", "Discovery-d.exe", "Discovery", "TheFinals"],\
         ["Doom Eternal", "DoomEternal" , "DOOMEternalx64vk.exe" ],\
         ["Fallout 4", "Fallout4" , "Fallout4.exe" ],\
         ["Prey", "Prey.exe" ],\
@@ -602,7 +602,7 @@ def aliases(inputName, forceUppercase=True):
         ["Delta Force", "DeltaForce", "DeltaForceClient"],\
         ["Marvel Rivals", "MarvelRivals", "Marvel-Win64-Shipping.exe", "Marvel-Win64-Shipping"],\
         ["Robocop: Rogue City", "Robocop", "RoboCop-Win64-Shipping.exe", "RoboCop-Win64-Shipping"],\
-        ["Cyberpunk 2077", "Cyberpunk2077.exe", "Cyberpunk2077"],\
+        ["Cyberpunk 2077", "Cyberpunk2077.exe", "Cyberpunk2077", "cp2077"],\
         ["Helldivers 2", "helldivers2.exe", "helldivers2"],\
         ["ARC Raiders", "ARCRaiders", "PioneerGame.exe", "PioneerGame", "PioneerGame-e.exe", "PioneerGame-e"],\
     ]

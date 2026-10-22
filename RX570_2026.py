@@ -87,7 +87,7 @@ configs["episodes"].append( { "title": "some game preview",\
 # GPUZ side by side, or with an overlay
 configs["episodes"].append( { "title": "The GPU",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:31.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file":"RX570_GPUZ_Heaven.mp4"},\
+"video" : {"file":"RX570_GPUZ_Heaven.mp4","start" : "00:00"},\
 })
 
 # side by side 1060s
@@ -122,6 +122,7 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Marvel Rivals",\
               scriptedvided.r6sText(' ' , -1 , -1  ),\
               scriptedvided.r6sText(' ' , -1 , -1  ),\
 ]}, \
+"video" : "RX570-Marvel2.mkv",\
 })
 
 configs["episodes"].append( { "title": "Marvel - both",\
@@ -184,7 +185,6 @@ scriptedvided.addEpisodeWithTextOverlay(episodes, { "title": "Fortnite",\
               scriptedvided.r6sText(' ' , -1 , -1  ),\
               scriptedvided.r6sText(' ' , -1 , -1  ),\
 ]}, \
-"video" : {"file":""},\
 })
 
 configs["episodes"].append( { "title": "Fortnite - both",\
@@ -429,8 +429,8 @@ configs["episodes"].append(\
 #scriptedvided.makeVideoForEpisode(configs["episodes"][20], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][22], configs)
 #scriptedvided.makeVideoForEpisode(configs["episodes"][24], configs)
-scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Counter-Strike 2"][0], configs)
-#scriptedvided.makeVideo(configs)
+# scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "Counter-Strike 2"][0], configs)
+scriptedvided.makeVideo(configs)
 
 #for x in range(19,26):
 #    scriptedvided.makeVideoForEpisode(configs["episodes"][x], configs)
