@@ -1,0 +1,7 @@
+﻿ffmpeg
+Make
+__pycache__
+Python
+*.ogg
+*.mp4
+*.mkv

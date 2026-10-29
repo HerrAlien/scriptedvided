@@ -93,7 +93,7 @@ configs["episodes"].append( { "title": "The GPU",\
 # side by side 1060s
 configs["episodes"].append( { "title": "Cooling and Thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:44.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file":"rx570_itx_cooling.mp4", "start" : "00:10"},\
+"video" : {"file":"rx570_itx_cooling_slightlybrighter.mp4", "start" : "00:10"},\
 })
 
 configs["episodes"].append( { "title": "The test system",\
@@ -355,7 +355,7 @@ configs["episodes"].append( { "title": "sottr - both",\
 configs["episodes"].append(\
 { "title": "Conclusions",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "08:55.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file":"Polaris_Family_RX570_barred.mp4"},\
+"video" : {"file":"Polaris_Family_RX570_barred_slightlybrighter.mp4"},\
 })
 
 # mybe breel with 570 and the bar gaph?
@@ -382,6 +382,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "09:50.8" ),  "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":"breel_gtx1060_3G_RX570_2_barred.mp4"},\
+"overlay" : { "image" : {"file" : "rx570_gamesOverlays.png"} }, \
 })
 
 configs["episodes"].append(\
@@ -402,7 +403,7 @@ configs["episodes"].append(\
 { "title": "Risky Polaris",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "10:31.5" ),  "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file":"mining-rigs.mkv"},\
+"video" : {"file":"mining-rigs.mkv", "start" : "00:32"},\
 })
 
 configs["episodes"].append(\

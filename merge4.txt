@@ -1,0 +1,2 @@
+ffmpeg -loop 1 -i hdgreen.png -i f1.mp4 -i f2.mp4 -i f3.mp4 -i f4.mp4
+-filter_complex "[1]scale=960:540[scaled1];[2]scale=960:540[scaled2];[3]scale=960:540[scaled3];[4]scale=960:540[scaled4];[0][scaled1] overlay=0:0[ov1];[ov1][scaled2] overlay=960:0[ov2];[ov2][scaled3] overlay=0:540[ov3];[ov3][scaled4] overlay=960:540" -t 30 merged.mp4
