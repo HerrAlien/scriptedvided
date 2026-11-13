@@ -253,25 +253,32 @@ configs["episodes"].append(\
 
 #Needs overlays::
 configs["episodes"].append(\
-{ "title": "video outs",\
+{ "title": "PS2",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
-}) # maybe an overlay with the DVI-D to HDMI adapter?
+})
+
+#Needs overlays::
+configs["episodes"].append(\
+{ "title": "VGA",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+"isChapter" : False,\
+})
+
+#Needs overlays::
+configs["episodes"].append(\
+{ "title": "digital video",\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : ""},\
+"isChapter" : False,\
+})
 
 #Needs overlays::
 configs["episodes"].append(\
 { "title": "USBs, ethernet, audio",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "3:21.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-"isChapter" : False,\
-}) # maybe an overlay with the DVI-D to HDMI adapter?
-
-
-# too long of a cut ...
-configs["episodes"].append(\
-{ "title": "Audio hint",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 "isChapter" : False,\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
@@ -306,18 +313,19 @@ configs["episodes"].append(\
 })
 
 configs["episodes"].append(\
-{ "title": "Mem profile",\
+{ "title": "Mem subtimings",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
-{ "title": "Mem subtimings",\
+{ "title": "TPM and rebar",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
+
 
 configs["episodes"].append(\
 { "title": "Fans types",\
@@ -326,29 +334,9 @@ configs["episodes"].append(\
 "video" : {"file" : ""},\
 })
 
-configs["episodes"].append(\
-{ "title": "Aigo",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
 
 configs["episodes"].append(\
-{ "title": "Fans types again",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "fan curve text mode",\
-"isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-})
-
-configs["episodes"].append(\
-{ "title": "fan curve with UI",\
+{ "title": "fan curves",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
