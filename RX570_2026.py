@@ -94,6 +94,11 @@ configs["episodes"].append( { "title": "The GPU",\
 configs["episodes"].append( { "title": "Cooling and Thermals",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:44.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file":"rx570_itx_cooling_slightlybrighter.mp4", "start" : "00:10"},\
+"overlay" : { \
+    "text" : ["'Heaven Benchmark, looping'",\
+              "'Max. temp\: 67C, delta over ambient\: 45C'",\
+    ]\
+}, \
 })
 
 configs["episodes"].append( { "title": "The test system",\
