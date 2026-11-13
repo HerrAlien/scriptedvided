@@ -76,54 +76,54 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 
 configs["episodes"].append(\
 { "title": "Middle ground ... tease?",\
-"audio" : {"timestamps" : ("00:00", "" ), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00", "00:11.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "The VRMs",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:18.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "VRM topo",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # add overlay
 
 configs["episodes"].append(\
 { "title": "PCB holes",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:35.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # add overlay
 
 configs["episodes"].append(\
 { "title": "Z97 heatsink",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:42.3"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # add overlay
 
 configs["episodes"].append(\
 { "title": "keep the heatsink",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:54.5"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) # add overlay
 
 configs["episodes"].append(\
 { "title": "4 DIMM slots",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:51"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:08.5"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 # # # full board overview
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:17.1"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -131,7 +131,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "GPU slot",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:22"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -139,7 +139,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "x1 slots",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:29.9"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -165,7 +165,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "SATA",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("01:29.9", "01:36.1"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -173,14 +173,14 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "regular ssd",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:41.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "SATA ports",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:55.3"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 }) 
 
@@ -188,7 +188,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Pins intro",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:09.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -196,28 +196,28 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "missing tpm, USB",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:25.6"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "front panel",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:35.5"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "RGB",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:40.9"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "SPI header",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:53"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
@@ -225,21 +225,21 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "clear RTC",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:59.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "CPu fans, phd 6k",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:07.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 configs["episodes"].append(\
 { "title": "sys fan",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:13.6"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
