@@ -77,54 +77,55 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Middle ground ... tease?",\
 "audio" : {"timestamps" : ("00:00", "00:11.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "The VRMs",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:18.2"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-VRMs.MP4"},\
 })
 
+# add overlay # add overlay # add overlay # add overlay
 configs["episodes"].append(\
 { "title": "VRM topo",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
-}) # add overlay
+"video" : {"file" : "PrimeB350m-VRMs.MP4"},\
+}) # add overlay # add overlay # add overlay
 
 configs["episodes"].append(\
 { "title": "PCB holes",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:35.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-addedHeatsink.MP4", "start" : "00:04"},\
 }) # add overlay
 
 configs["episodes"].append(\
 { "title": "Z97 heatsink",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:42.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-addedHeatsink.MP4", "start" : "00:24"},\
 }) # add overlay
 
 configs["episodes"].append(\
 { "title": "keep the heatsink",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:54.5"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PC-David-Mobo.MP4", "start" : "00:10"},\
 }) # add overlay
 
 configs["episodes"].append(\
 { "title": "4 DIMM slots",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:08.5"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-DIMMs.MP4"},\
 })
 
 # # # full board overview
 configs["episodes"].append(\
 { "title": "Expansion slots, ports and headers",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:17.1"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-overview.MP4"},\
 })
 
 ##Needs overlays:s:
@@ -132,7 +133,7 @@ configs["episodes"].append(\
 { "title": "GPU slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:22"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-slots.MP4"},\
 })
 
 ##Needs overlays:s:
@@ -140,7 +141,7 @@ configs["episodes"].append(\
 { "title": "x1 slots",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:29.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-slots.MP4"},\
 })
 
 # -----------------------------------------------------------------------------------------------------
@@ -157,7 +158,7 @@ configs["episodes"].append(\
 { "title": "NVME slot",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-slots.MP4"},\
 })
 # -----------------------------------------------------------------------------------------------------
 
@@ -166,7 +167,7 @@ configs["episodes"].append(\
 { "title": "SATA",\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("01:29.9", "01:36.1"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-overview.MP4"},\
 })
 
 ##Needs overlays:s:
@@ -181,105 +182,108 @@ configs["episodes"].append(\
 { "title": "SATA ports",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:55.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-SATA2_slightlybrighter.mp4"},\
 }) 
 
-# including audio, COM
+# overlays, overlays ... 
 configs["episodes"].append(\
 { "title": "Pins intro",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:09.7"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-pins_brighter.mp4"},\
 })
 
-# include 
+# overlays, overlays ... 
 configs["episodes"].append(\
 { "title": "missing tpm, USB",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:25.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-pins_brighter.mp4"},\
 })
 
+##Needs overlays::##Needs overlays::##Needs overlays::##Needs overlays::
 configs["episodes"].append(\
 { "title": "front panel",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:35.5"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-pins2_brighter.mp4"},\
 })
 
+##Needs overlays::##Needs overlays::##Needs overlays::##Needs overlays::
 configs["episodes"].append(\
 { "title": "RGB",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:40.9"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-SysFanSpi_brighter.mp4"},\
 })
 
+##Needs overlays::##Needs overlays::##Needs overlays::##Needs overlays::
 configs["episodes"].append(\
 { "title": "SPI header",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:53"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-SysFanSpi_brighter.mp4"},\
 })
 
-##Needs overlays::
+##Needs overlays::##Needs overlays::##Needs overlays::##Needs overlays::
 configs["episodes"].append(\
 { "title": "clear RTC",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:59.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-pins2_brighter.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "CPu fans, phd 6k",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:07.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-CpuFanPhd6000_brighter.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "sys fan",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:13.6"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "PrimeB350m-SysFanSpi_brighter.mp4"},\
 })
 
 
-#Needs overlays::
+#just the rear io reel
 configs["episodes"].append(\
 { "title": "Rear IO",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:19.3"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350m-IO.MP4"},\
 })
 
 #Needs overlays::
 configs["episodes"].append(\
 { "title": "PS2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:26.8"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350m-IO.MP4"},\
 "isChapter" : False,\
 })
 
 #Needs overlays::
 configs["episodes"].append(\
 { "title": "VGA",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:32.4"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350m-IO.MP4"},\
 "isChapter" : False,\
 })
 
 #Needs overlays::
 configs["episodes"].append(\
 { "title": "digital video",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:36.8"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350m-IO.MP4"},\
 "isChapter" : False,\
 })
 
 #Needs overlays::
 configs["episodes"].append(\
 { "title": "USBs, ethernet, audio",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "3:21.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:42.3"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350m-IO.MP4"},\
 "isChapter" : False,\
 }) # maybe an overlay with the DVI-D to HDMI adapter?
 
@@ -287,124 +291,131 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Audio sample",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("03:16", "03:26.9" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("---", "03:42.3" ), "volume" : 0.001, "padAudio" : 0.05 },\
 "video" : {"file" : ""},\
 })
 
 # EC spi chip first
 configs["episodes"].append(\
 { "title": "The BIOS setup utility",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:54.2"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "ASUS-PrimeB350m-A_BIOS_Ez_noTilt.mp4"},\
 }) # list of bios
 
 configs["episodes"].append(\
 { "title": "BIOS advanced, CPU freq",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:04.3"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "ASUS-PrimeB350m-A_BIOS_CpuFreq_noTilt.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "CPU voltage",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:13"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "ASUS-PrimeB350m-A_BIOS_CpuVoltage_noTilt.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Mem subtimings",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:24.8"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "ASUS-PrimeB350m-A_BIOS_XMP_noTilt.mp4", "start" : "00:11"},\
 })
 
 configs["episodes"].append(\
-{ "title": "TPM and rebar",\
+{ "title": "rebar",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:29.5"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "ASUS-PrimeB350m-A_BIOS_Rebar_noTilt.mp4"},\
+})
+
+configs["episodes"].append(\
+{ "title": "TPM",\
+"isChapter" : False,\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:38.4"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "ASUS-PrimeB350m-A_BIOS_Tpm_noTilt.mp4"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "Fans types",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:47.9"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "ASUS-PrimeB350m-A_BIOS_FanCurve2_noTilt.mp4"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "fan curves",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:56.2"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "ASUS-PrimeB350m-A_BIOS_FanCurve_noTilt.mp4"},\
 })
 
 
 # with VRMs. Side by side with the B550
 configs["episodes"].append(\
 { "title": "Conclusions",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:01.1"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350m-overview.MP4"},\
 })
 
 
 configs["episodes"].append(\
 { "title": "concl-pcie",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:08.4"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350m-slots.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "concl-sata",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:17.1"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350m-SATA2_slightlybrighter.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "holes are a tease",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:25.8"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350m-VRMs.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Wraith prism",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:30.1"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "breel_WraithPrism.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "used in a build",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:43.9"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PC-David-overview_slightlybrighter.mp4"},\
 })
 
 configs["episodes"].append(\
 { "title": "wraiths",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "05:55.8"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "WraithPrism_Asus_Prime_B550M-K.MP4", "start" : "00:16"},\
 })
 
 configs["episodes"].append(\
 { "title": "motherboards to subscribe",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:05.5"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "MSI-B350mProVD-Plus-Overview.MP4"},\
 })
 
 configs["episodes"].append(\
 { "title": "Bye",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "06:15.7"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350m-overview.MP4"},\
 })
 
 
