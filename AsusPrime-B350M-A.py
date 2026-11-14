@@ -1,19 +1,19 @@
 import scriptedvided
 import sv_ffutils
 
-configs = { "defaultAudioFile" : "Prime-X370-Pro.ogg",\
-"mediaFolder" : "F:\\Videos\\AsusPrime-X370-Pro", \
+configs = { "defaultAudioFile" : "Prime-B350M-A.ogg",\
+"mediaFolder" : "F:\\Videos\\AsusPrime-B350M-A", \
 "stockFolder" : "F:\\Videos\\stock",\
 "benchmarkFile" : "not needed",\
-"outputFolder" : "F:\\Videos\\AsusPrime-X370-Pro\\output", \
-"outputFile" : "AsusPrime-X370-Pro.mp4", \
+"outputFolder" : "F:\\Videos\\AsusPrime-B350M-A\\output", \
+"outputFile" : "AsusPrime-B350M-A.mp4", \
 "textOpts" : {"fontcolor" : "White", "boxcolor" : "#80000080"},\
 "backgroundTrack" : { "audioTracks" : [ \
-{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Good bang for the buck", "until" : "The VRMs"}}, \
+{"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : "Middle ground ... tease?", "until" : "The VRMs"}}, \
 {"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The VRMs", "until" : "Audio sample"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "The BIOS setup utility", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
-], "volume" : 0.05 },\
+], "volume" : 0.035 },\
 "episodes" : [],\
 "youtube" : {"title" : "", \
 "description" : '''   ''',\
@@ -92,6 +92,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:27.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-VRMs.MP4"},\
+"overlay" : { "image" : {"file" : "vrm.png" } }, \
 }) # add overlay # add overlay # add overlay
 
 configs["episodes"].append(\
@@ -99,6 +100,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:35.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-addedHeatsink.MP4", "start" : "00:04"},\
+"overlay" : { "image" : {"file" : "heatsink.png" } }, \
 }) # add overlay
 
 configs["episodes"].append(\
@@ -106,14 +108,14 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:42.3"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-addedHeatsink.MP4", "start" : "00:24"},\
-}) # add overlay
+})
 
 configs["episodes"].append(\
 { "title": "keep the heatsink",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:54.5"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PC-David-Mobo.MP4", "start" : "00:10"},\
-}) # add overlay
+})
 
 configs["episodes"].append(\
 { "title": "4 DIMM slots",\
@@ -134,6 +136,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:22"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-slots.MP4"},\
+"overlay" : { "image" : {"file" : "pciex16.png" } }, \
 })
 
 ##Needs overlays:s:
@@ -142,6 +145,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:29.9"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-slots.MP4"},\
+"overlay" : { "image" : {"file" : "pciex1.png" } }, \
 })
 
 # -----------------------------------------------------------------------------------------------------
@@ -150,7 +154,7 @@ configs["episodes"].append(\
 { "title": "Great success",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4", "start" : "00:25"},\
 })
 
 ##NEEDS RECORDING
@@ -168,6 +172,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("01:29.9", "01:36.1"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-overview.MP4"},\
+"overlay" : { "image" : {"file" : "sata-overview.png" } }, \
 })
 
 ##Needs overlays:s:
@@ -193,7 +198,7 @@ configs["episodes"].append(\
 "video" : {"file" : "PrimeB350m-pins_brighter.mp4"},\
 })
 
-# overlays, overlays ... 
+## REDO REDO
 configs["episodes"].append(\
 { "title": "missing tpm, USB",\
 "isChapter" : False,\
@@ -201,7 +206,7 @@ configs["episodes"].append(\
 "video" : {"file" : "PrimeB350m-pins_brighter.mp4"},\
 })
 
-##Needs overlays::##Needs overlays::##Needs overlays::##Needs overlays::
+## REDO REDO
 configs["episodes"].append(\
 { "title": "front panel",\
 "isChapter" : False,\
@@ -209,7 +214,7 @@ configs["episodes"].append(\
 "video" : {"file" : "PrimeB350m-pins2_brighter.mp4"},\
 })
 
-##Needs overlays::##Needs overlays::##Needs overlays::##Needs overlays::
+## REDO REDO
 configs["episodes"].append(\
 { "title": "RGB",\
 "isChapter" : False,\
@@ -291,8 +296,8 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Audio sample",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("---", "03:42.3" ), "volume" : 0.001, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"audio" : {"timestamps" : ("03:28.3", "03:42.3" ), "volume" : 0.001, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350M-A-audioSample.mkv"},\
 })
 
 # EC spi chip first
