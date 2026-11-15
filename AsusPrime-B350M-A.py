@@ -100,7 +100,6 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:35.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-addedHeatsink.MP4", "start" : "00:04"},\
-"overlay" : { "image" : {"file" : "heatsink.png" } }, \
 }) # add overlay
 
 configs["episodes"].append(\
@@ -153,7 +152,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Great success",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:00.2", "00:01.5"), "volume" : 0.999, "padAudio" : 0.05, "video" : "extraPrimeB350M-A.ogg" },\
 "video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4", "start" : "00:25"},\
 })
 
@@ -161,7 +160,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "NVME slot",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), ""), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:01.5", "00:16"), "volume" : 0.999, "padAudio" : 0.05, "file" : "extraPrimeB350M-A.ogg" },\
 "video" : {"file" : "PrimeB350m-slots.MP4"},\
 })
 # -----------------------------------------------------------------------------------------------------
@@ -180,7 +179,7 @@ configs["episodes"].append(\
 { "title": "regular ssd",\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:41.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_digUpOldSSD_barred.mp4"},\
 })
 
 configs["episodes"].append(\
@@ -196,38 +195,50 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:09.7"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-pins_brighter.mp4"},\
+"overlay" : { "image" : {"file" : "audio-com.png" } }, \
 })
 
-## REDO REDO
 configs["episodes"].append(\
-{ "title": "missing tpm, USB",\
+{ "title": "tpm",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:25.6"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:16", "00:23"), "volume" : 0.999, "padAudio" : 0.05, "file" : "extraPrimeB350M-A.ogg" },\
 "video" : {"file" : "PrimeB350m-pins_brighter.mp4"},\
+"overlay" : { "image" : {"file" : "tpm.png" } }, \
+})
+
+configs["episodes"].append(\
+{ "title": "USB",\
+"isChapter" : False,\
+"audio" : {"timestamps" : ("02:20", "02:25.6"), "volume" : 0.999, "padAudio" : 0.05 },\
+"video" : {"file" : "PrimeB350m-pins_brighter.mp4"},\
+"overlay" : { "image" : {"file" : "usb2.png" } }, \
 })
 
 ## REDO REDO
 configs["episodes"].append(\
 { "title": "front panel",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:35.5"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:23", "00:30.7"), "volume" : 0.999, "padAudio" : 0.05, "file" : "extraPrimeB350M-A.ogg" },\
 "video" : {"file" : "PrimeB350m-pins2_brighter.mp4"},\
+"overlay" : { "image" : {"file" : "front-panel.png" } }, \
 })
 
 ## REDO REDO
 configs["episodes"].append(\
 { "title": "RGB",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:40.9"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:30.7", "00:36.5"), "volume" : 0.999, "padAudio" : 0.05,  "file" : "extraPrimeB350M-A.ogg" },\
 "video" : {"file" : "PrimeB350m-SysFanSpi_brighter.mp4"},\
+"overlay" : { "image" : {"file" : "rgb.png" } }, \
 })
 
 ##Needs overlays::##Needs overlays::##Needs overlays::##Needs overlays::
 configs["episodes"].append(\
 { "title": "SPI header",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:53"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("02:40.9", "02:53"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-SysFanSpi_brighter.mp4"},\
+"overlay" : { "image" : {"file" : "spi.png" } }, \
 })
 
 ##Needs overlays::##Needs overlays::##Needs overlays::##Needs overlays::
@@ -236,6 +247,7 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:59.4"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-pins2_brighter.mp4"},\
+"overlay" : { "image" : {"file" : "clear-rtc.png" } }, \
 })
 
 configs["episodes"].append(\
@@ -250,8 +262,8 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:13.6"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-SysFanSpi_brighter.mp4"},\
+"overlay" : { "image" : {"file" : "sysFan.png" } }, \
 })
-
 
 #just the rear io reel
 configs["episodes"].append(\
