@@ -152,7 +152,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Great success",\
 "isChapter" : False,\
-"audio" : {"timestamps" : ("00:00.2", "00:01.5"), "volume" : 0.999, "padAudio" : 0.05, "video" : "extraPrimeB350M-A.ogg" },\
+"audio" : {"timestamps" : ("00:00.2", "00:01.5"), "volume" : 0.999, "padAudio" : 0.05, "file" : "extraPrimeB350M-A.ogg" },\
 "video" : {"file" : "GA-A320M-H_Pcie1xVs2SlotCard.MP4", "start" : "00:25"},\
 })
 
@@ -436,7 +436,7 @@ configs["episodes"].append(\
 })
 
 
-# scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "GPU slot"][0], configs)
+# scriptedvided.makeVideoForEpisode([x for x in configs["episodes"] if x["title"] == "USB"][0], configs)
 
 
 
