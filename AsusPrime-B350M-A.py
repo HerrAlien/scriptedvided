@@ -171,7 +171,6 @@ configs["episodes"].append(\
 "isChapter" : False,\
 "audio" : {"timestamps" : ("01:29.9", "01:36.1"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-overview.MP4"},\
-"overlay" : { "image" : {"file" : "sata-overview.png" } }, \
 })
 
 ##Needs overlays:s:
@@ -268,37 +267,6 @@ configs["episodes"].append(\
 #just the rear io reel
 configs["episodes"].append(\
 { "title": "Rear IO",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:19.3"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "PrimeB350m-IO.MP4"},\
-})
-
-#Needs overlays::
-configs["episodes"].append(\
-{ "title": "PS2",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:26.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "PrimeB350m-IO.MP4"},\
-"isChapter" : False,\
-})
-
-#Needs overlays::
-configs["episodes"].append(\
-{ "title": "VGA",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:32.4"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "PrimeB350m-IO.MP4"},\
-"isChapter" : False,\
-})
-
-#Needs overlays::
-configs["episodes"].append(\
-{ "title": "digital video",\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:36.8"), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "PrimeB350m-IO.MP4"},\
-"isChapter" : False,\
-})
-
-#Needs overlays::
-configs["episodes"].append(\
-{ "title": "USBs, ethernet, audio",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:42.3"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "PrimeB350m-IO.MP4"},\
 "isChapter" : False,\
@@ -358,18 +326,23 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "Fans types",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:47.9"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("00:36.6", "00:45.15"), "volume" : 0.999, "padAudio" : 0.05 ,  "file" : "extraPrimeB350M-A.ogg"},\
 "video" : {"file" : "ASUS-PrimeB350m-A_BIOS_FanCurve2_noTilt.mp4"},\
 })
 
+configs["episodes"].append(\
+{ "title": "ICE-400",\
+"isChapter" : False,\
+"audio" : {"timestamps" : ("00:45.15", "00:54.1"), "volume" : 0.999, "padAudio" : 0.05 ,  "file" : "extraPrimeB350M-A.ogg"},\
+"video" : {"file" : "AigoICE400SE.mp4"},\
+})
 
 configs["episodes"].append(\
 { "title": "fan curves",\
 "isChapter" : False,\
-"audio" : {"timestamps" : (scriptedvided.nextTS(configs), "04:56.2"), "volume" : 0.999, "padAudio" : 0.05 },\
+"audio" : {"timestamps" : ("04:47.9", "04:56.2"), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "ASUS-PrimeB350m-A_BIOS_FanCurve_noTilt.mp4"},\
 })
-
 
 # with VRMs. Side by side with the B550
 configs["episodes"].append(\
