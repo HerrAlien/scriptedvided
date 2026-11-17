@@ -77,7 +77,7 @@ TechPowerup entries: https://www.techpowerup.com/gpu-specs/asus-r7-260-1-gb.b273
 configs["episodes"].append(\
 { "title": "Middle ground ... tease?",\
 "audio" : {"timestamps" : ("00:00", "00:11.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : "PrimeB350m-overview.MP4"},\
+"video" : {"file" : "PrimeB350m-overview_firstFrame.mp4", "start" : "00:00"},\
 })
 
 configs["episodes"].append(\
