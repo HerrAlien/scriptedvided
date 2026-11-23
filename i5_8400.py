@@ -253,7 +253,7 @@ configs["episodes"].append(\
     "benchmark" : { \
         "settings" : "1280x720, balanced FSR, low settings", \
     }\
-}\
+},\
 "video" : "i5_8400_cs2.mkv"\
 })
 
@@ -286,7 +286,7 @@ configs["episodes"].append(\
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
     }\
-}\
+},\
 "video" : "i5_8400-RE4.mkv"\
 })
 
@@ -298,7 +298,7 @@ configs["episodes"].append(\
     "benchmark" : { \
         "settings" : "1280x720, 50% render scale, low settings", \
     }\
-}\
+},\
 "video" : "i5_8400_overwatch2.mkv"\
 })
 
@@ -430,8 +430,8 @@ configs["episodes"].append(\
 
 configs["backgroundTrack"] = { "audioTracks" : [ \
 {"file" : "Bliss Of Heaven - SOMM [Audio Library Release]-Free Copyright-safe Music.mp3", "timestamps" : ("00:20", None ), "destinationTimestamp" : {"title" : configs["episodes"][0]["title"], "until" : "Marvel Rivals"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "Overwatch 2"}}, \
-{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Overwatch 2", "until" : "Checking the IPC"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "Marvel Rivals", "until" : "The Finals"}}, \
+{"file" : "Far Far Away - Ferco _ Free Background Music _ Audio Library Release.mp3", "timestamps" : ("00:33", None ), "destinationTimestamp" : {"title" : "The Finals", "until" : "Checking the IPC"}}, \
 {"file" : "Ferco - Inquisitiveness.ogg", "timestamps" : ("01:01", None ), "destinationTimestamp" : {"title" : "Checking the IPC", "until" : "Conclusions"}}, \
 {"file" : "Inspired - MaikonMusic  Free Background Music  Audio Library Release.mp3", "timestamps" : ("00:00", None ), "destinationTimestamp" : {"title" : "Conclusions", "until" : "EOF"}}, \
 ], "volume" : 0.038 },\
