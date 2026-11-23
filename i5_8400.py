@@ -122,7 +122,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "RAM sticks alone",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "01:31.6" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "DDR4_mixed_barred.mp4"},\
 "isChapter" : False,\
 })
 
