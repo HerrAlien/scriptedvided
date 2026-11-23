@@ -73,15 +73,18 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "CS 2 preview",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:25.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : "i5_8400_cs2.mkv"\
 "isChapter" : False,\
 })
 
 configs["episodes"].append(\
 { "title": "IPC preview",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:31.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "breel_i5-8400_inHand_barred.mp4"},\
 "isChapter" : False,\
+"overlay" : { \
+    "image" : {"file" : "overlays.png"}\
+}, \
 })
 
 # Maybe add overlay with parameters.
