@@ -92,12 +92,15 @@ configs["episodes"].append(\
 { "title": "Quad cores - not enough",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:47.1" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : {"file" : "breel_i5-8400_inGrass_barred.mp4"},\
+"overlay" : { \
+    "image" : {"file" : "i5-8400-params.png"}\
+}, \
 })
 
 configs["episodes"].append(\
 { "title": "intel stock cooler",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:55.4" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "intel-stock-cooler.mp4"},\
 "isChapter" : False,\
 })
 
@@ -153,7 +156,7 @@ configs["episodes"].append(\
 configs["episodes"].append(\
 { "title": "video at actual res",\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "02:01.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
-"video" : {"file" : ""},\
+"video" : {"file" : "i5_8400_marvelrivals.mkv"},\
 "isChapter" : False,\
 })
 
