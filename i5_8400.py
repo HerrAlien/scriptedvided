@@ -204,7 +204,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:20.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, performance FSR, lowest settings", \
+        "settings" : "1280x720, balanced FSR, lowest settings", \
     }\
 }, \
 "video" : "i5_8400_helldivers2.mkv"\
@@ -215,7 +215,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "03:48.1" ), "padAudio" : 0.05 },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, low settings", \
+        "settings" : "1280x720, 0.5 scale, low settings", \
     }\
 }, \
 "video" : "i5_8400_arcraiders.mkv"\
@@ -252,7 +252,7 @@ configs["episodes"].append(\
         "settings" : "1280x720, lowest settings", \
     }\
 },\
-"video" : "i5_8400_control.mkv",\
+"video" : {"file" : "i5_8400_control.mkv", "start" : "01:56"},\
 })
 
 configs["episodes"].append(\
@@ -293,7 +293,7 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : ("00:17.8", "00:36.2" ), "padAudio" : 0.05 , "file" : "i5-8400_extras.ogg" },\
 "overlay" : { \
     "benchmark" : { \
-        "settings" : "1280x720, 50% render scale, low settings", \
+        "settings" : "1280x720, performance FSR, low settings", \
     }\
 },\
 "video" : "i5_8400-RE4.mkv"\
