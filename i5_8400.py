@@ -75,6 +75,9 @@ configs["episodes"].append(\
 "audio" : {"timestamps" : (scriptedvided.nextTS(configs), "00:25.2" ), "volume" : 0.999, "padAudio" : 0.05 },\
 "video" : "i5_8400_cs2.mkv",\
 "isChapter" : False,\
+"overlay" : { \
+    "image" : {"file" : "Counter Strike 2.png"}\
+}, \
 })
 
 configs["episodes"].append(\
